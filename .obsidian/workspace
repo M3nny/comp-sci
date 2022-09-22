@@ -1,0 +1,133 @@
+{
+  "main": {
+    "id": "4d1f73b80d90ad80",
+    "type": "split",
+    "children": [
+      {
+        "id": "48860d8e2975699a",
+        "type": "leaf",
+        "state": {
+          "type": "markdown",
+          "state": {
+            "file": "Algebra lineare/Introduzione/Numeri Complessi.md",
+            "mode": "source",
+            "source": false
+          }
+        }
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "1e520070f8dc2cd6",
+    "type": "split",
+    "children": [
+      {
+        "id": "c2d40dac112b69da",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "a1163d9af64d6878",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {}
+            }
+          },
+          {
+            "id": "451b3be92f0d1b8e",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "067bdb5ea6fa0260",
+            "type": "leaf",
+            "state": {
+              "type": "starred",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "282a9548711da6a0",
+    "type": "split",
+    "children": [
+      {
+        "id": "55fe9452c7b84ec4",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "07e5761cd0257543",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "Algebra lineare/Introduzione/Numeri Complessi.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "8f262aef35434a43",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "Algebra lineare/Introduzione/Numeri Complessi.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "6747196a6c17b1d2",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          },
+          {
+            "id": "92219e5c42d85950",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "Algebra lineare/Introduzione/Numeri Complessi.md"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "active": "48860d8e2975699a",
+  "lastOpenFiles": []
+}
