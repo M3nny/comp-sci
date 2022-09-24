@@ -1,3 +1,8 @@
 {
-  "theme": "moonstone"
+  "theme": "moonstone",
+  "cssTheme": "Big Sur Aesthetic",
+  "translucency": false,
+  "enabledCssSnippets": [
+    "center_image"
+  ]
 }
