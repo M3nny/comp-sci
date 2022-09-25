@@ -40,7 +40,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "pall",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -130,15 +130,15 @@
   },
   "active": "a1163d9af64d6878",
   "lastOpenFiles": [
-    "!Teorema.md",
+    "Calcolo 1/Esercizi/Esercizi di topologia.md",
     "Calcolo 1/Elementi di topologia di R.md",
-    "Calcolo 1/Assiomi dei numeri reali.md",
-    "Calcolo 1/images/Intervallo.svg",
     "Calcolo 1/Simbologia.md",
     "Calcolo 1/Insiemistica.md",
+    "Calcolo 1/Assiomi dei numeri reali.md",
+    "Algebra lineare/Introduzione/Numeri Complessi.md",
     "Matematica discreta/Introduzione/Grandezze ed Enunciati.md",
-    "Architettura degli elaboratori/Rappresentazione dell'informazione.md",
-    "Architettura degli elaboratori/Introduzione/Architettura base del computer.md",
-    "Algebra lineare/Introduzione/Numeri Complessi.md"
+    "Matematica discreta/Introduzione/Dimostrazioni.md",
+    "Matematica discreta/Introduzione/Calcolo Combinatorio.md",
+    "!Teorema.md"
   ]
 }

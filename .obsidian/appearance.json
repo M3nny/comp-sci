@@ -4,5 +4,6 @@
   "translucency": false,
   "enabledCssSnippets": [
     "center_image"
-  ]
+  ],
+  "baseFontSize": 17
 }

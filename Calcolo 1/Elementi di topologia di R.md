@@ -4,14 +4,26 @@
 
 >[!Example]
 >$C = \{ x \in \mathbb{R} | -2 < x < 10 \}$
+>
+>Non possiede nè massimo nè minimo
+>
 >**maggioranti** = $\forall x \in C \geq 10$
 >**sup(C)** = $10$
+>**minoranti** = $\forall x \in C \leq -2$
+>**inf(B)** = $-2$
 
 - Diciamo che $a \in \mathbb{R}$ è un **minorante** di $A$ se $a \leq x \space \forall x \in A$ 
 	- Analogamente si intende per minorante un numero che è più piccolo o uguale a tutti gli altri elementi dell'insieme, se esiste, allora l'insieme in questione è **limitato inferiormente**, mentre il suo **estremo inferiore** è il suo <u>minorante più grande</u>.
 
 >[!Example]
 >$C = \{ x \in Q | x \leq 2 \}$
+>
+>Il massimo ed il minimo in questo caso, sono gli estremi dato che:
+>$$-\sqrt{2}\leq x \leq \sqrt{2}$$
+>
+>**maggioranti** = $\forall x \in C \geq \sqrt{2}$
+>**sup(C)** = $\sqrt{2}$
+>**minoranti**: $\forall x \in C \leq -\sqrt{2}$
 >**inf(C)** = $- \sqrt{2}$
 
 ## Proprietà
@@ -32,12 +44,13 @@ $$L=sup(A) \iff L \geq a \forall a \quad \land \forall \epsilon>0 \space \exists
 ## Palle circolari
 Definiamo palla circolare (aperta) l'intervallo $B$ avente **centro** $x_0$ e **raggio** $\delta > 0$ in cui $B$ ha come **estremo inferiore** $x_0 - \delta$ ed **estremo superiore** $x_0+\delta$: $$B(x_0,\delta)=]x_0-\delta, x_0+\delta[$$
 ![[Palla_Circolare.svg]]
-- Un punto $x_0$ si dice **interno** a $B$ se $x_0 \in B$ ed esiste $\delta > 0$ tale che $B(x_0,\delta)\subset B$, ed il relativo insieme di questi punti si indica con $B^°$.
+- Un punto $x_0$ si dice **interno** a $B$ se $x_0 \in B$ ed esiste $\delta > 0$ tale che $B(x_0,\delta)\subset B$, ed il relativo insieme di questi punti si indica con $\mathring{B}$.
 - Un punto $x_0$ si dice **esterno** a $B$ se $x_0$ è interno a $B^c=\mathbb{R} \setminus A$.
 - Un punto $x_0$ si dice di **frontiera** per $B$ se $x_0$ non è ne interno, ne esterno a $B$, ed il relativo insieme di questi punti si indica con $\mathcal{F}(A)$.
+- La palla circolare vista in precedenza è chiamata anche: **intorno circolare** di $x_0$, dove l'intervallo $]x_0-\delta,x_0[$ è l'intorno di **sinistra** e $]x_0,x_0+\delta[$ è l'intorno di **destra**.
 
 ## Insiemi aperti e insiemi chiusi
-- $A$ si dice **aperto** se $A=A^°$
+- $A$ si dice **aperto** se $A=\mathring{A}$
 - $A$ si dice **chiuso** se $A^c$ è un insieme aperto
 
 ### Proprietà degli insiemi aperti
@@ -56,3 +69,13 @@ Definiamo palla circolare (aperta) l'intervallo $B$ avente **centro** $x_0$ e **
 >$$c\in \bigcap^{+\infty}_{n=1}I_n$$
 >Se poi l'ampiezza degli intervalli diventa arbitrariamente piccola al crescere di $n$, allora tale numero $c$ è unico:
 >$$\{c\}=\bigcap^{+\infty}_{n=1}I_n$$
+
+>[!Example]
+>Trovare l'insieme di:
+>$$\bigcup^{+\infty}_{N=1}[1- \frac{1}{n}, \quad 1+\frac{1}{n} ]$$
+>$$n_1 = [0,2]$$
+>$$n_2 = [\frac{1}{2},\frac{3}{2}]$$
+>$$n_3 = [\frac{2}{3}, \frac{4}{3}]$$
+>![[Es_Cantor.svg]]
+>Notiamo che tutti gli intervalli sono contenuti in $[0,2]$, quindi l'unione di essi, è uguale a:
+>$$\bigcup^{+\infty}_{N=1}[1- \frac{1}{n}, \quad 1+\frac{1}{n} ] = [0,2]$$

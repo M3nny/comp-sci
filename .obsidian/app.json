@@ -3,5 +3,6 @@
   "spellcheckLanguages": [
     "it",
     "en-US"
-  ]
+  ],
+  "fileSortOrder": "byModifiedTimeReverse"
 }
