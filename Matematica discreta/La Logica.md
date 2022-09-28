@@ -75,3 +75,68 @@ Per cui la tabella di verità di $P \implies Q$ sarà la seguente:
 - $Q\implies P$ condizione **necessaria**
 - É falsa solo se $P$ è vera e $Q$ è falsa
 ![[tabella verità se e solo se.png]]
+>[!Example]
+>**Dimostrare che un numero naturale è un multiplo di 12 <u>se e solo se</u> esso è un multiplo di 3 e un multiplo di 4**
+>La dmistrazione è divisa in 2 parti
+>- ($\Rightarrow$ sufficiente): 
+>Se $n$ è un multiplo di 12, allora $n=12\cdot t$ dove $t\in \mathbb{N}$, ma:
+>$$12=3\cdot 4=4\cdot 3$$
+> Quindi
+> $$n=3\cdot (4\cdot t) = 4\cdot (3\cdot t)$$
+>$$n=3\cdot S_1 = 4\cdot S_2$$
+>Troviamo quindi che $n$ è un multiplo di 4
+>
+>- ($\Leftarrow$ necessario):
+>Supponiamo che $n=3\cdot r$ e $n=4\cdot s$, dimostriamo che $n=12\cdot t$
+>$$3r = 4s$$
+>Quindi $4s$ è un multiplo di $3$, ma $4$ non è un multiplo di $3$, quindi deve essere che $s$ è un multiplo di $3$, cioè $s=3\cdot t$
+>$$n=4s=4\cdot (3\cdot t)= 12\cdot t$$
+
+## Connettivi logici
+- Hanno un ordine di priorità, dal primo all'ultimo:
+$$1°\quad \neg$$
+$$2°\quad \land$$
+$$3°\quad \lor$$
+$$4°\quad \implies$$
+$$5°\quad \iff$$
+
+## Quantificatori
+
+### Universale
+- $\forall x \in X, P(x)$ ovvero: tutti gli elementi $x$ appartenenti a $X$ soddisfano la proprietà $P(x)$.
+- $\forall$ è **falso** quando **almeno un elemento non soddisfa** $P(x)$.
+- $\forall$ è una forma abbreviata di: $$P(0) \land P(1) \land P(2) \land ... \land P(n) \land ...$$
+>[!Example]
+>Considerando: $X = \{ n \in \mathbb{N} | 1\leq n \leq 1000\}$
+>
+>Dimostrare che la seguente proposizione è falsa:
+>$\forall x \in X, \quad x^2+x+41$ è un numero primo.
+>
+>Dobbiamo quindi esibire un **contro-esempio**.
+>Inizialmente potremmo andare per tentativi e quindi proviamo con $x=1$, il quale risulta $1^2+1+41=43$ che è primo, dunque $x=1$ non è un contro-esempio.
+>Andiamo a fare un altro tipo di ragionamento, ovvero: per essere sicuri che $x^2+x+41$ non sia un numero primo, dobbiamo assegnare ad $x$ un valore che produce un fattore comune tra $x^2, x, 41$, quindi proviamo con $x=41$.
+>$$41^2+41+41=$$
+>$$=41(41+1+1)= 41\cdot 43$$
+>Il prodotto $41 \cdot 43$ sicuramente non è un numero primo, quindi abbiamo trovato il contro-esempio e abbiamo dimostrato che proposizione è falsa.
+
+### Esistenziale
+- $\exists n \in  \mathbb{N}$ ovvero: esiste un numero $n$ naturale.
+- $\exists$ è **falso** quando è falso per ogni elemento.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

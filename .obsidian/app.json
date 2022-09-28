@@ -4,5 +4,6 @@
     "it",
     "en-US"
   ],
-  "fileSortOrder": "byModifiedTimeReverse"
+  "fileSortOrder": "byModifiedTimeReverse",
+  "promptDelete": false
 }
