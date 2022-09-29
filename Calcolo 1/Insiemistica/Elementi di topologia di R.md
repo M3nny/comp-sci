@@ -47,11 +47,12 @@ Definiamo palla circolare (aperta) l'intervallo $B$ avente **centro** $x_0$ e **
 - Un punto $x_0$ si dice **interno** a $B$ se $x_0 \in B$ ed esiste $\delta > 0$ tale che $B(x_0,\delta)\subset B$, ed il relativo insieme di questi punti si indica con $\mathring{B}$.
 - Un punto $x_0$ si dice **esterno** a $B$ se $x_0$ è interno a $B^c=\mathbb{R} \setminus A$.
 - Un punto $x_0$ si dice di **frontiera** per $B$ se $x_0$ non è ne interno, ne esterno a $B$, ed il relativo insieme di questi punti si indica con $\mathcal{F}(A)$.
+	In altri termini possiamo dire che ogni intorno di $x_0$ deve contenere punti di $B$ e di $\mathring{B}$.
 - La palla circolare vista in precedenza è chiamata anche: **intorno circolare** di $x_0$, dove l'intervallo $]x_0-\delta,x_0[$ è l'intorno di **sinistra** e $]x_0,x_0+\delta[$ è l'intorno di **destra**.
 
 ## Insiemi aperti e insiemi chiusi
-- $A$ si dice **aperto** se $A=\mathring{A}$
-- $A$ si dice **chiuso** se $A^c$ è un insieme aperto
+- $A$ si dice **aperto** se $A=\mathring{A}$.
+- $A$ si dice **chiuso** se $A^c$ è un insieme aperto oppure se <u>contiene i punti di frontiera</u>.
 
 ### Proprietà degli insiemi aperti
 1. Se $A,B$ sono aperti, allora $A \cup B\space \land \space A\cap B$ sono aperti.
@@ -79,3 +80,27 @@ Definiamo palla circolare (aperta) l'intervallo $B$ avente **centro** $x_0$ e **
 >![[Es_Cantor.svg]]
 >Notiamo che tutti gli intervalli sono contenuti in $[0,2]$, quindi l'unione di essi, è uguale a:
 >$$\bigcup^{+\infty}_{N=1}[1- \frac{1}{n}, \quad 1+\frac{1}{n} ] = [0,2]$$
+
+## Punti isolati e di accumulazione
+- $x_0 \in \mathbb{R}$ si dice che è un punto di **accumulazione** per $A \subseteq \mathbb{R}$ quando in ogni interno di $x_0$ cadono infiniti punti di $A$.
+- $x_0 \in A$ è **isolato** se non è di accumulazione per $A$.
+
+>[!Example]
+>Sia $B=[1,2[ \cup \{3\}$
+>![[Accumulazione.svg]]
+>- I punti di **accumulazione** sono tutti i punti presenti nel intervallo: $[1,2]$ perchè ci sono infiniti numeri reali che circondano ogni elemento in quel intervallo.
+>- L'unico punto **isolato** in questo esempio è $\{3\}$ perchè è un punto distaccato da un intervallo appartenente all'insieme di riferimento $B$ ed è singolo quindi non avrà altri punti attorno a se.
+>- Da notare che $\mathcal{F}=\{3\}$ perchè tracciando una palla con centro $3$ troveremo che $3$ appartiene a $B$ qualsiasi altro numero nei suoi interni appartiene a $B^c$.
+
+>[!Teorema]
+>1. $A \subseteq \mathbb{R}$ è chiuso se e solo se <u>contiene tutti i suoi eventuali punti di accumulazione</u>.
+>2. $A \subseteq \mathbb{R}$ è chiuso se e solo se <u>contiene tutti i suoi elementi di frontiera</u>.
+>3. Per il **teorema di Bolzano-Weierstrass** ogni insieme infinito e limitato ha almeno un punto di accumulazione.
+
+
+
+
+
+
+
+
