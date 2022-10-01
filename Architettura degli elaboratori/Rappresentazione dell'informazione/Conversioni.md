@@ -67,3 +67,6 @@ In questo caso basta raggruppare le cifre binare in gruppi da 4 al posto di tre 
 
 
 
+
+
+

@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "Calcolo 1/Funzioni/Cos'è una funzione.md",
+            "file": "Architettura degli elaboratori/Rappresentazione dell'informazione/Complemento a 2.md",
             "mode": "source",
             "source": false
           }
@@ -77,7 +77,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Calcolo 1/Funzioni/Cos'è una funzione.md",
+                "file": "Architettura degli elaboratori/Rappresentazione dell'informazione/Complemento a 2.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -94,7 +94,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Calcolo 1/Funzioni/Cos'è una funzione.md",
+                "file": "Architettura degli elaboratori/Rappresentazione dell'informazione/Complemento a 2.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -117,7 +117,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Calcolo 1/Funzioni/Cos'è una funzione.md"
+                "file": "Architettura degli elaboratori/Rappresentazione dell'informazione/Complemento a 2.md"
               }
             }
           }
@@ -130,15 +130,15 @@
   },
   "active": "48860d8e2975699a",
   "lastOpenFiles": [
-    "Calcolo 1/Insiemistica/Simbologia.md",
-    "Calcolo 1/Funzioni/Cos'è una funzione.md",
     "Calcolo 1/Insiemistica/Elementi di topologia di R.md",
-    "Calcolo 1/Insiemistica/Cardinalità e numerabilità.md",
     "Calcolo 1/Insiemistica/Insiemi.md",
+    "Calcolo 1/Insiemistica/Simbologia.md",
     "Calcolo 1/Insiemistica/Assiomi dei numeri reali.md",
-    "Matematica discreta/La Logica.md",
-    "Algebra lineare/Introduzione/Numeri Complessi.md",
-    "Algebra lineare/Images/Piano complesso.svg",
-    "Algebra lineare/Introduzione/Untitled.md"
+    "Architettura degli elaboratori/Rappresentazione dell'informazione/Complemento a 2.md",
+    "Architettura degli elaboratori/Rappresentazione dell'informazione/Conversioni.md",
+    "Calcolo 1/Funzioni/Cos'è una funzione.md",
+    "Calcolo 1/Insiemistica/Cardinalità e numerabilità.md",
+    "Architettura degli elaboratori/Introduzione/Architettura base del computer.md",
+    "Matematica discreta/Introduzione/Grandezze ed Enunciati.md"
   ]
 }
