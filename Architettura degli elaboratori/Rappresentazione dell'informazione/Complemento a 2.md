@@ -6,8 +6,8 @@
 >$$2^n-|N|$$
 >quindi:
 >$$2^3-2=8-2=6_{10}=110_2$$
->a
->**Che valore ha 110_2 in complemento a 2.**
+>
+>**Che valore ha $110_2$ in complemento a 2.**
 >Per prima cosa devo guardare se il primo bit è 1(negativo) o 0(positivo), in questo caso è negativo, quindi procedo a fare la conversione da base 2 a base 10 con la differenza che il primo bit non sarà $2^x$ ma $-2^x$.
 >$$110=-2^2\cdot 1 + 2^1\cdot 1 + 2^0\cdot 0=4+2=6_{10}$$
 
@@ -38,7 +38,12 @@ Estendo il bit di segno per il restante numero dei bit a disposizione:
 
 |    |   Somma  | Sottrazione |
 |----|:--------:|:-----------:|
-| +- | SI(neg.) |      NO     |
+| ++ | SI(neg.) |      NO     |
 | -- | SI(pos.) |      NO     |
 | +- |    NO    |   SI(neg.)  |
 | -+ |    NO    |   SI(pos.)  |
+- È possibile adoperare un'altra regola altrimenti, ovvero: guardo gli ultimi 2 **riporti**
+	- Se sono **discordi** allora c'è overflow.
+	- Se sono **concordi** <u>non</u> c'è overflow.
+
+

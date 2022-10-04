@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "Calcolo 1/Funzioni/Operazioni tra funzioni.md",
+            "file": "Architettura degli elaboratori/Rappresentazione dell'informazione/Complemento a 2.md",
             "mode": "source",
             "source": false
           }
@@ -61,8 +61,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "right": {
     "id": "282a9548711da6a0",
@@ -78,7 +77,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Calcolo 1/Funzioni/Operazioni tra funzioni.md",
+                "file": "Architettura degli elaboratori/Rappresentazione dell'informazione/Complemento a 2.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -95,7 +94,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Calcolo 1/Funzioni/Operazioni tra funzioni.md",
+                "file": "Architettura degli elaboratori/Rappresentazione dell'informazione/Complemento a 2.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -118,7 +117,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Calcolo 1/Funzioni/Operazioni tra funzioni.md"
+                "file": "Architettura degli elaboratori/Rappresentazione dell'informazione/Complemento a 2.md"
               }
             }
           }
@@ -131,15 +130,15 @@
   },
   "active": "48860d8e2975699a",
   "lastOpenFiles": [
-    "Calcolo 1/Funzioni/Cos'è una funzione.md",
-    "Calcolo 1/Funzioni/Operazioni tra funzioni.md",
-    "Calcolo 1/Images/Controimmagine_es2.png",
-    "Calcolo 1/Images/controimmagine_es1.png",
-    "Calcolo 1/Images/controimmagine_es1 1.png",
+    "Architettura degli elaboratori/Rappresentazione dell'informazione/Numeri razionali.md",
     "Architettura degli elaboratori/Rappresentazione dell'informazione/Complemento a 2.md",
+    "Architettura degli elaboratori/Rappresentazione dell'informazione/Conversioni.md",
     "Calcolo 1/Insiemistica/Elementi di topologia di R.md",
-    "Calcolo 1/Insiemistica/Insiemi.md",
+    "Calcolo 1/Insiemistica/Cardinalità e numerabilità.md",
     "Calcolo 1/Insiemistica/Simbologia.md",
-    "Calcolo 1/Insiemistica/Assiomi dei numeri reali.md"
+    "Calcolo 1/Insiemistica/Assiomi dei numeri reali.md",
+    "Calcolo 1/Insiemistica/Insiemi.md",
+    "Calcolo 1/Funzioni/Operazioni tra funzioni.md",
+    "Calcolo 1/Funzioni/Cos'è una funzione.md"
   ]
 }
