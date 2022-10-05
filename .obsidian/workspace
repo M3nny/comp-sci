@@ -4,12 +4,12 @@
     "type": "split",
     "children": [
       {
-        "id": "48860d8e2975699a",
+        "id": "e36c3f0f24f5d4cc",
         "type": "leaf",
         "state": {
           "type": "markdown",
           "state": {
-            "file": "Matematica discreta/Gli insiemi.md",
+            "file": "Algebra lineare/Introduzione/Numeri Complessi.md",
             "mode": "source",
             "source": false
           }
@@ -61,7 +61,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "right": {
     "id": "282a9548711da6a0",
@@ -77,7 +78,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Matematica discreta/Gli insiemi.md",
+                "file": "Algebra lineare/Introduzione/Numeri Complessi.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -94,7 +95,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Matematica discreta/Gli insiemi.md",
+                "file": "Algebra lineare/Introduzione/Numeri Complessi.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -117,7 +118,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Matematica discreta/Gli insiemi.md"
+                "file": "Algebra lineare/Introduzione/Numeri Complessi.md"
               }
             }
           }
@@ -128,17 +129,17 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "48860d8e2975699a",
+  "active": "e36c3f0f24f5d4cc",
   "lastOpenFiles": [
-    "Calcolo 1/Insiemistica/Insiemi.md",
-    "Matematica discreta/Gli insiemi.md",
     "Matematica discreta/La Logica.md",
-    "Architettura degli elaboratori/Rappresentazione dell'informazione/Numeri razionali.md",
-    "Architettura degli elaboratori/Rappresentazione dell'informazione/Complemento a 2.md",
-    "Architettura degli elaboratori/Rappresentazione dell'informazione/Conversioni.md",
-    "Calcolo 1/Insiemistica/Elementi di topologia di R.md",
-    "Calcolo 1/Insiemistica/Cardinalità e numerabilità.md",
-    "Calcolo 1/Insiemistica/Simbologia.md",
-    "Calcolo 1/Insiemistica/Assiomi dei numeri reali.md"
+    "Algebra lineare/Introduzione/Numeri Complessi.md",
+    "Matematica discreta/Gli insiemi.md",
+    "Matematica discreta/Images/Proprietà delle operazioni sugli insiemi/Associativa.png",
+    "Matematica discreta/Images/Proprietà delle operazioni sugli insiemi/Distributiva.png",
+    "Matematica discreta/Images/Proprietà delle operazioni sugli insiemi/Complementazione.png",
+    "Matematica discreta/Images/Proprietà delle operazioni sugli insiemi/Assorbimento.png",
+    "Matematica discreta/Images/Proprietà delle operazioni sugli insiemi/Idempotenza.png",
+    "Calcolo 1/Insiemistica/Insiemi.md",
+    "Architettura degli elaboratori/Rappresentazione dell'informazione/Numeri razionali.md"
   ]
 }

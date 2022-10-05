@@ -69,8 +69,26 @@ $$A\cup B = \{x|(x\in A) \lor (x\in B)\}$$
 Per trovare la cardinalità di insiemi uniti proseguiremo nel seguente modo:
 $$|A\cup B| = |A|+|B|-|A+B|$$
 - **Intersezione**: $A\cap B = \{x|(x\in A) \land (x\in B)\}$.
-- **Complementazione**:$B\setminus A=\{x|x\in B \land x \notin A\}$, dove l'insieme complementare si indica con $\overline{A}$.
+- **Complementazione**: $B\setminus A=\{x|x\in B \land x \notin A\}$, dove l'insieme complementare si indica con $\overline{A}$.
+- **Differenza simmetrica**: $A \Delta B = (A/B)\cup (B/A)$ 
+![[Differenza simmetrica.png]]
+
+## Proprietà delle operazioni sugli insiemi
+>[!Info]
+![[Idempotenza.png]]
+![[Assorbimento.png]]
+![[Commutativa.png]]
+![[Associativa.png]]
+![[Distributiva.png]]
+![[Complementazione.png]]
+![[De morgan.png]]
+
+## Partizione
+Dato un insieme $X$ ed una famiglia $A_1, A_2, ..., A_k$ di sottoinsiemi <u>non</u> vuoti di $X$, diciamo che gli insiemi $A$ formano una partizione se:
+- L'**unione** di tutti i sottoinsiemi da come risultato l'insieme padre
+$$A_1\cup A_2 \cup ... A_k=X$$
+- L'**intersezione** di qualsiasi sottoinsieme con un altro da origine all'insieme vuoto (praticamente devono avere elementi in comune i sottoinsiemi)
+$$A_i\cap A_j=\emptyset \text{ per ogni i,j }\in \{1, ..., k\}$$
 
 
 
-   

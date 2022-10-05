@@ -19,6 +19,8 @@ $$\overline{z} = a -bi$$
 $$|z| = \sqrt{a^2+b^2}$$
 ### Inverso: 
 $$z^{-1} = \frac{\overline z}{|z|^2} = \frac{a - bi}{a^2+b^2}$$
+### Divisione
+$$\frac{z}{w}=\frac{1}{|w|^2}\cdot z\overline{w}$$
 
 ## Il piano complesso
 Un numero complesso $z = a+bi$ è <u>rappresentabile graficamente</u> tramite il **piano complesso** (o di Gauss), dove nelle **ascisse** troveremo la sua **parte reale**: $Re(z) = a$ mentre nelle **ordinate** la sua **parte immaginaria**: $Im(z)=b$.
@@ -31,7 +33,7 @@ Possiamo quindi identificare:
 Otteniamo così le **coordinate polari**:
 $$z = a+bi =$$
 $$= r\cdot cos(\alpha) + r\cdot sin(\alpha)i =$$
-$$|z|(cos(\alpha)+sin(\alpha)i)$$
+$$|z|(cos(\alpha)+isin(\alpha))$$
 ### Moltiplicazione con coordinate polari
 Sia $z=|z|(cos(\alpha)+isin(\alpha))$ e $w=|w|(cos(\beta)+isin(\beta))$, allora
 $$z\cdot w=|z\cdot w|(cos(\alpha +\beta)+isin(\alpha +\beta))$$
@@ -61,6 +63,16 @@ In questa forma sarà molto più semplice eseguire le moltiplicazioni:
 - $z=r_1\cdot e^{i\alpha}$
 - $w=r_2\cdot e^{i\beta}$
 - $z\cdot w=(r_1\cdot r_2)e^{i(\alpha + \beta)}$
+
+## Recap forme
+**Forma standard** (o cartesiana): $z=a+bi$
+**Forma polare** (o trigonometrica): $z=r(cos(\alpha)+isin(\alpha))$
+	$r=|z|=\sqrt{a^2+b^2}$
+	$a=r\cdot cos(\alpha)$
+	$b=r\cdot sin(\alpha)$	
+**Forma esponenziale**: $z=r\cdot e^{i\alpha}$
+
+
 
 
 

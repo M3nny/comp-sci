@@ -123,6 +123,12 @@ $$5°\quad \iff$$
 - $\exists n \in  \mathbb{N}$ ovvero: esiste un numero $n$ naturale.
 - $\exists$ è **falso** quando è falso per ogni elemento.
 
+## Tautologie, contraddizioni, soddisfacibilità
+Possiamo dare una definizione ai risultati di operazioni in base a quanti valori veri e falsi posseggono.
+**Tautologia**: tutti veri.
+**Contraddizione**: tutti falsi.
+**Soddisfacibile**: possiede dei valori sia veri che falsi.
+
 
 
 
