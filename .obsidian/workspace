@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "Algebra lineare/Introduzione/Numeri Complessi.md",
+            "file": "Algebra lineare/Spazi vettoriali/Introduzione.md",
             "mode": "source",
             "source": false
           }
@@ -40,7 +40,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "chiuso",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -78,7 +78,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Algebra lineare/Introduzione/Numeri Complessi.md",
+                "file": "Algebra lineare/Spazi vettoriali/Introduzione.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -95,7 +95,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Algebra lineare/Introduzione/Numeri Complessi.md",
+                "file": "Algebra lineare/Spazi vettoriali/Introduzione.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -118,7 +118,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Algebra lineare/Introduzione/Numeri Complessi.md"
+                "file": "Algebra lineare/Spazi vettoriali/Introduzione.md"
               }
             }
           }
@@ -131,15 +131,15 @@
   },
   "active": "e36c3f0f24f5d4cc",
   "lastOpenFiles": [
-    "Matematica discreta/La Logica.md",
+    "Architettura degli elaboratori/Rappresentazione dell'informazione/IEEE754.md",
+    "Architettura degli elaboratori/Rappresentazione dell'informazione/Numeri razionali.md",
+    "Architettura degli elaboratori/Rappresentazione dell'informazione/Complemento a 2.md",
     "Algebra lineare/Introduzione/Numeri Complessi.md",
+    "Matematica discreta/La Logica.md",
     "Matematica discreta/Gli insiemi.md",
     "Matematica discreta/Images/Proprietà delle operazioni sugli insiemi/Associativa.png",
     "Matematica discreta/Images/Proprietà delle operazioni sugli insiemi/Distributiva.png",
     "Matematica discreta/Images/Proprietà delle operazioni sugli insiemi/Complementazione.png",
-    "Matematica discreta/Images/Proprietà delle operazioni sugli insiemi/Assorbimento.png",
-    "Matematica discreta/Images/Proprietà delle operazioni sugli insiemi/Idempotenza.png",
-    "Calcolo 1/Insiemistica/Insiemi.md",
-    "Architettura degli elaboratori/Rappresentazione dell'informazione/Numeri razionali.md"
+    "Matematica discreta/Images/Proprietà delle operazioni sugli insiemi/Assorbimento.png"
   ]
 }

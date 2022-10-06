@@ -34,4 +34,7 @@ Per rappresentare i numeri a virgola mobile utilizziamo la notazione scientifica
 - **Overflow**: si verifica quando l'esponente è <u>troppo grande</u> per essere rappresentato.
 - **Underflow**: si verifica quando l'esponente è <u>troppo piccolo</u> per essere rappresentato.
 
+**Nota**:
+I casi di _overflow_ e _underflow_ sono legati all'esponente e non al troncamento della mantissa.
+
 
