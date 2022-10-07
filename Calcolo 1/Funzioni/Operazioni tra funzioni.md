@@ -28,8 +28,8 @@ Perchè una funzione sia invertibile, essa **deve essere biettiva**, la possiamo
 $$f^{-1}:B \mapsto D$$
 $$y \mapsto x = f^{-1}(y)$$
 - $f^{-1}(B)=D$, l'immagine di $f^{-1}$ è uguale al dominio di $f$
-
-
+- Due casi noti di funzione inversa sono le funzioni: $arcsin(x)$ e $arccos(x)$, le quali invertono le funzioni del seno e coseno, nell'esempio che segue vediamo il <u>seno</u> in rosso e la sua funzione inversa in blu; da notare anche che l'arcoseno agisce sulla restrizione del seno che ha intervallo $[-\frac{\pi}{2}, \frac{\pi}{2}]$.
+![[Sin arcsin.png]]
 
 
 

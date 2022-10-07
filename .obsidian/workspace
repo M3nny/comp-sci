@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "Algebra lineare/Spazi vettoriali/Introduzione.md",
+            "file": "Calcolo 1/Funzioni/Funzioni elementari.md",
             "mode": "source",
             "source": false
           }
@@ -78,7 +78,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Algebra lineare/Spazi vettoriali/Introduzione.md",
+                "file": "Calcolo 1/Funzioni/Funzioni elementari.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -95,7 +95,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Algebra lineare/Spazi vettoriali/Introduzione.md",
+                "file": "Calcolo 1/Funzioni/Funzioni elementari.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -118,7 +118,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Algebra lineare/Spazi vettoriali/Introduzione.md"
+                "file": "Calcolo 1/Funzioni/Funzioni elementari.md"
               }
             }
           }
@@ -131,15 +131,15 @@
   },
   "active": "e36c3f0f24f5d4cc",
   "lastOpenFiles": [
-    "Architettura degli elaboratori/Rappresentazione dell'informazione/IEEE754.md",
-    "Architettura degli elaboratori/Rappresentazione dell'informazione/Numeri razionali.md",
-    "Architettura degli elaboratori/Rappresentazione dell'informazione/Complemento a 2.md",
+    "Calcolo 1/Funzioni/Cos'è una funzione.md",
+    "Calcolo 1/Funzioni/Operazioni tra funzioni.md",
+    "Calcolo 1/Funzioni/Funzioni elementari.md",
     "Algebra lineare/Introduzione/Numeri Complessi.md",
+    "Matematica discreta/Introduzione/Calcolo Combinatorio.md",
     "Matematica discreta/La Logica.md",
     "Matematica discreta/Gli insiemi.md",
-    "Matematica discreta/Images/Proprietà delle operazioni sugli insiemi/Associativa.png",
-    "Matematica discreta/Images/Proprietà delle operazioni sugli insiemi/Distributiva.png",
-    "Matematica discreta/Images/Proprietà delle operazioni sugli insiemi/Complementazione.png",
-    "Matematica discreta/Images/Proprietà delle operazioni sugli insiemi/Assorbimento.png"
+    "Algebra lineare/Spazi vettoriali/Introduzione.md",
+    "Architettura degli elaboratori/Rappresentazione dell'informazione/IEEE754.md",
+    "Architettura degli elaboratori/Rappresentazione dell'informazione/Numeri razionali.md"
   ]
 }

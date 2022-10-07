@@ -55,7 +55,25 @@ $$g: A \rightarrow A$$$$x \mapsto g(x)=x^2$$
 Da notare che:
 - $f$ <u>strettamente monotona è iniettiva</u> ma non sempre il contrario.
 
+## Funzioni pari e dispari
+Diciamo che una funzione è **pari** quando ha un <u>grafico simmetrico rispetto l'asse delle y</u> e che ha funzione:
+$$f(-x)=f(x)$$
+È **dispari** invece quando ha il <u>grafico simmetrico rispetto l'origine</u> e rispetta la seguente uguaglianza:
+$$f(-x)=-f(x)$$
+Esistono comunque funzioni che sono **nè pari nè dispari**.
 
+## Funzione periodica
+Una funzione $f: \mathbb{R} \rightarrow \mathbb{R}$ è periodica se esiste un $\tau$ (periodo) maggiore di $0$ per cui ogni $x$ che appartiene al dominio si avrà che sommando una $x$ ad un periodo $\tau$ otterremo il punto di partenza: $f(x+\tau)=f(x)$.
 
+>[!Example]
+>**Valutare il periodo della funzione:**
+>$$y=sin(ax); a>0 \quad f(x+\tau)=f(x)\exists \tau>0?$$
+>$f(x+\tau)=sin(a(x+\tau))=sin(ax+a\tau)=$
+>$= sin(ax) \forall x \in D$
+>
+>$a\tau=2\pi \rightarrow \tau=\frac{2\pi}{a}$
 
+## Traslazioni, dilatazioni, contrazioni, riflessioni
+Possiamo applicare delle modifiche alle funzioni, ad esempio spostarle, tramite delle operazioni particolari fatte sulla funzione.
+![[Traslazioni.png]]
 
