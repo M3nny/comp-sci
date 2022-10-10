@@ -61,8 +61,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "right": {
     "id": "282a9548711da6a0",
@@ -132,14 +131,14 @@
   "active": "e36c3f0f24f5d4cc",
   "lastOpenFiles": [
     "Calcolo 1/Funzioni/Cos'è una funzione.md",
-    "Calcolo 1/Funzioni/Operazioni tra funzioni.md",
     "Calcolo 1/Funzioni/Funzioni elementari.md",
+    "Calcolo 1/Images/Funzioni elementari/Potenza naturale.png",
+    "Matematica discreta/La Logica.md",
+    "Calcolo 1/Funzioni/Operazioni tra funzioni.md",
     "Algebra lineare/Introduzione/Numeri Complessi.md",
     "Matematica discreta/Introduzione/Calcolo Combinatorio.md",
-    "Matematica discreta/La Logica.md",
     "Matematica discreta/Gli insiemi.md",
     "Algebra lineare/Spazi vettoriali/Introduzione.md",
-    "Architettura degli elaboratori/Rappresentazione dell'informazione/IEEE754.md",
-    "Architettura degli elaboratori/Rappresentazione dell'informazione/Numeri razionali.md"
+    "Architettura degli elaboratori/Rappresentazione dell'informazione/IEEE754.md"
   ]
 }
