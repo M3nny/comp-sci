@@ -80,5 +80,12 @@ Per eseguire la somma tra numeri a virgola mobile devo prima assicurarmi che ent
 >>In questo caso l'**arrotondamento avviene per difetto** perchè dopo il quarto bit dopo la virgola trovo uno $0$, se avessi trovato un $1$ avrei arrotondato per eccesso nel seguente modo:
 >>$$1.001$$
 
+## Problemi di rappresentazione dei numeri FP
+Per colpa del numero limitato di bit utilizzato in una rappresentazione, ci potrebbero essere errori di rappresentazione, per cui <u>la proprietà associativa non funzionerà in tutti i casi</u> (su MIPS e ARM posso sommare solo 2 numeri alla volta).
+Infatti **allineando l'esponente più piccolo a quello più grande potrei perdere l'informazione** dato che potrebbe non essere rappresentabile in uno spazio limitato di bit.
 
+Ad esempio:
+- $x=1.5\cdot 10^{38}$
+- $y=1.0_{10}$
 
+Allineando $y$ a $x$ perdo l'$1$ perchè viene spostato troppo.

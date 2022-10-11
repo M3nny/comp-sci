@@ -84,11 +84,10 @@ $$|A\cup B| = |A|+|B|-|A+B|$$
 ![[De morgan.png]]
 
 ## Partizione
-Dato un insieme $X$ ed una famiglia $A_1, A_2, ..., A_k$ di sottoinsiemi <u>non</u> vuoti di $X$, diciamo che gli insiemi $A$ formano una partizione se:
+Dato un insieme $X$ ed una famiglia $A_1, A_2, ..., A_k$ di **sottoinsiemi non vuoti** di $X$, diciamo che gli insiemi $A$ formano una partizione se:
 - L'**unione** di tutti i sottoinsiemi da come risultato l'insieme padre
 $$A_1\cup A_2 \cup ... A_k=X$$
 - L'**intersezione** di qualsiasi sottoinsieme con un altro da origine all'insieme vuoto (praticamente devono avere elementi in comune i sottoinsiemi)
 $$A_i\cap A_j=\emptyset \text{ per ogni i,j }\in \{1, ..., k\}$$
-
-
-
+È possibile ricavare il numero delle partizioni di un insieme tramite la seguente formula:
+$$partizioni(X)=2|X|-1$$

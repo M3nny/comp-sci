@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "Calcolo 1/Funzioni/Funzioni elementari.md",
+            "file": "Matematica discreta/Le relazioni.md",
             "mode": "source",
             "source": false
           }
@@ -40,7 +40,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "cardinali",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -77,7 +77,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Calcolo 1/Funzioni/Funzioni elementari.md",
+                "file": "Matematica discreta/Le relazioni.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -94,7 +94,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Calcolo 1/Funzioni/Funzioni elementari.md",
+                "file": "Matematica discreta/Le relazioni.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -117,7 +117,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Calcolo 1/Funzioni/Funzioni elementari.md"
+                "file": "Matematica discreta/Le relazioni.md"
               }
             }
           }
@@ -130,15 +130,15 @@
   },
   "active": "e36c3f0f24f5d4cc",
   "lastOpenFiles": [
-    "Calcolo 1/Funzioni/Cos'è una funzione.md",
     "Calcolo 1/Funzioni/Funzioni elementari.md",
-    "Calcolo 1/Images/Funzioni elementari/Potenza naturale.png",
-    "Matematica discreta/La Logica.md",
-    "Calcolo 1/Funzioni/Operazioni tra funzioni.md",
-    "Algebra lineare/Introduzione/Numeri Complessi.md",
-    "Matematica discreta/Introduzione/Calcolo Combinatorio.md",
+    "Calcolo 1/Funzioni/Cos'è una funzione.md",
+    "Matematica discreta/Le relazioni.md",
     "Matematica discreta/Gli insiemi.md",
-    "Algebra lineare/Spazi vettoriali/Introduzione.md",
-    "Architettura degli elaboratori/Rappresentazione dell'informazione/IEEE754.md"
+    "Calcolo 1/Insiemistica/Cardinalità e numerabilità.md",
+    "Architettura degli elaboratori/Rappresentazione dell'informazione/Altri tipi di rappresentazioni.md",
+    "Architettura degli elaboratori/Rappresentazione dell'informazione/IEEE754.md",
+    "Architettura degli elaboratori/Rappresentazione dell'informazione/Complemento a 2.md",
+    "Architettura degli elaboratori/Rappresentazione dell'informazione/Numeri razionali.md",
+    "Architettura degli elaboratori/Rappresentazione dell'informazione/Conversioni.md"
   ]
 }
