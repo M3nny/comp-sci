@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "Matematica discreta/Le relazioni.md",
+            "file": "Algebra lineare/Vettori.md",
             "mode": "source",
             "source": false
           }
@@ -61,7 +61,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "right": {
     "id": "282a9548711da6a0",
@@ -77,7 +78,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Matematica discreta/Le relazioni.md",
+                "file": "Algebra lineare/Vettori.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -94,7 +95,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Matematica discreta/Le relazioni.md",
+                "file": "Algebra lineare/Vettori.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -117,7 +118,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Matematica discreta/Le relazioni.md"
+                "file": "Algebra lineare/Vettori.md"
               }
             }
           }
@@ -130,15 +131,15 @@
   },
   "active": "e36c3f0f24f5d4cc",
   "lastOpenFiles": [
+    "Algebra lineare/Images/vettore applicato a origine.svg",
+    "Algebra lineare/Vettori.md",
+    "Algebra lineare/Numeri Complessi.md",
+    "Matematica discreta/Gli insiemi.md",
+    "Architettura degli elaboratori/Rappresentazione dell'informazione/Altri tipi di rappresentazioni.md",
+    "Matematica discreta/Le relazioni.md",
     "Calcolo 1/Funzioni/Funzioni elementari.md",
     "Calcolo 1/Funzioni/Cos'è una funzione.md",
-    "Matematica discreta/Le relazioni.md",
-    "Matematica discreta/Gli insiemi.md",
     "Calcolo 1/Insiemistica/Cardinalità e numerabilità.md",
-    "Architettura degli elaboratori/Rappresentazione dell'informazione/Altri tipi di rappresentazioni.md",
-    "Architettura degli elaboratori/Rappresentazione dell'informazione/IEEE754.md",
-    "Architettura degli elaboratori/Rappresentazione dell'informazione/Complemento a 2.md",
-    "Architettura degli elaboratori/Rappresentazione dell'informazione/Numeri razionali.md",
-    "Architettura degli elaboratori/Rappresentazione dell'informazione/Conversioni.md"
+    "Architettura degli elaboratori/Rappresentazione dell'informazione/IEEE754.md"
   ]
 }
