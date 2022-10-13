@@ -4,16 +4,22 @@
     "type": "split",
     "children": [
       {
-        "id": "e36c3f0f24f5d4cc",
-        "type": "leaf",
-        "state": {
-          "type": "markdown",
-          "state": {
-            "file": "Calcolo 1/Funzioni/Funzioni elementari.md",
-            "mode": "source",
-            "source": false
+        "id": "06188a4529ac44ef",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "e36c3f0f24f5d4cc",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Algebra lineare/Vettori.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
-        }
+        ]
       }
     ],
     "direction": "vertical"
@@ -31,7 +37,9 @@
             "type": "leaf",
             "state": {
               "type": "file-explorer",
-              "state": {}
+              "state": {
+                "sortOrder": "byModifiedTimeReverse"
+              }
             }
           },
           {
@@ -61,7 +69,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "right": {
     "id": "282a9548711da6a0",
@@ -77,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Calcolo 1/Funzioni/Funzioni elementari.md",
+                "file": "Algebra lineare/Vettori.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -94,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Calcolo 1/Funzioni/Funzioni elementari.md",
+                "file": "Algebra lineare/Vettori.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -117,7 +126,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Calcolo 1/Funzioni/Funzioni elementari.md"
+                "file": "Algebra lineare/Vettori.md"
               }
             }
           }
@@ -128,17 +137,20 @@
     "width": 300,
     "collapsed": true
   },
+  "ribbon": {
+    "mostRecentAction": ""
+  },
   "active": "e36c3f0f24f5d4cc",
   "lastOpenFiles": [
-    "Matematica discreta/Gli insiemi.md",
-    "Matematica discreta/Le relazioni.md",
-    "Algebra lineare/Vettori.md",
-    "Algebra lineare/Images/vettore applicato a origine.svg",
-    "Algebra lineare/Numeri Complessi.md",
-    "Architettura degli elaboratori/Rappresentazione dell'informazione/Altri tipi di rappresentazioni.md",
     "Calcolo 1/Funzioni/Funzioni elementari.md",
+    "Calcolo 1/Images/Funzioni elementari/Sin Cos Asin Acos.png",
+    "Calcolo 1/Funzioni/Operazioni tra funzioni.md",
     "Calcolo 1/Funzioni/Cos'è una funzione.md",
-    "Calcolo 1/Insiemistica/Cardinalità e numerabilità.md",
-    "Architettura degli elaboratori/Rappresentazione dell'informazione/IEEE754.md"
+    "Matematica discreta/Gli insiemi.md",
+    "Algebra lineare/Numeri Complessi.md",
+    "Algebra lineare/Vettori.md",
+    "Matematica discreta/Le relazioni.md",
+    "Algebra lineare/Images/vettore applicato a origine.svg",
+    "Architettura degli elaboratori/Rappresentazione dell'informazione/Altri tipi di rappresentazioni.md"
   ]
 }

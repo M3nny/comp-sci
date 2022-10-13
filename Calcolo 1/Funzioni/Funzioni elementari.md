@@ -114,6 +114,8 @@ Un punto nella circonferenza di raggio 1 ha coordinate:
 $$(x,y) | x=cos(a)\land y=sin(a)$$
 Dato che l'angolo è rappresentato in **radianti**, possiamo eseguire la conversione in gradi grazie alla seguente formula:
 $$g°=\frac{rad\cdot 180°}{\pi}$$
+
+![[Grad Rad.png]]
 >[!Important]
 >Le funzioni trigonometriche rispettano le seguenti **proprietà**:
 >- Valori di $sin$ e $cos$ compresi tra -1 e 1;
@@ -121,4 +123,48 @@ $$g°=\frac{rad\cdot 180°}{\pi}$$
 >- $cos(-a)=cos(a);\quad sin(-a)=-sin(a)$;
 >- $sin(a+b)=sin(a)cos(b)+sin(b)cos(a)$;
 >- $cosa(a+b)=cos(a)cos(b)-sin(a)sin(b)$.
+>
+>**Formule di duplicazione**:
+>- $sin(2\alpha)=2sin(\alpha)\cdot cos(\alpha)$
+>- $cos(2\alpha)=cos^2(\alpha)-sin^2(\alpha)$
 
+Per ottenere le funzioni inverse del seno e del coseno, dovremmo ridurre le loro funzioni per renderle biettive.
+
+- $arcsin(x): [-1,1] \to [-\frac{\pi}{2}, \frac{\pi}{2}]$
+- $arccos(x):[-1,1]\to [0, \pi]$
+
+![[Sin Cos Asin Acos.png]]
+
+### Tangente
+Si indica con tangente il punto in cui una retta che parte da $O$ con angolo $\alpha$ incrocia la retta $x=1$, la possiamo ricavare tramite:
+$$tan(\alpha)=\frac{sin(\alpha)}{cos(\alpha)}$$
+$$D=\{x\in \mathbb{R}|x\neq \frac{\pi}{2}+k\pi\};\quad Im(f)=\mathbb{R}$$
+Mentre indichiamo con cotangente il punto in cui l'angolo $\alpha$ incontra la retta $y=1$, la possiamo ricavare tramite:
+$$cotan(\alpha)=\frac{cos(\alpha)}{sin(\alpha)}$$
+$$D=\{x\in \mathbb{R}|x\neq \pi + k\pi\};\quad Im(f)=\mathbb{R}$$
+![[Tan Cotan.svg]]
+![[Tan Cotan grafico.svg]]
+
+### Secante
+$$sec(x)=\frac{1}{cos(x)}$$
+- **Dominio**:$\{x\in \mathbb{R}|x \neq \frac{\pi}{2}+k\pi\}$
+- **Immagine**: $\mathbb{R}$
+
+### Cosecante
+$$cosec(x)=\frac{1}{sin(x)}$$
+- **Dominio**:$\{x\in \mathbb{R}|x\neq k\pi\}$
+- **Immagine**: $]-\infty , -1] \cup [1,\infty [$
+
+## Funzioni iperboliche
+
+### Seno iperbolico
+$$sinh(x)=\frac{e^x-e^{-x}}{2}$$
+- **Dominio**: $\mathbb{R}$
+- **Inversa** (dominio $\mathbb{R}$): $y=log(x+\sqrt{x^2+1})$
+
+### Coseno iperbolico
+$$cosh(x)=\frac{e^x+e^{-x}}{2}$$
+- **Dominio**: $\mathbb{R}$
+- **Inversa** (dominio $[1,+\infty[\space)$: $y=log(x+\sqrt{x^2-1})$
+
+![[Sin Cos iperbolici.png]]

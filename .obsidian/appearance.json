@@ -5,5 +5,8 @@
   "enabledCssSnippets": [
     "center_image"
   ],
-  "baseFontSize": 17
+  "baseFontSize": 17,
+  "accentColor": "#ffd294",
+  "showViewHeader": false,
+  "nativeMenus": false
 }
