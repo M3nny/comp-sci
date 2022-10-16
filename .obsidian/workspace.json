@@ -4,19 +4,15 @@
     "type": "split",
     "children": [
       {
-        "id": "06188a4529ac44ef",
+        "id": "4c0ad97eaa784533",
         "type": "tabs",
         "children": [
           {
-            "id": "e36c3f0f24f5d4cc",
+            "id": "acaabdacc6aa6259",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Algebra lineare/Vettori.md",
-                "mode": "source",
-                "source": false
-              }
+              "type": "empty",
+              "state": {}
             }
           }
         ]
@@ -48,7 +44,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "cardinali",
+                "query": "chiuso",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -86,7 +82,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Algebra lineare/Vettori.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +98,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Algebra lineare/Vettori.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,9 +119,7 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "Algebra lineare/Vettori.md"
-              }
+              "state": {}
             }
           }
         ]
@@ -140,17 +132,17 @@
   "ribbon": {
     "mostRecentAction": ""
   },
-  "active": "e36c3f0f24f5d4cc",
+  "active": "acaabdacc6aa6259",
   "lastOpenFiles": [
-    "Calcolo 1/Funzioni/Funzioni elementari.md",
-    "Calcolo 1/Images/Funzioni elementari/Sin Cos Asin Acos.png",
-    "Calcolo 1/Funzioni/Operazioni tra funzioni.md",
-    "Calcolo 1/Funzioni/Cos'è una funzione.md",
-    "Matematica discreta/Gli insiemi.md",
-    "Algebra lineare/Numeri Complessi.md",
-    "Algebra lineare/Vettori.md",
     "Matematica discreta/Le relazioni.md",
-    "Algebra lineare/Images/vettore applicato a origine.svg",
-    "Architettura degli elaboratori/Rappresentazione dell'informazione/Altri tipi di rappresentazioni.md"
+    "parzialmente ordinato.md",
+    "Algebra lineare/Vettori.md",
+    "Calcolo 1/Funzioni/Funzioni elementari.md",
+    "Architettura degli elaboratori/Rappresentazione dell'informazione/IEEE754.md",
+    "Matematica discreta/Gli insiemi.md",
+    "Matematica discreta/La Logica.md",
+    "Architettura degli elaboratori/Rappresentazione dell'informazione/Complemento a 2.md",
+    "Calcolo 1/Insiemistica/Elementi di topologia di R.md",
+    "Calcolo 1/Insiemistica/Insiemi.md"
   ]
 }

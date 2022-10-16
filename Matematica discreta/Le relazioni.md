@@ -43,7 +43,6 @@ $$(x,y)\in \mathcal{R} \text{ e }(y,z)\in \mathcal{R} \implies (x,z)\in \mathcal
 - _5 > 4;  4 > 2;  $\implies$ 5 > 2_.
 
 ---
-
 ## Relazioni d'ordine
 
 ### Parziale
@@ -72,6 +71,16 @@ $$x\leq y \iff x<y \lor x=y$$
 >- Due elementi $x,y\in A$ sono **confrontabili** se $x\mathcal{R}y \lor y\mathcal{R}x$;
 >- Due elementi $x,y\in A$ sono **inconfrontabili** se nè $x\mathcal{R}y$ nè $y\mathcal{R}x$.
 
+---
+## Catene e anticatene
+- Un sottoinsieme $X$ di un insieme [parzialmente ordinato](###Parziale) $A$ è definito come una **catena** se gli elementi di $X$ sono **confrontabili** a due a due.
+$$esempio:\quad 0<1<2<3<4<...$$
+- Un sottoinsieme $X$ di un insieme [parzialmente ordinato](###Parziale) $A$ è una **anticatena** se gli elementi di $X$ sono **inconfrontabili** a due a due.
+$$\text{esempio:}\quad n_1<n_2 \text{ se } n_1 \text{ è un divisore di }n_2$$
+$$3\space 5\space 7\space 11$$
+## Ordinamento ben fondato
+- Un ordinamento [parziale](###Parziale) è detto **ben fondato** se non ammette catene discendenti infinite del tipo: $a_0>a_1>a_2>...>a_n>...$ 
+---
 ## Relazione di equivalenza
 Una relazione $\mathcal{R}$ è una **relazione di equivalenza** se verifica le seguenti proprietà:
 - RIFLESSIVA

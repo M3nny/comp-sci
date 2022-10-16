@@ -90,3 +90,27 @@ Possiamo calcolare la Proiezione di un vettore $A$ su un vettore $B$ tramite:
 $$P=\frac{A\cdot B}{B\cdot B}\cdot B$$
 Oppure se abbiamo l'angolo:
 $$P=||A||\cdot cos\alpha \cdot \frac{B}{||B||}$$
+
+>[!Example]
+>**Determinare in base a $p_1$ e $p_2$ quando $\overrightarrow{OP}$ e $\overrightarrow{OQ}$ sono perpendicolari e calcolare il coseno.**
+>- $P=(p_1,p_2)$.
+>- $Q=(1,2)$.
+>
+>I vettori sono paralleli quando: $\overrightarrow{OP}\cdot \overrightarrow{OQ}=0$.
+>$(p_1\cdot p_2)\cdot(1,2)=p_1+2p_2$ 
+>Quindi $p_1+2p_2=0 \rightarrow p_1=-2p_2$ (saranno perpendicolari per questo punto di $p_1$)
+>---
+>Ora calcoliamo il coseno:
+>- $||\overrightarrow{OQ}||=\sqrt{1^2+2^2}=\sqrt{5}$
+>- $||\overrightarrow{OP}||=\sqrt{p_1^2+p_2^2}$
+>
+>$cos(\alpha)=\frac{p_1+p_2}{\sqrt{5}\cdot \sqrt{p_1^2+p_2^2}}$ (ricavato utilizzando la formula: $cos(\alpha)=\frac{A\cdot B}{||A||\cdot ||B||}$)
+
+## Retta parallela passante per un punto
+
+Per ottenere una retta passante per un punto $P(x_0,y_0)$ e parallela ad un vettore $\overrightarrow{u}=(u_1,u_2)$ dovremmo utilizzare un'equazione parametrica come segue:
+$$r:\begin{cases}
+	      x=x_0+u_1t\\
+	      y=y_0+u_2t.
+	\end{cases}$$
+	
