@@ -6,7 +6,7 @@ float f3 (float z);
 
 /* dato N stampare tutti i numeri multipli di 3 e minori dii N*/
 void f (int N) {
-    for (intì^^^ i = 1; i < N; i++) {
+    for (int i = 1; i < N; i++) {
         if (i%3 == 0) {
             printf("%d è divisibile per 3\n",i);
         }
