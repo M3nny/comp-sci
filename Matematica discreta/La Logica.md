@@ -128,21 +128,3 @@ Possiamo dare una definizione ai risultati di operazioni in base a quanti valori
 **Tautologia**: tutti veri.
 **Contraddizione**: tutti falsi.
 **Soddisfacibile**: possiede dei valori sia veri che falsi.
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

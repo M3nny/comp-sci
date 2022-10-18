@@ -27,7 +27,7 @@ $$f^{\leftarrow}(B) = \{x \in D|f(x) \in B\}$$
 >![[Controimmagine_es2.png]]
 
 ## Iniettiva, suriettiva, biettiva
-- $f$ è **iniettiva** se $\forall  x_0\in B$ esiste _al massimo_ 1 elemento di $x_0 \in D$ tale che $f(x_0) = y_0$.
+- $f$ è **iniettiva** se $\forall  x_0\in B$ esiste _al massimo_ un elemento di $x_0 \in D$ tale che $f(x_0) = y_0$.
 - $f$ è **suriettiva** se $\forall y_0 \in B$ esiste _almeno_ un $x_0\in D$ tale che $f(x_0)=y_0$.
 - $f$ è **biettiva** se $\forall y_0\in B$ esiste _un solo_ $x_0 \in D$ tale che $f(x_0) = y_0$, (in altre parole è biettiva quando è sia iniettiva e suriettiva).
 

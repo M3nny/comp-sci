@@ -4,19 +4,15 @@
     "type": "split",
     "children": [
       {
-        "id": "d0639a908e755367",
+        "id": "baa9fa1feb9c0d1c",
         "type": "tabs",
         "children": [
           {
-            "id": "8711ea0f00d9351c",
+            "id": "ee62189416ed9310",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Calcolo 1/Limiti/Definizione di un limite.md",
-                "mode": "source",
-                "source": false
-              }
+              "type": "empty",
+              "state": {}
             }
           }
         ]
@@ -48,7 +44,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "interno",
+                "query": "iniett",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -69,7 +65,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "right": {
     "id": "282a9548711da6a0",
@@ -85,7 +82,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Calcolo 1/Limiti/Definizione di un limite.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +98,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Calcolo 1/Limiti/Definizione di un limite.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -124,9 +119,7 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "Calcolo 1/Limiti/Definizione di un limite.md"
-              }
+              "state": {}
             }
           }
         ]
@@ -139,17 +132,17 @@
   "ribbon": {
     "mostRecentAction": ""
   },
-  "active": "8711ea0f00d9351c",
+  "active": "ee62189416ed9310",
   "lastOpenFiles": [
-    "Calcolo 1/Limiti/Definizione di un limite.md",
-    "Calcolo 1/Insiemistica/Elementi di topologia di R.md",
-    "Elementi.md",
-    "Matematica discreta/Le relazioni.md",
-    "Algebra lineare/Vettori.md",
-    "parzialmente ordinato.md",
+    "Calcolo 1/Funzioni/Operazioni tra funzioni.md",
+    "Matematica discreta/Le funzioni.md",
+    "Calcolo 1/Funzioni/Cos'è una funzione.md",
     "Calcolo 1/Funzioni/Funzioni elementari.md",
-    "Architettura degli elaboratori/Rappresentazione dell'informazione/IEEE754.md",
-    "Matematica discreta/Gli insiemi.md",
-    "Matematica discreta/La Logica.md"
+    "Architettura degli elaboratori/Circuiti logici/Porte logiche.md",
+    "Matematica discreta/Introduzione/Grandezze ed Enunciati.md",
+    "Matematica discreta/Introduzione/Calcolo Combinatorio.md",
+    "Matematica discreta/Introduzione/Dimostrazioni.md",
+    "Matematica discreta/La Logica.md",
+    "Calcolo 1/Limiti/Definizione di un limite.md"
   ]
 }
