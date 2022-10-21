@@ -16,8 +16,8 @@ $$\forall x \in A,\space x\neq x_0,\space \text{ tale che }|x-x_0|<\delta_\epsil
 >Siano $l_1 e l_2 \in \mathbb{R}$ e supponiamo: 
 >$$\lim_{x\to x_0}f(x)=l_1 \quad \text{e}\quad \lim_{x\to x_0}f(x)=l_2$$
 >allora si deve avere che $l_1=l_2$ ovvero se il limite esiste allora è <u>unico</u>.
-
->[!Teorema]
+>
+>---
 >**Teorema di permanenza di segno**:
 >- Se una funzione ha limite positivo $\lim\limits_{x\to x_0}f(x)=l>0$ allora esiste un intorno $I_{x_0}$ per cui $f(x)>0 \space \forall x \in I_{x_0}$;
 >- Se una funzione ha limite negativo $\lim\limits_{x\to x_0}f(x)=l<0$ allora esiste un intorno $I_{x_0}$ per cui $f(x)<0 \space \forall x \in I_{x_0}$
@@ -34,12 +34,47 @@ Quando abbiamo un limite con $x_0$ o $l$ che vale $\pm\infty$ non possiamo verif
 	- Scriveremo il limite tendete a $x_0$ da sinistra come: $\lim\limits_{x\to x^-_0}f(x)=l$
 - L'**intorno destro** di $x_0$ si indica con $I^+_{x_0}$ ed esso non contiene $x_0$, può anche essere descritto come: $I^+_{x_0}=I_{x_0}\cap]x_0, +\infty[$
 	- Scriveremo il limite tendete a $x_0$ da destra come: $\lim\limits_{x\to x^+_0}f(x)=l$
->[!Teorema]
+
+>[!Teoremi]
 >$$\lim_{x\to x_0}f(x)=l$$
 >$$\iff$$
 >$$\lim_{x\to x^-_0}f(x)=l\quad \land \quad \lim_{x\to x^+_0}f(x)=l$$
-
->[!Teorema]
+>---
+>
 >**Teorema di limitatezza locale**:
 >Se $\lim\limits_{x\to x_0}f(x)=l \in \mathbb{R}$ (limite finito) allora esiste un intorno di $x_0$ dove $f$ è limitata.
+>
+>---
+>**Teorema del confronto**:
+>Avendo tre funzioni $f,g,h$ che soddisfano le disuguaglianze:
+>$$f(x)\leq g(x) \leq h(x)$$
+>- $\lim\limits_{x\to x_0}f(x)=l\land \lim\limits_{x\to x_0}h(x)=l\implies \lim\limits_{x\to x_0}g(x)=l$
+>- $\lim\limits_{x\to x_0}f(x)=+\infty \implies \lim\limits_{x\to x_0}g(x)=+\infty$
+>- $\lim\limits_{x\to x_0}h(x)=-\infty \implies \lim\limits_{x\to x_0}g(x)=-\infty$
 
+## Algebra dei limiti
+
+Avendo due limiti generici
+$$\lim_{x \to x_0} f(x) = \ell \quad \land \quad \lim_{x \to x_0} g(x) = \ell'$$
+Vengono riassunte nella seguente tabella le principali operazioni con i limiti:
+![[Operazioni_limiti.png|700]]
+
+
+### Limite di funzioni monotone
+Sia $f: A\subseteq \mathbb{R} \to \mathbb{R}$ una funzione monotona
+
+Sia $\alpha=\text{sup}(A)$ con $\alpha$ diverso dal massimo di $A$ si avrà:
+$$\lim\limits_{x\to \alpha}f(x)=\begin{cases}
+	      \text{sup}(f(A)), & \text{ se $f$ è crescente };\\
+	      \text{inf}(f(A)), & \text{ se $f$ è decrescente }.
+	\end{cases}
+$$
+Sia $\beta = \text{inf}(A)$ con $\beta$ diverso dal minimo di $A$ si avrà:
+$$\lim\limits_{x\to \beta}f(x)=\begin{cases}
+	      \text{inf}(f(A)), & \text{ se $f$ è crescente };\\
+	      \text{sup}(f(A)), & \text{ se $f$ è decrescente }.
+	\end{cases}
+$$
+### Altri limiti
+- Il limite di funzioni periodiche non costanti non esiste
+- $\lim\limits_{x\to x_0}|f(x)|=|l|$ anche con $l=\pm \infty$ 

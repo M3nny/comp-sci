@@ -1,0 +1,235 @@
+{
+  "strategy": "default",
+  "matchStrategy": "prefix",
+  "maxNumberOfSuggestions": 5,
+  "maxNumberOfWordsAsPhrase": 3,
+  "minNumberOfCharactersTriggered": 0,
+  "minNumberOfWordsTriggeredPhrase": 1,
+  "complementAutomatically": true,
+  "delayMilliSeconds": 0,
+  "disableSuggestionsDuringImeOn": false,
+  "insertAfterCompletion": true,
+  "firstCharactersDisableSuggestions": ":/^",
+  "showMatchStrategy": true,
+  "showComplementAutomatically": true,
+  "showIndexingStatus": true,
+  "descriptionOnSuggestion": "Short",
+  "selectSuggestionKeys": "Tab",
+  "additionalCycleThroughSuggestionsKeys": "None",
+  "disableUpDownKeysForCycleThroughSuggestionsKeys": false,
+  "openSourceFileKey": "None",
+  "propagateEsc": false,
+  "enableCurrentFileComplement": true,
+  "currentFileMinNumberOfCharacters": 0,
+  "onlyComplementEnglishOnCurrentFileComplement": false,
+  "enableCurrentVaultComplement": false,
+  "currentVaultMinNumberOfCharacters": 0,
+  "includeCurrentVaultPathPrefixPatterns": "",
+  "excludeCurrentVaultPathPrefixPatterns": "",
+  "includeCurrentVaultOnlyFilesUnderCurrentDirectory": false,
+  "enableCustomDictionaryComplement": false,
+  "customDictionaryPaths": "https://raw.githubusercontent.com/first20hours/google-10000-english/master/google-10000-english-no-swears.txt",
+  "columnDelimiter": "Tab",
+  "customDictionaryWordRegexPattern": "",
+  "delimiterToHideSuggestion": "",
+  "delimiterToDivideSuggestionsForDisplayFromInsertion": "",
+  "caretLocationSymbolAfterComplement": "",
+  "displayedTextSuffix": " => ...",
+  "enableInternalLinkComplement": true,
+  "suggestInternalLinkWithAlias": false,
+  "excludeInternalLinkPathPrefixPatterns": "",
+  "enableFrontMatterComplement": true,
+  "frontMatterComplementMatchStrategy": "inherit",
+  "insertCommaAfterFrontMatterCompletion": false,
+  "intelligentSuggestionPrioritization": {
+    "maxDaysToKeepHistory": 30,
+    "maxNumberOfHistoryToKeep": 0
+  },
+  "showLogAboutPerformanceInConsole": false,
+  "selectionHistoryTree": {
+    "minimizzare": {
+      "minimizzare": {
+        "currentFile": {
+          "count": 1,
+          "lastUpdated": 1666365215239
+        }
+      }
+    },
+    "karnaugh": {
+      "karnaugh": {
+        "currentFile": {
+          "count": 2,
+          "lastUpdated": 1666365680443
+        }
+      }
+    },
+    "risultato": {
+      "risultato": {
+        "currentFile": {
+          "count": 1,
+          "lastUpdated": 1666365406633
+        }
+      }
+    },
+    "Vengono": {
+      "Vengono": {
+        "currentFile": {
+          "count": 1,
+          "lastUpdated": 1666365424904
+        }
+      }
+    },
+    "Gli insiemi": {
+      "Gli insiemi": {
+        "internalLink": {
+          "count": 1,
+          "lastUpdated": 1666365432967
+        }
+      }
+    },
+    "adiacenti": {
+      "adiacenti": {
+        "currentFile": {
+          "count": 1,
+          "lastUpdated": 1666365718986
+        }
+      }
+    },
+    "funzione": {
+      "funzione": {
+        "currentFile": {
+          "count": 2,
+          "lastUpdated": 1666369723196
+        }
+      }
+    },
+    "minimizzabile": {
+      "minimizzabile": {
+        "currentFile": {
+          "count": 1,
+          "lastUpdated": 1666365944362
+        }
+      }
+    },
+    "bisogna": {
+      "bisogna": {
+        "currentFile": {
+          "count": 1,
+          "lastUpdated": 1666366077754
+        }
+      }
+    },
+    "p-sottocubi": {
+      "p-sottocubi": {
+        "currentFile": {
+          "count": 2,
+          "lastUpdated": 1666366485127
+        }
+      }
+    },
+    "output": {
+      "output": {
+        "currentFile": {
+          "count": 1,
+          "lastUpdated": 1666366411369
+        }
+      }
+    },
+    "mappe": {
+      "mappe": {
+        "currentFile": {
+          "count": 1,
+          "lastUpdated": 1666366442577
+        }
+      }
+    },
+    "Karnaugh": {
+      "Karnaugh": {
+        "currentFile": {
+          "count": 1,
+          "lastUpdated": 1666366447206
+        }
+      }
+    },
+    "permanenza": {
+      "permanenza": {
+        "currentFile": {
+          "count": 1,
+          "lastUpdated": 1666367684803
+        }
+      }
+    },
+    "segno": {
+      "segno": {
+        "currentFile": {
+          "count": 1,
+          "lastUpdated": 1666367687870
+        }
+      }
+    },
+    "Teorema": {
+      "Teorema": {
+        "currentFile": {
+          "count": 1,
+          "lastUpdated": 1666367729333
+        }
+      }
+    },
+    "limite": {
+      "limite": {
+        "currentFile": {
+          "count": 1,
+          "lastUpdated": 1666367744215
+        }
+      }
+    },
+    "\\lim\\limits_{x\\to": {
+      "\\lim\\limits_{x\\to": {
+        "currentFile": {
+          "count": 6,
+          "lastUpdated": 1666371638523
+        }
+      }
+    },
+    "x_0}f": {
+      "x_0}f": {
+        "currentFile": {
+          "count": 3,
+          "lastUpdated": 1666368234363
+        }
+      }
+    },
+    "\\land": {
+      "\\land": {
+        "currentFile": {
+          "count": 1,
+          "lastUpdated": 1666367802020
+        }
+      }
+    },
+    "\\quad": {
+      "\\quad": {
+        "currentFile": {
+          "count": 1,
+          "lastUpdated": 1666367805063
+        }
+      }
+    },
+    "\\implies": {
+      "\\implies": {
+        "currentFile": {
+          "count": 3,
+          "lastUpdated": 1666368380476
+        }
+      }
+    },
+    "-\\infty": {
+      "-\\infty": {
+        "currentFile": {
+          "count": 2,
+          "lastUpdated": 1666368404589
+        }
+      }
+    }
+  }
+}

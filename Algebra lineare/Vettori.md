@@ -15,6 +15,12 @@ Per l'**addizione** di due punti valgono le proprietà generali della somma tra 
 - **Distributiva**: $C(A+B)=CA+CB$
 - **Coordinate nulle**: $0+A=A+0=A$
 
+Possiamo anche **sommare un vettore ad un punto** (sempre usando la regola del parallelogramma), il risultato si chiamerà **punto somma**, e al posto di essere un vettore come nell'immagine di sopra, sarà semplicemente il punto $A+B$.
+>[!Example]
+>**Avendo il vettore $\overrightarrow{A}=(-1,5)$ ed il punto $P=(2,1)$ trovare il punto somma**
+>
+>$$\overrightarrow{A} + P = ((-1+2),(5+1))=(1,6)$$
+
 Quando applichiamo un valore scalare ad un vettore (moltiplichiamo per uno scalare) lo **ridimensioniamo**:
 ![[Ridimensionamento.png]]
 Un **vettore applicato** è una coppia ordinata di punti che denoteremo come $\overrightarrow{AB}$, dove $A$ è l'_origine_ e $B$ è la _fine_ del vettore.
@@ -106,11 +112,3 @@ $$P=||A||\cdot cos\alpha \cdot \frac{B}{||B||}$$
 >
 >$cos(\alpha)=\frac{p_1+p_2}{\sqrt{5}\cdot \sqrt{p_1^2+p_2^2}}$ (ricavato utilizzando la formula: $cos(\alpha)=\frac{A\cdot B}{||A||\cdot ||B||}$)
 
-## Retta parallela passante per un punto
-
-Per ottenere una retta passante per un punto $P(x_0,y_0)$ e parallela ad un vettore $\overrightarrow{u}=(u_1,u_2)$ dovremmo utilizzare un'equazione parametrica come segue:
-$$r:\begin{cases}
-	      x=x_0+u_1t\\
-	      y=y_0+u_2t.
-	\end{cases}$$
-	

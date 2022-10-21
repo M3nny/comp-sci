@@ -78,3 +78,31 @@ Per realizzare un circuito efficiente possiamo usare la **2-level logic** che ci
 - **1° livello di porte AND** per i prodotti, che avrà **_arietà** (fan-in o numero di ingressi)_ per ogni porta pari al numero di fattori dei prodotti;
 - **2° livello di porte OR** per la somma, che avrà **_arietà_** pari al numero dei prodotti.
 ![[2-level logic.png]]
+## Minimizzazione dei circuiti
+Data un'equazione in forma normale (es. SP), si riduce il numero di prodotti, questo grazie alle proprietà dell'algebra di Boole.
+>[!Example]
+>Con la funzione $$f=\overline{AB}C\overline{D}+\overline{AB}CD+\overline{A}BC\overline{D}+\overline{A}BCD$$
+>Notiamo che $\overline{A}C$ compare in tutti i prodotti e quindi $B$ e $D$ sono variabili **DON'T CARE** ovvero che sebbene cambia il loro valore il risultato della funzione non cambia, la funzione è quindi minimizzabile a $f=\overline{A}C$ 
+>
+>![[Minimizzazione.png]]
+
+Per scoprire le variabili DON'T CARE di una tabella di verità in forma normale con $n$ input bisogna individuare:
+- Il numero di righe con output $1$ deve essere una potenza di 2;
+- L'esponente della potenza di 2 è il numero di input fissi che ci devono essere 
+Es. Se abbiamo $2^2$ righe con output a $1$ allora dovremmo avere $2$ input fissi.
+
+## Mappe di Karnaugh
+Per minimizzare a mano funzioni di poche variabili possiamo usare le mappe di Karnaugh:
+- Ogni quadrato individua un risultato di una combinazione di variabili in _input_;
+- Vengono ommessi gli output a $0$.
+
+Le variabili DON'T CARE sono adiacenti nella mappa di Karnaugh, ovvero gli $1$ adiacenti, bisogna considerare che i bordi orizzontali/verticali è come se si toccassero.
+
+Per far si che la funzione sia minimizzabile bisogna che esistano $2^p$ valori uguali a $1$ adiacenti, chiamati anche **p-sottocubi**
+
+>[!Attention]
+>Per minimizzare il più possibile bisogna scegliere i **p-sottocubi** più grandi, per cui bisogna fare attenzione ad alcuni $1$ che sono dentro a più p-sottocubi contemporaneamente.
+>![[p-sottocubi.png]]
+
+## Funzioni incomplete
+Esistono degli **output DON'T CARE** per cui i valori di input non importano, vengono rappresentati nella mappa di Karnaugh con delle X a cui <mark>saremo noi a decidere</mark> se dargli <mark>il valore</mark> di $0$ o $1$ <mark>in modo tale da avere meno p-sottocubi possibili</mark>.
