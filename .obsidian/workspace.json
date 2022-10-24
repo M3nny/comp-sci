@@ -4,22 +4,35 @@
     "type": "split",
     "children": [
       {
-        "id": "0945eae027f80a9e",
+        "id": "baa9fa1feb9c0d1c",
         "type": "tabs",
         "children": [
           {
-            "id": "c74dffc9a8209fc2",
+            "id": "ee62189416ed9310",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Architettura degli elaboratori/Circuiti logici/Porte logiche.md",
+                "file": "Calcolo 1/Funzioni/Funzioni elementari.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "46f001f0d7535dd1",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Calcolo 1/Limiti/Funzioni continue.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -48,7 +61,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "surie",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -69,7 +82,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "right": {
     "id": "282a9548711da6a0",
@@ -85,7 +99,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Architettura degli elaboratori/Circuiti logici/Porte logiche.md",
+                "file": "Calcolo 1/Limiti/Funzioni continue.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +116,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Architettura degli elaboratori/Circuiti logici/Porte logiche.md",
+                "file": "Calcolo 1/Limiti/Funzioni continue.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +139,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Architettura degli elaboratori/Circuiti logici/Porte logiche.md"
+                "file": "Calcolo 1/Limiti/Funzioni continue.md"
               }
             }
           }
@@ -139,17 +153,17 @@
   "ribbon": {
     "mostRecentAction": ""
   },
-  "active": "c74dffc9a8209fc2",
+  "active": "46f001f0d7535dd1",
   "lastOpenFiles": [
-    "Matematica discreta/La cardinalità.md",
-    "Calcolo 1/Limiti/Definizione di un limite.md",
     "Calcolo 1/Funzioni/Funzioni elementari.md",
-    "Untitled.md",
-    "Architettura degli elaboratori/Circuiti logici/Porte logiche.md",
-    "Algebra lineare/Rette e piani.md",
-    "Algebra lineare/Sistemi lineari.md",
-    "Algebra lineare/Vettori.md",
+    "Calcolo 1/Limiti/Funzioni continue.md",
+    "Matematica discreta/Gli insiemi.md",
+    "Calcolo 1/Limiti/Definizione di un limite.md",
+    "Matematica discreta/Le relazioni.md",
+    "Calcolo 1/Funzioni/Operazioni tra funzioni.md",
+    "Matematica discreta/Le funzioni.md",
     "Calcolo 1/Funzioni/Cos'è una funzione.md",
-    "Matematica discreta/Le funzioni.md"
+    "Architettura degli elaboratori/Circuiti logici/Porte logiche.md",
+    "Matematica discreta/Introduzione/Grandezze ed Enunciati.md"
   ]
 }

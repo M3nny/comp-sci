@@ -76,5 +76,7 @@ $$\lim\limits_{x\to \beta}f(x)=\begin{cases}
 	\end{cases}
 $$
 ### Altri limiti
-- Il limite di funzioni periodiche non costanti non esiste
+- **Il limite di funzioni periodiche non costanti non esiste**, per esempio notiamo: $\lim\limits_{x \to +\infty}sin(x) = \nexists$ questo accade perchè $sin(x)$ avrà valori che oscillano tra $-1$ e $1$ rendendo quindi il limite che tende verso infinito non unico.
+	Da notare anche che una funzione del tipo: $\lim\limits_{x \to +\infty}cos(x) +x = +\infty$ questo perchè il valore assunto dal coseno sarà compreso tra $-1$ e $1$ anche in questo caso, ma sommandoci infinito sarà uguale a $+\infty$.
+
 - $\lim\limits_{x\to x_0}|f(x)|=|l|$ anche con $l=\pm \infty$ 
