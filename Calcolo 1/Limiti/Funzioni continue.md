@@ -42,4 +42,9 @@ Inoltre il valore assoluto è continuo.
 Le funzioni a tratti possono non essere continue, per questo bisogna controllare il punto di giunzione.
 Se facciamo il calcolo del limite su una funzione continua sappiamo che è uguale a trovare il punto nella funzione:
 $$\text{se } f \text{ è continua in }x_0 \text{ allora} \lim\limits_{x\to x_0}f(x)=f(x_0)$$
+>[!Teorema]
+>**Zeri di una funzione continua - teorema di Bolzano**:
+>Siano $a<b$ e $f: [a,b]\to \mathbb{R}$ una funzione continua dove $f(a)\cdot f(b)<0$ ovvero che $f(a)$ e $f(b)$ abbiano segno opposto.
+>Allora esiste almeno un punto $c$ di $[a,b]$ tale che $f(c)=0$.
+>Praticamente la funzione dovrà passare per l'asse delle x.
 

@@ -4,35 +4,18 @@
     "type": "split",
     "children": [
       {
-        "id": "baa9fa1feb9c0d1c",
+        "id": "5ccddccf6ad15b96",
         "type": "tabs",
         "children": [
           {
-            "id": "ee62189416ed9310",
+            "id": "3d1643eb64683abc",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Calcolo 1/Funzioni/Funzioni elementari.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "46f001f0d7535dd1",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Calcolo 1/Limiti/Funzioni continue.md",
-                "mode": "source",
-                "source": false
-              }
+              "type": "empty",
+              "state": {}
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -99,7 +82,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Calcolo 1/Limiti/Funzioni continue.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -116,7 +98,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Calcolo 1/Limiti/Funzioni continue.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,9 +119,7 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "Calcolo 1/Limiti/Funzioni continue.md"
-              }
+              "state": {}
             }
           }
         ]
@@ -153,17 +132,17 @@
   "ribbon": {
     "mostRecentAction": ""
   },
-  "active": "46f001f0d7535dd1",
+  "active": "3d1643eb64683abc",
   "lastOpenFiles": [
-    "Calcolo 1/Funzioni/Funzioni elementari.md",
+    "Matematica discreta/Il principio di induzione.md",
     "Calcolo 1/Limiti/Funzioni continue.md",
+    "Calcolo 1/Funzioni/Funzioni elementari.md",
     "Matematica discreta/Gli insiemi.md",
     "Calcolo 1/Limiti/Definizione di un limite.md",
     "Matematica discreta/Le relazioni.md",
     "Calcolo 1/Funzioni/Operazioni tra funzioni.md",
     "Matematica discreta/Le funzioni.md",
     "Calcolo 1/Funzioni/Cos'è una funzione.md",
-    "Architettura degli elaboratori/Circuiti logici/Porte logiche.md",
-    "Matematica discreta/Introduzione/Grandezze ed Enunciati.md"
+    "Architettura degli elaboratori/Circuiti logici/Porte logiche.md"
   ]
 }
