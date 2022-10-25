@@ -5,7 +5,7 @@ Possiamo quindi scrivere l'insieme delle funzioni da A a B come $B^A$.
 
 - L'**insieme immagine** di una funzione è dato dai valori del suo dominio messi dentro alla funzione, possiamo definire l'immagine di A tramite:
 $$f(A)=\{f(x)|x\in A\}$$
-- Inoltre se una funzione ha cardinalità pari a $1$ ($|f(A)=1$) allora $f$ viene detta **costante**.
+- Inoltre se una funzione ha cardinalità pari a $1$ ($|f(A)|=1$) allora $f$ viene detta **costante**.
 
 ## Proprietà delle funzioni
 - **Iniettiva**: quando per ogni elemento $y$ del codominio esiste **al massimo** un elemento $x$ del dominio;
