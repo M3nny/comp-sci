@@ -186,8 +186,8 @@
     "\\lim\\limits_{x\\to": {
       "\\lim\\limits_{x\\to": {
         "currentFile": {
-          "count": 6,
-          "lastUpdated": 1666371638523
+          "count": 13,
+          "lastUpdated": 1666882704233
         }
       }
     },
@@ -228,6 +228,78 @@
         "currentFile": {
           "count": 2,
           "lastUpdated": 1666368404589
+        }
+      }
+    },
+    "integrated": {
+      "integrated": {
+        "currentFile": {
+          "count": 1,
+          "lastUpdated": 1666872348046
+        }
+      }
+    },
+    "Integrated": {
+      "Integrated": {
+        "currentFile": {
+          "count": 4,
+          "lastUpdated": 1666872413408
+        }
+      }
+    },
+    "Scale": {
+      "Scale": {
+        "currentFile": {
+          "count": 1,
+          "lastUpdated": 1666872372621
+        }
+      }
+    },
+    "input": {
+      "input": {
+        "currentFile": {
+          "count": 2,
+          "lastUpdated": 1666876523180
+        }
+      }
+    },
+    "Programmable": {
+      "Programmable": {
+        "currentFile": {
+          "count": 1,
+          "lastUpdated": 1666878129842
+        }
+      }
+    },
+    "Istruzioni": {
+      "Istruzioni": {
+        "currentFile": {
+          "count": 1,
+          "lastUpdated": 1666879267078
+        }
+      }
+    },
+    "registri": {
+      "registri": {
+        "currentFile": {
+          "count": 1,
+          "lastUpdated": 1666879543199
+        }
+      }
+    },
+    "x^3+x^2+x+1": {
+      "x^3+x^2+x+1": {
+        "currentFile": {
+          "count": 1,
+          "lastUpdated": 1666880940819
+        }
+      }
+    },
+    "\\mathbb{R}": {
+      "\\mathbb{R}": {
+        "currentFile": {
+          "count": 1,
+          "lastUpdated": 1666880976167
         }
       }
     }

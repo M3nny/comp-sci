@@ -1,6 +1,17 @@
 #include <stdio.h>
+#include <stdlib.h>
 #include <stdbool.h>
 #include <math.h>
+
+int ones (int *A, int N);
+int ones_puntatori (int *A, int N);
+
+void print_array(int *A, int N) {
+    for (int i = 0; i < N; i++) {
+        printf("%d ", A[i]);
+    }
+    printf("\n");
+}
 
 void f( float *x, int x_size) {
     if (x_size > 0) {
@@ -44,7 +55,64 @@ void f2( float *x, int x_size) {
         printf("il mio guadagno è: %f \n", gain);
     }
 }
+
+int ones (int *A, int N) {
+    int max_len = 0, cur_len = 0;
+    for (int i = 0; i < N; i++) {
+        if (A[i] == 1) {
+            cur_len++;
+            if (cur_len > max_len) {
+                max_len = cur_len;
+            }
+        } else {
+            cur_len = 0;
+        }
+    }
+    return max_len;
+}
+
+int ones_puntatori (int *A, int N) {
+    int max_len = 0, cur_len = 0;
+    for (int *p = A; p != A+N; p++) {
+        if (*p == 1) {
+            cur_len++;
+            if (cur_len > max_len) {
+                max_len = cur_len;
+            }
+        } else {
+            cur_len = 0;
+        }
+    }
+    return max_len;
+}
+
+int *reversed (int *A, int N) {
+    int *REV = (int*) malloc (N * sizeof(int));
+    if (REV == 0) {
+        exit(EXIT_FAILURE);
+    }
+    for (int i = 0; i < N; i++) {
+        REV[i] = A[N-i-1];
+    }
+
+    return REV;
+}
+
 int main() {
+
+    int A[] = {0,1,1,0,1,1,1,0};
+    int B[] = {1,2,3,4,5};
+
+    print_array(A, 5);
+
+    int *C = reversed(B, 5);
+    print_array(C, 5);
+    free(C);
+
+    printf("\n");
+    printf("La serie più lunga di 1 è: %d\n\n", ones(A,8));
+    printf("La serie più lunga di 1 è: %d\n\n", ones_puntatori(A,8));
+
     float btc[] = {
         10923.63, 10679.14, 10621.66, 10804.00, 10684.43, 10565.49, 10585.16, 10623.33, 10787.62, 10848.83, 10721.33, 10774.43, 10754.44, 10702.29,
         10745.55, 10225.86, 10538.46, 10462.26, 10938.27, 11094.35, 10944.59, 10948.99, 10974.90, 10796.95, 10680.84, 10323.76, 10442.17, 10400.91,

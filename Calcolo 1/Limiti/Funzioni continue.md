@@ -42,9 +42,34 @@ Inoltre il valore assoluto è continuo.
 Le funzioni a tratti possono non essere continue, per questo bisogna controllare il punto di giunzione.
 Se facciamo il calcolo del limite su una funzione continua sappiamo che è uguale a trovare il punto nella funzione:
 $$\text{se } f \text{ è continua in }x_0 \text{ allora} \lim\limits_{x\to x_0}f(x)=f(x_0)$$
+
+## Teoremi fondamentali sulle funzioni continue
+
 >[!Teorema]
 >**Zeri di una funzione continua - teorema di Bolzano**:
->Siano $a<b$ e $f: [a,b]\to \mathbb{R}$ una funzione continua dove $f(a)\cdot f(b)<0$ ovvero che $f(a)$ e $f(b)$ abbiano segno opposto.
+>Siano $a<b$ e $f: [a,b]\to \mathbb{R}$ una funzione continua dove $f(a)\cdot f(b)<0$ ovvero che $f(a)$ e $f(b)$ abbiano segno opposto;
 >Allora esiste almeno un punto $c$ di $[a,b]$ tale che $f(c)=0$.
 >Praticamente la funzione dovrà passare per l'asse delle x.
+>
+>---
+>**Teorema dei valori intermedi**:
+>Sia $f: [a,b] \to \mathbb{R}$ continua;
+>Allora $Im(f)$ è un intervallo, dove $f$ assume tutti i valori in quell'intervallo.
+>
+>---
+>**Teorema di Weierstrass**:
+>Sia $f$ continua in un insieme chiuso limitato;
+>Allora $f$ ha un massimo ed un minimo in quel insieme.
+>$\rightarrow$ $A$ chiuso e limitato, $f$ continua su $A$ allora $\exists c,d \in A$ tali che:
+>$$f(c)=\max\limits_{x\in A}f(x); \quad f(d)=\min\limits_{x\in A}(fx)$$
+
+>[!Example]
+>- $f(x)=x^3+x^2+x+1$
+>**Mostrare che l'equazione $x^3+x^2+x+1=0$ ha almeno uno zero in $\mathbb{R}$**
+>- $f$ è continua e definita su tutto $\mathbb{R}$.
+>$$\lim\limits_{x\to +\infty} = +\infty \implies \exists b\in \mathbb{R} \text{ per cui }f(b)>0$$
+>$$\lim\limits_{x\to -\infty} = -\infty \implies \exists a\in \mathbb{R} \text{ per cui }f(a)<0$$
+>In $[a,b]$ $f$ è continua e $f(a) \cdot f(b) < 0$
+>$\rightarrow$ per teorema degli zeri $\exists c \in [a,b]|f(c)=0$.
+
 

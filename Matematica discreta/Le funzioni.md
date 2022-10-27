@@ -73,4 +73,3 @@ Una funzione per essere [[Operazioni tra funzioni#Funzione inversa|inversa]] dev
 >$$x=\frac{y-b}{a}$$
 >
 >Possiamo quindi scrivere che $f^{-1}(x)=\frac{y-b}{a}$
-
