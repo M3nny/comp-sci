@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "8a43718ecb499a32",
+        "id": "15fde17e87dc8462",
         "type": "tabs",
         "children": [
           {
-            "id": "866c0dcff2881b04",
+            "id": "2be240e48bd4ef35",
             "type": "leaf",
             "state": {
               "type": "empty",
@@ -65,7 +65,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "right": {
     "id": "282a9548711da6a0",
@@ -81,7 +82,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Architettura degli elaboratori/Circuiti logici/Porte logiche.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -98,7 +98,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Architettura degli elaboratori/Circuiti logici/Porte logiche.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -120,9 +119,7 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "Architettura degli elaboratori/Circuiti logici/Porte logiche.md"
-              }
+              "state": {}
             }
           }
         ]
@@ -132,17 +129,17 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "a1163d9af64d6878",
+  "active": "2be240e48bd4ef35",
   "lastOpenFiles": [
+    "Algebra lineare/Sistemi lineari.md",
+    "Algebra lineare/Matrici.md",
+    "Algebra lineare/Rette e piani.md",
+    "Algebra lineare/Vettori.md",
+    "Algebra lineare/Numeri Complessi.md",
+    "Calcolo 1/Funzioni/Funzioni elementari.md",
+    "Matematica discreta/Il principio di induzione.md",
     "Architettura degli elaboratori/Circuiti logici/Circuiti combinatori.md",
     "Architettura degli elaboratori/MIPS/Linguaggio macchina MIPS.md",
-    "Calcolo 1/Limiti/Limiti notevoli.md",
-    "Calcolo 1/Limiti/Funzioni continue.md",
-    "Calcolo 1/Limiti/Definizione di un limite.md",
-    "Architettura degli elaboratori/Images/p-sottocubi.png",
-    "Architettura degli elaboratori/Circuiti logici/Porte logiche.md",
-    "Architettura degli elaboratori/Images/Circuiti combinatori/Multiplexer.png",
-    "Matematica discreta/Le funzioni.md",
-    "Calcolo 1/Funzioni/Funzioni elementari.md"
+    "Calcolo 1/Limiti/Limiti notevoli.md"
   ]
 }
