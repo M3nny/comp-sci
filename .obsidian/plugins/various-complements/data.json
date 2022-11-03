@@ -186,8 +186,8 @@
     "\\lim\\limits_{x\\to": {
       "\\lim\\limits_{x\\to": {
         "currentFile": {
-          "count": 13,
-          "lastUpdated": 1666882704233
+          "count": 16,
+          "lastUpdated": 1667495420637
         }
       }
     },
@@ -282,8 +282,8 @@
     "registri": {
       "registri": {
         "currentFile": {
-          "count": 1,
-          "lastUpdated": 1666879543199
+          "count": 2,
+          "lastUpdated": 1667486823690
         }
       }
     },
@@ -298,8 +298,8 @@
     "\\mathbb{R}": {
       "\\mathbb{R}": {
         "currentFile": {
-          "count": 1,
-          "lastUpdated": 1666880976167
+          "count": 7,
+          "lastUpdated": 1667495411261
         }
       }
     },
@@ -466,16 +466,16 @@
     "\\begin{bmatrix}": {
       "\\begin{bmatrix}": {
         "currentFile": {
-          "count": 3,
-          "lastUpdated": 1667410087073
+          "count": 11,
+          "lastUpdated": 1667498429945
         }
       }
     },
     "\\end{bmatrix}": {
       "\\end{bmatrix}": {
         "currentFile": {
-          "count": 1,
-          "lastUpdated": 1667410012091
+          "count": 4,
+          "lastUpdated": 1667498578701
         }
       }
     },
@@ -508,6 +508,78 @@
         "currentFile": {
           "count": 1,
           "lastUpdated": 1667413823717
+        }
+      }
+    },
+    "registro": {
+      "registro": {
+        "currentFile": {
+          "count": 1,
+          "lastUpdated": 1667488689575
+        }
+      }
+    },
+    "addizionatore": {
+      "addizionatore": {
+        "currentFile": {
+          "count": 1,
+          "lastUpdated": 1667489524691
+        }
+      }
+    },
+    "incrementale": {
+      "incrementale": {
+        "currentFile": {
+          "count": 1,
+          "lastUpdated": 1667492932461
+        }
+      }
+    },
+    "Derivabile": {
+      "Derivabile": {
+        "currentFile": {
+          "count": 1,
+          "lastUpdated": 1667494324318
+        }
+      }
+    },
+    "\\lim\\limits_{h\\to": {
+      "\\lim\\limits_{h\\to": {
+        "currentFile": {
+          "count": 1,
+          "lastUpdated": 1667494431083
+        }
+      }
+    },
+    "x_0+h": {
+      "x_0+h": {
+        "currentFile": {
+          "count": 1,
+          "lastUpdated": 1667494449107
+        }
+      }
+    },
+    "chiameremo": {
+      "chiameremo": {
+        "currentFile": {
+          "count": 1,
+          "lastUpdated": 1667496440616
+        }
+      }
+    },
+    "a_{ij}\\end{bmatrix}": {
+      "a_{ij}\\end{bmatrix}": {
+        "currentFile": {
+          "count": 1,
+          "lastUpdated": 1667496535348
+        }
+      }
+    },
+    "addizione": {
+      "addizione": {
+        "currentFile": {
+          "count": 1,
+          "lastUpdated": 1667496963303
         }
       }
     }

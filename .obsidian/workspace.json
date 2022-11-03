@@ -4,15 +4,19 @@
     "type": "split",
     "children": [
       {
-        "id": "15fde17e87dc8462",
+        "id": "9a6d574db64a1fca",
         "type": "tabs",
         "children": [
           {
-            "id": "2be240e48bd4ef35",
+            "id": "0c66fc361efd69e3",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {}
+              "type": "markdown",
+              "state": {
+                "file": "Algebra lineare/Matrici.md",
+                "mode": "source",
+                "source": false
+              }
             }
           }
         ]
@@ -82,6 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "Algebra lineare/Matrici.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -98,6 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "Algebra lineare/Matrici.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -119,7 +125,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "Algebra lineare/Matrici.md"
+              }
             }
           }
         ]
@@ -129,17 +137,17 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "2be240e48bd4ef35",
+  "active": "0c66fc361efd69e3",
   "lastOpenFiles": [
     "Algebra lineare/Sistemi lineari.md",
     "Algebra lineare/Matrici.md",
-    "Algebra lineare/Rette e piani.md",
-    "Algebra lineare/Vettori.md",
-    "Algebra lineare/Numeri Complessi.md",
-    "Calcolo 1/Funzioni/Funzioni elementari.md",
-    "Matematica discreta/Il principio di induzione.md",
-    "Architettura degli elaboratori/Circuiti logici/Circuiti combinatori.md",
+    "Calcolo 1/Derivate/Cos'è una derivata.md",
     "Architettura degli elaboratori/MIPS/Linguaggio macchina MIPS.md",
-    "Calcolo 1/Limiti/Limiti notevoli.md"
+    "Architettura degli elaboratori/MIPS/ALU.md",
+    "Architettura degli elaboratori/Circuiti logici/Circuiti combinatori.md",
+    "Calcolo 1/Limiti/Definizione di un limite.md",
+    "Calcolo 1/Limiti/Funzioni continue.md",
+    "Calcolo 1/Limiti/Limiti notevoli.md",
+    "Architettura degli elaboratori/Circuiti logici/Porte logiche.md"
   ]
 }
