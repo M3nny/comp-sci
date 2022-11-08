@@ -8,7 +8,7 @@
   "complementAutomatically": true,
   "delayMilliSeconds": 0,
   "disableSuggestionsDuringImeOn": false,
-  "insertAfterCompletion": true,
+  "insertAfterCompletion": false,
   "firstCharactersDisableSuggestions": ":/^",
   "showMatchStrategy": true,
   "showComplementAutomatically": true,
@@ -588,6 +588,54 @@
         "currentFile": {
           "count": 1,
           "lastUpdated": 1667823201570
+        }
+      }
+    },
+    "ottengo": {
+      "ottengo": {
+        "currentFile": {
+          "count": 1,
+          "lastUpdated": 1667915049621
+        }
+      }
+    },
+    "Otteniamo": {
+      "Otteniamo": {
+        "currentFile": {
+          "count": 1,
+          "lastUpdated": 1667915058689
+        }
+      }
+    },
+    "Binvert": {
+      "Binvert": {
+        "currentFile": {
+          "count": 1,
+          "lastUpdated": 1667915087245
+        }
+      }
+    },
+    "Operation": {
+      "Operation": {
+        "currentFile": {
+          "count": 1,
+          "lastUpdated": 1667915096026
+        }
+      }
+    },
+    "Istruzione": {
+      "Istruzione": {
+        "currentFile": {
+          "count": 2,
+          "lastUpdated": 1667918666170
+        }
+      }
+    },
+    "res_{31}": {
+      "res_{31}": {
+        "currentFile": {
+          "count": 1,
+          "lastUpdated": 1667920329794
         }
       }
     }

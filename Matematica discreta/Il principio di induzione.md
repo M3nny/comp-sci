@@ -19,7 +19,7 @@ Il principio di induzione forte viene utilizzato per fare più ipotesi e andare 
 
 Per dimostrare $P(x)$ è vera per ogni numero naturale $x \geq k$ è sufficiente mostrare che:
 - $P(k)$ è vera (**caso base**);
-- $P(k) \implies P(n+1) \forall n \geq k$ (**passo induttivo**)
+- $P(k) \implies P(n+1) \space \forall n \geq k$ (**passo induttivo**).
 
 >[!Example]
 >**Dimostrare che ogni numero naturale $n\geq 2$ è scomponibile in fattori primi**:
@@ -43,3 +43,38 @@ Per dimostrare $P(x)$ è vera per ogni numero naturale $x \geq k$ è sufficient
 >Quindi $n+1 = y \cdot z=(p_1\cdot \cdot  \cdot p_r)(q_1 \cdot \cdot \cdot q_s)$
 >Cioè $n+1$ ammette una scomposizione in fattori primi.
 >
+
+## Funzioni ricorsive
+Le funzioni ricorsive vengono utilizzare per esprimere facilmente una funzione.
+Posso definire una funzione ricorsiva se essa non possiede catene discendenti infinite.
+
+Per dimostrare che $P(x)$ è vera $\forall n \in \mathbb{N}$  basta dimostrare che:
+- $P(0)$ è vera (**caso base**);
+- $P(n-1) \implies P(n) \space \forall n > 0$ (**passo induttivo**).
+
+>[!Example]
+>$$f(n)=2$$
+>Possiamo definirla in modo induttivo come segue:
+>**caso base** $n=0$:
+>$f(0)=2^0=1$
+>**Passo induttivo** $n>0$:
+>$f(n)=2^n=2^{n-1}\cdot 2$
+>Possiamo riscriverla come:
+>$$\begin{cases}
+>1 & \text{se }n=0\\
+>2\cdot f(n-1) & \text{se } n>0
+>\end{cases}$$
+>
+>Dimostrare che la funzione $f(n)=2^n$ è "ben definita" (che fa quello che ci aspettiamo) per ogni numero naturale in $n$:
+>**Caso base** $n=0$:
+>$f(n)=1=2^0$
+>**Ipotesi induttiva**:
+>Assumiamo ben definita $f(n-1)=2^{n-1}$
+>**Passo induttivo**:
+>Dimostro che $f(n)=2^n$
+>
+>$$f(n)=2\cdot f(n-1) \text{ per definizione di f}$$
+>$$=2\cdot 2^{n-1} \text{ per ipotesi induttiva}$$
+>$$=2^n \text{ per le regole dell'algebra}$$
+
+
