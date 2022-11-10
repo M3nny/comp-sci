@@ -61,6 +61,9 @@ $$\sum_{i=1}^na_{ii}$$
 Se voglio fare il prodotto tra due matrici devo assicurarmi che le **colonne della prima siano uguali alle righe della seconda**.
 Ad esempio si potrebbe fare il prodotto tra $A (m\times n)$ e $B(n\times s$).
 Andremo poi ad ottenere dal prodotto, una matrice $m\times s$
+
+Possiamo scrivere il prodotto tra due matrici come:
+
 >[!Example]
 >$$A=\begin{bmatrix} 2&1&5\\1&3&2 \end{bmatrix} \quad B=\begin{bmatrix} 3&4\\-1&2\\2&1 \end{bmatrix}$$
 >Il prodotto $A\cdot B$ sarà di dimensioni $2\times 2$
@@ -81,5 +84,17 @@ Andremo poi ad ottenere dal prodotto, una matrice $m\times s$
 >[!Attention]
 >Il prodotto **non è** commutativo: $AB \neq BA$
 
+## Vettori come matrici
+I vettori posso essere suddivisi in:
+- Matrici riga;
+- Matrici colonna;
 
+Il prodotto tra vettori deve sempre essere del tipo m.riga x m.colonna, dato che solo in questo caso si potrà avere il prodotto in quanto le colonne del primo sono uguali alle righe del secondo.
 
+Nel caso dovessi avere due vettori colonna, per moltiplicarli dovrò prima fare la matrice trasposta.
+>[!Example]
+>a=v.colonna $nx1$
+>b=v.colonna $nx1$
+>Per moltiplicarli dovrò fare:
+>$$a^t\cdot b$$
+>Il quale risultato sarà **1 singolo valore**.

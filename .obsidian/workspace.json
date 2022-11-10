@@ -4,19 +4,15 @@
     "type": "split",
     "children": [
       {
-        "id": "62e206ff97d9bd85",
+        "id": "396f0273fb6c1bb7",
         "type": "tabs",
         "children": [
           {
-            "id": "5723d4c84e6753c7",
+            "id": "f62e0599a491f51e",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Matematica discreta/Il principio di induzione.md",
-                "mode": "source",
-                "source": false
-              }
+              "type": "empty",
+              "state": {}
             }
           }
         ]
@@ -69,8 +65,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "right": {
     "id": "282a9548711da6a0",
@@ -86,7 +81,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Matematica discreta/Il principio di induzione.md",
+                "file": "Calcolo 1/Derivate/Algebra delle derivate.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +98,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Matematica discreta/Il principio di induzione.md",
+                "file": "Calcolo 1/Derivate/Algebra delle derivate.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +121,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Matematica discreta/Il principio di induzione.md"
+                "file": "Calcolo 1/Derivate/Algebra delle derivate.md"
               }
             }
           },
@@ -146,17 +141,17 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "5723d4c84e6753c7",
+  "active": "a1163d9af64d6878",
   "lastOpenFiles": [
-    "Calcolo 1/Limiti/Funzioni continue.md",
-    "Matematica discreta/Il principio di induzione.md",
-    "Calcolo 1/Limiti/Limiti notevoli.md",
-    "Architettura degli elaboratori/MIPS/ALU.md",
     "Calcolo 1/Derivate/Derivate delle funzioni elementari.md",
-    "Calcolo 1/Derivate/Algebra delle derivate.md",
-    "Calcolo 1/Derivate/Cos'è una derivata.md",
-    "Calcolo 1/Funzioni/Funzioni elementari.md",
-    "Calcolo 1/Funzioni/Operazioni tra funzioni.md",
-    "Calcolo 1/Funzioni/Cos'è una funzione.md"
+    "Architettura degli elaboratori/MIPS/Moltiplicazione e divisione intere.md",
+    "Architettura degli elaboratori/MIPS/ALU.md",
+    "Architettura degli elaboratori/MIPS/Linguaggio macchina MIPS.md",
+    "Algebra lineare/Rette e piani.md",
+    "Algebra lineare/Grafi.md",
+    "Algebra lineare/Matrici.md",
+    "Algebra lineare/Vettori.md",
+    "Matematica discreta/Le sommatorie.md",
+    "Calcolo 1/Funzioni/Funzioni elementari.md"
   ]
 }
