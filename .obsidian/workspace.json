@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "396f0273fb6c1bb7",
+        "id": "4e90b688e92937a7",
         "type": "tabs",
         "children": [
           {
-            "id": "f62e0599a491f51e",
+            "id": "e1e89a306cc25f22",
             "type": "leaf",
             "state": {
               "type": "empty",
@@ -81,7 +81,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Calcolo 1/Derivate/Algebra delle derivate.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -98,7 +97,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Calcolo 1/Derivate/Algebra delle derivate.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -120,9 +118,7 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "Calcolo 1/Derivate/Algebra delle derivate.md"
-              }
+              "state": {}
             }
           },
           {
@@ -141,17 +137,17 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "a1163d9af64d6878",
+  "active": "e1e89a306cc25f22",
   "lastOpenFiles": [
+    "Calcolo 1/Derivate/Proprietà locali.md",
+    "Calcolo 1/Insiemistica/Insiemi.md",
+    "Calcolo 1/Insiemistica/Cardinalità e numerabilità.md",
+    "Calcolo 1/Insiemistica/Elementi di topologia di R.md",
+    "Calcolo 1/Derivate/Algebra delle derivate.md",
     "Calcolo 1/Derivate/Derivate delle funzioni elementari.md",
-    "Architettura degli elaboratori/MIPS/Moltiplicazione e divisione intere.md",
-    "Architettura degli elaboratori/MIPS/ALU.md",
-    "Architettura degli elaboratori/MIPS/Linguaggio macchina MIPS.md",
-    "Algebra lineare/Rette e piani.md",
-    "Algebra lineare/Grafi.md",
+    "Calcolo 1/Derivate/Cos'è una derivata.md",
     "Algebra lineare/Matrici.md",
-    "Algebra lineare/Vettori.md",
-    "Matematica discreta/Le sommatorie.md",
-    "Calcolo 1/Funzioni/Funzioni elementari.md"
+    "Architettura degli elaboratori/MIPS/Moltiplicazione e divisione intere.md",
+    "Architettura degli elaboratori/MIPS/ALU.md"
   ]
 }

@@ -16,3 +16,6 @@ Siano $f$ e $g$ funzioni derivabili, la derivata della loro funzione composta sa
 $$D(f \circ g)(x_0)=f'(g(x_0))\cdot g'(x_0)$$
 ### Derivata della funzione inversa
 $$g'(y_0)=\frac{1}{f'(x_0)}$$
+### Retta tangente che passa per un punto
+Indichiamo così la retta che passa per $(x_0, f(x_0))$:
+$$y=f'(x_0)\cdot(x-x_0)+f(x_0)$$

@@ -21,3 +21,4 @@
 | $\cosh(x)$             | $\sinh(x)$ |
 | $arcsinh(x)$             | $\frac{1}{\sqrt{x^2+1}}$ |
 | $arccosh(x)$             | $\frac{1}{\sqrt{x^2}-1}$ |
+

@@ -726,6 +726,38 @@
           "lastUpdated": 1668104198979
         }
       }
+    },
+    "I_{x_0}": {
+      "I_{x_0}": {
+        "currentFile": {
+          "count": 7,
+          "lastUpdated": 1668424148461
+        }
+      }
+    },
+    "crescente": {
+      "crescente": {
+        "currentFile": {
+          "count": 2,
+          "lastUpdated": 1668423800374
+        }
+      }
+    },
+    "decrescente": {
+      "decrescente": {
+        "currentFile": {
+          "count": 1,
+          "lastUpdated": 1668423764651
+        }
+      }
+    },
+    "stazionari": {
+      "stazionari": {
+        "currentFile": {
+          "count": 1,
+          "lastUpdated": 1668424050745
+        }
+      }
     }
   }
 }
