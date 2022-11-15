@@ -758,6 +758,14 @@
           "lastUpdated": 1668424050745
         }
       }
+    },
+    "deasserted": {
+      "deasserted": {
+        "currentFile": {
+          "count": 1,
+          "lastUpdated": 1668519780079
+        }
+      }
     }
   }
 }

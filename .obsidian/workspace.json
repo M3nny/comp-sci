@@ -8,11 +8,15 @@
         "type": "tabs",
         "children": [
           {
-            "id": "e1e89a306cc25f22",
+            "id": "543d3bccafc12e4e",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {}
+              "type": "markdown",
+              "state": {
+                "file": "Architettura degli elaboratori/Memorie/Elementi di memoria.md",
+                "mode": "source",
+                "source": false
+              }
             }
           }
         ]
@@ -65,7 +69,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "right": {
     "id": "282a9548711da6a0",
@@ -81,6 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "Architettura degli elaboratori/Memorie/Elementi di memoria.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -97,6 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "Architettura degli elaboratori/Memorie/Elementi di memoria.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -118,7 +125,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "Architettura degli elaboratori/Memorie/Elementi di memoria.md"
+              }
             }
           },
           {
@@ -137,8 +146,10 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "e1e89a306cc25f22",
+  "active": "543d3bccafc12e4e",
   "lastOpenFiles": [
+    "Architettura degli elaboratori/MIPS/ALU.md",
+    "Architettura degli elaboratori/MIPS/Moltiplicazione e divisione intere.md",
     "Calcolo 1/Derivate/Proprietà locali.md",
     "Calcolo 1/Insiemistica/Insiemi.md",
     "Calcolo 1/Insiemistica/Cardinalità e numerabilità.md",
@@ -146,8 +157,6 @@
     "Calcolo 1/Derivate/Algebra delle derivate.md",
     "Calcolo 1/Derivate/Derivate delle funzioni elementari.md",
     "Calcolo 1/Derivate/Cos'è una derivata.md",
-    "Algebra lineare/Matrici.md",
-    "Architettura degli elaboratori/MIPS/Moltiplicazione e divisione intere.md",
-    "Architettura degli elaboratori/MIPS/ALU.md"
+    "Algebra lineare/Matrici.md"
   ]
 }
