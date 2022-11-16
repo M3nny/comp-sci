@@ -40,7 +40,7 @@ Considerando la matrice $A=(a_{ij})\space m\times n$, la **matrice trasposta** s
 Da notare che $(A^t)^t=A$ 
 
 ## Matrice quadrata
-Una matrice è quadrata quando è di dimensioni $n\times n$
+Una matrice è quadrata quando è di dimensioni $n\times n$ e il determinante è $\neq 0$.
 Vediamo ora le operazioni che possiamo eseguire e i tipi di matrice quadrata:
 
 ### Simmetrica

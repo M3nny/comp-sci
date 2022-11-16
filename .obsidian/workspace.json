@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "4e90b688e92937a7",
+        "id": "1fdec7b93a9abe0b",
         "type": "tabs",
         "children": [
           {
-            "id": "543d3bccafc12e4e",
+            "id": "04c122a0335e70b1",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Architettura degli elaboratori/Memorie/Elementi di memoria.md",
+                "file": "Matematica discreta/Aritmetica modulare.md",
                 "mode": "source",
                 "source": false
               }
@@ -86,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Architettura degli elaboratori/Memorie/Elementi di memoria.md",
+                "file": "Matematica discreta/Aritmetica modulare.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Architettura degli elaboratori/Memorie/Elementi di memoria.md",
+                "file": "Matematica discreta/Aritmetica modulare.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +126,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Architettura degli elaboratori/Memorie/Elementi di memoria.md"
+                "file": "Matematica discreta/Aritmetica modulare.md"
               }
             }
           },
@@ -138,25 +138,24 @@
               "state": {}
             }
           }
-        ],
-        "currentTab": 4
+        ]
       }
     ],
     "direction": "horizontal",
     "width": 300,
     "collapsed": true
   },
-  "active": "543d3bccafc12e4e",
+  "active": "a1163d9af64d6878",
   "lastOpenFiles": [
+    "Algebra lineare/Matrici.md",
+    "Matematica discreta/Aritmetica modulare.md",
+    "Matematica discreta/Le sommatorie.md",
+    "Architettura degli elaboratori/Memorie/Elementi di memoria.md",
     "Architettura degli elaboratori/MIPS/ALU.md",
     "Architettura degli elaboratori/MIPS/Moltiplicazione e divisione intere.md",
     "Calcolo 1/Derivate/Proprietà locali.md",
     "Calcolo 1/Insiemistica/Insiemi.md",
     "Calcolo 1/Insiemistica/Cardinalità e numerabilità.md",
-    "Calcolo 1/Insiemistica/Elementi di topologia di R.md",
-    "Calcolo 1/Derivate/Algebra delle derivate.md",
-    "Calcolo 1/Derivate/Derivate delle funzioni elementari.md",
-    "Calcolo 1/Derivate/Cos'è una derivata.md",
-    "Algebra lineare/Matrici.md"
+    "Calcolo 1/Insiemistica/Elementi di topologia di R.md"
   ]
 }
