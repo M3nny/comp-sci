@@ -42,3 +42,16 @@ $$y=f'(x)(x-x_0)+f(x_0)$$
 >>- **ATTENZIONE**: $f$ continua in $x_0$ non implica $f$ derivabile in $x_0$, ad esempio $f=\sqrt{x}$ è continua ma non è derivabile (nel punto $0$ in questo caso), lo stesso per $f=|x|$
 
 
+### Teorema di Lagrange
+Avendo una funzione definita in un intervallo $[a,b]$ e derivabile in $]a,b[$ allora esiste un punto nell'intervallo $[a,b]$ la cui tangente è parallela alla retta che passa per $(a,f(a))$ e $(b,(fb))$.
+$$f'(c)=\frac{f(b)-f(a)}{b-a}$$
+![[Lagrange.png|300]]
+### Teorema di Rolle
+Il teorema di Rolle è una conseguenza del teorema di Lagrange.
+Sia $f:[a,b] \to \mathbb{R}$ una funzione continua in $[a,b]$ e derivabile in $]a,b[$ tale che $f(a)=f(b)$, allora esiste un punto tale che $f'(c)=0$.
+
+---
+- Se due derivate sono uguali, allora le loro funzioni di partenza differiscono di una costante;
+- Se $f'(x)>0$ allora $f(x)$ è strettamente crescente;
+- Se $f'(x)<0$ allora $f(x)$ è strettamente decrescente.
+---

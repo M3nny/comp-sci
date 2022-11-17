@@ -98,3 +98,34 @@ Nel caso dovessi avere due vettori colonna, per moltiplicarli dovrò prima fare 
 >Per moltiplicarli dovrò fare:
 >$$a^t\cdot b$$
 >Il quale risultato sarà **1 singolo valore**.
+
+---
+## Matrici elementari
+Sono definite per interpretare le mosse di Gauss e sono di tre tipi:
+1. **Scambio di righe**;
+2. **Moltiplicazione di una riga per uno scalare**;
+3. **Combinazione lineare**, ovvero aggiungere ad una riga un'altra riga moltiplicata per uno scalare.
+==Tutte le matrici elementari sono invertibili==.
+
+## Determinante
+Può essere calcolato se la matrice è quadrata.
+##### Matrice $2x2$:
+$$det(A)=(a_{11}\cdot a_{22})- (a_{12}\cdot a_{21})$$
+## Matrici inverse
+Una matrice quadrata $A$ di ordine $n$ è detta invertibile se il prodotto $A\cdot A^{-1}$ restituisce una matrice identità di ordine $n$.
+
+## Matrici a scala
+Sono matrici dove il primo valore non nullo di una riga si trova dopo il valore non nullo della riga precedente:
+$$\begin{bmatrix} 0 & 1 & 5 & 0 & 3 & 1\\ 0 & 0 & 9 & 2 & 5 & 2\\ 0 & 0 & 0 & 0 & 5 & 6\\ 0 & 0 & 0 & 0 & 0 & 1 \end{bmatrix}$$
+
+### Forma ridotta
+In questo tipo particolare di matrice a scala:
+- Il primo elemento non nullo di ogni riga deve essere $1$;
+- Ci deve essere al massimo un $1$ per colonna e se presente non devono esserci altri numeri;
+- Le colonne senza $1$ possono avere i valori che vogliono.
+$$\begin{bmatrix} 1 & 0 & 0 & 0 & 0 & 7\\ 0 & 1 & 0 & 0 & 0 & 2\\ 0 & 0 & 0 & 1 & 0 & 6\\ 0 & 0 & 0 & 0 & 1 & 0\\ 0 & 0 & 0 & 0 & 0 & 0\ \end{bmatrix}$$
+
+Per trasformare una matrice a scala in una matrice ridotta:
+- Si prende la prima riga non nulla;
+- Si divide la riga per il suo primo elemento a sinistra;
+- Si procede per ogni riga.

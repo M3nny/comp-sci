@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "1fdec7b93a9abe0b",
+        "id": "90a0c2daeda9fe29",
         "type": "tabs",
         "children": [
           {
-            "id": "04c122a0335e70b1",
+            "id": "9c3f600f702e9941",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Matematica discreta/Aritmetica modulare.md",
+                "file": "Algebra lineare/Matrici.md",
                 "mode": "source",
                 "source": false
               }
@@ -86,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Matematica discreta/Aritmetica modulare.md",
+                "file": "Algebra lineare/Matrici.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Matematica discreta/Aritmetica modulare.md",
+                "file": "Algebra lineare/Matrici.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +126,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Matematica discreta/Aritmetica modulare.md"
+                "file": "Algebra lineare/Matrici.md"
               }
             }
           },
@@ -147,15 +147,15 @@
   },
   "active": "a1163d9af64d6878",
   "lastOpenFiles": [
+    "Calcolo 1/Derivate/Cos'è una derivata.md",
+    "Calcolo 1/Derivate/Algebra delle derivate.md",
+    "Calcolo 1/Derivate/Asintoti.md",
     "Algebra lineare/Matrici.md",
     "Matematica discreta/Aritmetica modulare.md",
     "Matematica discreta/Le sommatorie.md",
     "Architettura degli elaboratori/Memorie/Elementi di memoria.md",
     "Architettura degli elaboratori/MIPS/ALU.md",
     "Architettura degli elaboratori/MIPS/Moltiplicazione e divisione intere.md",
-    "Calcolo 1/Derivate/Proprietà locali.md",
-    "Calcolo 1/Insiemistica/Insiemi.md",
-    "Calcolo 1/Insiemistica/Cardinalità e numerabilità.md",
-    "Calcolo 1/Insiemistica/Elementi di topologia di R.md"
+    "Calcolo 1/Derivate/Proprietà locali.md"
   ]
 }

@@ -98,8 +98,8 @@
     "funzione": {
       "funzione": {
         "currentFile": {
-          "count": 2,
-          "lastUpdated": 1666369723196
+          "count": 3,
+          "lastUpdated": 1668701257565
         }
       }
     },
@@ -298,8 +298,8 @@
     "\\mathbb{R}": {
       "\\mathbb{R}": {
         "currentFile": {
-          "count": 7,
-          "lastUpdated": 1667495411261
+          "count": 8,
+          "lastUpdated": 1668701241913
         }
       }
     },
@@ -820,6 +820,78 @@
         "currentFile": {
           "count": 1,
           "lastUpdated": 1668613990937
+        }
+      }
+    },
+    "\\lim_{x\\to": {
+      "\\lim_{x\\to": {
+        "currentFile": {
+          "count": 1,
+          "lastUpdated": 1668698000667
+        }
+      }
+    },
+    "\\text{": {
+      "\\text{": {
+        "currentFile": {
+          "count": 1,
+          "lastUpdated": 1668698016474
+        }
+      }
+    },
+    "oppure": {
+      "oppure": {
+        "currentFile": {
+          "count": 1,
+          "lastUpdated": 1668698018917
+        }
+      }
+    },
+    "definiamo": {
+      "definiamo": {
+        "currentFile": {
+          "count": 1,
+          "lastUpdated": 1668698085055
+        }
+      }
+    },
+    "asintoto": {
+      "asintoto": {
+        "currentFile": {
+          "count": 1,
+          "lastUpdated": 1668698089359
+        }
+      }
+    },
+    "Asintoto": {
+      "Asintoto": {
+        "currentFile": {
+          "count": 1,
+          "lastUpdated": 1668698220052
+        }
+      }
+    },
+    "orizzontale": {
+      "orizzontale": {
+        "currentFile": {
+          "count": 1,
+          "lastUpdated": 1668698222187
+        }
+      }
+    },
+    "obliquo": {
+      "obliquo": {
+        "currentFile": {
+          "count": 1,
+          "lastUpdated": 1668698232854
+        }
+      }
+    },
+    "coefficiente": {
+      "coefficiente": {
+        "currentFile": {
+          "count": 1,
+          "lastUpdated": 1668699726903
         }
       }
     }
