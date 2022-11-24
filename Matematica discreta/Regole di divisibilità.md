@@ -16,3 +16,9 @@ Criteri di divisibilità per:
 	$c_0+2c_1+4c_2$ è multiplo di 8;
 - **9**: la somma della cifre di $a$ ritorna un multiplo di 9;
 - **10**: l'ultima cifra è 0.
+
+>[!Teorema divisibilità]
+>Siano $a,b,c,r \in \mathbb{Z}$
+>$$a=b\cdot q +r$$
+>Se $c|a$ e $c|b$ allora $c|r$
+

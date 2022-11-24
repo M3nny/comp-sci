@@ -55,3 +55,7 @@ Sia $f:[a,b] \to \mathbb{R}$ una funzione continua in $[a,b]$ e derivabile in $]
 - Se $f'(x)>0$ allora $f(x)$ è strettamente crescente;
 - Se $f'(x)<0$ allora $f(x)$ è strettamente decrescente.
 ---
+### Teorema di De L'Hopital
+Utilizzato per risolvere forme indeterminate, funziona il 99% dei casi.
+_Non funziona quando il primo limite esiste ma il secondo no_.
+$$\lim_{x\to x_0}\frac{f(x)}{g(x)}=\lim\limits_{x\to x_0}\frac{f'(x)}{g'(x)}$$
