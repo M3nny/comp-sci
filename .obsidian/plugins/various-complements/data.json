@@ -71,67 +71,11 @@
         }
       }
     },
-    "integrated": {
-      "integrated": {
-        "currentFile": {
-          "count": 1,
-          "lastUpdated": 1666872348046
-        }
-      }
-    },
-    "Integrated": {
-      "Integrated": {
-        "currentFile": {
-          "count": 4,
-          "lastUpdated": 1666872413408
-        }
-      }
-    },
-    "Scale": {
-      "Scale": {
-        "currentFile": {
-          "count": 1,
-          "lastUpdated": 1666872372621
-        }
-      }
-    },
-    "input": {
-      "input": {
-        "currentFile": {
-          "count": 2,
-          "lastUpdated": 1666876523180
-        }
-      }
-    },
-    "Programmable": {
-      "Programmable": {
-        "currentFile": {
-          "count": 1,
-          "lastUpdated": 1666878129842
-        }
-      }
-    },
-    "Istruzioni": {
-      "Istruzioni": {
-        "currentFile": {
-          "count": 1,
-          "lastUpdated": 1666879267078
-        }
-      }
-    },
     "registri": {
       "registri": {
         "currentFile": {
           "count": 3,
           "lastUpdated": 1669128819714
-        }
-      }
-    },
-    "x^3+x^2+x+1": {
-      "x^3+x^2+x+1": {
-        "currentFile": {
-          "count": 1,
-          "lastUpdated": 1666880940819
         }
       }
     },
@@ -210,8 +154,8 @@
     "soluzioni": {
       "soluzioni": {
         "currentFile": {
-          "count": 1,
-          "lastUpdated": 1667405896257
+          "count": 2,
+          "lastUpdated": 1669474778691
         }
       }
     },
@@ -650,8 +594,8 @@
     "\\mathbb{N}": {
       "\\mathbb{N}": {
         "currentFile": {
-          "count": 1,
-          "lastUpdated": 1668613832121
+          "count": 2,
+          "lastUpdated": 1669474843413
         }
       }
     },
@@ -868,6 +812,46 @@
         "currentFile": {
           "count": 1,
           "lastUpdated": 1669311212521
+        }
+      }
+    },
+    "Bezout": {
+      "Bezout": {
+        "currentFile": {
+          "count": 2,
+          "lastUpdated": 1669474768731
+        }
+      }
+    },
+    "\\mathbb{N}^+": {
+      "\\mathbb{N}^+": {
+        "currentFile": {
+          "count": 1,
+          "lastUpdated": 1669474064355
+        }
+      }
+    },
+    "equazione": {
+      "equazione": {
+        "currentFile": {
+          "count": 1,
+          "lastUpdated": 1669474605919
+        }
+      }
+    },
+    "soluzione": {
+      "soluzione": {
+        "currentFile": {
+          "count": 1,
+          "lastUpdated": 1669474611104
+        }
+      }
+    },
+    "generalizzato": {
+      "generalizzato": {
+        "currentFile": {
+          "count": 1,
+          "lastUpdated": 1669474796495
         }
       }
     }

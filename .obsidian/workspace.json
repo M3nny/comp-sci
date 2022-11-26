@@ -8,7 +8,7 @@
         "type": "tabs",
         "children": [
           {
-            "id": "38180ac098a14413",
+            "id": "80145970a4bf1c38",
             "type": "leaf",
             "state": {
               "type": "empty",
@@ -65,8 +65,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "right": {
     "id": "282a9548711da6a0",
@@ -137,17 +136,17 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "38180ac098a14413",
+  "active": "80145970a4bf1c38",
   "lastOpenFiles": [
+    "Calcolo 1/Infiniti e infinitesimi/Infiniti e infinitesimi.md",
+    "Calcolo 1/Infiniti e infinitesimi/Studio di funzione.md",
+    "Calcolo 1/Infiniti e infinitesimi/Concavità, convessità e flessi.md",
+    "Matematica discreta/mcm e MCD.md",
     "Architettura degli elaboratori/Specifica e sintesi di circuiti sequenziali/Introduzione.md",
     "Architettura degli elaboratori/Specifica e sintesi di circuiti sequenziali/Moore.md",
     "Architettura degli elaboratori/Memoria e circuiti sequenziali/Uso degli elementi di memoria nei circuiti sequenziali.md",
     "Architettura degli elaboratori/Memoria e circuiti sequenziali/Elementi di memoria.md",
-    "Matematica discreta/mcm e MCD.md",
     "Matematica discreta/Regole di divisibilità.md",
-    "Calcolo 1/Infiniti e infinitesimi/Concavità, convessità e flessi.md",
-    "Calcolo 1/Derivate/Cos'è una derivata.md",
-    "Calcolo 1/Derivate/Asintoti.md",
-    "Calcolo 1/Derivate/Algebra delle derivate.md"
+    "Calcolo 1/Derivate/Cos'è una derivata.md"
   ]
 }
