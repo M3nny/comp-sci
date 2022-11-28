@@ -8,7 +8,7 @@
         "type": "tabs",
         "children": [
           {
-            "id": "80145970a4bf1c38",
+            "id": "e13bdc58a0004138",
             "type": "leaf",
             "state": {
               "type": "empty",
@@ -65,7 +65,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "right": {
     "id": "282a9548711da6a0",
@@ -136,17 +137,17 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "80145970a4bf1c38",
+  "active": "a1163d9af64d6878",
   "lastOpenFiles": [
     "Calcolo 1/Infiniti e infinitesimi/Infiniti e infinitesimi.md",
-    "Calcolo 1/Infiniti e infinitesimi/Studio di funzione.md",
-    "Calcolo 1/Infiniti e infinitesimi/Concavità, convessità e flessi.md",
-    "Matematica discreta/mcm e MCD.md",
-    "Architettura degli elaboratori/Specifica e sintesi di circuiti sequenziali/Introduzione.md",
-    "Architettura degli elaboratori/Specifica e sintesi di circuiti sequenziali/Moore.md",
-    "Architettura degli elaboratori/Memoria e circuiti sequenziali/Uso degli elementi di memoria nei circuiti sequenziali.md",
-    "Architettura degli elaboratori/Memoria e circuiti sequenziali/Elementi di memoria.md",
-    "Matematica discreta/Regole di divisibilità.md",
-    "Calcolo 1/Derivate/Cos'è una derivata.md"
+    "Calcolo 1/Successioni e serie numeriche/Successioni.md",
+    "Calcolo 1/Funzioni/Funzioni elementari.md",
+    "Calcolo 1/Funzioni/Operazioni tra funzioni.md",
+    "Calcolo 1/Funzioni/Cos'è una funzione.md",
+    "Calcolo 1/Insiemistica/Elementi di topologia di R.md",
+    "Calcolo 1/Insiemistica/Cardinalità e numerabilità.md",
+    "Calcolo 1/Insiemistica/Assiomi dei numeri reali.md",
+    "Calcolo 1/Insiemistica/Insiemi.md",
+    "Calcolo 1/Infiniti e infinitesimi/Polinomio di Taylor.md"
   ]
 }

@@ -33,3 +33,4 @@ $f=O(g)$   $f$ è 'o grande' di $g$
 #### Principio di sostituzione degli infiniti
 Siano $f_1, f_2, g_1, g_2$ infiniti simultanei (stesso ordine di infinito) in $x_0$, allora:
 $$\lim_{x\to x_0}\frac{f_1(x)+f_2(x)}{g_1(x)+g_2(x)}=\lim_{x\to x_0}\frac{f_1(x)}{g_1(x)}$$
+![[Algebra o piccolo.png|720]]
