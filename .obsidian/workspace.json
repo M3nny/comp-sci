@@ -8,7 +8,7 @@
         "type": "tabs",
         "children": [
           {
-            "id": "e13bdc58a0004138",
+            "id": "688dd1e939d41796",
             "type": "leaf",
             "state": {
               "type": "empty",
@@ -137,8 +137,9 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "a1163d9af64d6878",
+  "active": "688dd1e939d41796",
   "lastOpenFiles": [
+    "Matematica discreta/Numeri primi.md",
     "Calcolo 1/Infiniti e infinitesimi/Infiniti e infinitesimi.md",
     "Calcolo 1/Successioni e serie numeriche/Successioni.md",
     "Calcolo 1/Funzioni/Funzioni elementari.md",
@@ -147,7 +148,6 @@
     "Calcolo 1/Insiemistica/Elementi di topologia di R.md",
     "Calcolo 1/Insiemistica/Cardinalità e numerabilità.md",
     "Calcolo 1/Insiemistica/Assiomi dei numeri reali.md",
-    "Calcolo 1/Insiemistica/Insiemi.md",
-    "Calcolo 1/Infiniti e infinitesimi/Polinomio di Taylor.md"
+    "Calcolo 1/Insiemistica/Insiemi.md"
   ]
 }
