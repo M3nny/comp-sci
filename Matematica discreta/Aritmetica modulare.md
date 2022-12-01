@@ -31,11 +31,12 @@ Un **anello** $(A,+,\cdot )$ è un insieme in cui sono definite due operazioni t
 - $(A,+)$ è un gruppo abeliano;
 - $\cdot$ è associativa;
 - Valgono le leggi distributive di $\cdot$ ;
-Si dice **commutativo** se l'operazione $\cdot$ è commutativa.
-Si dice con **identità** se esiste l'elemento neutro per ogni elemento dell'insieme.
+Si dice **commutativo** se: l'operazione $\cdot$ è commutativa.
+Si dice con **identità** se: esiste l'elemento neutro per ogni elemento dell'insieme.
+Si dice **invertibile** se: $\exists a' \in A: a\cdot a' = a'\cdot a = 1$
 
 ### Campi
-Un **campo** $(C, + , \cdot )$ è un insieme in cui sono definite due operazione tali che:
+Un **campo** $(C, + , \cdot )$ è un anello in cui sono definite due operazione tali che:
 - $(C, + , \cdot )$ è un anello commutativo con identità;
 - Ogni elemento $\neq 0$ è invertibile.
 

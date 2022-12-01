@@ -8,7 +8,7 @@
         "type": "tabs",
         "children": [
           {
-            "id": "688dd1e939d41796",
+            "id": "ca4b68598886782d",
             "type": "leaf",
             "state": {
               "type": "empty",
@@ -44,7 +44,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "assio",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -137,17 +137,17 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "688dd1e939d41796",
+  "active": "ca4b68598886782d",
   "lastOpenFiles": [
-    "Matematica discreta/Numeri primi.md",
-    "Calcolo 1/Infiniti e infinitesimi/Infiniti e infinitesimi.md",
     "Calcolo 1/Successioni e serie numeriche/Successioni.md",
-    "Calcolo 1/Funzioni/Funzioni elementari.md",
-    "Calcolo 1/Funzioni/Operazioni tra funzioni.md",
-    "Calcolo 1/Funzioni/Cos'è una funzione.md",
-    "Calcolo 1/Insiemistica/Elementi di topologia di R.md",
-    "Calcolo 1/Insiemistica/Cardinalità e numerabilità.md",
-    "Calcolo 1/Insiemistica/Assiomi dei numeri reali.md",
-    "Calcolo 1/Insiemistica/Insiemi.md"
+    "Calcolo 1/Successioni e serie numeriche/Serie.md",
+    "Architettura degli elaboratori/CPU singolo ciclo.md",
+    "Architettura degli elaboratori/MIPS/Linguaggio macchina MIPS.md",
+    "Architettura degli elaboratori/Specifica e sintesi di circuiti sequenziali/Moore.md",
+    "Architettura degli elaboratori/Specifica e sintesi di circuiti sequenziali/Introduzione.md",
+    "Architettura degli elaboratori/MIPS/Moltiplicazione e divisione intere.md",
+    "Algebra lineare/Trasformazioni lineari.md",
+    "Algebra lineare/Spazi vettoriali.md",
+    "Calcolo 1/Insiemistica/Assiomi dei numeri reali.md"
   ]
 }

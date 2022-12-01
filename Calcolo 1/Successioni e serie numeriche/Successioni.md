@@ -15,3 +15,4 @@ $$\lim_{n\to+\infty}a_n=\nexists\quad \textbf{Indeterminata}$$
 >---
 >Sia $a_n$ una restrizione di $f(x)$, se il limite della funzione esiste $\lim\limits_{x\to+\infty}f(x)=\ell$, allora anche $\lim\limits_{n\to+\infty}a_n=\ell$.
 >>**Nota**: Se il $\lim\limits_{x\to+\infty}f(x)=\nexists$ allora niente si può dire sulle restrizioni di $f$ (ovvero non si può dire nulla della successione).
+
