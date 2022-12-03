@@ -63,14 +63,6 @@
         }
       }
     },
-    "\\implies": {
-      "\\implies": {
-        "currentFile": {
-          "count": 4,
-          "lastUpdated": 1667403152378
-        }
-      }
-    },
     "registri": {
       "registri": {
         "currentFile": {
@@ -87,163 +79,11 @@
         }
       }
     },
-    "induttivo": {
-      "induttivo": {
-        "currentFile": {
-          "count": 1,
-          "lastUpdated": 1667404220697
-        }
-      }
-    },
-    "induttiva": {
-      "induttiva": {
-        "currentFile": {
-          "count": 1,
-          "lastUpdated": 1667404223430
-        }
-      }
-    },
-    "\\cdot": {
-      "\\cdot": {
-        "currentFile": {
-          "count": 4,
-          "lastUpdated": 1667411320160
-        }
-      }
-    },
-    "p_1\\cdot": {
-      "p_1\\cdot": {
-        "currentFile": {
-          "count": 1,
-          "lastUpdated": 1667404389718
-        }
-      }
-    },
-    "scomposizione": {
-      "scomposizione": {
-        "currentFile": {
-          "count": 1,
-          "lastUpdated": 1667404450589
-        }
-      }
-    },
-    "fattori": {
-      "fattori": {
-        "currentFile": {
-          "count": 1,
-          "lastUpdated": 1667404452600
-        }
-      }
-    },
-    "primi": {
-      "primi": {
-        "currentFile": {
-          "count": 1,
-          "lastUpdated": 1667404454176
-        }
-      }
-    },
-    "\\mathbb{R}^3": {
-      "\\mathbb{R}^3": {
-        "currentFile": {
-          "count": 2,
-          "lastUpdated": 1667408233067
-        }
-      }
-    },
     "soluzioni": {
       "soluzioni": {
         "currentFile": {
           "count": 2,
           "lastUpdated": 1669474778691
-        }
-      }
-    },
-    "Esempio": {
-      "Esempio": {
-        "currentFile": {
-          "count": 1,
-          "lastUpdated": 1667406095815
-        }
-      }
-    },
-    "\\rightarrow": {
-      "\\rightarrow": {
-        "currentFile": {
-          "count": 2,
-          "lastUpdated": 1667406975285
-        }
-      }
-    },
-    "d_1c_1+d_2c_2": {
-      "d_1c_1+d_2c_2": {
-        "currentFile": {
-          "count": 1,
-          "lastUpdated": 1667406843009
-        }
-      }
-    },
-    "\\Rightarrow": {
-      "\\Rightarrow": {
-        "currentFile": {
-          "count": 3,
-          "lastUpdated": 1667413495602
-        }
-      }
-    },
-    "Sotrarre": {
-      "Sotrarre": {
-        "currentFile": {
-          "count": 1,
-          "lastUpdated": 1667407404242
-        }
-      }
-    },
-    "\\begin{cases}": {
-      "\\begin{cases}": {
-        "currentFile": {
-          "count": 4,
-          "lastUpdated": 1667413498851
-        }
-      }
-    },
-    "\\end{cases}": {
-      "\\end{cases}": {
-        "currentFile": {
-          "count": 3,
-          "lastUpdated": 1667411183855
-        }
-      }
-    },
-    "Esistono": {
-      "Esistono": {
-        "currentFile": {
-          "count": 1,
-          "lastUpdated": 1667408250424
-        }
-      }
-    },
-    "sistemi": {
-      "sistemi": {
-        "currentFile": {
-          "count": 1,
-          "lastUpdated": 1667408271322
-        }
-      }
-    },
-    "intersezioni": {
-      "intersezioni": {
-        "currentFile": {
-          "count": 1,
-          "lastUpdated": 1667408334233
-        }
-      }
-    },
-    "intersezione": {
-      "intersezione": {
-        "currentFile": {
-          "count": 2,
-          "lastUpdated": 1667408364888
         }
       }
     },
@@ -260,38 +100,6 @@
         "currentFile": {
           "count": 4,
           "lastUpdated": 1667498578701
-        }
-      }
-    },
-    "equazioni": {
-      "equazioni": {
-        "currentFile": {
-          "count": 1,
-          "lastUpdated": 1667410400498
-        }
-      }
-    },
-    "lineare": {
-      "lineare": {
-        "currentFile": {
-          "count": 1,
-          "lastUpdated": 1667411239441
-        }
-      }
-    },
-    "colineari": {
-      "colineari": {
-        "currentFile": {
-          "count": 1,
-          "lastUpdated": 1667411405286
-        }
-      }
-    },
-    "appartiene": {
-      "appartiene": {
-        "currentFile": {
-          "count": 1,
-          "lastUpdated": 1667413823717
         }
       }
     },
@@ -1084,6 +892,14 @@
         "currentFile": {
           "count": 1,
           "lastUpdated": 1669912813888
+        }
+      }
+    },
+    "Example": {
+      "Example": {
+        "currentFile": {
+          "count": 1,
+          "lastUpdated": 1670064268768
         }
       }
     }
