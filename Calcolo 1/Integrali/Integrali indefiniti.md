@@ -12,7 +12,7 @@ $$\int f(x) dx = F(x)+c$$
 
 $$\int f(x) + g(x)\space dx = \int f(x)\space dx + \int g(x)\space dx$$
 $$\int kf(x) \space dx = k\int f(x)\space dx$$
-### Integrali elementari
+## Integrali elementari
 
 |       **Funzione**       |      **Primitiva**      |
 |:------------------------:|:-----------------------:|
@@ -29,12 +29,12 @@ $$\int kf(x) \space dx = k\int f(x)\space dx$$
 |    $\frac{1}{1+x^2}$     |      $\arctan x+c$      |
 
 
-#### Integrazione funzioni composte
+### Integrazione funzioni composte
 $$\int f'(x) \cdot g'(f(x)) = g(f(x)) + c$$
 >[!Example]
 >$$\int (\sin x)^4 \cdot \cos x\space dx = \frac{\sin^5 x}{5}+c$$
 
-#### Integrazione per parti
+### Integrazione per parti
 La derivata $D(fg) = f'g +g'f$ da cui otteniamo
 $$\int f'(x)g(x)\space dx = f(x)g(x) - \int g'(x)f(x)\space dx$$
 >[!Example]
@@ -42,7 +42,7 @@ $$\int f'(x)g(x)\space dx = f(x)g(x) - \int g'(x)f(x)\space dx$$
 >$$=\frac{x^3}{3}ln(x)-\int \frac{x^2}{3}\space dx +c = \frac{x^3}{3}ln(x)- \frac{1}{3}\int x^2 \space dx = $$
 >$$= \frac{x^3}{3}ln(x)- \frac{x^3}{9}$$
 
-#### Integrazione per sostituzione
+### Integrazione per sostituzione
 In alcuni casi è meglio sostituire la radice (o altro) per facilitare i conti
 
 >[!Example]
@@ -54,3 +54,9 @@ In alcuni casi è meglio sostituire la radice (o altro) per facilitare i conti
 >$$ = 2t+\frac{2}{3}t^3+c$$
 >Sostituisco $x$ a $t$
 >$$2\sqrt{x-1}+\frac{2}{3}\sqrt{(x-1)^3}+c$$
+
+### Integrali di funzioni razionali
+1. **Caso 1**: Il numeratore ha il grado maggiore o uguale a quello del denominatore
+	- Si risolve facendo la divisione polinomiale prima di integrare.
+2. **Caso 2**: Il numeratore ha grado minore del denominatore
+	- Si risolve con il metodo $AB$.
