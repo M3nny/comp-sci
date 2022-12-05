@@ -4,19 +4,15 @@
     "type": "split",
     "children": [
       {
-        "id": "e4374bee50ce269f",
+        "id": "3f835b3295f5f2fe",
         "type": "tabs",
         "children": [
           {
-            "id": "ca4b68598886782d",
+            "id": "1d0e57c343580119",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Calcolo 1/Integrali/Integrali indefiniti.md",
-                "mode": "source",
-                "source": false
-              }
+              "type": "empty",
+              "state": {}
             }
           }
         ]
@@ -86,7 +82,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Calcolo 1/Integrali/Integrali indefiniti.md",
+                "file": "Algebra lineare/Trasformazioni lineari.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +99,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Calcolo 1/Integrali/Integrali indefiniti.md",
+                "file": "Algebra lineare/Trasformazioni lineari.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +122,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Calcolo 1/Integrali/Integrali indefiniti.md"
+                "file": "Algebra lineare/Trasformazioni lineari.md"
               }
             }
           },
@@ -146,17 +142,17 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "ca4b68598886782d",
+  "active": "a1163d9af64d6878",
   "lastOpenFiles": [
-    "Calcolo 1/Successioni e serie numeriche/Successioni.md",
-    "Calcolo 1/Successioni e serie numeriche/Serie.md",
+    "Matematica discreta/Regole di divisibilità.md",
+    "Matematica discreta/mcm e MCD.md",
+    "Matematica discreta/Aritmetica modulare.md",
+    "Matematica discreta/Numeri primi.md",
     "Architettura degli elaboratori/CPU singolo ciclo.md",
-    "Architettura degli elaboratori/MIPS/Linguaggio macchina MIPS.md",
     "Architettura degli elaboratori/Specifica e sintesi di circuiti sequenziali/Moore.md",
     "Architettura degli elaboratori/Specifica e sintesi di circuiti sequenziali/Introduzione.md",
-    "Architettura degli elaboratori/MIPS/Moltiplicazione e divisione intere.md",
-    "Algebra lineare/Trasformazioni lineari.md",
-    "Algebra lineare/Spazi vettoriali.md",
-    "Calcolo 1/Insiemistica/Assiomi dei numeri reali.md"
+    "Matematica discreta/Il principio di induzione.md",
+    "Matematica discreta/Le relazioni.md",
+    "Calcolo 1/Integrali/Integrali indefiniti.md"
   ]
 }

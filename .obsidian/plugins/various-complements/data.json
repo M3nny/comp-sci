@@ -87,91 +87,11 @@
         }
       }
     },
-    "\\begin{bmatrix}": {
-      "\\begin{bmatrix}": {
-        "currentFile": {
-          "count": 11,
-          "lastUpdated": 1667498429945
-        }
-      }
-    },
-    "\\end{bmatrix}": {
-      "\\end{bmatrix}": {
-        "currentFile": {
-          "count": 4,
-          "lastUpdated": 1667498578701
-        }
-      }
-    },
     "registro": {
       "registro": {
         "currentFile": {
           "count": 2,
           "lastUpdated": 1668099908735
-        }
-      }
-    },
-    "addizionatore": {
-      "addizionatore": {
-        "currentFile": {
-          "count": 1,
-          "lastUpdated": 1667489524691
-        }
-      }
-    },
-    "incrementale": {
-      "incrementale": {
-        "currentFile": {
-          "count": 1,
-          "lastUpdated": 1667492932461
-        }
-      }
-    },
-    "Derivabile": {
-      "Derivabile": {
-        "currentFile": {
-          "count": 1,
-          "lastUpdated": 1667494324318
-        }
-      }
-    },
-    "\\lim\\limits_{h\\to": {
-      "\\lim\\limits_{h\\to": {
-        "currentFile": {
-          "count": 1,
-          "lastUpdated": 1667494431083
-        }
-      }
-    },
-    "x_0+h": {
-      "x_0+h": {
-        "currentFile": {
-          "count": 1,
-          "lastUpdated": 1667494449107
-        }
-      }
-    },
-    "chiameremo": {
-      "chiameremo": {
-        "currentFile": {
-          "count": 1,
-          "lastUpdated": 1667496440616
-        }
-      }
-    },
-    "a_{ij}\\end{bmatrix}": {
-      "a_{ij}\\end{bmatrix}": {
-        "currentFile": {
-          "count": 1,
-          "lastUpdated": 1667496535348
-        }
-      }
-    },
-    "addizione": {
-      "addizione": {
-        "currentFile": {
-          "count": 1,
-          "lastUpdated": 1667496963303
         }
       }
     },
@@ -900,6 +820,30 @@
         "currentFile": {
           "count": 1,
           "lastUpdated": 1670064268768
+        }
+      }
+    },
+    "endomorfismo": {
+      "endomorfismo": {
+        "currentFile": {
+          "count": 2,
+          "lastUpdated": 1670236313372
+        }
+      }
+    },
+    "\\begin{bmatrix}": {
+      "\\begin{bmatrix}": {
+        "currentFile": {
+          "count": 2,
+          "lastUpdated": 1670241727813
+        }
+      }
+    },
+    "\\end{bmatrix}": {
+      "\\end{bmatrix}": {
+        "currentFile": {
+          "count": 1,
+          "lastUpdated": 1670241731555
         }
       }
     }
