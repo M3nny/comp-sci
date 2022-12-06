@@ -4,19 +4,15 @@
     "type": "split",
     "children": [
       {
-        "id": "3f835b3295f5f2fe",
+        "id": "96ccf88e215984f5",
         "type": "tabs",
         "children": [
           {
-            "id": "c86487d99ced6c18",
+            "id": "1d678bb163be3cfc",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Calcolo 1/Integrali/Integrali definiti.md",
-                "mode": "source",
-                "source": false
-              }
+              "type": "empty",
+              "state": {}
             }
           }
         ]
@@ -69,8 +65,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "right": {
     "id": "282a9548711da6a0",
@@ -86,7 +81,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Calcolo 1/Integrali/Integrali definiti.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +97,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Calcolo 1/Integrali/Integrali definiti.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,9 +118,7 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "Calcolo 1/Integrali/Integrali definiti.md"
-              }
+              "state": {}
             }
           },
           {
@@ -146,17 +137,17 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "c86487d99ced6c18",
+  "active": "a1163d9af64d6878",
   "lastOpenFiles": [
+    "Matematica discreta/Elementi di calcolo combinatorio.md",
+    "Architettura degli elaboratori/CPU/CPU singolo ciclo.md",
+    "Architettura degli elaboratori/CPU/CPU multiciclo.md",
+    "Architettura degli elaboratori/MIPS/ALU.md",
+    "Calcolo 1/Integrali/Integrali definiti.md",
     "Calcolo 1/Integrali/Integrali indefiniti.md",
     "Matematica discreta/Regole di divisibilità.md",
     "Matematica discreta/mcm e MCD.md",
     "Matematica discreta/Aritmetica modulare.md",
-    "Matematica discreta/Numeri primi.md",
-    "Architettura degli elaboratori/CPU singolo ciclo.md",
-    "Architettura degli elaboratori/Specifica e sintesi di circuiti sequenziali/Moore.md",
-    "Architettura degli elaboratori/Specifica e sintesi di circuiti sequenziali/Introduzione.md",
-    "Matematica discreta/Il principio di induzione.md",
-    "Matematica discreta/Le relazioni.md"
+    "Matematica discreta/Numeri primi.md"
   ]
 }

@@ -86,8 +86,8 @@ Mettendo tutto assieme vediamo che ci sono **molte risorse replicate** inoltre m
 ### Controllo ALU
 Consiste nel determinare i 4bit _operation_.
 Il circuito sarà a 2 livelli:
-1. Il primo livello calcola ALUOp in base all'**op** code
-2. Il secondo livello calcola la **operation** effettiva in base al campo funct e a ALUOp
+1. Il primo livello calcola ==ALUOp== (ALUOp$_1$ ALUOp$_0$) **in base all'op** code
+2. Il secondo livello calcola la ==operation== effettiva **in base al campo funct e a ALUOp**
 ![[Controllo ALU.png]]
 
 ## Datapath completo con memoria e controllo
@@ -103,3 +103,33 @@ Sulla tabella sono identificati tutti i tipi di controlli:
 - **MemWrite**: mi dice quando devo scrivere nella memoria dei dati;
 - **Branch**: mi va a comandare che se l'istruzione è _beq_ e _zero_ è 1 allora devo saltare;
 - **ALUOp1**: comanda istruzioni R-type.
+
+#### Implementazione Jump
+L'istruzione di **jump** ==non ha bisogno dell'ALU==, anche in questo caso però l'indirizzamento è relativo al PC (ma solo per 4 bit).
+Uso i 26 bit bassi per l'indirizzo su cui saltare, shifto di 2 per arrivare a 28 e uso i 4 bit alti del PC per arrivare a 32 bit.
+
+#### Controllo a singolo ciclo
+Il datapath a questo punto riceve dalla controparte controllo tutti i segnali per evitare conflitti.
+Abbiamo **6 bit di input** e a far fronte di questi 6 bit la parte controllo fornisce un output:
+![[Controllo a singolo ciclo.png|600]]
+
+>[!Tip] Domande esame
+>- La parte di controllo è combinatoria?
+>- Sapere che giro fa il segnale zero
+
+- **La parte di controllo è un circuito combinatorio** per la CPU a ciclo singolo
+- Il **datapath è sequenziale**
+- Dobbiamo attendere che tutti i circuiti di datapath e controllo siano stabili prima di attivare il fronte di salita/discesa del clock
+
+---
+Il ciclo di clock deve essere determinato in base all'istruzione più lunga, nel nostro caso è **lw** perchè è l'unica istruzione che **usa due volte i register file** (lettura/scrittura) **e anche la memoria dati**.
+
+Ne risulta che quando sto usando l'istruzione **lw** sto sfruttando la CPU al massimo, mentre **se uso altre istruzioni che durano meno sto sprecando tempo** dato che il clock è tarato sull'istruzione più lunga.
+Per risolvere questo problema avremmo bisogno di un clock variabile (NON ESISTE!) ma supponendo che esista possiamo fare dei conti per vedere quanto performante sarebbe a confronto di uno fisso che tiene conto dell'istruzione più lunga:
+- Le prestazioni delle CPU sono calcolate rispetto a NI (numero istruzioni eseguite da un programma)
+
+>Facendo il raporto tra $\frac{T_{fisso}}{T_{variabile}}$ troviamo lo **speedup**.
+
+Concludiamo questa parte evidenziando i difetti di questo tipo di CPU, ovvero:
+- Risorse replicate per eseguire tutte le nostre operazioni in un ciclo
+- Tempi morti dovuti al clock tarato sull'istruzione che ci mette più tempo
