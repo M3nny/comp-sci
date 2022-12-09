@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "96ccf88e215984f5",
+        "id": "caee09e5b10b8cdf",
         "type": "tabs",
         "children": [
           {
-            "id": "1d678bb163be3cfc",
+            "id": "a44083c867b657b4",
             "type": "leaf",
             "state": {
               "type": "empty",
@@ -65,7 +65,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "right": {
     "id": "282a9548711da6a0",
@@ -137,17 +138,17 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "a1163d9af64d6878",
+  "active": "a44083c867b657b4",
   "lastOpenFiles": [
-    "Matematica discreta/Elementi di calcolo combinatorio.md",
-    "Architettura degli elaboratori/CPU/CPU singolo ciclo.md",
-    "Architettura degli elaboratori/CPU/CPU multiciclo.md",
-    "Architettura degli elaboratori/MIPS/ALU.md",
+    "Algebra lineare/Spazi vettoriali.md",
+    "Algebra lineare/Sistema di generatori.md",
+    "Algebra lineare/Trasformazioni lineari.md",
     "Calcolo 1/Integrali/Integrali definiti.md",
     "Calcolo 1/Integrali/Integrali indefiniti.md",
     "Matematica discreta/Regole di divisibilità.md",
     "Matematica discreta/mcm e MCD.md",
     "Matematica discreta/Aritmetica modulare.md",
-    "Matematica discreta/Numeri primi.md"
+    "Matematica discreta/Numeri primi.md",
+    "Architettura degli elaboratori/CPU singolo ciclo.md"
   ]
 }

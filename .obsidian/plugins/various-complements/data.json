@@ -95,14 +95,6 @@
         }
       }
     },
-    "f\\cdot": {
-      "f\\cdot": {
-        "currentFile": {
-          "count": 1,
-          "lastUpdated": 1667823201570
-        }
-      }
-    },
     "ottengo": {
       "ottengo": {
         "currentFile": {
@@ -855,91 +847,27 @@
         }
       }
     },
-    "Implementazione": {
-      "Implementazione": {
+    "\\begin{pmatrix}1\\\\1\\end{pmatrix}": {
+      "\\begin{pmatrix}1\\\\1\\end{pmatrix}": {
         "currentFile": {
-          "count": 1,
-          "lastUpdated": 1670336555725
+          "count": 3,
+          "lastUpdated": 1670423048315
         }
       }
     },
-    "indirizzamento": {
-      "indirizzamento": {
-        "currentFile": {
-          "count": 1,
-          "lastUpdated": 1670336597070
-        }
-      }
-    },
-    "Memoria": {
-      "Memoria": {
-        "currentFile": {
-          "count": 1,
-          "lastUpdated": 1670336968495
-        }
-      }
-    },
-    "\\frac{T_{fisso}}{T_variabile}": {
-      "\\frac{T_{fisso}}{T_variabile}": {
-        "currentFile": {
-          "count": 1,
-          "lastUpdated": 1670338778076
-        }
-      }
-    },
-    "permutazioni": {
-      "permutazioni": {
-        "currentFile": {
-          "count": 1,
-          "lastUpdated": 1670341932424
-        }
-      }
-    },
-    "Permutaizoni": {
-      "Permutaizoni": {
-        "currentFile": {
-          "count": 1,
-          "lastUpdated": 1670341963212
-        }
-      }
-    },
-    "possibili": {
-      "possibili": {
-        "currentFile": {
-          "count": 1,
-          "lastUpdated": 1670343041754
-        }
-      }
-    },
-    "sottoinsiemi": {
-      "sottoinsiemi": {
-        "currentFile": {
-          "count": 1,
-          "lastUpdated": 1670343384437
-        }
-      }
-    },
-    "\\begin{pmatrix}n\\\\k\\end{pmatrix}": {
-      "\\begin{pmatrix}n\\\\k\\end{pmatrix}": {
-        "currentFile": {
-          "count": 6,
-          "lastUpdated": 1670344573665
-        }
-      }
-    },
-    "disposizioni": {
-      "disposizioni": {
+    "\\begin{pmatrix}2\\\\2\\end{pmatrix}": {
+      "\\begin{pmatrix}2\\\\2\\end{pmatrix}": {
         "currentFile": {
           "count": 2,
-          "lastUpdated": 1670344836281
+          "lastUpdated": 1670423064427
         }
       }
     },
-    "elementi": {
-      "elementi": {
+    "\\mathbb{R}^2": {
+      "\\mathbb{R}^2": {
         "currentFile": {
           "count": 1,
-          "lastUpdated": 1670344779854
+          "lastUpdated": 1670424961898
         }
       }
     }

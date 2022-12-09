@@ -39,6 +39,25 @@ I vettori si dicono:
 - **linearmente dipendenti** se esiste almeno un coefficienti _non nullo_.
 
 ## Base di uno spazio vettoriale
-Uno spazio vettoriale è un insieme di vettori _linearmente indipendenti_ che generano l'intero spazio vettoriale
+Una base è un insieme di vettori _linearmente indipendenti_ che generano l'intero spazio vettoriale attraverso le combinazioni lineari (vedi sistemi generatori).
 
-TODO
+Le basi quindi contengono il numero minimo di vettori necessari per generare uno spazio vettoriale.
+Ad esempio per $\mathbb{R}^2$ saranno due i vettori: l'asse x e l'asse y, se aggiungo un terzo vettore ottengo una terna.
+>[!Teorema di completamento di una base]
+>Se usiamo le immagini dei vettori di una base, essi formano un sistema di generatori
+
+### Base canonica
+Una base canonica è un insieme formato da vettori i quali elementi sono:
+- tutti nulli tranne l'$i$-esimo elemento
+
+Con la base canonica formata dall'insieme $\{e_1, e_2, ..., e_n\}$ avremmo che:
+$$e_1 = (1,0,0,...,0)$$
+$$e_2 = (0,1,0,...,0)$$
+$$e_n = (0,0,0,...,1)$$
+ne deduciamo quindi che $\dim(\mathbb{R}^n) = n$.
+
+### Base ortogonale
+Una base è definita ortogonale quando il prodotto scalare tra qualsiasi coppia di elementi dello stesso vettore è uguale a zero: $v_i\cdot v_j = 0$ con $i\neq j$ .
+
+### Base ortonormale
+Una base è ortonormale se oltre ad essere _ortogonale_, la norma di ogni vettore che la compone è $1$.
