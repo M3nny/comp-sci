@@ -74,8 +74,8 @@
     "\\mathbb{R}": {
       "\\mathbb{R}": {
         "currentFile": {
-          "count": 11,
-          "lastUpdated": 1669304100161
+          "count": 12,
+          "lastUpdated": 1670839511780
         }
       }
     },
@@ -87,147 +87,11 @@
         }
       }
     },
-    "registro": {
-      "registro": {
-        "currentFile": {
-          "count": 2,
-          "lastUpdated": 1668099908735
-        }
-      }
-    },
-    "ottengo": {
-      "ottengo": {
-        "currentFile": {
-          "count": 1,
-          "lastUpdated": 1667915049621
-        }
-      }
-    },
-    "Otteniamo": {
-      "Otteniamo": {
-        "currentFile": {
-          "count": 1,
-          "lastUpdated": 1667915058689
-        }
-      }
-    },
-    "Binvert": {
-      "Binvert": {
-        "currentFile": {
-          "count": 1,
-          "lastUpdated": 1667915087245
-        }
-      }
-    },
-    "Operation": {
-      "Operation": {
-        "currentFile": {
-          "count": 1,
-          "lastUpdated": 1667915096026
-        }
-      }
-    },
     "Istruzione": {
       "Istruzione": {
         "currentFile": {
           "count": 3,
           "lastUpdated": 1669906408067
-        }
-      }
-    },
-    "res_{31}": {
-      "res_{31}": {
-        "currentFile": {
-          "count": 1,
-          "lastUpdated": 1667920329794
-        }
-      }
-    },
-    "\\sum^n_{k": {
-      "\\sum^n_{k": {
-        "currentFile": {
-          "count": 1,
-          "lastUpdated": 1668089374169
-        }
-      }
-    },
-    "\\sum_{k\\in": {
-      "\\sum_{k\\in": {
-        "currentFile": {
-          "count": 3,
-          "lastUpdated": 1668089489883
-        }
-      }
-    },
-    "adiacenza": {
-      "adiacenza": {
-        "currentFile": {
-          "count": 2,
-          "lastUpdated": 1668095918222
-        }
-      }
-    },
-    "precendente": {
-      "precendente": {
-        "currentFile": {
-          "count": 1,
-          "lastUpdated": 1668096148157
-        }
-      }
-    },
-    "moltiplicando": {
-      "moltiplicando": {
-        "currentFile": {
-          "count": 1,
-          "lastUpdated": 1668097472527
-        }
-      }
-    },
-    "moltiplichiamo": {
-      "moltiplichiamo": {
-        "currentFile": {
-          "count": 1,
-          "lastUpdated": 1668097494018
-        }
-      }
-    },
-    "moltiplicatore": {
-      "moltiplicatore": {
-        "currentFile": {
-          "count": 1,
-          "lastUpdated": 1668097911115
-        }
-      }
-    },
-    "_dividendo_": {
-      "_dividendo_": {
-        "currentFile": {
-          "count": 2,
-          "lastUpdated": 1668102145808
-        }
-      }
-    },
-    "significativo": {
-      "significativo": {
-        "currentFile": {
-          "count": 1,
-          "lastUpdated": 1668103414690
-        }
-      }
-    },
-    "quoziente": {
-      "quoziente": {
-        "currentFile": {
-          "count": 1,
-          "lastUpdated": 1668104161740
-        }
-      }
-    },
-    "elimindando": {
-      "elimindando": {
-        "currentFile": {
-          "count": 1,
-          "lastUpdated": 1668104198979
         }
       }
     },
@@ -842,8 +706,8 @@
     "\\int^b_a": {
       "\\int^b_a": {
         "currentFile": {
-          "count": 3,
-          "lastUpdated": 1670249397014
+          "count": 11,
+          "lastUpdated": 1670837407442
         }
       }
     },
@@ -868,6 +732,94 @@
         "currentFile": {
           "count": 1,
           "lastUpdated": 1670424961898
+        }
+      }
+    },
+    "\\alpha": {
+      "\\alpha": {
+        "currentFile": {
+          "count": 1,
+          "lastUpdated": 1670836076959
+        }
+      }
+    },
+    "integrale": {
+      "integrale": {
+        "currentFile": {
+          "count": 1,
+          "lastUpdated": 1670836244226
+        }
+      }
+    },
+    "impropri": {
+      "impropri": {
+        "currentFile": {
+          "count": 2,
+          "lastUpdated": 1670839278360
+        }
+      }
+    },
+    "\\lim_{t\\to": {
+      "\\lim_{t\\to": {
+        "currentFile": {
+          "count": 3,
+          "lastUpdated": 1670839461355
+        }
+      }
+    },
+    "\\int_1^t": {
+      "\\int_1^t": {
+        "currentFile": {
+          "count": 1,
+          "lastUpdated": 1670838477532
+        }
+      }
+    },
+    "\\frac{1}{x^2}dx": {
+      "\\frac{1}{x^2}dx": {
+        "currentFile": {
+          "count": 1,
+          "lastUpdated": 1670838483168
+        }
+      }
+    },
+    "\\int_a^{\\pm\\infty}": {
+      "\\int_a^{\\pm\\infty}": {
+        "currentFile": {
+          "count": 2,
+          "lastUpdated": 1670839089262
+        }
+      }
+    },
+    "\\int_a^{+\\infty}": {
+      "\\int_a^{+\\infty}": {
+        "currentFile": {
+          "count": 1,
+          "lastUpdated": 1670839123300
+        }
+      }
+    },
+    "intervallo": {
+      "intervallo": {
+        "currentFile": {
+          "count": 1,
+          "lastUpdated": 1670839263178
+        }
+      }
+    },
+    "Proposizione": {
+      "Proposizione": {
+        "currentFile": {
+          "count": 1,
+          "lastUpdated": 1670839771725
+        }
+      }
+    },
+    "confronto": {
+      "confronto": {
+        "currentFile": {
+          "count": 1,
+          "lastUpdated": 1670839816003
         }
       }
     }
