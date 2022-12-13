@@ -8,15 +8,11 @@
         "type": "tabs",
         "children": [
           {
-            "id": "ffa5c32c821ddfbf",
+            "id": "0df91f81aab022b1",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Calcolo 1/Integrali/Integrali definiti.md",
-                "mode": "source",
-                "source": false
-              }
+              "type": "empty",
+              "state": {}
             }
           }
         ]
@@ -69,8 +65,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "right": {
     "id": "282a9548711da6a0",
@@ -86,7 +81,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Calcolo 1/Integrali/Integrali definiti.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +97,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Calcolo 1/Integrali/Integrali definiti.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,9 +118,7 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "Calcolo 1/Integrali/Integrali definiti.md"
-              }
+              "state": {}
             }
           },
           {
@@ -146,17 +137,17 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "ffa5c32c821ddfbf",
+  "active": "0df91f81aab022b1",
   "lastOpenFiles": [
-    "Calcolo 1/Integrali/Integrali impropri, aree e volumi.md",
+    "Architettura degli elaboratori/CPU/CPU multiciclo.md",
     "Calcolo 1/Integrali/Integrali definiti.md",
+    "Calcolo 1/Integrali/Integrali impropri, aree e volumi.md",
     "Calcolo 1/Integrali/Integrali indefiniti.md",
     "Algebra lineare/Spazi vettoriali.md",
     "Algebra lineare/Sistema di generatori.md",
     "Algebra lineare/Trasformazioni lineari.md",
     "Matematica discreta/Regole di divisibilità.md",
     "Matematica discreta/mcm e MCD.md",
-    "Matematica discreta/Aritmetica modulare.md",
-    "Matematica discreta/Numeri primi.md"
+    "Matematica discreta/Aritmetica modulare.md"
   ]
 }
