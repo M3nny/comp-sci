@@ -1,8 +1,11 @@
 ## Integrali impropri
-Sia $f: [a, +\infty] \to \mathbb{R}$ continua. Se esiste finito il limite
-$$\lim_{t\to \pm\infty} \int_a^t f(x) dx$$
+Sia $f: [a, +\infty[ \to \mathbb{R}$ continua. Se esiste finito il limite
+$$\lim_{t\to +\infty} \int_a^t f(x) dx$$
 allora la funzione si dice integrabile in $[a,+\infty[$ ed **il risultato del limite si dice integrale improprio** indicato con:
-$$\int_a^{\pm\infty} f(x) dx = \lim_{t\to \pm\infty} \int_a^t f(x) dx$$
+$$\int_a^{+\infty} f(x) dx = \lim_{t\to +\infty} \int_a^t f(x) dx$$
+Analogamente con $f: ]-\infty, b]\to \mathbb{R}$ continua, se esiste finito il limite, possiamo indicare l'integrale improprio con:
+$$\int_{-\infty}^b f(x) dx = \lim_{t\to +\infty} \int_t^b f(x) dx$$
+
 Inoltre se la funzione è continua in $\mathbb{R}$ possiamo valutare l'integrale improprio:
 $$\int_{-\infty}^{+\infty} f(x)dx = \int_{\mathbb{R}} f(x)dx$$
 >[!Example]
@@ -18,9 +21,6 @@ $$\int_{-\infty}^{+\infty} f(x)dx = \int_{\mathbb{R}} f(x)dx$$
 >- Se $\int_a^{+\infty}f(x)dx$ **converge**, allora $\int_a^{+\infty}g(x)dx$ **converge**
 >- Se $\int_a^{+\infty}f(x)dx$ **diverge**, allora $\int_a^{+\infty}g(x)dx$ **diverge**
 
-#### Criterio di convergenza assoluta
-Se $|f(x)|$ è integrabile in un intervallo, allora anche $f(x)$ è integrabile sullo stesso intervallo, _non vale però il viceversa per gli integrali impropri_.
-
 #### Funzioni con asintoti verticali
 Sia $f:]a,b]\to \mathbb{R}$ continua, se esiste finito il suo limite, potremmo calcolare l'integrale improprio tramite:
 $$\int_a^bf(x)dx=\lim_{t\to a^+}\int_t^bf(x)dx$$
@@ -34,3 +34,12 @@ $$\int_a^bf(x)dx=\lim_{t\to b^-}\int_a^tf(x)dx$$
 >- Se $\int_{x_0}^{a}f(x)dx$ **converge**, allora $\int_{x_0}^{a}g(x)dx$ **converge**
 >- Se $\int_{x_0}^{a}f(x)dx$ **diverge**, allora $\int_{x_0}^{a}g(x)dx$ **diverge**
 
+## Calcolo di aree
+Per calcolare l'area compresa tra il grafico della funzione e l'asse $x$, dobbiamo calcolare l'integrale del valore assoluto di $f$:
+$$A = \int_a^b|f(x)|dx$$
+Usiamo il valore assoluto perchè nel caso un pezzo di area fosse sotto l'asse $x$ non va a diminuire il resto dell'area sopra l'asse, ma viene sommata anch'essa.
+
+Se voglio calcolare l'area tra due funzioni, devo prima trovare quale sta sopra e poi sottrargli quella che sta sotto:
+$$A=\int_a^b|f(x)-g(x)|dx$$
+Nel caso di accavallassero le funzioni, devo trovare il punto $c$ in cui si incontrano e procedere come segue:
+$$A= \int_a^cf(x)-g(x)dx+\int_c^bg(x)-f(x)dx$$

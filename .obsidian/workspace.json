@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "418c40d7b80ef608",
+        "id": "a02b07695e7aa009",
         "type": "tabs",
         "children": [
           {
-            "id": "0df91f81aab022b1",
+            "id": "b919c70406d590e4",
             "type": "leaf",
             "state": {
               "type": "empty",
@@ -65,7 +65,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "right": {
     "id": "282a9548711da6a0",
@@ -137,11 +138,11 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "0df91f81aab022b1",
+  "active": "a1163d9af64d6878",
   "lastOpenFiles": [
+    "Calcolo 1/Integrali/Integrali impropri e aree.md",
     "Architettura degli elaboratori/CPU/CPU multiciclo.md",
     "Calcolo 1/Integrali/Integrali definiti.md",
-    "Calcolo 1/Integrali/Integrali impropri, aree e volumi.md",
     "Calcolo 1/Integrali/Integrali indefiniti.md",
     "Algebra lineare/Spazi vettoriali.md",
     "Algebra lineare/Sistema di generatori.md",
