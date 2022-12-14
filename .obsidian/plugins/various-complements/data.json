@@ -103,30 +103,6 @@
         }
       }
     },
-    "crescente": {
-      "crescente": {
-        "currentFile": {
-          "count": 2,
-          "lastUpdated": 1668423800374
-        }
-      }
-    },
-    "decrescente": {
-      "decrescente": {
-        "currentFile": {
-          "count": 1,
-          "lastUpdated": 1668423764651
-        }
-      }
-    },
-    "stazionari": {
-      "stazionari": {
-        "currentFile": {
-          "count": 1,
-          "lastUpdated": 1668424050745
-        }
-      }
-    },
     "deasserted": {
       "deasserted": {
         "currentFile": {
@@ -828,6 +804,54 @@
         "currentFile": {
           "count": 1,
           "lastUpdated": 1671014623747
+        }
+      }
+    },
+    "Permutazioni": {
+      "Permutazioni": {
+        "currentFile": {
+          "count": 1,
+          "lastUpdated": 1671031081996
+        }
+      }
+    },
+    "semplici": {
+      "semplici": {
+        "currentFile": {
+          "count": 3,
+          "lastUpdated": 1671031178416
+        }
+      }
+    },
+    "distinti": {
+      "distinti": {
+        "currentFile": {
+          "count": 1,
+          "lastUpdated": 1671031104781
+        }
+      }
+    },
+    "Disposizioni": {
+      "Disposizioni": {
+        "currentFile": {
+          "count": 1,
+          "lastUpdated": 1671031176525
+        }
+      }
+    },
+    "ripetizione": {
+      "ripetizione": {
+        "currentFile": {
+          "count": 2,
+          "lastUpdated": 1671031778383
+        }
+      }
+    },
+    "eventualmente": {
+      "eventualmente": {
+        "currentFile": {
+          "count": 1,
+          "lastUpdated": 1671031754474
         }
       }
     }

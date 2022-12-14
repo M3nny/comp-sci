@@ -35,3 +35,12 @@ $$D_{n,k}=\frac{n!}{(n-k)!}$$
 - $D_{n,1}=n$
 - $D_{n,n}=n!$ coincide con il numero di permutazioni
 - $D_{n,m}=0$ per $m>n$
+
+| **Numero di**                | **Formula**                  | **Significato**                                                                          |
+| ---------------------------- | ---------------------------- | ---------------------------------------------------------------------------------------- |
+| Permutazioni semplici        | $P_n = n!$                   | Ordino $n$ elementi distinti                                                             |
+| Combinazioni semplici        | $\frac{n!}{k!(n-k)!}$        | Raggruppo indipendentemente dall'ordine $k$ elementi distinti tra $n$ elementi           |
+| Disposizioni semplici        | $\frac{n!}{(n-k)!}$          | Raggruppo in modo ordinato $k$ elementi distinti tra $n$ elementi                        |
+| Permutazioni con ripetizione | $\frac{n!}{n_1!n_2!...n_k!}$ | Ordino $n$ elementi eventualmente ripetuti, suddivisi in $k$ classi di elementi distinti |
+| Disposizioni con ripetizione | $n^k$                        | Ragruppo in modo ordinato $k$ elementi eventualmente ripetuti tra $n$ elementi           |
+
