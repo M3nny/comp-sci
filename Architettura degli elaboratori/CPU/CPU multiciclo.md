@@ -64,3 +64,8 @@ Praticamente <u>scrivo nel PC quando PCWrite è affermato oppure quando PCWriteC
 Vengono riassunte nella seguente tabella le istruzioni in notazione RTL (Register Transfer Language) per ogni ciclo di clock:
 
 ![[Istruzioni RTL.png]]
+
+## Considerazioni sul costo delle istruzioni
+Usando una _CPU multiciclo_, le varie istruzioni possono avere diverso **CPI** (Cicli Per Istruzione), la load ad esempio è quella che impiega più tempo.
+
+Sembrerebbe quindi di aver ottenuto un risparmio solo per la _beq_ e la _jump_, questo perchè non abbiamo considerato operazioni molto più costose che ci avrebbero portato ad avere un ciclo di clock molto lungo se dovessimo usare la _CPU a singolo ciclo_.

@@ -4,19 +4,15 @@
     "type": "split",
     "children": [
       {
-        "id": "a02b07695e7aa009",
+        "id": "3a658e4bec001824",
         "type": "tabs",
         "children": [
           {
-            "id": "b919c70406d590e4",
+            "id": "f43332a7414c21f8",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Matematica discreta/Elementi di calcolo combinatorio.md",
-                "mode": "source",
-                "source": false
-              }
+              "type": "empty",
+              "state": {}
             }
           }
         ]
@@ -86,7 +82,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Matematica discreta/Elementi di calcolo combinatorio.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +98,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Matematica discreta/Elementi di calcolo combinatorio.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,9 +119,7 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "Matematica discreta/Elementi di calcolo combinatorio.md"
-              }
+              "state": {}
             }
           },
           {
@@ -146,17 +138,17 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "b919c70406d590e4",
+  "active": "f43332a7414c21f8",
   "lastOpenFiles": [
+    "Architettura degli elaboratori/Valutazione delle prestazioni.md",
+    "Architettura degli elaboratori/CPU/CPU multiciclo.md",
+    "Matematica discreta/Elementi di calcolo combinatorio.md",
+    "Matematica discreta/Le sommatorie.md",
+    "Matematica discreta/Le funzioni.md",
     "Matematica discreta/Le relazioni.md",
     "Calcolo 1/Integrali/Integrali impropri e aree.md",
-    "Architettura degli elaboratori/CPU/CPU multiciclo.md",
     "Calcolo 1/Integrali/Integrali definiti.md",
     "Calcolo 1/Integrali/Integrali indefiniti.md",
-    "Algebra lineare/Spazi vettoriali.md",
-    "Algebra lineare/Sistema di generatori.md",
-    "Algebra lineare/Trasformazioni lineari.md",
-    "Matematica discreta/Regole di divisibilità.md",
-    "Matematica discreta/mcm e MCD.md"
+    "Algebra lineare/Spazi vettoriali.md"
   ]
 }
