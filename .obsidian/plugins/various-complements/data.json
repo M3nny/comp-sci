@@ -490,8 +490,8 @@
     "coefficienti": {
       "coefficienti": {
         "currentFile": {
-          "count": 2,
-          "lastUpdated": 1669833835873
+          "count": 3,
+          "lastUpdated": 1671207380558
         }
       }
     },
@@ -658,16 +658,16 @@
     "\\begin{bmatrix}": {
       "\\begin{bmatrix}": {
         "currentFile": {
-          "count": 6,
-          "lastUpdated": 1671188140413
+          "count": 19,
+          "lastUpdated": 1671207645639
         }
       }
     },
     "\\end{bmatrix}": {
       "\\end{bmatrix}": {
         "currentFile": {
-          "count": 5,
-          "lastUpdated": 1671188143861
+          "count": 18,
+          "lastUpdated": 1671207648272
         }
       }
     },
@@ -874,16 +874,40 @@
     "determinante": {
       "determinante": {
         "currentFile": {
-          "count": 1,
-          "lastUpdated": 1671186328012
+          "count": 7,
+          "lastUpdated": 1671207505169
         }
       }
     },
     "sottomatrice": {
       "sottomatrice": {
         "currentFile": {
+          "count": 2,
+          "lastUpdated": 1671205693102
+        }
+      }
+    },
+    "cofattori": {
+      "cofattori": {
+        "currentFile": {
           "count": 1,
-          "lastUpdated": 1671187974321
+          "lastUpdated": 1671199861369
+        }
+      }
+    },
+    "ammette": {
+      "ammette": {
+        "currentFile": {
+          "count": 1,
+          "lastUpdated": 1671203408048
+        }
+      }
+    },
+    "\\begin{cases}3x+7y": {
+      "\\begin{cases}3x+7y": {
+        "currentFile": {
+          "count": 2,
+          "lastUpdated": 1671207641743
         }
       }
     }

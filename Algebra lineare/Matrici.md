@@ -105,7 +105,6 @@ Sono definite per interpretare le mosse di Gauss e sono di tre tipi:
 1. **Scambio di righe**;
 2. **Moltiplicazione di una riga per uno scalare**;
 3. **Combinazione lineare**, ovvero aggiungere ad una riga un'altra riga moltiplicata per uno scalare.
-==Tutte le matrici elementari sono invertibili==.
 
 ---
 ## Determinante
@@ -143,8 +142,26 @@ La **matrice dei cofattori**(o matrice dei complementi algebrici) si ricava proc
 >Procedendo in questo modo per ogni elemento otterremo:
 >$$\begin{bmatrix}-13&-2&18\\4&-2&1\\7&5&-11 \end{bmatrix}$$
 
-Posso inoltre calcolare il determinante della matrice sfruttando la matrice dei cofattori in questo modo:
+### Matrice AxB (Laplace)
+Posso inoltre calcolare qualsiasi determinante matrice sfruttando la matrice dei cofattori fissando una riga o una colonna (in genere quella con più zeri).
+- Fissando una riga:
 $$det(A) = \sum_{j=1}^n a_{ij}\cdot C_{ij}$$
+- Fissando una colonna:
+$$det(A) = \sum_{i=1}^n a_{ij}\cdot C_{ij}$$
+>[!Example]
+>$$A=\begin{bmatrix}3&2&0&1\\4&0&1&2\\3&0&2&1\\9&2&3&1\end{bmatrix}$$
+>Osserviamo che tra le righe/colonne, quella che ha più zeri è la colonna 2, quindi **applicheremo Laplace fissando la seconda colonna**:
+>$$det(A) = \sum_{i=1}^n a_{i2}\cdot C_{i2}$$
+>Trovo il cofattore di dell'elemento $a_{1,2} (2)$ e di $a_{4,2} (2)$ che sono gli unici elementi diversi da zero nella colonna.
+>Procedo quindi a trovare il minore di $a_{1,2}$
+>$$det\left(\begin{bmatrix}4&1&2\\3&2&1\\9&3&1\end{bmatrix}\right) = -16$$
+>$$Cof(a_{1,2}) = 16$$ 
+>Posso quindi mettere dentro alla coda di somme da fare: $2\cdot 16 = 32$
+>Gli elementi $a_{2,1}$ e $a_{3,1}$ sono uguali a 0 quindi non serve fare altro, al momento abbiamo: $32+0+0$, manca l'ultimo elemento della colonna da elaborare, ovvero $a_{4,2}$
+>$$det\left(\begin{bmatrix}3&0&1\\4&1&2\\3&2&1\end{bmatrix}\right) = -4$$
+>$$Cof(a_{4,2}) = -4$$
+>Possiamo quindi fare la somma di tutti i risultati trovati:
+>$$32+0+0-4\cdot 2=24$$
 
 ---
 ## Matrici inverse
@@ -152,7 +169,36 @@ Una matrice quadrata $A$ di ordine $n$ è detta invertibile se il prodotto $A\cd
 
 La posso calcolare solo se il $det(A) \neq 0$ tramite:
 $$A^{-1} = \frac{1}{det(A)}\cdot C^T$$
+>[!Example]
+>Calcolo la matrice inversa (ipotizzando di avere già determinante e matrice dei cofattori trasposta)
+>- $det(A) = -16$
+>- matrice dei cofattori trasposta:
+>$$\begin{bmatrix}-3&-4&5\\-4&0&-4\\5&-4&-3\end{bmatrix}$$
+>
+>L'inversa è uguale a:
+>$$\begin{bmatrix}\frac{3}{16}&\frac{1}{4}&-\frac{5}{16}\\\frac{1}{4}&0&\frac{1}{4}\\-\frac{5}{16}&\frac{1}{3}&\frac{3}{16}\end{bmatrix}$$
 
+### Metodo dell'inversa
+Posso capire se un sistema ammette soluzione se il determinante della matrice ricavata dal sistema è $\neq 0$, possiamo rappresentare il sistema come:
+$$Ax=b$$
+Dove $A$ è la matrice dei coefficienti, $x$ sono tutte le incognite che vogliamo trovare e $b$ i valori noti.
+Ricaviamo quindi le soluzioni con:
+$$x=A^{-1}\cdot b$$
+>[!Example]
+>$$\begin{cases}3x+7y=27\\ 5x-2y=4\end{cases}$$
+>Vediamo se ammette soluzione calcolando $\left| \begin{bmatrix}3&7\\5&-2\end{bmatrix}\right| = -41 \neq 0$ quindi ammette soluzione, calcoliamo quindi l'inversa:
+>
+>La formula per l'inversa è $A^{-1} = \frac{1}{det(A)}\cdot C^T$, il determinante già ce l'abbiamo, andiamo a trovare la matrice dei cofattori trasposta:
+>- Matrice dei minori: $\begin{bmatrix}-2&5\\7&3\end{bmatrix}$
+>- Matrice dei cofattori: $\begin{bmatrix}-2&-5\\-7&3\end{bmatrix}$ -> trasposta: $\begin{bmatrix}-2&-7\\-5&3\end{bmatrix}$
+>- Matrice inversa: $\begin{bmatrix}\frac{2}{41}&\frac{7}{41}\\\frac{5}{41}&-\frac{3}{41}\end{bmatrix}$
+>
+>Andiamo ora a trovare le soluzioni con $x=A^{-1}\cdot b$:
+>$$\begin{bmatrix}\frac{2}{41}&\frac{7}{41}\\\frac{5}{41}&-\frac{3}{41}\end{bmatrix} \begin{bmatrix}27\\4\end{bmatrix} = \begin{bmatrix}2\\3\end{bmatrix}$$
+>Le soluzioni sono quindi $x = 2$ e $y = 3$.
+>
+
+---
 ## Matrici a scala
 Sono matrici dove il primo valore non nullo di una riga si trova dopo il valore non nullo della riga precedente:
 $$\begin{bmatrix} 0 & 1 & 5 & 0 & 3 & 1\\ 0 & 0 & 9 & 2 & 5 & 2\\ 0 & 0 & 0 & 0 & 5 & 6\\ 0 & 0 & 0 & 0 & 0 & 1 \end{bmatrix}$$
@@ -168,3 +214,33 @@ Per trasformare una matrice a scala in una matrice ridotta:
 - Si prende la prima riga non nulla;
 - Si divide la riga per il suo primo elemento a sinistra;
 - Si procede per ogni riga.
+
+---
+## Rango della matrice
+Il **rango** è un numero compreso tra $0$ e il $\min(i,j)$ e rappresenta il massimo numero di vettori colonna/riga linearmente indipendenti in una matrice.
+
+Per trovarlo devo andare a tentativi, ovvero devo trovare la grandezza più grande della sottomatrice con determinante $\neq 0$.
+
+>[!Example]
+>$$A = \begin{bmatrix}1&2&3\\4&5&6\\7&8&9\end{bmatrix}$$
+>Comincio con il calcolare il determinante della sottomatrice quadrata più grande, ed essendo la matrice in sè quadrata, sarà proprio $det(A)$, il quale però è uguale a $0$, per cui devo andare a trovare una sottomatrice più piccola (grandezza 2) che abbia $det \neq 0$ , provo con $\begin{bmatrix}1&2\\4&5\end{bmatrix}$, ne calcolo il determinante e vedo che è uguale a $-3$.
+>
+>Essendo che la sottomatrice più grande con $det \neq 0$ è una matrice 2x2, posso affermare che il rango è pari a $2$.
+
+---
+## Cramer
+Usiamo questo metodo per risolvere sistemi che hanno lo stesso numero di equazioni/incognite.
+
+1. Trovare il determinante della matrice dei coefficienti
+2. Creare tante matrici quante sono le incognite, dove andiamo a sostituire la colonna con i valori dell'incognita che vogliamo trovare con i termini noti
+3. Calcolare il determinante di ognuna di queste nuove matrici
+4. Per trovare il valore dell'incognita $x$ si procede così:
+$$x=\frac{D_x}{D}$$
+>[!Example]
+>$$\begin{cases}2x+3y\\4x-3y\end{cases}$$
+>1. $\left| \begin{bmatrix}2&3\\4&-3\end{bmatrix} \right| =-18$
+>2.  $D_x = \left| \begin{bmatrix}8&3\\-2&-3\end{bmatrix} \right| =-18$  
+$D_y = \left| \begin{bmatrix}2&8\\4&-2\end{bmatrix} \right| =-36$
+>3. $x=\frac{D_x}{D} = \frac{-18}{-18} = 1$        $y=\frac{D_y}{D} = \frac{-36}{-18} = 2$
+>
+>Abbiamo quindi ottenuto che $x=1$ e $y=2$
