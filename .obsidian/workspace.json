@@ -8,11 +8,15 @@
         "type": "tabs",
         "children": [
           {
-            "id": "f43332a7414c21f8",
+            "id": "c5882ac588e7de6f",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {}
+              "type": "markdown",
+              "state": {
+                "file": "Algebra lineare/Matrici.md",
+                "mode": "source",
+                "source": false
+              }
             }
           }
         ]
@@ -44,7 +48,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "assio",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -82,6 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "Algebra lineare/Matrici.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -98,6 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "Algebra lineare/Matrici.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -119,7 +125,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "Algebra lineare/Matrici.md"
+              }
             }
           },
           {
@@ -138,8 +146,10 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "f43332a7414c21f8",
+  "active": "a1163d9af64d6878",
   "lastOpenFiles": [
+    "Algebra lineare/Grafi.md",
+    "Algebra lineare/Matrici.md",
     "Architettura degli elaboratori/Valutazione delle prestazioni.md",
     "Architettura degli elaboratori/CPU/CPU multiciclo.md",
     "Matematica discreta/Elementi di calcolo combinatorio.md",
@@ -147,8 +157,6 @@
     "Matematica discreta/Le funzioni.md",
     "Matematica discreta/Le relazioni.md",
     "Calcolo 1/Integrali/Integrali impropri e aree.md",
-    "Calcolo 1/Integrali/Integrali definiti.md",
-    "Calcolo 1/Integrali/Integrali indefiniti.md",
-    "Algebra lineare/Spazi vettoriali.md"
+    "Calcolo 1/Integrali/Integrali definiti.md"
   ]
 }

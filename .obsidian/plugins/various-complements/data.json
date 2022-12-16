@@ -658,16 +658,16 @@
     "\\begin{bmatrix}": {
       "\\begin{bmatrix}": {
         "currentFile": {
-          "count": 2,
-          "lastUpdated": 1670241727813
+          "count": 6,
+          "lastUpdated": 1671188140413
         }
       }
     },
     "\\end{bmatrix}": {
       "\\end{bmatrix}": {
         "currentFile": {
-          "count": 1,
-          "lastUpdated": 1670241731555
+          "count": 5,
+          "lastUpdated": 1671188143861
         }
       }
     },
@@ -852,6 +852,38 @@
         "currentFile": {
           "count": 1,
           "lastUpdated": 1671117736812
+        }
+      }
+    },
+    "Performance": {
+      "Performance": {
+        "currentFile": {
+          "count": 2,
+          "lastUpdated": 1671183876633
+        }
+      }
+    },
+    "programma": {
+      "programma": {
+        "currentFile": {
+          "count": 1,
+          "lastUpdated": 1671185468448
+        }
+      }
+    },
+    "determinante": {
+      "determinante": {
+        "currentFile": {
+          "count": 1,
+          "lastUpdated": 1671186328012
+        }
+      }
+    },
+    "sottomatrice": {
+      "sottomatrice": {
+        "currentFile": {
+          "count": 1,
+          "lastUpdated": 1671187974321
         }
       }
     }

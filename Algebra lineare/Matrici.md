@@ -33,7 +33,7 @@ L'addizione tra matrici avviene solo se hanno la stessa dimensione, nel caso con
 >$$A+B=\begin{bmatrix} 6 & 0 & -1\\ 4 & 4 & 3\end{bmatrix}$$
 
 ### Trasposizione
-Considerando la matrice $A=(a_{ij})\space m\times n$, la **matrice trasposta** sarà $n\times n \space B=(b_{ji})$ 
+Considerando la matrice $A=(a_{ij})\space m\times n$, la **matrice trasposta** sarà $n\times m \space B=(b_{ji})$, praticamente le righe diventano colonne e viceversa.
 >[!Example]
 >$$A=\begin{bmatrix}2 & 1 & 0\\1& 3 & 5\end{bmatrix} \quad A^t=\begin{bmatrix} 2 & 1\\1 & 3\\ 0&5\end{bmatrix}$$
 
@@ -107,12 +107,51 @@ Sono definite per interpretare le mosse di Gauss e sono di tre tipi:
 3. **Combinazione lineare**, ovvero aggiungere ad una riga un'altra riga moltiplicata per uno scalare.
 ==Tutte le matrici elementari sono invertibili==.
 
+---
 ## Determinante
-Può essere calcolato se la matrice è quadrata.
-##### Matrice $2x2$:
+Può essere calcolato se la matrice è quadrata, esso è un numero reale.
+#### Matrice 2x2:
 $$det(A)=(a_{11}\cdot a_{22})- (a_{12}\cdot a_{21})$$
+- Se 2 colonne sono uguali, allora $det = 0$.
+- Il determinante di una matrice Identica è $det = 1$.
+- Due matrici sono linearmente indipendenti _se e solo se_ $det = 0$.
+
+#### Matrice 3x3
+Il determinante in questo caso va calcolato con la **regola di Sarrus**:
+![[Sarrus.png]]
+>[!Example]
+>$$A = \begin{bmatrix}1&2&3\\1&1&-1\\2&0&5\end{bmatrix}$$
+>$|A| = (1\cdot 1\cdot 5) + (2\cdot -1\cdot 2)+(3\cdot 1\cdot 0) - (2\cdot 1\cdot 3) - (0\cdot -1\cdot 1) - (5\cdot 1\cdot 2)$
+
+## Minore di una matrice
+Il **minore** di una matrice è dato dal determinante della sottomatrice ricavata togliendo l'intera riga e colonna appartenenti ad un elemento
+
+>[!Example]
+>$$A = \begin{bmatrix}1&3&2\\4&1&3\\2&5&2\end{bmatrix}$$
+>Se voglio trovare il minore dell'elemento $a_{21}$ dovrò per prima cosa togliere la riga 2 e colonna 1, ottenendo la sottomatrice:
+>$$\begin{bmatrix}3&2\\5&2\end{bmatrix}$$
+>ora calcolo il determinante: $3\cdot 2 - 2\cdot 5 = -4$
+>
+>Per ottenere la **matrice dei minori**, dovrò fare questo passaggio per ogni elemento della matrice, ottenendo quindi:
+>$$\text{matrice dei minori} = \begin{bmatrix}-13&2&18\\-4&-2&-1\\7&-5&-11 \end{bmatrix}$$
+
+## Matrice dei cofattori
+La **matrice dei cofattori**(o matrice dei complementi algebrici) si ricava procedendo per ogni elemento nel seguente modo: $\text{minore}(a)\cdot (-1)^{i+j}$ 
+>[!Example]
+>Continuando con la matrice dell'esempio precedente, il cofattore dell'elemento $a_{1,1}$ sarà: $-13\cdot (-1)^{1+1} = -13$.
+>
+>Procedendo in questo modo per ogni elemento otterremo:
+>$$\begin{bmatrix}-13&-2&18\\4&-2&1\\7&5&-11 \end{bmatrix}$$
+
+Posso inoltre calcolare il determinante della matrice sfruttando la matrice dei cofattori in questo modo:
+$$det(A) = \sum_{j=1}^n a_{ij}\cdot C_{ij}$$
+
+---
 ## Matrici inverse
 Una matrice quadrata $A$ di ordine $n$ è detta invertibile se il prodotto $A\cdot A^{-1}$ restituisce una matrice identità di ordine $n$.
+
+La posso calcolare solo se il $det(A) \neq 0$ tramite:
+$$A^{-1} = \frac{1}{det(A)}\cdot C^T$$
 
 ## Matrici a scala
 Sono matrici dove il primo valore non nullo di una riga si trova dopo il valore non nullo della riga precedente:
