@@ -2,7 +2,7 @@ Serve per risolvere forme indeterminate nei limiti, ci consente quindi di appros
 
 ### Definizione
 Sia una funzione derivabile $n$ volte in $x_0$, chiamiamo **Polinomio di Taylor** di ordine $n$ della funzione $f$ relativo al punto $x_0$ il seguente polinomio:
-$$T_{n,x_0}=\frac{(x_0)}{0!)}+\frac{f'(x_0)}{1!}(x-x_0)+\frac{f''(x_0)}{2!}(x-x_0)^2+...=\frac{f^{(n)}(x_0)}{n!}(x-x_0)^n$$
+$$T_{n,x_0}=\frac{(x_0)}{(0!)}+\frac{f'(x_0)}{1!}(x-x_0)+\frac{f''(x_0)}{2!}(x-x_0)^2+...=\frac{f^{(n)}(x_0)}{n!}(x-x_0)^n$$
 - Quando $x_0 = 0$ e quindi si ottiene $T_{n,0}(x)$ viene anche chiamato **polinomio di McLaurin**.
 
 >Polinomi di Taylor di ordine superiore forniscono un'approssimazione migliore della funzione $f$ attorno $x_0$.

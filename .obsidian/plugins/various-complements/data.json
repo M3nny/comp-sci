@@ -47,14 +47,6 @@
   },
   "showLogAboutPerformanceInConsole": false,
   "selectionHistoryTree": {
-    "funzione": {
-      "funzione": {
-        "currentFile": {
-          "count": 3,
-          "lastUpdated": 1668701257565
-        }
-      }
-    },
     "\\lim\\limits_{x\\to": {
       "\\lim\\limits_{x\\to": {
         "currentFile": {
@@ -103,46 +95,6 @@
         }
       }
     },
-    "elemento": {
-      "elemento": {
-        "currentFile": {
-          "count": 1,
-          "lastUpdated": 1668609250806
-        }
-      }
-    },
-    "neutro": {
-      "neutro": {
-        "currentFile": {
-          "count": 1,
-          "lastUpdated": 1668609252334
-        }
-      }
-    },
-    "commutativa": {
-      "commutativa": {
-        "currentFile": {
-          "count": 1,
-          "lastUpdated": 1668609459128
-        }
-      }
-    },
-    "commutativo": {
-      "commutativo": {
-        "currentFile": {
-          "count": 1,
-          "lastUpdated": 1668610821505
-        }
-      }
-    },
-    "\\mathbb{Z}": {
-      "\\mathbb{Z}": {
-        "currentFile": {
-          "count": 3,
-          "lastUpdated": 1668613850736
-        }
-      }
-    },
     "\\mathbb{N}": {
       "\\mathbb{N}": {
         "currentFile": {
@@ -151,83 +103,11 @@
         }
       }
     },
-    "perchè": {
-      "perchè": {
-        "currentFile": {
-          "count": 1,
-          "lastUpdated": 1668613990937
-        }
-      }
-    },
     "\\lim_{x\\to": {
       "\\lim_{x\\to": {
         "currentFile": {
           "count": 4,
           "lastUpdated": 1669301612571
-        }
-      }
-    },
-    "\\text{": {
-      "\\text{": {
-        "currentFile": {
-          "count": 1,
-          "lastUpdated": 1668698016474
-        }
-      }
-    },
-    "oppure": {
-      "oppure": {
-        "currentFile": {
-          "count": 1,
-          "lastUpdated": 1668698018917
-        }
-      }
-    },
-    "definiamo": {
-      "definiamo": {
-        "currentFile": {
-          "count": 1,
-          "lastUpdated": 1668698085055
-        }
-      }
-    },
-    "asintoto": {
-      "asintoto": {
-        "currentFile": {
-          "count": 1,
-          "lastUpdated": 1668698089359
-        }
-      }
-    },
-    "Asintoto": {
-      "Asintoto": {
-        "currentFile": {
-          "count": 1,
-          "lastUpdated": 1668698220052
-        }
-      }
-    },
-    "orizzontale": {
-      "orizzontale": {
-        "currentFile": {
-          "count": 1,
-          "lastUpdated": 1668698222187
-        }
-      }
-    },
-    "obliquo": {
-      "obliquo": {
-        "currentFile": {
-          "count": 1,
-          "lastUpdated": 1668698232854
-        }
-      }
-    },
-    "coefficiente": {
-      "coefficiente": {
-        "currentFile": {
-          "count": 1,
-          "lastUpdated": 1668699726903
         }
       }
     },
@@ -908,6 +788,22 @@
         "currentFile": {
           "count": 2,
           "lastUpdated": 1671207641743
+        }
+      }
+    },
+    "eventuale": {
+      "eventuale": {
+        "currentFile": {
+          "count": 1,
+          "lastUpdated": 1671376408975
+        }
+      }
+    },
+    "crescenza": {
+      "crescenza": {
+        "currentFile": {
+          "count": 1,
+          "lastUpdated": 1671376434794
         }
       }
     }

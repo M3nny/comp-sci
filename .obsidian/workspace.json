@@ -4,22 +4,35 @@
     "type": "split",
     "children": [
       {
-        "id": "3a658e4bec001824",
+        "id": "b29fa716bb2b168e",
         "type": "tabs",
         "children": [
           {
-            "id": "23d460678bf4c5df",
+            "id": "657e36253700d0ba",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Algebra lineare/Matrici.md",
+                "file": "Calcolo 1/Derivate/Derivate delle funzioni elementari.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "9690373529513c4f",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Calcolo 1/Integrali/Integrali definiti.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -85,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Algebra lineare/Matrici.md",
+                "file": "Calcolo 1/Integrali/Integrali definiti.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Algebra lineare/Matrici.md",
+                "file": "Calcolo 1/Integrali/Integrali definiti.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Algebra lineare/Matrici.md"
+                "file": "Calcolo 1/Integrali/Integrali definiti.md"
               }
             }
           },
@@ -145,17 +158,17 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "23d460678bf4c5df",
+  "active": "9690373529513c4f",
   "lastOpenFiles": [
-    "Algebra lineare/Matrici.md",
-    "Algebra lineare/Grafi.md",
-    "Architettura degli elaboratori/Valutazione delle prestazioni.md",
-    "Architettura degli elaboratori/CPU/CPU multiciclo.md",
-    "Matematica discreta/Elementi di calcolo combinatorio.md",
-    "Matematica discreta/Le sommatorie.md",
-    "Matematica discreta/Le funzioni.md",
-    "Matematica discreta/Le relazioni.md",
+    "Calcolo 1/Integrali/Integrali indefiniti.md",
     "Calcolo 1/Integrali/Integrali impropri e aree.md",
-    "Calcolo 1/Integrali/Integrali definiti.md"
+    "Calcolo 1/Integrali/Integrali definiti.md",
+    "Calcolo 1/Successioni e serie numeriche/Successioni.md",
+    "Calcolo 1/Infiniti e infinitesimi/Infiniti e infinitesimi.md",
+    "Calcolo 1/Infiniti e infinitesimi/Polinomio di Taylor.md",
+    "Calcolo 1/Successioni e serie numeriche/Serie.md",
+    "Calcolo 1/Infiniti e infinitesimi/Concavità, convessità e flessi.md",
+    "Calcolo 1/Derivate/Derivate delle funzioni elementari.md",
+    "Calcolo 1/Derivate/Cos'è una derivata.md"
   ]
 }

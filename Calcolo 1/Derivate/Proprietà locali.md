@@ -27,3 +27,8 @@ Tipi di punti stazionari:
 2. Se $f(x)$ **decrescente** per $x<x_0$ e $f(x)$ **crescente** per $x>x_0$ con $x\in I_{x_0}$ allora $x_0$ è un **massimo minimo**;
 3. Se $f(x)$ **crescente** per $x<x_0$ e $x>x_0$ allora $x_0$ è un **punto di flesso a tangente orizzontale**;
 4. Se $f(x)$ **decrescente** per $x<x_0$ e $x>x_0$ allora $x_0$ è un **punto di flesso a tangente orizzontale**.
+
+## Studio della crescenza, massimi e minimi
+1. studio il segno della derivata prima in combinazione ad un eventuale dominio limitato
+2. Quando cambia la crescenza ho trovato un massimo/minimo
+3. Per capire se il massimi/minimo è relativo o assoluto, sostituisco tutti i massimi alla funzione originale e vedo quale è il più grande, discorso analogo per il minimo.
