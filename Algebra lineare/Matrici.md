@@ -227,6 +227,13 @@ Per trovarlo devo andare a tentativi, ovvero devo trovare la grandezza più gran
 >
 >Essendo che la sottomatrice più grande con $det \neq 0$ è una matrice 2x2, posso affermare che il rango è pari a $2$.
 
+### Teorema di Rouchè-capelli
+Questo teorema ci permette di capire se un sistema lineare ammette o meno soluzioni, indicheremo con $A$ la matrice dei coefficienti del sistema, e con $(A|B)$ la matrice che comprende anche i termini noti, e con $n$ il numero di incognite che compaiono nel sistema.
+- **Ha un'unica soluzione** _se e solo se_ $\text{rango }(A) = \text{rango }(A|B) = n$
+- **Ha infinite soluzioni** _se e solo se_ $\text{rango }(A) = \text{rango }(A|B) = r<n$
+	Le soluzioni dipendono da $n-r$ parametri (con $r$ che è più piccolo di $n$)
+- **Non ammette soluzioni** _se e solo se_ $\text{rango }(A) \neq \text{rango }(A|B)$ 
+
 ---
 ## Cramer
 Usiamo questo metodo per risolvere sistemi che hanno lo stesso numero di equazioni/incognite.
@@ -244,3 +251,48 @@ $D_y = \left| \begin{bmatrix}2&8\\4&-2\end{bmatrix} \right| =-36$
 >3. $x=\frac{D_x}{D} = \frac{-18}{-18} = 1$        $y=\frac{D_y}{D} = \frac{-36}{-18} = 2$
 >
 >Abbiamo quindi ottenuto che $x=1$ e $y=2$
+
+---
+## Autovalori e autovettori
+> Si parla di autovalori e autovettori quando ci riferiamo alle matrici quadrate
+
+Un **autovalore** ($\lambda$) è un numero tale che esiste un vettore $v$ per cui:
+$$Av = \lambda v$$
+$\lambda$ è chiamato l'autovalore di $A$ associato all'autovettore $v$, in questo modo siamo in grado di comprimere l'informazione che la matrice ci da.
+
+Gli autovalori che possiamo trovare saranno **al massimo** dell'ordine della matrice quadrata, quindi se una matrice è $2\times 2$, potremmo trovare al massimo 2 autovalori.
+Gli autovalori li possiamo trovare tramite la seguente equazione:
+$$\text{Polinomio caratteristico:}\quad det(A-\lambda I) = 0$$
+Dove $\lambda I(A)$ che sarebbe la matrice identità, vuol dire sottrarre  un $-\lambda$ a tutti gli elementi della diagonale principale.
+>[!Example]
+>$$A=\begin{bmatrix}2&0\\1&-1\end{bmatrix}$$
+>Risolvo $det(A-\lambda I(A)) = 0$
+>$$det\begin{bmatrix}2-\lambda&0\\1&-1-\lambda\end{bmatrix} = 0$$
+>Devo risolvere quindi: $(2-\lambda)(-1-\lambda) - (0\cdot 1) = 0$, da cui ne derivo:
+>$$(2-\lambda)(-1-\lambda) = 0$$
+>Non serve fare ulteriori moltiplicazioni, vedo già che gli autovalori sono:
+>$$\lambda_1 = 2 \quad \lambda_2=-1$$
+
+Per determinare gli autovettori associati agli autovalori, risolvo i sistemi che mi escono fuori sostituendo $\lambda$ con gli autovalori trovati:
+$$(A-\bar{\lambda} I)\bar{x} = 0$$
+Gli autovettori sono:
+- **Non nulli**.
+- **Infiniti**
+
+>[!Example]
+>Trovo l'autovettore associato a $\lambda_1$
+>$$\begin{bmatrix}2-2&0\\1&-1-2\end{bmatrix}\begin{bmatrix}x\\y\end{bmatrix}=\begin{bmatrix}0\\0\end{bmatrix} \quad\Rightarrow \quad\begin{cases}0x+0y=0\\x-3y=0\end{cases}$$
+>La prima equazione non esiste praticamente, quindi vado a dare un valore $k$ a $y$, andando quindi a risolvere $x-3k = 0 \implies x=3k$, per cui abbiamo trovato:
+>$$\begin{cases}x=3k\\y=k\end{cases} \quad k\neq 0$$ 
+>Abbiamo infiniti autovettori, basta che $k$ sia diverso da $0$ perchè non rientra nella definizione di autovettore, ad esempio con $k = 1$, ottengo l'autovettore $\begin{bmatrix}3\\1\end{bmatrix}$
+>---
+>Trovo l'autovetttore associato a $\lambda_2$
+>$$\begin{bmatrix}2+1&0\\1&-1+1\end{bmatrix}\begin{bmatrix}x\\y\end{bmatrix}=\begin{bmatrix}0\\0\end{bmatrix} \quad\Rightarrow \quad\begin{cases}3x+0y=0\\x+0y=0\end{cases}$$
+>In questo caso ho $x=0$ e $y$ libero, per cui pongo $y = k$:
+>$$\begin{cases}x=0\\y=k\end{cases} \quad k\neq 0$$ posso trovare un autovettore con $k=1$ ad esempio, per cui otterrei: $\begin{bmatrix}0\\1\end{bmatrix}$
+>---
+>>Da notare che il determinante del sistema quando lo si ha trovato è uguale a $0$ 
+>
+>>Verifico il primo autovettore trovato nell'esempio, moltiplicando la matrice originale per l'autovettore:
+>>$$\begin{bmatrix}2&0\\1&-1\end{bmatrix}\begin{bmatrix}3\\1\end{bmatrix}=\begin{bmatrix}6\\2\end{bmatrix} = 2\begin{bmatrix}3\\1\end{bmatrix}$$
+>>$2$ era appunto l'autovalore associato all'autovettore

@@ -55,14 +55,6 @@
         }
       }
     },
-    "registri": {
-      "registri": {
-        "currentFile": {
-          "count": 3,
-          "lastUpdated": 1669128819714
-        }
-      }
-    },
     "\\mathbb{R}": {
       "\\mathbb{R}": {
         "currentFile": {
@@ -108,78 +100,6 @@
         "currentFile": {
           "count": 4,
           "lastUpdated": 1669301612571
-        }
-      }
-    },
-    "clock": {
-      "clock": {
-        "currentFile": {
-          "count": 1,
-          "lastUpdated": 1669124446097
-        }
-      }
-    },
-    "propaga": {
-      "propaga": {
-        "currentFile": {
-          "count": 1,
-          "lastUpdated": 1669124504708
-        }
-      }
-    },
-    "methodology": {
-      "methodology": {
-        "currentFile": {
-          "count": 1,
-          "lastUpdated": 1669125206077
-        }
-      }
-    },
-    "_istantaneamente_": {
-      "_istantaneamente_": {
-        "currentFile": {
-          "count": 1,
-          "lastUpdated": 1669125856131
-        }
-      }
-    },
-    "edge-triggered": {
-      "edge-triggered": {
-        "currentFile": {
-          "count": 2,
-          "lastUpdated": 1669126746420
-        }
-      }
-    },
-    "flip-flop": {
-      "flip-flop": {
-        "currentFile": {
-          "count": 4,
-          "lastUpdated": 1669128416450
-        }
-      }
-    },
-    "triggered": {
-      "triggered": {
-        "currentFile": {
-          "count": 1,
-          "lastUpdated": 1669126757065
-        }
-      }
-    },
-    "stato": {
-      "stato": {
-        "currentFile": {
-          "count": 1,
-          "lastUpdated": 1669127553619
-        }
-      }
-    },
-    "circuito": {
-      "circuito": {
-        "currentFile": {
-          "count": 1,
-          "lastUpdated": 1669127555708
         }
       }
     },
@@ -370,8 +290,8 @@
     "coefficienti": {
       "coefficienti": {
         "currentFile": {
-          "count": 3,
-          "lastUpdated": 1671207380558
+          "count": 4,
+          "lastUpdated": 1671723183562
         }
       }
     },
@@ -538,16 +458,16 @@
     "\\begin{bmatrix}": {
       "\\begin{bmatrix}": {
         "currentFile": {
-          "count": 19,
-          "lastUpdated": 1671207645639
+          "count": 22,
+          "lastUpdated": 1671728605218
         }
       }
     },
     "\\end{bmatrix}": {
       "\\end{bmatrix}": {
         "currentFile": {
-          "count": 18,
-          "lastUpdated": 1671207648272
+          "count": 21,
+          "lastUpdated": 1671728607885
         }
       }
     },
