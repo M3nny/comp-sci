@@ -23,7 +23,7 @@ $$\forall x \in A,\space x\neq x_0,\space \text{ tale che }|x-x_0|<\delta_\epsil
 >- Se una funzione ha limite negativo $\lim\limits_{x\to x_0}f(x)=l<0$ allora esiste un intorno $I_{x_0}$ per cui $f(x)<0 \space \forall x \in I_{x_0}$
 
 ## Limiti infiniti
-Fin ora abbiamo trattato **limiti  finiti** dove in $\lim\limits_{x\to x_0}f(x)=l$ abbiamo che $x_0\in \mathbb{R}$ e $l\in \mathbb{R}$; ora andremmo a vedere i limiti per cui $x_0$ e/o $l$ sono infiniti:
+Fin ora abbiamo trattato **limiti finiti** dove in $\lim\limits_{x\to x_0}f(x)=l$ abbiamo che $x_0\in \mathbb{R}$ e $l\in \mathbb{R}$; ora andremmo a vedere i limiti per cui $x_0$ e/o $l$ sono infiniti:
 ![[Limite infinito.svg]]
 Vediamo che $]-\infty,b[$ è un [[Elementi di topologia di R#Palle circolari|interno]] di $-\infty$ mentre $[a,+\infty[$ è un interno di $+\infty$.
 

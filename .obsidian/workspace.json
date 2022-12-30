@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "184e3f5d9ce933d4",
+        "id": "edaadf432dc7ea22",
         "type": "tabs",
         "children": [
           {
-            "id": "d45ab27fb3e2542e",
+            "id": "933121b3b3021e5b",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Algebra lineare/Matrici.md",
+                "file": "Calcolo 1/Appunti pre esame.md",
                 "mode": "source",
                 "source": false
               }
@@ -69,8 +69,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "right": {
     "id": "282a9548711da6a0",
@@ -86,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Algebra lineare/Matrici.md",
+                "file": "Calcolo 1/Appunti pre esame.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Algebra lineare/Matrici.md",
+                "file": "Calcolo 1/Appunti pre esame.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Algebra lineare/Matrici.md"
+                "file": "Calcolo 1/Appunti pre esame.md"
               }
             }
           },
@@ -156,17 +155,17 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "d45ab27fb3e2542e",
+  "active": "933121b3b3021e5b",
   "lastOpenFiles": [
-    "Untitled.canvas",
-    "Algebra lineare/Sistemi lineari.md",
-    "Algebra lineare/Grafi.md",
-    "Calcolo 1/Derivate/Derivate delle funzioni elementari.md",
-    "Calcolo 1/Derivate/Cos'è una derivata.md",
-    "Calcolo 1/Derivate/Asintoti.md",
-    "Calcolo 1/Infiniti e infinitesimi/Concavità, convessità e flessi.md",
-    "Calcolo 1/Infiniti e infinitesimi/Studio di funzione.md",
-    "Calcolo 1/Successioni e serie numeriche/Successioni.md",
-    "Calcolo 1/Successioni e serie numeriche/Serie.md"
+    "Architettura degli elaboratori/5 - Specifica e sintesi di circuiti sequenziali/Mealy.md",
+    "Architettura degli elaboratori/Images/Circuiti sequenziali/Tabelle KM.svg",
+    "Architettura degli elaboratori/Images/Circuiti sequenziali/Tabelle Mealy Karn..svg",
+    "Architettura degli elaboratori/Images/Circuiti sequenziali/Automa Mealy.png",
+    "KM1.png.md",
+    "Architettura degli elaboratori/Images/Circuiti sequenziali/KM1.png",
+    "Architettura degli elaboratori/5 - Specifica e sintesi di circuiti sequenziali/Moore.md",
+    "Architettura degli elaboratori/5 - Specifica e sintesi di circuiti sequenziali/Introduzione.md",
+    "Architettura degli elaboratori/7 - Valutazione delle prestazioni.md",
+    "Architettura degli elaboratori/4 - Memoria e circuiti sequenziali/Elementi di memoria.md"
   ]
 }

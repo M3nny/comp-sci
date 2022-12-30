@@ -47,14 +47,6 @@
   },
   "showLogAboutPerformanceInConsole": false,
   "selectionHistoryTree": {
-    "\\lim\\limits_{x\\to": {
-      "\\lim\\limits_{x\\to": {
-        "currentFile": {
-          "count": 18,
-          "lastUpdated": 1669302114769
-        }
-      }
-    },
     "\\mathbb{R}": {
       "\\mathbb{R}": {
         "currentFile": {
@@ -63,147 +55,11 @@
         }
       }
     },
-    "soluzioni": {
-      "soluzioni": {
-        "currentFile": {
-          "count": 2,
-          "lastUpdated": 1669474778691
-        }
-      }
-    },
     "Istruzione": {
       "Istruzione": {
         "currentFile": {
           "count": 3,
           "lastUpdated": 1669906408067
-        }
-      }
-    },
-    "I_{x_0}": {
-      "I_{x_0}": {
-        "currentFile": {
-          "count": 8,
-          "lastUpdated": 1669304859712
-        }
-      }
-    },
-    "\\mathbb{N}": {
-      "\\mathbb{N}": {
-        "currentFile": {
-          "count": 2,
-          "lastUpdated": 1669474843413
-        }
-      }
-    },
-    "\\lim_{x\\to": {
-      "\\lim_{x\\to": {
-        "currentFile": {
-          "count": 4,
-          "lastUpdated": 1669301612571
-        }
-      }
-    },
-    "multiplexer": {
-      "multiplexer": {
-        "currentFile": {
-          "count": 1,
-          "lastUpdated": 1669131042642
-        }
-      }
-    },
-    "effetto": {
-      "effetto": {
-        "currentFile": {
-          "count": 1,
-          "lastUpdated": 1669131775899
-        }
-      }
-    },
-    "\\mathcal{C}^k": {
-      "\\mathcal{C}^k": {
-        "currentFile": {
-          "count": 1,
-          "lastUpdated": 1669302994525
-        }
-      }
-    },
-    "\\text{ continua}\\}": {
-      "\\text{ continua}\\}": {
-        "currentFile": {
-          "count": 1,
-          "lastUpdated": 1669303086880
-        }
-      }
-    },
-    "divisibilità": {
-      "divisibilità": {
-        "currentFile": {
-          "count": 1,
-          "lastUpdated": 1669307426668
-        }
-      }
-    },
-    "south": {
-      "south": {
-        "currentFile": {
-          "count": 1,
-          "lastUpdated": 1669310896347
-        }
-      }
-    },
-    "NSgreen": {
-      "NSgreen": {
-        "currentFile": {
-          "count": 1,
-          "lastUpdated": 1669311199635
-        }
-      }
-    },
-    "EWgreen": {
-      "EWgreen": {
-        "currentFile": {
-          "count": 1,
-          "lastUpdated": 1669311212521
-        }
-      }
-    },
-    "Bezout": {
-      "Bezout": {
-        "currentFile": {
-          "count": 2,
-          "lastUpdated": 1669474768731
-        }
-      }
-    },
-    "\\mathbb{N}^+": {
-      "\\mathbb{N}^+": {
-        "currentFile": {
-          "count": 1,
-          "lastUpdated": 1669474064355
-        }
-      }
-    },
-    "equazione": {
-      "equazione": {
-        "currentFile": {
-          "count": 1,
-          "lastUpdated": 1669474605919
-        }
-      }
-    },
-    "soluzione": {
-      "soluzione": {
-        "currentFile": {
-          "count": 1,
-          "lastUpdated": 1669474611104
-        }
-      }
-    },
-    "generalizzato": {
-      "generalizzato": {
-        "currentFile": {
-          "count": 1,
-          "lastUpdated": 1669474796495
         }
       }
     },
@@ -724,6 +580,14 @@
         "currentFile": {
           "count": 1,
           "lastUpdated": 1671376434794
+        }
+      }
+    },
+    "\\lim\\limits_{x\\to\\pm\\infty}\\frac{f": {
+      "\\lim\\limits_{x\\to\\pm\\infty}\\frac{f": {
+        "currentFile": {
+          "count": 1,
+          "lastUpdated": 1672155703389
         }
       }
     }
