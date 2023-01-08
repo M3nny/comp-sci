@@ -8,6 +8,9 @@
 - **Tenere conto del range del dominio** quando si studia il segno
 - **Quando si va a trovare una derivata di un valore assoluto** (di solito la seconda, quando si ha già la funzione divisa in 2 parti a causa del val. ass) non è detto che bisogna farla per entrambe le funzioni nel sistema, se il grado massimo dentro al valore assoluto è 1, allora la derivata seconda farà sparire la $x$ risultando in una derivata uguale per entrambe le funzioni
 - **Una funzione senza simmetrie non può essere periodica**
+- Una funzione non è invertibile se esiste un punto di massimo o di minimo all'interno della funzione
+- Per ogni nuova variabile, specificare a che insieme appartiene
+- Quando valuto una funzione con il valore assoluto, le condizioni da mettere a sistema sono: la prima dove non altero il segno dentro al valore assoluto e metto la condizione per cui x > 0 (anche in parte se questo dovesse essere un intervallo limitato) e nella seconda altero il segno all'interno del valore assoluto e poi come condizione metto che x < 0 (anche in parte come prima)
 
 ---
 ### Verificare il limite con la definizione
@@ -53,9 +56,20 @@ Si può trovare solo se la funzione è pari o dispari, inoltre una funzione è p
 Per verificare quanti zeri ha una funzione senza eseguire ulteriori calcoli, bisogna, dopo aver studiato il segno di $f'(x)$, trovare le ordinate delle $x$ che abbiamo trovato, se una è l'opposto dell'altra e precedentemente abbiamo visto che la funzione è continua, allora esiste per forza **almeno uno** zero. 
 
 ---
+### Vedere se una funzione è di classe $C^1$ 
+1. Vedere se il limite verso il punto non compreso nella funzione è uguale  all'altra funzione del sistema, dove invece il punto è compreso
+2. Guardare se è derivabile in quel punto tramite il rapporto incrementale
+3. Vedere se la derivata è continua
+
+---
 ### Formule
 - $\sin(-x) = -\sin(x)$
 - $\cos(-x) = \cos(x)$
 - $\sec(x) = \frac{1}{\cos(x)} \quad cosec(x) = \frac{1}{\sin(x)}$
-- **Rapporto incrementale**: $\lim\limits_{x\to 0}\frac{f(x)-f(x_0)}{x-x_0}$
+- **Rapporto incrementale**: $\lim\limits_{x\to x_0}\frac{f(x)-f(x_0)}{x-x_0}$
 -  **Retta tangente per un punto** $y=f'(x_0)\cdot(x-x_0)+f(x_0)$
+- **Taylor**: $\frac{f^{(n)}(x_0)}{n!}(x-x_0)^n$ 
+
+>Discutere successivamente la derivata del valore assoluto
+
+>TENERE CONTO DEL DOMINIO E DELL'INTERVALLO DELLA FUNZIONE

@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "edaadf432dc7ea22",
+        "id": "26c42168c8f819f7",
         "type": "tabs",
         "children": [
           {
-            "id": "933121b3b3021e5b",
+            "id": "5829509e96391461",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -48,7 +48,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "armonica",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -65,7 +65,8 @@
               "state": {}
             }
           }
-        ]
+        ],
+        "currentTab": 2
       }
     ],
     "direction": "horizontal",
@@ -155,17 +156,17 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "933121b3b3021e5b",
+  "active": "5829509e96391461",
   "lastOpenFiles": [
-    "Architettura degli elaboratori/5 - Specifica e sintesi di circuiti sequenziali/Mealy.md",
-    "Architettura degli elaboratori/Images/Circuiti sequenziali/Tabelle KM.svg",
-    "Architettura degli elaboratori/Images/Circuiti sequenziali/Tabelle Mealy Karn..svg",
-    "Architettura degli elaboratori/Images/Circuiti sequenziali/Automa Mealy.png",
-    "KM1.png.md",
-    "Architettura degli elaboratori/Images/Circuiti sequenziali/KM1.png",
-    "Architettura degli elaboratori/5 - Specifica e sintesi di circuiti sequenziali/Moore.md",
-    "Architettura degli elaboratori/5 - Specifica e sintesi di circuiti sequenziali/Introduzione.md",
-    "Architettura degli elaboratori/7 - Valutazione delle prestazioni.md",
-    "Architettura degli elaboratori/4 - Memoria e circuiti sequenziali/Elementi di memoria.md"
+    "Calcolo 1/Successioni e serie numeriche/Serie.md",
+    "Calcolo 1/Derivate/Cos'è una derivata.md",
+    "Calcolo 1/Appunti pre esame.md",
+    "Calcolo 1/Infiniti e infinitesimi/Concavità, convessità e flessi.md",
+    "Calcolo 1/Derivate/Algebra delle derivate.md",
+    "Calcolo 1/Derivate/Derivate delle funzioni elementari.md",
+    "Calcolo 1/Integrali/Integrali indefiniti.md",
+    "Calcolo 1/Infiniti e infinitesimi/Polinomio di Taylor.md",
+    "Calcolo 1/Limiti/Definizione di un limite.md",
+    "Architettura degli elaboratori/1 - Rappresentazione dell'informazione/IEEE754.md"
   ]
 }
