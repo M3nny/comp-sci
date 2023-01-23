@@ -47,267 +47,11 @@
   },
   "showLogAboutPerformanceInConsole": false,
   "selectionHistoryTree": {
-    "\\mathbb{R}": {
-      "\\mathbb{R}": {
-        "currentFile": {
-          "count": 13,
-          "lastUpdated": 1671014675249
-        }
-      }
-    },
-    "Istruzione": {
-      "Istruzione": {
-        "currentFile": {
-          "count": 3,
-          "lastUpdated": 1669906408067
-        }
-      }
-    },
-    "Taylor": {
-      "Taylor": {
-        "currentFile": {
-          "count": 4,
-          "lastUpdated": 1669650284558
-        }
-      }
-    },
-    "McLaurin": {
-      "McLaurin": {
-        "currentFile": {
-          "count": 1,
-          "lastUpdated": 1669648182877
-        }
-      }
-    },
-    "polinomio": {
-      "polinomio": {
-        "currentFile": {
-          "count": 1,
-          "lastUpdated": 1669649721349
-        }
-      }
-    },
-    "Taylor-Lagrange": {
-      "Taylor-Lagrange": {
-        "currentFile": {
-          "count": 1,
-          "lastUpdated": 1669650293911
-        }
-      }
-    },
-    "successione": {
-      "successione": {
-        "currentFile": {
-          "count": 2,
-          "lastUpdated": 1669652061333
-        }
-      }
-    },
-    "\\lim\\limits_{x\\to+\\infty}f": {
-      "\\lim\\limits_{x\\to+\\infty}f": {
-        "currentFile": {
-          "count": 1,
-          "lastUpdated": 1669652839854
-        }
-      }
-    },
-    "relativamente": {
-      "relativamente": {
-        "currentFile": {
-          "count": 3,
-          "lastUpdated": 1669819764118
-        }
-      }
-    },
-    "sottospazi": {
-      "sottospazi": {
-        "currentFile": {
-          "count": 1,
-          "lastUpdated": 1669833066137
-        }
-      }
-    },
-    "combinazione": {
-      "combinazione": {
-        "currentFile": {
-          "count": 1,
-          "lastUpdated": 1669833167575
-        }
-      }
-    },
-    "indipendenti": {
-      "indipendenti": {
-        "currentFile": {
-          "count": 1,
-          "lastUpdated": 1669833746113
-        }
-      }
-    },
     "coefficienti": {
       "coefficienti": {
         "currentFile": {
           "count": 4,
           "lastUpdated": 1671723183562
-        }
-      }
-    },
-    "linearmente": {
-      "linearmente": {
-        "currentFile": {
-          "count": 1,
-          "lastUpdated": 1669833777044
-        }
-      }
-    },
-    "dipendenti": {
-      "dipendenti": {
-        "currentFile": {
-          "count": 1,
-          "lastUpdated": 1669833778887
-        }
-      }
-    },
-    "omorfismo": {
-      "omorfismo": {
-        "currentFile": {
-          "count": 1,
-          "lastUpdated": 1669834591654
-        }
-      }
-    },
-    "omomorfismo": {
-      "omomorfismo": {
-        "currentFile": {
-          "count": 1,
-          "lastUpdated": 1669834668182
-        }
-      }
-    },
-    "implementazione": {
-      "implementazione": {
-        "currentFile": {
-          "count": 1,
-          "lastUpdated": 1669905497346
-        }
-      }
-    },
-    "Address": {
-      "Address": {
-        "currentFile": {
-          "count": 1,
-          "lastUpdated": 1669906472663
-        }
-      }
-    },
-    "STORE": {
-      "STORE": {
-        "currentFile": {
-          "count": 1,
-          "lastUpdated": 1669907613681
-        }
-      }
-    },
-    "sign_ext": {
-      "sign_ext": {
-        "currentFile": {
-          "count": 1,
-          "lastUpdated": 1669909220074
-        }
-      }
-    },
-    "Imm16": {
-      "Imm16": {
-        "currentFile": {
-          "count": 1,
-          "lastUpdated": 1669909223297
-        }
-      }
-    },
-    "_{n\\in\\mathbb{N}}": {
-      "_{n\\in\\mathbb{N}}": {
-        "currentFile": {
-          "count": 1,
-          "lastUpdated": 1669910623133
-        }
-      }
-    },
-    "\\sum_n": {
-      "\\sum_n": {
-        "currentFile": {
-          "count": 8,
-          "lastUpdated": 1669912917062
-        }
-      }
-    },
-    "\\lambda": {
-      "\\lambda": {
-        "currentFile": {
-          "count": 1,
-          "lastUpdated": 1669911851829
-        }
-      }
-    },
-    "\\micro": {
-      "\\micro": {
-        "currentFile": {
-          "count": 1,
-          "lastUpdated": 1669911856581
-        }
-      }
-    },
-    "Teorema": {
-      "Teorema": {
-        "currentFile": {
-          "count": 1,
-          "lastUpdated": 1669912593059
-        }
-      }
-    },
-    "criterio": {
-      "criterio": {
-        "currentFile": {
-          "count": 1,
-          "lastUpdated": 1669912595210
-        }
-      }
-    },
-    "\\lim_{n\\to": {
-      "\\lim_{n\\to": {
-        "currentFile": {
-          "count": 2,
-          "lastUpdated": 1669912999410
-        }
-      }
-    },
-    "+\\infty}": {
-      "+\\infty}": {
-        "currentFile": {
-          "count": 2,
-          "lastUpdated": 1669913004183
-        }
-      }
-    },
-    "assolutamente": {
-      "assolutamente": {
-        "currentFile": {
-          "count": 1,
-          "lastUpdated": 1669912813888
-        }
-      }
-    },
-    "Example": {
-      "Example": {
-        "currentFile": {
-          "count": 1,
-          "lastUpdated": 1670064268768
-        }
-      }
-    },
-    "endomorfismo": {
-      "endomorfismo": {
-        "currentFile": {
-          "count": 2,
-          "lastUpdated": 1670236313372
         }
       }
     },
@@ -327,267 +71,51 @@
         }
       }
     },
-    "\\int^b_a": {
-      "\\int^b_a": {
-        "currentFile": {
-          "count": 11,
-          "lastUpdated": 1670837407442
-        }
-      }
-    },
-    "\\begin{pmatrix}1\\\\1\\end{pmatrix}": {
-      "\\begin{pmatrix}1\\\\1\\end{pmatrix}": {
-        "currentFile": {
-          "count": 3,
-          "lastUpdated": 1670423048315
-        }
-      }
-    },
-    "\\begin{pmatrix}2\\\\2\\end{pmatrix}": {
-      "\\begin{pmatrix}2\\\\2\\end{pmatrix}": {
-        "currentFile": {
-          "count": 2,
-          "lastUpdated": 1670423064427
-        }
-      }
-    },
-    "\\mathbb{R}^2": {
-      "\\mathbb{R}^2": {
-        "currentFile": {
-          "count": 1,
-          "lastUpdated": 1670424961898
-        }
-      }
-    },
-    "\\alpha": {
-      "\\alpha": {
-        "currentFile": {
-          "count": 1,
-          "lastUpdated": 1670836076959
-        }
-      }
-    },
-    "integrale": {
-      "integrale": {
-        "currentFile": {
-          "count": 1,
-          "lastUpdated": 1670836244226
-        }
-      }
-    },
-    "impropri": {
-      "impropri": {
-        "currentFile": {
-          "count": 2,
-          "lastUpdated": 1670839278360
-        }
-      }
-    },
-    "\\lim_{t\\to": {
-      "\\lim_{t\\to": {
-        "currentFile": {
-          "count": 3,
-          "lastUpdated": 1670839461355
-        }
-      }
-    },
-    "\\int_1^t": {
-      "\\int_1^t": {
-        "currentFile": {
-          "count": 1,
-          "lastUpdated": 1670838477532
-        }
-      }
-    },
-    "\\frac{1}{x^2}dx": {
-      "\\frac{1}{x^2}dx": {
-        "currentFile": {
-          "count": 1,
-          "lastUpdated": 1670838483168
-        }
-      }
-    },
-    "\\int_a^{\\pm\\infty}": {
-      "\\int_a^{\\pm\\infty}": {
-        "currentFile": {
-          "count": 2,
-          "lastUpdated": 1670839089262
-        }
-      }
-    },
-    "\\int_a^{+\\infty}": {
-      "\\int_a^{+\\infty}": {
-        "currentFile": {
-          "count": 1,
-          "lastUpdated": 1670839123300
-        }
-      }
-    },
-    "intervallo": {
-      "intervallo": {
-        "currentFile": {
-          "count": 1,
-          "lastUpdated": 1670839263178
-        }
-      }
-    },
-    "Proposizione": {
-      "Proposizione": {
-        "currentFile": {
-          "count": 1,
-          "lastUpdated": 1670839771725
-        }
-      }
-    },
-    "confronto": {
-      "confronto": {
-        "currentFile": {
-          "count": 1,
-          "lastUpdated": 1670839816003
-        }
-      }
-    },
-    "Analogamente": {
-      "Analogamente": {
-        "currentFile": {
-          "count": 1,
-          "lastUpdated": 1671014623747
-        }
-      }
-    },
-    "Permutazioni": {
-      "Permutazioni": {
-        "currentFile": {
-          "count": 1,
-          "lastUpdated": 1671031081996
-        }
-      }
-    },
-    "semplici": {
-      "semplici": {
-        "currentFile": {
-          "count": 3,
-          "lastUpdated": 1671031178416
-        }
-      }
-    },
-    "distinti": {
-      "distinti": {
-        "currentFile": {
-          "count": 1,
-          "lastUpdated": 1671031104781
-        }
-      }
-    },
-    "Disposizioni": {
-      "Disposizioni": {
-        "currentFile": {
-          "count": 1,
-          "lastUpdated": 1671031176525
-        }
-      }
-    },
-    "ripetizione": {
-      "ripetizione": {
-        "currentFile": {
-          "count": 2,
-          "lastUpdated": 1671031778383
-        }
-      }
-    },
-    "eventualmente": {
-      "eventualmente": {
-        "currentFile": {
-          "count": 1,
-          "lastUpdated": 1671031754474
-        }
-      }
-    },
-    "multiciclo": {
-      "multiciclo": {
-        "currentFile": {
-          "count": 1,
-          "lastUpdated": 1671117736812
-        }
-      }
-    },
-    "Performance": {
-      "Performance": {
-        "currentFile": {
-          "count": 2,
-          "lastUpdated": 1671183876633
-        }
-      }
-    },
-    "programma": {
-      "programma": {
-        "currentFile": {
-          "count": 1,
-          "lastUpdated": 1671185468448
-        }
-      }
-    },
-    "determinante": {
-      "determinante": {
-        "currentFile": {
-          "count": 7,
-          "lastUpdated": 1671207505169
-        }
-      }
-    },
-    "sottomatrice": {
-      "sottomatrice": {
-        "currentFile": {
-          "count": 2,
-          "lastUpdated": 1671205693102
-        }
-      }
-    },
-    "cofattori": {
-      "cofattori": {
-        "currentFile": {
-          "count": 1,
-          "lastUpdated": 1671199861369
-        }
-      }
-    },
-    "ammette": {
-      "ammette": {
-        "currentFile": {
-          "count": 1,
-          "lastUpdated": 1671203408048
-        }
-      }
-    },
-    "\\begin{cases}3x+7y": {
-      "\\begin{cases}3x+7y": {
-        "currentFile": {
-          "count": 2,
-          "lastUpdated": 1671207641743
-        }
-      }
-    },
-    "eventuale": {
-      "eventuale": {
-        "currentFile": {
-          "count": 1,
-          "lastUpdated": 1671376408975
-        }
-      }
-    },
-    "crescenza": {
-      "crescenza": {
-        "currentFile": {
-          "count": 1,
-          "lastUpdated": 1671376434794
-        }
-      }
-    },
     "\\lim\\limits_{x\\to\\pm\\infty}\\frac{f": {
       "\\lim\\limits_{x\\to\\pm\\infty}\\frac{f": {
         "currentFile": {
           "count": 1,
           "lastUpdated": 1672155703389
+        }
+      }
+    },
+    "migliorare": {
+      "migliorare": {
+        "currentFile": {
+          "count": 1,
+          "lastUpdated": 1673974881682
+        }
+      }
+    },
+    "throughput": {
+      "throughput": {
+        "currentFile": {
+          "count": 1,
+          "lastUpdated": 1674145164538
+        }
+      }
+    },
+    "performance": {
+      "performance": {
+        "currentFile": {
+          "count": 1,
+          "lastUpdated": 1674145203151
+        }
+      }
+    },
+    "ottimizzazioni": {
+      "ottimizzazioni": {
+        "currentFile": {
+          "count": 1,
+          "lastUpdated": 1674146275968
+        }
+      }
+    },
+    "output": {
+      "output": {
+        "currentFile": {
+          "count": 1,
+          "lastUpdated": 1674148875041
         }
       }
     }

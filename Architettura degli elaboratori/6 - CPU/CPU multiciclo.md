@@ -5,8 +5,8 @@ Lo stesso per **l'instruction register** che deve essere sempre quello fino a qu
 ## Sequenza passi (cicli) esecuzione
 1. **Fetch istruzione** _e_ **incremento PC**.
 2. **Decodifica dell'istruzione** _e_ **leggo i registri** (in parallelo) nel caso servisse ad una istruzione dopo, inoltre **anticipo del lavoro per il branch** in modo tale che se dopo ci sarà una _beq_, essa potrà terminare in un ciclo al posto di impiegarne due
-3. **R-type exe** _o_ **calcolo indirizzo memoria** _o_ **completo beq** _o_ **completo jump**
-4. **Completo R-type** _o_ **completo store** (**sw**)
+3. **R-type exe** (calcolo il risultato) _o_ **calcolo indirizzo memoria** _o_ **completo beq** _o_ **completo jump**
+4. **Completo R-type** (scrivo il risultato calcolato in precedenza su un registro) _o_ **accesso alla memoria** (completo **sw**)
 5. **Write back**, ovvero scrivo sul registro (**lw**)
 
 >Ogni passo viene eseguito in un ciclo di clock, ogni istruzione impiega da 3 a 5 cicli

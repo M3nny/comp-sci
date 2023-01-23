@@ -3,7 +3,12 @@
     {
       "type": "file",
       "title": "Appunti pre esame",
-      "path": "Calcolo 1/Appunti pre esame.md"
+      "path": "Calcolo 1/Calcolo.md"
+    },
+    {
+      "type": "file",
+      "title": "Architettura degli elaboratori",
+      "path": "Architettura degli elaboratori/Architettura degli elaboratori.md"
     }
   ]
 }

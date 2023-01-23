@@ -20,3 +20,10 @@ $$\text{Freq} = \frac{1}{T}$$
 $$\text{CPI} = \frac{n°cicli}{IC}$$
 - **MIPS** (milioni di istruzioni per secondo):
 $$\text{MIPS} = \frac{IC}{Texe\cdot 10^6}$$
+- **Amdahl**:
+$$Texe_{after} = \frac{1}{s}\cdot Texe + \frac{(1-\frac{1}{s})\cdot Texe}{n}$$
+	$\frac{1}{s}$ = frazione del tempo che usa per fare le cose che non siano da migliorare
+	$1-\frac{1}{s}$ = frazione del tempo che usa per fare la cosa che deve migliorare
+	$Texe$ = il tempo totale di esecuzione
+	$n$ = quanto è più veloce la parte da migliorare
+	
