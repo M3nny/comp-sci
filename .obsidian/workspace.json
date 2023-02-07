@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "b7a1e4043ea2178f",
+        "id": "a2928c62241c5cc9",
         "type": "tabs",
         "children": [
           {
-            "id": "dab52c5d177a894f",
+            "id": "fe688378ffc50dbb",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Architettura degli elaboratori/7 - Valutazione delle prestazioni.md",
+                "file": "Algebra lineare/Algebra lineare.md",
                 "mode": "source",
                 "source": false
               }
@@ -48,7 +48,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "beq",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -69,7 +69,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "right": {
     "id": "282a9548711da6a0",
@@ -85,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Architettura degli elaboratori/7 - Valutazione delle prestazioni.md",
+                "file": "Algebra lineare/Algebra lineare.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Architettura degli elaboratori/7 - Valutazione delle prestazioni.md",
+                "file": "Algebra lineare/Algebra lineare.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +126,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Architettura degli elaboratori/7 - Valutazione delle prestazioni.md"
+                "file": "Algebra lineare/Algebra lineare.md"
               }
             }
           },
@@ -155,17 +156,17 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "dab52c5d177a894f",
+  "active": "fe688378ffc50dbb",
   "lastOpenFiles": [
+    "Algebra lineare/Algebra lineare.md",
+    "Algebra lineare/Matrici.md",
+    "Algebra lineare/Trasformazioni lineari.md",
+    "Algebra lineare/Vettori.md",
+    "Algebra lineare/Numeri Complessi.md",
+    "Algebra lineare/Sistemi lineari.md",
+    "Algebra lineare/Rette e piani.md",
+    "Architettura degli elaboratori/7 - Valutazione delle prestazioni.md",
     "Architettura degli elaboratori/6 - CPU/CPU multiciclo.md",
-    "Architettura degli elaboratori/6 - CPU/CPU singolo ciclo.md",
-    "Architettura degli elaboratori/5 - Specifica e sintesi di circuiti sequenziali/Introduzione.md",
-    "Architettura degli elaboratori/4 - Memoria e circuiti sequenziali/Uso degli elementi di memoria nei circuiti sequenziali.md",
-    "Architettura degli elaboratori/4 - Memoria e circuiti sequenziali/Elementi di memoria.md",
-    "Architettura degli elaboratori/3 - MIPS/Moltiplicazione e divisione intere.md",
-    "Architettura degli elaboratori/3 - MIPS/ALU.md",
-    "Architettura degli elaboratori/3 - MIPS/Linguaggio macchina MIPS.md",
-    "Architettura degli elaboratori/2 - Circuiti logici/Circuiti combinatori.md",
-    "Architettura degli elaboratori/2 - Circuiti logici/Porte logiche.md"
+    "Architettura degli elaboratori/6 - CPU/CPU singolo ciclo.md"
   ]
 }

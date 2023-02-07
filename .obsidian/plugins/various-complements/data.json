@@ -47,38 +47,6 @@
   },
   "showLogAboutPerformanceInConsole": false,
   "selectionHistoryTree": {
-    "coefficienti": {
-      "coefficienti": {
-        "currentFile": {
-          "count": 4,
-          "lastUpdated": 1671723183562
-        }
-      }
-    },
-    "\\begin{bmatrix}": {
-      "\\begin{bmatrix}": {
-        "currentFile": {
-          "count": 22,
-          "lastUpdated": 1671728605218
-        }
-      }
-    },
-    "\\end{bmatrix}": {
-      "\\end{bmatrix}": {
-        "currentFile": {
-          "count": 21,
-          "lastUpdated": 1671728607885
-        }
-      }
-    },
-    "\\lim\\limits_{x\\to\\pm\\infty}\\frac{f": {
-      "\\lim\\limits_{x\\to\\pm\\infty}\\frac{f": {
-        "currentFile": {
-          "count": 1,
-          "lastUpdated": 1672155703389
-        }
-      }
-    },
     "migliorare": {
       "migliorare": {
         "currentFile": {
@@ -116,6 +84,102 @@
         "currentFile": {
           "count": 1,
           "lastUpdated": 1674148875041
+        }
+      }
+    },
+    "\\begin{cases}x": {
+      "\\begin{cases}x": {
+        "currentFile": {
+          "count": 3,
+          "lastUpdated": 1674753548497
+        }
+      }
+    },
+    "\\overrightarrow{AB}": {
+      "\\overrightarrow{AB}": {
+        "currentFile": {
+          "count": 1,
+          "lastUpdated": 1674753456992
+        }
+      }
+    },
+    "\\overrightarrow{v}": {
+      "\\overrightarrow{v}": {
+        "currentFile": {
+          "count": 1,
+          "lastUpdated": 1674753488060
+        }
+      }
+    },
+    "\\mathbb{R}": {
+      "\\mathbb{R}": {
+        "currentFile": {
+          "count": 2,
+          "lastUpdated": 1674899835233
+        }
+      }
+    },
+    "\\lambda": {
+      "\\lambda": {
+        "currentFile": {
+          "count": 1,
+          "lastUpdated": 1674905712300
+        }
+      }
+    },
+    "\\mathbb{R}^3": {
+      "\\mathbb{R}^3": {
+        "currentFile": {
+          "count": 8,
+          "lastUpdated": 1675525193993
+        }
+      }
+    },
+    "molteplicità": {
+      "molteplicità": {
+        "currentFile": {
+          "count": 1,
+          "lastUpdated": 1674906063677
+        }
+      }
+    },
+    "algebrica": {
+      "algebrica": {
+        "currentFile": {
+          "count": 1,
+          "lastUpdated": 1674906065906
+        }
+      }
+    },
+    "suriettiva": {
+      "suriettiva": {
+        "currentFile": {
+          "count": 1,
+          "lastUpdated": 1674986189784
+        }
+      }
+    },
+    "geoemtrica_": {
+      "geoemtrica_": {
+        "currentFile": {
+          "count": 1,
+          "lastUpdated": 1675017585431
+        }
+      }
+    },
+    "indipendenti": {
+      "indipendenti": {
+        "currentFile": {
+          "count": 1,
+          "lastUpdated": 1675186377925
+        }
+      }
+    },
+    "triangolare": {
+      "triangolare": {
+        "currentFile": {
+          "count": 1,
+          "lastUpdated": 1675271281680
         }
       }
     }

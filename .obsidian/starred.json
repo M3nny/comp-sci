@@ -9,6 +9,11 @@
       "type": "file",
       "title": "Architettura degli elaboratori",
       "path": "Architettura degli elaboratori/Architettura degli elaboratori.md"
+    },
+    {
+      "type": "file",
+      "title": "Algebra lineare",
+      "path": "Algebra lineare/Algebra lineare.md"
     }
   ]
 }
