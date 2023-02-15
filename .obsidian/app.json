@@ -7,5 +7,6 @@
   "fileSortOrder": "byModifiedTimeReverse",
   "promptDelete": false,
   "attachmentFolderPath": "Calcolo 1/Images",
-  "vimMode": false
+  "vimMode": false,
+  "alwaysUpdateLinks": true
 }

@@ -13,7 +13,31 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Algebra lineare/Algebra lineare.md",
+                "file": "Primo anno/Secondo semestre/Programmazione e laboratorio/Introduzione a C++.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "7bff4b0fcf0eec0d",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Primo anno/Secondo semestre/Calcolo 2/Equazioni differenziali.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "f4e8a7d2e5d3a92e",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Primo anno/Secondo semestre/Calcolo 2/Equazioni differenziali.md",
                 "mode": "source",
                 "source": false
               }
@@ -86,7 +110,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Algebra lineare/Algebra lineare.md",
+                "file": "Primo anno/Secondo semestre/Programmazione e laboratorio/Introduzione a C++.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +127,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Algebra lineare/Algebra lineare.md",
+                "file": "Primo anno/Secondo semestre/Programmazione e laboratorio/Introduzione a C++.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +150,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Algebra lineare/Algebra lineare.md"
+                "file": "Primo anno/Secondo semestre/Programmazione e laboratorio/Introduzione a C++.md"
               }
             }
           },
@@ -158,15 +182,15 @@
   },
   "active": "fe688378ffc50dbb",
   "lastOpenFiles": [
-    "Algebra lineare/Algebra lineare.md",
-    "Algebra lineare/Matrici.md",
-    "Algebra lineare/Trasformazioni lineari.md",
-    "Algebra lineare/Vettori.md",
-    "Algebra lineare/Numeri Complessi.md",
-    "Algebra lineare/Sistemi lineari.md",
-    "Algebra lineare/Rette e piani.md",
-    "Architettura degli elaboratori/7 - Valutazione delle prestazioni.md",
-    "Architettura degli elaboratori/6 - CPU/CPU multiciclo.md",
-    "Architettura degli elaboratori/6 - CPU/CPU singolo ciclo.md"
+    "Primo anno/Secondo semestre/Calcolo 2/Equazioni differenziali.md",
+    "Primo anno/Primo semestre/Calcolo 1/Integrali/Integrali impropri e aree.md",
+    "Primo anno/Primo semestre/Calcolo 1/Infiniti e infinitesimi/Infiniti e infinitesimi.md",
+    "Primo anno/Primo semestre/Calcolo 1/Derivate/Proprietà locali.md",
+    "Primo anno/Primo semestre/Calcolo 1/Derivate/Asintoti.md",
+    "Primo anno/Secondo semestre/Programmazione e laboratorio/Introduzione a C++.md",
+    "Primo anno/Primo semestre/Algebra lineare/Algebra lineare.md",
+    "Primo anno/Primo semestre/Algebra lineare/Matrici.md",
+    "Primo anno/Primo semestre/Algebra lineare/Trasformazioni lineari.md",
+    "Primo anno/Primo semestre/Algebra lineare/Vettori.md"
   ]
 }
