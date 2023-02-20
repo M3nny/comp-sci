@@ -1,6 +1,8 @@
-Tutto è un oggetto.
-
-**variabile**: oggetto a cui è assegnato un identificatore.
+- **Tipo**: insieme di valori sul quale sono definite delle operazioni.
+- **Oggetto**: Regione della memoria con un _tipo_ associato.
+- **Variabile**: oggetto a cui è assegnato un nome.
+- **Dichiarazione**: introduce un nuovo nome (e.g. ```int a```)
+- **Definizione**: si dice tale se sto allocando memoria (una dichiarazione è anche una definizione), posso dichiarare nomi senza definirli con le reference. Nota che la dichiarazione ```extern int a``` non è una _definizione_ in quanto introduce un nuovo nome che però è allocato altrove.
 
 ``` c
 int *p = (int*)malloc(100)
@@ -18,6 +20,8 @@ a = b; // narrowing (avviene casting implicito + perdità di informazione)
 b = a; // avviene casting implicito
 ```
 
+In c++ `int k{12}` controlla che non sto facendo narrowing, con `int k{12.3}` da errore (questo da c++ 14)
+
 ---
 #### Left & Right value
 Quando ho un assegnamento ho un left e right value, il compilatore per prima cosa guarda se il valore a destra e sinistra sono compatibili
@@ -25,11 +29,6 @@ Quando ho un assegnamento ho un left e right value, il compilatore per prima cos
 **Right value**: valore assegnato all'indirizzo di memoria
 
 b = a = a + 2 -> b = (a = a + 2)
-
----
-In c++ `int k{12}` controlla che non sto facendo narrowing, con `int k{12.3}` da errore (questo da c++ 14)
-
-- Si chiama **definizione** se sto allocando memoria, posso dichiarare nomi senza definirli con le reference
 
 ---
 #### Codice pulito
@@ -75,6 +74,88 @@ void swap(int& a, int& b) {
 int main () {
 int x = 3, y = 4;
 swap(x,y); // passaggio per referenza
-cout << x << " " << y << endl;
+cout << x << " " << y << endl; // flush immediato dell'output, utile per debug
 }
 ```
+
+---
+#### Passaggio di parametri
+Nei passaggi per **copia** viene creato un ambiete (distrutto alla fine dell'esecuzione della funzione) della funzione ovvero vengono allocati in
+memoria tutti i parametri formali (contenuti nella firma) ed il loro valore viene inizializzato valutando i loro parametri effetivi.
+
+_Con static mantengo vivo l'ambiente alla fine della funzione_
+
+``` c
+void esempio (int a, double b) { // i parametri formali vegnono inizializzati con i valori dei parametri attuali
+
+}
+
+int main () {
+    int k;
+    esempio(123, 25); // il 25 ottiene una promozione di tipo
+}
+```
+
+Nel passaggio di parametri per **reference** il parametro a e b non viene istaziato in memoria, per cui se ho un parametro da 1MB viene più agevole
+dato che non creo un ambiente e copio 1MB.
+Nel passaggio di refrenza a differenza di quello epr copia mi interessa il right value
+
+``` cpp
+int esempioRef(int a, double& b) {
+
+}
+
+int main () {
+    int x;
+    double p;
+
+    esempioRef(x, p); // p deve essere double, non può essere altro
+}
+```
+
+**Esempio**:
+``` c
+struct s { // pesa almeno come un intero ed un double
+    int a;
+    double b;
+};
+typedef struct s ts; // in cpp typedef sparisce, posso usare direttamente s senza scrivere struct davanti
+
+void foo(ts x) {
+    x.a = 12;
+    x.b = 12.3;
+}
+
+int main () {
+    ts y;
+    foo(y);
+}
+```
+
+---
+#### Vector
+Mentre in C se passo un array ad una funzione, gli passo solo il puntatore al primo elemento (non posso fare altrimenti), e se l'array è dentro una
+struct lo copia tutto. In C++ se passo il vector, lo passo tutto per copia, mentre per se uso l'& gli passo solo il puntatore al primo elemento.
+
+``` cpp
+#include <vector>
+using namespace std;
+
+void foo(vector<int> par); // copio tutto il vettore
+void foo(vector<int>& par); // lo passo per reference, quindi non istanzio nuova memoria
+
+int main () {
+    vector<double> v; // <double> e <int> sono template
+    vector<int> v2(20); // posso specificare quanti elementi ha al suo interno
+
+    v.push_back(13.4); // inserisco elementi senza preoccuparmi della lunghezza dell'array
+    v[0] = 15.1; // scrivo dentro ad un array, da usare solo se si è sicuri che contenga l'elemento specificato (è più veloce di v.at)
+    v.at(3) = 15.1; // usiamo questo perchè controlla se effettivamente l'array contenga un quarto elemento
+    v.size(); // ritorna la lunghezza dell'array
+
+}
+```
+
+**Capacità**: quanti elementi può tenere in memoria, viene raddoppiata quando con l'aggiunta di un elemento sforo la capacity, viene ridotta quando il 
+vector ha almeno metà capacità vuota (non ci sono elementi effettivi)
+**Size**: quanti elementi effettivi contiene al suo interno.

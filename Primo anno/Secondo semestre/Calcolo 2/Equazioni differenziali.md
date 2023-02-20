@@ -41,10 +41,34 @@ con $a, b$ funzioni continue.
 
 >[!Example]
 >$$y'(t)=(t-1)(y-1)$$
->1. Sol. costante: $1$
+>1. Sol. costante: $1$ perchè $(y-1)$ si annulla quando $y = 1$
 >2. valuto per $y\neq 1$ 
 >	$$\frac{y'(t)}{y(t)-1}=t-1 \xRightarrow{\text{integro}} \int\frac{y'(t)}{y(t)-1}dt=\int t-1 dt$$
 >	$$\int\frac{1}{y-1}dy = \frac{t^2}{2}-t+c\quad c\in\mathbb{R}$$
 >	$$ln|y-1|=\frac{t^2}{2}-t+c \quad |y-1|=e^{\frac{t^2}{2}-t+c}$$
 >	$$y(t)=1\pm e^ce^{\frac{t^2}{2}-t}$$
 
+## EDO lineari del primo ordine
+Sono generalmente sotto la forma di:
+$$y'+a(t)y=f(t) \quad (\spadesuit)$$
+
+#### Omogenee
+Nel caso $f(t) = 0$ allora l'equazione si dice **omogenea**, indichiamo in questo caso l'incognita con $z(t)$:
+$$z'(t)a(t)z(t)=0 \xRightarrow{\text{ricavo la sol.}}z(t)=ce^{-\int a(t)dt}, \quad c\in\mathbb{R}$$
+>[!Example]
+>Avendo la seguente EDO lineare omogenea $z'-\sin(t) z=0$ la soluzione è data da $z(t)=ce^{-\cos(t)}$
+
+#### Complete
+Si dicono complete quando $f(t) \neq 0$ e sono quindi in forma $(\spadesuit)$, si possono risolvere quindi tramite la formula:
+$$y(t)=ce^{-\int a(t)dt}+e^{-\int a(t)dt}\cdot \int e^{a(t) dt}\cdot f(t)dt, \quad c\in\mathbb{R}$$
+Da cui possiamo distinguere la soluzione dell'equazione omogenea associata ($ke^{-\int a(t)dt}$) e la soluzione particolare data dal resto della formula.
+
+>[!Example]
+>Risolvere la seguente EDO lineare completa del primo ordine:
+>$$y'-\sin(t) y = \sin(t)$$
+>1. Sol. equazione omogenea associata: $z(t)=ce^{-\cos(t)}$
+>2. Sol. particolare:
+>$$\overline{y}(t) = e^{-\cos(t)}\int\sin(t) e^{\cos(t)}dt =$$
+>$$= e^{-\cos(t)}(-e^{\cos(t)}) = -1$$
+>Unendo le due soluzioni otteniamo l'integrale completo dell'EDO completa:
+>$$y(t)=z(t)+\overline{y}(t)=ce^{-\cos(t)}-1, \quad c\in\mathbb{R}$$
