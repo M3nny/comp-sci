@@ -32,21 +32,20 @@ Si dicono tali le EDO del primo ordine del tipo:
 $$y'=a(t)b(y)$$
 con $a, b$ funzioni continue.
 
-1. **Soluzioni costanti**: trovo i valori per cui $y'=0$
-	$y'=(t-1)(y-1)$ la sol. costante è $1$
+1. **Soluzioni costanti**: trovo i valori per cui $b(y)=0$
 
-2. Assumiamo $b(y)\neq 0$ 
-	$$y'=a(t)b(y) \xRightarrow{\text{separo le variabili}}\frac{y'(t)}{b(y(t))}=a(t)$$
+2. Valuto poi le soluzioni **non costanti**, dove $b(y)\neq 0$ 
+	$$y'=a(t)b(y) \xRightarrow{\text{separo le variabili}}\int\frac{1}{b(y)}dy=\int a(t)dt$$
 	Risolvo gli integrali ed esplicito $y(t)$ dopo aver cambiato le variabili ($dy$ e $dt$)
 
 >[!Example]
 >$$y'(t)=(t-1)(y-1)$$
->1. Sol. costante: $1$ perchè $(y-1)$ si annulla quando $y = 1$
->2. valuto per $y\neq 1$ 
->	$$\frac{y'(t)}{y(t)-1}=t-1 \xRightarrow{\text{integro}} \int\frac{y'(t)}{y(t)-1}dt=\int t-1 dt$$
+>1. **Soluzioni costanti**: $(y-1)=0$ quando $y(t)=1$
+>2. **Soluzioni non costanti**: valuto per $y\neq 1$ 
+>	$$\frac{y'}{y-1}=t-1 \xRightarrow{\text{integro}} \int\frac{y'}{y-1}dt=\int t-1 dt$$
 >	$$\int\frac{1}{y-1}dy = \frac{t^2}{2}-t+c\quad c\in\mathbb{R}$$
 >	$$ln|y-1|=\frac{t^2}{2}-t+c \quad |y-1|=e^{\frac{t^2}{2}-t+c}$$
->	$$y(t)=1\pm e^ce^{\frac{t^2}{2}-t}$$
+>	$$y(t)=1\pm e^ce^{\frac{t^2}{2}-t}=ce^{\frac{t^2}{2}-t}, \quad c\in\mathbb{R}$$
 
 ## EDO lineari del primo ordine
 Sono generalmente sotto la forma di:
@@ -72,3 +71,26 @@ Da cui possiamo distinguere la soluzione dell'equazione omogenea associata ($ke^
 >$$= e^{-\cos(t)}(-e^{\cos(t)}) = -1$$
 >Unendo le due soluzioni otteniamo l'integrale completo dell'EDO completa:
 >$$y(t)=z(t)+\overline{y}(t)=ce^{-\cos(t)}-1, \quad c\in\mathbb{R}$$
+>
+>Trovare ora la soluzione tale per cui: $y(\pi)=1$
+>$y(\pi)=ce^{-\cos(\pi)}-1=ce-1 \xRightarrow{\text{da cui}} ce-1=1$
+>$$c=2e^{-1}$$
+>La soluzione è:
+>$$y(t)=2e^{-\cos(t)-1}-1$$
+
+>[!Tip] Dominio di definizione
+>Il più grande intervallo che contiene la condizione iniziale e per cui $y(t)$ sia di classe $c^1$  e soluzione dell'equazione differenziale.
+
+## Concavità e pendenza della retta tangente
+Non possiamo dire molto delle EDO non lineari, però possiamo determinare la concavità e la pendenza (della retta tangete) in un punto.
+
+Nell'esempio seguente, l'equazione non è lineare in quanto ha $y^2$.
+>[!Example]
+>Determinare la concavità di $y$ vicino a $x=0$ e la pendenza della retta tangente vicino a $x=0$
+>$$\begin{cases}3e^x-y^2\\y(0)=1\end{cases}$$
+>- $y'(0)=3e^0-(y(0))^2=3-1^2=2$
+>	dato che $2>0$ allora la retta tangente cresce.
+>- $y''(x)=D[3e^x-(y(x))^2]=3e^x-2y(x)\cdot y'(x)$
+>	la calcolo in $0$, per cui: $y''(0)=3e^0-2y(0)\cdot y'(0)=3-2\cdot 1 \cdot 2 = -1$
+>	Dato che $-1<0$ avrà concavità verso il basso.
+

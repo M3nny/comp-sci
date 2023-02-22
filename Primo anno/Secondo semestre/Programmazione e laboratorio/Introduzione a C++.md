@@ -45,6 +45,8 @@ for (;cond;) { // non useremo mai il for come il while
 }
 ```
 - Non useremo break, continue e goto
+- Una funzione o calcola o stampa
+- Il controllo dei tipi è fatto staticamente su C perchè sono controllati nella compilazione
 
 ##### Cicli
 - **Invariante** del ciclo è la descrizione della proprietà delle variabili che non cambiano al suo interno, ovvero è una proprietà vera prima e dopo ogni iterazione. Ad esempio nella funzione $max$ avrò che la variabile $m$ sarà sempre e comunque il valore massimo fino a quel punto in cui si è arrivati a scorrere l'array.
@@ -156,6 +158,102 @@ int main () {
 }
 ```
 
-**Capacità**: quanti elementi può tenere in memoria, viene raddoppiata quando con l'aggiunta di un elemento sforo la capacity, viene ridotta quando il 
-vector ha almeno metà capacità vuota (non ci sono elementi effettivi)
-**Size**: quanti elementi effettivi contiene al suo interno.
+- **Capacità**: quanti elementi può tenere in memoria, viene raddoppiata quando con l'aggiunta di un elemento sforo la capacity, viene ridotta quando il vector ha almeno metà capacità vuota (non ci sono elementi effettivi).
+- **Size**: quanti elementi effettivi contiene al suo interno.
+
+Vedi **algoritmi di scorrimento per vector** nel file ```vector.cpp```
+
+```cpp
+void leggi(vector<int>& tr) {
+    int len;
+    cin >> len;
+    tr.resize(len);
+    for (auto& e:tr) { // dato che sto usando la reference posso cambiare e
+        cin >> e;
+    }
+}
+
+void leggi_copia(vector<int>* tr) { // copia l'indirizzo di memoria
+    int len;
+    int e;
+    cin >> len;
+    (*tr).resize(len);
+    for (int i = 0; i < len; i++) {
+        cin >> (*tr).at(i);
+            // oppure tr->at(i);
+    }
+}
+
+void accumulo() {
+    vector<int> v;
+    int sum = 0;
+    leggi_copia(&v);
+
+	/*
+	invariante: sum 
+	contiene ad ogni iterazione la somma degli elementi
+	della partizione visitata
+	*/
+    for (int i = 0; i < v.size(); i++) {
+        sum += v.at(i);
+    }
+    sum = 0;
+
+    /*
+    Sostituisco con il for-each;
+    
+    In python sarebbe (for element in v), all'interno della varibile e viene 
+    copiato il valore nella posizione associata del vettore;
+    
+    Posso solo leggere con questo ciclo, non devo modificare la grandezza
+    dell'array all'interno del ciclo
+    */
+    for (auto e:v) { 
+        sum += e;
+    }
+    
+    /* 
+    auto controlla staticamente il tipo della variabile il tipo alla
+    quale è assegnata (ovviamente non posso dichiarare e basta una
+	variabile con auto)
+	*/
+    cout << sum;
+
+    vector<int> nuovo;
+    nuovo = v; // copio v dentro a nuovo
+}
+
+void contatore() {
+    vector<int> v;
+    leggi(v);
+    int pari = 0;
+    /*
+    Invariante: pari
+    contiene il numero di elementi pari dell'array nella porizone
+    visitati tra 0 e i-1
+    */
+    for (auto e:v) {
+        if (e%2 == 0) {
+            pari += 1; 
+        }
+    }
+
+}
+
+void multi_vector() {
+    vector<vector<int>> matrice;
+    int nr, nc;
+    cin >> nr;
+    cin >> nc;
+    matrice.resize(nr);
+    for (auto& e:matrice) {
+        e.resize(nc);
+    }
+
+    for (auto r:matrice) {
+        for (auto& e:r) {
+            e = 0;
+        }
+    }
+}
+```
