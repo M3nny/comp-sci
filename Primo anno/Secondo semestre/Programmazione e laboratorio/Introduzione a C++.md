@@ -30,11 +30,17 @@ Quando ho un assegnamento ho un left e right value, il compilatore per prima cos
 
 b = a = a + 2 -> b = (a = a + 2)
 
+& prende in input una variabile (lvalue) e restituisce un numero (rvalue) (e.g. restituisce int*)
+* prende in input un'indirizzo di memoria, quindi un numero (rvalue) e restituisce una variabile (lvalue)
+
+posso sommare/sotrarre un intero ad un indirizzo di memoria
+posso sotrarre due inidirizzi di memoria ma non sommarli
+
 ---
 #### Codice pulito
 ```cpp
-const int a = 7; // è una variabile che non può essere cambiata
-constexpr int a = 7; // per costanti
+const int a = 7; // è una variabile intera che non può essere cambiata
+constexpr int a = 7; // è un'espressione che non può essere modificata (simile al define in C)
 
 while (cond) {
     blocco;
@@ -255,5 +261,57 @@ void multi_vector() {
             e = 0;
         }
     }
+}
+```
+
+---
+#### Memoria dinamica
+La gestione della memoria in C non è tipata, sa solo quanti byte sta allcoando
+```c
+int *p = (int*)malloc(100); // l'oggetto puntato da p è un oggetto dinamico
+```
+
+C++ supporta nativamente l'uso di oggetti dinamici (quindi senza importare standard library)
+```cpp
+int *p;
+p = new int; // prende in input un tipo e ritorna il primo byte della memoria allocata
+delete p; // prende in input il primo byte dell'indirizzo di memoria allocato da new
+
+int size;
+cin >> size;
+p = new int[size]; // alloco in memoria dinamica un array, non lo useremo
+delete[] p; // elimina tutto l'array
+```
+
+---
+#### Stringhe
+```cpp
+#include <iostream>
+#include <string>
+
+using namespace std;
+
+void foo(string s); // passaggio per copia
+void foo(string& s); // passaggio per reference
+void foo(const string& s); // leggo e basta con passaggio epr reference
+
+int main () {
+    string s1, s2;
+    cin >> s1;
+    cin >> s2;
+
+    if (s1 == s2) { // fa quello che ci aspettiamo
+        cout << "Le stringhe sono uguali";
+    }
+
+    s1 = s2; // s1 ora è s2
+
+    if (s1 > s2) {
+        cout << "s1 viene prima di s2 nell'alfabeto";
+    }
+
+    string s3;
+    s3 = s1 + s2; // concatena le stringhe
+    s3 = s1 + "ciao";
 }
 ```
