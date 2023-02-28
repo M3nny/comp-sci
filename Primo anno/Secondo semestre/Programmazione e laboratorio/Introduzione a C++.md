@@ -1,8 +1,8 @@
 - **Tipo**: insieme di valori sul quale sono definite delle operazioni.
 - **Oggetto**: Regione della memoria con un _tipo_ associato.
 - **Variabile**: oggetto a cui è assegnato un nome.
-- **Dichiarazione**: introduce un nuovo nome (e.g. ```int a```)
-- **Definizione**: si dice tale se sto allocando memoria (una dichiarazione è anche una definizione), posso dichiarare nomi senza definirli con le reference. Nota che la dichiarazione ```extern int a``` non è una _definizione_ in quanto introduce un nuovo nome che però è allocato altrove.
+- **Dichiarazione**: introduce un nuovo nome (e.g. `int a`)
+- **Definizione**: si dice tale se sto allocando memoria (una dichiarazione è anche una definizione), posso dichiarare nomi senza definirli con le reference. Nota che la dichiarazione `extern int a` non è una _definizione_ in quanto introduce un nuovo nome che però è allocato altrove.
 
 ``` c
 int *p = (int*)malloc(100)
@@ -30,11 +30,11 @@ Quando ho un assegnamento ho un left e right value, il compilatore per prima cos
 
 b = a = a + 2 -> b = (a = a + 2)
 
-& prende in input una variabile (lvalue) e restituisce un numero (rvalue) (e.g. restituisce int*)
-* prende in input un'indirizzo di memoria, quindi un numero (rvalue) e restituisce una variabile (lvalue)
+- `&` prende in input una variabile (lvalue) e restituisce un numero (rvalue) (e.g. restituisce int*).
+- `*` prende in input un'indirizzo di memoria, quindi un numero (rvalue) e restituisce una variabile (lvalue).
 
-posso sommare/sotrarre un intero ad un indirizzo di memoria
-posso sotrarre due inidirizzi di memoria ma non sommarli
+- Posso sommare/sottrarre un intero ad un indirizzo di memoria.
+- Posso sottrarre due indirizzi di memoria ma non sommarli.
 
 ---
 #### Codice pulito
