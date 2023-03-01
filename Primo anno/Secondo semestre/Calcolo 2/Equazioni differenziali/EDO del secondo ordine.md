@@ -55,11 +55,22 @@ $$z(t)=c_1e^{\alpha t}\cos(\beta t)+c_2e^{\alpha t} \sin(\beta t)$$
 >L'integrale generale è dato da:
 >$$z(t)=c_1e^{-t}\cos(\sqrt{2}t)+c_2e^{-t}\sin(\sqrt{2}t)$$
 
----
+
 ## Complete
 Con il **metodo di somiglianza** ricerchiamo $\overline{y}(t)$ tra le funzioni che 'assomigliano' a $f(t)$.
 
-#### $f(t) =$ Polinomio
+Vediamo ora in quali casi si dividono, ovvero che forma prende $f(t)$.
+
+---
+### Polinomi
+
+Si presentano come:
+$$y''+ay'+by=g(x)$$
+Si possono verificare 2 casi:
+- I polinomi hanno lo **stesso grado**
+- I polinomi hanno **grado diverso**
+
+#### Stesso grado
 >[!Example]
 >$$y''+3y'-y=2t^2-1$$
 >Cerco $\overline{y}(t)$ tra i polinomi di grado 2.
@@ -77,7 +88,7 @@ Con il **metodo di somiglianza** ricerchiamo $\overline{y}(t)$ tra le funzioni c
 >L'integrale generale sarai poi dato da:
 >$$y(t)=c_1z_1(t)+c_2z_2(t)-2t^2-12t-39$$
 
-#### I polinomi hanno grado diverso
+#### Grado diverso
 >[!Example]
 >$$y''+3y'=2t^2-1$$
 >In questo caso manca $y$ per cui i polinomi non potranno mai essere uguali.
@@ -97,7 +108,16 @@ Con il **metodo di somiglianza** ricerchiamo $\overline{y}(t)$ tra le funzioni c
 >$$\begin{cases}9A=2\\6A+6B=0\\2B+3C=-1\end{cases}$$
 >Ora procedo analogamente al caso precedente.
 
-#### $f(t)$ è esponenziale
+---
+### Esponenziali
+Si presenta come:
+$$y''+ay'+by=s(x)e^{ax}$$
+Ci sono 3 casi di soluzione particolare nel caso $f(t)$ sia esponenziale:
+- $e^{ax}$ **non è presente nella soluzione dell'eq. omogenea**, otteniamo una soluzione del tipo: $\overline{y}(t)=p(x)e^{ax}$
+- $e^{ax}$ **compare in una delle due soluzioni dell'eq omogenea**, otteniamo una soluzione del tipo: $\overline{y}=p(x)te^{ax}$
+- $e^{ax}$ **è uguale alle soluzioni coincidenti dell'equazione omogenea**, otteniamo una soluzione del tipo: $\overline{y}=p(x)t^2e^{ax}$
+
+#### $e^{ax}$ non compare nell'omogenea
 >[!Example]
 >$$y''+3y'-y=2e^{-t}$$
 >- $\overline{y}(t) = Ae^{-t}$
@@ -109,8 +129,7 @@ Con il **metodo di somiglianza** ricerchiamo $\overline{y}(t)$ tra le funzioni c
 >La soluzione particolare è quindi data da:
 >$$\overline{y}(t)=\frac{1}{3}e^{-t}$$
 
-#### $f(t)$ compare nella sol. omogenea
-Se $f(t)$ compare nella sol. omogenea, avremo sostituendo che $0=f(t)$  che è assurdo.
+#### $e^{ax}$ compare nella omogenea
 >[!Example]
 >$$y''-3y'+2y=2e^t$$
 >- $\overline{y}(t)=\overline{y}'(t)=\overline{y}''(t)=Ae^t$
@@ -129,7 +148,7 @@ Se $f(t)$ compare nella sol. omogenea, avremo sostituendo che $0=f(t)$  che è a
 >La sol. particolare è data da:
 >$$\overline{y}(t)=-2te^t$$
 
-#### Il discriminante della sol. omogenea è $\Delta = 0$
+#### $e^{ax}$ è uguale alle sol. coincidenti dell'omogenea
 >[!Example]
 >$$y''-2y'+y=3e^{-t}$$
 >Osserviamo che l'eq. caratteristica $\lambda^2-2\lambda+1=(\lambda-1)^2$ per cui $\Delta=0$ e $\lambda_{1,2}=1$
@@ -146,7 +165,8 @@ Se $f(t)$ compare nella sol. omogenea, avremo sostituendo che $0=f(t)$  che è a
 >L'integrale generale è dato da:
 >$$y(t)=c_1e^t+c_2te^t+\frac{3}{2}t^2e^t$$
 
-#### $f(t)$ è trigonometrica
+---
+#### Trigonometrica
 Si presenta come segue:
 $$f(t)=k_1\sin(\omega t)+k_2\cos(\omega t)$$
 >[!Example]
