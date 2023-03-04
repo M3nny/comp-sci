@@ -6,17 +6,32 @@
   "hideUnresolved": false,
   "showOrphans": true,
   "collapse-color-groups": true,
-  "colorGroups": [],
+  "colorGroups": [
+    {
+      "query": "path:\"Primo anno/Primo semestre\"",
+      "color": {
+        "a": 1,
+        "rgb": 14048348
+      }
+    },
+    {
+      "query": "path:\"Primo anno/Secondo semestre\"",
+      "color": {
+        "a": 1,
+        "rgb": 14069084
+      }
+    }
+  ],
   "collapse-display": true,
   "showArrow": true,
   "textFadeMultiplier": 0,
-  "nodeSizeMultiplier": 1.00220133463542,
+  "nodeSizeMultiplier": 0.9973125,
   "lineSizeMultiplier": 3.00259602864583,
-  "collapse-forces": true,
-  "centerStrength": 0.518713248970312,
+  "collapse-forces": false,
+  "centerStrength": 0.5,
   "repelStrength": 10,
   "linkStrength": 1,
   "linkDistance": 250,
-  "scale": 0.44318621437060296,
+  "scale": 0.16348370567220555,
   "close": true
 }

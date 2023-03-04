@@ -47,86 +47,6 @@
   },
   "showLogAboutPerformanceInConsole": false,
   "selectionHistoryTree": {
-    "migliorare": {
-      "migliorare": {
-        "currentFile": {
-          "count": 1,
-          "lastUpdated": 1673974881682
-        }
-      }
-    },
-    "throughput": {
-      "throughput": {
-        "currentFile": {
-          "count": 1,
-          "lastUpdated": 1674145164538
-        }
-      }
-    },
-    "performance": {
-      "performance": {
-        "currentFile": {
-          "count": 1,
-          "lastUpdated": 1674145203151
-        }
-      }
-    },
-    "ottimizzazioni": {
-      "ottimizzazioni": {
-        "currentFile": {
-          "count": 1,
-          "lastUpdated": 1674146275968
-        }
-      }
-    },
-    "output": {
-      "output": {
-        "currentFile": {
-          "count": 1,
-          "lastUpdated": 1674148875041
-        }
-      }
-    },
-    "\\begin{cases}x": {
-      "\\begin{cases}x": {
-        "currentFile": {
-          "count": 3,
-          "lastUpdated": 1674753548497
-        }
-      }
-    },
-    "\\overrightarrow{AB}": {
-      "\\overrightarrow{AB}": {
-        "currentFile": {
-          "count": 1,
-          "lastUpdated": 1674753456992
-        }
-      }
-    },
-    "\\overrightarrow{v}": {
-      "\\overrightarrow{v}": {
-        "currentFile": {
-          "count": 1,
-          "lastUpdated": 1674753488060
-        }
-      }
-    },
-    "\\mathbb{R}": {
-      "\\mathbb{R}": {
-        "currentFile": {
-          "count": 2,
-          "lastUpdated": 1674899835233
-        }
-      }
-    },
-    "\\lambda": {
-      "\\lambda": {
-        "currentFile": {
-          "count": 1,
-          "lastUpdated": 1674905712300
-        }
-      }
-    },
     "\\mathbb{R}^3": {
       "\\mathbb{R}^3": {
         "currentFile": {
@@ -135,59 +55,35 @@
         }
       }
     },
-    "molteplicità": {
-      "molteplicità": {
+    "Produce": {
+      "Produce": {
         "currentFile": {
           "count": 1,
-          "lastUpdated": 1674906063677
+          "lastUpdated": 1677946448872
         }
       }
     },
-    "algebrica": {
-      "algebrica": {
+    "Branch": {
+      "Branch": {
         "currentFile": {
           "count": 1,
-          "lastUpdated": 1674906065906
+          "lastUpdated": 1677946568206
         }
       }
     },
-    "suriettiva": {
-      "suriettiva": {
+    "indirizzo": {
+      "indirizzo": {
         "currentFile": {
-          "count": 1,
-          "lastUpdated": 1674986189784
+          "count": 2,
+          "lastUpdated": 1677946596744
         }
       }
     },
-    "geoemtrica_": {
-      "geoemtrica_": {
+    "memoria": {
+      "memoria": {
         "currentFile": {
           "count": 1,
-          "lastUpdated": 1675017585431
-        }
-      }
-    },
-    "indipendenti": {
-      "indipendenti": {
-        "currentFile": {
-          "count": 1,
-          "lastUpdated": 1675186377925
-        }
-      }
-    },
-    "triangolare": {
-      "triangolare": {
-        "currentFile": {
-          "count": 1,
-          "lastUpdated": 1675271281680
-        }
-      }
-    },
-    "\\xRightarrow{\\text{separo": {
-      "\\xRightarrow{\\text{separo": {
-        "currentFile": {
-          "count": 1,
-          "lastUpdated": 1676475244957
+          "lastUpdated": 1677946659380
         }
       }
     }
