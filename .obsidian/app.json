@@ -8,5 +8,6 @@
   "promptDelete": false,
   "attachmentFolderPath": "Calcolo 1/Images",
   "vimMode": false,
-  "alwaysUpdateLinks": true
+  "alwaysUpdateLinks": true,
+  "showUnsupportedFiles": false
 }

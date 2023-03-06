@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "b3b25a5822d5a437",
+        "id": "9a1d9ab00b372dba",
         "type": "tabs",
         "children": [
           {
-            "id": "d3bc93f37703660c",
+            "id": "cdb6cc79e54ca64d",
             "type": "leaf",
             "state": {
               "type": "empty",
@@ -65,8 +65,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 296.5
   },
   "right": {
     "id": "282a9548711da6a0",
@@ -148,17 +147,43 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "d3bc93f37703660c",
+  "active": "cdb6cc79e54ca64d",
   "lastOpenFiles": [
+    "Primo anno/Secondo semestre/Architettura degli elaboratori mod. 2/Images/Forwarding.png",
+    "Primo anno/Secondo semestre/Architettura degli elaboratori mod. 2/Images/Forwarding problem.svg",
     "Primo anno/Secondo semestre/Architettura degli elaboratori mod. 2/CPU con pipeline/Dipendenze RAW.md",
+    "Primo anno/Secondo semestre/Programmazione e laboratorio/Snippets/vector.cpp",
+    "Primo anno/Secondo semestre/Programmazione e laboratorio/Snippets/struct.cpp",
+    "Primo anno/Secondo semestre/Programmazione e laboratorio/Snippets/struct",
+    "Primo anno/Secondo semestre/Programmazione e laboratorio/Snippets/string.cpp",
+    "Primo anno/Secondo semestre/Programmazione e laboratorio/Snippets/strct",
+    "Primo anno/Secondo semestre/Programmazione e laboratorio/Snippets/sort.cpp",
+    "Primo anno/Secondo semestre/Programmazione e laboratorio/Snippets/sort",
+    "Primo anno/Secondo semestre/Programmazione e laboratorio/Snippets/carte.cpp",
+    "Primo anno/Secondo semestre/Programmazione e laboratorio/Snippets",
+    "Primo anno/Secondo semestre/Calcolo 2/Curve parametriche/Funzioni vettoriali.md",
+    "Primo anno/Secondo semestre/Calcolo 2/Images/Curve semplici chiuse.svg",
+    "Primo anno/Secondo semestre/Calcolo 2/Images/Curva parametrica.png",
+    "Primo anno/Secondo semestre/Programmazione e laboratorio/Introduzione a C++.md",
+    "Primo anno/Primo semestre/Calcolo 1/Funzioni/Funzioni elementari.md",
+    "Primo anno/Secondo semestre/Calcolo 2/Images",
+    "Primo anno/Primo semestre/Calcolo 1/Funzioni/Operazioni tra funzioni.md",
+    "Primo anno/Secondo semestre/Calcolo 2/Equazioni differenziali/EDO del secondo ordine.md",
+    "Primo anno/Secondo semestre/Programmazione e laboratorio/Laboratorio/Debugging.md",
+    "Primo anno/Secondo semestre/Programmazione e laboratorio/Laboratorio/Note generali.md",
+    "Primo anno/Secondo semestre/Programmazione e laboratorio/Laboratorio/valgrind_notes.md",
+    "Primo anno/Secondo semestre/Calcolo 2/Equazioni differenziali/EDO del primo ordine.md",
+    "Primo anno/Secondo semestre/Architettura degli elaboratori mod. 2/Images/Dipendenza RAW.png",
     "Primo anno/Secondo semestre/Architettura degli elaboratori mod. 2/CPU con pipeline/Implementazione.md",
+    "Primo anno/Secondo semestre/Architettura degli elaboratori mod. 2/Images/Esempio dipendenza RAW.png",
     "Primo anno/Secondo semestre/Architettura degli elaboratori mod. 2/CPU con pipeline/Introduzione.md",
-    "Algebra lineare/Algebra lineare.md",
-    "Algebra lineare/Matrici.md",
-    "Algebra lineare/Trasformazioni lineari.md",
-    "Algebra lineare/Vettori.md",
-    "Algebra lineare/Numeri Complessi.md",
-    "Algebra lineare/Sistemi lineari.md",
-    "Algebra lineare/Rette e piani.md"
+    "Primo anno/Secondo semestre/Architettura degli elaboratori mod. 2/Images/Controllo pipeline.png",
+    "Primo anno/Primo semestre/Architettura degli elaboratori mod. 1/6 - CPU/CPU multiciclo.md",
+    "Primo anno/Secondo semestre/Programmazione e laboratorio/notes.md",
+    "Primo anno/Primo semestre/Calcolo 1/Integrali/Integrali impropri e aree.md",
+    "Primo anno/Primo semestre/Calcolo 1/Infiniti e infinitesimi/Infiniti e infinitesimi.md",
+    "Primo anno/Primo semestre/Calcolo 1/Derivate/Proprietà locali.md",
+    "Primo anno/Primo semestre/Calcolo 1/Derivate/Asintoti.md",
+    "Primo anno/Primo semestre/Algebra lineare/Algebra lineare.md"
   ]
 }
