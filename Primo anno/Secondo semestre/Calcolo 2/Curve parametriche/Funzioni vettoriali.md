@@ -29,7 +29,7 @@ $$G(f)={(t,x,y)\in\mathbb{R}\times\mathbb{R}^2}:x=x(t)\land y=y(t)\quad\text{ovv
 >- Semiasse orizzontale: $a$
 >- Semiasse verticale: $b$
 >
->Quando a sistema ho una funzione trigonometrica con argomento $t$ è consigliabile non isolare $t$.
+>Quando a sistema ho una funzione trigonometrica con argomento $t$ è consigliabile non isolare $t$, ma usare l'identità $\sin^2(x)+\cos^2(x)=1$ 
 
 >[!Definizione (Limite per funzioni a valori vettoriali)]
 >Sia $I\subset\mathbb{R}$ intervallo e $r:I\to\mathbb{R}^m$ una funzione a valori vettoriali.
@@ -63,3 +63,9 @@ Sia $r: I = [a,b]\to\mathbb{R}^m$ una curva parametrica indicata con $\gamma$
 3. $\gamma$ è **piana** se il supporto si trova su un piano.
 
 ![[Curve semplici chiuse.svg]]
+### Come determinare le caratteristiche di una curva
+Data $r(t) = (x(t),y(t)),\quad[a,b]$ vediamo come trovare le sue caratteristiche:
+- **Chiusa**: gli estremi del dominio devono essere uguali, ovvero $r(a) = r(b)$ 
+- **Semplice**: bisogna vedere se esistono due valori del parametro per cui la curva assume lo stesso valore, ovvero bisogna mostrare che $r(t_1)=r(t_2)\implies t_1 = t_2$ per farlo dobbiamo creare un sistema del tipo: $\begin{cases}x(t_1) = x(t_2)\\y(t_1) = y(t_2)\end{cases}$   isolare $t_{1,2}$ in modo tale da vedere se effettivamente possono essere uguali.
+- **Velocità**: dobbiamo trovare il vettore tangente $r'(t) = (x'(t), y'(t))$, poi la velocità scalare sarà data da $||r'(t)|| = \sqrt{(x'(t))^2, (y'(t))^2}$ 
+- **Supporto**: si trova isolando $t$ e poi sostituendo nel sistema $\begin{cases}x=x(t)\\y=y(t)\end{cases}$ 
