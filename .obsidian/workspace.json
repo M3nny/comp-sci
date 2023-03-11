@@ -8,11 +8,15 @@
         "type": "tabs",
         "children": [
           {
-            "id": "cdb6cc79e54ca64d",
+            "id": "27d24e3f6acd6a48",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {}
+              "type": "markdown",
+              "state": {
+                "file": "Primo anno/Secondo semestre/Architettura degli elaboratori mod. 2/Cache/Tipologie di memoria.md",
+                "mode": "source",
+                "source": false
+              }
             }
           }
         ]
@@ -81,6 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "Primo anno/Secondo semestre/Architettura degli elaboratori mod. 2/Cache/Tipologie di memoria.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -97,6 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "Primo anno/Secondo semestre/Architettura degli elaboratori mod. 2/Cache/Tipologie di memoria.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -118,7 +124,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "Primo anno/Secondo semestre/Architettura degli elaboratori mod. 2/Cache/Tipologie di memoria.md"
+              }
             }
           },
           {
@@ -147,8 +155,11 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "cdb6cc79e54ca64d",
+  "active": "27d24e3f6acd6a48",
   "lastOpenFiles": [
+    "Primo anno/Secondo semestre/Architettura degli elaboratori mod. 2/CPU con pipeline/Processori superscalari.md",
+    "Primo anno/Secondo semestre/Architettura degli elaboratori mod. 2/Cache/Tipologie di memoria.md",
+    "Primo anno/Secondo semestre/Architettura degli elaboratori mod. 2/Cache",
     "Primo anno/Secondo semestre/Architettura degli elaboratori mod. 2/Images/Forwarding.png",
     "Primo anno/Secondo semestre/Architettura degli elaboratori mod. 2/Images/Forwarding problem.svg",
     "Primo anno/Secondo semestre/Architettura degli elaboratori mod. 2/CPU con pipeline/Dipendenze RAW.md",
@@ -166,7 +177,6 @@
     "Primo anno/Secondo semestre/Calcolo 2/Images/Curva parametrica.png",
     "Primo anno/Secondo semestre/Programmazione e laboratorio/Introduzione a C++.md",
     "Primo anno/Primo semestre/Calcolo 1/Funzioni/Funzioni elementari.md",
-    "Primo anno/Secondo semestre/Calcolo 2/Images",
     "Primo anno/Primo semestre/Calcolo 1/Funzioni/Operazioni tra funzioni.md",
     "Primo anno/Secondo semestre/Calcolo 2/Equazioni differenziali/EDO del secondo ordine.md",
     "Primo anno/Secondo semestre/Programmazione e laboratorio/Laboratorio/Debugging.md",

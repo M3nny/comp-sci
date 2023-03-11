@@ -47,14 +47,6 @@
   },
   "showLogAboutPerformanceInConsole": false,
   "selectionHistoryTree": {
-    "\\mathbb{R}^3": {
-      "\\mathbb{R}^3": {
-        "currentFile": {
-          "count": 8,
-          "lastUpdated": 1675525193993
-        }
-      }
-    },
     "Produce": {
       "Produce": {
         "currentFile": {
@@ -84,6 +76,38 @@
         "currentFile": {
           "count": 1,
           "lastUpdated": 1677946659380
+        }
+      }
+    },
+    "Multiple": {
+      "Multiple": {
+        "currentFile": {
+          "count": 1,
+          "lastUpdated": 1678551079954
+        }
+      }
+    },
+    "CPU multiciclo": {
+      "CPU multiciclo": {
+        "internalLink": {
+          "count": 1,
+          "lastUpdated": 1678551358038
+        }
+      }
+    },
+    "implementato": {
+      "implementato": {
+        "currentFile": {
+          "count": 1,
+          "lastUpdated": 1678551361601
+        }
+      }
+    },
+    "probabile": {
+      "probabile": {
+        "currentFile": {
+          "count": 1,
+          "lastUpdated": 1678554513806
         }
       }
     }
