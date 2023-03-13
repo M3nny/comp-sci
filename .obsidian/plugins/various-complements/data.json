@@ -110,6 +110,62 @@
           "lastUpdated": 1678554513806
         }
       }
+    },
+    "\\begin{cases}x": {
+      "\\begin{cases}x": {
+        "currentFile": {
+          "count": 2,
+          "lastUpdated": 1678716814512
+        }
+      }
+    },
+    "\\end{cases}": {
+      "\\end{cases}": {
+        "currentFile": {
+          "count": 2,
+          "lastUpdated": 1678716911364
+        }
+      }
+    },
+    "\\theta_1": {
+      "\\theta_1": {
+        "currentFile": {
+          "count": 2,
+          "lastUpdated": 1678717567136
+        }
+      }
+    },
+    "\\mathcal{P}": {
+      "\\mathcal{P}": {
+        "currentFile": {
+          "count": 3,
+          "lastUpdated": 1678719022430
+        }
+      }
+    },
+    "parametrizzazione": {
+      "parametrizzazione": {
+        "currentFile": {
+          "count": 2,
+          "lastUpdated": 1678720778896
+        }
+      }
+    },
+    "\\to\\mathbb{R}^m": {
+      "\\to\\mathbb{R}^m": {
+        "currentFile": {
+          "count": 2,
+          "lastUpdated": 1678720926402
+        }
+      }
+    },
+    "riparametrizzazione": {
+      "riparametrizzazione": {
+        "currentFile": {
+          "count": 2,
+          "lastUpdated": 1678721103768
+        }
+      }
     }
   }
 }

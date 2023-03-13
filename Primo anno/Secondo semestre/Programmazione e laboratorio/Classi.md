@@ -18,6 +18,9 @@ Il **costruttore** della classe **è un metodo** che viene chiamato ogni volta c
 
 Inoltre si chiama come la classe stessa, se non ne è stato definito uno, c++ ne crea uno vuoto in automatico.
 
+## Distruttore
+Esiste solo un distruttore, il quale è senza parametri formali e viene chiamato automaticamente quando l'oggetto della classe va fuori scope.
+
 ```cpp
 class stringPascal {
 public:
@@ -29,6 +32,9 @@ public:
     
     // costruttore per copia (copy constructor)
     stringPascal(const stringPascal& s);
+	
+	// distruttore (preceduto da ~)
+    ~String_Pascal();
     
     void print();
     void set(const string& s);
@@ -98,8 +104,16 @@ int main() {
     che mi permette di dare in input una stringa durante
     la dichiarazione stessa dell'oggetto */
     stringPascal z(cpps); 
-
     stringPascal w(z);
 }
+```
+
+Con la dicitura **const** dopo il metodo di una classe, andiamo a specificare che quel metodo non altera lo stato della classe e quindi può essere chiamato da una funzione che contiene parametri formali del tipo const&
+
+```cpp
+class String_Pascal {
+public:
+    void print_const() const; 
+};
 ```
 

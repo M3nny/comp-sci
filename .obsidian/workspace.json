@@ -8,12 +8,12 @@
         "type": "tabs",
         "children": [
           {
-            "id": "27d24e3f6acd6a48",
+            "id": "50cfdff9dbc0ba56",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Primo anno/Secondo semestre/Architettura degli elaboratori mod. 2/Cache/Tipologie di memoria.md",
+                "file": "Primo anno/Secondo semestre/Calcolo 2/Curve parametriche/Lunghezza e integrali di linea.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Primo anno/Secondo semestre/Architettura degli elaboratori mod. 2/Cache/Tipologie di memoria.md",
+                "file": "Primo anno/Secondo semestre/Calcolo 2/Curve parametriche/Lunghezza e integrali di linea.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Primo anno/Secondo semestre/Architettura degli elaboratori mod. 2/Cache/Tipologie di memoria.md",
+                "file": "Primo anno/Secondo semestre/Calcolo 2/Curve parametriche/Lunghezza e integrali di linea.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Primo anno/Secondo semestre/Architettura degli elaboratori mod. 2/Cache/Tipologie di memoria.md"
+                "file": "Primo anno/Secondo semestre/Calcolo 2/Curve parametriche/Lunghezza e integrali di linea.md"
               }
             }
           },
@@ -155,10 +155,15 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "27d24e3f6acd6a48",
+  "active": "50cfdff9dbc0ba56",
   "lastOpenFiles": [
-    "Primo anno/Secondo semestre/Architettura degli elaboratori mod. 2/CPU con pipeline/Processori superscalari.md",
+    "Primo anno/Secondo semestre/Calcolo 2/Curve parametriche/Curve regolari e forma polare.md",
+    "Primo anno/Secondo semestre/Calcolo 2/Curve parametriche/Lunghezza e integrali di linea.md",
+    "Primo anno/Secondo semestre/Programmazione e laboratorio/Classi.md",
+    "Primo anno/Secondo semestre/Calcolo 2/Images/Poligonale.svg",
+    "Primo anno/Secondo semestre/Calcolo 2/Curve parametriche/Funzioni vettoriali.md",
     "Primo anno/Secondo semestre/Architettura degli elaboratori mod. 2/Cache/Tipologie di memoria.md",
+    "Primo anno/Secondo semestre/Architettura degli elaboratori mod. 2/CPU con pipeline/Processori superscalari.md",
     "Primo anno/Secondo semestre/Architettura degli elaboratori mod. 2/Cache",
     "Primo anno/Secondo semestre/Architettura degli elaboratori mod. 2/Images/Forwarding.png",
     "Primo anno/Secondo semestre/Architettura degli elaboratori mod. 2/Images/Forwarding problem.svg",
@@ -172,7 +177,6 @@
     "Primo anno/Secondo semestre/Programmazione e laboratorio/Snippets/sort",
     "Primo anno/Secondo semestre/Programmazione e laboratorio/Snippets/carte.cpp",
     "Primo anno/Secondo semestre/Programmazione e laboratorio/Snippets",
-    "Primo anno/Secondo semestre/Calcolo 2/Curve parametriche/Funzioni vettoriali.md",
     "Primo anno/Secondo semestre/Calcolo 2/Images/Curve semplici chiuse.svg",
     "Primo anno/Secondo semestre/Calcolo 2/Images/Curva parametrica.png",
     "Primo anno/Secondo semestre/Programmazione e laboratorio/Introduzione a C++.md",
