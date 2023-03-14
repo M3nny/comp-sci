@@ -46,6 +46,7 @@ private:
 };
 ```
 
+## Metodi
 La definizione dei metodi (normalmente su file diverso) avviene ponendo il nome della classe prima del metodo (dichiarato in precedenza) che si vuole definire.
 
 ```cpp
@@ -84,7 +85,7 @@ stringPascal::stringPascal(const stringPascal& s) {
 }
 ```
 
-#### Modalità di copia
+### Modalità di copia
 - **Shallow copy**: copio il puntatore, ora viene condivisa la stessa area di memoria
 - **Deep copy**: copio i contenuti dell'altra area di memoria nella mia area di memoria, i cambiamenti ad una delle due aree di memoria non influenzerà l'altra.
 ```cpp
@@ -117,3 +118,17 @@ public:
 };
 ```
 
+### Liste di inizializzazione
+Possiamo istanziare un oggetto (con il costruttore di default) in memoria direttamente con dei valori che specifichiamo al posto di allocarlo e poi inizializzare i valori.
+Questo meccanismo è molto utile per istanze di grandi oggetti.
+
+```cpp
+// costruttore con lista di inizializzazione
+token() : m_value(inf), m_type(0) {}
+
+// costruttore classico
+token() {
+	m_value = inf;
+    m_type = 0;
+}
+```

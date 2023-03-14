@@ -24,3 +24,20 @@ Un programma non accede a tutto il suo codice (o ai dati) con la stessa probabil
 
 - **Località temporale**: quando si accede ad un certo dato, è probabile che verrà usato di nuovo entro breve (e.g. cicli).
 - **Località spaziale**: quando si accede ad un certo dato, è probabile che verranno usati anche altri dati che hanno un indirizzo vicino a quello corrente (e.g. accessi sequenziali ad un array).
+
+### Gerarchie di memoria
+Può essere composta da più livelli, i dati sono sempre copiati tra due livelli adiacenti.
+Indichiamo con **blocco** l'unità di informazione minima, quando la CPU richiede dei dati possiamo avere:
+- **hit**: per indicare che il dato è stato trovato.
+- **miss** per indicare che il dato non è stato trovato.
+
+### Hit & miss
+
+Indichiamo con **hit rate** la frazione di accessi alla memoria in cui ottengo un _hit_:
+$$\frac{n_{hit}}{n_{accessi}}$$
+mentre con **miss rate** indichiamo la frazione di accessi alla memoria in cui ottengo un _miss_:
+$$\frac{n_{miss}}{n_{accessi}}$$
+possiamo anche trovare il _miss rate_ tramite $1-\text{hit rate}$.
+
+- **Hit time**: è il tempo di accesso al livello superiore della gerarchia (comprende anche l'overhead per stabilire se il tentativo porterà ad un hit o ad un miss).
+- **Miss penalty**: è il tempo necessario a sostituire un blocco a livello superiore con un blocco preso a livello inferiore e passare i dati alla CPU.
