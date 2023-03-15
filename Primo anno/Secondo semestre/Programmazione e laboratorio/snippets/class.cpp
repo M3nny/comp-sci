@@ -7,6 +7,7 @@ using namespace std;
 // la prima lettera rappresenta quanto è lunga la stringa (si evita \0 alla fine)
 
 // le funzioni vanno definite all'interno della classe se la classe è usata solo nel file in cui è descritta
+
 class String_Pascal { // classe da mettere nel file .h
 public:
     String_Pascal(); // costruttore di default
@@ -20,6 +21,7 @@ public:
     void set_char(int pos, char c);
     char get_char(int pos);
     void set_size(int dim);
+    char at(int);
 private:
     unsigned char buff[256];
 };
@@ -72,6 +74,14 @@ String_Pascal::String_Pascal(const String_Pascal& s) { // costruttore per copia 
     }
 }
 
+char String_Pascal::at(int pos) {
+    if (pos < buff[0]) {
+        return buff[pos];
+    } else {
+        return -1;
+    }
+}
+
 int main() {
     String_Pascal x; // chiama il costruttore per l'oggetto x
     String_Pascal y;
@@ -95,6 +105,8 @@ int main() {
     string cpps = "Bye";
     String_Pascal z(cpps);
     z.print();
+    cout << z.at(1) << endl;
+    String_Pascal q = z;
 
     String_Pascal w(z);
     w.print_x2(z);

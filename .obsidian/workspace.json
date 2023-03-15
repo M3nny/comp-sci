@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "635a5f6c5339e7b7",
+        "id": "5a1cccc8fc57f12c",
         "type": "tabs",
         "children": [
           {
-            "id": "61dc6e569782ce2b",
+            "id": "3ed9cb26dfb5f95e",
             "type": "leaf",
             "state": {
               "type": "empty",
@@ -65,8 +65,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 296.5,
-    "collapsed": true
+    "width": 296.5
   },
   "right": {
     "id": "282a9548711da6a0",
@@ -148,16 +147,17 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "a1163d9af64d6878",
+  "active": "3ed9cb26dfb5f95e",
   "lastOpenFiles": [
     "Primo anno/Secondo semestre/Programmazione e laboratorio/Classi.md",
+    "Primo anno/Secondo semestre/Calcolo 2/Curve parametriche/Lunghezza arco e integrali di linea.md",
+    "Primo anno/Secondo semestre/Calcolo 2/Curve parametriche/Parametro d'arco e integrali di linea.md",
+    "Primo anno/Secondo semestre/Calcolo 2/Curve parametriche/Funzioni vettoriali.md",
+    "Primo anno/Secondo semestre/Calcolo 2/Curve parametriche/Curve regolari e forma polare.md",
     "Primo anno/Secondo semestre/Architettura degli elaboratori mod. 2/Cache/Tipologie di memoria.md",
     "Primo anno/Secondo semestre/Architettura degli elaboratori mod. 2/Cache/Memoria cache.md",
     "Primo anno/Secondo semestre/Architettura degli elaboratori mod. 2/Images/Cache accesso diretto.svg",
-    "Primo anno/Secondo semestre/Calcolo 2/Curve parametriche/Lunghezza e integrali di linea.md",
-    "Primo anno/Secondo semestre/Calcolo 2/Curve parametriche/Curve regolari e forma polare.md",
     "Primo anno/Secondo semestre/Calcolo 2/Images/Poligonale.svg",
-    "Primo anno/Secondo semestre/Calcolo 2/Curve parametriche/Funzioni vettoriali.md",
     "Primo anno/Secondo semestre/Architettura degli elaboratori mod. 2/CPU con pipeline/Processori superscalari.md",
     "Primo anno/Secondo semestre/Architettura degli elaboratori mod. 2/Cache",
     "Primo anno/Secondo semestre/Architettura degli elaboratori mod. 2/Images/Forwarding.png",

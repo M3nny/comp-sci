@@ -154,16 +154,48 @@
     "\\to\\mathbb{R}^m": {
       "\\to\\mathbb{R}^m": {
         "currentFile": {
-          "count": 2,
-          "lastUpdated": 1678720926402
+          "count": 3,
+          "lastUpdated": 1678894397115
         }
       }
     },
     "riparametrizzazione": {
       "riparametrizzazione": {
         "currentFile": {
-          "count": 2,
-          "lastUpdated": 1678721103768
+          "count": 3,
+          "lastUpdated": 1678894604601
+        }
+      }
+    },
+    "String_Pascal": {
+      "String_Pascal": {
+        "currentFile": {
+          "count": 3,
+          "lastUpdated": 1678875591596
+        }
+      }
+    },
+    "crescente": {
+      "crescente": {
+        "currentFile": {
+          "count": 1,
+          "lastUpdated": 1678890511758
+        }
+      }
+    },
+    "A\\subset\\mathbb{R}": {
+      "A\\subset\\mathbb{R}": {
+        "currentFile": {
+          "count": 1,
+          "lastUpdated": 1678894436025
+        }
+      }
+    },
+    "invariante": {
+      "invariante": {
+        "currentFile": {
+          "count": 1,
+          "lastUpdated": 1678894588498
         }
       }
     }

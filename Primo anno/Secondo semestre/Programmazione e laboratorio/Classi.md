@@ -132,3 +132,15 @@ token() {
     m_type = 0;
 }
 ```
+
+- La dimensione di una struct non è uguale alla somma delle dimensione dei suoi campi, ci potrebbero essere dei campi di allineamento
+
+### Problema del default copy constructor
+Assumendo che nel costruttore di String_Pascal usiamo una **new** e nel distruttore una **delete**, quando non definisco il copy constructor, e uso quello di default, **copio bit per bit lo stato della classe s in t**:
+```cpp
+String_Pascal s(string);
+String_Pascal t = s;
+```
+t prende lo stato di string pascal s, t punta alla stessa memoria di s, quando va fuori scope viene prima chiamato il distruttore di t (allocato per ultimo) e fa il delete, s nel frattempo non sa che t ha fatto la delete, e in quel momento che muore s, viene chiamato il distruttore di s, ma **l'area di memoria a cui puntava è già stata distrutta dal distruttore di t**.
+
+Il copy constructor di default quindi esegue una _shallow copy_, dobbiamo ridefinire il copy constructor per eseguire una deep copy.
