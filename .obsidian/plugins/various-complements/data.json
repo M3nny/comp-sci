@@ -198,6 +198,62 @@
           "lastUpdated": 1678894588498
         }
       }
+    },
+    "trasferire": {
+      "trasferire": {
+        "currentFile": {
+          "count": 1,
+          "lastUpdated": 1679217719135
+        }
+      }
+    },
+    "blocchi": {
+      "blocchi": {
+        "currentFile": {
+          "count": 1,
+          "lastUpdated": 1679217722458
+        }
+      }
+    },
+    "inferiore": {
+      "inferiore": {
+        "currentFile": {
+          "count": 1,
+          "lastUpdated": 1679218821831
+        }
+      }
+    },
+    "coerenza": {
+      "coerenza": {
+        "currentFile": {
+          "count": 1,
+          "lastUpdated": 1679219690115
+        }
+      }
+    },
+    "through": {
+      "through": {
+        "currentFile": {
+          "count": 2,
+          "lastUpdated": 1679219944775
+        }
+      }
+    },
+    "dipendente": {
+      "dipendente": {
+        "currentFile": {
+          "count": 1,
+          "lastUpdated": 1679219858506
+        }
+      }
+    },
+    "politica": {
+      "politica": {
+        "currentFile": {
+          "count": 1,
+          "lastUpdated": 1679219868162
+        }
+      }
     }
   }
 }

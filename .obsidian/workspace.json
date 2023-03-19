@@ -11,8 +11,12 @@
             "id": "3ed9cb26dfb5f95e",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {}
+              "type": "markdown",
+              "state": {
+                "file": "Primo anno/Secondo semestre/Architettura degli elaboratori mod. 2/Cache/Memoria cache.md",
+                "mode": "source",
+                "source": false
+              }
             }
           }
         ]
@@ -65,7 +69,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 296.5
+    "width": 296.5,
+    "collapsed": true
   },
   "right": {
     "id": "282a9548711da6a0",
@@ -81,6 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "Primo anno/Secondo semestre/Architettura degli elaboratori mod. 2/Cache/Memoria cache.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -97,6 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "Primo anno/Secondo semestre/Architettura degli elaboratori mod. 2/Cache/Memoria cache.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -118,7 +125,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "Primo anno/Secondo semestre/Architettura degli elaboratori mod. 2/Cache/Memoria cache.md"
+              }
             }
           },
           {
@@ -149,13 +158,14 @@
   },
   "active": "3ed9cb26dfb5f95e",
   "lastOpenFiles": [
+    "Primo anno/Secondo semestre/Architettura degli elaboratori mod. 2/Cache/Memoria cache.md",
+    "Primo anno/Secondo semestre/Architettura degli elaboratori mod. 2/Images/Esercizio blocco cache.png",
     "Primo anno/Secondo semestre/Programmazione e laboratorio/Classi.md",
     "Primo anno/Secondo semestre/Calcolo 2/Curve parametriche/Lunghezza arco e integrali di linea.md",
     "Primo anno/Secondo semestre/Calcolo 2/Curve parametriche/Parametro d'arco e integrali di linea.md",
     "Primo anno/Secondo semestre/Calcolo 2/Curve parametriche/Funzioni vettoriali.md",
     "Primo anno/Secondo semestre/Calcolo 2/Curve parametriche/Curve regolari e forma polare.md",
     "Primo anno/Secondo semestre/Architettura degli elaboratori mod. 2/Cache/Tipologie di memoria.md",
-    "Primo anno/Secondo semestre/Architettura degli elaboratori mod. 2/Cache/Memoria cache.md",
     "Primo anno/Secondo semestre/Architettura degli elaboratori mod. 2/Images/Cache accesso diretto.svg",
     "Primo anno/Secondo semestre/Calcolo 2/Images/Poligonale.svg",
     "Primo anno/Secondo semestre/Architettura degli elaboratori mod. 2/CPU con pipeline/Processori superscalari.md",
@@ -192,7 +202,6 @@
     "Primo anno/Primo semestre/Calcolo 1/Integrali/Integrali impropri e aree.md",
     "Primo anno/Primo semestre/Calcolo 1/Infiniti e infinitesimi/Infiniti e infinitesimi.md",
     "Primo anno/Primo semestre/Calcolo 1/Derivate/Proprietà locali.md",
-    "Primo anno/Primo semestre/Calcolo 1/Derivate/Asintoti.md",
-    "Primo anno/Primo semestre/Algebra lineare/Algebra lineare.md"
+    "Primo anno/Primo semestre/Calcolo 1/Derivate/Asintoti.md"
   ]
 }
