@@ -1,17 +1,17 @@
 La memoria cache si trova tra la CPU e la RAM, ci riferiamo ad essa come sistema che sfrutta la località degli accessi.
 
 ## Cache ad accesso diretto
-La funzione di mapping è la seguente: `<address> mod <# blocchi cache>.
+La funzione di mapping è la seguente: address % n° blocchi.
 
-Se **#** è il numero di blocchi di cache (potenza di 2) l'operazione modulo è equivalente a prendere i primi $\log_2$ <# blocchi cache> bits dall'indirizzo.
+Il numero di blocchi di cache è una potenza di 2, quindi l'operazione modulo è equivalente a prendere i primi $\log_2$(n° blocchi) bits dall'indirizzo.
 
 #### Shifting
 - **Moltiplicare** per $k=2^n$ equivale a $n$ shift a **sinistra**
 - **Dividere** per $k=2^n$ equivale a $n$ shift a **destra**
 
 Gli indirizzi con gli stessi bit meno significativi finiscono nello stesso **cache block**, <u>indirizzamento al blocco invece che al bite</u>:
-1. **Block address**: $\frac{\text{address}}{\text{block size}}$
-2. **Block index**: $\text{block address}$ % #$\text{cache blocks}$
+$$\text{Block address} = \frac{\text{address}}{\text{block size}}$$
+$$\text{Index}  = \text{block address} \space\%\space \text{numero di blocchi}$$
 
 In pratica se la cache ha _block size_ pari a $1$, e $8$  blocchi, allora dalla memoria indirizziamo al blocco gli indirizzi con gli ultimi $3$ ($8=2^3$) bit significativi con un offset pari a $0$ (avendo _block size_ 1:  $\log_21 = 0$).
 
