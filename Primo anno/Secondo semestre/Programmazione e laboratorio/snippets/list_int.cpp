@@ -5,18 +5,22 @@ public:
     List_int();
     List_int(const List_int& s);
     ~List_int();
-    void append(int e);
-    void prepend(int e);
+    void append(int e); // sapere bene
+    void prepend(int e); // sapere bene
     bool is_empty() const;
-    int& head();
-    const int& head() const; // per evitare promesse da marinaio arrrrg (posso solo leggere)
+    int& head(); // una soluzione è scrivere nella documentazione che non deve essere empty, un'altra è lanciare except
+    const int& head() const; // posso solo leggere
     void print() const;
+    int size() const;
 private:
     struct cell {
         int info;
         cell* next;
     };
-    cell* h;
+    typedef cell* pcella;
+    pcella h;
+    void append_ric(pcella& testa, int e);
+    void print_ric(pcella testa) const;
 };
 
 List_int::List_int() {
@@ -41,9 +45,64 @@ List_int::~List_int() {
     }
 }
 
+void List_int::append(int e) { // funzione cappello, imposta i parametri iniziali per un'altra funzione ricorsiva
+    append_ric(h, e);
+}
+
+void List_int::append_ric(pcella& testa, int e) {
+    if (testa == nullptr) {
+        testa = new cell;
+        testa->info = e;
+        testa->next = nullptr;
+    } else {
+        append_ric(testa->next, e); // testa->next passato per reference
+    }
+}
+
+
+
 void List_int::prepend(int e) {
     cell* nuova = new cell;
     nuova->info = e;
     nuova->next = h;
     h = nuova;
+}
+
+bool List_int::is_empty() const {
+    return (h == nullptr);
+}
+
+int& List_int::head() { // può essere scritto quello che ritorno
+    return h->info;
+}
+
+const int& List_int::head() const { // ouò essere letto ma non scritto quello che ritorno
+    return h->info;
+}
+
+void List_int::print() const { // anche questa è una funzione cappello
+    print_ric(h);
+}
+
+void List_int::print_ric(pcella testa) const {
+    if (testa != nullptr) {
+        std::cout << testa->info;
+        print_ric(testa->next);
+    }
+}
+
+int List_int::size() const {
+    int res = 0;
+    pcella p = h;
+    while (p != nullptr) {
+        res++;
+        p = p->next;
+    }
+    return res;
+}
+
+int main () {
+    List_int x;
+    x.prepend(7);
+    x.head() = 15;
 }

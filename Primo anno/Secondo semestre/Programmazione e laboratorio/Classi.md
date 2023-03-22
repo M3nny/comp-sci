@@ -144,3 +144,7 @@ String_Pascal t = s;
 t prende lo stato di string pascal s, t punta alla stessa memoria di s, quando va fuori scope viene prima chiamato il distruttore di t (allocato per ultimo) e fa il delete, s nel frattempo non sa che t ha fatto la delete, e in quel momento che muore s, viene chiamato il distruttore di s, ma **l'area di memoria a cui puntava è già stata distrutta dal distruttore di t**.
 
 Il copy constructor di default quindi esegue una _shallow copy_, dobbiamo ridefinire il copy constructor per eseguire una deep copy.
+
+---
+#### Iterazione vs ricorsione
+Meglio l'iterazione che la ricorsione se possibile, questo per favorire la località spaziale della cache, le chiamate a funzione tradotte in assembly sono costose.

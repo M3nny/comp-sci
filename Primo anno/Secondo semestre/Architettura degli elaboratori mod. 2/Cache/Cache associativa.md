@@ -36,5 +36,5 @@ Nella cache diretta abbiamo la funzione di mapping che ci dice quale blocco sost
 
 ### Politiche di rimpiazzamento blocchi
 - **Casuale** 
-- **Leat Recently Used (LRU)**: si rimpiazza il blocco usato meno recentemente, per fare ciò vengono usati dei bit aggiuntivi per memorizzare da quanto tempo un blocco non viene acceduto.
+- **Least Recently Used (LRU)**: si rimpiazza il blocco usato meno recentemente, per fare ciò vengono usati dei bit aggiuntivi per memorizzare da quanto tempo un blocco non viene acceduto.
 
