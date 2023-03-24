@@ -8,12 +8,12 @@
         "type": "tabs",
         "children": [
           {
-            "id": "3ed9cb26dfb5f95e",
+            "id": "a469fc3c27b906f4",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Primo anno/Secondo semestre/Architettura degli elaboratori mod. 2/Cache/Memoria cache.md",
+                "file": "Primo anno/Secondo semestre/Architettura degli elaboratori mod. 2/Memoria virtuale/Mapping.md",
                 "mode": "source",
                 "source": false
               }
@@ -69,8 +69,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 296.5,
-    "collapsed": true
+    "width": 296.5
   },
   "right": {
     "id": "282a9548711da6a0",
@@ -86,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Primo anno/Secondo semestre/Architettura degli elaboratori mod. 2/Cache/Memoria cache.md",
+                "file": "Primo anno/Secondo semestre/Architettura degli elaboratori mod. 2/Memoria virtuale/Mapping.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Primo anno/Secondo semestre/Architettura degli elaboratori mod. 2/Cache/Memoria cache.md",
+                "file": "Primo anno/Secondo semestre/Architettura degli elaboratori mod. 2/Memoria virtuale/Mapping.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Primo anno/Secondo semestre/Architettura degli elaboratori mod. 2/Cache/Memoria cache.md"
+                "file": "Primo anno/Secondo semestre/Architettura degli elaboratori mod. 2/Memoria virtuale/Mapping.md"
               }
             }
           },
@@ -156,8 +155,13 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "3ed9cb26dfb5f95e",
+  "active": "a1163d9af64d6878",
   "lastOpenFiles": [
+    "Primo anno/Secondo semestre/Architettura degli elaboratori mod. 2/Cache/Cache associativa.md",
+    "Primo anno/Secondo semestre/Architettura degli elaboratori mod. 2/Memoria virtuale/Mapping.md",
+    "Primo anno/Secondo semestre/Architettura degli elaboratori mod. 2/Images/Mapping.png",
+    "Primo anno/Secondo semestre/Architettura degli elaboratori mod. 2/Memoria virtuale",
+    "Primo anno/Secondo semestre/Architettura degli elaboratori mod. 2/Cache/Prestazioni.md",
     "Primo anno/Secondo semestre/Architettura degli elaboratori mod. 2/Cache/Memoria cache.md",
     "Primo anno/Secondo semestre/Architettura degli elaboratori mod. 2/Images/Esercizio blocco cache.png",
     "Primo anno/Secondo semestre/Programmazione e laboratorio/Classi.md",
@@ -181,7 +185,6 @@
     "Primo anno/Secondo semestre/Programmazione e laboratorio/Snippets/sort.cpp",
     "Primo anno/Secondo semestre/Programmazione e laboratorio/Snippets/sort",
     "Primo anno/Secondo semestre/Programmazione e laboratorio/Snippets/carte.cpp",
-    "Primo anno/Secondo semestre/Programmazione e laboratorio/Snippets",
     "Primo anno/Secondo semestre/Calcolo 2/Images/Curve semplici chiuse.svg",
     "Primo anno/Secondo semestre/Calcolo 2/Images/Curva parametrica.png",
     "Primo anno/Secondo semestre/Programmazione e laboratorio/Introduzione a C++.md",
@@ -196,12 +199,8 @@
     "Primo anno/Secondo semestre/Architettura degli elaboratori mod. 2/CPU con pipeline/Implementazione.md",
     "Primo anno/Secondo semestre/Architettura degli elaboratori mod. 2/Images/Esempio dipendenza RAW.png",
     "Primo anno/Secondo semestre/Architettura degli elaboratori mod. 2/CPU con pipeline/Introduzione.md",
-    "Primo anno/Secondo semestre/Architettura degli elaboratori mod. 2/Images/Controllo pipeline.png",
     "Primo anno/Primo semestre/Architettura degli elaboratori mod. 1/6 - CPU/CPU multiciclo.md",
     "Primo anno/Secondo semestre/Programmazione e laboratorio/notes.md",
-    "Primo anno/Primo semestre/Calcolo 1/Integrali/Integrali impropri e aree.md",
-    "Primo anno/Primo semestre/Calcolo 1/Infiniti e infinitesimi/Infiniti e infinitesimi.md",
-    "Primo anno/Primo semestre/Calcolo 1/Derivate/Proprietà locali.md",
-    "Primo anno/Primo semestre/Calcolo 1/Derivate/Asintoti.md"
+    "Primo anno/Primo semestre/Calcolo 1/Integrali/Integrali impropri e aree.md"
   ]
 }

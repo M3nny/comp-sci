@@ -254,6 +254,22 @@
           "lastUpdated": 1679219868162
         }
       }
+    },
+    "indirizzamento": {
+      "indirizzamento": {
+        "currentFile": {
+          "count": 1,
+          "lastUpdated": 1679654064280
+        }
+      }
+    },
+    "virtuale": {
+      "virtuale": {
+        "currentFile": {
+          "count": 1,
+          "lastUpdated": 1679654067387
+        }
+      }
     }
   }
 }
