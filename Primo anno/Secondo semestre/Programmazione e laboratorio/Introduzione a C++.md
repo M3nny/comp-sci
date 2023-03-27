@@ -9,6 +9,9 @@ int *p = (int*)malloc(100)
 ``` 
 Sotto un'ottica di C, questa istruzione allocherebbe 2 oggetti, 1 che ha nome, ovvero p e 1 senza nome, ovvero il malloc.
 
+- **Compilazione**: traduzione da linguaggio a codice oggetto (vicino al linguaggio macchina)
+- **Linking**: collega i file oggetto e genera l'eseguibile
+
 ---
 Se il cambio di tipo porta a perdita di informazioni si parla di **narrowing**
 

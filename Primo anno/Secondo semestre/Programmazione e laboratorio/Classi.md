@@ -148,3 +148,13 @@ Il copy constructor di default quindi esegue una _shallow copy_, dobbiamo ridefi
 ---
 #### Iterazione vs ricorsione
 Meglio l'iterazione che la ricorsione se possibile, questo per favorire la località spaziale della cache, le chiamate a funzione tradotte in assembly sono costose.
+
+---
+### Idioma pimpl
+Vogliamo evitare di ricompilare il `file.cpp` che chiama una classe la cui parte privata è stata modificata.
+
+**Pimpl** (pointer to implementation) fa si che l'implementazione della classe privata sia nascosta dentro al file `class.cpp`, così non devo ricompilare il main che dipende da `class.hpp` in quanto la dimensione di un puntatore è conosciuta a _compile time_.
+
+Posso quindi scrivere la classe in 2 modi diversi (magari una con la linked list e una con vector) e avere un eseguibile che in base al linking di quale `class.o` usa, si comporta in modo diverso.
+
+In pratica: se volessi vendere una libreria, darei al cliente il `class.hpp` ed il file oggetto generato da esso (`class.o`), nascondendo del tutto quindi l'implementazione della classe privata.
