@@ -60,14 +60,69 @@ private:
     double m_type;
 };
 
+double E(const std::vector<token>& t, int& i);
+
+// token corrente (da leggere) t[i]
+double T(const std::vector<token>& t, int& i) {
+    // T -> double oppure (E)
+    double res = 0;
+    if (t[i].is_double()) {
+        res = t[i].get_value();
+        i++; // mangio i token t[i]
+    } else {
+        assert(t[i].is_open());
+        i++; // consumo (
+        res = E(t, i); // E incrementa i
+        assert(t[i].is_close());
+        i++; // consumo )
+    }
+    return res;
+}
+
+double P(const std::vector<token>& t, int& i) {
+    // P -> T oppure P * T oppure P / T
+    double res = T(t, i);
+    token tok = t[i];
+
+    while (tok.is_mul() or tok.is_div()) {
+        i++; // consumo * oppure /
+        if (tok.is_mul()) res *= T(t, i);
+        if (tok.is_div()) res /= T(t, i);
+        tok = t[i];
+    }
+    return res;
+}
+
+double E(const std::vector<token>& t, int& i) {
+    // E -> P oppure E + p oppure E - P
+    double res = P(t,i); // P incrementa i fino alla posizione successiva a P
+    token tok = t[i];
+
+    while (tok.is_add() or tok.is_sub()) {
+        i++; // consumo + oppure -
+        if (tok.is_add()) res += P(t, i); // leggo il P successivo
+        if (tok.is_sub()) res -= P(t, i); // leggo il P successivo
+        // i punta al token successivo a P
+        tok = t[i];
+    }
+    //(debug): std::cout << "Parziale: " << res << std::endl;
+    return res;
+}
+
 int main () {
     std::vector<token> tokens;
+    std::cout << "Inserisci l'espressione (termina con '='):" << std::endl;
     do {
         token t;
         std::cin >> t;
         tokens.push_back(t);
-        // notare che il primo << è la funzione cout, mentre il secondo << è quello definito dalla nostra funzione
-        std::cout << t << std::endl;
+        // (info debug): notare che il primo << è la funzione cout, mentre il secondo << è quello definito dalla nostra funzione
+        //(debug): std::cout << t << std::endl;
     } while (!tokens.back().is_eq()); // back ritorna l'ultimo elemento di un vettore
+
+    // E -> expression
+    int i = 0;
+    std::cout << "result = " << E(tokens, i) << std::endl;
+
     return 0;
 }
