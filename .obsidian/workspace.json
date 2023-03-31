@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "5a1cccc8fc57f12c",
+        "id": "98039d4a19e30c4c",
         "type": "tabs",
         "children": [
           {
-            "id": "a469fc3c27b906f4",
+            "id": "0586bf384d7cf340",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Primo anno/Secondo semestre/Architettura degli elaboratori mod. 2/Memoria virtuale/Mapping.md",
+                "file": "Primo anno/Secondo semestre/Architettura degli elaboratori mod. 2/ARM ISA/Registri.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Primo anno/Secondo semestre/Architettura degli elaboratori mod. 2/Memoria virtuale/Mapping.md",
+                "file": "Primo anno/Secondo semestre/Architettura degli elaboratori mod. 2/ARM ISA/Registri.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Primo anno/Secondo semestre/Architettura degli elaboratori mod. 2/Memoria virtuale/Mapping.md",
+                "file": "Primo anno/Secondo semestre/Architettura degli elaboratori mod. 2/ARM ISA/Registri.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Primo anno/Secondo semestre/Architettura degli elaboratori mod. 2/Memoria virtuale/Mapping.md"
+                "file": "Primo anno/Secondo semestre/Architettura degli elaboratori mod. 2/ARM ISA/Registri.md"
               }
             }
           },
@@ -147,28 +147,37 @@
   },
   "left-ribbon": {
     "hiddenItems": {
-      "table-editor-obsidian:Advanced Tables Toolbar": false,
       "switcher:Open quick switcher": false,
       "graph:Open graph view": false,
       "canvas:Create new canvas": false,
       "templates:Insert template": false,
-      "command-palette:Open command palette": false
+      "command-palette:Open command palette": false,
+      "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "a1163d9af64d6878",
+  "active": "0586bf384d7cf340",
   "lastOpenFiles": [
-    "Primo anno/Secondo semestre/Architettura degli elaboratori mod. 2/Cache/Cache associativa.md",
+    "Primo anno/Secondo semestre/Architettura degli elaboratori mod. 2/Memoria virtuale/Gestione memoria e protezione del SO.md",
+    "Primo anno/Secondo semestre/Architettura degli elaboratori mod. 2/ARM ISA/Registri.md",
+    "Primo anno/Secondo semestre/Architettura degli elaboratori mod. 2/CPU con pipeline/Implementazione.md",
+    "Primo anno/Secondo semestre/Architettura degli elaboratori mod. 2/CPU con pipeline/Introduzione.md",
+    "Primo anno/Secondo semestre/Architettura degli elaboratori mod. 2/ARM ISA/Untitled 1.md",
+    "Primo anno/Secondo semestre/Architettura degli elaboratori mod. 2/ARM ISA",
     "Primo anno/Secondo semestre/Architettura degli elaboratori mod. 2/Memoria virtuale/Mapping.md",
+    "Primo anno/Secondo semestre/Calcolo 2/Equazioni differenziali/EDO del secondo ordine.md",
+    "Primo anno/Secondo semestre/Calcolo 2/Equazioni differenziali/EDO del primo ordine.md",
+    "Primo anno/Secondo semestre/Calcolo 2/Curve parametriche/Lunghezza arco e integrali di linea.md",
+    "Primo anno/Secondo semestre/Calcolo 2/Curve parametriche/Curve regolari e forma polare.md",
+    "Primo anno/Secondo semestre/Calcolo 2/Curve parametriche/Funzioni vettoriali.md",
+    "Untitled.canvas",
+    "Primo anno/Secondo semestre/Architettura degli elaboratori mod. 2/Cache/Cache associativa.md",
     "Primo anno/Secondo semestre/Architettura degli elaboratori mod. 2/Images/Mapping.png",
     "Primo anno/Secondo semestre/Architettura degli elaboratori mod. 2/Memoria virtuale",
     "Primo anno/Secondo semestre/Architettura degli elaboratori mod. 2/Cache/Prestazioni.md",
     "Primo anno/Secondo semestre/Architettura degli elaboratori mod. 2/Cache/Memoria cache.md",
     "Primo anno/Secondo semestre/Architettura degli elaboratori mod. 2/Images/Esercizio blocco cache.png",
     "Primo anno/Secondo semestre/Programmazione e laboratorio/Classi.md",
-    "Primo anno/Secondo semestre/Calcolo 2/Curve parametriche/Lunghezza arco e integrali di linea.md",
     "Primo anno/Secondo semestre/Calcolo 2/Curve parametriche/Parametro d'arco e integrali di linea.md",
-    "Primo anno/Secondo semestre/Calcolo 2/Curve parametriche/Funzioni vettoriali.md",
-    "Primo anno/Secondo semestre/Calcolo 2/Curve parametriche/Curve regolari e forma polare.md",
     "Primo anno/Secondo semestre/Architettura degli elaboratori mod. 2/Cache/Tipologie di memoria.md",
     "Primo anno/Secondo semestre/Architettura degli elaboratori mod. 2/Images/Cache accesso diretto.svg",
     "Primo anno/Secondo semestre/Calcolo 2/Images/Poligonale.svg",
@@ -184,23 +193,16 @@
     "Primo anno/Secondo semestre/Programmazione e laboratorio/Snippets/strct",
     "Primo anno/Secondo semestre/Programmazione e laboratorio/Snippets/sort.cpp",
     "Primo anno/Secondo semestre/Programmazione e laboratorio/Snippets/sort",
-    "Primo anno/Secondo semestre/Programmazione e laboratorio/Snippets/carte.cpp",
     "Primo anno/Secondo semestre/Calcolo 2/Images/Curve semplici chiuse.svg",
     "Primo anno/Secondo semestre/Calcolo 2/Images/Curva parametrica.png",
     "Primo anno/Secondo semestre/Programmazione e laboratorio/Introduzione a C++.md",
     "Primo anno/Primo semestre/Calcolo 1/Funzioni/Funzioni elementari.md",
     "Primo anno/Primo semestre/Calcolo 1/Funzioni/Operazioni tra funzioni.md",
-    "Primo anno/Secondo semestre/Calcolo 2/Equazioni differenziali/EDO del secondo ordine.md",
     "Primo anno/Secondo semestre/Programmazione e laboratorio/Laboratorio/Debugging.md",
     "Primo anno/Secondo semestre/Programmazione e laboratorio/Laboratorio/Note generali.md",
     "Primo anno/Secondo semestre/Programmazione e laboratorio/Laboratorio/valgrind_notes.md",
-    "Primo anno/Secondo semestre/Calcolo 2/Equazioni differenziali/EDO del primo ordine.md",
     "Primo anno/Secondo semestre/Architettura degli elaboratori mod. 2/Images/Dipendenza RAW.png",
-    "Primo anno/Secondo semestre/Architettura degli elaboratori mod. 2/CPU con pipeline/Implementazione.md",
     "Primo anno/Secondo semestre/Architettura degli elaboratori mod. 2/Images/Esempio dipendenza RAW.png",
-    "Primo anno/Secondo semestre/Architettura degli elaboratori mod. 2/CPU con pipeline/Introduzione.md",
-    "Primo anno/Primo semestre/Architettura degli elaboratori mod. 1/6 - CPU/CPU multiciclo.md",
-    "Primo anno/Secondo semestre/Programmazione e laboratorio/notes.md",
-    "Primo anno/Primo semestre/Calcolo 1/Integrali/Integrali impropri e aree.md"
+    "Primo anno/Primo semestre/Architettura degli elaboratori mod. 1/6 - CPU/CPU multiciclo.md"
   ]
 }

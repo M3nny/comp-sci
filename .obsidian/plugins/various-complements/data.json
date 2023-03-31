@@ -1,6 +1,10 @@
 {
   "strategy": "default",
+  "cedictPath": "./cedict_ts.u8",
   "matchStrategy": "prefix",
+  "fuzzyMatch": true,
+  "matchingWithoutEmoji": true,
+  "treatAccentDiacriticsAsAlphabeticCharacters": false,
   "maxNumberOfSuggestions": 5,
   "maxNumberOfWordsAsPhrase": 3,
   "minNumberOfCharactersTriggered": 0,
@@ -10,6 +14,11 @@
   "disableSuggestionsDuringImeOn": false,
   "insertAfterCompletion": false,
   "firstCharactersDisableSuggestions": ":/^",
+  "useCommonPrefixCompletionOfSuggestion": false,
+  "patternsToSuppressTrigger": [
+    "^~~~.*",
+    "^```.*"
+  ],
   "showMatchStrategy": true,
   "showComplementAutomatically": true,
   "showIndexingStatus": true,
@@ -38,6 +47,12 @@
   "enableInternalLinkComplement": true,
   "suggestInternalLinkWithAlias": false,
   "excludeInternalLinkPathPrefixPatterns": "",
+  "updateInternalLinksOnSave": true,
+  "insertAliasTransformedFromDisplayedInternalLink": {
+    "enabled": false,
+    "beforeRegExp": "",
+    "after": ""
+  },
   "enableFrontMatterComplement": true,
   "frontMatterComplementMatchStrategy": "inherit",
   "insertCommaAfterFrontMatterCompletion": false,
@@ -45,6 +60,7 @@
     "maxDaysToKeepHistory": 30,
     "maxNumberOfHistoryToKeep": 0
   },
+  "disableOnMobile": false,
   "showLogAboutPerformanceInConsole": false,
   "selectionHistoryTree": {
     "Produce": {
@@ -268,6 +284,30 @@
         "currentFile": {
           "count": 1,
           "lastUpdated": 1679654067387
+        }
+      }
+    },
+    "_context": {
+      "_context": {
+        "currentFile": {
+          "count": 1,
+          "lastUpdated": 1680281634509
+        }
+      }
+    },
+    "purpouse": {
+      "purpouse": {
+        "currentFile": {
+          "count": 1,
+          "lastUpdated": 1680283975161
+        }
+      }
+    },
+    "Reserved": {
+      "Reserved": {
+        "currentFile": {
+          "count": 2,
+          "lastUpdated": 1680285602066
         }
       }
     }
