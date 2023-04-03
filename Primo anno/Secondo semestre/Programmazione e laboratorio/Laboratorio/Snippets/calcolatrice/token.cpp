@@ -3,6 +3,16 @@
 #include <cassert>
 #include <vector>
 
+/* Grammar:
+ * L (lista di statement) -> S. | S;L
+ * E (expression)-> P | E + P | E - P
+ * P (produttoria) -> T | P * T | P / T
+ * T (carattere terminale) -> double | (E) | var
+ * S (statement) -> var = E | p(E)
+ */
+
+// var: {a, b, c, ..., z} \ {p}
+
 // i membri di classi per convenzione vengono preceduti da m_
 struct token {
     // con static, la costante inf sarà condivisa tra tutte le istanze di token, quindi che istanzio 10 token avrò solo 1 costante inf
@@ -27,7 +37,7 @@ struct token {
     friend std::istream& operator >> (std::istream& is, token& t) {
         char c;
         is >> c; // saltando gli spazi leggo il primo numero
-        if ((c >= '0' && c <= '9') || c == '.') { // 0 e 9 caratteri ascii
+        if (c >= '0' && c <= '9') { // 0 e 9 caratteri ascii
             is.putback(c);
             is >> t.m_value;
         } else { // c è +-/*()=
@@ -40,35 +50,45 @@ struct token {
         assert(is_double());
         return m_value;
     }
-
     char get_type() const {
         assert(!is_double());
         return m_type;
     }
+    char get_var_name() const {return m_type;}
 
     bool is_double() const {return m_type == 0 and m_value != inf;}
     bool is_open() const {return m_type == '(';}
-    bool is_close() const {return m_type == ')';};
-    bool is_add() const {return m_type == '+';};
-    bool is_sub() const {return m_type == '-';};
-    bool is_mul() const {return m_type == '*';};
-    bool is_div() const {return m_type == '/';};
-    bool is_eq() const {return m_type == '=';};
+    bool is_close() const {return m_type == ')';}
+    bool is_add() const {return m_type == '+';}
+    bool is_sub() const {return m_type == '-';}
+    bool is_mul() const {return m_type == '*';}
+    bool is_div() const {return m_type == '/';}
+    bool is_eq() const {return m_type == '=';}
+    bool is_var() const {return m_type >= 'a' and m_type <= 'z' and m_type != 'p';}
+    bool is_print() const {return m_type == 'p';}
+    bool is_dot() const {return m_type == '.';}
 
 private:
     double m_value;
     double m_type;
 };
 
+double vars[256];
+
 double E(const std::vector<token>& t, int& i);
+void L(const std::vector<token>& t, int& i);
 
 // token corrente (da leggere) t[i]
 double T(const std::vector<token>& t, int& i) {
-    // T -> double oppure (E)
+    // T -> double | (E) | var
+
     double res = 0;
     if (t[i].is_double()) {
         res = t[i].get_value();
         i++; // mangio i token t[i]
+    } else if (t[i].is_var()){
+        res = vars[t[i].get_var_name()]; // estrae il valore della variabile con nome t[i]
+        i++; // consumo il token var
     } else {
         assert(t[i].is_open());
         i++; // consumo (
@@ -109,20 +129,48 @@ double E(const std::vector<token>& t, int& i) {
     return res;
 }
 
+void S(const std::vector<token>& t, int& i) {
+    // S -> var = E | p(E)
+
+    if (t[i].is_var()) {
+        // S -> var = E
+        char c = t[i].get_var_name();
+        i += 2; // consumo il token 'var'ed il token '='
+        double res = E(t, i);
+        vars[c] = res;
+
+    } else { // S -> p(E)
+        assert(t[i].is_print());
+        i += 2; // consumo 'p' e '('
+        double res = E(t, i);
+        i++; // consumo '('
+        std::cout << res << std::endl;
+    }
+}
+
+void L(const std::vector<token>& t, int& i) {
+    // L -> S. | S;L
+    S(t, i); // consumo il primo statement S
+
+    if (t[i].is_dot()) {
+        i++; // consumo il '.'
+        return;
+    }
+    i++; // consumo ';'
+    L(t, i);
+}
+
+
 int main () {
     std::vector<token> tokens;
-    std::cout << "Inserisci l'espressione (termina con '='):" << std::endl;
+
     do {
         token t;
         std::cin >> t;
         tokens.push_back(t);
-        // (info debug): notare che il primo << è la funzione cout, mentre il secondo << è quello definito dalla nostra funzione
-        //(debug): std::cout << t << std::endl;
-    } while (!tokens.back().is_eq()); // back ritorna l'ultimo elemento di un vettore
 
-    // E -> expression
+    } while (!tokens.back().is_dot());
     int i = 0;
-    std::cout << "result = " << E(tokens, i) << std::endl;
-
+    L(tokens, i);
     return 0;
 }

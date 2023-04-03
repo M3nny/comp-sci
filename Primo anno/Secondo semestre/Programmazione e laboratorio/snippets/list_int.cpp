@@ -12,6 +12,8 @@ public:
     const int& head() const; // posso solo leggere
     void print() const;
     int size() const;
+    int elimina_fondo(int n);
+    void ribalta();
 private:
     struct cell {
         int info;
@@ -21,6 +23,8 @@ private:
     pcella h;
     void append_ric(pcella& testa, int e);
     void print_ric(pcella testa) const;
+    int elimina_fondo_ric(pcella& list, int n);
+    void ribalta_ric(pcella& p);
 };
 
 List_int::List_int() {
@@ -99,6 +103,39 @@ int List_int::size() const {
         p = p->next;
     }
     return res;
+}
+
+int List_int::elimina_fondo(int n) {
+    return elimina_fondo_ric(h, n);
+}
+
+int List_int::elimina_fondo_ric(pcella& list, int n) {
+    if (list == nullptr) {
+        return 0;
+    } else {
+        int cancellati = elimina_fondo_ric(list->next, n);
+        if (cancellati < n) {
+            delete list; // delete non mette a null il puntatore, lo bisogna mettere manualmente
+            list = nullptr;
+            return cancellati + 1;
+        } else {
+            return n;
+        }
+    }
+}
+
+void List_int::ribalta() {
+    ribalta_ric(h);
+}
+
+void List_int::ribalta_ric(pcella& p) {
+    if (p != nullptr && p->next != nullptr) {
+        pcella supp = p->next;
+        ribalta_ric(supp);
+        p->next->next = p;
+        p->next = nullptr;
+        p = supp;
+    }
 }
 
 int main () {
