@@ -47,5 +47,3 @@ I codici compresi tra i bit 31-27 (quelli che ci interessano), se _asserted_ sig
 - **Z**: il risultato dell'ultima operazione è <u>zero</u>
 - **V**: c'è stato un <u>overflow</u> nell'ultima operazione
 - **C**: c'è stato un <u>riporto</u> nell'ultima operazione
-
----
