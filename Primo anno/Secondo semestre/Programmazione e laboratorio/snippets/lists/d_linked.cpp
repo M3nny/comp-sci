@@ -11,6 +11,15 @@ public:
     int& at(int pos);
     bool operator== (const ListDL& l) const;
 
+    /* ridefinire '=' crea problemi in quanto:
+        * 1. assegnamenti in catena
+        * 2. distruggere lo stato del oggeto che sto assegnando
+        * 3. la distruzione dello stato non deve interrompere la valutazione dell'espressione a dx dell'assegnamento
+    */
+    const ListDL& operator= (const ListDL& l); // ritorno const ref. per efficienza
+    ListDL operator+ (const ListDL& l) const; // concateno gli elementi di l1 con quelli di l2
+    ListDL operator* (unsigned int n) const; // aggiunge in coda la lista ripetuta n volte
+
 private:
     struct cella {
         int info;
@@ -52,7 +61,7 @@ void ListDL::append(int e) {
     (*nuova)->next = nullptr;
     (*nuova)->prev = tail;
     if (tail != nullptr) {
-        tail->next = *nuova;
+        tail = *nuova;
     } else {
         head = *nuova;
     }
@@ -104,6 +113,54 @@ bool ListDL::operator == (const ListDL& l) const {
     return (pc1 == pc2);
 }
 
+const ListDL& ListDL::operator= (const ListDL& l) {
+    if (this != &l) { // non sto auto-assegnando
+        // distruzione dello stato
+        pcella pc = head;
+        while (pc != nullptr) {
+            pc = pc->next;
+            delete head;
+            head = pc;
+        }
+        head = nullptr;
+        tail = nullptr;
+
+        pc = l.head;
+        while (pc != nullptr) {
+            append(pc->info);
+            pc = pc->next;
+        }
+    }
+    return *this;
+}
+
+ListDL ListDL::operator+ (const ListDL& l) const { // move semantics, quando sta per morire ris, sposta lo stato di ris nel nuovo oggetto
+    ListDL ris;
+    pcella pc = head;
+    while (pc != nullptr) {
+        ris.append(pc->info);
+        pc = pc->next;
+    }
+    pc = l.head;
+    while (pc != nullptr) {
+        ris.append(pc->info);
+        pc = pc->next;
+    }
+    return ris;
+}
+
+ListDL ListDL::operator* (unsigned int n) const {
+    ListDL ris;
+    for (int i = 0; i < n; i++) {
+        pcella pc = head;
+        while (pc != nullptr) {
+            ris.append(pc->info);
+            pc = pc->next;
+        }
+    }
+    return ris;
+}
+
 int main () {
     // fix: segfault
     ListDL l1, l2;
@@ -112,9 +169,6 @@ int main () {
     if (l1 == l2) {
         std::cout << "uguali" << std::endl;
     }
-    /* ridefinire '=' crea problemi in quanto:
-        * 1. assegnamenti in catena
-        * 2. distruggere lo stato del oggeto che sto assegnando
-        * 3. la distruzione dello stato non deve interrompere la valutazione dell'espressione a dx dell'assegnamento
-    */
+
+    l1 = l1 * 10; // overloaded *, 10 * l1 non va perchè ora * non è commutativo, l'overload va se a sx c'è ListDL e a dx un uint
 }

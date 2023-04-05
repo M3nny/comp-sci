@@ -83,3 +83,17 @@ In caso di forme indeterminate dobbiamo:
 - $\ln(z)\leq z-1\quad\forall z\geq0$
 - $|\sin(z)|\leq|z|\quad\forall z\in\mathbb{R}^2$
 - $|\sin(z)\leq1;\quad |\cos(z)|\leq 1\quad\forall z\in\mathbb{R}^2$
+
+### Calcolo dei limiti usando le coordinate polari
+È utile a volte sostituire le _coordiante polari_ rispetto ad un centro $x_0=(x_0, y_0)$:
+$$\begin{cases}x=x_0+\rho\cos(\theta)\\y=y_0+\rho\sin(\theta)\end{cases}$$
+- L'**angolo** è $\theta\in[0,2\pi[$ 
+- La **distanza** del punto dal centro: $(x-x_0)^2+(y-y_0)^2=\rho^2$
+Sostituendo otterremo un limite ad una singola variabile
+
+>[!Example]
+>$$\lim_{(x,y)\to(1,0)}\left(\frac{y^2\ln(x)}{(x-1)^2+y^2}\right)\quad D:\begin{cases}x>0\\(x,y)\neq(1,0)\end{cases}$$
+>Procedo con la sostituzione usando come centro $(1,0)$:
+>$$\begin{cases}x=1+\rho\cos(\theta)\\y=\rho\sin(\theta)\end{cases}$$
+>Ottengo quindi sostituendo:
+>$$\lim_{\rho\to 0}\left(\frac{\bcancel{\rho^2}\sin^2(\theta)\ln(1+\rho\cos(\theta))}{\bcancel{\rho^2}}\right)=0$$
