@@ -36,7 +36,7 @@ Non possono essere usati direttamente nelle istruzioni.
 ### Registri di sistema
 Utilizzati per configurare CPU o sistema di memoria, possono essere letti o scritti dalle istruzioni `MRS` e `MSR`.
 
-### Application Program Status Register (ASPR)
+### Application Program Status Register (APSR)
 Contiene una copia dei codici di controllo generati dall'ALU:
 | **31** | **30** | **29** | **28** | **27** | **26-24** | **23-20** | **19-16** | **15-0** |
 | ------ | ------ | ------ | ------ | ------ | --------- | --------- | --------- | -------- |

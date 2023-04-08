@@ -63,38 +63,6 @@
   "disableOnMobile": false,
   "showLogAboutPerformanceInConsole": false,
   "selectionHistoryTree": {
-    "Produce": {
-      "Produce": {
-        "currentFile": {
-          "count": 1,
-          "lastUpdated": 1677946448872
-        }
-      }
-    },
-    "Branch": {
-      "Branch": {
-        "currentFile": {
-          "count": 1,
-          "lastUpdated": 1677946568206
-        }
-      }
-    },
-    "indirizzo": {
-      "indirizzo": {
-        "currentFile": {
-          "count": 2,
-          "lastUpdated": 1677946596744
-        }
-      }
-    },
-    "memoria": {
-      "memoria": {
-        "currentFile": {
-          "count": 1,
-          "lastUpdated": 1677946659380
-        }
-      }
-    },
     "Multiple": {
       "Multiple": {
         "currentFile": {
@@ -308,6 +276,30 @@
         "currentFile": {
           "count": 2,
           "lastUpdated": 1680285602066
+        }
+      }
+    },
+    "label": {
+      "label": {
+        "currentFile": {
+          "count": 1,
+          "lastUpdated": 1680940972940
+        }
+      }
+    },
+    "Equivale": {
+      "Equivale": {
+        "currentFile": {
+          "count": 1,
+          "lastUpdated": 1680943611189
+        }
+      }
+    },
+    "equivale": {
+      "equivale": {
+        "currentFile": {
+          "count": 1,
+          "lastUpdated": 1680943723342
         }
       }
     }

@@ -4,19 +4,15 @@
     "type": "split",
     "children": [
       {
-        "id": "98039d4a19e30c4c",
+        "id": "5c72d53d176e4cab",
         "type": "tabs",
         "children": [
           {
-            "id": "0586bf384d7cf340",
+            "id": "ae15d9bfa7b02051",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Primo anno/Secondo semestre/Architettura degli elaboratori mod. 2/ARM ISA/Registri.md",
-                "mode": "source",
-                "source": false
-              }
+              "type": "empty",
+              "state": {}
             }
           }
         ]
@@ -85,7 +81,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Primo anno/Secondo semestre/Architettura degli elaboratori mod. 2/ARM ISA/Registri.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +97,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Primo anno/Secondo semestre/Architettura degli elaboratori mod. 2/ARM ISA/Registri.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -124,9 +118,7 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "Primo anno/Secondo semestre/Architettura degli elaboratori mod. 2/ARM ISA/Registri.md"
-              }
+              "state": {}
             }
           },
           {
@@ -155,10 +147,16 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "0586bf384d7cf340",
+  "active": "ae15d9bfa7b02051",
   "lastOpenFiles": [
-    "Primo anno/Secondo semestre/Architettura degli elaboratori mod. 2/Memoria virtuale/Gestione memoria e protezione del SO.md",
+    "Primo anno/Secondo semestre/Architettura degli elaboratori mod. 2/ARM ISA/Load&Store.md",
+    "Primo anno/Secondo semestre/Architettura degli elaboratori mod. 2/ARM ISA/Branches.md",
     "Primo anno/Secondo semestre/Architettura degli elaboratori mod. 2/ARM ISA/Registri.md",
+    "Primo anno/Secondo semestre/Architettura degli elaboratori mod. 2/ARM ISA/Istruzioni logico-aritmetiche.md",
+    "Pasted image 20230408102810.png",
+    "Pasted image 20230408102801.png",
+    "Primo anno/Secondo semestre/Architettura degli elaboratori mod. 2/Images/Conditional branch.png",
+    "Primo anno/Secondo semestre/Architettura degli elaboratori mod. 2/Memoria virtuale/Gestione memoria e protezione del SO.md",
     "Primo anno/Secondo semestre/Architettura degli elaboratori mod. 2/CPU con pipeline/Implementazione.md",
     "Primo anno/Secondo semestre/Architettura degli elaboratori mod. 2/CPU con pipeline/Introduzione.md",
     "Primo anno/Secondo semestre/Architettura degli elaboratori mod. 2/ARM ISA/Untitled 1.md",
@@ -194,15 +192,9 @@
     "Primo anno/Secondo semestre/Programmazione e laboratorio/Snippets/sort.cpp",
     "Primo anno/Secondo semestre/Programmazione e laboratorio/Snippets/sort",
     "Primo anno/Secondo semestre/Calcolo 2/Images/Curve semplici chiuse.svg",
-    "Primo anno/Secondo semestre/Calcolo 2/Images/Curva parametrica.png",
     "Primo anno/Secondo semestre/Programmazione e laboratorio/Introduzione a C++.md",
     "Primo anno/Primo semestre/Calcolo 1/Funzioni/Funzioni elementari.md",
     "Primo anno/Primo semestre/Calcolo 1/Funzioni/Operazioni tra funzioni.md",
-    "Primo anno/Secondo semestre/Programmazione e laboratorio/Laboratorio/Debugging.md",
-    "Primo anno/Secondo semestre/Programmazione e laboratorio/Laboratorio/Note generali.md",
-    "Primo anno/Secondo semestre/Programmazione e laboratorio/Laboratorio/valgrind_notes.md",
-    "Primo anno/Secondo semestre/Architettura degli elaboratori mod. 2/Images/Dipendenza RAW.png",
-    "Primo anno/Secondo semestre/Architettura degli elaboratori mod. 2/Images/Esempio dipendenza RAW.png",
-    "Primo anno/Primo semestre/Architettura degli elaboratori mod. 1/6 - CPU/CPU multiciclo.md"
+    "Primo anno/Secondo semestre/Programmazione e laboratorio/Laboratorio/Debugging.md"
   ]
 }

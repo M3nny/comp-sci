@@ -3,7 +3,7 @@ Le istruzioni logico-aritmetiche, si presentano come segue:
 <op>{S} Rd, Rn, <op2>, <shift>
 ```
 - <**op**>: istruzione
-- **S**(opzionale): esegue l'operazione e imposta i [[Registri#Application Program Status Register (ASPR)|codici di controllo]]
+- **S**(opzionale): esegue l'operazione e imposta i [[Registri#Application Program Status Register (APSR)|codici di controllo]]
 - **Rd**: registro di destinazione
 - **Rn**: primo operando
 - <**op2**>: Rm (registro) | Rm, <_shift_> _#n_ | Rm, <_shift_> Rs (shift del valore dentro al reg. Rs)
