@@ -56,16 +56,16 @@ void ListDL::copy(pcella h) {
 
 // con tail il costo di una append è costante
 void ListDL::append(int e) {
-    pcella* nuova = new pcella;
-    (*nuova)->info = e;
-    (*nuova)->next = nullptr;
-    (*nuova)->prev = tail;
+    pcella nuova = new cella;
+    nuova->info = e;
+    nuova->next = nullptr;
+    nuova->prev = tail;
     if (tail != nullptr) {
-        tail = *nuova;
+        tail = nuova;
     } else {
-        head = *nuova;
+        head = nuova;
     }
-    tail = *nuova;
+    tail = nuova;
 }
 
 void ListDL::print() const {
