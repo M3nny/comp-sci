@@ -318,3 +318,135 @@ int main () {
     s3 = s1 + "ciao";
 }
 ```
+
+#### Funzione cappello
+Con la **funzione cappello** impostiamo i parametri iniziali per un'altra funzione (che magari è privata all'interno di una classe)
+
+```cpp
+void List_int::append(int e) {
+	// h è una variaile privata, lo stesso la funzione append_ric
+	// chi usa questa classe non sa della loro esistenza
+    append_ric(h, e);
+}
+
+void List_int::append_ric(pcella& testa, int e) {
+    // ...
+}
+```
+
+### Overloading degli operatori
+Posso specificare il comportamento degli operatori con strutture dati e classi definite al di fuori dello standard c++.
+Gli operatori con overloaded non sono commutativi, hanno associatività a sinistra.
+
+Standard nomi dei parametri formali per overloading degli operatori:
+- lhs: left-hand side
+- rhs: right-hand side
+
+```cpp
+class ListDL {
+public:
+    ListDL();
+    ListDL(const ListDL& s);
+    ~ListDL();
+    
+    // aggiunge in coda la lista ripetuta n volte
+    ListDL operator* (unsigned int n) const; 
+
+private:
+    struct cella {
+        int info;
+        cella* next;
+        cella* prev;
+    };
+    typedef cella* pcella;
+    pcella head, tail;
+};
+
+ListDL ListDL::operator* (unsigned int n) const {
+    ListDL ris;
+    for (int i = 0; i < n; i++) {
+        pcella pc = head;
+        while (pc != nullptr) {
+            ris.append(pc->info);
+            pc = pc->next;
+        }
+    }
+    return ris;
+}
+
+int main () {
+    ListDL l1;
+    l1.append(5);
+    l1 = l1 * 10; // overloaded *
+    
+    // 10 * l1 non andrebbe bene 
+    // l'operatore '*' è definito se a sx c'è ListDL e a dx un uint
+}
+
+```
+
+### Templates
+I **templates** sono un metodo di astrazione dei tipi, se usati consentono di generalizzare un algoritmo (se possibile) a più tipi di dato.
+Ad esempio un algoritmo di sorting è uguale per tutti i tipi di default.
+
+A differenza delle **Macro** in C, le quali semplicemente eseguono delle <u>sostituzioni di testo</u>, i **templates** <u>lavorano a livello di compilazione</u>, in questo modo il compilatore controlla se il tipo passato al template può effettivamente essere usato.
+
+Esistono 2 tipi di templates:
+- Di **funzione**
+- Di **classe**, una volta che gli è stato assegnato un tipo, si dice che è una **specializzazione**
+
+È anche possibile definire funzioni con template (anche con typename diverso) all'interno di una classe con template.
+
+```cpp
+// Funzione
+template<typename T> // posso mettere anche class al posto di typename
+T max(T const& x, T const& y) {
+    if (x > y) return x;
+    return y;
+}
+
+int main() {
+	// se non specifico il tipo lo capisce a compile time se può
+	std::cout << max(1,2);
+	// nel caso non fosse possibile:
+	std::cout << max<int, int>(3,4);
+}
+
+```
+
+```cpp
+// Classe
+template<typename T>
+struct container {
+	// ...
+    container(T const& y): x(y) {} // lista di inizializzazione
+    // ...
+private:
+    T x;
+};
+
+int main () {
+	container<int> x(5);
+}
+```
+
+Posso dare una valore di default al template, il quale deve essere conosciuto a compilaton time (è una costante).
+Quando questo meccanismo viene usato, si tratta di un **non-type parameter**, ovvero a differenza di un tipo di **default**, un _non-type parameter_ non può cambiare tipo, ma solo valore della costante (a compile time).
+
+```cpp
+// T è un tipo di default
+// N è un non-type parameter
+template<typename T = double, int N = 100> 
+struct my_sequence {
+public:
+	// ...
+private:
+    T vec[N]; // array statico lungo N
+};
+
+int main () {
+    my_sequence<int, 5> seq; // array statico di 5 int
+    my_sequence<> seq2; // array statico di 100 double
+    my_sequence<int> seq3; // array statico di 100 int
+}
+```

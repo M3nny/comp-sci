@@ -158,3 +158,42 @@ Vogliamo evitare di ricompilare il `file.cpp` che chiama una classe la cui parte
 Posso quindi scrivere la classe in 2 modi diversi (magari una con la linked list e una con vector) e avere un eseguibile che in base al linking di quale `class.o` usa, si comporta in modo diverso.
 
 In pratica: se volessi vendere una libreria, darei al cliente il `class.hpp` ed il file oggetto generato da esso (`class.o`), nascondendo del tutto quindi l'implementazione della classe privata.
+
+```cpp
+// file.hpp
+class List_int {
+public:
+    List_int();
+    List_int(const List_int& l);
+    ~List_int();
+    void append(int el);
+private:
+    struct impl; // implementation
+    impl* pimpl;
+};
+```
+
+```cpp
+// file.cpp
+#include "file.hpp"
+struct List_int::impl {
+    std::vector<int> v;
+};
+
+List_int::List_int() {
+    pimpl = new impl;
+}
+
+List_int::List_int(const List_int& l) {
+    pimpl = new impl;
+    pimpl->v = l.pimpl->v; // deep copy del vector
+}
+
+List_int::~List_int() {
+    delete pimpl;
+}
+
+void List_int::append(int el) {
+    pimpl->v.push_back(el);
+}
+```

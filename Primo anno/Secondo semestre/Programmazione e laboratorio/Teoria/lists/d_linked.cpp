@@ -162,7 +162,6 @@ ListDL ListDL::operator* (unsigned int n) const {
 }
 
 int main () {
-    // fix: segfault
     ListDL l1, l2;
     l1.append(5);
     l2.append(5);

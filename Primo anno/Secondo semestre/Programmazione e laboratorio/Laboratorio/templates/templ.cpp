@@ -40,6 +40,11 @@ bool are_equal(T1 const& x, T2 const& y) {
 // lhs: left-hand side
 // rhs: right-hand side
 
+typedef std::pair<int, int> my_pair;
+std::ostream& operator<<(std::ostream& lhs, my_pair const& rhs) {
+    lhs << "(" << rhs.first << "," << rhs.second << ")";
+    return lhs;
+}
 
 template<typename T>
 struct m_container {
@@ -67,7 +72,7 @@ public:
 
     void print() {
         for (uint64_t i = 0; i < m_size; i++) {
-            std::cout << m_data[i] << " "; // TODO: fix operator visibility
+            std::cout << m_data[i] << " ";
         }
         std::cout << std::endl;
     }
@@ -75,12 +80,6 @@ private:
     T* m_data;
     uint64_t m_size;
 };
-
-typedef std::pair<int, int> my_pair;
-std::ostream& operator<<(std::ostream& lhs, my_pair const& rhs) {
-    lhs << "(" << rhs.first << "," << rhs.second << ")";
-    return lhs;
-}
 
 int main() {
     // se non specifico il tipo lo capisce a compile time se può
@@ -91,7 +90,7 @@ int main() {
 
     // ---
     m_container<my_pair> y;
-    std::vector<double> vec {1,2,3,4,5,6};
+    std::vector<double> vec {1,2,3,4,5,6}; // compilare con -std=c++14
     y.build_from<double>(vec.data(), vec.size());
     y.print();
 
