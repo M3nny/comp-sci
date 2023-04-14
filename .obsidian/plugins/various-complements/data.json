@@ -63,78 +63,6 @@
   "disableOnMobile": false,
   "showLogAboutPerformanceInConsole": false,
   "selectionHistoryTree": {
-    "Multiple": {
-      "Multiple": {
-        "currentFile": {
-          "count": 1,
-          "lastUpdated": 1678551079954
-        }
-      }
-    },
-    "CPU multiciclo": {
-      "CPU multiciclo": {
-        "internalLink": {
-          "count": 1,
-          "lastUpdated": 1678551358038
-        }
-      }
-    },
-    "implementato": {
-      "implementato": {
-        "currentFile": {
-          "count": 1,
-          "lastUpdated": 1678551361601
-        }
-      }
-    },
-    "probabile": {
-      "probabile": {
-        "currentFile": {
-          "count": 1,
-          "lastUpdated": 1678554513806
-        }
-      }
-    },
-    "\\begin{cases}x": {
-      "\\begin{cases}x": {
-        "currentFile": {
-          "count": 2,
-          "lastUpdated": 1678716814512
-        }
-      }
-    },
-    "\\end{cases}": {
-      "\\end{cases}": {
-        "currentFile": {
-          "count": 2,
-          "lastUpdated": 1678716911364
-        }
-      }
-    },
-    "\\theta_1": {
-      "\\theta_1": {
-        "currentFile": {
-          "count": 2,
-          "lastUpdated": 1678717567136
-        }
-      }
-    },
-    "\\mathcal{P}": {
-      "\\mathcal{P}": {
-        "currentFile": {
-          "count": 3,
-          "lastUpdated": 1678719022430
-        }
-      }
-    },
-    "parametrizzazione": {
-      "parametrizzazione": {
-        "currentFile": {
-          "count": 2,
-          "lastUpdated": 1678720778896
-        }
-      }
-    },
     "\\to\\mathbb{R}^m": {
       "\\to\\mathbb{R}^m": {
         "currentFile": {
@@ -148,14 +76,6 @@
         "currentFile": {
           "count": 3,
           "lastUpdated": 1678894604601
-        }
-      }
-    },
-    "String_Pascal": {
-      "String_Pascal": {
-        "currentFile": {
-          "count": 3,
-          "lastUpdated": 1678875591596
         }
       }
     },
@@ -300,6 +220,14 @@
         "currentFile": {
           "count": 1,
           "lastUpdated": 1680943723342
+        }
+      }
+    },
+    "numeri": {
+      "numeri": {
+        "currentFile": {
+          "count": 1,
+          "lastUpdated": 1681475686686
         }
       }
     }

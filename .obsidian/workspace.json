@@ -8,11 +8,15 @@
         "type": "tabs",
         "children": [
           {
-            "id": "ae15d9bfa7b02051",
+            "id": "1b221b082db205a7",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {}
+              "type": "markdown",
+              "state": {
+                "file": "Primo anno/Secondo semestre/Architettura degli elaboratori mod. 2/Assembly/Programmi.md",
+                "mode": "source",
+                "source": false
+              }
             }
           }
         ]
@@ -65,7 +69,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 296.5
+    "width": 296.5,
+    "collapsed": true
   },
   "right": {
     "id": "282a9548711da6a0",
@@ -81,6 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "Primo anno/Secondo semestre/Architettura degli elaboratori mod. 2/Assembly/Programmi.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -97,6 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "Primo anno/Secondo semestre/Architettura degli elaboratori mod. 2/Assembly/Programmi.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -118,7 +125,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "Primo anno/Secondo semestre/Architettura degli elaboratori mod. 2/Assembly/Programmi.md"
+              }
             }
           },
           {
@@ -147,12 +156,14 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "ae15d9bfa7b02051",
+  "active": "1b221b082db205a7",
   "lastOpenFiles": [
     "Primo anno/Secondo semestre/Architettura degli elaboratori mod. 2/ARM ISA/Load&Store.md",
-    "Primo anno/Secondo semestre/Architettura degli elaboratori mod. 2/ARM ISA/Branches.md",
-    "Primo anno/Secondo semestre/Architettura degli elaboratori mod. 2/ARM ISA/Registri.md",
+    "Primo anno/Secondo semestre/Architettura degli elaboratori mod. 2/Assembly/Programmi.md",
     "Primo anno/Secondo semestre/Architettura degli elaboratori mod. 2/ARM ISA/Istruzioni logico-aritmetiche.md",
+    "Primo anno/Secondo semestre/Architettura degli elaboratori mod. 2/ARM ISA/Registri.md",
+    "Primo anno/Secondo semestre/Architettura degli elaboratori mod. 2/Assembly/Introduzione.md",
+    "Primo anno/Secondo semestre/Architettura degli elaboratori mod. 2/ARM ISA/Branches.md",
     "Pasted image 20230408102810.png",
     "Pasted image 20230408102801.png",
     "Primo anno/Secondo semestre/Architettura degli elaboratori mod. 2/Images/Conditional branch.png",
@@ -193,8 +204,6 @@
     "Primo anno/Secondo semestre/Programmazione e laboratorio/Snippets/sort",
     "Primo anno/Secondo semestre/Calcolo 2/Images/Curve semplici chiuse.svg",
     "Primo anno/Secondo semestre/Programmazione e laboratorio/Introduzione a C++.md",
-    "Primo anno/Primo semestre/Calcolo 1/Funzioni/Funzioni elementari.md",
-    "Primo anno/Primo semestre/Calcolo 1/Funzioni/Operazioni tra funzioni.md",
-    "Primo anno/Secondo semestre/Programmazione e laboratorio/Laboratorio/Debugging.md"
+    "Primo anno/Primo semestre/Calcolo 1/Funzioni/Funzioni elementari.md"
   ]
 }
