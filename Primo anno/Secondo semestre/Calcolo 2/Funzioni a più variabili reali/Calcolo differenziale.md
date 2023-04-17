@@ -85,3 +85,43 @@ Data $f: A\subseteq\mathbb{R}^2\to\mathbb{R}$ con $A$ aperto, $x_0\in A$ e $v\in
 Si dice **derivata direzionale** di $f$ rispetto al versore $v$ nel punto $x_0$ il limite (se esiste finito):
 $$D_v(x_0)=\lim_{t\to 0}\frac{f(x_0+tv)-f(x_0)}{t}$$
 - $f(x_0+tv)$ è il rapporto incrementale lungo la direzione di $v$
+
+>[!Teorema (formula del gradiente)]
+>Sia $f: A\subseteq\mathbb{R}^2\to\mathbb{R}, differenziabile in $x_0\in A$, allora la derivata direzionale rispetto al versore $v$ ($D_v(x_0)$) esiste $\forall v\in\mathbb{R}^n$ e vale:
+>$$D_v(x_0)=\nabla f^{T}(x_0)\cdot v = \sum_{i=1}^nD(x_0)\cdot v_i$$
+
+>[!Example]
+>$f(x,y)=y^3-\sin(xy);\quad x_0\in (\pi, 1);\quad v = (\frac{\sqrt{2}}{2},-\frac{\sqrt{2}}{2})$
+>- $D_x(x,y)=-y\cos(xy)\quad | \quad D_x(\pi, 1)=-\cos(\pi) = 1$
+>- $D_y(x,y)=3y^2-x\cos(xy)\quad | \quad D_y(\pi, 1)=3+\pi$
+>
+>$$\nabla f(\pi, 1)=\begin{pmatrix}1\\3+\pi \end{pmatrix}$$
+>$$D_v(x_0)=\nabla f^T(x_=)\cdot v= (1, 3+\pi)\cdot \begin{pmatrix}\frac{\sqrt{2}}{2}\\-\frac{\sqrt{2}}{2} \end{pmatrix} =$$
+>$$\frac{\sqrt{2}}{2} + (3+\pi)(-\frac{\sqrt{2}}{2}) = \frac{\sqrt{2}}{2}-\frac{3}{2}\sqrt{2}-\frac{\sqrt{2}}{2}\pi = -\sqrt{2}-\frac{\sqrt{2}}{2}\pi$$
+
+
+### Direzione di massima crescita
+La **direzione di massima crescita** è la direzione che massimizza la derivata direzionale.
+Cerchiamo $v\in\mathbb{R}^2$ per cui $||v||=1$ tale che $D_v(x_0)\geq D_{v_1}\quad \forall v_1\in\mathbb{R}^2$.
+Se $f$ è differenziabile, allora $\nabla f^T(x_0)\cdot v \geq \nabla f^T(x_0)\cdot v_1$
+
+Essendo che $||v|| = 1$, e che $\nabla f^T(x_0)\cdot v = ||\nabla f^T(x_0)||\cdot ||v|| \cdot \cos(\alpha)$
+cerchiamo l'angolo $\alpha$ che massimizza il coseno, quindi $\alpha = 0$.
+**Il versore (direzione) di massima crescita** è dato da:
+$$v=\frac{\nabla f(x_0)}{||\nabla f(x_0)||}$$ analogamente per la **direzione di massima discesa**, devo trovare $\alpha$ che minimizza il coseno, quindi $\alpha = \pi$.
+**Il versore (direzione) di massima discesa** è dato da:
+$$v=-\frac{\nabla f(x_0)}{||\nabla f(x_0)||}$$
+La direzione di massima crescita/discesa **non esiste** quando $\nabla f(x_0)=0$, ovvero quando si ha un punto di massimo o minimo.
+Per cui si ha obbligatoriamente un **piano piatto** tangente in quel punto.
+
+>[!Example]
+>$f(x,y)=y^3-\sin(xy)$
+>Trovare la direzione di massima crescita in $x_0=(\pi, 1)$
+>Come nell'esempio precedente, prima si sostituisce _poi_ si calcola la norma, altrimenti si fanno calcoli inutili.
+>- $D_x(x,y)=-y\cos(xy)\quad | \quad D_x(\pi, 1)=-\cos(\pi) = 1$
+>- $D_y(x,y)=3y^2-x\cos(xy)\quad | \quad D_y(\pi, 1)=3+\pi$
+>- $\nabla f(\pi, 1)=\begin{pmatrix}1\\3+\pi \end{pmatrix}$
+>
+>$$\left|\left|\begin{pmatrix}1\\3+\pi \end{pmatrix}\right|\right|^2=1+(3+\pi)^2 = 10+6\pi + \pi^2$$
+>$$v = \frac{1}{\sqrt{10+6\pi + \pi^2}}\cdot \begin{pmatrix}1\\3+\pi \end{pmatrix}$$
+>>È possibile lasciare il risultato in questa forma
