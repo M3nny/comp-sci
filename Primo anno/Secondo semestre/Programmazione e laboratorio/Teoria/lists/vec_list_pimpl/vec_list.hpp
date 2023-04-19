@@ -36,13 +36,16 @@ public:
     ListDL(const ListDL& l);
     ~ListDL();
 
-    void append(int e);
-    void prepend (int e);
+    void size() const;
     void print() const; // non modifica lo stato della classe
-    void remove (int pos);
 
-    bool operator== (const ListDL& l) const;
-    const ListDL& operator= (const ListDL& l); // ritorno const ref. per efficienza
+    void prepend (int e);
+    void append(int e);
+    int& at(int pos);
+
+    const ListDL& operator=(const ListDL& l); // ritorno const ref. per efficienza
+    bool operator==(const ListDL& l) const;
+    ListDL operator+(const ListDL& l);
 private:
     struct impl;
     impl* pimpl;
