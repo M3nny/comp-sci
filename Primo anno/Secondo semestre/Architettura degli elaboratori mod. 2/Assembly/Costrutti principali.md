@@ -60,3 +60,25 @@ Per offset piccoli noti in fase di compilazione è possibile usare [[Load&Store#
 ```armasm
 ldr w4, [x0, #12] // x4 = A[3]
 ```
+
+## Stringhe
+Finora abbiamo agito solo con `words` o `dwords` (4 - 8 byte), però si sono istruzioni come:
+- `strb w0, <addr>` memorizza il byte meno significativo di `w0` all'indirizzo `<addr>`
+- `ldrb w0, <addr>`carica il byte all'indirizzo `<addr>` nel byte meno significativo di `w0` e imposta il resto a 0
+
+Queste istruzioni tornano utili per manipolare **stringhe** codificate con lo standard **ASCII** dove ogni byte rappresenta un carattere, ed il carattere finale è uno 0 (come in C).
+Vediamo due modi per caricare una stringa in memoria:
+
+```armasm
+.byte 67, 73, 65, 79, 0 // carico i decimali ASCII
+.asciz <<ciao>> // carico la parola direttamente
+```
+
+<u>Esistono però molti più caratteri nella realtà di quelli rappresentabili dalla tabella ASCII</u> (come le lingue asiatiche ed europee).
+Per questo <u>nascono altri ISO appositi per rappresentarle</u>, ma in base al dispositivo in cui queste codifiche vengono visualizzate, potrebbero avere delle variazioni rendendo incompatibile ad esempio un testo scritto su MacOs e uno su Windows.
+
+Nasce quindi l'**unicode** che contiene ogni possibile simbolo, usando pochi byte per i caratteri frequenti e più byte per quelli meno frequenti (multi-byte character encoding), lo standard più comune è l'**utf-8**:
+- **Primi 128** caratteri usano 1 byte (un testo ASCII è un testo UTF-8 valido)
+- **Successivi 1920** caratteri usano 2 byte (latino, greco...)
+- **Restanti caratteri** 3 byte (lingue asiatiche)
+- **Emoji, simboli matematici...**  4 byte
