@@ -123,3 +123,47 @@ $$q(x,y)=(xy)H\begin{pmatrix}x\\y\end{pmatrix}$$
 >$q$ è un **cilindro con profilo parabolico** ovvero una parabola lungo una direzione, non possiamo determinare un minimo in quanto abbiamo il minimo lungo tutta una direzione.
 
 Ma non sempre abbiamo questi casi particolari, la matrice potrebbe essere degenere (ovvero potrebbe darci un'interpretazione delle precedenti ma storta), quindi dovremo usare gli [[Primo anno/Primo semestre/Algebra lineare/Riassunto#Autovettori|autovettori]] per capire come è ruotata $H$.
+
+### Caratterizzazione dei punti critici
+Possiamo scrivere la matrice Hessiana anche come:
+$$H=U\Lambda U^T$$
+dove $U$ rappresenta il vettore contenente le coordinate del punto critico e $\Lambda$ la matrice diagonale contenente gli **autovalori** (derivate seconde).
+Classifichiamo come segue i punti critici:
+1. $\lambda_i>0\space\forall i$ (tutti gli autovalori positivi): $H$ è una matrice simmetrica definita positiva, $q$ è un <u>paraboloide elittico rivolto verso l'alto</u>, quindi il punto critico è un **minimo**.
+2. $\lambda_i<0\space\forall i$ (tutti gli autovalori negativi): $H$ si dice matrice definita negativa, $q$ è un <u>paraboloide elittico rivolto verso il basso</u>, quindi il punto critico è un **massimo**.
+3. Ci sono autovalori con segno discorde: $H$ si dice indefinita e abbiamo un **punto di sella**.
+4. $\lambda_i\geq 0\space\forall i$: $H$ è **semidefinita positiva**.
+5. $\lambda_i\leq 0 \space\forall i$: $H$ è **semidefinita negativa**.
+
+Gli [[Primo anno/Primo semestre/Algebra lineare/Riassunto#Autovettori|autovalori]] sono difficili da calcolare, ma a noi serve solo il segno, non il loro valore, sfruttando il fatto che lavoriamo in $n=2$ e che la matrice $H$ è simmetrica:
+$$det(H)=\lambda_1\cdot\lambda_2$$
+Per cui possiamo caratterizzare il punto critico in base al determinante tramite il **test della matrice Hessiana**:
+- Se $det(H) < 0$ gli autovalori ($\lambda$) sono discordi ed il punto critico è un **punto di sella** (parabolodide iperbolico).
+- Se $det(H) > 0$ dobbiamo distinguere il caso in cui $\lambda_1, \lambda_2$ sono entrambi negativi o entrambi positivi, per fare questo andiamo a vedere il segno di $a$ ($f_{xx}$) appartenente a $H=\begin{pmatrix}a&b\\b&d\end{pmatrix}$
+	- Se $a>0$ allora $H$ è definita positiva, il punto critico è un **minimo**.
+	- Se $a<0$ allora $H$ è definita negativa, il punto critico è un **massimo**.
+	- Se $a=0$ $H$ è indefinita, il punto critico è un **punto di sella**.
+- Se $det(H) = 0$ allora $H$ è semidefinita positiva o negativa o nulla, ma non possiamo usare il test della matrice Hessiana per caratterizzare questo punto critico.
+
+>[!Example]
+>$f(x,y)=x^2+2y^2-x^2y$
+>$D=\mathbb{R}^2$
+>Il test della matrice Hessiana e altri teoremi visti, funzionano solo se $f\in\mathcal{C}^2$, e in questo caso $f\in\mathcal{C}^\infty$ in quanto composizione di funzioni continue e derivabili infinite volte.
+>1. Derivate prime:
+>- $f_x = 2x-2xy$
+>- $f_y=4y-x^2$
+>2. Troviamo i punti critici:
+>$$\begin{cases}2x-2xy=0\\4y-x^2=0\end{cases}\to\begin{cases}2x(y-1)=0\\4y-x^2=0\end{cases}$$
+>Notiamo subito che un punto critico è $(x,y)=(0,0)$ ma non è l'unico, nella prima equazione $y$ annulla l'equazione per $y=1$, ma $x$ lo dobbiamo ancora valutare, andiamo quindi a sostituire $y=1$ all'interno della seconda equazione:
+>$$\begin{cases}y=1\\4-x^2=0\end{cases}$$
+>Otteniamo $P_1 = (0,0),\space P_2=(2,1)\space P_3=(-2,1)$
+>3. Derivate seconde:
+>- $f_{xx}=2-2y$
+>- $f_{xy}=-2x$
+>- $f_{yy}=4$
+>$$H=\begin{pmatrix}2-2y&-2x\\-2x&4\end{pmatrix}$$
+>4. Valuto i punti critici 
+>- $H(0,0)=\begin{pmatrix}2&0\\0&4\end{pmatrix}$, $det(H)=8>0$, $P_1$ è un **minimo** (relativo).
+>- $H(2,1)=\begin{pmatrix}0&-4\\-4&4\end{pmatrix}$, $det(H)=-16<0$, $P_2$ è un **punto di sella**.
+>- $H(-2,1)=\begin{pmatrix}0&4\\4&4\end{pmatrix}$, $det(H)=-16<0$, $P_3$ è un **punto di sella**.
+>![[Grafico esercizio.png|300]]
