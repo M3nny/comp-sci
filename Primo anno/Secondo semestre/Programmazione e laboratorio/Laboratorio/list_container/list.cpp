@@ -1,5 +1,68 @@
 #include "list.hpp"
 
+// --- start iterator ---
+template<typename Val>
+list<Val>::iterator::iterator(node* p) : m_ptr(p) {}
+
+template<typename Val>
+// la firma è lunga, la spezzo in due righe
+typename list<Val>::iterator::reference
+list<Val>::iterator::operator*() const { // restituisce reference al Val contenuto nella cella puntata da m_ptr
+    return m_ptr->val;
+}
+
+template<typename Val>
+// su list<int> l'operator non viene usato perchè è un tipo primitivo, avrebbe più senso con pair
+typename list<Val>::iterator::pointer
+list<Val>::iterator::operator->() const { // restituisce un puntatore al Val contenuto nella cella puntata da m_ptr
+    return &(m_ptr->val);
+}
+
+template<typename Val>
+typename list<Val>::iterator& list<Val>::iterator::operator++() { // incrementa it e lo restituisce
+    m_ptr = m_ptr->next;
+    return *this;
+}
+
+template<typename Val>
+typename list<Val>::iterator list<Val>::iterator::operator++(int) { // restituisce it e lo incrementa
+    iterator it = {m_ptr}; // posso usare anche iterator it = iterator(m_ptr), esenzialmente sto chiamando il costruttore
+    ++(*this); // uso l'operatore definito precedentemente
+    return it;
+}
+
+template<typename Val>
+bool list<Val>::iterator::operator==(typename list<Val>::iterator const& rhs) const {
+    // true solo se it1 e it2 puntano alla stessa area di memoria
+    return m_ptr == rhs.m_ptr;
+}
+
+template<typename Val>
+bool list<Val>::iterator::operator!=(typename list<Val>::iterator const& rhs) const {
+    // true solo se it1 e it2 non puntano alla stessa area di memoria
+    return m_ptr != rhs.m_ptr;
+}
+
+template<typename Val>
+list<Val>::iterator::operator bool() const {
+    // true sse l'iteratore punta ad una cella
+    // false se punta a nullptr
+    // può anche essere return m_ptr;
+    return m_ptr != nullptr;
+}
+
+template<typename Val>
+typename list<Val>::iterator list<Val>::begin() {
+    // è possibile scrivere anche return {m_ptr};
+    return iterator{m_front}; // chiamo il costruttore e inizializzo
+}
+
+template<typename Val>
+typename list<Val>::iterator list<Val>::end() {
+    return iterator{nullptr}; // nel nostro caso la cella dopo l'ultima è sempre nullptr
+}
+// --- end iterator ---
+
 template<typename Val>
 list<Val>::list() : m_front(nullptr), m_back(nullptr) {}
 
@@ -13,7 +76,14 @@ list<Val>::list(Val v) : list() { // chiama il costruttore di default prima di e
 // list<Val> l1 (l2);
 template<typename Val>
 list<Val>::list(list<Val> const& rhs) : list() { // chiamo il default constructor
+    std::cout << "copy constructor" << std::endl;
     *this = rhs; // copy assignment
+}
+
+template<typename Val>
+list<Val>::list(list<Val>&& rhs) : list() {
+    std::cout << "move constructor" << std::endl;
+    *this = std::move(rhs); // move assigment
 }
 
 template<typename Val>
@@ -96,9 +166,22 @@ void list<Val>::pop_back() {
 
 template<typename Val>
 list<Val>& list<Val>::operator=(list<Val> const& rhs) {
+    std::cout << "copy assignment" << std::endl;
     if (this != &rhs) { // se i due oggetti sono diversi (altrimenti sono nel caso l1 = l1 che sono nella stessa area di memoria)
         while (not empty()) pop_front(); // mai chiamare esplicitamente il distruttore, perchè elimina l'oggetto in se
         *this += rhs;
+    }
+    return *this;
+}
+
+template<typename Val>
+list<Val>& list<Val>::operator=(list<Val>&& rhs) {
+    std::cout << "move assignment" << std::endl;
+    if (this != &rhs) {
+        while(not empty()) pop_front();
+        m_front = rhs.m_front;
+        m_back = rhs.m_back;
+        rhs.m_front = rhs.m_back = nullptr;
     }
     return *this;
 }

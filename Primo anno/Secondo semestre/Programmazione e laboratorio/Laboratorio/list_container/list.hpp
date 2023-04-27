@@ -10,8 +10,29 @@ class list {
         node* next;
     };
 public:
+    struct iterator {
+    public:
+        using iterator_category = std::forward_iterator_tag;
+        using value_type = Val;
+        using pointer = Val*;
+        using reference = Val&;
+        iterator(node*); // costruttore (serve a begin() e end())
+        reference operator*() const; // *it
+        pointer operator->() const; // e.g. per pair si può accedere con it->first, it->second
+        iterator& operator++(); // ++it
+        iterator operator++(int); // it++
+        bool operator==(iterator const&) const; // it1 == it2
+        bool operator!=(iterator const&) const; // it1 != it2
+        operator bool() const; // viene fatto un cast implicito da iterator a booleano e.g. if(it) 
+    private:
+        node* m_ptr;
+    };
+
+    iterator begin(); // ritorna un nuovo iterator alla prima cella della lista
+    iterator end(); // ritorna un nuovo iterator alla cella dopo l'ultima contenente l'ultimo valore
     list(); // default constructor
     list(list<Val> const&); // copy constructor
+    list(list<Val>&&); // move constructor
     ~list(); // distruttore
     list(Val v); // lista di un elemento
     node const* front() const; // puntatore alla prima cella
@@ -26,6 +47,7 @@ public:
     bool empty() const; // vero se la lista è vuota
 
     list<Val>& operator=(list<Val> const&); // l1 = (l2 = l3)
+    list<Val>& operator=(list<Val>&&); // move assignment
     bool operator==(list<Val> const& rhs) const; // controlla se *this è uguale a rhs, rispettivamente (l1 == l2)
     bool operator!=(list<Val> const& rhs) const; // controlla se *this è diverso da rhs, rispettivamente (l1 != l2)
     list<Val>& operator+=(list<Val> const& rhs); // l1 += l2
