@@ -75,7 +75,7 @@ void ListDL::append(int e) {
     } // non si può inserire se non ci sono blocchi vuoti
 }
 
-void ListDL::print() const {
+void ListDL::printDebug() const {
     std::cout << "Head: " << pimpl->head << ", ";
     std::cout << "Tail: " << pimpl->tail << ", ";
     std::cout << "Free: " << pimpl->free << std::endl;
@@ -85,6 +85,25 @@ void ListDL::print() const {
         std::cout << "[" << pimpl->v.at(i*3) << ", " << pimpl->v.at(i*3+1) << ", " << pimpl->v.at(i*3+2) << "]" << std::endl;
     }
     std::cout << std::endl;
+}
+
+void ListDL::print() const {
+    int pc = pimpl->head;
+    while (pc != -1) {
+        std::cout << pimpl->v.at(pc+1) << " ";
+        pc = pimpl->v.at(pc+2);
+    }
+    std::cout << std::endl;
+}
+
+int ListDL::size() const {
+    int res = 0;
+    int pc = pimpl->head;
+    while (pc != -1) {
+        res++;
+        pc = pimpl->v.at(pc+2);
+    }
+    return res;
 }
 
 int& ListDL::at(int pos) {
@@ -136,7 +155,7 @@ ListDL ListDL::operator+(const ListDL& l) {
     int pc2 = l.pimpl->head;
 
     while (pc2 != -1) {
-        append(l.pimpl->v.at(pc2+1));
+        res.append(l.pimpl->v.at(pc2+1));
         pc2 = l.pimpl->v.at(pc2+2);
     }
     return res;
@@ -144,7 +163,6 @@ ListDL ListDL::operator+(const ListDL& l) {
 
 int main() {
     ListDL l;
-    l.print();
 
     l.prepend(10);
     l.prepend(20);

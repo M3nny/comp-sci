@@ -30,14 +30,36 @@ public:
 
     iterator begin(); // ritorna un nuovo iterator alla prima cella della lista
     iterator end(); // ritorna un nuovo iterator alla cella dopo l'ultima contenente l'ultimo valore
+
+    struct const_iterator {
+    public:
+        using iterator_category = std::forward_iterator_tag;
+        using value_type = const Val;
+        using pointer = const Val*;
+        using reference = const Val&;
+        const_iterator(node*); // costruttore (serve a begin() e end())
+        reference operator*() const; // *it
+        pointer operator->() const; // e.g. per pair si può accedere con it->first, it->second
+        const_iterator& operator++(); // ++it
+        const_iterator operator++(int); // it++
+        bool operator==(const_iterator const&) const; // it1 == it2
+        bool operator!=(const_iterator const&) const; // it1 != it2
+        operator bool() const; // viene fatto un cast implicito da iterator a booleano e.g. if(it) 
+    private:
+        node* m_ptr;
+    };
+
+    const_iterator begin() const; // ritorna un nuovo const_iterator alla prima cella della lista
+    const_iterator end() const; // ritorna un nuovo const_iterator alla cella dopo l'ultima contenente l'ultimo valore
+
     list(); // default constructor
     list(list<Val> const&); // copy constructor
     list(list<Val>&&); // move constructor
     ~list(); // distruttore
     list(Val v); // lista di un elemento
+
     node const* front() const; // puntatore alla prima cella
     node const* back() const; // puntatore all'ultima cella
-
     void push_front(Val v); // aggiunge un elemento all'inizio della lista
     void push_back(Val v); // aggiunge un elemento alla fine della lista
 

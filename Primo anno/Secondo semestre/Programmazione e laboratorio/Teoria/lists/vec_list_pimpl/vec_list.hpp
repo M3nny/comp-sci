@@ -36,7 +36,8 @@ public:
     ListDL(const ListDL& l);
     ~ListDL();
 
-    void size() const;
+    int size() const;
+    void printDebug() const; // non modifica lo stato della classe
     void print() const; // non modifica lo stato della classe
 
     void prepend (int e);

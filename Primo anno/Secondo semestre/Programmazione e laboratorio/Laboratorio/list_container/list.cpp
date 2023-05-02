@@ -63,6 +63,69 @@ typename list<Val>::iterator list<Val>::end() {
 }
 // --- end iterator ---
 
+// --- start const_iterator ---
+template<typename Val>
+list<Val>::const_iterator::const_iterator(node* p) : m_ptr(p) {}
+
+template<typename Val>
+// la firma è lunga, la spezzo in due righe
+typename list<Val>::const_iterator::reference
+list<Val>::const_iterator::operator*() const { // restituisce reference al Val contenuto nella cella puntata da m_ptr
+    return m_ptr->val;
+}
+
+template<typename Val>
+// su list<int> l'operator non viene usato perchè è un tipo primitivo, avrebbe più senso con pair
+typename list<Val>::const_iterator::pointer
+list<Val>::const_iterator::operator->() const { // restituisce un puntatore al Val contenuto nella cella puntata da m_ptr
+    return &(m_ptr->val);
+}
+
+template<typename Val>
+typename list<Val>::const_iterator& list<Val>::const_iterator::operator++() { // incrementa it e lo restituisce
+    m_ptr = m_ptr->next;
+    return *this;
+}
+
+template<typename Val>
+typename list<Val>::const_iterator list<Val>::const_iterator::operator++(int) { // restituisce it e lo incrementa
+    const_iterator it = {m_ptr}; // posso usare anche const_iterator it = const_iterator(m_ptr), esenzialmente sto chiamando il costruttore
+    ++(*this); // uso l'operatore definito precedentemente
+    return it;
+}
+
+template<typename Val>
+bool list<Val>::const_iterator::operator==(typename list<Val>::const_iterator const& rhs) const {
+    // true solo se it1 e it2 puntano alla stessa area di memoria
+    return m_ptr == rhs.m_ptr;
+}
+
+template<typename Val>
+bool list<Val>::const_iterator::operator!=(typename list<Val>::const_iterator const& rhs) const {
+    // true solo se it1 e it2 non puntano alla stessa area di memoria
+    return m_ptr != rhs.m_ptr;
+}
+
+template<typename Val>
+list<Val>::const_iterator::operator bool() const {
+    // true sse l'const_iteratore punta ad una cella
+    // false se punta a nullptr
+    // può anche essere return m_ptr;
+    return m_ptr != nullptr;
+}
+
+template<typename Val>
+typename list<Val>::const_iterator list<Val>::begin() const {
+    // è possibile scrivere anche return {m_ptr};
+    return const_iterator{m_front}; // chiamo il costruttore e inizializzo
+}
+
+template<typename Val>
+typename list<Val>::const_iterator list<Val>::end() const {
+    return const_iterator{nullptr}; // nel nostro caso la cella dopo l'ultima è sempre nullptr
+}
+// --- end const_iterator ---
+
 template<typename Val>
 list<Val>::list() : m_front(nullptr), m_back(nullptr) {}
 
@@ -105,7 +168,9 @@ template <typename Val>
 void read_list(list<Val>& list) {
     uint64_t list_size = 0;
     Val v;
+    std::cout << "Inserisci lunghezza della lista: ";
     std::cin >> list_size;                       // fa inserire la lunghezza della lista da input
+    std::cout << "Inserisci " << list_size << " elementi: " << std::endl;
     for (uint64_t i = 0; i != list_size; ++i) {  // fa inserire elemento per elemento da input
         std::cin >> v;
         list.push_back(v);
