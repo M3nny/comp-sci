@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "5c72d53d176e4cab",
+        "id": "3369c85717f639dc",
         "type": "tabs",
         "children": [
           {
-            "id": "012042f8a81fba66",
+            "id": "ad31f4203c387533",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Primo anno/Secondo semestre/Architettura degli elaboratori mod. 2/Assembly/Funzioni e stack.md",
+                "file": "Primo anno/Secondo semestre/Calcolo 2/Integrali doppi/Cambio di variabili.md",
                 "mode": "source",
                 "source": false
               }
@@ -64,12 +64,21 @@
               "type": "starred",
               "state": {}
             }
+          },
+          {
+            "id": "af2867719307eb02",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {}
+            }
           }
         ]
       }
     ],
     "direction": "horizontal",
-    "width": 296.5
+    "width": 296.5,
+    "collapsed": true
   },
   "right": {
     "id": "282a9548711da6a0",
@@ -85,7 +94,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Primo anno/Secondo semestre/Architettura degli elaboratori mod. 2/Assembly/Funzioni e stack.md",
+                "file": "Primo anno/Secondo semestre/Calcolo 2/Integrali doppi/Cambio di variabili.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +111,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Primo anno/Secondo semestre/Architettura degli elaboratori mod. 2/Assembly/Funzioni e stack.md",
+                "file": "Primo anno/Secondo semestre/Calcolo 2/Integrali doppi/Cambio di variabili.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +134,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Primo anno/Secondo semestre/Architettura degli elaboratori mod. 2/Assembly/Funzioni e stack.md"
+                "file": "Primo anno/Secondo semestre/Calcolo 2/Integrali doppi/Cambio di variabili.md"
               }
             }
           },
@@ -155,33 +164,44 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "012042f8a81fba66",
+  "active": "ad31f4203c387533",
   "lastOpenFiles": [
+    "Primo anno/Secondo semestre/Calcolo 2/Images/Curva parametrica.png",
+    "Primo anno/Secondo semestre/Calcolo 2/Images/Es integrale doppio.svg",
+    "Primo anno/Secondo semestre/Calcolo 2/Images/Es integrale doppio.svg",
+    "Primo anno/Secondo semestre/Calcolo 2/Integrali doppi/Cambio di variabili.md",
+    "Primo anno/Secondo semestre/Calcolo 2/Images/Non confermato 678018.crdownload",
+    "Primo anno/Secondo semestre/Calcolo 2/Images/Non confermato 971724.crdownload",
+    "Primo anno/Secondo semestre/Calcolo 2/Integrali doppi/Definizione.md",
+    "Primo anno/Secondo semestre/Calcolo 2/Images/Non confermato 497766.crdownload",
+    "Primo anno/Secondo semestre/Calcolo 2/Images/Cambio variabili.svg",
+    "Primo anno/Secondo semestre/Calcolo 2/Images/Frame 36.svg",
+    "Primo anno/Secondo semestre/Calcolo 2/Images/Dominio non semplice.svg",
+    "Primo anno/Secondo semestre/Calcolo 2/Images/Non confermato 620892.crdownload",
+    "Primo anno/Secondo semestre/Calcolo 2/Images/Non confermato 307217.crdownload",
+    "Primo anno/Secondo semestre/Calcolo 2/Images/Scambio.png",
+    "Primo anno/Secondo semestre/Calcolo 2/Images/Non confermato 597589.crdownload",
+    "Primo anno/Secondo semestre/Calcolo 2/Images/Non confermato 801503.crdownload",
+    "Primo anno/Secondo semestre/Calcolo 2/Images/Non confermato 234649.crdownload",
+    "Primo anno/Secondo semestre/Architettura degli elaboratori mod. 2/Input Output/Controller.md",
+    "Primo anno/Secondo semestre/Architettura degli elaboratori mod. 2/Input Output/Bus.md",
+    "Primo anno/Secondo semestre/Architettura degli elaboratori mod. 2/Images/Daisy chain.png",
+    "Primo anno/Secondo semestre/Architettura degli elaboratori mod. 2/Images/Bus asincrono.png",
+    "Primo anno/Secondo semestre/Architettura degli elaboratori mod. 2/Assembly/Funzioni e stack.md",
     "Primo anno/Secondo semestre/Architettura degli elaboratori mod. 2/Images/Stack table.png",
     "Primo anno/Secondo semestre/Architettura degli elaboratori mod. 2/Assembly/Costrutti principali.md",
     "Primo anno/Secondo semestre/Architettura degli elaboratori mod. 2/ARM ISA/Branches.md",
     "Primo anno/Secondo semestre/Architettura degli elaboratori mod. 2/Assembly/Snippets/while.s",
     "Primo anno/Secondo semestre/Architettura degli elaboratori mod. 2/Assembly/Snippets/while",
-    "Primo anno/Secondo semestre/Architettura degli elaboratori mod. 2/Assembly/Snippets/if-else.s~",
-    "Primo anno/Secondo semestre/Architettura degli elaboratori mod. 2/Assembly/Snippets/4913",
-    "Primo anno/Secondo semestre/Architettura degli elaboratori mod. 2/Assembly/Snippets/if-else.s",
     "Primo anno/Secondo semestre/Architettura degli elaboratori mod. 2/ARM ISA/Registri.md",
     "Primo anno/Secondo semestre/Architettura degli elaboratori mod. 2/Assembly/Introduzione.md",
     "Primo anno/Secondo semestre/Architettura degli elaboratori mod. 2/Assembly/Programmi.md",
-    "Primo anno/Secondo semestre/Architettura degli elaboratori mod. 2/Assembly/Snippets/hello.s~",
-    "Primo anno/Secondo semestre/Architettura degli elaboratori mod. 2/Assembly/Snippets/somma.s~",
-    "Primo anno/Secondo semestre/Architettura degli elaboratori mod. 2/Assembly/Snippets/somma.s",
-    "Primo anno/Secondo semestre/Architettura degli elaboratori mod. 2/Assembly/Funzioni e stack.md",
     "Primo anno/Secondo semestre/Architettura degli elaboratori mod. 2/ARM ISA/Load&Store.md",
     "Primo anno/Secondo semestre/Architettura degli elaboratori mod. 2/ARM ISA/Istruzioni logico-aritmetiche.md",
-    "Pasted image 20230408102810.png",
-    "Pasted image 20230408102801.png",
-    "Primo anno/Secondo semestre/Architettura degli elaboratori mod. 2/Images/Conditional branch.png",
     "Primo anno/Secondo semestre/Architettura degli elaboratori mod. 2/Memoria virtuale/Gestione memoria e protezione del SO.md",
     "Primo anno/Secondo semestre/Architettura degli elaboratori mod. 2/CPU con pipeline/Implementazione.md",
     "Primo anno/Secondo semestre/Architettura degli elaboratori mod. 2/CPU con pipeline/Introduzione.md",
     "Primo anno/Secondo semestre/Architettura degli elaboratori mod. 2/ARM ISA/Untitled 1.md",
-    "Primo anno/Secondo semestre/Architettura degli elaboratori mod. 2/ARM ISA",
     "Primo anno/Secondo semestre/Architettura degli elaboratori mod. 2/Memoria virtuale/Mapping.md",
     "Primo anno/Secondo semestre/Calcolo 2/Equazioni differenziali/EDO del secondo ordine.md",
     "Primo anno/Secondo semestre/Calcolo 2/Equazioni differenziali/EDO del primo ordine.md",
@@ -190,19 +210,7 @@
     "Primo anno/Secondo semestre/Calcolo 2/Curve parametriche/Funzioni vettoriali.md",
     "Untitled.canvas",
     "Primo anno/Secondo semestre/Architettura degli elaboratori mod. 2/Cache/Cache associativa.md",
-    "Primo anno/Secondo semestre/Architettura degli elaboratori mod. 2/Images/Mapping.png",
-    "Primo anno/Secondo semestre/Architettura degli elaboratori mod. 2/Memoria virtuale",
     "Primo anno/Secondo semestre/Architettura degli elaboratori mod. 2/Cache/Prestazioni.md",
-    "Primo anno/Secondo semestre/Architettura degli elaboratori mod. 2/Cache/Memoria cache.md",
-    "Primo anno/Secondo semestre/Architettura degli elaboratori mod. 2/Images/Esercizio blocco cache.png",
-    "Primo anno/Secondo semestre/Programmazione e laboratorio/Classi.md",
-    "Primo anno/Secondo semestre/Calcolo 2/Curve parametriche/Parametro d'arco e integrali di linea.md",
-    "Primo anno/Secondo semestre/Architettura degli elaboratori mod. 2/Cache/Tipologie di memoria.md",
-    "Primo anno/Secondo semestre/Architettura degli elaboratori mod. 2/Images/Cache accesso diretto.svg",
-    "Primo anno/Secondo semestre/Calcolo 2/Images/Poligonale.svg",
-    "Primo anno/Secondo semestre/Architettura degli elaboratori mod. 2/CPU con pipeline/Processori superscalari.md",
-    "Primo anno/Secondo semestre/Architettura degli elaboratori mod. 2/Images/Forwarding.png",
-    "Primo anno/Secondo semestre/Architettura degli elaboratori mod. 2/Images/Forwarding problem.svg",
-    "Primo anno/Secondo semestre/Calcolo 2/Images/Curve semplici chiuse.svg"
+    "Primo anno/Secondo semestre/Architettura degli elaboratori mod. 2/Cache/Memoria cache.md"
   ]
 }

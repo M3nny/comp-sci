@@ -63,171 +63,35 @@
   "disableOnMobile": false,
   "showLogAboutPerformanceInConsole": false,
   "selectionHistoryTree": {
-    "\\to\\mathbb{R}^m": {
-      "\\to\\mathbb{R}^m": {
-        "currentFile": {
-          "count": 3,
-          "lastUpdated": 1678894397115
-        }
-      }
-    },
-    "riparametrizzazione": {
-      "riparametrizzazione": {
-        "currentFile": {
-          "count": 3,
-          "lastUpdated": 1678894604601
-        }
-      }
-    },
-    "crescente": {
-      "crescente": {
-        "currentFile": {
-          "count": 1,
-          "lastUpdated": 1678890511758
-        }
-      }
-    },
-    "A\\subset\\mathbb{R}": {
-      "A\\subset\\mathbb{R}": {
-        "currentFile": {
-          "count": 1,
-          "lastUpdated": 1678894436025
-        }
-      }
-    },
-    "invariante": {
-      "invariante": {
-        "currentFile": {
-          "count": 1,
-          "lastUpdated": 1678894588498
-        }
-      }
-    },
-    "trasferire": {
-      "trasferire": {
-        "currentFile": {
-          "count": 1,
-          "lastUpdated": 1679217719135
-        }
-      }
-    },
-    "blocchi": {
-      "blocchi": {
-        "currentFile": {
-          "count": 1,
-          "lastUpdated": 1679217722458
-        }
-      }
-    },
-    "inferiore": {
-      "inferiore": {
-        "currentFile": {
-          "count": 1,
-          "lastUpdated": 1679218821831
-        }
-      }
-    },
-    "coerenza": {
-      "coerenza": {
-        "currentFile": {
-          "count": 1,
-          "lastUpdated": 1679219690115
-        }
-      }
-    },
-    "through": {
-      "through": {
-        "currentFile": {
-          "count": 2,
-          "lastUpdated": 1679219944775
-        }
-      }
-    },
-    "dipendente": {
-      "dipendente": {
-        "currentFile": {
-          "count": 1,
-          "lastUpdated": 1679219858506
-        }
-      }
-    },
-    "politica": {
-      "politica": {
-        "currentFile": {
-          "count": 1,
-          "lastUpdated": 1679219868162
-        }
-      }
-    },
-    "indirizzamento": {
-      "indirizzamento": {
-        "currentFile": {
-          "count": 1,
-          "lastUpdated": 1679654064280
-        }
-      }
-    },
-    "virtuale": {
-      "virtuale": {
-        "currentFile": {
-          "count": 1,
-          "lastUpdated": 1679654067387
-        }
-      }
-    },
-    "_context": {
-      "_context": {
-        "currentFile": {
-          "count": 1,
-          "lastUpdated": 1680281634509
-        }
-      }
-    },
-    "purpouse": {
-      "purpouse": {
-        "currentFile": {
-          "count": 1,
-          "lastUpdated": 1680283975161
-        }
-      }
-    },
-    "Reserved": {
-      "Reserved": {
-        "currentFile": {
-          "count": 2,
-          "lastUpdated": 1680285602066
-        }
-      }
-    },
-    "label": {
-      "label": {
-        "currentFile": {
-          "count": 1,
-          "lastUpdated": 1680940972940
-        }
-      }
-    },
-    "Equivale": {
-      "Equivale": {
-        "currentFile": {
-          "count": 1,
-          "lastUpdated": 1680943611189
-        }
-      }
-    },
-    "equivale": {
-      "equivale": {
-        "currentFile": {
-          "count": 1,
-          "lastUpdated": 1680943723342
-        }
-      }
-    },
     "numeri": {
       "numeri": {
         "currentFile": {
           "count": 1,
           "lastUpdated": 1681475686686
+        }
+      }
+    },
+    "dispositivo": {
+      "dispositivo": {
+        "currentFile": {
+          "count": 1,
+          "lastUpdated": 1683272070183
+        }
+      }
+    },
+    "\\frac{\\rho^2}{2}\\right": {
+      "\\frac{\\rho^2}{2}\\right": {
+        "currentFile": {
+          "count": 1,
+          "lastUpdated": 1683733655641
+        }
+      }
+    },
+    "\\frac{\\pi}{2}": {
+      "\\frac{\\pi}{2}": {
+        "currentFile": {
+          "count": 1,
+          "lastUpdated": 1683733766778
         }
       }
     }
