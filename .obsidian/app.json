@@ -1,9 +1,6 @@
 {
   "spellcheck": true,
-  "spellcheckLanguages": [
-    "it",
-    "en-US"
-  ],
+  "spellcheckLanguages": null,
   "fileSortOrder": "byModifiedTimeReverse",
   "promptDelete": false,
   "attachmentFolderPath": "Calcolo 1/Images",

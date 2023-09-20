@@ -1,6 +1,6 @@
 {
   "theme": "moonstone",
-  "cssTheme": "Big Sur Aesthetic",
+  "cssTheme": "Material Gruvbox",
   "translucency": false,
   "enabledCssSnippets": [
     "center_image"

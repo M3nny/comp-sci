@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "3369c85717f639dc",
+        "id": "7ad0e448eec9b2a4",
         "type": "tabs",
         "children": [
           {
-            "id": "ad31f4203c387533",
+            "id": "c061a4514b1363a4",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Primo anno/Secondo semestre/Calcolo 2/Integrali doppi/Cambio di variabili.md",
+                "file": "Secondo anno/Probabilità e statistica/Introduzione.md",
                 "mode": "source",
                 "source": false
               }
@@ -77,8 +77,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 296.5,
-    "collapsed": true
+    "width": 286.5110321044922
   },
   "right": {
     "id": "282a9548711da6a0",
@@ -94,7 +93,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Primo anno/Secondo semestre/Calcolo 2/Integrali doppi/Cambio di variabili.md",
+                "file": "Secondo anno/Probabilità e statistica/Introduzione.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -111,7 +110,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Primo anno/Secondo semestre/Calcolo 2/Integrali doppi/Cambio di variabili.md",
+                "file": "Secondo anno/Probabilità e statistica/Introduzione.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -134,7 +133,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Primo anno/Secondo semestre/Calcolo 2/Integrali doppi/Cambio di variabili.md"
+                "file": "Secondo anno/Probabilità e statistica/Introduzione.md"
               }
             }
           },
@@ -164,53 +163,52 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "ad31f4203c387533",
+  "active": "c061a4514b1363a4",
   "lastOpenFiles": [
+    "Secondo anno/Basi di dati mod. 1/Introduzione.md",
+    "Secondo anno/Probabilità e statistica/Introduzione.md",
+    "Secondo anno/Probabilità e statistica",
+    "Secondo anno/Basi di dati mod. 1",
+    "Secondo anno",
+    "Secondo anno/Probabilità e statistica",
+    "Primo anno/Secondo semestre/Architettura degli elaboratori mod. 2/6 - Input Output/Bus.md",
+    "Secondo anno/Basi di dati mod. 1",
+    "Secondo anno",
+    "Secondo anno/Basi di dati mod. 1",
+    "Secondo anno",
+    "Primo anno/Secondo semestre/Architettura degli elaboratori mod. 2/6 - Input Output/Controller.md",
+    "Primo anno/Secondo semestre/Architettura degli elaboratori mod. 2/2 - Cache/Prestazioni.md",
+    "Primo anno/Secondo semestre/Architettura degli elaboratori mod. 2/2 - Cache/Cache associativa.md",
+    "Primo anno/Primo semestre/Algebra lineare/Sistema di generatori.md",
+    "Primo anno/Primo semestre/Algebra lineare/Rette e piani.md",
+    "Primo anno/Primo semestre/Algebra lineare/Numeri Complessi.md",
+    "Primo anno/Primo semestre/Algebra lineare/Matrici.md",
+    "Primo anno/Primo semestre/Algebra lineare/Grafi.md",
+    "Primo anno/Secondo semestre/Calcolo 2/Funzioni a più variabili reali/Curve di livello e dominio.md",
+    "Primo anno/Primo semestre/Architettura degli elaboratori mod. 1/1 - Rappresentazione dell'informazione/Altri tipi di rappresentazioni.md",
+    "Primo anno/Secondo semestre/Programmazione e laboratorio/Teoria/titolo.md",
+    "Primo anno/Secondo semestre/Programmazione e laboratorio/Notes/Riassunto.md",
+    "Primo anno/Secondo semestre/Programmazione e laboratorio/Notes/Guida a C++.md",
+    "Primo anno/Secondo semestre/Programmazione e laboratorio/Notes/Classi.md",
+    "Primo anno/Secondo semestre/Programmazione e laboratorio/Notes/Compilazione.md",
+    "Primo anno/Secondo semestre/Programmazione e laboratorio/Notes/Liste.md",
+    "Primo anno/Secondo semestre/Programmazione e laboratorio/Notes/Debugging.md",
+    "Primo anno/Secondo semestre/Architettura degli elaboratori mod. 2/1 - CPU con pipeline/Dipendenze RAW.md",
+    "Primo anno/Secondo semestre/Architettura degli elaboratori mod. 2/Riassunto.md",
+    "Primo anno/Secondo semestre/Architettura degli elaboratori mod. 2/1 - CPU con pipeline/Previsione del branch, interruzioni e ottimizzazione.md",
+    "Primo anno/Secondo semestre/Architettura degli elaboratori mod. 2/4 - ARM ISA/Branches.md",
+    "Primo anno/Secondo semestre/Architettura degli elaboratori mod. 2/Riassunto.md~",
+    "Primo anno/Secondo semestre/Architettura degli elaboratori mod. 2/4913",
+    "Primo anno/Secondo semestre/Architettura degli elaboratori mod. 2/Images/Organizzazione gerarchia.png",
+    "Primo anno/Secondo semestre/Calcolo 2/Images/Verifica semplicità.png",
+    "Primo anno/Secondo semestre/Calcolo 2/Images/Verifica curva semplice.png",
     "Primo anno/Secondo semestre/Calcolo 2/Images/Curva parametrica.png",
     "Primo anno/Secondo semestre/Calcolo 2/Images/Es integrale doppio.svg",
     "Primo anno/Secondo semestre/Calcolo 2/Images/Es integrale doppio.svg",
-    "Primo anno/Secondo semestre/Calcolo 2/Integrali doppi/Cambio di variabili.md",
-    "Primo anno/Secondo semestre/Calcolo 2/Images/Non confermato 678018.crdownload",
-    "Primo anno/Secondo semestre/Calcolo 2/Images/Non confermato 971724.crdownload",
-    "Primo anno/Secondo semestre/Calcolo 2/Integrali doppi/Definizione.md",
-    "Primo anno/Secondo semestre/Calcolo 2/Images/Non confermato 497766.crdownload",
     "Primo anno/Secondo semestre/Calcolo 2/Images/Cambio variabili.svg",
     "Primo anno/Secondo semestre/Calcolo 2/Images/Frame 36.svg",
     "Primo anno/Secondo semestre/Calcolo 2/Images/Dominio non semplice.svg",
-    "Primo anno/Secondo semestre/Calcolo 2/Images/Non confermato 620892.crdownload",
-    "Primo anno/Secondo semestre/Calcolo 2/Images/Non confermato 307217.crdownload",
     "Primo anno/Secondo semestre/Calcolo 2/Images/Scambio.png",
-    "Primo anno/Secondo semestre/Calcolo 2/Images/Non confermato 597589.crdownload",
-    "Primo anno/Secondo semestre/Calcolo 2/Images/Non confermato 801503.crdownload",
-    "Primo anno/Secondo semestre/Calcolo 2/Images/Non confermato 234649.crdownload",
-    "Primo anno/Secondo semestre/Architettura degli elaboratori mod. 2/Input Output/Controller.md",
-    "Primo anno/Secondo semestre/Architettura degli elaboratori mod. 2/Input Output/Bus.md",
-    "Primo anno/Secondo semestre/Architettura degli elaboratori mod. 2/Images/Daisy chain.png",
-    "Primo anno/Secondo semestre/Architettura degli elaboratori mod. 2/Images/Bus asincrono.png",
-    "Primo anno/Secondo semestre/Architettura degli elaboratori mod. 2/Assembly/Funzioni e stack.md",
-    "Primo anno/Secondo semestre/Architettura degli elaboratori mod. 2/Images/Stack table.png",
-    "Primo anno/Secondo semestre/Architettura degli elaboratori mod. 2/Assembly/Costrutti principali.md",
-    "Primo anno/Secondo semestre/Architettura degli elaboratori mod. 2/ARM ISA/Branches.md",
-    "Primo anno/Secondo semestre/Architettura degli elaboratori mod. 2/Assembly/Snippets/while.s",
-    "Primo anno/Secondo semestre/Architettura degli elaboratori mod. 2/Assembly/Snippets/while",
-    "Primo anno/Secondo semestre/Architettura degli elaboratori mod. 2/ARM ISA/Registri.md",
-    "Primo anno/Secondo semestre/Architettura degli elaboratori mod. 2/Assembly/Introduzione.md",
-    "Primo anno/Secondo semestre/Architettura degli elaboratori mod. 2/Assembly/Programmi.md",
-    "Primo anno/Secondo semestre/Architettura degli elaboratori mod. 2/ARM ISA/Load&Store.md",
-    "Primo anno/Secondo semestre/Architettura degli elaboratori mod. 2/ARM ISA/Istruzioni logico-aritmetiche.md",
-    "Primo anno/Secondo semestre/Architettura degli elaboratori mod. 2/Memoria virtuale/Gestione memoria e protezione del SO.md",
-    "Primo anno/Secondo semestre/Architettura degli elaboratori mod. 2/CPU con pipeline/Implementazione.md",
-    "Primo anno/Secondo semestre/Architettura degli elaboratori mod. 2/CPU con pipeline/Introduzione.md",
-    "Primo anno/Secondo semestre/Architettura degli elaboratori mod. 2/ARM ISA/Untitled 1.md",
-    "Primo anno/Secondo semestre/Architettura degli elaboratori mod. 2/Memoria virtuale/Mapping.md",
-    "Primo anno/Secondo semestre/Calcolo 2/Equazioni differenziali/EDO del secondo ordine.md",
-    "Primo anno/Secondo semestre/Calcolo 2/Equazioni differenziali/EDO del primo ordine.md",
-    "Primo anno/Secondo semestre/Calcolo 2/Curve parametriche/Lunghezza arco e integrali di linea.md",
-    "Primo anno/Secondo semestre/Calcolo 2/Curve parametriche/Curve regolari e forma polare.md",
-    "Primo anno/Secondo semestre/Calcolo 2/Curve parametriche/Funzioni vettoriali.md",
-    "Untitled.canvas",
-    "Primo anno/Secondo semestre/Architettura degli elaboratori mod. 2/Cache/Cache associativa.md",
-    "Primo anno/Secondo semestre/Architettura degli elaboratori mod. 2/Cache/Prestazioni.md",
-    "Primo anno/Secondo semestre/Architettura degli elaboratori mod. 2/Cache/Memoria cache.md"
+    "Untitled.canvas"
   ]
 }
