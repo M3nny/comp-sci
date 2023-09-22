@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Secondo anno/Sistemi operativi mod. 1/Introduzione.md",
+                "file": "Secondo anno/Probabilità e statistica/Probabilità elementare.md",
                 "mode": "source",
                 "source": false
               }
@@ -93,7 +93,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Secondo anno/Sistemi operativi mod. 1/Introduzione.md",
+                "file": "Secondo anno/Probabilità e statistica/Probabilità elementare.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -110,7 +110,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Secondo anno/Sistemi operativi mod. 1/Introduzione.md",
+                "file": "Secondo anno/Probabilità e statistica/Probabilità elementare.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -133,7 +133,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Secondo anno/Sistemi operativi mod. 1/Introduzione.md"
+                "file": "Secondo anno/Probabilità e statistica/Probabilità elementare.md"
               }
             }
           },
@@ -165,11 +165,14 @@
   },
   "active": "c061a4514b1363a4",
   "lastOpenFiles": [
+    "Secondo anno/Algoritmi e strutture dati mod. 1/1 - Fibonacci.md",
+    "Secondo anno/Probabilità e statistica/Introduzione.md",
+    "Secondo anno/Probabilità e statistica/Probabilità elementare.md",
+    "Secondo anno/Algoritmi e strutture dati mod. 1",
+    "Secondo anno/Sistemi operativi mod. 1/Introduzione.md",
     "Primo anno/Secondo semestre/Architettura degli elaboratori mod. 2/Memoria virtuale/Gestione memoria e protezione del SO.md",
     "Primo anno/Secondo semestre/Architettura degli elaboratori mod. 2/Memoria virtuale/Mapping.md",
-    "Secondo anno/Sistemi operativi mod. 1/Introduzione.md",
     "Secondo anno/Basi di dati mod. 1/Introduzione.md",
-    "Secondo anno/Probabilità e statistica/Introduzione.md",
     "Secondo anno/Sistemi operativi mod. 1",
     "Secondo anno/Probabilità e statistica",
     "Secondo anno/Basi di dati mod. 1",
@@ -198,9 +201,6 @@
     "Primo anno/Secondo semestre/Programmazione e laboratorio/Notes/Liste.md",
     "Primo anno/Secondo semestre/Programmazione e laboratorio/Notes/Debugging.md",
     "Primo anno/Secondo semestre/Architettura degli elaboratori mod. 2/1 - CPU con pipeline/Dipendenze RAW.md",
-    "Primo anno/Secondo semestre/Architettura degli elaboratori mod. 2/Riassunto.md",
-    "Primo anno/Secondo semestre/Architettura degli elaboratori mod. 2/1 - CPU con pipeline/Previsione del branch, interruzioni e ottimizzazione.md",
-    "Primo anno/Secondo semestre/Architettura degli elaboratori mod. 2/Riassunto.md~",
     "Primo anno/Secondo semestre/Architettura degli elaboratori mod. 2/Images/Organizzazione gerarchia.png",
     "Primo anno/Secondo semestre/Calcolo 2/Images/Verifica semplicità.png",
     "Primo anno/Secondo semestre/Calcolo 2/Images/Verifica curva semplice.png",

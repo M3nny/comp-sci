@@ -63,35 +63,75 @@
   "disableOnMobile": false,
   "showLogAboutPerformanceInConsole": false,
   "selectionHistoryTree": {
-    "numeri": {
-      "numeri": {
+    "ripetizione": {
+      "ripetizione": {
         "currentFile": {
           "count": 1,
-          "lastUpdated": 1681475686686
+          "lastUpdated": 1695395119920
         }
       }
     },
-    "dispositivo": {
-      "dispositivo": {
+    "\\Rightarrow": {
+      "\\Rightarrow": {
         "currentFile": {
           "count": 1,
-          "lastUpdated": 1683272070183
+          "lastUpdated": 1695395743876
         }
       }
     },
-    "\\frac{\\rho^2}{2}\\right": {
-      "\\frac{\\rho^2}{2}\\right": {
+    "raggruppamenti": {
+      "raggruppamenti": {
         "currentFile": {
           "count": 1,
-          "lastUpdated": 1683733655641
+          "lastUpdated": 1695396568668
         }
       }
     },
-    "\\frac{\\pi}{2}": {
-      "\\frac{\\pi}{2}": {
+    "raggruppamento": {
+      "raggruppamento": {
+        "currentFile": {
+          "count": 2,
+          "lastUpdated": 1695397655685
+        }
+      }
+    },
+    "indicando": {
+      "indicando": {
         "currentFile": {
           "count": 1,
-          "lastUpdated": 1683733766778
+          "lastUpdated": 1695397781847
+        }
+      }
+    },
+    "\\begin{cases}1&n": {
+      "\\begin{cases}1&n": {
+        "currentFile": {
+          "count": 1,
+          "lastUpdated": 1695401916908
+        }
+      }
+    },
+    "Fibonacci": {
+      "Fibonacci": {
+        "currentFile": {
+          "count": 1,
+          "lastUpdated": 1695402971027
+        }
+      }
+    },
+    "#94e2d5": {
+      "#94e2d5": {
+        "currentFile": {
+          "count": 1,
+          "lastUpdated": 1695403612507
+        }
+      }
+    },
+    "Input": {
+      "Input": {
+        "currentFile": {
+          "count": 1,
+          "lastUpdated": 1695404832026
         }
       }
     }

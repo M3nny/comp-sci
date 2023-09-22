@@ -20,3 +20,8 @@ Vengono chiamate _variabili binarie_ se esistono solo due modalità.
 Usiamo l'**inferenza statistica** quando usiamo informazioni ricavate da un campione per fare affermazioni sulle caratteristiche generali di tutta la popolazione.
 
 Perchè quest'ultima porti a risultati sensati bisogna che sia noto il legame tra popolazione e campione, per questo ci serve il **calcolo delle probabilità** il quale ci permette di quantificare gli errori nel passaggio campione->popolazione.
+
+---
+### Notazioni
+- **Insieme**: $\{1,8,3,5\}$ contiene elementi ripetuti **1** volta dove l'ordine non importa
+- **Vettore**: $(1,2,2,3)$ contiene elementi ripetuti _anche_ più volte dove l'ordine è importante
