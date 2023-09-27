@@ -11,3 +11,8 @@ img {
 div.mermaid {
   text-align: center;
 }
+
+.markdown-preview-view table {
+    margin-left: auto;
+    margin-right: auto;
+}
