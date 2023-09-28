@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Secondo anno/Sistemi operativi mod. 1/Introduzione.md",
+                "file": "Secondo anno/Algoritmi e strutture dati mod. 1/2 - Classi asintotiche.md",
                 "mode": "source",
                 "source": false
               }
@@ -93,7 +93,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Secondo anno/Sistemi operativi mod. 1/Introduzione.md",
+                "file": "Secondo anno/Algoritmi e strutture dati mod. 1/2 - Classi asintotiche.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -110,7 +110,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Secondo anno/Sistemi operativi mod. 1/Introduzione.md",
+                "file": "Secondo anno/Algoritmi e strutture dati mod. 1/2 - Classi asintotiche.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -133,7 +133,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Secondo anno/Sistemi operativi mod. 1/Introduzione.md"
+                "file": "Secondo anno/Algoritmi e strutture dati mod. 1/2 - Classi asintotiche.md"
               }
             }
           },
@@ -166,6 +166,7 @@
   "active": "60240f1b66f9259f",
   "lastOpenFiles": [
     "Secondo anno/Sistemi operativi mod. 1/Introduzione.md",
+    "Secondo anno/Algoritmi e strutture dati mod. 1/2 - Classi asintotiche.md",
     "Secondo anno/Algoritmi e strutture dati mod. 1/1 - Fibonacci.md",
     "Primo anno/Primo semestre/Algebra lineare/Rette e piani.md",
     "Secondo anno/Basi di dati mod. 1/Introduzione.md",
@@ -200,7 +201,6 @@
     "Primo anno/Secondo semestre/Programmazione e laboratorio/Notes/Guida a C++.md",
     "Primo anno/Secondo semestre/Programmazione e laboratorio/Notes/Classi.md",
     "Primo anno/Secondo semestre/Programmazione e laboratorio/Notes/Compilazione.md",
-    "Primo anno/Secondo semestre/Programmazione e laboratorio/Notes/Liste.md",
     "Primo anno/Secondo semestre/Architettura degli elaboratori mod. 2/Images/Organizzazione gerarchia.png",
     "Primo anno/Secondo semestre/Calcolo 2/Images/Verifica semplicità.png",
     "Primo anno/Secondo semestre/Calcolo 2/Images/Verifica curva semplice.png",
