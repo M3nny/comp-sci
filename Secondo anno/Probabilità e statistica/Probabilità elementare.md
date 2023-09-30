@@ -32,11 +32,41 @@ $$P = \frac{n!}{n_1\cdot n_2\cdot ...\cdot n_i!}$$
 $$P = n!$$
 >[!Example]
 >Calcolare il numero di permutazioni dell'insieme $n={a, b, c, d}$
->conto il numero degli elementi e ne faccio il fattoriale: $P=4!=24$
+>
+>Conto il numero degli elementi e ne faccio il fattoriale: $P=4!=24$
 >
 >---
 >Calcolare il numero di permutazioni della successione $n=(a,b,a,b,a)$
->il numero di elementi è 5, poi ho 2 elementi che si ripetono:
+>
+>Il numero di elementi è 5, poi ho 2 elementi che si ripetono:
 >- $a$ si ripete 3 volte
 >- $b$ si ripete 2 volte
 >$$P=\frac{5!}{3!\cdot 2!}=\frac{120}{12}=10$$
+
+## Combinazioni
+Finora sappiamo estrarre il numero di sequenze possibili di un insieme prendendo $r$ elementi alla volta, questo ci permette di estrarre anche le sequenze $AL, LA$ ad esempio che contengono gli stessi elementi.
+
+Per estrarre il numero di **sottoinsiemi** (l'ordine non importa e non ci sono ripetizioni) di $r$ elementi da un'insieme di $n$ elementi bisogna procedere diversamente.
+
+>[!Example]
+>Quanti sono i _sottoinsiemi_ di 3 lettere dell'insieme di 5 lettere $\{A,B,C,D,E\}$?
+>
+>Abbiamo $\frac{5!}{(5-3)!}=60$ sequenze diverse con alcune sequenze che contengono gli stessi elementi.
+>Il numero di sequenze che contengono gli stessi elementi possono essere calcolate tramite $3!=6$ ed infine per trovare il numero di sottoinsiemi:
+>$$\frac{60}{6}=10$$
+
+- Una **combinazione semplice** è quindi un _sottoinsieme_ di $r$ elementi presi alla volta da un insieme $n$.
+Il numero di combinazioni semplici di $n$ elementi presi $r$ alla volta è:
+$$\frac{n!}{r!(n-r)!}=\begin{pmatrix}n\\r\end{pmatrix}$$
+e prende il nome di **coefficiente binomiale** $n$ su $r$.
+
+> Tra l'altro si può anche vedere come $\frac{\text{disp. senza rip di } n}{\text{perm. senza rip. di }r}$
+
+- **Combinazioni con ripetizione**:
+$$\frac{(n+r-1)!}{r!(n-r)!}=\begin{pmatrix}n+r-1\\r\end{pmatrix}$$
+
+>[!Example]
+>Quante sono le _combinazioni_ anche con ripetizione di 3 lettere dell'insieme di 5 lettere $\{A,B,C,D,E\}$?
+>Questa volta non voglio i sottoinsiemi, quindi posso cercare anche le ripetizioni del tipo: $AAA, BBB, CCC, ...$ quindi dovrò sommare al numeratore $r-1$:
+>$$\frac{(5+3-1)!}{3!(5-3)!}=420$$
+>

@@ -42,3 +42,33 @@ Con il **vincolo di totalità** definiamo un'associazione <u>totale da X a Y</u>
 I **vincoli di integrità** sono usati per applicare <u>restrizioni</u> su possibili valori e sui modi in cui essi possono evolvere nel tempo, possono essere:
 - **Statici**: definiscono condizioni sui valori indipendentemente da come evolveranno (e.g. età deve essere un intero positivo)
 - **Dinamici**: definiscono condizioni sul modo in cui i valori potranno evolversi (e.g. DataNascita non può essere cambiata)
+
+---
+## Cosa si modella
+- **Classe** (o entità o collezioni di oggetti): insiemi di oggetti dello stesso tipo
+- **Oggetto**: una istanza della classe (riga nella tabella)
+
+I **tipi degli attributi** possono essere:
+- **Primitivi**: int, real, bool, data, string
+- **Non primitivi**:
+	- _record_: `{A1:T1; ...; An:Tn}`
+	- _Enumerazione_: `(Val1; ...; Valn)`
+	- _Sequenza_: `seq T` dove T è un tipo, e.g.: it, us, fr
+
+### Associazioni
+Le associazioni sono indicate dalle frecce:
+- <--> 1:1
+- <-->> 1:n
+- <<--> n:1
+- <<-->> n:n
+
+Inoltre se la freccia appare _sbarrata_ vuol dire che l'associazione è **parziale** (qualche elemento potrebbe non avere una relazione verso elementi dell'altra classe) verso la parte in cui la freccia è sbarrata, altrimenti è **totale** (tutti gli elementi hanno almeno un elemento a cui sono relazionati rispetto l'altra classe). 
+
+Possono avere **proprietà** ed anche essere **ricorsive**, specificando così una relazione tra oggetti dello stesso tipo.
+
+![[Tipi di associazioni.png]]
+
+>[!Example]
+>Si vuole rappresentare l’associazione tra Voli, Passeggeri e Posti. Per ogni volo, al momento dell’imbarco, viene assegnato un posto a ciascun passeggero.
+>
+>![[Esempio associazioni.png]]

@@ -68,4 +68,27 @@ Per $n$ sufficientemente grande $f(n)$ sarà sempre _sotto_ ad una funzione $g(n
 - $\sqrt{n}=O(n)$, banalmente:
 	$n\leq n^2\space\forall n\geq 1\quad\implies\quad\sqrt{n}\leq n$
 
+![[Plot complessità.png|600]]
+
 ---
+
+## Proprietà
+**Prima proprietà**:
+$$f(n)=O(g(n))\iff g(n)=\Omega(f(n))$$
+Ovvero $f(n)$ sta sotto a $g(n)$ solo se quest'ultima sta sopra a $f(n)$
+- **Dimostrazione**:
+	- **Ipotesi**: $\exists c > 0,\exists n_0\in\mathbb{N}|\forall n\geq n_0:\quad f(n)\leq c\cdot g(n)$ da cui $\frac{1}{c}f(n)\leq g(n)$
+	- **Tesi**: $\exists c'>0,\exists n_0'\in\mathbb{N}|\forall n\geq n_0':\quad c'\cdot f(n)\leq g(n)$
+	 Metto in uguaglianza ipotesi e tesi e pongo $c'=\frac{1}{c}>0,\space n_0'=n_0$ verificando così la proprietà.
+
+**Proprietà transitiva**:
+$$\text{Se }f(n)=O(g(n))\text{ e }g(n)=O(h(n))\text{ allora: }f(n)=O(h(n))$$
+Ovvero se $f(n)$ sta sotto a $g(n)$ e quest'ultima sta sotto a sua volta a $h(n)$ allora anche $f(n)$ starà sotto ad $h(n)$, <u>vale anche per le classi:</u> $\Omega$ e $\Theta$ 
+- **Dimostrazione**:
+	 **Ip.1**: $\exists c_1>0,\exists n_1\in\mathbb{N}|\forall n\geq n_1:\quad f(n)\leq c_1\cdot g(n)$
+	 **Ip.2**: $\exists c_2>0,\exists n_2\in\mathbb{N}|\forall n\geq n_2:\quad g(n)\leq c_2\cdot h(n)$
+	 **Tesi**: voglio dimostrare che: $\exists c_3>0,\exists n_3\in\mathbb{N}|\forall n\geq n_3:\quad f(n)\leq c_3\cdot h(n)$
+	 
+	 $f(n)\leq c_1\cdot g(n)\land g(n)\leq c_2\cdot h(n)$
+	 Sostituisco $c_2\cdot h(n)$ a $g(n)$ e noto che $f(n)\leq c_1\cdot c_2\cdot h(n)$ quindi ponendo $c_3 = c_1\cdot c_2$ e $n_3=\max\{n_1,n_2\}\space \forall n\geq n_3$ (considerando quindi il punto in cui le funzioni non si incrociano più) la proprietà è verificata.
+

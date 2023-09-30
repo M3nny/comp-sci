@@ -246,6 +246,30 @@
           "lastUpdated": 1695928379033
         }
       }
+    },
+    "\\forall": {
+      "\\forall": {
+        "currentFile": {
+          "count": 1,
+          "lastUpdated": 1696059322352
+        }
+      }
+    },
+    "insieme": {
+      "insieme": {
+        "currentFile": {
+          "count": 1,
+          "lastUpdated": 1696068906707
+        }
+      }
+    },
+    "sottoinsiemi": {
+      "sottoinsiemi": {
+        "currentFile": {
+          "count": 3,
+          "lastUpdated": 1696073150930
+        }
+      }
     }
   }
 }
