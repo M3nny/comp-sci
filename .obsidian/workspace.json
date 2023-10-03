@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Secondo anno/Algoritmi e strutture dati mod. 1/2 - Classi asintotiche.md",
+                "file": "Secondo anno/Basi di dati mod. 1/Progettazione e modellazione.md",
                 "mode": "source",
                 "source": false
               }
@@ -93,7 +93,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Secondo anno/Algoritmi e strutture dati mod. 1/2 - Classi asintotiche.md",
+                "file": "Secondo anno/Basi di dati mod. 1/Progettazione e modellazione.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -110,7 +110,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Secondo anno/Algoritmi e strutture dati mod. 1/2 - Classi asintotiche.md",
+                "file": "Secondo anno/Basi di dati mod. 1/Progettazione e modellazione.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -133,7 +133,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Secondo anno/Algoritmi e strutture dati mod. 1/2 - Classi asintotiche.md"
+                "file": "Secondo anno/Basi di dati mod. 1/Progettazione e modellazione.md"
               }
             }
           },
@@ -165,8 +165,10 @@
   },
   "active": "60240f1b66f9259f",
   "lastOpenFiles": [
-    "Secondo anno/Basi di dati mod. 1/Progettazione e modellazione.md",
+    "Secondo anno/Basi di dati mod. 1/Images/Vincoli sottoclassi.png",
     "Secondo anno/Probabilità e statistica/Probabilità elementare.md",
+    "Secondo anno/Algoritmi e strutture dati mod. 1/2 - Classi asintotiche.md",
+    "Secondo anno/Basi di dati mod. 1/Progettazione e modellazione.md",
     "Secondo anno/Basi di dati mod. 1/Images/L2.pdf",
     "Secondo anno/Basi di dati mod. 1/Images/Non confermato 40388.crdownload",
     "Secondo anno/Probabilità e statistica/Introduzione.md",
@@ -183,7 +185,6 @@
     "Secondo anno/Algoritmi e strutture dati mod. 1/Images/Associazioni-removebg-preview.png.crdownload",
     "Secondo anno/Basi di dati mod. 1/Images",
     "Secondo anno/Basi di dati mod. 1/Nuova cartella",
-    "Secondo anno/Algoritmi e strutture dati mod. 1/2 - Classi asintotiche.md",
     "Secondo anno/Algoritmi e strutture dati mod. 1/Images/Plot complessità.png",
     "Primo anno/Secondo semestre/Calcolo 2/Images/Cambio variabili.svg",
     "Secondo anno/Algoritmi e strutture dati mod. 1/1 - Fibonacci.md",

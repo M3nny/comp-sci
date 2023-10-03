@@ -72,3 +72,17 @@ Possono avere **proprietà** ed anche essere **ricorsive**, specificando così u
 >Si vuole rappresentare l’associazione tra Voli, Passeggeri e Posti. Per ogni volo, al momento dell’imbarco, viene assegnato un posto a ciascun passeggero.
 >
 >![[Esempio associazioni.png]]
+
+### Gerarchie ed ereditarietà
+Con la relazione di **sottotipo** ($\leq$) tra $t\leq t'$ indichiamo che gli elementi di $t$ hanno tutti gli attributi degli elementi di $t'$ dove anche i tipi di $t$ sono uguali o sottotipi rispetto ai tipi di $t'$.
+
+Possiamo definire una **sottoclasse** con vincolo:
+- _estensionale_: dove C è sottoclasse di C' e le entità in C sono un sottoinsieme di quelle di C'
+- _intensionale_: dove C è sottoclasse di C' ed il tipo delle entità in C è sottotipo degli elementi di C'
+
+![[Vincoli sottoclassi.png|700]]
+Dopo aver visto i vari vincoli vediamo come si possono combinare per creare varie sottoclassi:
+- **Scorrelate**: possono avere cose in comune tra loro, assieme non formano la classe padre
+- **Disgiunte**: non hanno nulla in comune tra loro, assieme non formano la classe padre
+- **Copertura**: possono avere cose in comune tra loro, assieme formano la classe padre
+- **Partizione**: non hanno nulla in comune tra loro, assieme formano la classe padre
