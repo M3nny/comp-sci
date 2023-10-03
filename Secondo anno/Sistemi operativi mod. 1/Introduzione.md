@@ -4,7 +4,7 @@ Interfacciandosi <u>verso l'alto</u>, l'utente vede una macchina astratta, mentr
 
 Prevede due **modalità di esecuzione** per il processore:
 - **User mode**: per eseguire le applicazioni utente
-- **Kernel mode**: è la modalità in cui viene eseguito il SO (prevalentemente)
+- **Kernel mode**: è la modalità in cui viene eseguito il SO (prevalentemente), inoltre alcune volte il processore può anche accedere a istruzioni e risorse privilegiate per conto dei processi.
 
 ---
 ## Storia
@@ -46,18 +46,31 @@ Contiene **registri** tra cui alcuni speciali:
 - **PSW**: Program Status Word il quale contiene un descrittore dello stato dei programmi in esecuzione e della modalità in cui si trova il SO
 - **Base & limit**: definiscono lo spazio di indirizzamento logico del programma, in modo da non sovrapporsi ad altri processi
 
+Per quanto riguarda componenti software abbiamo:
+- Processor scheduler
+- Gestore della memoria, I/O, del file system e della IPC (Interprocess communication)
+
 Una CPU può essere **multithreading** ovvero è in grado di supportare a livello hardware più thread e/o può anche essere **multiprocessore** ovvero possiede più core.
+I **thread** sono componenti dei programmi eseguiti in modo indipendente che però usano uno _spazio condiviso_ con il processo padre ed altri suoi thread.
 
 #### Memoria
-Oltre a registri, cache e RAM abbiamo anche:
+Oltre a registri e RAM abbiamo anche:
 - **ROM** (Read Only Memory): la quale non è volatile, è veloce, economica e programmata solo dal costruttore
 - **EEPROM** (Electrical Erasable ROM): la quale si differenzia dalla ROM in quanto è riscrivibile
 - **CMOS** (Complementary Metal-Oxide Semiconductor): è volatile è viene usato spesso per memorizzare data e ora
 
+- **Caches**: mantengono copie di dati che saranno usati a breve, essendo veloci aumentano anche la velocità di esecuzione di un programma.
+- **Buffers**: memoria temporanea usate per tenere i dati durante operazioni di I/O e per il coordinamento delle comunicazioni tra dispositivi di velocità diverse (supporta l'elaborazione asincrona)
+- **Spooling**: permette di inviare richieste da una periferica senza aspettare che il dispositivo sia pronto a servire la richiesta
+- **Memoria virtuale**: permette di eseguire richieste che esigono più memoria di quanta disponibile usando lo swapping
+
 Vari elementi possono interfacciarsi con il SO tramite **driver** i quali sono diversi per ogni SO che supporta, possono essere installati tramite:
 - Inserzione manuale e riavviando
 - In un file del SO e riavviando
-- Plug and play
+- **Plug and play**: consente ai SO di configurare hardware appena installato senza l'interazione dell'utente, per fare ciò l'hardware deve:
+	- _Identificarsi_ univocamente
+	- _Comunicare_ al SO le risorse ed i servizi che vuole
+	- _Identificare il driver_
 
 #### I/O
 Vediamo tre modalità in cui possono essere eseguite le operazioni di input/output
@@ -75,8 +88,7 @@ Alcuni bus principali sono:
 - **USB** (Universal Serial Bus): connette dispositivi lenti senza dover riavviare
 - **SCSI** (Small Computer System Interface): usato per fornire compatibilità tra dispositivi, oggi usato per server e workstations
 
----
-## Tipi di S.O.
+### Tipi di S.O.
 - **Embedded**: gestiscono bene dispositivi con un numero limitato di risorse (elettrodomestici)
 - **Mainframe**: garantiscono grandi capacità di I/O per sistemi centralizzati
 - **Server**: gestiscono molteplici utenti connessi simultaneamente
@@ -84,3 +96,19 @@ Alcuni bus principali sono:
 - **PC**: fornisce multiprogrammazione per un utente
 - **Palmari (PDA)**: come android e iOS gestiscono molti sensori e app
 - **Real-time**: gestiscono task con scadenze brevi (sistemi di controllo)
+
+---
+### Concetti base
+Le architetture degli elaboratori racchiudono funzioni del SO in hardware per migliorare le prestazioni e garantire la **protezione**.
+
+Infatti un processore:
+- Impedisce ai processi di accedere a zone di memoria delimitate grazie a dei registri che vengono modificati solo in kernel mode
+- Fornisce due modalità di esecuzione (user e kernel mode)
+- Fornisce **privilegi minimi** ad ogni utente
+
+A differenza di un interrupt di I/O oppure periodici, i quali vengono usati per evitare che un processo usi sempre la CPU per se stesso, le **eccezioni** sono degli interrupt in risposta agli _errori_.
+
+Durante il **bootstrap** eseguito dal **BIOS** l'utente non può accedere a componenti hardware del computer, cosa che invece è concessa nel suo successore: **EFI** il quale è dotato di shell e anche dei driver.
+
+Una **chiamata di sistema** eseguita da un processo utente avviene tramite _TRAP_ la quale da il controllo al SO e al termine della chiamata il controllo passa alla prossima istruzione del processo utente.
+
