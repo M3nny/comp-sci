@@ -77,8 +77,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 305.5110321044922,
-    "collapsed": true
+    "width": 305.5110321044922
   },
   "right": {
     "id": "282a9548711da6a0",
@@ -166,14 +165,19 @@
   },
   "active": "60240f1b66f9259f",
   "lastOpenFiles": [
+    "Secondo anno/Sistemi operativi mod. 1/Processi e thread.md",
+    "Secondo anno/Sistemi operativi mod. 1/Introduzione.md",
+    "Secondo anno/Sistemi operativi mod. 1/Images/Process table.png",
+    "Secondo anno/Sistemi operativi mod. 1/Images/Modello di processo.png",
+    "Secondo anno/Sistemi operativi mod. 1/Images",
+    "Secondo anno/Sistemi operativi mod. 1/Nuova cartella",
+    "Secondo anno/Probabilità e statistica/Probabilità elementare.md",
+    "Secondo anno/Probabilità e statistica/Introduzione.md",
     "Secondo anno/Basi di dati mod. 1/Progettazione e modellazione.md",
     "Secondo anno/Basi di dati mod. 1/Images/Vincoli sottoclassi.png",
-    "Secondo anno/Probabilità e statistica/Probabilità elementare.md",
     "Secondo anno/Algoritmi e strutture dati mod. 1/2 - Classi asintotiche.md",
     "Secondo anno/Basi di dati mod. 1/Images/L2.pdf",
     "Secondo anno/Basi di dati mod. 1/Images/Non confermato 40388.crdownload",
-    "Secondo anno/Probabilità e statistica/Introduzione.md",
-    "Secondo anno/Sistemi operativi mod. 1/Introduzione.md",
     "Secondo anno/Basi di dati mod. 1/Images/Tipi di associazioni.png",
     "Secondo anno/Basi di dati mod. 1/Images/Esempio associazioni.png",
     "Secondo anno/Basi di dati mod. 1/Images/aaa-removebg-preview.png.crdownload",
@@ -184,8 +188,6 @@
     "Secondo anno/Basi di dati mod. 1/Images/Associazioni.png.crdownload",
     "Secondo anno/Algoritmi e strutture dati mod. 1/Images/Associazioni-removebg-preview.png",
     "Secondo anno/Algoritmi e strutture dati mod. 1/Images/Associazioni-removebg-preview.png.crdownload",
-    "Secondo anno/Basi di dati mod. 1/Images",
-    "Secondo anno/Basi di dati mod. 1/Nuova cartella",
     "Secondo anno/Algoritmi e strutture dati mod. 1/Images/Plot complessità.png",
     "Primo anno/Secondo semestre/Calcolo 2/Images/Cambio variabili.svg",
     "Secondo anno/Algoritmi e strutture dati mod. 1/1 - Fibonacci.md",
@@ -206,11 +208,8 @@
     "Primo anno/Secondo semestre/Programmazione e laboratorio/Teoria/titolo.md",
     "Primo anno/Secondo semestre/Programmazione e laboratorio/Notes/Riassunto.md",
     "Primo anno/Secondo semestre/Programmazione e laboratorio/Notes/Guida a C++.md",
-    "Primo anno/Secondo semestre/Programmazione e laboratorio/Notes/Classi.md",
     "Primo anno/Secondo semestre/Architettura degli elaboratori mod. 2/Images/Organizzazione gerarchia.png",
     "Primo anno/Secondo semestre/Calcolo 2/Images/Verifica semplicità.png",
-    "Primo anno/Secondo semestre/Calcolo 2/Images/Verifica curva semplice.png",
-    "Primo anno/Secondo semestre/Calcolo 2/Images/Curva parametrica.png",
     "Untitled.canvas"
   ]
 }

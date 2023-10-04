@@ -96,6 +96,7 @@ Alcuni bus principali sono:
 - **PC**: fornisce multiprogrammazione per un utente
 - **Palmari (PDA)**: come android e iOS gestiscono molti sensori e app
 - **Real-time**: gestiscono task con scadenze brevi (sistemi di controllo)
+- **Smart-card**: inseriti in piccoli chip con poca potenza di calcolo possono eseguire poche istruzioni
 
 ---
 ### Concetti base
@@ -106,9 +107,25 @@ Infatti un processore:
 - Fornisce due modalità di esecuzione (user e kernel mode)
 - Fornisce **privilegi minimi** ad ogni utente
 
-A differenza di un interrupt di I/O oppure periodici, i quali vengono usati per evitare che un processo usi sempre la CPU per se stesso, le **eccezioni** sono degli interrupt in risposta agli _errori_.
+A differenza di un _interrupt di I/O oppure periodici_, i quali vengono usati per evitare che un processo usi sempre la CPU per se stesso, le **eccezioni** sono degli interrupt in risposta agli _errori_.
 
 Durante il **bootstrap** eseguito dal **BIOS** l'utente non può accedere a componenti hardware del computer, cosa che invece è concessa nel suo successore: **EFI** il quale è dotato di shell e anche dei driver.
 
-Una **chiamata di sistema** eseguita da un processo utente avviene tramite _TRAP_ la quale da il controllo al SO e al termine della chiamata il controllo passa alla prossima istruzione del processo utente.
+Un **processo** è un _programma in esecuzione_ e possiede:
+- Spazio di indirizzamento
+- Descrittore che contiene informazioni riguardo al processo (e.g. è running oppure no)
+- Un UID che indentifica l'utente che ha eseguito il processo
+- Un PID che lo distingue da altri processi
+Più processi possono comunicare tra loro tramite **pipe** ovvero uno pseudofile facente parte del **file system**
 
+Una **chiamata di sistema** eseguita da un processo utente avviene tramite _TRAP_ la quale da il controllo al SO (passa in kernel mode) e al termine della chiamata il controllo passa alla prossima istruzione del processo utente (user mode).
+
+
+### Architetture di S.O.
+Le architetture supportano hardware e software eterogenei.
+
+1. Nelle architetture **monolitiche** ogni componente fa parte del kernel e può comunicare direttamente con qualsiasi altra portando così ad una grande <u>efficienza</u> con il principale svantaggio di avere <u>difficoltà ad identificare eventuali fonti di errori</u>.
+
+2. In quelle **a livelli** invece si ha l'<u>isolamento</u>, ovvero ogni livello comunica solo con quello sopra o sotto di lui, questo comporta che le richieste dei processi dovranno eventualmente attraversare vari livelli per cui il <u>throughput può essere minore rispetto alle architetture monolitiche</u>.
+
+3. Un'architettura **microkernel** fornisce <u>servizi limitati</u> mantenendo un <u>elevato grado di modularità</u>.

@@ -278,6 +278,30 @@
           "lastUpdated": 1696346495702
         }
       }
+    },
+    "indirizzamento": {
+      "indirizzamento": {
+        "currentFile": {
+          "count": 1,
+          "lastUpdated": 1696431178562
+        }
+      }
+    },
+    "interrupt": {
+      "interrupt": {
+        "currentFile": {
+          "count": 2,
+          "lastUpdated": 1696442263114
+        }
+      }
+    },
+    "ripresa": {
+      "ripresa": {
+        "currentFile": {
+          "count": 1,
+          "lastUpdated": 1696442400290
+        }
+      }
     }
   }
 }
