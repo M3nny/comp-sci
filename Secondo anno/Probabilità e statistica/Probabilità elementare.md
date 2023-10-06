@@ -70,3 +70,41 @@ $$\frac{(n+r-1)!}{r!(n-r)!}=\begin{pmatrix}n+r-1\\r\end{pmatrix}$$
 >Questa volta non voglio i sottoinsiemi, quindi posso cercare anche le ripetizioni del tipo: $AAA, BBB, CCC, ...$ quindi dovrò sommare al numeratore $r-1$:
 >$$\frac{(5+3-1)!}{3!(5-3)!}=420$$
 >
+
+## Fenomeni aleatori
+Si può pensare al termine **aleatorio** come l'opposto di _deterministico_.
+
+Lo **spazio campionario** ($\Omega$) è l'insieme di tutti i possibili risultati di un fenomeno aleatorio dove un **evento** è un sottoinsieme $A\subset\Omega$, ed i possibili risultati singoli chiamati **singoletti** possono essere visti come insiemi contenenti un solo elemento $\{\omega\}$ detti **eventi elementari**.
+Lo spazio campionario $\Omega$ viene anche chiamato **evento certo**.
+
+- **Complementare**: $\overline{A}$ _è vero quando $A$ è falso_ e viceversa
+	La negazione di $\Omega$ è l'evento impossibile ovvero $\emptyset$
+- **Intersezione**: $A\cap B$ è vero quando _sia $A$ che $B$ sono veri_
+- **Unione**: $A\cup B$ è vero quando almeno o $A$ o $B$ sono veri
+- **Inclusione**: $A\subset B$ se $A\implies B$
+- **Disgiunzione**: $A\cap B=\emptyset$ ovvero $A$ e $B$ non hanno nulla in comune
+
+Una famiglia di eventi si dice **partizione** di $\Omega$ se ogni coppia di eventi della famiglia ha intersezione vuota e l'unione di tutte le partizioni è $\Omega$ stesso.
+>[!Example]
+>$\{C_1,C_2,C_3\}$ è una partizione di 3 elementi se:
+>- $C_1\cap C_2=C_1\cap C_3=C_2\cap C_3=\emptyset$
+>- $C_1\cup C_2\cup C_3=\Omega$
+
+Un qualsiasi evento $A$ si può scrivere come unione delle sue intersezioni con gli elementi di una partizione:
+![[Partizioni.png]]
+$$A=(A\cap C_1)\cup(A\cap C_2)\cup(A\cap C_3)$$
+Si può quindi scrivere ogni evento $A$ come unione numerabile delle sue intersezioni con gli elementi di una partizione:
+$$A=\bigcup_{i=1}^\infty(A\cap C_i)$$
+
+## Definizione di probabilità
+La **probabilità** deve rispettare i seguenti assiomi:
+
+1. **Positività**: la probabilità è un valore reale compreso tra $0$ e $1$
+$$0\leq\mathbb{P}[A]\leq 1$$
+2. **Normalizzazione**: la probabilità dello spazio campionario (o evento certo) è pari a $1$
+$$\mathbb{P}[\Omega]=1$$
+3. **Additività**: se $A_1,A_2,...$ è una sequenza di eventi incompatibili allora la probabilità dell'unione degli eventi $A_n$ è data dalla somma delle probabilità degli eventi $A_n$
+$$\mathbb{P}\left[\bigcup_{n=1}^\infty A_n\right]=\sum_{n=1}^\infty\mathbb{P}[A_n]$$
+>[!Interpretazione della probabilità]
+>Più $\mathbb{P}[A]$ è vicina a $1$, più ci aspettiamo che l'evento si avveri
+

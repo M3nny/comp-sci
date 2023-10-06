@@ -4,7 +4,7 @@ $$O(g(n))=\{f(n)|\exists c>0,\quad \exists n_0\in\mathbb{N}|\forall n \geq n_0:\
 
 >Il simbolo $=$ presente nelle notazioni significa "appartiene a"
 
-Per $n$ sufficientemente grande $f(n)$ sarà sempre _sotto_ ad una funzione $g(n)$ moltiplicata per una costante positiva $c$.
+Per $n$ sufficientemente grande $f(n)$ sarà sempre _sotto o uguale_ ad una funzione $g(n)$ moltiplicata per una costante positiva $c$.
 
 >[!Example]
 >$\frac{1}{2}n^2-3n=O(n^2)$
@@ -19,7 +19,7 @@ Per $n$ sufficientemente grande $f(n)$ sarà sempre _sotto_ ad una funzione $g(n
 $$\Omega(g(n))=\{f(n)|\exists c>0,\quad \exists n_0\in\mathbb{N}|\forall n \geq n_0:\quad c\cdot g(n)\leq f(n)\}$$
 **Notazione**: $f(n)=\Omega(g(n))$
 
-Per $n$ sufficientemente grande $f(n)$ sarà sempre _sopra_ ad una funzione $g(n)$ moltiplicata per una costante positiva $c$.
+Per $n$ sufficientemente grande $f(n)$ sarà sempre _sopra o uguale_ ad una funzione $g(n)$ moltiplicata per una costante positiva $c$.
 
 >[!Example]
 >$\frac{1}{2}n^2-3n=\Omega(n^2)$
@@ -31,7 +31,7 @@ Per $n$ sufficientemente grande $f(n)$ sarà sempre _sopra_ ad una funzione $g(n
 >Quindi avrò come soluzioni: $c=\frac{1}{14}$ e $n_0=7$
 
 ## Classe $\Theta$ ($O\cap \Omega$)
-$$\Theta(g(n))=\{f(n)|\exists c_1>0,\exists c_2>0\quad \exists n_0\in\mathbb{N}|\forall n \geq n_0:\quad c_1\cdot g(n)\leq f(n)\leq c_2\cdot g(n)\}$$
+$$\Theta(g(n))=\{f(n)|\exists c_1>0,\exists c_2>0,\quad \exists n_0\in\mathbb{N}|\forall n \geq n_0:\quad c_1\cdot g(n)\leq f(n)\leq c_2\cdot g(n)\}$$
 **Notazione**: $f(n)=\Theta(g(n))$
 
 Per $n$ sufficientemente grande $f(n)$ sarà sempre _sotto_ ad una funzione $g(n)$ moltiplicata per una costante positiva $c_2$ ed allo stesso tempo _sopra_ ad una funzione $g(n)$ moltiplicata anch'essa per un'altra costante positiva $c_1$.
@@ -91,4 +91,56 @@ Ovvero se $f(n)$ sta sotto a $g(n)$ e quest'ultima sta sotto a sua volta a $h(n)
 	 
 	 $f(n)\leq c_1\cdot g(n)\land g(n)\leq c_2\cdot h(n)$
 	 Sostituisco $c_2\cdot h(n)$ a $g(n)$ e noto che $f(n)\leq c_1\cdot c_2\cdot h(n)$ quindi ponendo $c_3 = c_1\cdot c_2$ e $n_3=\max\{n_1,n_2\}\space \forall n\geq n_3$ (considerando quindi il punto in cui le funzioni non si incrociano più) la proprietà è verificata.
+---
 
+## Classe $o$ 
+$$o(g(n))=\{f(n)|\forall c>0,\quad\exists n_0\in\mathbb{N}|\forall n\geq n_0:\quad f(n)<c\cdot g(n)\}$$
+Per $n$ sufficientemente grande $f(n)$ sarà sempre _sotto_ ad una funzione $g(n)$ moltiplicata per ogni costante positiva $c$.
+
+**Osservazione**: $o(g(n))\subset O(g(n))$ infatti $f(n)=o(g(n))\implies f(n)=O(g(n))$ 
+
+**Proprietà**:
+$$f(n)=o(g(n))\iff\lim\limits_{n\to\infty}\frac{f(n)}{g(n)}=0$$
+$$\text{quindi}$$
+$$\lim\limits_{n\to\infty}\frac{f(n)}{g(n)}=0\implies f(n)=O(g(n))$$
+- $\log(n)=O(\sqrt{n})$, infatti applicando de l'Hopital:
+	$\lim\limits_{n\to\infty}\frac{log(n)}{\sqrt{n}}=\space\lim\limits_{n\to\infty}\frac{\frac{1}{n}}{\frac{1}{2}n^{-\frac{1}{2}}}=\space\lim\limits_{n\to\infty}\frac{2}{n}\sqrt{n}=\space\lim\limits_{n\to\infty}\frac{2}{\sqrt{n}}=0$ 
+	quindi, $\log(n)=o(\sqrt{n})\implies\log(n)=O(\sqrt{n})$
+
+## Classe $\omega$
+$$\omega(g(n))=\{f(n)|\forall c>0,\quad\exists n_0\in\mathbb{N}|\forall n\geq n_0:\quad c\cdot g(n)<f(n)\}$$
+Per $n$ sufficientemente grande $f(n)$ sarà sempre _sopra_ ad una funzione $g(n)$ moltiplicata per ogni costante positiva $c$.
+
+**Osservazione**: $\omega(g(n))\subset \Omega(g(n))$ infatti $f(n)=\omega(g(n))\implies f(n)=\Omega(g(n)$
+
+**Proprietà**:
+$$f(n)=\omega(g(n))\iff\lim\limits_{n\to\infty}\frac{f(n)}{g(n)}=+\infty$$
+$$\text{quindi}$$
+$$\lim\limits_{n\to\infty}\frac{f(n)}{g(n)}=+\infty\implies f(n)=\Omega(g(n))$$
+### Osservazioni generali sulle classi asintotiche
+- Se $f(n)=o(g(n))$ potrebbe accadere che $f(n)=\Omega(g(n))$?
+	**No**, perchè:
+	1. $o(g(n))\cap\Omega(g(n))=\emptyset$
+	2. $\omega(g(n))\cap O(g(n))=\emptyset$
+
+	- **Dimostrazione di 1.** per assurdo:
+		Supponiamo che $\exists f(n)|\space o(g(n))\cap\Omega(g(n))$
+		quindi:
+		$\forall c>0,\space\exists n_0\in\mathbb{N}|\forall n\geq n_0:\space f(n)<c\cdot g(n)$
+		e
+		$\exists c'>0,\space \exists n_0'\in\mathbb{N}|\forall n \geq n_0':\space c'\cdot g(n)\leq f(n)$
+
+		se $n\geq \max\{n_0, n_0'\}$ si avrebbe $f(n)<c'\cdot g(n)\leq f(n)$ <u>Assurdo!</u>
+
+- Se $\lim\limits_{n\to\infty}\frac{f(n)}{g(n)}=\ell\space\text{con}\space 0<\ell<\infty$ allora $f(n)=\Theta(g(n))$
+	versione generalizzata:
+	$$\lim_{n\to\infty}\frac{f(n)}{g(n)}=\begin{cases}0\space (\iff f(n)=o(g(n))&\implies f(n)=O(g(n))\\\ell,\space \ell\in]0,\infty[&\implies f(n)=\Theta(g(n))\\\infty\space(\iff f(n)=\omega(g(n))&\implies f(n)=\Omega(g(n))\end{cases}$$
+	Tuttavia questa osservazione non vale per funzioni il cui limite non è definito come $\sin,\cos...$ (questi casi non si verificheranno nel corso)	
+
+### Polinomi
+>[!Regola dei polinomi]
+>Se $P(n)$ è un polinomio di grado $k$ allora $P(n)=\Theta(n^k)$
+
+Esempi:
+- $3n^3+2n^2+6n+5=\Theta(n^3)$
+- $27n^2+n^2\log(n)+\sqrt{n}+\log(n^2) = \Theta(n^2\log(n))$

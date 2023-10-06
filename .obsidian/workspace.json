@@ -8,12 +8,12 @@
         "type": "tabs",
         "children": [
           {
-            "id": "60240f1b66f9259f",
+            "id": "acee44268ec38a58",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Secondo anno/Sistemi operativi mod. 1/Introduzione.md",
+                "file": "Secondo anno/Algoritmi e strutture dati mod. 1/2 - Classi asintotiche.md",
                 "mode": "source",
                 "source": false
               }
@@ -93,7 +93,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Secondo anno/Sistemi operativi mod. 1/Introduzione.md",
+                "file": "Secondo anno/Algoritmi e strutture dati mod. 1/2 - Classi asintotiche.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -110,7 +110,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Secondo anno/Sistemi operativi mod. 1/Introduzione.md",
+                "file": "Secondo anno/Algoritmi e strutture dati mod. 1/2 - Classi asintotiche.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -133,7 +133,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Secondo anno/Sistemi operativi mod. 1/Introduzione.md"
+                "file": "Secondo anno/Algoritmi e strutture dati mod. 1/2 - Classi asintotiche.md"
               }
             }
           },
@@ -163,19 +163,43 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "60240f1b66f9259f",
+  "active": "acee44268ec38a58",
   "lastOpenFiles": [
+    "Secondo anno/Probabilità e statistica/Probabilità elementare.md",
+    "Secondo anno/Probabilità e statistica/Images/Partizioni.png",
+    "Secondo anno/Probabilità e statistica/Images",
+    "Secondo anno/Probabilità e statistica/Nuova cartella",
+    "Secondo anno/Algoritmi e strutture dati mod. 1/2 - Classi asintotiche.md",
+    "Secondo anno/Programmazione ad oggetti mod. 1/Classi.md",
     "Secondo anno/Sistemi operativi mod. 1/Processi e thread.md",
-    "Secondo anno/Sistemi operativi mod. 1/Introduzione.md",
+    "Primo anno/Secondo semestre/Calcolo 2/Funzioni a più variabili reali/Curve di livello e dominio.md",
+    "Primo anno/Secondo semestre/Calcolo 2/Curve parametriche/Funzioni vettoriali.md",
+    "Primo anno/Secondo semestre/Calcolo 2/Curve parametriche/Curve regolari e forma polare.md",
+    "Primo anno/Secondo semestre/Calcolo 2/Curve parametriche/Lunghezza arco e integrali di linea.md",
+    "Primo anno/Secondo semestre/Calcolo 2/Equazioni differenziali/EDO del primo ordine.md",
+    "Primo anno/Secondo semestre/Calcolo 2/Funzioni a più variabili reali/Calcolo differenziale.md",
+    "Primo anno/Secondo semestre/Calcolo 2/Integrali doppi/Definizione.md",
+    "Primo anno/Secondo semestre/Calcolo 2/Integrali doppi/Cambio di variabili.md",
+    "Primo anno/Secondo semestre/Architettura degli elaboratori mod. 2/Input Output/Bus.md",
+    "Primo anno/Secondo semestre/Architettura degli elaboratori mod. 2/CPU con pipeline/Introduzione.md",
+    "Primo anno/Secondo semestre/Architettura degli elaboratori mod. 2/CPU con pipeline/Previsione del branch, interruzioni e ottimizzazione.md",
+    "Primo anno/Secondo semestre/Architettura degli elaboratori mod. 2/CPU con pipeline/Processori superscalari.md",
+    "Primo anno/Secondo semestre/Architettura degli elaboratori mod. 2/CPU con pipeline/Dipendenze RAW.md",
+    "Primo anno/Secondo semestre/Architettura degli elaboratori mod. 2/Assembly/Funzioni e stack.md",
+    "Primo anno/Secondo semestre/Architettura degli elaboratori mod. 2/Assembly/Costrutti principali.md",
+    "Primo anno/Secondo semestre/Architettura degli elaboratori mod. 2/ARM ISA/Load&Store.md",
+    "Primo anno/Secondo semestre/Architettura degli elaboratori mod. 2/ARM ISA/Istruzioni logico-aritmetiche.md",
+    "Primo anno/Secondo semestre/Architettura degli elaboratori mod. 2/ARM ISA/Branches.md",
+    "Primo anno/Primo semestre/Matematica discreta/Il principio di induzione.md",
+    "Primo anno/Primo semestre/Matematica discreta/Regole di divisibilità.md",
+    "Primo anno/Primo semestre/Matematica discreta/mcm e MCD.md",
+    "Primo anno/Primo semestre/Matematica discreta/Le sommatorie.md",
+    "Secondo anno/Programmazione ad oggetti mod. 1",
     "Secondo anno/Sistemi operativi mod. 1/Images/Process table.png",
     "Secondo anno/Sistemi operativi mod. 1/Images/Modello di processo.png",
     "Secondo anno/Sistemi operativi mod. 1/Images",
     "Secondo anno/Sistemi operativi mod. 1/Nuova cartella",
-    "Secondo anno/Probabilità e statistica/Probabilità elementare.md",
-    "Secondo anno/Probabilità e statistica/Introduzione.md",
-    "Secondo anno/Basi di dati mod. 1/Progettazione e modellazione.md",
     "Secondo anno/Basi di dati mod. 1/Images/Vincoli sottoclassi.png",
-    "Secondo anno/Algoritmi e strutture dati mod. 1/2 - Classi asintotiche.md",
     "Secondo anno/Basi di dati mod. 1/Images/L2.pdf",
     "Secondo anno/Basi di dati mod. 1/Images/Non confermato 40388.crdownload",
     "Secondo anno/Basi di dati mod. 1/Images/Tipi di associazioni.png",
@@ -183,33 +207,10 @@
     "Secondo anno/Basi di dati mod. 1/Images/aaa-removebg-preview.png.crdownload",
     "Secondo anno/Basi di dati mod. 1/Images/Tipi di associazioni.png.crdownload",
     "Secondo anno/Basi di dati mod. 1/Images/EsercitazioneModConcettuale.pdf",
-    "Secondo anno/Basi di dati mod. 1/Images/Non confermato 46621.crdownload",
-    "Secondo anno/Basi di dati mod. 1/Introduzione.md",
-    "Secondo anno/Basi di dati mod. 1/Images/Associazioni.png.crdownload",
     "Secondo anno/Algoritmi e strutture dati mod. 1/Images/Associazioni-removebg-preview.png",
-    "Secondo anno/Algoritmi e strutture dati mod. 1/Images/Associazioni-removebg-preview.png.crdownload",
     "Secondo anno/Algoritmi e strutture dati mod. 1/Images/Plot complessità.png",
     "Primo anno/Secondo semestre/Calcolo 2/Images/Cambio variabili.svg",
-    "Secondo anno/Algoritmi e strutture dati mod. 1/1 - Fibonacci.md",
-    "Primo anno/Primo semestre/Algebra lineare/Rette e piani.md",
-    "Primo anno/Primo semestre/Calcolo 1/Funzioni/Cos'è una funzione.md",
-    "Primo anno/Secondo semestre/Architettura degli elaboratori mod. 2/Memoria virtuale/Gestione memoria e protezione del SO.md",
-    "Primo anno/Secondo semestre/Architettura degli elaboratori mod. 2/Memoria virtuale/Mapping.md",
-    "Primo anno/Secondo semestre/Architettura degli elaboratori mod. 2/6 - Input Output/Bus.md",
-    "Primo anno/Secondo semestre/Architettura degli elaboratori mod. 2/6 - Input Output/Controller.md",
-    "Primo anno/Secondo semestre/Architettura degli elaboratori mod. 2/2 - Cache/Prestazioni.md",
-    "Primo anno/Secondo semestre/Architettura degli elaboratori mod. 2/2 - Cache/Cache associativa.md",
-    "Primo anno/Primo semestre/Algebra lineare/Sistema di generatori.md",
-    "Primo anno/Primo semestre/Algebra lineare/Numeri Complessi.md",
-    "Primo anno/Primo semestre/Algebra lineare/Matrici.md",
-    "Primo anno/Primo semestre/Algebra lineare/Grafi.md",
-    "Primo anno/Secondo semestre/Calcolo 2/Funzioni a più variabili reali/Curve di livello e dominio.md",
-    "Primo anno/Primo semestre/Architettura degli elaboratori mod. 1/1 - Rappresentazione dell'informazione/Altri tipi di rappresentazioni.md",
-    "Primo anno/Secondo semestre/Programmazione e laboratorio/Teoria/titolo.md",
-    "Primo anno/Secondo semestre/Programmazione e laboratorio/Notes/Riassunto.md",
-    "Primo anno/Secondo semestre/Programmazione e laboratorio/Notes/Guida a C++.md",
     "Primo anno/Secondo semestre/Architettura degli elaboratori mod. 2/Images/Organizzazione gerarchia.png",
-    "Primo anno/Secondo semestre/Calcolo 2/Images/Verifica semplicità.png",
     "Untitled.canvas"
   ]
 }
