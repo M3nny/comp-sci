@@ -97,7 +97,7 @@ Si può quindi scrivere ogni evento $A$ come unione numerabile delle sue interse
 $$A=\bigcup_{i=1}^\infty(A\cap C_i)$$
 
 ## Definizione di probabilità
-La **probabilità** deve rispettare i seguenti assiomi:
+La **probabilità** deve rispettare i seguenti **assiomi**:
 
 1. **Positività**: la probabilità è un valore reale compreso tra $0$ e $1$
 $$0\leq\mathbb{P}[A]\leq 1$$
@@ -105,6 +105,25 @@ $$0\leq\mathbb{P}[A]\leq 1$$
 $$\mathbb{P}[\Omega]=1$$
 3. **Additività**: se $A_1,A_2,...$ è una sequenza di eventi incompatibili allora la probabilità dell'unione degli eventi $A_n$ è data dalla somma delle probabilità degli eventi $A_n$
 $$\mathbb{P}\left[\bigcup_{n=1}^\infty A_n\right]=\sum_{n=1}^\infty\mathbb{P}[A_n]$$
+### Proprietà della probabilità
 >[!Interpretazione della probabilità]
 >Più $\mathbb{P}[A]$ è vicina a $1$, più ci aspettiamo che l'evento si avveri
+
+- **Complementare**: $\mathbb{P}[\overline{A}]=1-\mathbb{P}[A]$
+- **Evento impossibile**: $\mathbb{P}[\emptyset]=\mathbb{P}[\overline{\Omega}]=1-\mathbb{P}[\Omega]=0$
+- **Unione**: $\mathbb{P}[A\cup B]=\mathbb{P}[A]+\mathbb{P}[B]-\mathbb{P}[A\cap B]$
+- **Partizione** se $C_1,C_2,...$ sono partizioni allora: $\mathbb{P}\left[\bigcup\limits_{i=1}^\infty C_i\right]=\mathbb{P}[\Omega]=1$
+
+>[!Legge della probabilità totale]
+>Se $C_1,C_2,...$ sono una partizione di $\Omega$ allora la probabilità di qualsiasi evento $A$ può essere scritta come la somma tra le intersezioni tra $A$ ed ogni partizione $C_i$:
+>$$\mathbb{P}[A]=\sum_i\mathbb{P}[A\cap C_i]$$
+
+In uno **spazio campionario finito** possiamo scrivere la probabilità dei singoli elementi di $\Omega=\{\omega_1,...,\omega_n\}$ tramite:
+$$p_i=\mathbb{P}[\{\omega_i\}]=\frac{1}{n}$$
+per ogni evento $A=\{\omega_1,...,\omega_n\}$ possiamo quindi scrivere:
+$$\mathbb{P}[A]=\frac{\text{n° casi favorevoli}}{\text{n° casi possibili}}$$
+>[!Attention]
+>Questa formula vale solo se gli elementi elementari sono **equiprobabili** (e.g. lancio di un dado equilibrato)
+
+
 

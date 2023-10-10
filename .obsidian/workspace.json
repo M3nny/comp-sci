@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Secondo anno/Algoritmi e strutture dati mod. 1/2 - Classi asintotiche.md",
+                "file": "Secondo anno/Programmazione ad oggetti mod. 1/Information hiding.md",
                 "mode": "source",
                 "source": false
               }
@@ -93,7 +93,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Secondo anno/Algoritmi e strutture dati mod. 1/2 - Classi asintotiche.md",
+                "file": "Secondo anno/Programmazione ad oggetti mod. 1/Information hiding.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -110,7 +110,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Secondo anno/Algoritmi e strutture dati mod. 1/2 - Classi asintotiche.md",
+                "file": "Secondo anno/Programmazione ad oggetti mod. 1/Information hiding.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -133,7 +133,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Secondo anno/Algoritmi e strutture dati mod. 1/2 - Classi asintotiche.md"
+                "file": "Secondo anno/Programmazione ad oggetti mod. 1/Information hiding.md"
               }
             }
           },
@@ -163,15 +163,17 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "acee44268ec38a58",
+  "active": "a1163d9af64d6878",
   "lastOpenFiles": [
     "Secondo anno/Probabilità e statistica/Probabilità elementare.md",
+    "Secondo anno/Programmazione ad oggetti mod. 1/Information hiding.md",
+    "Secondo anno/Programmazione ad oggetti mod. 1/Classi.md",
+    "Secondo anno/Sistemi operativi mod. 1/Introduzione.md",
+    "Secondo anno/Sistemi operativi mod. 1/Processi e thread.md",
+    "Secondo anno/Algoritmi e strutture dati mod. 1/2 - Classi asintotiche.md",
     "Secondo anno/Probabilità e statistica/Images/Partizioni.png",
     "Secondo anno/Probabilità e statistica/Images",
     "Secondo anno/Probabilità e statistica/Nuova cartella",
-    "Secondo anno/Algoritmi e strutture dati mod. 1/2 - Classi asintotiche.md",
-    "Secondo anno/Programmazione ad oggetti mod. 1/Classi.md",
-    "Secondo anno/Sistemi operativi mod. 1/Processi e thread.md",
     "Primo anno/Secondo semestre/Calcolo 2/Funzioni a più variabili reali/Curve di livello e dominio.md",
     "Primo anno/Secondo semestre/Calcolo 2/Curve parametriche/Funzioni vettoriali.md",
     "Primo anno/Secondo semestre/Calcolo 2/Curve parametriche/Curve regolari e forma polare.md",
@@ -192,8 +194,6 @@
     "Primo anno/Secondo semestre/Architettura degli elaboratori mod. 2/ARM ISA/Branches.md",
     "Primo anno/Primo semestre/Matematica discreta/Il principio di induzione.md",
     "Primo anno/Primo semestre/Matematica discreta/Regole di divisibilità.md",
-    "Primo anno/Primo semestre/Matematica discreta/mcm e MCD.md",
-    "Primo anno/Primo semestre/Matematica discreta/Le sommatorie.md",
     "Secondo anno/Programmazione ad oggetti mod. 1",
     "Secondo anno/Sistemi operativi mod. 1/Images/Process table.png",
     "Secondo anno/Sistemi operativi mod. 1/Images/Modello di processo.png",
