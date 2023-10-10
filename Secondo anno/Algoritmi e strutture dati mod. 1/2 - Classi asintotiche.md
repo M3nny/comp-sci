@@ -134,7 +134,7 @@ $$\lim\limits_{n\to\infty}\frac{f(n)}{g(n)}=+\infty\implies f(n)=\Omega(g(n))$$
 
 - Se $\lim\limits_{n\to\infty}\frac{f(n)}{g(n)}=\ell\space\text{con}\space 0<\ell<\infty$ allora $f(n)=\Theta(g(n))$
 	versione generalizzata:
-	$$\lim_{n\to\infty}\frac{f(n)}{g(n)}=\begin{cases}0\space (\iff f(n)=o(g(n))&\implies f(n)=O(g(n))\\\ell,\space \ell\in]0,\infty[&\implies f(n)=\Theta(g(n))\\\infty\space(\iff f(n)=\omega(g(n))&\implies f(n)=\Omega(g(n))\end{cases}$$
+	$$\boxed{\lim_{n\to\infty}\frac{f(n)}{g(n)}=\begin{cases}0\space (\iff f(n)=o(g(n))&\implies f(n)=O(g(n))\\\ell,\space \ell\in]0,\infty[&\implies f(n)=\Theta(g(n))\\\infty\space(\iff f(n)=\omega(g(n))&\implies f(n)=\Omega(g(n))\end{cases}}$$
 	Tuttavia questa osservazione non vale per funzioni il cui limite non è definito come $\sin,\cos...$ (questi casi non si verificheranno nel corso)	
 
 ### Polinomi
@@ -144,3 +144,12 @@ $$\lim\limits_{n\to\infty}\frac{f(n)}{g(n)}=+\infty\implies f(n)=\Omega(g(n))$$
 Esempi:
 - $3n^3+2n^2+6n+5=\Theta(n^3)$
 - $27n^2+n^2\log(n)+\sqrt{n}+\log(n^2) = \Theta(n^2\log(n))$
+
+Generalizzando la regola dei polinomi, otteniamo:
+$$f(n)+o(f(n))=\Theta(f(n))$$
+ovvero sommando una funzione $f$ ad una funzione che cresce più lentamente di $f$, otteniamo che il risultato comunque si comporta come $f$.
+
+- **Dimostrazione**:
+	$$\begin{rcases}g(n)=f(n)+h(n)\\h(n)=o(f(n))\end{rcases}\implies g(n)=\Theta(f(n))$$
+	$$\lim_{n\to\infty}\frac{g(n)}{f(n)}=\lim_{n\to\infty}\frac{f(n)+h(n)}{f(n)}=\lim_{n\to\infty}1+\frac{h(n)}{f(n)}=1$$
+	otteniamo un limite finito in quanto per definizione di $o(f(n))$ il rapporto $\frac{h(n)}{f(n)}$ tende a $0$.

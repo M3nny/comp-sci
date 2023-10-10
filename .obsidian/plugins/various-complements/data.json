@@ -414,6 +414,78 @@
           "lastUpdated": 1696925283733
         }
       }
+    },
+    "complessità": {
+      "complessità": {
+        "currentFile": {
+          "count": 5,
+          "lastUpdated": 1696965659105
+        }
+      }
+    },
+    "MyAlgorithm": {
+      "MyAlgorithm": {
+        "currentFile": {
+          "count": 1,
+          "lastUpdated": 1696964936377
+        }
+      }
+    },
+    "\\frac{n}{2}": {
+      "\\frac{n}{2}": {
+        "currentFile": {
+          "count": 4,
+          "lastUpdated": 1696966188341
+        }
+      }
+    },
+    "ricorsiva": {
+      "ricorsiva": {
+        "currentFile": {
+          "count": 1,
+          "lastUpdated": 1696965747083
+        }
+      }
+    },
+    "\\frac{n}{2^2}": {
+      "\\frac{n}{2^2}": {
+        "currentFile": {
+          "count": 5,
+          "lastUpdated": 1696966562186
+        }
+      }
+    },
+    "c\\log_2n+T": {
+      "c\\log_2n+T": {
+        "currentFile": {
+          "count": 1,
+          "lastUpdated": 1696966702438
+        }
+      }
+    },
+    "Cosideramo": {
+      "Cosideramo": {
+        "currentFile": {
+          "count": 1,
+          "lastUpdated": 1696967048778
+        }
+      }
+    },
+    "\\begin{flalign}": {
+      "\\begin{flalign}": {
+        "currentFile": {
+          "count": 1,
+          "lastUpdated": 1696968190639
+        }
+      }
+    },
+    "\\end{flalign}": {
+      "\\end{flalign}": {
+        "currentFile": {
+          "count": 1,
+          "lastUpdated": 1696968352993
+        }
+      }
     }
   }
 }
