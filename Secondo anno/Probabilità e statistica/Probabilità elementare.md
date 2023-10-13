@@ -125,5 +125,32 @@ $$\mathbb{P}[A]=\frac{\text{n° casi favorevoli}}{\text{n° casi possibili}}$$
 >[!Attention]
 >Questa formula vale solo se gli elementi elementari sono **equiprobabili** (e.g. lancio di un dado equilibrato)
 
+## Popolazioni e sottopopolazioni
+Immaginiamo di avere un urna con $N$ palline di cui $m$ hanno la caratteristica che ci interessa, mentre $N-m$ non hanno la caratteristica:
+- $\mathbb{P}[\text{successo}]=\frac{m}{N}$
+- $\mathbb{P}[insuccesso]=\frac{N-m}{N}=1-\frac{m}{n}$
+
+**Con reinserimento** per ottenere la probabilità di estrarre $k$ palline che hanno la caratteristica devo fare molti conti: caso in cui $k=0$: $\frac{\#A_0}{\#\Omega}$, caso in cui $k=1$: $\frac{\#A_1}{\#\Omega}$ etc...
+Per evitare di fare sempre tutti i conti mi basta trovare $\Omega$ e applicare la seguente formula per trovare quale è la probabilità di estrarre $k$ elementi con la caratteristica che voglio:
+$$\mathbb{P}[A_k]=\binom{n}{k}\left(\frac{m}{N}\right)^k\left(1-\frac{m}{N}\right)^{n-k}$$
+Dove $\binom{n}{k}$ sono tutti i modi ordinare le soluzioni, $\frac{m}{N}$ sono le probabilità di successo mentre $1-\frac{m}{N}$ le probabilità di insuccesso e gli esponenti riguardano la quantità di palline che portano al successo ed all'insuccesso.
+
+**Senza reinserimento** la formula cambia, e si può applicare solo se:
+- $n\leq N$: la quantità di palline estratte è minore o uguale a quelle presenti
+- $k\leq m$: le palline estratte con la caratteristica desiderata sono minori o uguali rispetto a le palline con la caratteristica totali
+- $n-k\leq N-m$: per complemento della condizione precedente abbiamo che gli elementi estratti senza la caratteristica devono essere minori o uguali di quelli totali senza caratteristica
+
+$$\mathbb{P}[A_k]=\frac{\binom{m}{k}\binom{N-m}{n-k}}{\binom{N}{n}}$$
+
+>[!Example]
+>Ho un urna con $7$ palline, di cui: $4$ bianche e $3$ nere.
+>Quale è la probabilità di estrarre _due_ palline bianche facendo _tre_ estrazioni?
+>**Con reinserimento**:
+>$$\mathbb{P}[A_2]=\binom{3}{2}\left(\frac{4}{7}\right)^2\left(1-\frac{4}{7}\right)^{3-2}\approx 0.41$$
+>**Senza reinserimento**:
+>$$\mathbb{P}[A_2]=\frac{\binom{4}{2}\binom{7-4}{3-2}}{\binom{7}{3}}\approx 0.51$$
+
+
+
 
 

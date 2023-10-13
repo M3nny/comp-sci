@@ -107,3 +107,24 @@ Consiste nello "**srotolare**" le chiamate ricorsive fino al caso base.
 >&=3^{\log_3n^2}+n\frac{n-1}{2}\\
 >&=n^2+\frac{n(n-1)}{2}=\Theta(n^2)
 >\end{flalign}$$
+
+#### Metodo della sostituzione
+Consiste nell'**indovinare** la complessità dell'algoritmo e poi dimostrarla per induzione.
+>[!Example]
+>$$T(n)=\begin{cases}1&\text{se }n=1\\T\lfloor\frac{n}{2}\rfloor+n&\text{se }n\geq 2\end{cases}$$
+>Ipotizzo $T(n)=O(n)$, quindi usando la definizione di $O$:
+>$$\exists c>0,\exists n_0\in\mathbb{N}|\forall n\geq n_0:\quad T(n)\leq c\cdot n$$
+>Dimostrazione per inuduzione:
+>**Caso base**: $n=1$
+>$$T(1)\leq c\cdot 1\implies 1\leq c\quad \text{vero}\forall c\geq 1$$
+>**Passo induttivo**
+>Suppongo che la proprietà valga fino a $n-1$:
+>$$\begin{flalign}
+>T(n)&=T\left(\Big\lfloor\frac{n}{2}\Big\rfloor\right)+n\\
+>&\leq c\cdot\Big\lfloor\frac{n}{2}\Big\rfloor+n\\
+>&\leq c\cdot\frac{n}{2}+n\\
+>&=\left(\frac{c}{2}+1\right)\cdot n
+>\end{flalign}$$
+>Sotto quali condizioni $\frac{c}{2}+1\leq c$ ?
+>$$1\leq\frac{c}{2}\iff c\geq 2$$
+>La proprietà risulta quindi verificata per $c\geq 2$ 
