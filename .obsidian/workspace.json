@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Secondo anno/Programmazione ad oggetti mod. 1/Javadoc.md",
+                "file": "Secondo anno/Basi di dati mod. 1/Modello relazionale.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Secondo anno/Programmazione ad oggetti mod. 1/Javadoc.md",
+                "file": "Secondo anno/Basi di dati mod. 1/Modello relazionale.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Secondo anno/Programmazione ad oggetti mod. 1/Javadoc.md",
+                "file": "Secondo anno/Basi di dati mod. 1/Modello relazionale.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Secondo anno/Programmazione ad oggetti mod. 1/Javadoc.md"
+                "file": "Secondo anno/Basi di dati mod. 1/Modello relazionale.md"
               }
             }
           },
@@ -157,12 +157,16 @@
   },
   "active": "d3cffb2936c182f1",
   "lastOpenFiles": [
+    "Secondo anno/Probabilità e statistica/Probabilità condizionata.md",
+    "Secondo anno/Probabilità e statistica/Probabilità elementare.md",
+    "Secondo anno/Basi di dati mod. 1/Modello relazionale.md",
+    "Secondo anno/Basi di dati mod. 1/Images/Attributo composto.png",
+    "Secondo anno/Basi di dati mod. 1/Images/Risoluzione attributi composti.png",
+    "Secondo anno/Programmazione ad oggetti mod. 1/Javadoc.md",
     "Secondo anno/Basi di dati mod. 1/Images/Lecture3_ValueReferenceTypes (1).pdf",
     "Secondo anno/Basi di dati mod. 1/Images/Non confermato 407216.crdownload",
-    "Secondo anno/Programmazione ad oggetti mod. 1/Javadoc.md",
     "Secondo anno/Algoritmi e strutture dati mod. 1/2 - Classi asintotiche.md",
     "Secondo anno/Algoritmi e strutture dati mod. 1/3 - Complessità di un algoritmo.md",
-    "Secondo anno/Basi di dati mod. 1/Modello relazionale.md",
     "Secondo anno/Basi di dati mod. 1/Images/Partizionamento orizzontale.png",
     "Secondo anno/Basi di dati mod. 1/Images/Partizionamento verticale.png",
     "Secondo anno/Basi di dati mod. 1/Images/Partizionamento verticale.png.crdownload",
@@ -172,10 +176,7 @@
     "Secondo anno/Basi di dati mod. 1/Images/1_to_1.png",
     "Secondo anno/Basi di dati mod. 1/Images/N_to_1_ricorsiva.png",
     "Secondo anno/Basi di dati mod. 1/Images/N_to_1_parziale.png",
-    "Secondo anno/Basi di dati mod. 1/Images/N_to_1_totale.png",
-    "Secondo anno/Basi di dati mod. 1/Images/Obj_to_rel_N_to_1.png",
     "Secondo anno/Algoritmi e strutture dati mod. 1/4 - Teorema master.md",
-    "Secondo anno/Probabilità e statistica/Probabilità elementare.md",
     "Secondo anno/Basi di dati mod. 1/Progettazione e modellazione.md",
     "Secondo anno/Sistemi operativi mod. 1/Processi e thread.md",
     "Primo anno/Primo semestre/Matematica discreta/Le sommatorie.md",
@@ -202,7 +203,6 @@
     "Secondo anno/Sistemi operativi mod. 1/Nuova cartella",
     "Secondo anno/Basi di dati mod. 1/Images/L2.pdf",
     "Secondo anno/Basi di dati mod. 1/Images/Non confermato 40388.crdownload",
-    "Secondo anno/Basi di dati mod. 1/Images/aaa-removebg-preview.png.crdownload",
     "Untitled.canvas"
   ]
 }

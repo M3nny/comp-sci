@@ -113,6 +113,11 @@ $$\mathbb{P}\left[\bigcup_{n=1}^\infty A_n\right]=\sum_{n=1}^\infty\mathbb{P}[A_
 - **Evento impossibile**: $\mathbb{P}[\emptyset]=\mathbb{P}[\overline{\Omega}]=1-\mathbb{P}[\Omega]=0$
 - **Unione**: $\mathbb{P}[A\cup B]=\mathbb{P}[A]+\mathbb{P}[B]-\mathbb{P}[A\cap B]$
 - **Partizione** se $C_1,C_2,...$ sono partizioni allora: $\mathbb{P}\left[\bigcup\limits_{i=1}^\infty C_i\right]=\mathbb{P}[\Omega]=1$
+- $\mathbb{P}[\overline{A}\cup\overline{B}]=\mathbb{P}[\overline{A\cap B}]$
+- $\mathbb{P}[\overline{A}\cap\overline{B}]=\mathbb{P}[\overline{A\cup B}]=1-\mathbb{P}[A\cup B]$ 
+- $\mathbb{P}[A\cup B\cup C] = \mathbb{P}[A]+\mathbb{P}[B]+\mathbb{P}[C]-\mathbb{P}[A\cap B]-\mathbb{P}[A\cap C]-\mathbb{P}[B\cap C]+\mathbb{P}[A\cap B\cap C]$
+
+ 
 
 >[!Legge della probabilità totale]
 >Se $C_1,C_2,...$ sono una partizione di $\Omega$ allora la probabilità di qualsiasi evento $A$ può essere scritta come la somma tra le intersezioni tra $A$ ed ogni partizione $C_i$:

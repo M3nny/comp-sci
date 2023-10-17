@@ -346,24 +346,24 @@
     "\\mathbb{P}": {
       "\\mathbb{P}": {
         "currentFile": {
-          "count": 6,
-          "lastUpdated": 1697212243483
+          "count": 16,
+          "lastUpdated": 1697531043332
         }
       }
     },
     "\\overline{A}": {
       "\\overline{A}": {
         "currentFile": {
-          "count": 1,
-          "lastUpdated": 1696923353812
+          "count": 4,
+          "lastUpdated": 1697531076811
         }
       }
     },
     "1-\\mathbb{P}": {
       "1-\\mathbb{P}": {
         "currentFile": {
-          "count": 1,
-          "lastUpdated": 1696923439659
+          "count": 3,
+          "lastUpdated": 1697531054829
         }
       }
     },
@@ -644,6 +644,46 @@
         "currentFile": {
           "count": 1,
           "lastUpdated": 1697222184788
+        }
+      }
+    },
+    "+\\mathbb{P}": {
+      "+\\mathbb{P}": {
+        "currentFile": {
+          "count": 3,
+          "lastUpdated": 1697384834842
+        }
+      }
+    },
+    "-\\mathbb{P}": {
+      "-\\mathbb{P}": {
+        "currentFile": {
+          "count": 3,
+          "lastUpdated": 1697384824053
+        }
+      }
+    },
+    "probabilità": {
+      "probabilità": {
+        "currentFile": {
+          "count": 1,
+          "lastUpdated": 1697529840561
+        }
+      }
+    },
+    "\\frac{\\mathbb{P}": {
+      "\\frac{\\mathbb{P}": {
+        "currentFile": {
+          "count": 3,
+          "lastUpdated": 1697530844573
+        }
+      }
+    },
+    "}{\\mathbb{P}": {
+      "}{\\mathbb{P}": {
+        "currentFile": {
+          "count": 3,
+          "lastUpdated": 1697530855278
         }
       }
     }

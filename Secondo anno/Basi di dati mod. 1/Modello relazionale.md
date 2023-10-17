@@ -93,3 +93,16 @@ Possiamo risolvere l'ereditarietà in tre modi.
 
 - **Partizionamento orizzontale**: se il padre non ha associazioni verso di lui, posso eliminare il padre e copiare i suoi attributi compresa PK e FK nei figli.
 ![[Partizionamento orizzontale.png]]
+
+Le **chiavi primarie** vanno definite nei seguenti modi:
+- **Classi radice** (prive di superclasse): attributo univoco, se non esiste se ne crea uno
+- **Sottoclassi**: chiave della superclasse
+- **Relazioni N:M**: combinazione delle chiave esterne
+
+### Attributi composti
+![[Attributo composto.png|400]]
+Possiamo ristrutturare gli **attributi composti** in due modi:
+1. **Creo una sottoclasse** che contiene gli attributi semplici dell'attributo che precedentemente era composto e metto come PK la PK del padre.
+2. **Creo altre due tabelle**, una in cui la PK sarà la stessa PK della tabella originale ed essa conterrà anche gli attributi semplici dell'attributo composto, mentre l'altra tabella sarà di relazione, conterrà due FK che puntano alle PK delle altre due tabelle le quali assieme formeranno la PK della tabella di relazione.
+
+![[Risoluzione attributi composti.png|700]]
