@@ -63,12 +63,11 @@ e prende il nome di **coefficiente binomiale** $n$ su $r$.
 > Tra l'altro si può anche vedere come $\frac{\text{disp. senza rip di } n}{\text{perm. senza rip. di }r}$
 
 - **Combinazioni con ripetizione**:
-$$\frac{(n+r-1)!}{r!(n-r)!}=\begin{pmatrix}n+r-1\\r\end{pmatrix}$$
+$$\frac{(n+r-1)!}{r!(n-1)!}=\begin{pmatrix}n+r-1\\r\end{pmatrix}$$
 
 >[!Example]
->Quante sono le _combinazioni_ anche con ripetizione di 3 lettere dell'insieme di 5 lettere $\{A,B,C,D,E\}$?
->Questa volta non voglio i sottoinsiemi, quindi posso cercare anche le ripetizioni del tipo: $AAA, BBB, CCC, ...$ quindi dovrò sommare al numeratore $r-1$:
->$$\frac{(5+3-1)!}{3!(5-3)!}=420$$
+>Quanti sono i sottoinsiemi contenenti anche ripetizioni dello stesso elemento di 3 lettere dell'insieme di 5 lettere $\{A,B,C,D,E\}$?
+>$$\frac{(5+3-1)!}{3!(5-1)!}=35$$
 >
 
 ## Fenomeni aleatori

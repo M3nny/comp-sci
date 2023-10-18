@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Secondo anno/Algoritmi e strutture dati/Mod. 2/2 - Dizionari.md",
+                "file": "Secondo anno/Probabilità e statistica/Probabilità elementare.md",
                 "mode": "source",
                 "source": false
               }
@@ -69,7 +69,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 305.5110321044922
+    "width": 305.5110321044922,
+    "collapsed": true
   },
   "right": {
     "id": "282a9548711da6a0",
@@ -85,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Secondo anno/Algoritmi e strutture dati/Mod. 2/2 - Dizionari.md",
+                "file": "Secondo anno/Probabilità e statistica/Probabilità elementare.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Secondo anno/Algoritmi e strutture dati/Mod. 2/2 - Dizionari.md",
+                "file": "Secondo anno/Probabilità e statistica/Probabilità elementare.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +126,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Secondo anno/Algoritmi e strutture dati/Mod. 2/2 - Dizionari.md"
+                "file": "Secondo anno/Probabilità e statistica/Probabilità elementare.md"
               }
             }
           },
@@ -157,8 +158,8 @@
   },
   "active": "821e707acd532fee",
   "lastOpenFiles": [
-    "Secondo anno/Algoritmi e strutture dati/Mod. 2/1 - Strutture dati.md",
     "Secondo anno/Algoritmi e strutture dati/Mod. 2/2 - Dizionari.md",
+    "Secondo anno/Algoritmi e strutture dati/Mod. 2/1 - Strutture dati.md",
     "Secondo anno/Algoritmi e strutture dati/Mod. 2",
     "Secondo anno/Algoritmi e strutture dati",
     "Secondo anno/Sistemi operativi mod. 1/Processi.md",
