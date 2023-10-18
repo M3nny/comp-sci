@@ -13,7 +13,19 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Secondo anno/Basi di dati mod. 1/Modello relazionale.md",
+                "file": "Secondo anno/Sistemi operativi mod. 1/Thread.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "86b4a51282588566",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Secondo anno/Sistemi operativi mod. 1/Processi.md",
                 "mode": "source",
                 "source": false
               }
@@ -65,11 +77,13 @@
               "state": {}
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
-    "width": 305.5110321044922
+    "width": 305.5110321044922,
+    "collapsed": true
   },
   "right": {
     "id": "282a9548711da6a0",
@@ -85,7 +99,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Secondo anno/Basi di dati mod. 1/Modello relazionale.md",
+                "file": "Secondo anno/Sistemi operativi mod. 1/Thread.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +116,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Secondo anno/Basi di dati mod. 1/Modello relazionale.md",
+                "file": "Secondo anno/Sistemi operativi mod. 1/Thread.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +139,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Secondo anno/Basi di dati mod. 1/Modello relazionale.md"
+                "file": "Secondo anno/Sistemi operativi mod. 1/Thread.md"
               }
             }
           },
@@ -157,9 +171,15 @@
   },
   "active": "d3cffb2936c182f1",
   "lastOpenFiles": [
+    "Secondo anno/Sistemi operativi mod. 1/Processi.md",
+    "Secondo anno/Sistemi operativi mod. 1/Thread.md",
+    "Secondo anno/Sistemi operativi mod. 1/Images/Thread ibridi.png",
+    "Secondo anno/Sistemi operativi mod. 1/Images/Thread livello kernel.png",
+    "Secondo anno/Sistemi operativi mod. 1/Images/Thread livello utente.png",
+    "Secondo anno/Sistemi operativi mod. 1/Images/Ciclo di vita.png",
+    "Secondo anno/Basi di dati mod. 1/Modello relazionale.md",
     "Secondo anno/Probabilità e statistica/Probabilità condizionata.md",
     "Secondo anno/Probabilità e statistica/Probabilità elementare.md",
-    "Secondo anno/Basi di dati mod. 1/Modello relazionale.md",
     "Secondo anno/Basi di dati mod. 1/Images/Attributo composto.png",
     "Secondo anno/Basi di dati mod. 1/Images/Risoluzione attributi composti.png",
     "Secondo anno/Programmazione ad oggetti mod. 1/Javadoc.md",
@@ -172,13 +192,8 @@
     "Secondo anno/Basi di dati mod. 1/Images/Partizionamento verticale.png.crdownload",
     "Secondo anno/Basi di dati mod. 1/Images/Relazione unica.png",
     "Secondo anno/Basi di dati mod. 1/Images/Gerarchia.png",
-    "Secondo anno/Basi di dati mod. 1/Images/N_to_M.png",
-    "Secondo anno/Basi di dati mod. 1/Images/1_to_1.png",
-    "Secondo anno/Basi di dati mod. 1/Images/N_to_1_ricorsiva.png",
-    "Secondo anno/Basi di dati mod. 1/Images/N_to_1_parziale.png",
     "Secondo anno/Algoritmi e strutture dati mod. 1/4 - Teorema master.md",
     "Secondo anno/Basi di dati mod. 1/Progettazione e modellazione.md",
-    "Secondo anno/Sistemi operativi mod. 1/Processi e thread.md",
     "Primo anno/Primo semestre/Matematica discreta/Le sommatorie.md",
     "Secondo anno/Programmazione ad oggetti mod. 1/Information hiding.md",
     "Secondo anno/Programmazione ad oggetti mod. 1/Classi.md",
@@ -196,8 +211,6 @@
     "Primo anno/Secondo semestre/Architettura degli elaboratori mod. 2/Input Output/Bus.md",
     "Primo anno/Secondo semestre/Architettura degli elaboratori mod. 2/CPU con pipeline/Introduzione.md",
     "Primo anno/Secondo semestre/Architettura degli elaboratori mod. 2/CPU con pipeline/Previsione del branch, interruzioni e ottimizzazione.md",
-    "Primo anno/Secondo semestre/Architettura degli elaboratori mod. 2/CPU con pipeline/Processori superscalari.md",
-    "Primo anno/Secondo semestre/Architettura degli elaboratori mod. 2/CPU con pipeline/Dipendenze RAW.md",
     "Secondo anno/Programmazione ad oggetti mod. 1",
     "Secondo anno/Sistemi operativi mod. 1/Images",
     "Secondo anno/Sistemi operativi mod. 1/Nuova cartella",
