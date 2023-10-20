@@ -346,8 +346,8 @@
     "\\mathbb{P}": {
       "\\mathbb{P}": {
         "currentFile": {
-          "count": 16,
-          "lastUpdated": 1697531043332
+          "count": 31,
+          "lastUpdated": 1697788271025
         }
       }
     },
@@ -418,8 +418,8 @@
     "complessità": {
       "complessità": {
         "currentFile": {
-          "count": 8,
-          "lastUpdated": 1697222171150
+          "count": 9,
+          "lastUpdated": 1697794215540
         }
       }
     },
@@ -434,8 +434,8 @@
     "\\frac{n}{2}": {
       "\\frac{n}{2}": {
         "currentFile": {
-          "count": 4,
-          "lastUpdated": 1696966188341
+          "count": 5,
+          "lastUpdated": 1697793771309
         }
       }
     },
@@ -474,16 +474,16 @@
     "\\begin{flalign}": {
       "\\begin{flalign}": {
         "currentFile": {
-          "count": 2,
-          "lastUpdated": 1697214750454
+          "count": 4,
+          "lastUpdated": 1697798376148
         }
       }
     },
     "\\end{flalign}": {
       "\\end{flalign}": {
         "currentFile": {
-          "count": 1,
-          "lastUpdated": 1696968352993
+          "count": 2,
+          "lastUpdated": 1697798391422
         }
       }
     },
@@ -740,6 +740,142 @@
         "currentFile": {
           "count": 1,
           "lastUpdated": 1697637371364
+        }
+      }
+    },
+    "\\overline{B}": {
+      "\\overline{B}": {
+        "currentFile": {
+          "count": 1,
+          "lastUpdated": 1697788161829
+        }
+      }
+    },
+    "indipendenti": {
+      "indipendenti": {
+        "currentFile": {
+          "count": 1,
+          "lastUpdated": 1697788245545
+        }
+      }
+    },
+    "\\boxed{\\mathbb{P}": {
+      "\\boxed{\\mathbb{P}": {
+        "currentFile": {
+          "count": 1,
+          "lastUpdated": 1697788256496
+        }
+      }
+    },
+    "search": {
+      "search": {
+        "currentFile": {
+          "count": 1,
+          "lastUpdated": 1697792737990
+        }
+      }
+    },
+    "search_index": {
+      "search_index": {
+        "currentFile": {
+          "count": 4,
+          "lastUpdated": 1697796462368
+        }
+      }
+    },
+    "ricorsive": {
+      "ricorsive": {
+        "currentFile": {
+          "count": 1,
+          "lastUpdated": 1697793791670
+        }
+      }
+    },
+    "reallocate": {
+      "reallocate": {
+        "currentFile": {
+          "count": 2,
+          "lastUpdated": 1697796538005
+        }
+      }
+    },
+    "raddoppiamento": {
+      "raddoppiamento": {
+        "currentFile": {
+          "count": 2,
+          "lastUpdated": 1697798049470
+        }
+      }
+    },
+    "radoppiare": {
+      "radoppiare": {
+        "currentFile": {
+          "count": 1,
+          "lastUpdated": 1697797516153
+        }
+      }
+    },
+    "precedente": {
+      "precedente": {
+        "currentFile": {
+          "count": 1,
+          "lastUpdated": 1697798039912
+        }
+      }
+    },
+    "ammortizzata": {
+      "ammortizzata": {
+        "currentFile": {
+          "count": 1,
+          "lastUpdated": 1697798501179
+        }
+      }
+    },
+    "rispettivamente": {
+      "rispettivamente": {
+        "currentFile": {
+          "count": 1,
+          "lastUpdated": 1697799038949
+        }
+      }
+    },
+    "vuoto": {
+      "vuoto": {
+        "currentFile": {
+          "count": 1,
+          "lastUpdated": 1697799157377
+        }
+      }
+    },
+    "Invariante": {
+      "Invariante": {
+        "currentFile": {
+          "count": 1,
+          "lastUpdated": 1697802412969
+        }
+      }
+    },
+    "Inizializzazione": {
+      "Inizializzazione": {
+        "currentFile": {
+          "count": 1,
+          "lastUpdated": 1697803108911
+        }
+      }
+    },
+    "verificare": {
+      "verificare": {
+        "currentFile": {
+          "count": 1,
+          "lastUpdated": 1697805342095
+        }
+      }
+    },
+    "algoritmo": {
+      "algoritmo": {
+        "currentFile": {
+          "count": 1,
+          "lastUpdated": 1697805492919
         }
       }
     }
