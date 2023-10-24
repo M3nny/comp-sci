@@ -34,3 +34,47 @@ la definizione si può estendere ad una collezione infinita di eventi, i quali s
 
 >[!Attention]
 >Eventi indipendenti e disgiunti sono cose diverse, due eventi disgiunti possono essere indipendenti solo se uno di essi ha probabilità $0$.
+
+Sotto l'**ipotesi di indipendenza** possiamo eseguire calcoli semplici, ad esempio:
+- **Sistemi in serie**: dove il sistema $A$ funziona se tutti gli $n$ componenti funzionano e $p_i$ è la probabilità che si guasti l'elemento $i$, se si guastano in modo indipendente allora la probabilità che il sistema funzioni è data da: $$\mathbb{P}[A]=\mathbb{P}\left[\bigcap_{i=1}^n A_i\right]=\prod_{i=1}^n\mathbb{P}[A_i]=\prod_{i=1}^n(1-p_i)$$
+- **Sistemi in parallelo**: funziona quando almeno uno degli $n$ elementi funziona, usando sempre le stesse variabili di prima, se i componenti si guastano in modo indipendente:
+$$\mathbb{P}[A]=1-\mathbb{P}[\overline{A}]=1-\mathbb{P}\left[\bigcap_{i=1}^n\overline{A}_i\right]=1-\prod_{i=1}^n\mathbb{P}[\overline{A}_i]=1-\prod_{i=1}^np_i$$
+---
+## Teorema di Bayes
+A volte, è più semplice calcolare la probabilità di un evento $B$ che dipende da un altro evento $A$, rispetto a calcolare direttamente la probabilità di $A$.
+
+Eseguendo il test di una malattia, abbiamo due esiti:
+- Malato $M$
+- Non malato $\overline{M}$
+Però ci possono essere sia **falsi positivi** $\mathbb{P}\Big[+|\overline{M}\Big]$, sia **falsi negativi** $\mathbb{P}\Big[-|M\Big]$.
+$$\mathbb{P}\Big[M\Big]=\text{prevalenza}\quad\mathbb{P}\Big[+|M\Big]=\text{sensitività}\quad\mathbb{P}\Big[-|\overline{M}\Big]=\text{specificità}$$
+```mermaid
+---
+title: Distribuzione di probabilità della malattia
+---
+stateDiagram-v2
+	direction LR
+    [*] --> M: P(M)
+    [*] --> ¬M: P(¬M)
+    M --> pos(sensitività): P(+|M)
+    M --> neg(falso_negativo): P(-|M)
+    ¬M --> pos(falso_positivo): P(+|¬M)
+    ¬M --> neg(specificità): P(-|¬M)
+```
+Avendo inizialmente i seguenti dati:
+- $\mathbb{P}[M]=0.001$
+- $\mathbb{P}[+|M]=0.95$
+- $\mathbb{P}[-|\overline{M}] = 0.98$
+è facile ricavare la probabilità di un falso positivo e falso negativo:
+$$\mathbb{P}\Big[+, \overline{M}\Big]=\mathbb{P}\Big[\overline{M}\Big]\mathbb{P}\Big[+|\overline{M}\Big] \approx 0.01998\quad\quad\quad\mathbb{P}\Big[-,M\Big]=\mathbb{P}\Big[M\Big]\mathbb{P}\Big[-|M\Big] \approx 0.00005$$
+possiamo ricavare anche la probabilità che una persona sia positiva dopo aver fatto il test:
+$$\mathbb{P}\Big[+\Big]=\mathbb{P}\Big[M\Big]\mathbb{P}\Big[+|M\Big]+\mathbb{P}\Big[\overline{M}\Big]\mathbb{P}\Big[+|\overline{M}\Big] \approx 0.02093$$
+>[!Tip]
+>$\mathbb{P}[A, B] = \mathbb{P}[A\cap B]$
+
+Non è banale invece ricavare quale è la probabilità $M$ e $\overline{M}$, possiamo quindi usare la **formula di Bayes**:
+$$\boxed{\mathbb{P}[C_m|A]=\frac{\mathbb{P}[A|C_m]\mathbb{P}[C_m]}{\sum_i(\mathbb{P}[A|C_i]\mathbb{P}[C_i])}}$$
+quindi:
+$$\mathbb{P}[M|+]=\frac{\mathbb{P}[M\cap +]}{\mathbb{P}[+]}=\frac{\mathbb{P}[+|M]\mathbb{P}[M]}{\mathbb{P}[+|M]\mathbb{P}[M]+\mathbb{P}[+|\overline{M}]\mathbb{P}[\overline{M}]}\approx 0.045$$
+
+---
