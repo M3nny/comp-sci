@@ -74,10 +74,35 @@ Questo sistema porta con sè un **overhead** importante, il quale però **viene 
 Esistono **gruppi utenti più importanti** i quali processi sono altrettanto importanti, questo scheduler decide **quanta potenza della CPU dedicare ad ogni gruppo**.
 Se un gruppo di processi non arriva al suo obbiettivo in tempo, la **priorità del gruppo aumenta**, mantenendo così il principio di **fairness**.
 
+---
 ## Scheduling per sistemi Real-Time
 Finora abbiamo visto algoritmi che potevano andare meglio sia su sistemi _batch_ e sia su sistemi _interattivi_, i quali però sono ben diversi dai sistemi rigidi _real-time_, i quali si dividono in:
 - **Soft real-time**: non garantisce che in vincoli temporali siano soddisfatti (e.g. streaming)
 - **Hard real-time**: i vincoli temporali (periodici o asincroni) devono essere sempre soddisfatti, altrimenti potrebbero esserci conseguenze importanti (e.g. controllo del traffico aereo)
 
+Avendo $m$ eventi periodici dove l'evento $i$ avviene nel periodo $P_i$ e richiede $C_i$ secondi di CPU, si può gestire i carico solo se:
+$$\sum_{i=1}^m\frac{C_i}{P_i}\leq 1$$
+ovvero il sistema **è schedulabile** solo se tutti gli eventi richiedono al massimo $P_i$ secondi di CPU, dove il periodo $P_i$ può anche variare da evento ad evento (come i secondi $C_i$ richiesti).
 
+### Deadline scheduling
+I processi devono essere completati **entro un tempo stabilito**, dopo il quale il loro risultato diventa inutile.
+**Difficile da implementare** in quanto bisogna conoscere i requisiti delle risorse in anticipo, comporta **notevole overhead** ed il servizio offerto agli altri processi potrebbe essere ridotto.
+### Rate-Monotonic (RM)
+**Aumenta la priorità del processo** monotonicamente con la frequenza con cui deve essere eseguito, l'algoritmo usato alla fine è il _RR_.
+Favorisce quindi i processi periodici eseguiti spesso.
+Può anche essere implementata una **deadline** per processi con scadenza diversa dal loro periodo.
+### Earliest-Deadline-First (EDF)
+Sceglie sempre il processo con la **scadenza più vicina**, anche pre-rilasciando il processo corrente, in questo modo si massimizza il throughput e si minimizza il tempo di attesa.
+### Minimum-Laxity-First
+Si comporta similmente ad _EDF_ con la differenza che **basa la priorità sulla lassità**, ovvero la differenza temporale tra deadline, tempo passato dallo stato di ready e tempo rimanente:
+$$L=\text{Deadline}-\text{Tempo passato da ready}-\text{Tempo rimanente}$$
+ovviamente servono tutte queste informazioni per poter schedulare correttamente.
 
+---
+## Scheduling di thread
+Un processo conosce la rilevanza dei thread figli, per questo occorrerebbero algoritmi di scheduling parametrizzati, dove il **meccanismo** risiede nel **kernel** ed i parametri dovrebbero essere scelti dal processo padre, definendo quindi una **politica** a livello utente.
+- **Scheduling a livello utente**:
+	1. Il kernel preleva un processo
+	2. Il processo preleva un proprio thread figlio
+
+- **Scheduling a livello kernel**: il kernel preleva un thread di un processo
