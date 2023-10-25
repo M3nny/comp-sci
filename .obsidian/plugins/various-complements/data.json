@@ -918,6 +918,14 @@
           "lastUpdated": 1698245052680
         }
       }
+    },
+    "\\binom{n}{k}p^k": {
+      "\\binom{n}{k}p^k": {
+        "currentFile": {
+          "count": 2,
+          "lastUpdated": 1698263178816
+        }
+      }
     }
   }
 }

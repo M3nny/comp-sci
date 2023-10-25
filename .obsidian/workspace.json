@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "483d397d3bd36c11",
+        "id": "202a50285c2e2286",
         "type": "tabs",
         "children": [
           {
-            "id": "e7ded35cbdc086a8",
+            "id": "22b968a17abd9643",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Secondo anno/Sistemi operativi mod. 1/Scheduling.md",
+                "file": "Secondo anno/Probabilità e statistica/Formulario.md",
                 "mode": "source",
                 "source": false
               }
@@ -69,8 +69,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 305.5110321044922,
-    "collapsed": true
+    "width": 305.5110321044922
   },
   "right": {
     "id": "282a9548711da6a0",
@@ -86,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Secondo anno/Sistemi operativi mod. 1/Scheduling.md",
+                "file": "Secondo anno/Probabilità e statistica/Formulario.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Secondo anno/Sistemi operativi mod. 1/Scheduling.md",
+                "file": "Secondo anno/Probabilità e statistica/Formulario.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Secondo anno/Sistemi operativi mod. 1/Scheduling.md"
+                "file": "Secondo anno/Probabilità e statistica/Formulario.md"
               }
             }
           },
@@ -156,12 +155,15 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "e7ded35cbdc086a8",
+  "active": "22b968a17abd9643",
   "lastOpenFiles": [
-    "Secondo anno/Sistemi operativi mod. 1/Images/Code multilivello.png",
-    "Secondo anno/Sistemi operativi mod. 1/Scheduling.md",
-    "Secondo anno/Probabilità e statistica/Probabilità elementare.md",
     "Secondo anno/Probabilità e statistica/Probabilità condizionata.md",
+    "Secondo anno/Probabilità e statistica/Probabilità elementare.md",
+    "Secondo anno/Probabilità e statistica/Formulario.md",
+    "Secondo anno/Sistemi operativi mod. 1/Scheduling.md",
+    "Primo anno/Secondo semestre/Calcolo 2/Riassunto.md",
+    "Primo anno/Secondo semestre/Calcolo 2/Curve parametriche/Curve regolari e forma polare.md",
+    "Secondo anno/Sistemi operativi mod. 1/Images/Code multilivello.png",
     "Secondo anno/Algoritmi e strutture dati/Mod. 2/2 - Dizionari.md",
     "Untitled.md",
     "Primo anno/Primo semestre/Matematica discreta/Le sommatorie.md",
@@ -197,13 +199,10 @@
     "Secondo anno/Basi di dati mod. 1/Images/Partizionamento orizzontale.png",
     "Secondo anno/Basi di dati mod. 1/Images/Partizionamento verticale.png",
     "Secondo anno/Basi di dati mod. 1/Images/Partizionamento verticale.png.crdownload",
-    "Secondo anno/Basi di dati mod. 1/Images/Relazione unica.png",
     "Secondo anno/Basi di dati mod. 1/Progettazione e modellazione.md",
     "Secondo anno/Programmazione ad oggetti mod. 1/Information hiding.md",
     "Secondo anno/Programmazione ad oggetti mod. 1/Classi.md",
     "Secondo anno/Sistemi operativi mod. 1/Introduzione.md",
-    "Primo anno/Secondo semestre/Calcolo 2/Funzioni a più variabili reali/Curve di livello e dominio.md",
-    "Primo anno/Secondo semestre/Calcolo 2/Curve parametriche/Funzioni vettoriali.md",
     "Untitled.canvas"
   ]
 }

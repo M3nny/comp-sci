@@ -116,8 +116,6 @@ $$\mathbb{P}\left[\bigcup_{n=1}^\infty A_n\right]=\sum_{n=1}^\infty\mathbb{P}[A_
 - $\mathbb{P}[\overline{A}\cap\overline{B}]=\mathbb{P}[\overline{A\cup B}]=1-\mathbb{P}[A\cup B]$ 
 - $\mathbb{P}[A\cup B\cup C] = \mathbb{P}[A]+\mathbb{P}[B]+\mathbb{P}[C]-\mathbb{P}[A\cap B]-\mathbb{P}[A\cap C]-\mathbb{P}[B\cap C]+\mathbb{P}[A\cap B\cap C]$
 
- 
-
 >[!Legge della probabilità totale]
 >Se $C_1,C_2,...$ sono una partizione di $\Omega$ allora la probabilità di qualsiasi evento $A$ può essere scritta come la somma tra le intersezioni tra $A$ ed ogni partizione $C_i$:
 >$$\mathbb{P}[A]=\sum_i\mathbb{P}[A\cap C_i]$$
@@ -134,12 +132,12 @@ Immaginiamo di avere un urna con $N$ palline di cui $m$ hanno la caratteristica 
 - $\mathbb{P}[\text{successo}]=\frac{m}{N}$
 - $\mathbb{P}[insuccesso]=\frac{N-m}{N}=1-\frac{m}{n}$
 
-**Con reinserimento** per ottenere la probabilità di estrarre $k$ palline che hanno la caratteristica devo fare molti conti: caso in cui $k=0$: $\frac{\#A_0}{\#\Omega}$, caso in cui $k=1$: $\frac{\#A_1}{\#\Omega}$ etc...
+**Con reinserimento (distribuzione binomiale)** per ottenere la probabilità di estrarre $k$ palline che hanno la caratteristica devo fare molti conti: caso in cui $k=0$: $\frac{\#A_0}{\#\Omega}$, caso in cui $k=1$: $\frac{\#A_1}{\#\Omega}$ etc...
 Per evitare di fare sempre tutti i conti mi basta trovare $\Omega$ e applicare la seguente formula per trovare quale è la probabilità di estrarre $k$ elementi con la caratteristica che voglio:
 $$\mathbb{P}[A_k]=\binom{n}{k}\left(\frac{m}{N}\right)^k\left(1-\frac{m}{N}\right)^{n-k}$$
 Dove $\binom{n}{k}$ sono tutti i modi ordinare le soluzioni, $\frac{m}{N}$ sono le probabilità di successo mentre $1-\frac{m}{N}$ le probabilità di insuccesso e gli esponenti riguardano la quantità di palline che portano al successo ed all'insuccesso.
 
-**Senza reinserimento** la formula cambia, e si può applicare solo se:
+**Senza reinserimento (distribuzione ipergeometrica)** la formula cambia, e si può applicare solo se:
 - $n\leq N$: la quantità di palline estratte è minore o uguale a quelle presenti
 - $k\leq m$: le palline estratte con la caratteristica desiderata sono minori o uguali rispetto a le palline con la caratteristica totali
 - $n-k\leq N-m$: per complemento della condizione precedente abbiamo che gli elementi estratti senza la caratteristica devono essere minori o uguali di quelli totali senza caratteristica
