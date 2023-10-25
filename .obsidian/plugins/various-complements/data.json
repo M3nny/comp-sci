@@ -802,8 +802,8 @@
     "algoritmo": {
       "algoritmo": {
         "currentFile": {
-          "count": 1,
-          "lastUpdated": 1697805492919
+          "count": 2,
+          "lastUpdated": 1698225579461
         }
       }
     },
@@ -844,6 +844,70 @@
         "currentFile": {
           "count": 1,
           "lastUpdated": 1698138096225
+        }
+      }
+    },
+    "scheduling": {
+      "scheduling": {
+        "currentFile": {
+          "count": 4,
+          "lastUpdated": 1698230226956
+        }
+      }
+    },
+    "caratteristiche_": {
+      "caratteristiche_": {
+        "currentFile": {
+          "count": 1,
+          "lastUpdated": 1698225593501
+        }
+      }
+    },
+    "Priorità": {
+      "Priorità": {
+        "currentFile": {
+          "count": 1,
+          "lastUpdated": 1698225850554
+        }
+      }
+    },
+    "cambia": {
+      "cambia": {
+        "currentFile": {
+          "count": 1,
+          "lastUpdated": 1698225974618
+        }
+      }
+    },
+    "sopratutto": {
+      "sopratutto": {
+        "currentFile": {
+          "count": 1,
+          "lastUpdated": 1698227486035
+        }
+      }
+    },
+    "varianza": {
+      "varianza": {
+        "currentFile": {
+          "count": 1,
+          "lastUpdated": 1698227959739
+        }
+      }
+    },
+    "Round-Robin": {
+      "Round-Robin": {
+        "currentFile": {
+          "count": 1,
+          "lastUpdated": 1698229185655
+        }
+      }
+    },
+    "soddisfatti": {
+      "soddisfatti": {
+        "currentFile": {
+          "count": 1,
+          "lastUpdated": 1698231819323
         }
       }
     }

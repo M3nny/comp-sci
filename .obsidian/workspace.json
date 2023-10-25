@@ -4,28 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "5e1e0dc5a0ff96fa",
+        "id": "483d397d3bd36c11",
         "type": "tabs",
         "children": [
           {
-            "id": "bb49a1ff9302f39e",
+            "id": "e7ded35cbdc086a8",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Secondo anno/Probabilità e statistica/Probabilità condizionata.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "bcee59839ec74700",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Secondo anno/Probabilità e statistica/Probabilità elementare.md",
+                "file": "Secondo anno/Sistemi operativi mod. 1/Scheduling.md",
                 "mode": "source",
                 "source": false
               }
@@ -98,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Secondo anno/Probabilità e statistica/Probabilità condizionata.md",
+                "file": "Secondo anno/Sistemi operativi mod. 1/Scheduling.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Secondo anno/Probabilità e statistica/Probabilità condizionata.md",
+                "file": "Secondo anno/Sistemi operativi mod. 1/Scheduling.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +126,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Secondo anno/Probabilità e statistica/Probabilità condizionata.md"
+                "file": "Secondo anno/Sistemi operativi mod. 1/Scheduling.md"
               }
             }
           },
@@ -168,8 +156,10 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "bb49a1ff9302f39e",
+  "active": "e7ded35cbdc086a8",
   "lastOpenFiles": [
+    "Secondo anno/Sistemi operativi mod. 1/Images/Code multilivello.png",
+    "Secondo anno/Sistemi operativi mod. 1/Scheduling.md",
     "Secondo anno/Probabilità e statistica/Probabilità elementare.md",
     "Secondo anno/Probabilità e statistica/Probabilità condizionata.md",
     "Secondo anno/Algoritmi e strutture dati/Mod. 2/2 - Dizionari.md",
@@ -214,8 +204,6 @@
     "Secondo anno/Sistemi operativi mod. 1/Introduzione.md",
     "Primo anno/Secondo semestre/Calcolo 2/Funzioni a più variabili reali/Curve di livello e dominio.md",
     "Primo anno/Secondo semestre/Calcolo 2/Curve parametriche/Funzioni vettoriali.md",
-    "Primo anno/Secondo semestre/Calcolo 2/Curve parametriche/Curve regolari e forma polare.md",
-    "Primo anno/Secondo semestre/Calcolo 2/Curve parametriche/Lunghezza arco e integrali di linea.md",
     "Untitled.canvas"
   ]
 }
