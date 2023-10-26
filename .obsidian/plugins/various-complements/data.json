@@ -926,6 +926,46 @@
           "lastUpdated": 1698263178816
         }
       }
+    },
+    "discendente": {
+      "discendente": {
+        "currentFile": {
+          "count": 2,
+          "lastUpdated": 1698344631181
+        }
+      }
+    },
+    "discendenti": {
+      "discendenti": {
+        "currentFile": {
+          "count": 2,
+          "lastUpdated": 1698344769747
+        }
+      }
+    },
+    "profondità": {
+      "profondità": {
+        "currentFile": {
+          "count": 1,
+          "lastUpdated": 1698344898343
+        }
+      }
+    },
+    "sottoalbero": {
+      "sottoalbero": {
+        "currentFile": {
+          "count": 1,
+          "lastUpdated": 1698345109657
+        }
+      }
+    },
+    "\\text{foglie}": {
+      "\\text{foglie}": {
+        "currentFile": {
+          "count": 1,
+          "lastUpdated": 1698345839040
+        }
+      }
     }
   }
 }

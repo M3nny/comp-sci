@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Secondo anno/Sistemi operativi mod. 1/Memoria.md",
+                "file": "Secondo anno/Algoritmi e strutture dati/Mod. 2/3 - Alberi.md",
                 "mode": "source",
                 "source": false
               }
@@ -69,7 +69,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 305.5110321044922
+    "width": 305.5110321044922,
+    "collapsed": true
   },
   "right": {
     "id": "282a9548711da6a0",
@@ -85,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Secondo anno/Sistemi operativi mod. 1/Memoria.md",
+                "file": "Secondo anno/Algoritmi e strutture dati/Mod. 2/3 - Alberi.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Secondo anno/Sistemi operativi mod. 1/Memoria.md",
+                "file": "Secondo anno/Algoritmi e strutture dati/Mod. 2/3 - Alberi.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +126,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Secondo anno/Sistemi operativi mod. 1/Memoria.md"
+                "file": "Secondo anno/Algoritmi e strutture dati/Mod. 2/3 - Alberi.md"
               }
             }
           },
@@ -157,6 +158,8 @@
   },
   "active": "22b968a17abd9643",
   "lastOpenFiles": [
+    "Secondo anno/Algoritmi e strutture dati/Mod. 2/2 - Dizionari.md",
+    "Secondo anno/Algoritmi e strutture dati/Mod. 2/3 - Alberi.md",
     "Secondo anno/Sistemi operativi mod. 1/Memoria.md",
     "Untitled.md",
     "Primo anno/Secondo semestre/Architettura degli elaboratori mod. 2/Cache/Cache diretta.md",
@@ -172,7 +175,6 @@
     "Primo anno/Secondo semestre/Calcolo 2/Riassunto.md",
     "Primo anno/Secondo semestre/Calcolo 2/Curve parametriche/Curve regolari e forma polare.md",
     "Secondo anno/Sistemi operativi mod. 1/Images/Code multilivello.png",
-    "Secondo anno/Algoritmi e strutture dati/Mod. 2/2 - Dizionari.md",
     "Primo anno/Primo semestre/Matematica discreta/Le sommatorie.md",
     "Secondo anno/Algoritmi e strutture dati/Mod. 1/3 - Complessità di un algoritmo.md",
     "Primo anno/Secondo semestre/Programmazione e laboratorio/Notes/Compilazione.md",
@@ -191,7 +193,6 @@
     "Secondo anno/Basi di dati mod. 1/Modello relazionale.md",
     "Secondo anno/Algoritmi e strutture dati/Mod. 2",
     "Secondo anno/Algoritmi e strutture dati",
-    "Secondo anno/Sistemi operativi mod. 1/Processi.md",
     "Secondo anno/Sistemi operativi mod. 1/Images/Thread ibridi.png",
     "Secondo anno/Sistemi operativi mod. 1/Images/Thread livello kernel.png",
     "Secondo anno/Sistemi operativi mod. 1/Images/Thread livello utente.png",
