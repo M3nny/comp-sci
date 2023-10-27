@@ -44,7 +44,7 @@
   "delimiterToDivideSuggestionsForDisplayFromInsertion": "",
   "caretLocationSymbolAfterComplement": "",
   "displayedTextSuffix": " => ...",
-  "enableInternalLinkComplement": true,
+  "enableInternalLinkComplement": false,
   "suggestInternalLinkWithAlias": false,
   "excludeInternalLinkPathPrefixPatterns": "",
   "updateInternalLinksOnSave": true,
@@ -53,7 +53,7 @@
     "beforeRegExp": "",
     "after": ""
   },
-  "enableFrontMatterComplement": true,
+  "enableFrontMatterComplement": false,
   "frontMatterComplementMatchStrategy": "inherit",
   "insertCommaAfterFrontMatterCompletion": false,
   "intelligentSuggestionPrioritization": {
@@ -63,86 +63,6 @@
   "disableOnMobile": false,
   "showLogAboutPerformanceInConsole": false,
   "selectionHistoryTree": {
-    "fibonacci": {
-      "fibonacci": {
-        "currentFile": {
-          "count": 1,
-          "lastUpdated": 1695821041579
-        }
-      }
-    },
-    "\\hat{T}": {
-      "\\hat{T}": {
-        "currentFile": {
-          "count": 4,
-          "lastUpdated": 1695823267911
-        }
-      }
-    },
-    "F_{n-1}+F_{n-2}": {
-      "F_{n-1}+F_{n-2}": {
-        "currentFile": {
-          "count": 1,
-          "lastUpdated": 1695824140119
-        }
-      }
-    },
-    "2^{\\frac{n}{2}}": {
-      "2^{\\frac{n}{2}}": {
-        "currentFile": {
-          "count": 1,
-          "lastUpdated": 1695824604832
-        }
-      }
-    },
-    "Versione": {
-      "Versione": {
-        "currentFile": {
-          "count": 1,
-          "lastUpdated": 1695825707775
-        }
-      }
-    },
-    "temporale": {
-      "temporale": {
-        "currentFile": {
-          "count": 1,
-          "lastUpdated": 1695825741785
-        }
-      }
-    },
-    "spaziale": {
-      "spaziale": {
-        "currentFile": {
-          "count": 1,
-          "lastUpdated": 1695825750015
-        }
-      }
-    },
-    "Costante": {
-      "Costante": {
-        "currentFile": {
-          "count": 2,
-          "lastUpdated": 1695825762548
-        }
-      }
-    },
-    "Lineare": {
-      "Lineare": {
-        "currentFile": {
-          "count": 2,
-          "lastUpdated": 1695825794890
-        }
-      }
-    },
-    "Comincia": {
-      "Comincia": {
-        "currentFile": {
-          "count": 1,
-          "lastUpdated": 1695831517780
-        }
-      }
-    },
     "dispositivi": {
       "dispositivi": {
         "currentFile": {
@@ -964,6 +884,22 @@
         "currentFile": {
           "count": 1,
           "lastUpdated": 1698345839040
+        }
+      }
+    },
+    "multiprogrammazione": {
+      "multiprogrammazione": {
+        "currentFile": {
+          "count": 1,
+          "lastUpdated": 1698427884164
+        }
+      }
+    },
+    "bisogna": {
+      "bisogna": {
+        "currentFile": {
+          "count": 1,
+          "lastUpdated": 1698428851203
         }
       }
     }
