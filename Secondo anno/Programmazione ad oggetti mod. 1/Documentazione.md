@@ -2,8 +2,8 @@ Solitamente in java le capsule sono contenute in file `.jar` i quali sono file c
 - Versione del manifesto
 - Chi ha creato il file jar
 Il file jar inoltre può anche essere eseguibile se si specifica dove si trova il metodo main.
-## Documentazione
-Una parte fondamentale per consegnare un buon codice incapsulato è la documentazione, **javadoc** è lo standard per documentare le API di una libreria java.
+
+Una parte fondamentale per consegnare un buon codice incapsulato è la **documentazione**, **javadoc** è lo standard per documentare le API di una libreria java.
 ```java
 /**
  * Se non specifico nessun tag sto scrivendo la descrizione
@@ -16,6 +16,9 @@ Una parte fondamentale per consegnare un buon codice incapsulato è la documenta
  * @return (specifica cosa ritorna una funzione)
  * @throws (specifica che eccezione lancia)
  * @deprecated (se non si usa più. un metodo ad esempio)
+ * @requires precondizione
+ * @ensures postcondizione
+ * @invariant invariante dell'oggetto (non del ciclo)
 */
 ```
 

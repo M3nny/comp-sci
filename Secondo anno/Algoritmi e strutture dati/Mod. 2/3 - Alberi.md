@@ -24,6 +24,9 @@ Un nodo può avere $0$ o più figli $v$ tali che $(u, v)\in A$.
 - **Altezza di un nodo**: lunghezza del più lungo cammino che scende dal nodo $x$ ad una foglia
 - **Altezza di un albero**: altezza della sua radice
 
+![[Albero esempio.png]]
+>L'**altezza** di $3$ è $3$ mentre tutte le foglie hanno altezza pari a $0$, i **discendenti** di $12$ sono $12,1$, i suoi **antenati** sono $12,3,7$, la **profondità** di $1$ è $3$.
+
 ## Alberi binari
 Sono definiti in modo ricorsivo:
 - Un albero vuoto è un albero binario
@@ -58,3 +61,47 @@ Un albero è $k$-ario **completo** se:
 	- `figli(Tree T, Node v) -> List of Nodes`
 		**Pre**: $v\in T$
 		**Post**: restituisce una lista contenente i figli del nodo $v$
+
+### Implementazione con array
+Prevede l'utilizzo di un array contenente coppie (**info, parent**), contenenti l'informazione del nodo e l'indice del suo nodo padre.
+Sia $T=(N, A)$ un albero di $n$ nodi numerati da $0$ a $n-1$ rappresentabile come segue:
+![[Albero binario.png|400]]
+Il relativo array è:
+
+|  P.info  | a   | b   | c   | d   | e   | f   | g   | h   | i   |
+|:--------:| --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| P.parent | -1  | 0   | 0   | 0   | 1   | 1   | 3   | 6   | 6   |
+|  Indice  | 0   | 1   | 2   | 3   | 4   | 5   | 6   | 7   | 8   |
+
+- $\text{P[v].info}$ è l'informazione
+- $\text{P[v].parent}==u\iff\exists (u,v)\in A$
+- Se $v$ è la radice $\text{P[v].parent == -1}$
+- $\text{P.length}$ rappresenta il numero di nodi nell'albero
+
+La complessità spaziale è:
+$$S(n)=\Theta(n)$$
+#### Padre
+```
+padre (Tree T, Node v)
+	if T.[v].parent == -1
+		return NIL
+	else
+		return T[v].parent
+```
+Semplicemente ritorna `NIL` se è la radice (non ha padre) altrimenti ritorna il padre.
+##### Complessità
+Eseguiamo solo assegnamenti, quindi la complessità è:
+$$T(n)=\Theta(n)$$
+#### Figli
+```
+figli (Tree T, Node v)
+	l = crealista()
+	for i = 0 to T.length - 1
+		if T[i].parent == v
+			inserisci i in l
+	return l
+```
+Creiamo una lista `l` per contenere i figli, poi vediamo se l'elemento dell'array ha come padre `v` e in quel caso lo inseriamo nella lista dei figli.
+##### Complessità
+Dobbiamo scorrere tutta la lista per vedere se esistono figli di `v`, quindi la complessità è (ipotizzando che l'inserimento sia costante):
+$$T(n)=\Theta(n)$$
