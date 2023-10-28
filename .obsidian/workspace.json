@@ -8,12 +8,12 @@
         "type": "tabs",
         "children": [
           {
-            "id": "dee83fcaa3a17405",
+            "id": "0dd96008f3a1de37",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Secondo anno/Sistemi operativi mod. 1/Memoria.md",
+                "file": "Secondo anno/Probabilità e statistica/Variabili casuali.md",
                 "mode": "source",
                 "source": false
               }
@@ -69,7 +69,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 305.5110321044922
+    "width": 305.5110321044922,
+    "collapsed": true
   },
   "right": {
     "id": "282a9548711da6a0",
@@ -85,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Secondo anno/Sistemi operativi mod. 1/Memoria.md",
+                "file": "Secondo anno/Probabilità e statistica/Variabili casuali.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Secondo anno/Sistemi operativi mod. 1/Memoria.md",
+                "file": "Secondo anno/Probabilità e statistica/Variabili casuali.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +126,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Secondo anno/Sistemi operativi mod. 1/Memoria.md"
+                "file": "Secondo anno/Probabilità e statistica/Variabili casuali.md"
               }
             }
           },
@@ -155,22 +156,30 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "dee83fcaa3a17405",
+  "active": "0dd96008f3a1de37",
   "lastOpenFiles": [
-    "Secondo anno/Sistemi operativi mod. 1/Scheduling.md",
+    "Secondo anno/Probabilità e statistica/Images/Funzione di densità.svg",
+    "Excalidraw/Drawing 2023-10-28 12.18.56.excalidraw.md",
+    "Secondo anno/Probabilità e statistica/Variabili casuali.md",
+    "Excalidraw",
+    "Primo anno/Primo semestre/Matematica discreta/La cardinalità.md",
+    "Secondo anno/Probabilità e statistica/Formulario.md",
+    "Secondo anno/Probabilità e statistica/Images/Probabilità di massa (1).png",
+    "Secondo anno/Probabilità e statistica/Images/Probabilità di massa.png",
+    "Excalidraw/Drawing 2023-10-28 10.52.55.excalidraw.md",
+    "Secondo anno/Probabilità e statistica/Images/Riduzione X(Omega).svg",
     "Secondo anno/Sistemi operativi mod. 1/Memoria.md",
+    "Secondo anno/Sistemi operativi mod. 1/Processi.md",
+    "Secondo anno/Sistemi operativi mod. 1/Scheduling.md",
     "Primo anno/Secondo semestre/Architettura degli elaboratori mod. 2/Assembly/Introduzione.md",
     "Primo anno/Primo semestre/Architettura degli elaboratori mod. 1/Introduzione/Architettura base del computer.md",
-    "Secondo anno/Sistemi operativi mod. 1/Processi.md",
     "Secondo anno/Programmazione ad oggetti mod. 1/Documentazione.md",
     "Secondo anno/Sistemi operativi mod. 1/Thread.md",
     "Secondo anno/Basi di dati mod. 1/Linguaggi relazionali.md",
-    "Secondo anno/Probabilità e statistica/Formulario.md",
     "Secondo anno/Algoritmi e strutture dati/Mod. 2/Images/Albero binario.png",
     "Secondo anno/Algoritmi e strutture dati/Mod. 2/Images/Albero esempio.png",
     "Secondo anno/Algoritmi e strutture dati/Mod. 2/3 - Alberi.md",
     "Excalidraw/Drawing 2023-10-27 19.11.40.excalidraw.md",
-    "Excalidraw",
     "Secondo anno/Algoritmi e strutture dati/Mod. 2/2 - Dizionari.md",
     "Secondo anno/Probabilità e statistica/Introduzione.md",
     "Secondo anno/Probabilità e statistica/Probabilità condizionata.md",
@@ -182,11 +191,6 @@
     "Primo anno/Secondo semestre/Architettura degli elaboratori mod. 2/Cache/Cache diretta.md",
     "Primo anno/Secondo semestre/Architettura degli elaboratori mod. 2/Cache/Cache associativa.md",
     "Primo anno/Secondo semestre/Architettura degli elaboratori mod. 2/Cache/Tipologie di memoria.md",
-    "Primo anno/Secondo semestre/Architettura degli elaboratori mod. 2/Cache/Prestazioni.md",
-    "Primo anno/Primo semestre/Architettura degli elaboratori mod. 1/4 - Memoria e circuiti sequenziali/Uso degli elementi di memoria nei circuiti sequenziali.md",
-    "Primo anno/Primo semestre/Architettura degli elaboratori mod. 1/4 - Memoria e circuiti sequenziali/Elementi di memoria.md",
-    "Primo anno/Secondo semestre/Calcolo 2/Riassunto.md",
-    "Primo anno/Secondo semestre/Calcolo 2/Curve parametriche/Curve regolari e forma polare.md",
     "Secondo anno/Sistemi operativi mod. 1/Images/Code multilivello.png",
     "Secondo anno/Probabilità e statistica/Images/ASD 20-06-23 final.pdf",
     "Secondo anno/Probabilità e statistica/Images/Non confermato 518592.crdownload",
@@ -198,10 +202,6 @@
     "Secondo anno/Algoritmi e strutture dati",
     "Secondo anno/Sistemi operativi mod. 1/Images/Thread ibridi.png",
     "Secondo anno/Sistemi operativi mod. 1/Images/Thread livello kernel.png",
-    "Secondo anno/Sistemi operativi mod. 1/Images/Thread livello utente.png",
-    "Secondo anno/Sistemi operativi mod. 1/Images/Ciclo di vita.png",
-    "Secondo anno/Basi di dati mod. 1/Images/Attributo composto.png",
-    "Secondo anno/Basi di dati mod. 1/Images/Risoluzione attributi composti.png",
     "Secondo anno/Basi di dati mod. 1/Images/Lecture3_ValueReferenceTypes (1).pdf",
     "Untitled.canvas"
   ]
