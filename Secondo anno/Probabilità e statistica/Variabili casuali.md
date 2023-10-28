@@ -19,7 +19,7 @@ La probabilità $\mathbb{P}(x)=\mathbb{P}[X=x]$ viene chiamata **funzione di pro
 >$$X\in\{1,2,3,4\}=X(\Omega)\subset\mathbb{R}$$
 >$$\mathbb[X=1]=\frac{2}{7},\quad\mathbb{P}[X=2]=\frac{2}{7},\quad\mathbb{P}[X=3]=\frac{2}{7},\quad\mathbb{P}[X=4]=\frac{1}{7}$$
 >$$P_X(x)=\begin{cases}\frac{2}{7}&\text{se }x=1,2,3\\\frac{1}{7}&\text{se }x=4\\0&\text{altrimenti}\end{cases}$$
->![[Probabilità di massa.png|500]]
+>![[Funzione di massa.png|450]]
 >
 
 >[!Attention]
