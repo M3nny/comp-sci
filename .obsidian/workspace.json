@@ -11,9 +11,11 @@
             "id": "0dd96008f3a1de37",
             "type": "leaf",
             "state": {
-              "type": "image",
+              "type": "markdown",
               "state": {
-                "file": "Secondo anno/Probabilità e statistica/Images/Funzione di massa.png"
+                "file": "Secondo anno/Probabilità e statistica/Variabili casuali.md",
+                "mode": "source",
+                "source": false
               }
             }
           }
@@ -67,7 +69,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 305.5110321044922
+    "width": 305.5110321044922,
+    "collapsed": true
   },
   "right": {
     "id": "282a9548711da6a0",
@@ -83,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Secondo anno/Probabilità e statistica/Images/Funzione di massa.png",
+                "file": "Secondo anno/Probabilità e statistica/Variabili casuali.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -100,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Secondo anno/Probabilità e statistica/Images/Funzione di massa.png",
+                "file": "Secondo anno/Probabilità e statistica/Variabili casuali.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -123,7 +126,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Secondo anno/Probabilità e statistica/Images/Funzione di massa.png"
+                "file": "Secondo anno/Probabilità e statistica/Variabili casuali.md"
               }
             }
           },
@@ -153,18 +156,27 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "0dd96008f3a1de37",
+  "active": "a1163d9af64d6878",
   "lastOpenFiles": [
+    "Secondo anno/Probabilità e statistica/Images/Funzione di ripartizione discreta.png",
+    "Secondo anno/Probabilità e statistica/Images/Funzione di ripartizione continua.png",
+    "Secondo anno/Probabilità e statistica/Images/Funzione di ripartizione discreta (1).png",
+    "Secondo anno/Probabilità e statistica/Introduzione.md",
+    "Secondo anno/Probabilità e statistica/Images/Funzione di massa.png",
+    "Secondo anno/Probabilità e statistica/Images/Funzione di ripartizione continua (1).png",
+    "Secondo anno/Probabilità e statistica/Variabili casuali.md",
+    "Secondo anno/Probabilità e statistica/Formulario.md",
+    "Secondo anno/Probabilità e statistica/Images/Funzione di ripartizione (1).png",
+    "Excalidraw/Drawing 2023-10-30 21.18.31.excalidraw.md",
+    "Excalidraw",
+    "Secondo anno/Programmazione ad oggetti mod. 1/Documentazione.md",
+    "Secondo anno/Probabilità e statistica/Probabilità condizionata.md",
     "Secondo anno/Probabilità e statistica/Images/Riduzione X(Omega).svg",
     "Secondo anno/Probabilità e statistica/Images/Probabilità di massa.png",
     "Secondo anno/Probabilità e statistica/Images/Probabilità composta.png",
-    "Secondo anno/Probabilità e statistica/Variabili casuali.md",
-    "Secondo anno/Probabilità e statistica/Images/Funzione di massa.png",
     "Secondo anno/Probabilità e statistica/Images/Funzione di densità.svg",
     "Excalidraw/Drawing 2023-10-28 12.18.56.excalidraw.md",
-    "Excalidraw",
     "Primo anno/Primo semestre/Matematica discreta/La cardinalità.md",
-    "Secondo anno/Probabilità e statistica/Formulario.md",
     "Secondo anno/Probabilità e statistica/Images/Probabilità di massa (1).png",
     "Excalidraw/Drawing 2023-10-28 10.52.55.excalidraw.md",
     "Secondo anno/Sistemi operativi mod. 1/Memoria.md",
@@ -172,16 +184,11 @@
     "Secondo anno/Sistemi operativi mod. 1/Scheduling.md",
     "Primo anno/Secondo semestre/Architettura degli elaboratori mod. 2/Assembly/Introduzione.md",
     "Primo anno/Primo semestre/Architettura degli elaboratori mod. 1/Introduzione/Architettura base del computer.md",
-    "Secondo anno/Programmazione ad oggetti mod. 1/Documentazione.md",
     "Secondo anno/Sistemi operativi mod. 1/Thread.md",
     "Secondo anno/Basi di dati mod. 1/Linguaggi relazionali.md",
-    "Secondo anno/Algoritmi e strutture dati/Mod. 2/Images/Albero binario.png",
-    "Secondo anno/Algoritmi e strutture dati/Mod. 2/Images/Albero esempio.png",
     "Secondo anno/Algoritmi e strutture dati/Mod. 2/3 - Alberi.md",
     "Excalidraw/Drawing 2023-10-27 19.11.40.excalidraw.md",
     "Secondo anno/Algoritmi e strutture dati/Mod. 2/2 - Dizionari.md",
-    "Secondo anno/Probabilità e statistica/Introduzione.md",
-    "Secondo anno/Probabilità e statistica/Probabilità condizionata.md",
     "Secondo anno/Probabilità e statistica/Probabilità elementare.md",
     "Secondo anno/Sistemi operativi mod. 1/Introduzione.md",
     "Secondo anno/Basi di dati mod. 1/Introduzione.md",
@@ -189,8 +196,6 @@
     "Untitled.md",
     "Primo anno/Secondo semestre/Architettura degli elaboratori mod. 2/Cache/Cache diretta.md",
     "Primo anno/Secondo semestre/Architettura degli elaboratori mod. 2/Cache/Cache associativa.md",
-    "Primo anno/Secondo semestre/Architettura degli elaboratori mod. 2/Cache/Tipologie di memoria.md",
-    "Secondo anno/Sistemi operativi mod. 1/Images/Code multilivello.png",
     "Secondo anno/Probabilità e statistica/Images/ASD 20-06-23 final.pdf",
     "Secondo anno/Probabilità e statistica/Images/Non confermato 518592.crdownload",
     "Secondo anno/Probabilità e statistica/Images/ASD 05-06-23.pdf",
@@ -198,7 +203,6 @@
     "Secondo anno/Probabilità e statistica/Images/Probabilità composta.png.crdownload",
     "Secondo anno/Algoritmi e strutture dati/Mod. 2",
     "Secondo anno/Algoritmi e strutture dati",
-    "Secondo anno/Sistemi operativi mod. 1/Images/Thread ibridi.png",
     "Secondo anno/Basi di dati mod. 1/Images/Lecture3_ValueReferenceTypes (1).pdf",
     "Untitled.canvas"
   ]

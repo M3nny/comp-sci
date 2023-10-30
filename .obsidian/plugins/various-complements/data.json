@@ -63,46 +63,6 @@
   "disableOnMobile": false,
   "showLogAboutPerformanceInConsole": false,
   "selectionHistoryTree": {
-    "\\frac{1}{2}-c": {
-      "\\frac{1}{2}-c": {
-        "currentFile": {
-          "count": 3,
-          "lastUpdated": 1695926183132
-        }
-      }
-    },
-    "\\frac{1}{14}": {
-      "\\frac{1}{14}": {
-        "currentFile": {
-          "count": 1,
-          "lastUpdated": 1695926552632
-        }
-      }
-    },
-    "\\quad\\forall": {
-      "\\quad\\forall": {
-        "currentFile": {
-          "count": 1,
-          "lastUpdated": 1695928379033
-        }
-      }
-    },
-    "\\forall": {
-      "\\forall": {
-        "currentFile": {
-          "count": 1,
-          "lastUpdated": 1696059322352
-        }
-      }
-    },
-    "insieme": {
-      "insieme": {
-        "currentFile": {
-          "count": 1,
-          "lastUpdated": 1696068906707
-        }
-      }
-    },
     "sottoinsiemi": {
       "sottoinsiemi": {
         "currentFile": {
@@ -916,6 +876,30 @@
         "currentFile": {
           "count": 1,
           "lastUpdated": 1698487259161
+        }
+      }
+    },
+    "soddisfa": {
+      "soddisfa": {
+        "currentFile": {
+          "count": 1,
+          "lastUpdated": 1698695655113
+        }
+      }
+    },
+    "proprietà": {
+      "proprietà": {
+        "currentFile": {
+          "count": 1,
+          "lastUpdated": 1698695660999
+        }
+      }
+    },
+    "ripartizione": {
+      "ripartizione": {
+        "currentFile": {
+          "count": 1,
+          "lastUpdated": 1698700363053
         }
       }
     }
