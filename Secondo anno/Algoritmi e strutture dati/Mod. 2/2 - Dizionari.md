@@ -5,7 +5,7 @@ Gli elementi del dominio sono detti **chiavi** e gli elementi del codominio sono
 - **Operazioni**:
 	- `search(Dizionario S, Chiave K) -> elem or {NIL}`
 		**Post**: restituisce il valore associato alla chiave $K$ se presente in $S$, altrimenti restituisce NIL.
-	- `insert(Dizionario S, Elem v, Chiave K)
+	- `insert(Dizionario S, Elem v, Chiave K)`
 		**Post**: associa il valore $v$ alla chiave $K$ 
 	- `delete(Dizionario S, Chiave K)`
 		**Pre**: $K$ deve essere presente in $S$

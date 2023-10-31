@@ -8,12 +8,24 @@
         "type": "tabs",
         "children": [
           {
-            "id": "0dd96008f3a1de37",
+            "id": "fff3d52361731ee4",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Secondo anno/Basi di dati mod. 1/Linguaggi relazionali.md",
+                "file": "Secondo anno/Algoritmi e strutture dati/Mod. 2/3 - Alberi.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "08956a9242471f1c",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Secondo anno/Algoritmi e strutture dati/Mod. 2/2 - Dizionari.md",
                 "mode": "source",
                 "source": false
               }
@@ -69,8 +81,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 305.5110321044922,
-    "collapsed": true
+    "width": 305.5110321044922
   },
   "right": {
     "id": "282a9548711da6a0",
@@ -86,7 +97,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Secondo anno/Basi di dati mod. 1/Linguaggi relazionali.md",
+                "file": "Secondo anno/Algoritmi e strutture dati/Mod. 2/3 - Alberi.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +114,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Secondo anno/Basi di dati mod. 1/Linguaggi relazionali.md",
+                "file": "Secondo anno/Algoritmi e strutture dati/Mod. 2/3 - Alberi.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +137,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Secondo anno/Basi di dati mod. 1/Linguaggi relazionali.md"
+                "file": "Secondo anno/Algoritmi e strutture dati/Mod. 2/3 - Alberi.md"
               }
             }
           },
@@ -155,54 +166,53 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "0dd96008f3a1de37",
+  "active": "fff3d52361731ee4",
   "lastOpenFiles": [
-    "Excalidraw/Drawing 2023-10-31 10.07.45.excalidraw.md",
-    "Secondo anno/Basi di dati mod. 1/Linguaggi relazionali.md",
+    "Excalidraw/Drawing 2023-10-31 22.37.29.excalidraw.md",
+    "Secondo anno/Algoritmi e strutture dati/Mod. 2/Images/Albero figlio sinistro fratello destro.svg",
+    "Excalidraw/Drawing 2023-10-31 23.24.41.excalidraw.md",
+    "Secondo anno/Algoritmi e strutture dati/Mod. 2/3 - Alberi.md",
+    "Secondo anno/Algoritmi e strutture dati/Mod. 2/2 - Dizionari.md",
+    "Secondo anno/Algoritmi e strutture dati/Mod. 2/Images/Albero con strutture collegate.svg",
+    "Excalidraw/Drawing 2023-10-31 22.23.17.excalidraw.md",
+    "Secondo anno/Algoritmi e strutture dati/Mod. 2/Images/Albero k-ario.svg",
+    "Secondo anno/Algoritmi e strutture dati/Mod. 2/Images/Albero binario.png",
+    "Secondo anno/Algoritmi e strutture dati/Mod. 2/Images/Albero esempio.png",
     "Excalidraw",
+    "Secondo anno/Algoritmi e strutture dati/Mod. 2/2 - Dizionari/Implementazioni/Liste doppiamente concatenate.md",
+    "Secondo anno/Algoritmi e strutture dati/Mod. 2/2 - Dizionari/Implementazioni/Array ordinati.md",
+    "Secondo anno/Algoritmi e strutture dati/Mod. 2/1 - Strutture dati.md",
+    "Secondo anno/Algoritmi e strutture dati/Mod. 2/2 - Dizionari/Definizione.md",
+    "Secondo anno/Algoritmi e strutture dati/Mod. 2/2 - Dizionari/Implementazioni",
+    "Secondo anno/Algoritmi e strutture dati/Mod. 2/2 - Dizionari",
+    "Secondo anno/Probabilità e statistica/Variabili casuali.md",
+    "Secondo anno/Probabilità e statistica/Probabilità elementare.md",
+    "Secondo anno/Sistemi operativi mod. 1/Scheduling.md",
+    "Secondo anno/Sistemi operativi mod. 1/Thread.md",
+    "Secondo anno/Sistemi operativi mod. 1/Processi.md",
+    "Secondo anno/Algoritmi e strutture dati/Mod. 1/2 - Classi asintotiche.md",
+    "Secondo anno/Basi di dati mod. 1/Linguaggi relazionali.md",
+    "Excalidraw/Drawing 2023-10-31 10.07.45.excalidraw.md",
     "Secondo anno/Basi di dati mod. 1/Modello relazionale.md",
     "Excalidraw/Drawing 2023-10-31 09.58.31.excalidraw.md",
     "Secondo anno/Basi di dati mod. 1/Images/Prodotto cartesiano.png",
-    "Secondo anno/Probabilità e statistica/Variabili casuali.md",
     "Secondo anno/Probabilità e statistica/Images/Funzione di ripartizione discreta.png",
     "Secondo anno/Probabilità e statistica/Images/Funzione di ripartizione continua.png",
     "Secondo anno/Probabilità e statistica/Images/Funzione di ripartizione discreta (1).png",
     "Secondo anno/Probabilità e statistica/Introduzione.md",
     "Secondo anno/Probabilità e statistica/Images/Funzione di massa.png",
-    "Secondo anno/Probabilità e statistica/Images/Funzione di ripartizione continua (1).png",
     "Secondo anno/Probabilità e statistica/Formulario.md",
-    "Secondo anno/Probabilità e statistica/Images/Funzione di ripartizione (1).png",
     "Excalidraw/Drawing 2023-10-30 21.18.31.excalidraw.md",
     "Secondo anno/Programmazione ad oggetti mod. 1/Documentazione.md",
     "Secondo anno/Probabilità e statistica/Probabilità condizionata.md",
-    "Secondo anno/Probabilità e statistica/Images/Riduzione X(Omega).svg",
-    "Secondo anno/Probabilità e statistica/Images/Probabilità di massa.png",
-    "Secondo anno/Probabilità e statistica/Images/Probabilità composta.png",
     "Excalidraw/Drawing 2023-10-28 12.18.56.excalidraw.md",
-    "Primo anno/Primo semestre/Matematica discreta/La cardinalità.md",
-    "Excalidraw/Drawing 2023-10-28 10.52.55.excalidraw.md",
-    "Secondo anno/Sistemi operativi mod. 1/Memoria.md",
-    "Secondo anno/Sistemi operativi mod. 1/Processi.md",
-    "Secondo anno/Sistemi operativi mod. 1/Scheduling.md",
-    "Primo anno/Secondo semestre/Architettura degli elaboratori mod. 2/Assembly/Introduzione.md",
-    "Primo anno/Primo semestre/Architettura degli elaboratori mod. 1/Introduzione/Architettura base del computer.md",
-    "Secondo anno/Sistemi operativi mod. 1/Thread.md",
-    "Secondo anno/Algoritmi e strutture dati/Mod. 2/3 - Alberi.md",
-    "Excalidraw/Drawing 2023-10-27 19.11.40.excalidraw.md",
-    "Secondo anno/Algoritmi e strutture dati/Mod. 2/2 - Dizionari.md",
-    "Secondo anno/Probabilità e statistica/Probabilità elementare.md",
-    "Secondo anno/Sistemi operativi mod. 1/Introduzione.md",
-    "Secondo anno/Basi di dati mod. 1/Introduzione.md",
     "Secondo anno/Algoritmi e strutture dati/Mod. 2/Images",
-    "Untitled.md",
     "Secondo anno/Probabilità e statistica/Images/ASD 20-06-23 final.pdf",
     "Secondo anno/Probabilità e statistica/Images/Non confermato 518592.crdownload",
     "Secondo anno/Probabilità e statistica/Images/ASD 05-06-23.pdf",
     "Secondo anno/Probabilità e statistica/Images/Non confermato 531228.crdownload",
     "Secondo anno/Probabilità e statistica/Images/Probabilità composta.png.crdownload",
     "Secondo anno/Algoritmi e strutture dati/Mod. 2",
-    "Secondo anno/Algoritmi e strutture dati",
-    "Secondo anno/Basi di dati mod. 1/Images/Lecture3_ValueReferenceTypes (1).pdf",
     "Untitled.canvas"
   ]
 }
