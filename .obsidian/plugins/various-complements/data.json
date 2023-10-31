@@ -902,6 +902,38 @@
           "lastUpdated": 1698700363053
         }
       }
+    },
+    "\\stackrel{\\leftrightarrow}{\\bowtie}": {
+      "\\stackrel{\\leftrightarrow}{\\bowtie}": {
+        "currentFile": {
+          "count": 3,
+          "lastUpdated": 1698743949079
+        }
+      }
+    },
+    "\\stackrel{\\leftarrow}{\\bowtie}": {
+      "\\stackrel{\\leftarrow}{\\bowtie}": {
+        "currentFile": {
+          "count": 2,
+          "lastUpdated": 1698744066191
+        }
+      }
+    },
+    "\\bowtie": {
+      "\\bowtie": {
+        "currentFile": {
+          "count": 1,
+          "lastUpdated": 1698744431350
+        }
+      }
+    },
+    "\\textdiv": {
+      "\\textdiv": {
+        "currentFile": {
+          "count": 1,
+          "lastUpdated": 1698745148959
+        }
+      }
     }
   }
 }

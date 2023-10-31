@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Secondo anno/Probabilità e statistica/Variabili casuali.md",
+                "file": "Secondo anno/Basi di dati mod. 1/Linguaggi relazionali.md",
                 "mode": "source",
                 "source": false
               }
@@ -86,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Secondo anno/Probabilità e statistica/Variabili casuali.md",
+                "file": "Secondo anno/Basi di dati mod. 1/Linguaggi relazionali.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Secondo anno/Probabilità e statistica/Variabili casuali.md",
+                "file": "Secondo anno/Basi di dati mod. 1/Linguaggi relazionali.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +126,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Secondo anno/Probabilità e statistica/Variabili casuali.md"
+                "file": "Secondo anno/Basi di dati mod. 1/Linguaggi relazionali.md"
               }
             }
           },
@@ -138,8 +138,7 @@
               "state": {}
             }
           }
-        ],
-        "currentTab": 4
+        ]
       }
     ],
     "direction": "horizontal",
@@ -156,28 +155,31 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "a1163d9af64d6878",
+  "active": "0dd96008f3a1de37",
   "lastOpenFiles": [
+    "Excalidraw/Drawing 2023-10-31 10.07.45.excalidraw.md",
+    "Secondo anno/Basi di dati mod. 1/Linguaggi relazionali.md",
+    "Excalidraw",
+    "Secondo anno/Basi di dati mod. 1/Modello relazionale.md",
+    "Excalidraw/Drawing 2023-10-31 09.58.31.excalidraw.md",
+    "Secondo anno/Basi di dati mod. 1/Images/Prodotto cartesiano.png",
+    "Secondo anno/Probabilità e statistica/Variabili casuali.md",
     "Secondo anno/Probabilità e statistica/Images/Funzione di ripartizione discreta.png",
     "Secondo anno/Probabilità e statistica/Images/Funzione di ripartizione continua.png",
     "Secondo anno/Probabilità e statistica/Images/Funzione di ripartizione discreta (1).png",
     "Secondo anno/Probabilità e statistica/Introduzione.md",
     "Secondo anno/Probabilità e statistica/Images/Funzione di massa.png",
     "Secondo anno/Probabilità e statistica/Images/Funzione di ripartizione continua (1).png",
-    "Secondo anno/Probabilità e statistica/Variabili casuali.md",
     "Secondo anno/Probabilità e statistica/Formulario.md",
     "Secondo anno/Probabilità e statistica/Images/Funzione di ripartizione (1).png",
     "Excalidraw/Drawing 2023-10-30 21.18.31.excalidraw.md",
-    "Excalidraw",
     "Secondo anno/Programmazione ad oggetti mod. 1/Documentazione.md",
     "Secondo anno/Probabilità e statistica/Probabilità condizionata.md",
     "Secondo anno/Probabilità e statistica/Images/Riduzione X(Omega).svg",
     "Secondo anno/Probabilità e statistica/Images/Probabilità di massa.png",
     "Secondo anno/Probabilità e statistica/Images/Probabilità composta.png",
-    "Secondo anno/Probabilità e statistica/Images/Funzione di densità.svg",
     "Excalidraw/Drawing 2023-10-28 12.18.56.excalidraw.md",
     "Primo anno/Primo semestre/Matematica discreta/La cardinalità.md",
-    "Secondo anno/Probabilità e statistica/Images/Probabilità di massa (1).png",
     "Excalidraw/Drawing 2023-10-28 10.52.55.excalidraw.md",
     "Secondo anno/Sistemi operativi mod. 1/Memoria.md",
     "Secondo anno/Sistemi operativi mod. 1/Processi.md",
@@ -185,7 +187,6 @@
     "Primo anno/Secondo semestre/Architettura degli elaboratori mod. 2/Assembly/Introduzione.md",
     "Primo anno/Primo semestre/Architettura degli elaboratori mod. 1/Introduzione/Architettura base del computer.md",
     "Secondo anno/Sistemi operativi mod. 1/Thread.md",
-    "Secondo anno/Basi di dati mod. 1/Linguaggi relazionali.md",
     "Secondo anno/Algoritmi e strutture dati/Mod. 2/3 - Alberi.md",
     "Excalidraw/Drawing 2023-10-27 19.11.40.excalidraw.md",
     "Secondo anno/Algoritmi e strutture dati/Mod. 2/2 - Dizionari.md",
@@ -194,8 +195,6 @@
     "Secondo anno/Basi di dati mod. 1/Introduzione.md",
     "Secondo anno/Algoritmi e strutture dati/Mod. 2/Images",
     "Untitled.md",
-    "Primo anno/Secondo semestre/Architettura degli elaboratori mod. 2/Cache/Cache diretta.md",
-    "Primo anno/Secondo semestre/Architettura degli elaboratori mod. 2/Cache/Cache associativa.md",
     "Secondo anno/Probabilità e statistica/Images/ASD 20-06-23 final.pdf",
     "Secondo anno/Probabilità e statistica/Images/Non confermato 518592.crdownload",
     "Secondo anno/Probabilità e statistica/Images/ASD 05-06-23.pdf",
