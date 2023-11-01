@@ -13,25 +13,26 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Secondo anno/Algoritmi e strutture dati/Mod. 2/3 - Alberi.md",
+                "file": "Secondo anno/Sistemi operativi mod. 1/Memoria/Memoria virtuale.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "08956a9242471f1c",
+            "id": "151a9e859faf2d2a",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Secondo anno/Algoritmi e strutture dati/Mod. 2/2 - Dizionari.md",
+                "file": "Secondo anno/Sistemi operativi mod. 1/Memoria/Memoria virtuale.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -81,7 +82,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 305.5110321044922
+    "width": 305.5110321044922,
+    "collapsed": true
   },
   "right": {
     "id": "282a9548711da6a0",
@@ -97,7 +99,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Secondo anno/Algoritmi e strutture dati/Mod. 2/3 - Alberi.md",
+                "file": "Secondo anno/Sistemi operativi mod. 1/Memoria/Memoria virtuale.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -114,7 +116,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Secondo anno/Algoritmi e strutture dati/Mod. 2/3 - Alberi.md",
+                "file": "Secondo anno/Sistemi operativi mod. 1/Memoria/Memoria virtuale.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -137,7 +139,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Secondo anno/Algoritmi e strutture dati/Mod. 2/3 - Alberi.md"
+                "file": "Secondo anno/Sistemi operativi mod. 1/Memoria/Memoria virtuale.md"
               }
             }
           },
@@ -166,19 +168,29 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "fff3d52361731ee4",
+  "active": "a1163d9af64d6878",
   "lastOpenFiles": [
+    "Excalidraw/Drawing 2023-11-01 14.07.19.excalidraw.md",
+    "Secondo anno/Sistemi operativi mod. 1/Images/Page table entry.svg",
+    "Secondo anno/Sistemi operativi mod. 1/Memoria/Memoria virtuale.md",
+    "Excalidraw",
+    "Secondo anno/Sistemi operativi mod. 1/Images/Paginazione.png",
+    "Secondo anno/Sistemi operativi mod. 1/Images/Paginazione.png.crdownload",
+    "Secondo anno/Sistemi operativi mod. 1/Images/Mapping dei blocchi.png",
+    "Primo anno/Secondo semestre/Architettura degli elaboratori mod. 2/Memoria virtuale/Gestione memoria e protezione del SO.md",
+    "Primo anno/Secondo semestre/Architettura degli elaboratori mod. 2/Memoria virtuale/Mapping.md",
+    "Secondo anno/Sistemi operativi mod. 1/Memoria/Memoria fisica.md",
+    "Secondo anno/Sistemi operativi mod. 1/Memoria",
+    "Secondo anno/Algoritmi e strutture dati/Mod. 2/3 - Alberi.md",
     "Excalidraw/Drawing 2023-10-31 22.37.29.excalidraw.md",
     "Secondo anno/Algoritmi e strutture dati/Mod. 2/Images/Albero figlio sinistro fratello destro.svg",
     "Excalidraw/Drawing 2023-10-31 23.24.41.excalidraw.md",
-    "Secondo anno/Algoritmi e strutture dati/Mod. 2/3 - Alberi.md",
     "Secondo anno/Algoritmi e strutture dati/Mod. 2/2 - Dizionari.md",
     "Secondo anno/Algoritmi e strutture dati/Mod. 2/Images/Albero con strutture collegate.svg",
     "Excalidraw/Drawing 2023-10-31 22.23.17.excalidraw.md",
     "Secondo anno/Algoritmi e strutture dati/Mod. 2/Images/Albero k-ario.svg",
     "Secondo anno/Algoritmi e strutture dati/Mod. 2/Images/Albero binario.png",
     "Secondo anno/Algoritmi e strutture dati/Mod. 2/Images/Albero esempio.png",
-    "Excalidraw",
     "Secondo anno/Algoritmi e strutture dati/Mod. 2/2 - Dizionari/Implementazioni/Liste doppiamente concatenate.md",
     "Secondo anno/Algoritmi e strutture dati/Mod. 2/2 - Dizionari/Implementazioni/Array ordinati.md",
     "Secondo anno/Algoritmi e strutture dati/Mod. 2/1 - Strutture dati.md",
@@ -197,22 +209,12 @@
     "Excalidraw/Drawing 2023-10-31 09.58.31.excalidraw.md",
     "Secondo anno/Basi di dati mod. 1/Images/Prodotto cartesiano.png",
     "Secondo anno/Probabilità e statistica/Images/Funzione di ripartizione discreta.png",
-    "Secondo anno/Probabilità e statistica/Images/Funzione di ripartizione continua.png",
-    "Secondo anno/Probabilità e statistica/Images/Funzione di ripartizione discreta (1).png",
     "Secondo anno/Probabilità e statistica/Introduzione.md",
-    "Secondo anno/Probabilità e statistica/Images/Funzione di massa.png",
-    "Secondo anno/Probabilità e statistica/Formulario.md",
-    "Excalidraw/Drawing 2023-10-30 21.18.31.excalidraw.md",
-    "Secondo anno/Programmazione ad oggetti mod. 1/Documentazione.md",
-    "Secondo anno/Probabilità e statistica/Probabilità condizionata.md",
-    "Excalidraw/Drawing 2023-10-28 12.18.56.excalidraw.md",
     "Secondo anno/Algoritmi e strutture dati/Mod. 2/Images",
     "Secondo anno/Probabilità e statistica/Images/ASD 20-06-23 final.pdf",
     "Secondo anno/Probabilità e statistica/Images/Non confermato 518592.crdownload",
     "Secondo anno/Probabilità e statistica/Images/ASD 05-06-23.pdf",
     "Secondo anno/Probabilità e statistica/Images/Non confermato 531228.crdownload",
-    "Secondo anno/Probabilità e statistica/Images/Probabilità composta.png.crdownload",
-    "Secondo anno/Algoritmi e strutture dati/Mod. 2",
     "Untitled.canvas"
   ]
 }
