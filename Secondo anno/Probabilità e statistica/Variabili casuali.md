@@ -78,3 +78,46 @@ $$\boxed{F(x)=\int_{-\infty}^xf(t)dt}$$
 
 Dalla funzione di ripartizione si può risalire alla **densità** di probabilità della v.a. in tutti i punti in cui $F(x)$ è derivabile tramite:
 $$f(x)=\frac{d}{dx}F(x)$$
+
+---
+## Valore atteso
+Il **valore atteso** ($\mathbb{E}$xpected value) rappresenta la media (o centro di massa) di una v.a. ed è dato dalla somma dei valori di $X$ moltiplicati per la loro probabilità (o peso).
+$$\boxed{\mathbb{E}[X]=\sum_ix_ip_i\quad\text{(X v.a. discreta)}}$$
+$$\boxed{\mathbb{E}[X]=\int_\mathbb{R}xf(x)dx\quad\text{(X v.a. continua)}}$$
+
+>[!Example]
+>Usando la solita urna con $X$ che è una **v.a. discreta**:
+>$$P_X(x)=\begin{cases}\frac{2}{7}&\text{se }x=1,2,3\\\frac{1}{7}&\text{se }x=4\\0&\text{altrimenti}\end{cases}$$
+>$$\mathbb{E}[X]=1\frac{2}{7}+2\frac{2}{7}+3\frac{2}{7}+4\frac{1}{7}=\frac{16}{7}$$
+>---
+>Sia $X$ una **v.a. continua** con densità $f(x)=2e^{-2x}1_{(0,+\infty)}(x)$
+>con questa notazione si indicano gli estremi dell'integrale, in quanto la probabilità compresa tra gli estremi sarà uguale a $1$, fuori sarà uguale a $0$.
+>$$\mathbb{E}[X]=\int_0^{+\infty}2xe^{-2x}dx=\frac{1}{2}$$
+
+**Proprietà del valore atteso**:
+- $\mathbb{E}[a]=a$ (con $a$ costante)
+- $\mathbb{E}[aX+b]=a\mathbb{E}[X]+b$ (con $a,b$ costanti)
+
+>Da cui possiamo arrivare che $\mathbb{E}[X-\mathbb{E}[X]]=0$, ovvero il valore atteso della deviazione (o errore) di $X$ dal suo valore atteso è uguale a $0$ perchè le deviazioni positive e negative si bilanciano.
+## Varianza
+Dato che nel calcolare l'errore dovrei usare il valore assoluto per evitare valori negativi, il quale rende la funzione non differenziabile (è scomodo) si usa l'**errore quadratico medio** per il calcolo della **varianza**:
+$$\boxed{Var[X]=\sum_i(x_i^2p_i)-[\mathbb{E}[X]]^2\quad\text{(X v.a. discreta)}}$$
+$$\boxed{Var[X]=\int_\mathbb{R}x^2f(x)dx-[\mathbb{E}[X]]^2\quad\text{(X v.a. continua)}}$$
+>[!Example]
+>Usando la solita urna dove $X$ è una **v.a. discreta** e il valore atteso calcolato prima:
+>$$P_X(x)=\begin{cases}\frac{2}{7}&\text{se }x=1,2,3\\\frac{1}{7}&\text{se }x=4\\0&\text{altrimenti}\end{cases}$$
+>$$Var[X]=1^2\frac{2}{7}+2^2\frac{2}{7}+3^2\frac{2}{7}+4^2\frac{1}{7}-\left(\frac{16}{7}\right)^2$$
+>---
+>Usando la solita $X$ rappresentate una **v.a. continua** con densità $f(x)=2e^{-2x}1_{(0,+\infty)}(x)$ e valore atteso calcolato prima:
+>$$Var[X]=\int_0^{+\infty}2x^2e^{-2x}dx-\left(\frac{1}{2}\right)^2$$
+>
+
+essendo la varianza l'errore quadratico medio, ovvero $(x-\mathbb{E}[X])^2$, si può scrivere come segue:
+$$Var[X]=\mathbb{E}[X^2]-[\mathbb{E}[X]]^2$$
+**Proprietà della varianza**:
+- $Var[a]=0$ (con $a$ costante)
+- $Var[aX+b]=a^2Var[X]$ (con $a,b$ costanti)
+
+## Moda
+La **moda** di una v.a. indica il punto (o punti) con più massa (o densità).
+Si dice **multimodale** se esistono più massimi locali, mentre si dice **senza moda** per una funzione costante.

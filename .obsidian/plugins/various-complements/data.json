@@ -71,14 +71,6 @@
         }
       }
     },
-    "hardware": {
-      "hardware": {
-        "currentFile": {
-          "count": 1,
-          "lastUpdated": 1696346495702
-        }
-      }
-    },
     "indirizzamento": {
       "indirizzamento": {
         "currentFile": {
@@ -146,8 +138,8 @@
     "\\mathbb{P}": {
       "\\mathbb{P}": {
         "currentFile": {
-          "count": 63,
-          "lastUpdated": 1698489095119
+          "count": 64,
+          "lastUpdated": 1698968755493
         }
       }
     },
@@ -218,8 +210,8 @@
     "complessità": {
       "complessità": {
         "currentFile": {
-          "count": 10,
-          "lastUpdated": 1698786102493
+          "count": 14,
+          "lastUpdated": 1698961601063
         }
       }
     },
@@ -842,8 +834,8 @@
     "multiprogrammazione": {
       "multiprogrammazione": {
         "currentFile": {
-          "count": 1,
-          "lastUpdated": 1698427884164
+          "count": 2,
+          "lastUpdated": 1698850374928
         }
       }
     },
@@ -1012,6 +1004,118 @@
         "currentFile": {
           "count": 1,
           "lastUpdated": 1698841862963
+        }
+      }
+    },
+    "elettrodomestici": {
+      "elettrodomestici": {
+        "currentFile": {
+          "count": 1,
+          "lastUpdated": 1698849859268
+        }
+      }
+    },
+    "efficienza": {
+      "efficienza": {
+        "currentFile": {
+          "count": 1,
+          "lastUpdated": 1698850912678
+        }
+      }
+    },
+    "constrasto": {
+      "constrasto": {
+        "currentFile": {
+          "count": 1,
+          "lastUpdated": 1698850921730
+        }
+      }
+    },
+    "privilegiate": {
+      "privilegiate": {
+        "currentFile": {
+          "count": 1,
+          "lastUpdated": 1698851208272
+        }
+      }
+    },
+    "dispositivo": {
+      "dispositivo": {
+        "currentFile": {
+          "count": 1,
+          "lastUpdated": 1698851437883
+        }
+      }
+    },
+    "istruzioni": {
+      "istruzioni": {
+        "currentFile": {
+          "count": 1,
+          "lastUpdated": 1698852470442
+        }
+      }
+    },
+    "enqueue": {
+      "enqueue": {
+        "currentFile": {
+          "count": 2,
+          "lastUpdated": 1698959040760
+        }
+      }
+    },
+    "Decomponi": {
+      "Decomponi": {
+        "currentFile": {
+          "count": 1,
+          "lastUpdated": 1698959716712
+        }
+      }
+    },
+    "risultato_sx": {
+      "risultato_sx": {
+        "currentFile": {
+          "count": 1,
+          "lastUpdated": 1698959762041
+        }
+      }
+    },
+    "risultato_dx": {
+      "risultato_dx": {
+        "currentFile": {
+          "count": 1,
+          "lastUpdated": 1698959765016
+        }
+      }
+    },
+    "intermedi_aux": {
+      "intermedi_aux": {
+        "currentFile": {
+          "count": 1,
+          "lastUpdated": 1698960951743
+        }
+      }
+    },
+    "num_sx": {
+      "num_sx": {
+        "currentFile": {
+          "count": 1,
+          "lastUpdated": 1698961188301
+        }
+      }
+    },
+    "\\begin{cases}\\frac{2}{7}&\\text{se": {
+      "\\begin{cases}\\frac{2}{7}&\\text{se": {
+        "currentFile": {
+          "count": 1,
+          "lastUpdated": 1698962464680
+        }
+      }
+    },
+    "X-\\mathbb{E}": {
+      "X-\\mathbb{E}": {
+        "currentFile": {
+          "count": 1,
+          "lastUpdated": 1698966590399
         }
       }
     }
