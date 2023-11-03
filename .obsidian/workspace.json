@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Secondo anno/Probabilità e statistica/Variabili casuali.md",
+                "file": "Secondo anno/Basi di dati mod. 1/Linguaggi relazionali.md",
                 "mode": "source",
                 "source": false
               }
@@ -69,7 +69,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 305.5110321044922
+    "width": 305.5110321044922,
+    "collapsed": true
   },
   "right": {
     "id": "282a9548711da6a0",
@@ -85,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Secondo anno/Probabilità e statistica/Variabili casuali.md",
+                "file": "Secondo anno/Basi di dati mod. 1/Linguaggi relazionali.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Secondo anno/Probabilità e statistica/Variabili casuali.md",
+                "file": "Secondo anno/Basi di dati mod. 1/Linguaggi relazionali.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +126,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Secondo anno/Probabilità e statistica/Variabili casuali.md"
+                "file": "Secondo anno/Basi di dati mod. 1/Linguaggi relazionali.md"
               }
             }
           },
@@ -154,7 +155,7 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "d951c7a88c86699d",
+  "active": "a1163d9af64d6878",
   "lastOpenFiles": [
     "Secondo anno/Probabilità e statistica/Variabili casuali.md",
     "Secondo anno/Algoritmi e strutture dati/Mod. 2/3 - Alberi/Decomposizione.md",

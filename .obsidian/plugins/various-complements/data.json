@@ -1118,6 +1118,30 @@
           "lastUpdated": 1698966590399
         }
       }
+    },
+    "aggregazione": {
+      "aggregazione": {
+        "currentFile": {
+          "count": 2,
+          "lastUpdated": 1699019178777
+        }
+      }
+    },
+    "Raggruppamento": {
+      "Raggruppamento": {
+        "currentFile": {
+          "count": 1,
+          "lastUpdated": 1699019098995
+        }
+      }
+    },
+    "Candidato": {
+      "Candidato": {
+        "currentFile": {
+          "count": 2,
+          "lastUpdated": 1699019559840
+        }
+      }
     }
   }
 }

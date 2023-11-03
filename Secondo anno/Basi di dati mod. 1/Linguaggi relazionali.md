@@ -17,6 +17,8 @@ Viene usato come rappresentazione delle interrogazioni esprimendo **cosa** vogli
 
 - **Proiezione (select)**: $\pi$
 	Seleziona un sottoinsieme di attributi nella relazione.
+	Una proiezione può essere anche **generalizzata** se comprende espressioni.
+	e.g. $\pi_{\text{Codice, SalarioLordo - Trattenute AS stipendio}}\text{(Utente)}$ 
 
 - **Restrizione (where)**: $\sigma_\phi$
 	Restringe le ennuple selezionate, confrontandole una ad una con la condizione posta da $\phi$ su un loro attributo.
@@ -122,3 +124,55 @@ $R \textdiv S$:
 | a   |
 | c   |
 
+- **Raggruppamento (group by)**: $\gamma$
+	Raggruppa le righe a seconda delle funzioni di aggregazione.
+	e.g. $A_1,...,A_n\gamma f_1,...,f_k(R)$ dove $A_i$ sono gli attributi di $R$ e $f_i$ sono funzioni di aggregazione.
+
+
+## Funzioni di aggregazione
+Hanno come argomenti più insiemi e ritornano un valore.
+- **sum**: ritorna la somma degli elementi
+- **avg**: ritorna la media degli elementi
+- **count**: ritorna il numero degli elementi
+- **min** e **max**: ritornano rispettivamente il minimo ed il massimo valore degli elementi
+Se si vuole ignorare eventuali duplicati, si mette alla fine della funzione **-distinct**.
+
+>[!Example]
+>Trovare per ogni candidato il numero di esami, voto minimo, massimo e medio.
+>
+>| Materia | Candidato | Data     | Voto | Lode |
+>| ------- | --------- | -------- | ---- | ---- |
+>| BD      | 1234      | 01.01.03 | 20   | N    |
+>| FIS     | 4321      | 02.03.04 | 26   | N    |
+>| ASD     | 1234      | 07.02.03 | 30   | S    |
+>| BD      | 4321      | 10.12.05 | 28   | N    |
+>
+>$$\text{Candidato}\gamma_{\text{count(*),min(Voto),max(Voto),avg(Voto)}}\text{(Esami)}$$
+>
+>| Candidato | Count(*) | min(Voto) | max(Voto) | avg(Voto) |
+>| --------- | ------- | --------- | --------- | --------- |
+>| 1234      | 2       | 20        | 30        | 25        |
+>| 4321      | 2       | 26        | 28        | 27        |
+
+## Operazioni su multinsiemi
+- **Proiezione senza eliminazione dei duplicati**:
+$$\pi^b_{A_1,...,A_n}(O)$$
+- **Eliminazione di duplicati**:
+$$\delta(O)$$
+- **Ordinamento**:
+$$\tau A_1,...,A_n(O)$$
+- **Unione, intersezione e differenza**:
+$$O_1\cup^bO_2$$
+in questa unione vengono inseriti tutti i duplicati (non si sottrae l'intersezione).
+$$R\cap^bS$$
+in questa intersezione possono esserci più righe uguali, il numero di righe uguali rispecchia il numero di duplicati della tabella che ne aveva di meno.
+$$O_1-^bO_2$$
+in questa differenza solo una singola occorrenza di ogni elemento in $O_2$ viene rimossa da $O_1$, quindi se un elemento appare più volte in $O_1$, ma solo una volta in $O_2$, allora questa differenza conserverà le occorrenze extra di quell’elemento in $O_1$.
+
+### Trasformazioni algebriche
+- $\pi_A(\pi_{A,B}(R))\equiv\pi_A(R)$
+- $\sigma_{C_1}(\sigma_{C_2}(R))\equiv\sigma_{C_1\land C_2}(R)$
+- $\sigma_{C_1\land C_2}(R\times S)\equiv\sigma_{C_1}(R)\times\sigma_{C_2}(S)$
+- $R\times(S\times T)\equiv(R\times S)\times T$
+- $(R\times S)\equiv(S\times R)$
+- $\sigma_C(_X\gamma_F(R))\equiv _X\gamma_F(\sigma_C(R))$
