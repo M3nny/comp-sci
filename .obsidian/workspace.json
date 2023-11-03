@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "e4ca3bfe293bec28",
+        "id": "f37654b1ceb2b776",
         "type": "tabs",
         "children": [
           {
-            "id": "d951c7a88c86699d",
+            "id": "6934a208b9c00859",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Secondo anno/Basi di dati mod. 1/Linguaggi relazionali.md",
+                "file": "Secondo anno/Programmazione ad oggetti mod. 1/Ereditarietà.md",
                 "mode": "source",
                 "source": false
               }
@@ -86,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Secondo anno/Basi di dati mod. 1/Linguaggi relazionali.md",
+                "file": "Secondo anno/Programmazione ad oggetti mod. 1/Ereditarietà.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Secondo anno/Basi di dati mod. 1/Linguaggi relazionali.md",
+                "file": "Secondo anno/Programmazione ad oggetti mod. 1/Ereditarietà.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +126,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Secondo anno/Basi di dati mod. 1/Linguaggi relazionali.md"
+                "file": "Secondo anno/Programmazione ad oggetti mod. 1/Ereditarietà.md"
               }
             }
           },
@@ -155,8 +155,12 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "a1163d9af64d6878",
+  "active": "6934a208b9c00859",
   "lastOpenFiles": [
+    "Secondo anno/Programmazione ad oggetti mod. 1/Information hiding.md",
+    "Secondo anno/Programmazione ad oggetti mod. 1/Ereditarietà.md",
+    "Secondo anno/Programmazione ad oggetti mod. 1/Documentazione.md",
+    "Secondo anno/Basi di dati mod. 1/Linguaggi relazionali.md",
     "Secondo anno/Probabilità e statistica/Variabili casuali.md",
     "Secondo anno/Algoritmi e strutture dati/Mod. 2/3 - Alberi/Decomposizione.md",
     "Secondo anno/Algoritmi e strutture dati/Mod. 2/2 - Dizionari.md",
@@ -189,14 +193,10 @@
     "Secondo anno/Sistemi operativi mod. 1/Images/Paginazione.png.crdownload",
     "Secondo anno/Sistemi operativi mod. 1/Images/Mapping dei blocchi.png",
     "Secondo anno/Sistemi operativi mod. 1/Memoria",
-    "Excalidraw/Drawing 2023-10-31 22.37.29.excalidraw.md",
     "Secondo anno/Algoritmi e strutture dati/Mod. 2/Images/Albero figlio sinistro fratello destro.svg",
-    "Excalidraw/Drawing 2023-10-31 23.24.41.excalidraw.md",
     "Secondo anno/Algoritmi e strutture dati/Mod. 2/Images/Albero con strutture collegate.svg",
-    "Excalidraw/Drawing 2023-10-31 22.23.17.excalidraw.md",
     "Secondo anno/Algoritmi e strutture dati/Mod. 2/Images/Albero k-ario.svg",
     "Secondo anno/Algoritmi e strutture dati/Mod. 2/Images/Albero binario.png",
-    "Secondo anno/Algoritmi e strutture dati/Mod. 2/2 - Dizionari/Implementazioni/Liste doppiamente concatenate.md",
     "Secondo anno/Algoritmi e strutture dati/Mod. 2/2 - Dizionari/Implementazioni",
     "Secondo anno/Algoritmi e strutture dati/Mod. 2/2 - Dizionari",
     "Secondo anno/Algoritmi e strutture dati/Mod. 2/Images",

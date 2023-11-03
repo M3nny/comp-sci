@@ -2,8 +2,9 @@ Dobbiamo **nascondere le informazioni** relative a come funziona una classe inte
 
 Per realizzare ciò usiamo l'**incapsulamento** per garantire la consistenza dello stato di un'oggetto (e.g. evitiamo che il campo benzina sia negativo).
 
-Usiamo quindi vari **modificatori di accesso** i quali definiscono vari privilegi per leggere e modificare lo stato di un oggetto:
+Usiamo quindi vari **modificatori di accesso** i quali definiscono vari privilegi per leggere e modificare lo stato di un oggetto.
 
+##### Modificatori di accesso
 |           | Same class | Same package | Subclasses | Everywhere |
 |:---------:|:----------:|:------------:|:----------:|:----------:|
 |  **Public**   |     ✅     |      ✅      |     ✅     |     ✅     |
