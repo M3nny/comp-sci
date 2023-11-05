@@ -46,7 +46,7 @@ Una soluzione migliore è quella di mantenere in memoria più processi alla volt
 - **Worst-fit**: alloca il processo nel blocco più grande di tutti (sempre che possa contenere il processo), <u>lasciando la maggior parte del blocco inutilizzata</u>
 
 ### Gestione della memoria libera
-- **Mappa di bit**: la memoria viene suddivisa in _unità di allocazione_, dove ad ognuna di esse viene assegnato un valore $0$ se è libera, $1$ se è occupata
+- **Mappa di bit**: la memoria viene suddivisa in _unità di allocazione_, dove ad ognuna di esse viene assegnato un valore $0$ se è libera, $1$ se è occupata, per trovare uno spazio libero bisogna scorrere la mappa finchè non si trovano abbastanza $0$ da farci stare il processo in questione
 - **Liste collegate**: si usa una lista con quattro campi, i quali indicano:
 	1. Lo <u>spazio in questione è occupato oppure no</u>
 	2. <u>Indirizzo di partenza</u> del blocco

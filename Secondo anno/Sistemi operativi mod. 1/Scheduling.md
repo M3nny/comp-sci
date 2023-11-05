@@ -24,18 +24,19 @@ In generale gli obbiettivi comuni a tutti gli algoritmi di scheduling sono:
 - **Predicibilità**: la politica dichiarata deve essere rispettata
 - **Bilanciamento**: deve impegnare tutte le parti del sistema
 
+Inoltre ogni sistema ha i suoi obbiettivi specifici:
 Sistemi **Batch**:
-	- **Throughput**: massimizzare il numero di processi serviti per unità di tempo
-	- **Tempo di turnaround**: far evolvere e di seguito terminare il processo più velocemente possibile
-	- **Utilizzo della CPU**: massimizzare l'uso della CPU
+	- **Massimizzare il throughput**: massimizzare il numero di processi serviti per unità di tempo
+	- **Minimizzare il tempo di turnaround**: far evolvere e di seguito terminare il processo più velocemente possibile
+	- **Massimizzare l'utilizzo della CPU**
 
 Sistemi **Interattivi**:
-	- **Tempo di risposta**: deve essere breve
-	- **Adeguatezza**: deve soddisfare le richieste e aspettative degli utenti
+	- **Minimizzare il tempo di risposta**
+	- **Essere adeguato**: soddisfare le richieste e aspettative degli utenti
 
 Sistemi **Real-time**:
 	- **Rispettare le scadenze**
-	- **Prevedibilità**: deve mantenere la qualità del servizio
+	- **Mantenere la qualità del servizio**
 
 ---
 ### First-In-First-Out (FIFO)
@@ -43,10 +44,17 @@ L'algoritmo **FIFO** o **FCFS** (First-Come-First-Served) è il più **semplice*
 Non è una scelta saggia però in quanto potrebbero esserci processi più importanti da servire, appunto non si usa quasi mai come algoritmo di scheduling principale.
 ### Shortest-Job-First (SJF)
 Seleziona il **processo** (che secondo una stima) è **più vicino alla sua terminazione**, cosa che non è sempre facile da stimare, soprattutto se ci sono input da parte dell'utente.
+La **stima** può essere effettuata principalmente in due modi:
+- _media semplice_: $T_{n+1}=\frac{\text{somma degli ultimi }n \text{ tempi di esecuzione}}{n}$
+- _media pesata (aging)_: $T_{n+2}=\alpha\cdot t_n+\alpha\cdot t_{n+1}$ 
+	dove $a$ è l'aging $T$ è il tempo predetto e $t$ il tempo effettivo, prima di fare la predizione del tempo successivo, se non si possiedono predizioni precedenti si dovrà applicare questa formula dal valore più vecchio a quello più nuovo.
+		e.g. dal tempo più vecchio al più nuovo: 40, 20, 40 e $a=\frac{1}{2}$
+		$\frac{1}{2}\cdot 40+\frac{1}{2}\cdot 20 =30$
+		$\frac{1}{2}\cdot 30+\frac{1}{2}\cdot 40 = 35=\text{ prossimo tempo previsto}$
 Per i motivi sopra, questo algoritmo ha potenzialmente una **grande varianza**, ovvero la dispersione dei valori rispetto alla media del tempo d'attesa (che rispetto a FIFO è comunque minore) è alta.
 Potrebbe causare **starvation** ai processi più lunghi.
 ### Shortest-Remaining-Time-First (SRT)
-Questa è la versione **con prelazione** del _SJF_, la quale può causare una **varianza ancora più grande** dato che può avvenire la prelazione su un processo più lungo a favore di uno più corto, il che porta ancora a **più fenomeni di starving**, ed un **overhead significativo** dato che ci saranno ipoteticamente molte prelazioni (considerando che il processo in esecuzione finirà presto).
+Questa è la versione **con prelazione** del _SJF_, la quale può causare una **varianza ancora più grande** dato che può avvenire la prelazione su un processo più lungo a favore di uno più corto, il che porta ancora a **più fenomeni di starving**, ed un **overhead significativo** dato che ci saranno ipoteticamente molte prelazioni (considerando che arriveranno molti processi brevi).
 Teoricamente però ha un **ottimo tempo di attesa medio** migliore anche di _SJF_.
 I problemi che aveva _SJF_ sulla stima dei tempi persiste.
 ### Round-Robin (RR)

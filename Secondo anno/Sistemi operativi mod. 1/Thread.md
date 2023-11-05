@@ -11,7 +11,7 @@ ma <u>NON</u> condividono:
 
 I thread sono definiti "leggeri" in quanto la loro **creazione** non richiede l'inizializzazione delle risorse condivise riducendo di conseguenza anche l'overhead di **terminazione**.
 
-Un processo **raggruppa risorse**, mentre i thread gli **eseguono** il programma che usa quelle risorse.
+Un processo **raggruppa risorse**, mentre i thread **eseguono** il programma che usa quelle risorse.
 
 Il **ciclo di vita di un thread** è analogo al [[Processi#Ciclo di vita di un processo|ciclo di vita di un processo]] con l'aggiunta di due stati: **waiting** quando è bloccato da un evento di un altro thread e **sleeping** quando è bloccato per un tempo prefissato.
 Anche per quanto riguarda le operazioni possibili abbiamo due aggiunte:
@@ -62,3 +62,6 @@ Può raggruppare processi in **job** ed i thread possono creare **fiber** i qual
 
 Anche Windows fornisce ad ogni processo un **pool di thread** (coda di task da eseguire) composto da **thread worker** (livello kernel) i quali eseguono funzioni previste dal thread utente, questo meccanismo evita la creazione/distruzione continua di thread.
 >I thread in attesa non possono essere riassegnati ad un altro task da eseguire.
+
+#### Thread nei sistemi distribuiti
+Nei server viene usata la tecnica di **thread pop-up** per generare un thread all'arrivo di una richiesta, così da poterla soddisfare in tempo breve.

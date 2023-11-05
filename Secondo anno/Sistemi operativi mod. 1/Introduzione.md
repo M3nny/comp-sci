@@ -18,7 +18,7 @@ Con i primi SO **batch** potevano essere eseguiti dei job consecutivamente senza
 
 La memoria conteneva sempre il SO ed un eventuale compilatore il quale veniva poi sostituito dal programma in esecuzione dopo aver finito di compilare.
 ### III gen.
-Nasce la _multiprogrammazione_ consentendo di gestire una <u>pool di job</u>, ciò significa che un job può usare la CPU mentre altri job usano altre risorse.
+Nasce la **multiprogrammazione** consentendo di gestire una <u>pool di job</u>, ciò significa che un job può usare la CPU mentre altri job usano altre risorse.
 Per questo nascono anche:
 - **Spooling**: cambio di job durante operazioni di I/O da parte dell'utente
 - **Scheduling**: basato su un sistema di divisione del tempo in quanti chiamato _time sharing_ dove ogni job ha un tempo limite per essere eseguito prima di passare al prossimo job 
@@ -30,9 +30,9 @@ Viene stabilito lo standard **POSIX** per rendere compatibili varie versioni di 
 
 Comincia lo sviluppo di internet (TCP/IP).
 ### IV gen.
-Nascono **personal computer** e **workstation** assieme alle prime **GUI** e si diffonde il modello **client/server** il quale poi porta a **sistemi paralleli** (più unità di elaborazione che hanno risorse condivise) e **sistemi distribuiti** (diverse unità di elaborazione complete cooperanti tramite linee di comunicazione) i quali usano linguaggi sempre più astratti e che supportano il _multithreading_ e _oggetti_.
+Nascono **personal computer** e **workstation** assieme alle prime **GUI** e si diffonde il modello **client/server** il quale poi porta a **sistemi paralleli** (più unità di elaborazione che hanno risorse condivise) e **sistemi distribuiti** (diverse unità di elaborazione complete cooperanti tramite linee di comunicazione) i quali usano linguaggi sempre più astratti e che supportano il **multithreading** e **oggetti**.
 
-Nasce il **World Wide Web** e con esso il **middleware** il quale serve a collegare applicazione di vari **servizi web**.
+Nasce il **World Wide Web** e con esso il _middleware_ il quale serve a collegare applicazione di vari _servizi web_.
 
 ### V gen.
 Comincia lo sviluppo di tecnologia per dispositivi **mobili** i quali porteranno poi all'**IoT** supportato dal **cloud computing**.
@@ -56,7 +56,7 @@ I **thread** sono componenti dei programmi eseguiti in modo indipendente che per
 #### Memoria
 Oltre a registri e RAM abbiamo anche:
 - **ROM** (Read Only Memory): la quale non è volatile, è veloce, economica e programmata solo dal costruttore
-- **EEPROM** (Electrical Erasable ROM): la quale si differenzia dalla ROM in quanto è riscrivibile
+- **EEPROM** (Electrical Erasable Programmable ROM): la quale si differenzia dalla ROM in quanto è riscrivibile
 - **CMOS** (Complementary Metal-Oxide Semiconductor): è volatile è viene usato spesso per memorizzare data e ora
 
 - **Caches**: mantengono copie di dati che saranno usati a breve, essendo veloci aumentano anche la velocità di esecuzione di un programma.

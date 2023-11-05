@@ -47,7 +47,7 @@ Un processo può anche essere **sospeso** da se stesso oppure da un altro proces
 >Inoltre può essere sospeso sia da ready, sia da blocked.
 
 ![[Ciclo di vita.png|600]]
-Ovviamente un processo quando finirà la sua esecuzione in modo naturale, passerà da running a dead.
+Ovviamente un processo quando finirà la sua esecuzione in modo naturale, passerà da running a **dead**.
 
 ---
 ### Process Control Block
@@ -80,7 +80,7 @@ La **gestione dell'interrupt** avviene nel seguente modo:
 3. Uno dei **gestori di interrupt** (memorizzati in un _vettore di interrupt_) determina come rispondere
 4. Finito il gestore di interrupt, viene ripreso il processo interrotto o viene eseguito il processo successivo
 
-Possiamo gli _interrupt_ generati da dispositivi esterni alla CPU:
+Possiamo elencare gli _interrupt_ generati da dispositivi esterni alla CPU:
 - Operazioni di I/O
 - Fine di un quanto di un processo
 - Comunicazione tra due processi (IPC)
@@ -88,12 +88,12 @@ mentre le **eccezioni** indicano che è avvenuto un guasto:
 - Fault: e.g. segmentation fault
 - Trap: e.g. overflow, breakpoint nel codice
 - Abort: quando avvengono double-fault ovvero la CPU non riesce a gestire sequenzialmente una routine che gestisce un errore che a sua volta ha causato un errore
-### Segnali
-Sono interruzioni che notificano ad un processo l'**occorrenza di un evento**.
-I processi possono (riguardo al segnale):
-- **Ricevere**: specifica una routine
-- **Ignorare**: viene eseguita una routine di default
-- **Mascherare**: indica al SO di non consegnare segnali di quel tipo fino a che il mascheramento verso quel tipo di segnale è attivo, utile in processi critici che non vogliono essere interrotti
+### Operazioni su segnali
+I segnali raggruppano interrupts ed eccezioni. 
+I processi all'arrivo di un segnale possono:
+- **Riceverlo**: specifica una routine
+- **Ignorarlo**: viene eseguita una routine di default
+- **Mascherarlo**: indica al SO di non consegnare segnali di quel tipo fino a che il mascheramento verso quel tipo di segnale è attivo, utile in processi critici che non vogliono essere interrotti
 ### Message passing
 Possono essere **unidirezionali** o **bidirezionali**, possono essere:
 - **Bloccanti**: se si richiede a chi riceve di notificare quando si è ricevuto il messaggio

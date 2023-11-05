@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "f37654b1ceb2b776",
+        "id": "22a1a737b69cfe16",
         "type": "tabs",
         "children": [
           {
-            "id": "6934a208b9c00859",
+            "id": "e23257ff40557994",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Secondo anno/Programmazione ad oggetti mod. 1/Ereditarietà.md",
+                "file": "Secondo anno/Sistemi operativi mod. 1/Domande.md",
                 "mode": "source",
                 "source": false
               }
@@ -69,8 +69,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 305.5110321044922,
-    "collapsed": true
+    "width": 305.5110321044922
   },
   "right": {
     "id": "282a9548711da6a0",
@@ -86,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Secondo anno/Programmazione ad oggetti mod. 1/Ereditarietà.md",
+                "file": "Secondo anno/Sistemi operativi mod. 1/Domande.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Secondo anno/Programmazione ad oggetti mod. 1/Ereditarietà.md",
+                "file": "Secondo anno/Sistemi operativi mod. 1/Domande.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Secondo anno/Programmazione ad oggetti mod. 1/Ereditarietà.md"
+                "file": "Secondo anno/Sistemi operativi mod. 1/Domande.md"
               }
             }
           },
@@ -138,7 +137,8 @@
               "state": {}
             }
           }
-        ]
+        ],
+        "currentTab": 4
       }
     ],
     "direction": "horizontal",
@@ -155,10 +155,20 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "6934a208b9c00859",
+  "active": "e23257ff40557994",
   "lastOpenFiles": [
-    "Secondo anno/Programmazione ad oggetti mod. 1/Information hiding.md",
+    "Secondo anno/Sistemi operativi mod. 1/Memoria/Memoria fisica.md",
+    "Secondo anno/Sistemi operativi mod. 1/Domande.md",
+    "Secondo anno/Sistemi operativi mod. 1/Scheduling.md",
+    "Secondo anno/Sistemi operativi mod. 1/Thread.md",
+    "Secondo anno/Sistemi operativi mod. 1/Processi.md",
+    "Secondo anno/Sistemi operativi mod. 1/Introduzione.md",
+    "Secondo anno/Sistemi operativi mod. 1/Riassunto.md",
+    "Primo anno/Secondo semestre/Architettura degli elaboratori mod. 2/Memoria virtuale/Gestione memoria e protezione del SO.md",
+    "Secondo anno/Sistemi operativi mod. 1/Memoria/Memoria virtuale.md",
+    "Secondo anno/Algoritmi e strutture dati/Mod. 1/1 - Fibonacci.md",
     "Secondo anno/Programmazione ad oggetti mod. 1/Ereditarietà.md",
+    "Secondo anno/Programmazione ad oggetti mod. 1/Information hiding.md",
     "Secondo anno/Programmazione ad oggetti mod. 1/Documentazione.md",
     "Secondo anno/Basi di dati mod. 1/Linguaggi relazionali.md",
     "Secondo anno/Probabilità e statistica/Variabili casuali.md",
@@ -177,17 +187,7 @@
     "Primo anno/Primo semestre/Matematica discreta/Il principio di induzione.md",
     "Secondo anno/Algoritmi e strutture dati/Mod. 2/3 - Alberi",
     "Secondo anno/Probabilità e statistica/Formulario.md",
-    "Secondo anno/Sistemi operativi mod. 1/Processi.md",
-    "Secondo anno/Sistemi operativi mod. 1/Scheduling.md",
-    "Secondo anno/Sistemi operativi mod. 1/Memoria/Memoria fisica.md",
-    "Secondo anno/Sistemi operativi mod. 1/Domande.md",
-    "Secondo anno/Sistemi operativi mod. 1/Introduzione.md",
     "Primo anno/Secondo semestre/Architettura degli elaboratori mod. 2/Memoria virtuale/Mapping.md",
-    "Primo anno/Secondo semestre/Architettura degli elaboratori mod. 2/Memoria virtuale/Gestione memoria e protezione del SO.md",
-    "Primo anno/Primo semestre/Algebra lineare/Vettori.md",
-    "Primo anno/Primo semestre/Algebra lineare/Matrici.md",
-    "Secondo anno/Sistemi operativi mod. 1/Memoria/Memoria virtuale.md",
-    "Excalidraw/Drawing 2023-11-01 14.07.19.excalidraw.md",
     "Secondo anno/Sistemi operativi mod. 1/Images/Page table entry.svg",
     "Secondo anno/Sistemi operativi mod. 1/Images/Paginazione.png",
     "Secondo anno/Sistemi operativi mod. 1/Images/Paginazione.png.crdownload",
