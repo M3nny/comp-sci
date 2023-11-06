@@ -8,12 +8,12 @@
         "type": "tabs",
         "children": [
           {
-            "id": "e23257ff40557994",
+            "id": "e4e8564fbc73e87f",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Secondo anno/Sistemi operativi mod. 1/Domande.md",
+                "file": "Secondo anno/Probabilità e statistica/Variabili casuali.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Secondo anno/Sistemi operativi mod. 1/Domande.md",
+                "file": "Secondo anno/Probabilità e statistica/Variabili casuali.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Secondo anno/Sistemi operativi mod. 1/Domande.md",
+                "file": "Secondo anno/Probabilità e statistica/Variabili casuali.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Secondo anno/Sistemi operativi mod. 1/Domande.md"
+                "file": "Secondo anno/Probabilità e statistica/Variabili casuali.md"
               }
             }
           },
@@ -155,14 +155,19 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "e23257ff40557994",
+  "active": "e4e8564fbc73e87f",
   "lastOpenFiles": [
-    "Secondo anno/Sistemi operativi mod. 1/Memoria/Memoria fisica.md",
+    "Excalidraw/Drawing 2023-11-06 21.57.56.excalidraw.md",
+    "Secondo anno/Probabilità e statistica/Images/Moda Mediana Media.svg",
+    "Secondo anno/Probabilità e statistica/Variabili casuali.md",
+    "Excalidraw",
+    "Secondo anno/Basi di dati mod. 1/Linguaggi relazionali.md",
+    "Secondo anno/Sistemi operativi mod. 1/Introduzione.md",
     "Secondo anno/Sistemi operativi mod. 1/Domande.md",
+    "Secondo anno/Sistemi operativi mod. 1/Memoria/Memoria fisica.md",
     "Secondo anno/Sistemi operativi mod. 1/Scheduling.md",
     "Secondo anno/Sistemi operativi mod. 1/Thread.md",
     "Secondo anno/Sistemi operativi mod. 1/Processi.md",
-    "Secondo anno/Sistemi operativi mod. 1/Introduzione.md",
     "Secondo anno/Sistemi operativi mod. 1/Riassunto.md",
     "Primo anno/Secondo semestre/Architettura degli elaboratori mod. 2/Memoria virtuale/Gestione memoria e protezione del SO.md",
     "Secondo anno/Sistemi operativi mod. 1/Memoria/Memoria virtuale.md",
@@ -170,8 +175,6 @@
     "Secondo anno/Programmazione ad oggetti mod. 1/Ereditarietà.md",
     "Secondo anno/Programmazione ad oggetti mod. 1/Information hiding.md",
     "Secondo anno/Programmazione ad oggetti mod. 1/Documentazione.md",
-    "Secondo anno/Basi di dati mod. 1/Linguaggi relazionali.md",
-    "Secondo anno/Probabilità e statistica/Variabili casuali.md",
     "Secondo anno/Algoritmi e strutture dati/Mod. 2/3 - Alberi/Decomposizione.md",
     "Secondo anno/Algoritmi e strutture dati/Mod. 2/2 - Dizionari.md",
     "Secondo anno/Algoritmi e strutture dati/Mod. 2/Images/Nodo intermedio.svg",
@@ -183,11 +186,8 @@
     "Secondo anno/Algoritmi e strutture dati/Mod. 2/3 - Alberi/Implementazioni.md",
     "Secondo anno/Algoritmi e strutture dati/Mod. 2/3 - Alberi/Visite.md",
     "Secondo anno/Algoritmi e strutture dati/Mod. 2/Images/DFS.svg",
-    "Excalidraw",
     "Primo anno/Primo semestre/Matematica discreta/Il principio di induzione.md",
     "Secondo anno/Algoritmi e strutture dati/Mod. 2/3 - Alberi",
-    "Secondo anno/Probabilità e statistica/Formulario.md",
-    "Primo anno/Secondo semestre/Architettura degli elaboratori mod. 2/Memoria virtuale/Mapping.md",
     "Secondo anno/Sistemi operativi mod. 1/Images/Page table entry.svg",
     "Secondo anno/Sistemi operativi mod. 1/Images/Paginazione.png",
     "Secondo anno/Sistemi operativi mod. 1/Images/Paginazione.png.crdownload",
@@ -196,7 +196,6 @@
     "Secondo anno/Algoritmi e strutture dati/Mod. 2/Images/Albero figlio sinistro fratello destro.svg",
     "Secondo anno/Algoritmi e strutture dati/Mod. 2/Images/Albero con strutture collegate.svg",
     "Secondo anno/Algoritmi e strutture dati/Mod. 2/Images/Albero k-ario.svg",
-    "Secondo anno/Algoritmi e strutture dati/Mod. 2/Images/Albero binario.png",
     "Secondo anno/Algoritmi e strutture dati/Mod. 2/2 - Dizionari/Implementazioni",
     "Secondo anno/Algoritmi e strutture dati/Mod. 2/2 - Dizionari",
     "Secondo anno/Algoritmi e strutture dati/Mod. 2/Images",

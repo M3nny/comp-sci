@@ -176,3 +176,24 @@ in questa differenza solo una singola occorrenza di ogni elemento in $O_2$ vie
 - $R\times(S\times T)\equiv(R\times S)\times T$
 - $(R\times S)\equiv(S\times R)$
 - $\sigma_C(_X\gamma_F(R))\equiv _X\gamma_F(\sigma_C(R))$
+
+---
+## Calcolo relazionale
+Il **calcolo relazionale (CR)** è un'alternativa all'algebra relazionale, ne esistono due varianti:
+- Su **ennuple (CRE)**
+- Su **domini (CRD)**
+
+Ogni interrogazione è esprimibile ognuno di questi metodi (algebra relazionale inclusa) in quanto sono **relazionalmente completi**.
+
+A differenza dell'algebra relazionale che è un **linguaggio procedurale** che oltre a specificare cosa recuperare specifica anche come farlo, nel calcolo relazionale, il quale è un **linguaggio dichiarativo**, si specifica un'espressione di affermazioni logiche, la quale interpretazione da luogo alle ennuple desiderate (sarà il DBMS a capire come ricavare le informazioni).
+
+Vengono quindi usati:
+- **Termini**: costanti, variabili e funzioni
+- **Formule**: $\land, \lor,\neg,\implies,\iff,\forall,\exists,...$ 
+#### Traduzione da AR a CRE
+- **Proiezione**: $\pi_{\text{Nome, Cognome}}(\text{Studenti})=\{\text{t.Nome, t.Cognome}|t\in \text{Studenti}\}$
+- **Restrizione**: $\sigma_\text{Provincia='VE'}(\text{Studenti})=\{t|t\in \text{Studenti}\land \text{t.Prov = 'VE'}\}$ 
+- **Unione**: $\text{Studenti}\cup\text{Docenti}=\{t|t\in\text{Studenti}\lor t\in\text{Docenti}\}$
+- **Intersezione**: $\text{Studenti}\cap\text{Docenti}=\{t|t\in\text{Studenti}\land t\in\text{Docenti}\}$
+- **Differenza**: $\text{Studenti - Docenti} = \{t|t\in\text{Studenti}\land\neg(t\in\text{Docenti}\}$
+- **Prodotto**: $\text{Studenti}\times\text{Esami}=\{s,e|s\in\text{Studenti}\land e\in\text{Esami}\}$

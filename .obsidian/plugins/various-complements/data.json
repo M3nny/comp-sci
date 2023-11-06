@@ -71,46 +71,6 @@
         }
       }
     },
-    "\\iff\\lim\\limits_{n\\to\\infty}\\frac{f": {
-      "\\iff\\lim\\limits_{n\\to\\infty}\\frac{f": {
-        "currentFile": {
-          "count": 1,
-          "lastUpdated": 1696608352598
-        }
-      }
-    },
-    "\\lim\\limits_{n\\to\\infty}\\frac{f": {
-      "\\lim\\limits_{n\\to\\infty}\\frac{f": {
-        "currentFile": {
-          "count": 6,
-          "lastUpdated": 1696610894753
-        }
-      }
-    },
-    "+\\infty": {
-      "+\\infty": {
-        "currentFile": {
-          "count": 1,
-          "lastUpdated": 1696609718592
-        }
-      }
-    },
-    "\\lim_{n\\to\\infty}\\frac\\begin{cases}": {
-      "\\lim_{n\\to\\infty}\\frac\\begin{cases}": {
-        "currentFile": {
-          "count": 1,
-          "lastUpdated": 1696612367697
-        }
-      }
-    },
-    "\\bigcup_{i": {
-      "\\bigcup_{i": {
-        "currentFile": {
-          "count": 1,
-          "lastUpdated": 1696616687386
-        }
-      }
-    },
     "\\mathbb{P}": {
       "\\mathbb{P}": {
         "currentFile": {
@@ -434,8 +394,8 @@
     "probabilità": {
       "probabilità": {
         "currentFile": {
-          "count": 5,
-          "lastUpdated": 1698487136375
+          "count": 8,
+          "lastUpdated": 1699303462835
         }
       }
     },
@@ -1172,6 +1132,38 @@
         "currentFile": {
           "count": 1,
           "lastUpdated": 1699117753990
+        }
+      }
+    },
+    "Differenza": {
+      "Differenza": {
+        "currentFile": {
+          "count": 1,
+          "lastUpdated": 1699298430279
+        }
+      }
+    },
+    "perchè": {
+      "perchè": {
+        "currentFile": {
+          "count": 1,
+          "lastUpdated": 1699302610251
+        }
+      }
+    },
+    "redditi": {
+      "redditi": {
+        "currentFile": {
+          "count": 1,
+          "lastUpdated": 1699302679850
+        }
+      }
+    },
+    "coefficiente": {
+      "coefficiente": {
+        "currentFile": {
+          "count": 1,
+          "lastUpdated": 1699302687972
         }
       }
     }
