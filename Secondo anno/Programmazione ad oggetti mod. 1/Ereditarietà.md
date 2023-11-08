@@ -36,3 +36,36 @@ public class Car extends Vehicle { // eredita da Vehicle
 	}
 }
 ```
+
+Se un metodo della sottoclasse è **uguale** ad un metodo della classe padre, si parla di **overriding**, è comunque possibile chiamare il metodo originale del padre all'interno della classe figlio tramite `super.method()`.
+
+```java
+public class Vehicle {
+	protected double speed;
+	public void accelerate (double a) {
+		this.speed += a;
+	}
+}
+
+public class Car extends Vehicle {
+	public void accelerate (double a) {
+		super.accelerate(a); // chiamo la funzione del padre
+		this.fuel -= a * fuelType.fuelConsumption;
+	}
+}
+```
+
+Parliamo di **overloading** quando un metodo di una classe ha lo **stesso nome** ma parametri e/o valore di ritorno diverso.
+
+```java
+public class Vehicle {
+	public void accelerate (double a) {
+		this.speed += a;
+	}
+	
+	public int accelerate () { // overloading di accelerate
+		this.speed += 100;
+		return 1;
+	}
+}
+```

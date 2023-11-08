@@ -1082,8 +1082,8 @@
     "fuelType": {
       "fuelType": {
         "currentFile": {
-          "count": 2,
-          "lastUpdated": 1699033810424
+          "count": 3,
+          "lastUpdated": 1699486183404
         }
       }
     },
@@ -1204,6 +1204,38 @@
         "currentFile": {
           "count": 1,
           "lastUpdated": 1699471552125
+        }
+      }
+    },
+    "extends": {
+      "extends": {
+        "currentFile": {
+          "count": 1,
+          "lastUpdated": 1699486134481
+        }
+      }
+    },
+    "Vehicle": {
+      "Vehicle": {
+        "currentFile": {
+          "count": 1,
+          "lastUpdated": 1699486136776
+        }
+      }
+    },
+    "accelerate": {
+      "accelerate": {
+        "currentFile": {
+          "count": 1,
+          "lastUpdated": 1699486163321
+        }
+      }
+    },
+    "fuelConsumption": {
+      "fuelConsumption": {
+        "currentFile": {
+          "count": 1,
+          "lastUpdated": 1699486188122
         }
       }
     }
