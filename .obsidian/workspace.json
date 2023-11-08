@@ -4,16 +4,40 @@
     "type": "split",
     "children": [
       {
-        "id": "22a1a737b69cfe16",
+        "id": "f87eac2ee80003b0",
         "type": "tabs",
         "children": [
           {
-            "id": "e4e8564fbc73e87f",
+            "id": "d8d42bca132c7c50",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Secondo anno/Probabilità e statistica/Variabili casuali.md",
+                "file": "Secondo anno/Sistemi operativi mod. 1/Memoria/Memoria virtuale.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "9bc77af4c7fa70fe",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Primo anno/Secondo semestre/Architettura degli elaboratori mod. 2/Cache/Cache diretta.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "0e30102f3892cd10",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Primo anno/Secondo semestre/Architettura degli elaboratori mod. 2/Cache/Tipologie di memoria.md",
                 "mode": "source",
                 "source": false
               }
@@ -65,11 +89,13 @@
               "state": {}
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
-    "width": 305.5110321044922
+    "width": 305.5110321044922,
+    "collapsed": true
   },
   "right": {
     "id": "282a9548711da6a0",
@@ -85,7 +111,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Secondo anno/Probabilità e statistica/Variabili casuali.md",
+                "file": "Secondo anno/Sistemi operativi mod. 1/Memoria/Memoria virtuale.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +128,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Secondo anno/Probabilità e statistica/Variabili casuali.md",
+                "file": "Secondo anno/Sistemi operativi mod. 1/Memoria/Memoria virtuale.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +151,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Secondo anno/Probabilità e statistica/Variabili casuali.md"
+                "file": "Secondo anno/Sistemi operativi mod. 1/Memoria/Memoria virtuale.md"
               }
             }
           },
@@ -155,22 +181,36 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "e4e8564fbc73e87f",
+  "active": "451b3be92f0d1b8e",
   "lastOpenFiles": [
+    "Primo anno/Secondo semestre/Architettura degli elaboratori mod. 2/Cache/Cache diretta.md",
+    "Secondo anno/Sistemi operativi mod. 1/Memoria/Memoria fisica.md",
+    "Primo anno/Secondo semestre/Architettura degli elaboratori mod. 2/Cache/Tipologie di memoria.md",
+    "Secondo anno/Sistemi operativi mod. 1/Memoria/Memoria virtuale.md",
+    "Primo anno/Secondo semestre/Architettura degli elaboratori mod. 2/Riassunto.md",
+    "Primo anno/Secondo semestre/Architettura degli elaboratori mod. 2/Memoria virtuale/Gestione memoria e protezione del SO.md",
+    "Secondo anno/Sistemi operativi mod. 1/Images/Tabella inversa delle pagine.png",
+    "Secondo anno/Sistemi operativi mod. 1/Images/Tabella inversa delle pagine.png.crdownload",
+    "Secondo anno/Sistemi operativi mod. 1/Images/Pagine multilivello.png",
+    "Secondo anno/Sistemi operativi mod. 1/Images/Mapping diretto_associativo.png",
+    "Secondo anno/Sistemi operativi mod. 1/Images/Mapping diretto_associativo.png.crdownload",
+    "Primo anno/Secondo semestre/Architettura degli elaboratori mod. 2/Memoria virtuale/Mapping.md",
+    "Primo anno/Secondo semestre/Architettura degli elaboratori mod. 2/Cache/Cache associativa.md",
+    "Secondo anno/Sistemi operativi mod. 1/Images/Mapping associativo.png",
+    "Secondo anno/Algoritmi e strutture dati/Mod. 2/3 - Alberi/Cos'è un albero.md",
+    "Secondo anno/Algoritmi e strutture dati/Mod. 2/3 - Alberi/Implementazioni.md",
+    "Secondo anno/Sistemi operativi mod. 1/Images/Mapping diretto.png",
+    "Secondo anno/Sistemi operativi mod. 1/Thread.md",
+    "Secondo anno/Probabilità e statistica/Variabili casuali.md",
     "Excalidraw/Drawing 2023-11-06 21.57.56.excalidraw.md",
     "Secondo anno/Probabilità e statistica/Images/Moda Mediana Media.svg",
-    "Secondo anno/Probabilità e statistica/Variabili casuali.md",
     "Excalidraw",
     "Secondo anno/Basi di dati mod. 1/Linguaggi relazionali.md",
     "Secondo anno/Sistemi operativi mod. 1/Introduzione.md",
     "Secondo anno/Sistemi operativi mod. 1/Domande.md",
-    "Secondo anno/Sistemi operativi mod. 1/Memoria/Memoria fisica.md",
     "Secondo anno/Sistemi operativi mod. 1/Scheduling.md",
-    "Secondo anno/Sistemi operativi mod. 1/Thread.md",
     "Secondo anno/Sistemi operativi mod. 1/Processi.md",
     "Secondo anno/Sistemi operativi mod. 1/Riassunto.md",
-    "Primo anno/Secondo semestre/Architettura degli elaboratori mod. 2/Memoria virtuale/Gestione memoria e protezione del SO.md",
-    "Secondo anno/Sistemi operativi mod. 1/Memoria/Memoria virtuale.md",
     "Secondo anno/Algoritmi e strutture dati/Mod. 1/1 - Fibonacci.md",
     "Secondo anno/Programmazione ad oggetti mod. 1/Ereditarietà.md",
     "Secondo anno/Programmazione ad oggetti mod. 1/Information hiding.md",
@@ -180,28 +220,15 @@
     "Secondo anno/Algoritmi e strutture dati/Mod. 2/Images/Nodo intermedio.svg",
     "Secondo anno/Algoritmi e strutture dati/Mod. 2/Images/Nodo intermedio.svg",
     "Excalidraw/Drawing 2023-11-02 21.47.52.excalidraw.md",
-    "Excalidraw/Drawing 2023-11-02 22.19.13.excalidraw.md",
-    "Primo anno/Secondo semestre/Programmazione e laboratorio/Notes/Guida a C++.md",
-    "Secondo anno/Algoritmi e strutture dati/Mod. 2/3 - Alberi/Cos'è un albero.md",
-    "Secondo anno/Algoritmi e strutture dati/Mod. 2/3 - Alberi/Implementazioni.md",
-    "Secondo anno/Algoritmi e strutture dati/Mod. 2/3 - Alberi/Visite.md",
     "Secondo anno/Algoritmi e strutture dati/Mod. 2/Images/DFS.svg",
-    "Primo anno/Primo semestre/Matematica discreta/Il principio di induzione.md",
     "Secondo anno/Algoritmi e strutture dati/Mod. 2/3 - Alberi",
     "Secondo anno/Sistemi operativi mod. 1/Images/Page table entry.svg",
-    "Secondo anno/Sistemi operativi mod. 1/Images/Paginazione.png",
     "Secondo anno/Sistemi operativi mod. 1/Images/Paginazione.png.crdownload",
-    "Secondo anno/Sistemi operativi mod. 1/Images/Mapping dei blocchi.png",
     "Secondo anno/Sistemi operativi mod. 1/Memoria",
-    "Secondo anno/Algoritmi e strutture dati/Mod. 2/Images/Albero figlio sinistro fratello destro.svg",
-    "Secondo anno/Algoritmi e strutture dati/Mod. 2/Images/Albero con strutture collegate.svg",
-    "Secondo anno/Algoritmi e strutture dati/Mod. 2/Images/Albero k-ario.svg",
     "Secondo anno/Algoritmi e strutture dati/Mod. 2/2 - Dizionari/Implementazioni",
     "Secondo anno/Algoritmi e strutture dati/Mod. 2/2 - Dizionari",
     "Secondo anno/Algoritmi e strutture dati/Mod. 2/Images",
     "Secondo anno/Probabilità e statistica/Images/ASD 20-06-23 final.pdf",
-    "Secondo anno/Probabilità e statistica/Images/Non confermato 518592.crdownload",
-    "Secondo anno/Probabilità e statistica/Images/ASD 05-06-23.pdf",
     "Untitled.canvas"
   ]
 }
