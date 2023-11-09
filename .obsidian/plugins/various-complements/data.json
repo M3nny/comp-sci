@@ -3,6 +3,7 @@
   "cedictPath": "./cedict_ts.u8",
   "matchStrategy": "prefix",
   "fuzzyMatch": true,
+  "minFuzzyMatchScore": 0.5,
   "matchingWithoutEmoji": true,
   "treatAccentDiacriticsAsAlphabeticCharacters": false,
   "maxNumberOfSuggestions": 5,
@@ -14,19 +15,49 @@
   "disableSuggestionsDuringImeOn": false,
   "insertAfterCompletion": false,
   "firstCharactersDisableSuggestions": ":/^",
-  "useCommonPrefixCompletionOfSuggestion": false,
   "patternsToSuppressTrigger": [
     "^~~~.*",
     "^```.*"
   ],
+  "phrasePatternsToSuppressTrigger": [],
+  "noAutoFocusUntilCycle": false,
   "showMatchStrategy": true,
   "showComplementAutomatically": true,
   "showIndexingStatus": true,
   "descriptionOnSuggestion": "Short",
-  "selectSuggestionKeys": "Tab",
-  "additionalCycleThroughSuggestionsKeys": "None",
-  "disableUpDownKeysForCycleThroughSuggestionsKeys": false,
-  "openSourceFileKey": "None",
+  "hotkeys": {
+    "select": [
+      {
+        "modifiers": [],
+        "key": "Tab",
+        "hideHotkeyGuide": false
+      }
+    ],
+    "up": [
+      {
+        "modifiers": [],
+        "key": "ArrowUp"
+      }
+    ],
+    "down": [
+      {
+        "modifiers": [],
+        "key": "ArrowDown"
+      }
+    ],
+    "select 1st": [],
+    "select 2nd": [],
+    "select 3rd": [],
+    "select 4th": [],
+    "select 5th": [],
+    "select 6th": [],
+    "select 7th": [],
+    "select 8th": [],
+    "select 9th": [],
+    "open": [],
+    "completion": [],
+    "insert as text": []
+  },
   "propagateEsc": false,
   "enableCurrentFileComplement": true,
   "currentFileMinNumberOfCharacters": 0,
@@ -53,10 +84,13 @@
     "beforeRegExp": "",
     "after": ""
   },
+  "frontMatterKeyForExclusionInternalLink": "",
   "enableFrontMatterComplement": false,
   "frontMatterComplementMatchStrategy": "inherit",
   "insertCommaAfterFrontMatterCompletion": false,
   "intelligentSuggestionPrioritization": {
+    "enabled": true,
+    "historyFilePath": "",
     "maxDaysToKeepHistory": 30,
     "maxNumberOfHistoryToKeep": 0
   },
@@ -92,54 +126,6 @@
         "currentFile": {
           "count": 5,
           "lastUpdated": 1698133490780
-        }
-      }
-    },
-    "Partizione": {
-      "Partizione": {
-        "currentFile": {
-          "count": 1,
-          "lastUpdated": 1696923566853
-        }
-      }
-    },
-    "qualsiasi": {
-      "qualsiasi": {
-        "currentFile": {
-          "count": 1,
-          "lastUpdated": 1696923804220
-        }
-      }
-    },
-    "\\sum_i\\mathbb{P}": {
-      "\\sum_i\\mathbb{P}": {
-        "currentFile": {
-          "count": 1,
-          "lastUpdated": 1696924440522
-        }
-      }
-    },
-    "scrivere": {
-      "scrivere": {
-        "currentFile": {
-          "count": 1,
-          "lastUpdated": 1696924543936
-        }
-      }
-    },
-    "possibili": {
-      "possibili": {
-        "currentFile": {
-          "count": 1,
-          "lastUpdated": 1696924611170
-        }
-      }
-    },
-    "Classi": {
-      "Classi": {
-        "internalLink": {
-          "count": 1,
-          "lastUpdated": 1696925283733
         }
       }
     },
@@ -1238,6 +1224,27 @@
           "lastUpdated": 1699486188122
         }
       }
+    },
+    "ricerca": {
+      "ricerca": {
+        "currentFile": {
+          "count": 3,
+          "lastUpdated": 1699551811910
+        }
+      }
+    },
+    "ricerca.svg": {
+      "ricerca.svg": {
+        "currentFile": {
+          "count": 1,
+          "lastUpdated": 1699551801408
+        }
+      }
     }
-  }
+  },
+  "useCommonPrefixCompletionOfSuggestion": false,
+  "selectSuggestionKeys": "Tab",
+  "additionalCycleThroughSuggestionsKeys": "None",
+  "disableUpDownKeysForCycleThroughSuggestionsKeys": false,
+  "openSourceFileKey": "None"
 }
