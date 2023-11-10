@@ -4,28 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "53fb4b5176d97f7c",
+        "id": "53bf3616b44e4886",
         "type": "tabs",
         "children": [
           {
-            "id": "0fd5e336713104e5",
+            "id": "4108e01665d1ba3a",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
                 "file": "Secondo anno/Programmazione ad oggetti mod. 1/Ereditarietà.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "139e10e95f16a8c7",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Secondo anno/Programmazione ad oggetti mod. 1/Information hiding.md",
                 "mode": "source",
                 "source": false
               }
@@ -154,7 +142,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -166,20 +155,21 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "3464361bbfd9948f",
+  "active": "4108e01665d1ba3a",
   "lastOpenFiles": [
+    "Secondo anno/Probabilità e statistica/Distribuzioni note.md",
+    "Secondo anno/Probabilità e statistica/Costanti caratteristiche.md",
+    "Secondo anno/Probabilità e statistica/Variabili casuali.md",
+    "Secondo anno/Probabilità e statistica/Probabilità condizionata.md",
+    "Primo anno/Primo semestre/Calcolo 1/Integrali/Integrali indefiniti.md",
     "Secondo anno/Programmazione ad oggetti mod. 1/Information hiding.md",
     "Secondo anno/Programmazione ad oggetti mod. 1/Ereditarietà.md",
     "Secondo anno/Programmazione ad oggetti mod. 1/Introduzione.md",
     "Secondo anno/Programmazione ad oggetti mod. 1/Classi.md",
     "Secondo anno/Basi di dati mod. 1/SQL/DML.md",
     "Secondo anno/Basi di dati mod. 1/SQL",
-    "Secondo anno/Probabilità e statistica/Distribuzioni note.md",
-    "Secondo anno/Probabilità e statistica/Costanti caratteristiche.md",
-    "Secondo anno/Probabilità e statistica/Variabili casuali.md",
     "Secondo anno/Probabilità e statistica/Probabilità elementare.md",
     "Secondo anno/Algoritmi e strutture dati/Mod. 2/3 - Alberi/Alberi binari di ricerca.md",
-    "Secondo anno/Probabilità e statistica/Probabilità condizionata.md",
     "Secondo anno/Probabilità e statistica/Formulario.md",
     "Excalidraw/Drawing 2023-11-09 20.53.38.excalidraw.md",
     "Secondo anno/Algoritmi e strutture dati/Mod. 2/Images/Sucessore.svg",
@@ -203,7 +193,6 @@
     "Secondo anno/Sistemi operativi mod. 1/Images/Mapping diretto_associativo.png",
     "Secondo anno/Sistemi operativi mod. 1/Images/Mapping diretto_associativo.png.crdownload",
     "Primo anno/Secondo semestre/Architettura degli elaboratori mod. 2/Memoria virtuale/Mapping.md",
-    "Primo anno/Secondo semestre/Architettura degli elaboratori mod. 2/Cache/Cache associativa.md",
     "Secondo anno/Sistemi operativi mod. 1/Images/Mapping associativo.png",
     "Secondo anno/Sistemi operativi mod. 1/Images/Mapping diretto.png",
     "Secondo anno/Probabilità e statistica/Images/Moda Mediana Media.svg",

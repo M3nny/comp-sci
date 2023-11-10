@@ -84,7 +84,7 @@ I **costruttori** ed i metodi `abstract`, <u>non possono essere preceduti</u> da
 | -------- |:-----:|:-----:|:------:|:------:|:-----:|:--------:|
 | Static   |  ❌   |  ✅   |   ✅   |        |       |          |
 | Final    |  ✅   |  ✅   |   ✅   |   ✅   |       |          |
-| Abstract |  ✅   |  ✅   |   ✅   |   ❌   |  ❌   |          |
+| Abstract |  ✅   |  ❌   |   ✅   |   ❌   |  ❌   |          |
 
 ### Principio di sostituzione
 Si può usare una istanza della superclasse come istanza della sottoclasse, ovviamente se la sottoclasse ha metodi in più, non potranno essere chiamati.
