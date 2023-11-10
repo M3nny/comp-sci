@@ -4,16 +4,28 @@
     "type": "split",
     "children": [
       {
-        "id": "786d37b56f79b0bf",
+        "id": "53fb4b5176d97f7c",
         "type": "tabs",
         "children": [
           {
-            "id": "86376589cd851bfa",
+            "id": "0fd5e336713104e5",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Secondo anno/Algoritmi e strutture dati/Mod. 2/3 - Alberi/Implementazioni.md",
+                "file": "Secondo anno/Programmazione ad oggetti mod. 1/Ereditarietà.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "139e10e95f16a8c7",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Secondo anno/Programmazione ad oggetti mod. 1/Information hiding.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +97,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Secondo anno/Algoritmi e strutture dati/Mod. 2/3 - Alberi/Implementazioni.md",
+                "file": "Secondo anno/Programmazione ad oggetti mod. 1/Ereditarietà.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +114,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Secondo anno/Algoritmi e strutture dati/Mod. 2/3 - Alberi/Implementazioni.md",
+                "file": "Secondo anno/Programmazione ad oggetti mod. 1/Ereditarietà.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +137,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Secondo anno/Algoritmi e strutture dati/Mod. 2/3 - Alberi/Implementazioni.md"
+                "file": "Secondo anno/Programmazione ad oggetti mod. 1/Ereditarietà.md"
               }
             }
           },
@@ -142,8 +154,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -155,8 +166,14 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "86376589cd851bfa",
+  "active": "3464361bbfd9948f",
   "lastOpenFiles": [
+    "Secondo anno/Programmazione ad oggetti mod. 1/Information hiding.md",
+    "Secondo anno/Programmazione ad oggetti mod. 1/Ereditarietà.md",
+    "Secondo anno/Programmazione ad oggetti mod. 1/Introduzione.md",
+    "Secondo anno/Programmazione ad oggetti mod. 1/Classi.md",
+    "Secondo anno/Basi di dati mod. 1/SQL/DML.md",
+    "Secondo anno/Basi di dati mod. 1/SQL",
     "Secondo anno/Probabilità e statistica/Distribuzioni note.md",
     "Secondo anno/Probabilità e statistica/Costanti caratteristiche.md",
     "Secondo anno/Probabilità e statistica/Variabili casuali.md",
@@ -174,7 +191,6 @@
     "Secondo anno/Algoritmi e strutture dati/Mod. 2/Images/Alberi binari di ricerca.svg",
     "Secondo anno/Algoritmi e strutture dati/Mod. 2/Images/Albero bilanciato.svg",
     "Excalidraw",
-    "Secondo anno/Programmazione ad oggetti mod. 1/Ereditarietà.md",
     "Primo anno/Secondo semestre/Architettura degli elaboratori mod. 2/Cache/Tipologie di memoria.md",
     "Primo anno/Secondo semestre/Architettura degli elaboratori mod. 2/Cache/Cache diretta.md",
     "Secondo anno/Sistemi operativi mod. 1/Memoria/Memoria virtuale.md",
@@ -190,11 +206,7 @@
     "Primo anno/Secondo semestre/Architettura degli elaboratori mod. 2/Cache/Cache associativa.md",
     "Secondo anno/Sistemi operativi mod. 1/Images/Mapping associativo.png",
     "Secondo anno/Sistemi operativi mod. 1/Images/Mapping diretto.png",
-    "Secondo anno/Sistemi operativi mod. 1/Thread.md",
-    "Excalidraw/Drawing 2023-11-06 21.57.56.excalidraw.md",
     "Secondo anno/Probabilità e statistica/Images/Moda Mediana Media.svg",
-    "Secondo anno/Basi di dati mod. 1/Linguaggi relazionali.md",
-    "Secondo anno/Sistemi operativi mod. 1/Introduzione.md",
     "Secondo anno/Algoritmi e strutture dati/Mod. 2/Images/Nodo intermedio.svg",
     "Secondo anno/Algoritmi e strutture dati/Mod. 2/3 - Alberi",
     "Secondo anno/Sistemi operativi mod. 1/Images/Paginazione.png.crdownload",
@@ -202,7 +214,6 @@
     "Secondo anno/Algoritmi e strutture dati/Mod. 2/2 - Dizionari/Implementazioni",
     "Secondo anno/Algoritmi e strutture dati/Mod. 2/2 - Dizionari",
     "Secondo anno/Algoritmi e strutture dati/Mod. 2/Images",
-    "Secondo anno/Probabilità e statistica/Images/ASD 20-06-23 final.pdf",
     "Untitled.canvas"
   ]
 }

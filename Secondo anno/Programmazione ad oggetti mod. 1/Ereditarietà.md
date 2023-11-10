@@ -37,6 +37,7 @@ public class Car extends Vehicle { // eredita da Vehicle
 }
 ```
 
+### Overriding
 Se un metodo della sottoclasse è **uguale** ad un metodo della classe padre, si parla di **overriding**, è comunque possibile chiamare il metodo originale del padre all'interno della classe figlio tramite `super.method()`.
 
 ```java
@@ -55,6 +56,9 @@ public class Car extends Vehicle {
 }
 ```
 
+I <u>modificatori d'accesso non fanno parte della firma del metodo</u>, questo significa che si può allargare o diminuire la visibilità di un metodo quando si esegue l'overriding.
+>I metodi **final** e **static**, <u>non possono essere sovrascritti</u>.
+### Overloading
 Parliamo di **overloading** quando un metodo di una classe ha lo **stesso nome** ma parametri e/o valore di ritorno diverso.
 
 ```java
@@ -69,3 +73,31 @@ public class Vehicle {
 	}
 }
 ```
+
+### Classi e metodi final
+A differenza dei campi `final` ai quali si può assegnare un valore solo una volta, le classi `final` **impediscono di essere estese**, mentre i metodi `final` **impediscono di essere sovrascritti**.
+
+I **costruttori** ed i metodi `abstract`, <u>non possono essere preceduti</u> da `final`.
+
+### Riassunto sui modificatori
+|          | Class | Field | Method | Static | Final | Abstract |
+| -------- |:-----:|:-----:|:------:|:------:|:-----:|:--------:|
+| Static   |  ❌   |  ✅   |   ✅   |        |       |          |
+| Final    |  ✅   |  ✅   |   ✅   |   ✅   |       |          |
+| Abstract |  ✅   |  ✅   |   ✅   |   ❌   |  ❌   |          |
+
+### Principio di sostituzione
+Si può usare una istanza della superclasse come istanza della sottoclasse, ovviamente se la sottoclasse ha metodi in più, non potranno essere chiamati.
+
+```java
+int race (Vehicle v1, Vehicle v2, double length) {
+	v1.accelerate(Math.random()*10);
+	v2.accelerate(Math.random()*10);
+}
+
+// Main
+race(new Car(), new Car());
+race(new Truck(), new Truck());
+race(new Car(), new Truck());
+```
+Ogni sottoclasse avrà il suo modo di accelerare, e anche la quantità di accelerazione potrà essere diversa.
