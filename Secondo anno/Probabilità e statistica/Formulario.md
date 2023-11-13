@@ -1,7 +1,8 @@
 **Distribuzione binomiale**:
 $$\boxed{P[A_k]=\binom{n}{k}p^k(1-p)^{n-k}}$$
 ```R
-dbinom(k, n, p)
+dbinom(k, n, p) # Funzione di densità
+pbinom(k, n, p) # Funzione di ripartizione
 ```
 
 - $n$: numero di estrazioni
@@ -13,7 +14,8 @@ dbinom(k, n, p)
 **Distribuzione ipergeometrica**:
 $$\boxed{\mathbb{P}[A_k]=\frac{\binom{K}{k}\binom{N-K}{n-k}}{\binom{N}{n}}}$$
 ```R
-dhyper(k, K, N-K, n)
+dhyper(k, K, N-K, n) # Funzione di densità
+phyper(k, K, N-K, n) # Funzione di ripartizione
 ```
 
 - $N$: dimensione della popolazione

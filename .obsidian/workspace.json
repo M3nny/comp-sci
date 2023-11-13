@@ -4,19 +4,15 @@
     "type": "split",
     "children": [
       {
-        "id": "53bf3616b44e4886",
+        "id": "4b6d54865d6adbbb",
         "type": "tabs",
         "children": [
           {
-            "id": "4108e01665d1ba3a",
+            "id": "f68e31096780ad81",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Secondo anno/Programmazione ad oggetti mod. 1/Ereditarietà.md",
-                "mode": "source",
-                "source": false
-              }
+              "type": "empty",
+              "state": {}
             }
           }
         ]
@@ -69,7 +65,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 305.5110321044922
+    "width": 305.5110321044922,
+    "collapsed": true
   },
   "right": {
     "id": "282a9548711da6a0",
@@ -85,7 +82,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Secondo anno/Programmazione ad oggetti mod. 1/Ereditarietà.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +98,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Secondo anno/Programmazione ad oggetti mod. 1/Ereditarietà.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -124,9 +119,7 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "Secondo anno/Programmazione ad oggetti mod. 1/Ereditarietà.md"
-              }
+              "state": {}
             }
           },
           {
@@ -155,22 +148,22 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "4108e01665d1ba3a",
+  "active": "f68e31096780ad81",
   "lastOpenFiles": [
-    "Secondo anno/Probabilità e statistica/Distribuzioni note.md",
+    "Secondo anno/Probabilità e statistica/Formulario.md",
+    "Secondo anno/Probabilità e statistica/Distribuzioni discrete.md",
+    "Secondo anno/Programmazione ad oggetti mod. 1/Ereditarietà.md",
     "Secondo anno/Probabilità e statistica/Costanti caratteristiche.md",
     "Secondo anno/Probabilità e statistica/Variabili casuali.md",
     "Secondo anno/Probabilità e statistica/Probabilità condizionata.md",
     "Primo anno/Primo semestre/Calcolo 1/Integrali/Integrali indefiniti.md",
     "Secondo anno/Programmazione ad oggetti mod. 1/Information hiding.md",
-    "Secondo anno/Programmazione ad oggetti mod. 1/Ereditarietà.md",
     "Secondo anno/Programmazione ad oggetti mod. 1/Introduzione.md",
     "Secondo anno/Programmazione ad oggetti mod. 1/Classi.md",
     "Secondo anno/Basi di dati mod. 1/SQL/DML.md",
     "Secondo anno/Basi di dati mod. 1/SQL",
     "Secondo anno/Probabilità e statistica/Probabilità elementare.md",
     "Secondo anno/Algoritmi e strutture dati/Mod. 2/3 - Alberi/Alberi binari di ricerca.md",
-    "Secondo anno/Probabilità e statistica/Formulario.md",
     "Excalidraw/Drawing 2023-11-09 20.53.38.excalidraw.md",
     "Secondo anno/Algoritmi e strutture dati/Mod. 2/Images/Sucessore.svg",
     "Excalidraw/Drawing 2023-11-09 18.10.38.excalidraw.md",
