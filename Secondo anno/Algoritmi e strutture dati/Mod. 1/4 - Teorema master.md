@@ -15,7 +15,7 @@ T(n)=&T_\text{split}(n)+\\
 Dato che $T_\text{split}(n)$ e $T_\text{merge}(n)$ non sono funzioni ricorsive, possiamo considerarli come risultato di una funzione $f(n)$ la quale complessità dipenderà dalla dimensione del problema, quindi: $f(n)=T_\text{split}(n)+T_\text{merge}(n)$
 
 La complessità ora risulta essere:
-$$T(n)=a\cdot T\left(\frac{n}{b}\right)+f(n)$$
+$$\boxed{T(n)=a\cdot T\left(\frac{n}{b}\right)+f(n)}$$
 Le condizioni per la correttezza dell'algoritmo sono le seguenti:
 1. $f(n)\geq 0$ per ogni $n$ sufficientemente grande
 2. $a\geq 1,\quad a\in\mathbb{R}$
@@ -78,3 +78,88 @@ Se $f(n)$ occupa più tempo della parte ricorsiva, allora il tempo impiegato dal
 >Scelgo $c=\frac{1}{3}$ verificando così la condizione ausiliaria.
 >La complessità dell'algoritmo è quindi:
 >$$T(n)=\Theta(n)$$
+
+---
+## Dimostrazione
+La dimostrazione è divisa in due parti:
+1. Trasformazione della formula ricorsiva ad esplicita
+2. Dimostrazione dei tre casi
+
+#### Parte 1
+Usiamo l'albero delle ricorsioni per esplicitare la formula:
+![[Albero delle ricorsioni teorema master.svg]]
+All'inizio il problema sarà di dimensione $n$, i suoi $a$ nodi figli risolveranno una parte <u>più piccola</u> di esso, di dimensione $\frac{n}{b}$, lo stesso vale per tutti gli altri nodi.
+- I nodi presenti al livello $i$ sono: $a^i$
+- La dimensione di ogni problema a livello $i$: $\frac{n}{b^i}$
+- Al livello $0$ il tempo impiegato è $f(n)$, al livello $i$: $f(\frac{n}{b^i})$
+
+Il **tempo di esecuzione** sarà pari al tempo complessivo per risolvere tutte le chiamate nei vari livelli, ovvero:
+$$T(n)=\sum_{i=0}^\text{n° di livelli}a^if\left(\frac{n}{b^i}\right)$$
+esplicitando ancora si ottiene:
+$$\begin{cases}a\cdot T(\frac{n}{b})+f(n)&n\geq 2\\c&n=1\end{cases}$$
+le <u>chiamate ricorsive finiranno</u> quando $\frac{n}{b^i}=1$, isolando $i$ otteniamo:
+$$i=\log_b n$$
+
+Il **numero di foglie** è pari a:
+$$n_\text{foglie}=a^{\log_bn}=a^{\log_ba\cdot\log_an}=(a^{\log_an})^{\log_ba}=n^{\log_ba}=n^d$$
+Il **numero di nodi** è pari a:
+$$n_\text{nodi}=\sum_{i=0}^{\log_bn}a^i\overset{\text{progressione geometrica}}{=}\frac{a^{\log_bn+1}-1}{a-1}=\frac{a\cdot a^{\log_bn}-1}{a-1}=\frac{a\cdot n^d-1}{a-1}=\Theta(n^d)$$
+#### Parte 2
+Dimostriamo ogni caso.
+##### Caso 1
+Per ipotesi sappiamo che $\exists\epsilon>0:f(n)=O(n^{d-\epsilon})$, applichiamola alla formula della complessità totale del livello $i$-esimo.
+$$\begin{flalign}
+a^i\cdot f(\frac{n}{b^i})&=a^i\cdot O((\frac{n}{b})^{d-\epsilon})\space\text{per ipotesi}\\
+&=O(a^i\cdot(\frac{n}{b^i})^{d-\epsilon})\\
+&=O(a^i\cdot(\frac{n^{d-\epsilon}}{(b^i)^{d-\epsilon}}))\\
+&=O(a^i\cdot\frac{n^{d-\epsilon}}{(b^i)^d(b^i)^{-\epsilon}})\\
+&=O(a^i\cdot\frac{n^{d-\epsilon}}{(b^d)^i(b^i)^{-\epsilon}})\space\text{dato }d=\log_ba,\space (b^d)^i=a^i\text{ possiamo semplificare}\\
+&=O(\frac{n^{d-\epsilon}}{(b^i)^{-\epsilon}})\\
+&=O((b^i)^\epsilon\cdot n^{d-\epsilon})\\
+&=O((b^\epsilon)^i\cdot n^{d-\epsilon})
+\end{flalign}$$
+
+Per trovare la complessità totale, calcoliamo la sommatoria dei livelli usando il risultato appena trovato.
+$$\begin{flalign}
+T(n)&=\sum_{i=0}^{\log_bn}a^i\cdot f(\frac{n}{b^i})=\sum_{i=0}^{\log_bn}O((b^\epsilon)^i\cdot n^{n-\epsilon})\\
+&=O((n^{d-\epsilon})\cdot\sum_{i=0}^{\log_bn}(b^\epsilon)^i)\\
+&=O(n^{d-\epsilon}\cdot\frac{(b^\epsilon)^{\log_bn+1}-1}{b^\epsilon-1})\space\text{sfruttando la progressione geometrica}\\
+&=O(n^{d-\epsilon}\cdot\frac{b^\epsilon\cdot(b^\epsilon)^{\log_bn}-1}{b^\epsilon-1})\\
+&=O(n^{d-\epsilon}\cdot\frac{b^\epsilon\cdot(b^{\log_bn})^\epsilon-1}{b^\epsilon-1})\\
+&=O(n^{d-\epsilon}\cdot\frac{b^\epsilon\cdot n^\epsilon-1}{b^\epsilon-1})\\
+&=O(n^{d-\epsilon}\cdot n^\epsilon)\space\text{togliendo le costanti}\\
+&=O(n^d)
+\end{flalign}$$
+Per quanto riguarda $T(n)=\Omega(n^d)$, questo risulta vero dato che l'algoritmo deve passare tutti i $n^d$ nodi foglia, quindi:
+$$T(n)=\Theta(n)$$
+##### Caso 2
+Dall'ipotesi sappiamo che $f(n)=\Theta(n^d)\implies T(n)=\Theta(n^d\log n)$, applichiamola alla formula della complessità totale del livello $i$-esimo.
+
+$$\begin{flalign}
+a^i\cdot f(\frac{n}{b^i})&=a^i\cdot\Theta((\frac{n}{b^i})^d)\space\text{per ipotesi}\\
+&=\Theta(a^i\cdot\frac{n^d}{(b^i)^d})\\
+&=\Theta(a^i\cdot\frac{n^d}{(b^d)^i})\space\text{dato }d=\log_ba,\space (b^d)^i=a^i\text{ possiamo semplificare}\\
+&=\Theta(n^d)
+\end{flalign}$$
+Calcoliamo la complessità totale.
+$$\begin{flalign}
+T(n)&=\sum_{i=0}^{\log_bn}a^if(\frac{n}{b^i})=\sum_{i=0}^{\log_bn}\Theta(n^d)=\Theta(\sum_{i=0}^{\log_bn}n^d)\\
+&=\Theta(n^d(\log_bn+1))\\
+&=\Theta(n^d\log_bn)\space\text{togliendo le costanti}
+\end{flalign}$$
+##### Caso 3
+Dall'ipotesi otteniamo due condizioni, ovvero che $\exists\epsilon>0:f(n)=\Omega(n^{d+\epsilon})$ e che $\exists 0<c<1$ per $n$ suff. grande. $a\cdot f(\frac{n}{b})\leq c\cdot f(n)$.
+
+Dato che il tempo di split e merge occupa la maggior parte del tempo, otteniamo che:
+$$\forall i\geq 0:\space a^if(\frac{n}{b^i})\leq c^if(n)$$
+Calcoliamo la complessità totale.
+$$\begin{flalign}
+T(n)&=\sum_{i=0}^{\log_bn}a^i\cdot f(\frac{n}{b^i})\\
+&\leq\sum_{i=0}^{\log_bn}c^i\cdot f(n)=f(n)\sum_{i=0}^{\log_bn}c^i\\
+&\leq f(n)\sum_{i=0}^{\infty}c^i=f(n)\frac{1}{1-c}\space\text{sfruttando la serie geometrica}\\
+&\leq f(n)\space\text{togliendo le costanti}
+\end{flalign}$$
+Abbiamo quindi che $T(n)=O(f(n))$, per quanto riguarda $T(n)=\Omega(f(n))$ sappiamo che è sicuramente vero, perchè:
+$$T(n)=a\cdot T(\frac{n}{b})+f(n)$$
+dove $a\cdot T(\frac{n}{b})\geq 0$, quindi sicuramente $T(n)\geq f(n)$, quindi:
+$$T(n)=\Theta(f(n))$$

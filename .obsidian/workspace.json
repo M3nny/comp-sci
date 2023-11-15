@@ -11,8 +11,12 @@
             "id": "f68e31096780ad81",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {}
+              "type": "markdown",
+              "state": {
+                "file": "Secondo anno/Algoritmi e strutture dati/Mod. 1/4 - Teorema master.md",
+                "mode": "source",
+                "source": false
+              }
             }
           }
         ]
@@ -65,8 +69,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 305.5110321044922,
-    "collapsed": true
+    "width": 305.5110321044922
   },
   "right": {
     "id": "282a9548711da6a0",
@@ -82,6 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "Secondo anno/Algoritmi e strutture dati/Mod. 1/4 - Teorema master.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -98,6 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "Secondo anno/Algoritmi e strutture dati/Mod. 1/4 - Teorema master.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -119,7 +124,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "Secondo anno/Algoritmi e strutture dati/Mod. 1/4 - Teorema master.md"
+              }
             }
           },
           {
@@ -148,8 +155,18 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "f68e31096780ad81",
+  "active": "a1163d9af64d6878",
   "lastOpenFiles": [
+    "Excalidraw/Drawing 2023-11-15 15.11.44.excalidraw.md",
+    "Secondo anno/Algoritmi e strutture dati/Mod. 1/4 - Teorema master.md",
+    "Secondo anno/Algoritmi e strutture dati/Mod. 1/Images/Albero delle ricorsioni teorema master.svg",
+    "Excalidraw",
+    "Secondo anno/Algoritmi e strutture dati/Mod. 2/3 - Alberi/Visite.md",
+    "Secondo anno/Algoritmi e strutture dati/Mod. 2/3 - Alberi/Implementazioni.md",
+    "Secondo anno/Algoritmi e strutture dati/Mod. 2/3 - Alberi/Alberi binari di ricerca.md",
+    "Secondo anno/Algoritmi e strutture dati/Mod. 2/3 - Alberi/Decomposizione.md",
+    "tree.md",
+    "Secondo anno/Algoritmi e strutture dati/Mod. 2/3 - Alberi/Cos'è un albero.md",
     "Secondo anno/Probabilità e statistica/Formulario.md",
     "Secondo anno/Probabilità e statistica/Distribuzioni discrete.md",
     "Secondo anno/Programmazione ad oggetti mod. 1/Ereditarietà.md",
@@ -163,33 +180,22 @@
     "Secondo anno/Basi di dati mod. 1/SQL/DML.md",
     "Secondo anno/Basi di dati mod. 1/SQL",
     "Secondo anno/Probabilità e statistica/Probabilità elementare.md",
-    "Secondo anno/Algoritmi e strutture dati/Mod. 2/3 - Alberi/Alberi binari di ricerca.md",
     "Excalidraw/Drawing 2023-11-09 20.53.38.excalidraw.md",
     "Secondo anno/Algoritmi e strutture dati/Mod. 2/Images/Sucessore.svg",
     "Excalidraw/Drawing 2023-11-09 18.10.38.excalidraw.md",
     "Excalidraw/Drawing 2023-11-09 18.09.30.excalidraw.md",
     "Excalidraw/Drawing 2023-11-09 18.27.32.excalidraw.md",
-    "Secondo anno/Algoritmi e strutture dati/Mod. 2/3 - Alberi/Cos'è un albero.md",
-    "Secondo anno/Algoritmi e strutture dati/Mod. 2/3 - Alberi/Implementazioni.md",
     "Secondo anno/Algoritmi e strutture dati/Mod. 2/Images/Alberi binari di ricerca.svg",
     "Secondo anno/Algoritmi e strutture dati/Mod. 2/Images/Albero bilanciato.svg",
-    "Excalidraw",
     "Primo anno/Secondo semestre/Architettura degli elaboratori mod. 2/Cache/Tipologie di memoria.md",
-    "Primo anno/Secondo semestre/Architettura degli elaboratori mod. 2/Cache/Cache diretta.md",
-    "Secondo anno/Sistemi operativi mod. 1/Memoria/Memoria virtuale.md",
-    "Secondo anno/Sistemi operativi mod. 1/Memoria/Memoria fisica.md",
-    "Primo anno/Secondo semestre/Architettura degli elaboratori mod. 2/Riassunto.md",
-    "Primo anno/Secondo semestre/Architettura degli elaboratori mod. 2/Memoria virtuale/Gestione memoria e protezione del SO.md",
     "Secondo anno/Sistemi operativi mod. 1/Images/Tabella inversa delle pagine.png",
     "Secondo anno/Sistemi operativi mod. 1/Images/Tabella inversa delle pagine.png.crdownload",
     "Secondo anno/Sistemi operativi mod. 1/Images/Pagine multilivello.png",
     "Secondo anno/Sistemi operativi mod. 1/Images/Mapping diretto_associativo.png",
     "Secondo anno/Sistemi operativi mod. 1/Images/Mapping diretto_associativo.png.crdownload",
-    "Primo anno/Secondo semestre/Architettura degli elaboratori mod. 2/Memoria virtuale/Mapping.md",
     "Secondo anno/Sistemi operativi mod. 1/Images/Mapping associativo.png",
     "Secondo anno/Sistemi operativi mod. 1/Images/Mapping diretto.png",
     "Secondo anno/Probabilità e statistica/Images/Moda Mediana Media.svg",
-    "Secondo anno/Algoritmi e strutture dati/Mod. 2/Images/Nodo intermedio.svg",
     "Secondo anno/Algoritmi e strutture dati/Mod. 2/3 - Alberi",
     "Secondo anno/Sistemi operativi mod. 1/Images/Paginazione.png.crdownload",
     "Secondo anno/Sistemi operativi mod. 1/Memoria",
