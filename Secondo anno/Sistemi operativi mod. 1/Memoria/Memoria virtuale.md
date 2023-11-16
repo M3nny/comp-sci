@@ -89,7 +89,101 @@ Si usa un **dirty bit** che è pari a $1$ se la pagina è stata modificata, $0$ 
 Esiste una tecnica di **flush** per scrivere sul disco le pagine modificate (come un _write-through_ periodico).
 
 Per evitare i **page fault** usiamo le seguenti strategie di sostituzione:
-- **Random**: sostituisce una pagina scelta a caso
-- **FIFO**: sostituisce la pagina che è più vecchia (potrebbe essere molto usata comunque)
-- **Least Frequently Used (LRU)**: sostituisce la pagina che non viene riferita da più tempo
-- **Not Frequently Used (NFU)**: sostituisce la pagina che non è stata recentemente riferita tramite dei contatori di riferimenti recenti (se sono state tutte riferite, si sostituisce una pagina che non è stata modificata), periodicamente i riferimenti si possono resettare.
+- **Random**:
+	sostituisce una pagina <u>scelta a caso</u>
+
+- **FIFO**:
+	sostituisce la pagina che è <u>più vecchia</u> (potrebbe essere molto usata comunque).
+
+- **Least Frequently Used (LRU)**:
+	sostituisce la pagina che <u>non viene riferita da più tempo</u>.
+
+- **Not Frequently Used (NFU)**:
+	sostituisce la pagina che <u>non è stata recentemente riferita tramite dei contatori</u> di riferimenti recenti (se sono state tutte riferite, si sostituisce una pagina che non è stata modificata), periodicamente i riferimenti si possono resettare.
+
+- **Not Recently Used (NRU)**:
+	<u>approssima la NFU, usando i bit di riferimento e modifica</u>, cerca di sostituire prima una pagina non riferita e se non ne trova una, ne sostituisce una non modificata, periodicamente si possono azzerare i bit di riferimento.
+
+- **Second chance**:
+	è una variante FIFO che <u>esamina il bit di riferimento della pagina più vecchia, se è</u> $0$ <u>la sostituisce, altrimenti lo azzera e sposta la pagina in coda FIFO come nuovo arrivo</u>.
+
+- **A orologio**:
+	è una variante FIFO, con implementazione <u>simile a Second chance, solo che al posto di usare una lista lineare, ne usa una circolare</u>, dove c'è una lancetta (puntatore) che punta alla pagina più vecchia, quando si dovrà sostituire, se il suo bit di riferimento è $0$ la sostituisce, altrimenti lo azzera e la lancetta va al prossimo elemento.
+
+- **Far**:
+	viene costruito in grafo dove, i nodi sono le pagine e gli archi i riferimenti ad esse, <u>viene sostituita la pagina non referenziata più lontana da qualsiasi pagina riferita</u>.
+
+#### Modello working set
+Per eseguire un programma in modo efficiente, bisogna tenere in memoria principale le sue pagine più usate, altrimenti si accederebbe spesso alla memoria secondaria (thrashing).
+
+Per fare ciò, si tiene in memoria un range di pagine referenziate negli ultimi secondi **sfruttando il principio di località**.
+>La dimensione del working set aumenta con la dimensione del processo.
+
+Un processo **può avere più working set**, quando smette di utilizzarne uno, quest'ultimo viene mantenuto temporaneamente in memoria, e <u>se bisogna sostituire delle pagine, verranno sostituite delle pagine che non fanno parte dei working set</u> del processo in esecuzione, tenendo a mente questo, vediamo altri metodi di sostituzione:
+
+- **Clock e Working Set (WSClock)**:
+	oltre ad avere una "seconda chance", in [questo algoritmo](https://cs.winona.edu/Francioni/cs405/wsclock.html), se il frame non è stato referenziato dall'ultima ispezione, ha una "terza chance" prima di essere rimosso, questo meccanismo è implementato controllando se il frame che si sta ispezionando fa parte dell'attuale working set, <u>una pagina viene sostituita solo se non è stata referenziata dall'ultima ispezione ed il tempo virtuale attuale è maggiore di quello dell'ultima ispezione del frame ispezionato</u>.
+
+- **Page Fault Frequency (PFF)**:
+	<u>basandosi sulla frequenza di page fault</u> del processo in questione ed il tempo trascorso tra i page fault (_interfault_), modifica il numero di pagine del working set in memoria, ovvero se fa tanti page fault, allora dovrà allargare il range del working set.
+
+Le **pagine inattive**, tuttavia, possono essere **sostituite volontariamente** dal processo che non ne ha più bisogno (senza dover aspettare l'algoritmo di sostituzione), questa strategia può essere implementata nel compilatore e nel sistema operativo.
+
+La dimensione della pagina, inoltre, può variare tra vari sistemi operativi:
+- **Piccola**:
+	- Può ridurre la memoria per contenere un working set
+	- Maggior memoria per altri processi
+	- Tabella delle pagine più grande
+- **Grande**:
+	- Ogni riga della TLB mappa una regione più ampia della memoria
+	- Riduce il numero di operazioni per caricare un working set in memoria
+
+#### Sostituzioni globali
+Sono strategie applicate a tutti i processi, quindi ignorano le caratteristiche individuali di comportamento del processo.
+
+- **Global LRU (gLRU)**:
+	sostituisce la pagina <u>meno usata di recente in tutto il sistema</u>.
+
+- **SEQ**: 
+	usa la <u>gLRU finchè non avvengono page fault in pagine contigue</u>, allora lì utilizza la MRU.
+
+---
+## Segmentazione
+Un segmento è un **concetto logico**, non fisico (come le pagine), inoltre possono non essere della stessa dimensione e/o adiacenti.
+
+>La traduzione dell'indirizzo con mapping diretto è analoga al [[Memoria virtuale#Mapping dei blocchi|mapping dei blocchi]], con l'unica differenza che al posto del block number si ha il segment number.
+
+Ogni riga nella mappa dei segmenti contiene:
+- $s$ inizia all'indirizzo $s'$ in memoria reale
+- **Bit di residenza**
+- **Lunghezza**: usata per evitare che un processo riferisca al di fuori del segmento
+- **Bits di protezione**: controlla se il tipo di operazione è ammessa, altrimenti genera un'eccezione, i bit di protezione sono: R(read)-W(write)-E(execute)-A(append)
+
+Durante un riferimento possono avvenire le seguenti eccezioni:
+- **Missing segment fault**: il segmento non è in memoria
+- **Overflow segment exception**: se l'offset supera la lunghezza del segmento
+- **Segment protection exception**: se non è consentita l'operazione (R-W-E-A)
+
+La **condivisione** con i segmenti può causare meno overhead rispetto a quella in un sistema con paginazione pura e con mapping diretto.
+
+>[!Tip] Paginazione vs Segmentazione
+>I sistemi con paginazione sono nati per avere un grande spazio di indirizzamento lineare senza dover comprare altra memoria.
+>
+>I sistemi con segmentazione permettono ai programmi ed i dati di essere suddivisi in spazi di indirizzamento logici indipendenti e per migliorare la condivisione e protezione 
+
+## Paginazione + Segmentazione
+Per sfruttare i vantaggi delle due tecniche: i segmenti possono occupare più pagine, e le pagine del segmento possono non essere in RAM contemporaneamente.
+
+L'indirizzo virtuale viene implementato tramite una **tripla ordinata** formata dal numero del segmento, numero della pagina e displacement:
+$$v=(s,p,d)$$
+considerando la TLB contenuta in memoria associativa, la traduzione avviene come segue:
+![[Mapping combinato.png|600]]
+1. Si cerca in TLB la pagina $(s,p)$, se viene trovata, si concatena il page frame $p'$ a $d$ formando l'indirizzo reale
+2. Se non viene trovata la pagina in TLB, il DAT aggiunge l'indirizzo base $b$ al numero del segmento $s$
+3. $b+s$ forma l'indirizzo della riga della tabella dei segmenti, da quest'ultima ricaviamo l'indirizzo della tabella delle pagine $s'$
+4. Il numero di pagina $p$ è aggiunto a $s'$ per individuare la PTE per la pagina $p$, dalla quale ricaviamo il numero di page frame $p'$
+5. Si concatena $p'$ con lo spostamento $d$ per formare l'indirizzo reale
+
+La **condivisione** in questo tipo di sistema avviene quando ogni processo ha una riga della tabella di mappa dei segmenti che punta alla stessa tabella delle pagine.
+
+>Otteniamo una condivisione facilitata dalla paginazione ed un controllo degli accessi come nella segmentazione.

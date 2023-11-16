@@ -1,7 +1,7 @@
 Usiamo le **distribuzioni note** per ricavare delle _costanti caratteristiche_ con formule note.
 
-### Uniforme discreta
-Si dice **distribuzione uniforme discreta** se una v.a. assume un numero finito di valori $n$, **tutti con probabilità uguale**.
+### Uniforme
+La v.a. $X$ è una **distribuzione uniforme** se assume un numero finito di valori $n$, **tutti con probabilità uguale**.
 $$X\sim \text{U}\{x_1,...,x_n\}$$
 - $\mathbb{P}[X=x]=\frac{1}{n}$
 - $\mathbb{E}[X]=\frac{x_1+x_n}{2}$
@@ -9,8 +9,7 @@ $$X\sim \text{U}\{x_1,...,x_n\}$$
 
 ---
 ### Ipergeometrica
-Sia $X$ la v.a. che conta il numero di successo su $n$ estrazioni **senza reinserimento** da una popolazione di $N$ elementi, dei quali $K$ sono considerati successo.
-Per applicare queste formule, devono essere rispettate delle [[Probabilità elementare#Popolazioni e sottopopolazioni|condizioni]].
+La v.a. $X$ è una **distribuzione ipergeometrica** se conta il numero di successi su $n$ estrazioni **senza reinserimento** da una popolazione di $N$ elementi, dei quali $K$ sono considerati successo (rispettando le seguenti [[Probabilità elementare#Popolazioni e sottopopolazioni|condizioni]])
 $$X\sim \text{Ig}(N, K, n)$$
 - $\mathbb{P}[X=x]=\frac{\binom{K}{k}\binom{N-K}{n-k}}{\binom{N}{n}}$
 - $\mathbb{E}[X]=n\frac{K}{N}$
@@ -36,9 +35,7 @@ $$X\sim \text{Ig}(N, K, n)$$
 ### Bernoulli
 Viene chiamata **prova bernoulliana** un esperimento i cui possibili risultati possono essere classificati come _successo_, con probabilità $p$, o _insuccesso_, con probabilità $1-p$.
 
-Sia $X$ la v.a. che prende il valore $X=1$ quando l'esito è un _successo_, e $X=0$ quando è un _insuccesso_.
-
-Si dice che $X$ ha una **distribuzione di Bernoulli** di parametro $p\in(0,1)$.
+La v.a. $X$ è una **distribuzione di Bernoulli** se $X=1$ rappresenta un _successo_, e $X=0$ rappresenta un _insuccesso_.
 $$X\sim \text{Ber}(p)$$
 - $\mathbb{P}[X=x]=p^x(1-p)^{1-x}\space1_{\{0,1\}}(x)=\begin{cases}1-p&\text{se }x=0\\p&\text{se }x=1\\0&\text{altrimenti}\end{cases}$
 - $\mathbb{E}[X]=p$
@@ -46,8 +43,7 @@ $$X\sim \text{Ber}(p)$$
 
 ---
 ### Binomiale
-Sia $X$ la v.a. che conta il numero di _successi_ ottenuti nelle $n$ prove **con reinserimento** da una popolazione di $N$ elementi, dei quali $K$ sono considerati _successo_.
-Si dice che $X$ ha una **distribuzione binomiale** di parametri $n$ e $p\in(0,1)$.
+La v.a. $X$ è una **distribuzione binomiale** se conta il numero di _successi_ ottenuti nelle $n$ prove **con reinserimento** da una popolazione di $N$ elementi, dei quali $K$ sono considerati _successo_.
 $$X\sim\text{Bin}(n,p)$$
 - $\mathbb{P}[X=x]=\binom{n}{x}p^x(1-p)^{n-x}$, con $x=0,...,n$
 - $\mathbb{E}[X]=np$
@@ -60,7 +56,7 @@ $$X\sim\text{Bin}(n,p)$$
 
 ---
 ### Poisson
-Quando $X$ rappresenta un **conteggio** di cui non conosco con esattezza $n$, utilizzo questo tipo di distribuzione.
+La v.a. $X$ è una **distribuzione di Poisson** se rappresenta un **conteggio** di cui non conosco con esattezza $n$.
 
 In particolare si usa quando si vuole contare qualcosa all'interno di un intervallo (e.g. periodo di tempo, lunghezza...).
 
@@ -88,3 +84,25 @@ questa approssimazione è anche nota come **legge degli eventi rari**, in quanto
 >$$\mathbb{P}[X\leq 3]=\sum_{k=0}^3\binom{100}{k}0.003^k0.97^{100-k}=0.64724921$$
 >Usando la Poisson:
 >$$\sum_{k=0}^3\frac{3^k}{k!}e^{-3}=0.64723189$$
+
+---
+### Geometrica
+ La v.a. $X$ ha una **distribuzione geometrica** se conta il numero di ripetizioni indipendenti necessarie per osservare il primo successo in un esperimento binario.
+$$X\sim\text{Geo}(p)$$
+- $\mathbb{P}[X=x]=(1-p)^{x-1}p$
+- $\mathbb{E}[X]=\frac{1}{p}$
+- $Var[X]=\frac{1-p}{p^2}$
+
+Questa è l'unica distribuzione discreta che possiede la proprietà di **mancanza di memoria**, ovvero: sebbene sono state eseguite $n$ prove con insuccessi, la probabilità che la prossima prova sia un successo è uguale alla probabilità di successo della prima prova.
+La proprietà può essere descritta come:
+$$\mathbb{P}[X>m+n|X>m]=\frac{\mathbb{P}[X>m+n]}{\mathbb{P}[X>m]}=\mathbb{P}[X>n]$$
+tenendo conto che $\mathbb{P}[X>k]=(1-p)^k$
+
+>[!Example]
+>Sia $X$ la v.a. che conta il numero di pagine da visitare per trovare per la prima volta la parola cercata, con $X\sim\text{Geo}(0.2)$.
+>
+>Quale è la probabilità che si debbano visitare $15$ pagine prima di trovare per la prima volta la parola cercata: 
+>$$\mathbb{P}[X=15]=0.2\cdot (1-0.2)^{15-1}=0.0088$$
+>
+>Quale è la probabilità che si debbano visitare più di $10$ pagine sapendo che ne sono già state visitate $4$?
+>$$\mathbb{P}[X>10|x>4]=\mathbb[x>10-4=6]=(1-0.2)^6=0.2621$$

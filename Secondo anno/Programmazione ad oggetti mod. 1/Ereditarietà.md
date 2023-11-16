@@ -86,18 +86,3 @@ I **costruttori** ed i metodi `abstract`, <u>non possono essere preceduti</u> da
 | Final    |  ✅   |  ✅   |   ✅   |   ✅   |       |          |
 | Abstract |  ✅   |  ❌   |   ✅   |   ❌   |  ❌   |          |
 
-### Principio di sostituzione
-Si può usare una istanza della superclasse come istanza della sottoclasse, ovviamente se la sottoclasse ha metodi in più, non potranno essere chiamati.
-
-```java
-int race (Vehicle v1, Vehicle v2, double length) {
-	v1.accelerate(Math.random()*10);
-	v2.accelerate(Math.random()*10);
-}
-
-// Main
-race(new Car(), new Car());
-race(new Truck(), new Truck());
-race(new Car(), new Truck());
-```
-Ogni sottoclasse avrà il suo modo di accelerare, e anche la quantità di accelerazione potrà essere diversa.
