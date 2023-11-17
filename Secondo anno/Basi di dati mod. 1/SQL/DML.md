@@ -27,6 +27,7 @@ WHERE Provincia = "VE"
 ```
 
 Si usa la **notazione puntata** quando si opera su tabelle diverse che hanno attributi con lo stesso nome, in questo modo si evita di creare ambiguità per il DMBS.
+Si possono concatenare più condizioni con `AND | OR | BETWEEN`.
 
 Utile anche per **query ricorsive**:
 ```sql
@@ -76,4 +77,65 @@ FROM Studenti s LEFT JOIN Esami e ON s.Matricola=e.Candidato
 	Esami di tutti gli studenti con gli attributi nella SELECT,
 	elencando anche gli studenti che non hanno fatto esami
 */
+```
+
+### Order by
+La clausola `ORDER BY attributo [DESC | ASC]` fa in modo che la tabella risultante si ordinata in modo _lessicografico_ secondo gli attributi indicati.
+```sql
+SELECT Nome, Cognome
+FROM Studenti
+WHERE Provincia = "VE"
+ORDER BY Cognome DESC, Nome DESC
+-- La tabella sarà ordinata in modo decrescente rispetto al nome completo
+```
+
+### Operatori insiemistici
+Le clausole `[UNION | INTERSECT | EXCEPT] [ALL]` vengono usate per combinare i risultati di tabelle con colonne che hanno lo stesso nome e tipo.
+Con l'opzione `ALL` vengono inclusi anche i duplicati nella tabella risultante.
+```sql
+SELECT Matricola
+FROM Studenti
+EXCEPT
+SELECT Tutor AS Matricola
+FROM Studenti
+-- Le matricole che non sono tutor
+```
+
+### Il valore NULL
+Viene assegnato il valore `NULL` ai campi su cui un attributo non è applicabile o non è disponibile (i motivi potrebbero essere anche altri).
+Le condizioni usano una logica a $3$ valori: TRUE, FALSE, UNKNOWN.
+
+|  p  |  q  | p `AND` q | p `OR` q |
+|:---:|:---:|:---------:|:--------:|
+|  T  |  T  |     T     |    T     |
+|  T  |  F  |     F     |    T     |
+|  T  |  U  |     U     |    T     |
+|  F  |  T  |     F     |    T     |
+|  F  |  F  |     F     |    F     |
+|  F  |  U  |     F     |    U     |
+|  U  |  T  |     U     |    T     |
+|  U  |  F  |     F     |    U     |
+|  U  |  U  |     U     |    U     |
+
+Le clausole restituiscono solo le righe che rendono **vere** le condizioni.
+```sql
+SELECT *
+FROM Studenti
+WHERE Tutor IS NULL
+-- Ritorna tutte le righe complete della tabella studenti, dove Tutor è NULL
+```
+
+è possibile usare l'operatore `COALESCE(expr)` per ritornare il primo valore diverso da `NULL` (funzione da sinistra a destra).
+```sql
+SELECT COALESCE(NULL, "Mario", NULL, "Luigi")
+-- Ritorna "Mario"
+```
+
+### Pattern matching
+Sulle stringhe è possibile usare la clausola `LIKE` per usare _regex_.
+```sql
+SELECT *
+FROM Studenti
+WHERE Nome LIKE "A%a" OR Nome LIKE "A%i"
+-- Studenti che iniziano con 'A' e terminano per 'a' oppure 'i'
 ```

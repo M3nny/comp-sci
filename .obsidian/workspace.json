@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "e7d471e0a1dfc83a",
+        "id": "5407d697a8fddd79",
         "type": "tabs",
         "children": [
           {
-            "id": "028829e2b3c182cc",
+            "id": "80df0920a653c95e",
             "type": "leaf",
             "state": {
               "type": "empty",
@@ -65,7 +65,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 305.5110321044922
+    "width": 305.5110321044922,
+    "collapsed": true
   },
   "right": {
     "id": "282a9548711da6a0",
@@ -129,7 +130,8 @@
               "state": {}
             }
           }
-        ]
+        ],
+        "currentTab": 4
       }
     ],
     "direction": "horizontal",
@@ -146,8 +148,15 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "028829e2b3c182cc",
+  "active": "80df0920a653c95e",
   "lastOpenFiles": [
+    "Secondo anno/Basi di dati mod. 1/SQL/DML.md",
+    "Secondo anno/Programmazione ad oggetti mod. 1/Documentazione.md",
+    "Secondo anno/Programmazione ad oggetti mod. 1/Methods dispatching.md",
+    "Secondo anno/Programmazione ad oggetti mod. 1/Classi.md",
+    "Secondo anno/Programmazione ad oggetti mod. 1/Information hiding.md",
+    "Secondo anno/Programmazione ad oggetti mod. 1/Subtyping e interfacce.md",
+    "Secondo anno/Programmazione ad oggetti mod. 1/Dispatching 1.md",
     "Secondo anno/Probabilità e statistica/Distribuzioni discrete.md",
     "Secondo anno/Sistemi operativi mod. 1/Memoria/Memoria virtuale.md",
     "Secondo anno/Sistemi operativi mod. 1/Images/Mapping combinato.png",
@@ -155,7 +164,6 @@
     "Secondo anno/Sistemi operativi mod. 1/Memoria/Segmentazione.md",
     "Secondo anno/Sistemi operativi mod. 1/Memoria/Memoria fisica.md",
     "Secondo anno/Sistemi operativi mod. 1/Domande.md",
-    "Secondo anno/Programmazione ad oggetti mod. 1/Subtyping e interfacce.md",
     "Pasted image 20231116111143.png",
     "Secondo anno/Programmazione ad oggetti mod. 1/Ereditarietà.md",
     "Secondo anno/Algoritmi e strutture dati/Mod. 1/4 - Teorema master.md",
@@ -173,12 +181,7 @@
     "Secondo anno/Probabilità e statistica/Variabili casuali.md",
     "Secondo anno/Probabilità e statistica/Probabilità condizionata.md",
     "Primo anno/Primo semestre/Calcolo 1/Integrali/Integrali indefiniti.md",
-    "Secondo anno/Programmazione ad oggetti mod. 1/Information hiding.md",
-    "Secondo anno/Programmazione ad oggetti mod. 1/Introduzione.md",
-    "Secondo anno/Programmazione ad oggetti mod. 1/Classi.md",
-    "Secondo anno/Basi di dati mod. 1/SQL/DML.md",
     "Secondo anno/Basi di dati mod. 1/SQL",
-    "Secondo anno/Probabilità e statistica/Probabilità elementare.md",
     "Secondo anno/Algoritmi e strutture dati/Mod. 2/Images/Sucessore.svg",
     "Secondo anno/Algoritmi e strutture dati/Mod. 2/Images/Alberi binari di ricerca.svg",
     "Secondo anno/Algoritmi e strutture dati/Mod. 2/Images/Albero bilanciato.svg",
