@@ -4,15 +4,19 @@
     "type": "split",
     "children": [
       {
-        "id": "5407d697a8fddd79",
+        "id": "ab9578efceb23572",
         "type": "tabs",
         "children": [
           {
-            "id": "80df0920a653c95e",
+            "id": "b0c5c001969b96ce",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {}
+              "type": "markdown",
+              "state": {
+                "file": "Secondo anno/Sistemi operativi mod. 1/File systems.md",
+                "mode": "source",
+                "source": false
+              }
             }
           }
         ]
@@ -61,7 +65,8 @@
               "state": {}
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -82,6 +87,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "Secondo anno/Sistemi operativi mod. 1/File systems.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -98,6 +104,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "Secondo anno/Sistemi operativi mod. 1/File systems.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -119,7 +126,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "Secondo anno/Sistemi operativi mod. 1/File systems.md"
+              }
             }
           },
           {
@@ -148,8 +157,15 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "80df0920a653c95e",
+  "active": "b0c5c001969b96ce",
   "lastOpenFiles": [
+    "Secondo anno/Sistemi operativi mod. 1/Memoria/Memoria virtuale.md",
+    "Secondo anno/Sistemi operativi mod. 1/File systems.md",
+    "Primo anno/Primo semestre/Architettura degli elaboratori mod. 1/1 - Rappresentazione dell'informazione/Altri tipi di rappresentazioni.md",
+    "Secondo anno/Algoritmi e strutture dati/Mod. 2/3 - Alberi/Visite.md",
+    "Secondo anno/Algoritmi e strutture dati/Mod. 2/3 - Alberi/Decomposizione.md",
+    "Secondo anno/Algoritmi e strutture dati/Mod. 2/3 - Alberi/Implementazioni.md",
+    "Secondo anno/Algoritmi e strutture dati/Mod. 2/3 - Alberi/Alberi binari di ricerca.md",
     "Secondo anno/Basi di dati mod. 1/SQL/DML.md",
     "Secondo anno/Programmazione ad oggetti mod. 1/Documentazione.md",
     "Secondo anno/Programmazione ad oggetti mod. 1/Methods dispatching.md",
@@ -158,7 +174,6 @@
     "Secondo anno/Programmazione ad oggetti mod. 1/Subtyping e interfacce.md",
     "Secondo anno/Programmazione ad oggetti mod. 1/Dispatching 1.md",
     "Secondo anno/Probabilità e statistica/Distribuzioni discrete.md",
-    "Secondo anno/Sistemi operativi mod. 1/Memoria/Memoria virtuale.md",
     "Secondo anno/Sistemi operativi mod. 1/Images/Mapping combinato.png",
     "Secondo anno/Sistemi operativi mod. 1/Images/Mapping combinato.png.crdownload",
     "Secondo anno/Sistemi operativi mod. 1/Memoria/Segmentazione.md",
@@ -170,17 +185,11 @@
     "Excalidraw/Drawing 2023-11-15 15.11.44.excalidraw.md",
     "Secondo anno/Algoritmi e strutture dati/Mod. 1/Images/Albero delle ricorsioni teorema master.svg",
     "Excalidraw",
-    "Secondo anno/Algoritmi e strutture dati/Mod. 2/3 - Alberi/Visite.md",
-    "Secondo anno/Algoritmi e strutture dati/Mod. 2/3 - Alberi/Implementazioni.md",
-    "Secondo anno/Algoritmi e strutture dati/Mod. 2/3 - Alberi/Alberi binari di ricerca.md",
-    "Secondo anno/Algoritmi e strutture dati/Mod. 2/3 - Alberi/Decomposizione.md",
     "tree.md",
     "Secondo anno/Algoritmi e strutture dati/Mod. 2/3 - Alberi/Cos'è un albero.md",
     "Secondo anno/Probabilità e statistica/Formulario.md",
     "Secondo anno/Probabilità e statistica/Costanti caratteristiche.md",
     "Secondo anno/Probabilità e statistica/Variabili casuali.md",
-    "Secondo anno/Probabilità e statistica/Probabilità condizionata.md",
-    "Primo anno/Primo semestre/Calcolo 1/Integrali/Integrali indefiniti.md",
     "Secondo anno/Basi di dati mod. 1/SQL",
     "Secondo anno/Algoritmi e strutture dati/Mod. 2/Images/Sucessore.svg",
     "Secondo anno/Algoritmi e strutture dati/Mod. 2/Images/Alberi binari di ricerca.svg",
