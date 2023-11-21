@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "ab9578efceb23572",
+        "id": "7c69ee91ff409918",
         "type": "tabs",
         "children": [
           {
-            "id": "b0c5c001969b96ce",
+            "id": "11ba7c94a5f5cbb5",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -65,8 +65,7 @@
               "state": {}
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -157,10 +156,11 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "b0c5c001969b96ce",
+  "active": "11ba7c94a5f5cbb5",
   "lastOpenFiles": [
-    "Secondo anno/Sistemi operativi mod. 1/Memoria/Memoria virtuale.md",
+    "Secondo anno/Algoritmi e strutture dati/Mod. 1/2 - Classi asintotiche.md",
     "Secondo anno/Sistemi operativi mod. 1/File systems.md",
+    "Secondo anno/Sistemi operativi mod. 1/Memoria/Memoria virtuale.md",
     "Primo anno/Primo semestre/Architettura degli elaboratori mod. 1/1 - Rappresentazione dell'informazione/Altri tipi di rappresentazioni.md",
     "Secondo anno/Algoritmi e strutture dati/Mod. 2/3 - Alberi/Visite.md",
     "Secondo anno/Algoritmi e strutture dati/Mod. 2/3 - Alberi/Decomposizione.md",
@@ -189,7 +189,6 @@
     "Secondo anno/Algoritmi e strutture dati/Mod. 2/3 - Alberi/Cos'è un albero.md",
     "Secondo anno/Probabilità e statistica/Formulario.md",
     "Secondo anno/Probabilità e statistica/Costanti caratteristiche.md",
-    "Secondo anno/Probabilità e statistica/Variabili casuali.md",
     "Secondo anno/Basi di dati mod. 1/SQL",
     "Secondo anno/Algoritmi e strutture dati/Mod. 2/Images/Sucessore.svg",
     "Secondo anno/Algoritmi e strutture dati/Mod. 2/Images/Alberi binari di ricerca.svg",

@@ -115,4 +115,52 @@ I nomi del file possono avere tre tipi di lunghezza:
 - **Variabile**: si termina il nome con un carattere speciale
 - **Variabile con heap**: nella riga viene memorizzato un puntatore al nome completo presente nell'heap il quale terminerà con un carattere speciale.
 
-### Condivisione di file
+### Gestione dello spazio
+La dimensione dei blocchi solitamente è costante, però varia in base al dispositivo.
+Ricordiamo che blocchi **grandi** implicano possibile spreco di spazio, mentre blocchi **piccoli** un possibile spreco di tempo.
+L'amministratore può decidere delle **quote** da assegnare agli utenti, esse rappresentano una quantità massima di dati archiviabili.
+
+Per gestire lo **spazio libero**, alcuni sistemi usano una **linked list** contente le posizioni dei blocchi liberi, i quali vengono assegnati a partire dall'inizio della lista e vengono aggiunti nuovi blocchi liberi alla fine.
+Per evitare l'allocazione sparsa si può forzare il FS ad allocare in blocchi contigui.
+
+Alternativamente si può usare una **bitmap**, la quale contiene un bit per ogni blocco in memoria (0-libero, 1-in uso), questo permette di determinare velocemente se blocchi contigui sono disponibili, ma per trovare un blocco libero si deve cercare sull'intera bitmap.
+
+### Backup e recovery
+Con **backup** si intende conservare **copie ridondanti**, mentre con **recovery** intendiamo il ripristino dei dati in caso di errore.
+- **Backup fisico**: semplice duplicazione di dati a livello di bit
+- **Backup logico**: memorizza i dati del FS e la sua struttura logica
+	e.g. _Backup incrementali_: memorizzano solo i dati modificati rispetto al backup precedente.
+
+### Integrità dei dati
+Nei sistemi che non possono tollerare la perdita di dati si usano **RAID** e/o FS con **logging** (journaling).
+
+Alcuni FS usano **transazioni atomiche**, le quali scrivono una intera modifica solo dopo che si è sicuri che sia stata effettuata senza errori, altrimenti si esegue un **rollback** e si porta il FS nell'ultimo stato persistente (ultimo **checkpoint**).
+
+La **paginazione shadow** usa questo meccanismo scrivendo prima su un blocco libero, e poi se è andato tutto a buon fine, copia tutto nel blocco originale.
+
+File systems come NTFS ext3, implementando il **log structured file system (LFS)** (o journaling FS) dove ogni operazione è una transazione atomica, inoltre sfruttando la _cache_ per memorizzare le posizioni dei metadata del file system, alcuni FS di questo tipo utilizzano un log per memorizzare i metadati.
+I dati sono scritti nel registro sequenzialmente, quando esso si riempie è probabile che lo spazio libero del FS sia frammentato, risolvibile compattando i dati validi in una regione contigua alla fine del log.
+
+>[!Tip] File servers e sistemi distribuiti
+>Si possono gestire file remoti inoltrando richieste ad un **file server**, il quale è dedicato alla **risoluzione di riferimenti** ai file fra sistemi, il controllo centralizzato di quest'ultimi (possibile bottleneck).
+>
+>Usando un approccio **distribuito** si lascia che i sistemi comunichino direttamente tra loro usando **file system distribuiti** (e.g. NFS, AFS)
+
+## Controllo degli accessi
+Un file system deve garantire che il **dominio di protezione**, il quale rappresenta le operazioni possibili (Read-Write-Execute...) venga rispettato. 
+
+Vediamo ora alcuni metodi per il controllo degli accessi:
+- **Matrici di controllo degli accessi**:
+	Si usa una **matrice degli accessi**, dove $mat_{i,j}$ indica se all'utente $i$  è consentito l'accesso al file $j$, $1$ se è consentito $0$ altrimenti. 
+	Può essere inefficiente in sistemi con tanti file e tanti utenti.
+- **Access Control List (ACL)**:
+	I privilegio possono essere memorizzati in due modi:
+		1. Ogni utente ha memorizzato i file a cui può accedere
+		2. Ogni file ha memorizzato gli utenti che gli possono accedere
+	Occupa meno spazio della matrice di controllo degli accessi, ma la ricerca potrebbe non essere efficiente.
+- **Lista di capability**:
+	Genera dei capabilities (token) che garantiscono l'accesso ad un soggetto che li possiede.
+	Il dominio di protezione è l'insieme di capabilities di un soggetto.
+
+
+
