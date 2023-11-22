@@ -53,42 +53,38 @@ if (c instanceof Bicycle) {...} // proibito, sempre falso
 ```
 
 ---
-## Interfacce
-Le classi normalmente possono avere solo una superclasse al massimo, ma se volessimo creare una classe con metodi di sottoclassi diverse, non sarebbe possibile.
+## Generics
+I tipi generici ci permettono di usare metodi e classi, con il tipo che passiamo al template (vedi [[Guida a C++#Templates|templates in C++]]).
 
-Le **interfacce** risolvono questo problema definendo solo le firme dei metodi che vogliamo aggiungere alla nostra sottoclasse tramite `implements`.
 ```java
-interface Loadable {
-	public void chargeLoad(double l);
+public class HashMap<K, V> {
+	public V get(K key) {...}
+	public V put(K key, V value) {...}
 }
 
-interface Printable {
-	public void print();
-}
-
-class Truck extends Car implements Loadable, Printable {...}
-```
-Quindi:
-- Una classe può estendere al massimo un'altra classe
-- Una classe può implementare più interfacce
-
-Da java 8, è possibile, oltre a dichiarare i metodi nelle interfacce, definirli, così da avere una implementazione di default, questo è possibile assegnando `default` ad i metodi interessati nell'interfaccia.
-```java
-interface Loadable {
-	default public void chargeLoad(double l) {...}
+public class FuelTypeCache {
+	Hashmap<String, FuelType> map = ...;
+	FuelType getFuelTypeFromName(String n) {
+		return map.get(n);
+	}
 }
 ```
 
->Implementare delle interfacce che hanno la stessa firma di un metodo dichiarato `default` è proibito dal compilatore.
+I tipi generici in java sono **invarianti**, ovvero non si può assegnare un espressione con un tipo generico ad un avariabile con un tipo generico diverso (anche se è sottotipo dell'altro).
 
-#### Estendere interfacce
-La logica con cui si estendono le interfacce è come quella delle classi.
+Non è necessario passare esplicitamente il tipo generico quando si istanziano classi o quando vengono chiamati metodi generici, questo perchè il tipo viene dedotto.
 ```java
-interface Loadable {
-	public void charge();
+public class List<V> {
+	public void add (V el) {...}
 }
 
-interface LoadableUnloadable extends Loadable {
-	public void uncharge();
-}
+// main
+List<Vehicle> v1 = new List<>();
+v1.add(new Cat(...));
+```
+
+Potremmo volere restringere il tipo di dato possibile, questo è possibile aggiungendo `extends` accanto al tipo generico nella dichiarazione del metodo, così facendo solo i sottotipi del tipo da cui estende sono permessi, inoltre ora possiamo usare tutte le componenti della classe padre da cui estende.
+
+```java
+<T extends Vehicle> T race(T v1, T v2, double length) {...}
 ```

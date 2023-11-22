@@ -86,3 +86,43 @@ I **costruttori** ed i metodi `abstract`, <u>non possono essere preceduti</u> da
 | Final    |  ✅   |  ✅   |   ✅   |   ✅   |       |          |
 | Abstract |  ✅   |  ❌   |   ✅   |   ❌   |  ❌   |          |
 
+---
+## Interfacce
+Le classi normalmente possono avere solo una superclasse al massimo, ma se volessimo creare una classe con metodi di sottoclassi diverse, non sarebbe possibile.
+
+Le **interfacce** risolvono questo problema definendo solo le firme dei metodi che vogliamo aggiungere alla nostra sottoclasse tramite `implements`.
+```java
+interface Loadable {
+	public void chargeLoad(double l);
+}
+
+interface Printable {
+	public void print();
+}
+
+class Truck extends Car implements Loadable, Printable {...}
+```
+Quindi:
+- Una classe può estendere al massimo un'altra classe
+- Una classe può implementare più interfacce
+
+Da java 8, è possibile, oltre a dichiarare i metodi nelle interfacce, definirli, così da avere una implementazione di default, questo è possibile assegnando `default` ad i metodi interessati nell'interfaccia.
+```java
+interface Loadable {
+	default public void chargeLoad(double l) {...}
+}
+```
+
+>Implementare delle interfacce che hanno la stessa firma di un metodo dichiarato `default` è proibito dal compilatore.
+
+#### Estendere interfacce
+La logica con cui si estendono le interfacce è come quella delle classi.
+```java
+interface Loadable {
+	public void charge();
+}
+
+interface LoadableUnloadable extends Loadable {
+	public void uncharge();
+}
+```
