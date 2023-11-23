@@ -113,7 +113,7 @@ Tree_predecessor(Node x)
 ```
 **Complessità**: analoga al successore, ovvero $O(h)$
 
-#### Inserimento e cancellazione
+#### Inserimento
 `Tree_insert(Tree T, Node z)`
 - Post: inserisce il nodo $z$ (già inizializzato) in $T$ mantenendo la proprietà di ricerca
 
@@ -138,3 +138,125 @@ Tree_insert(Tree T, Node z)
 ```
 **Complessità**: il `while` verrà eseguito al massimo $h$ volte ($h$ = altezza dell'albero), mentre le altre operazioni sono costanti.
 $$T(n)=O(h)$$
+#### Cancellazione
+Prima di scrivere l'implementazione della funzione `Tree_delete()` dobbiamo tenere a mente la seguente **proprietà** degli alberi binari di ricerca:
+
+Se un nodo $x$ in un albero binario di ricerca ha due figli, allora il suo successore non ha un figlio sx, ed il suo predecessore non ha un figlio dx.
+
+**Dimostrazione**:
+Sia $x$ un nodo con due figli, in una visita simmetrica, i nodi del sottoalbero sinistro vengono visitati prima di $x$, mentre quelli del sottoalbero destro vengono visitati dopo.
+Quindi il predecessore di $x$ si troverà nel sottoalbero sinistro, mentre il successore nel sottoalbero destro.
+Se $s$ è il successore di $x$, assumiamo per assurdo che $s$ abbia un figlio sinistro chiamato $y$. Allora $y$ viene visitato dopo $x$ perchè si trova nel sottoalbero destro, ma viene visitato prima di $s$ perchè si trova nel sottoalbero sinistro di $s$, questo è assurdo perchè $s$ non sarebbe più il successore di $x$, ma di $y$.
+In modo analogo si può dimostrare che il predecessore non ha figlio destro.
+
+Ritornando alla cancellazione, abbiamo tre casi di cancellazione di un nodo $z$:
+
+![[Cancellazione albero binario di ricerca.svg]]
+
+1. Se $\text{z}$ <u>non ha figli</u>, facciamo puntare suo padre $\text{z.p}$ a NIL. (e.g. $\text{z}=10$)
+2. Se $\text{z}$ <u>ha solo un figlio</u>, facciamo puntare suo padre $\text{z.p}$ al figlio di $\text{z}$ (e.g. $\text{z}=18$)
+3. Se $\text{z}$ <u>ha due figli</u>, facciamo in modo che il suo successore prenda il suo posto (e.g. $\text{z}=15$)
+
+Per spostare dei sottoalberi usiamo la seguente funzione:
+`Transplant(Tree T, Node u, Node v)`
+- Pre: $u\in T$
+- Post: sostituisce il sottoalbero con radice $u$ con il sottoalbero con radice $v$
+
+```
+Transplant(Tree T, Node u, Node v)
+	if u.p == NIL
+		T.root = v
+	else
+		if u == u.p.left  // u è figlio sx di suo padre
+			u.p.left = v  // v diventa figlio sx del padre di u
+		else              // u è figlio dx di suo padre
+			u.p.right = v // v diventa figlio dx del padre di u
+	if v != NIL
+		v.p = u.p
+```
+**Complessità**: $O(1)$.
+
+Vediamo ora come effettuare l'eliminazione di un nodo con la seguente funzione:
+`Tree_delete(Tree T, Node z)`
+- Pre: $z\in T$
+
+```
+Tree_delete(Tree T, Node z)
+	if z.left == NIL
+		Transplant(T, z, z.right)
+	else
+		if z.right == NIL
+			Transplant(T, z, z.left)
+		else
+			y = Tree_minimum(z.right)
+			if y.p != z
+				Transplant(T, y, y.right)
+				y.right = z.right
+				z.right.p = y
+			Transplant(T, z, y)
+			y.left = z.left
+			y.left.p = y
+```
+**Complessità**: $O(h)$ a causa di `Tree_minimum()`.
+
+Il caso 1. e 2. sono gestititi nei primi due `if`, mentre nel caso $z$ abbia due figli, viene trovato il suo successore $y$ e nel caso $y$ <u>non</u> fosse figlio di $z$ viene fatta `Transplant(T, y, y.right)` ovvero viene spostato il sottoalbero destro di $y$ al posto di $y$, poi vengono sistemati i puntatori in modo tale che $z$ sia uguale a $y$ dove $y.right$ è uguale al sottoalbero destro di $z$ senza $y$ (perchè è stato trapiantato), poi ad $y$, ora che ha preso il posto di $z$ gli si aggiunge l'ex sottoalbero sinistro di $z$.
+
+![[Cancellazione bst con due figli.svg]]
+### Costruzione di alberi binari di ricerca
+Le operazioni viste finora possono essere realizzata in tempo $O(h)$ in un bst di altezza $h$.
+Se l'albero è bilanciato, $O(h)=O(\log n)$, altrimenti più è sbilanciato, più il tempo delle operazioni tenderà ad essere $O(n)$.
+
+Possiamo usare il seguente algoritmo per creare un bst:
+```
+Arr A = [1, 2, 3, 4, 5]
+
+buildBST(Arr A)
+	t = newTree()
+	for i = 1 to A.length
+		u = creaNodo(A[i]) // u.Key = A[i]; u.left = u.right = nullptr;
+		Tree_insert(t, u)
+	return t
+```
+**Complessità**: essendo che l'array potrebbe avere valori tutti crescenti o tutti decrescenti ed essendo che la complessità dipende da `Tree_insert()`, avendo una potenziale altezza pari al numero di nodi (completamente sbilanciato), il tempo di esecuzione di `Tree_insert()` sarà $\Theta(n^2)$.
+$$
+\begin{flalign}
+T(n)&=\sum_{i=0}^{n-1}(c+d\cdot i)\\
+&=\sum_{i=0}^{n-1}c+\sum_{i=0}^{n-1}d\cdot i\\
+&=c\cdot n+d\cdot\sum_{i=0}^{n-1}i\\
+&=c\cdot n+d\left(\frac{(n-1)(n-1+1)}{2}\right)\\
+&=c\cdot n+d\left(\frac{n(n-1)}{2}\right)=\Theta(n^2)
+\end{flalign}
+$$
+Possiamo migliorare l'algoritmo partendo dal centro dell'array:
+```
+Arr A = [1, 2, 3, 4, 5]
+
+buildBSTott(Arr A)
+	t = newTree()
+	t.root = buildBSTottAux(A, 1, A.length, NIL)
+	return t
+
+buildBSTottAux(Arr A, int inf, int sup, Node padre)
+	if inf > sup
+		return NIL
+	else
+		med = (inf + sup) / 2
+		r = creaNodo(A[med])
+		r.p = padre
+		r.left = buildBSTottAux(A, inf, med-1, r)
+		r.right = buildBSTottAux(A, med+1, sup, r)
+		return r
+```
+- Pre: l'array in input deve essere ordinato
+
+Sebbene i due algoritmi costruiti ricevono lo stesso array, l'albero creato è ben diverso, nel primo caso sarà completamente sbilanciato, mentre nel secondo è bilanciato con altezza $h=\Theta(\log n)$.
+
+**Complessità**:
+$$T(n)=\begin{cases}c&n=0\\2T(\frac{n}{2})+d&n>0\end{cases}$$
+usando il teorema master:
+- $a=2$
+- $b=2$
+- $f(n)=d$
+- $g(n)=n^{\log_2 2}=n$
+Verifichiamo di essere nel primo caso: $f(n)=O(n^{1-\epsilon})$, $\epsilon>0$
+Se $\epsilon=1$ otteniamo $n^0=1$, quindi $T(n)=\Theta(n)$.

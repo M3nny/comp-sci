@@ -4,19 +4,15 @@
     "type": "split",
     "children": [
       {
-        "id": "7c69ee91ff409918",
+        "id": "fcab70fae54a1016",
         "type": "tabs",
         "children": [
           {
-            "id": "11ba7c94a5f5cbb5",
+            "id": "891bb61d818e590a",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Secondo anno/Programmazione ad oggetti mod. 1/Subtyping e generics.md",
-                "mode": "source",
-                "source": false
-              }
+              "type": "empty",
+              "state": {}
             }
           }
         ]
@@ -65,7 +61,8 @@
               "state": {}
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -86,7 +83,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Secondo anno/Programmazione ad oggetti mod. 1/Subtyping e generics.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +99,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Secondo anno/Programmazione ad oggetti mod. 1/Subtyping e generics.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,9 +120,7 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "Secondo anno/Programmazione ad oggetti mod. 1/Subtyping e generics.md"
-              }
+              "state": {}
             }
           },
           {
@@ -156,10 +149,22 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "11ba7c94a5f5cbb5",
+  "active": "891bb61d818e590a",
   "lastOpenFiles": [
-    "Secondo anno/Programmazione ad oggetti mod. 1/Generics.md",
+    "Secondo anno/Probabilità e statistica/Distribuzioni note/Distribuzioni discrete.md",
+    "Secondo anno/Probabilità e statistica/Distribuzioni note/Distribuzioni continue.md",
+    "Secondo anno/Probabilità e statistica/Distribuzioni note",
+    "Secondo anno/Algoritmi e strutture dati/Mod. 2/3 - Alberi/Alberi binari di ricerca.md",
+    "Secondo anno/Algoritmi e strutture dati/Mod. 2/Images/Cancellazione bst con due figli.svg",
+    "Secondo anno/Algoritmi e strutture dati/Mod. 2/Images/Cancellazione albero binario di ricerca.svg",
+    "Excalidraw/Drawing 2023-11-23 13.38.31.excalidraw.md",
+    "Excalidraw/Drawing 2023-11-23 12.31.50.excalidraw.md",
+    "Excalidraw",
+    "Secondo anno/Algoritmi e strutture dati/Mod. 2/3 - Alberi/Cos'è un albero.md",
+    "Secondo anno/Algoritmi e strutture dati/Mod. 2/3 - Alberi/Implementazioni.md",
+    "Secondo anno/Algoritmi e strutture dati/Mod. 2/3 - Alberi/Decomposizione.md",
     "Secondo anno/Programmazione ad oggetti mod. 1/Subtyping e generics.md",
+    "Secondo anno/Programmazione ad oggetti mod. 1/Generics.md",
     "Primo anno/Secondo semestre/Programmazione e laboratorio/Notes/Guida a C++.md",
     "Primo anno/Secondo semestre/Programmazione e laboratorio/Notes/Riassunto.md",
     "Primo anno/Secondo semestre/Programmazione e laboratorio/Notes/Classi.md",
@@ -169,26 +174,17 @@
     "Secondo anno/Sistemi operativi mod. 1/Memoria/Memoria virtuale.md",
     "Primo anno/Primo semestre/Architettura degli elaboratori mod. 1/1 - Rappresentazione dell'informazione/Altri tipi di rappresentazioni.md",
     "Secondo anno/Algoritmi e strutture dati/Mod. 2/3 - Alberi/Visite.md",
-    "Secondo anno/Algoritmi e strutture dati/Mod. 2/3 - Alberi/Decomposizione.md",
-    "Secondo anno/Algoritmi e strutture dati/Mod. 2/3 - Alberi/Implementazioni.md",
-    "Secondo anno/Algoritmi e strutture dati/Mod. 2/3 - Alberi/Alberi binari di ricerca.md",
     "Secondo anno/Basi di dati mod. 1/SQL/DML.md",
     "Secondo anno/Programmazione ad oggetti mod. 1/Documentazione.md",
     "Secondo anno/Programmazione ad oggetti mod. 1/Methods dispatching.md",
     "Secondo anno/Programmazione ad oggetti mod. 1/Classi.md",
     "Secondo anno/Programmazione ad oggetti mod. 1/Information hiding.md",
     "Secondo anno/Programmazione ad oggetti mod. 1/Dispatching 1.md",
-    "Secondo anno/Probabilità e statistica/Distribuzioni discrete.md",
     "Secondo anno/Sistemi operativi mod. 1/Images/Mapping combinato.png",
     "Secondo anno/Sistemi operativi mod. 1/Images/Mapping combinato.png.crdownload",
     "Secondo anno/Sistemi operativi mod. 1/Memoria/Segmentazione.md",
-    "Secondo anno/Sistemi operativi mod. 1/Memoria/Memoria fisica.md",
-    "Secondo anno/Sistemi operativi mod. 1/Domande.md",
     "Pasted image 20231116111143.png",
-    "Secondo anno/Algoritmi e strutture dati/Mod. 1/4 - Teorema master.md",
-    "Excalidraw/Drawing 2023-11-15 15.11.44.excalidraw.md",
     "Secondo anno/Algoritmi e strutture dati/Mod. 1/Images/Albero delle ricorsioni teorema master.svg",
-    "Excalidraw",
     "Secondo anno/Basi di dati mod. 1/SQL",
     "Secondo anno/Algoritmi e strutture dati/Mod. 2/Images/Sucessore.svg",
     "Secondo anno/Algoritmi e strutture dati/Mod. 2/Images/Alberi binari di ricerca.svg",
@@ -196,14 +192,11 @@
     "Secondo anno/Sistemi operativi mod. 1/Images/Tabella inversa delle pagine.png",
     "Secondo anno/Sistemi operativi mod. 1/Images/Tabella inversa delle pagine.png.crdownload",
     "Secondo anno/Sistemi operativi mod. 1/Images/Pagine multilivello.png",
-    "Secondo anno/Sistemi operativi mod. 1/Images/Mapping diretto_associativo.png",
     "Secondo anno/Sistemi operativi mod. 1/Images/Mapping diretto_associativo.png.crdownload",
-    "Secondo anno/Sistemi operativi mod. 1/Images/Mapping associativo.png",
     "Secondo anno/Algoritmi e strutture dati/Mod. 2/3 - Alberi",
     "Secondo anno/Sistemi operativi mod. 1/Images/Paginazione.png.crdownload",
     "Secondo anno/Sistemi operativi mod. 1/Memoria",
     "Secondo anno/Algoritmi e strutture dati/Mod. 2/2 - Dizionari/Implementazioni",
-    "Secondo anno/Algoritmi e strutture dati/Mod. 2/2 - Dizionari",
     "Untitled.canvas"
   ]
 }
