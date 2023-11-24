@@ -4,15 +4,19 @@
     "type": "split",
     "children": [
       {
-        "id": "fcab70fae54a1016",
+        "id": "a7dca25f41226ead",
         "type": "tabs",
         "children": [
           {
-            "id": "891bb61d818e590a",
+            "id": "07df4e199e249228",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {}
+              "type": "markdown",
+              "state": {
+                "file": "Secondo anno/Basi di dati mod. 1/SQL/DML.md",
+                "mode": "source",
+                "source": false
+              }
             }
           }
         ]
@@ -61,13 +65,11 @@
               "state": {}
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
-    "width": 305.5110321044922,
-    "collapsed": true
+    "width": 305.5110321044922
   },
   "right": {
     "id": "282a9548711da6a0",
@@ -83,6 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "Secondo anno/Basi di dati mod. 1/SQL/DML.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -99,6 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "Secondo anno/Basi di dati mod. 1/SQL/DML.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -120,7 +124,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "Secondo anno/Basi di dati mod. 1/SQL/DML.md"
+              }
             }
           },
           {
@@ -149,17 +155,27 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "891bb61d818e590a",
+  "active": "a1163d9af64d6878",
   "lastOpenFiles": [
+    "Secondo anno/Basi di dati mod. 1/Images/GROUP BY.svg",
+    "Excalidraw/Drawing 2023-11-24 18.00.24.excalidraw.md",
+    "Calcolo 1/Images/Pasted Image 20231124180127_842.png",
+    "Calcolo 1/Images/Pasted Image 20231124180111_820.png",
+    "Calcolo 1/Images/Pasted Image 20231124180054_816.png",
+    "Calcolo 1/Images",
+    "Calcolo 1",
+    "Secondo anno/Basi di dati mod. 1/SQL/DML.md",
+    "Excalidraw",
+    "Untitled.md",
+    "Secondo anno/Sistemi operativi mod. 1/File systems.md",
+    "Secondo anno/Algoritmi e strutture dati/Mod. 2/3 - Alberi/Alberi binari di ricerca.md",
     "Secondo anno/Probabilità e statistica/Distribuzioni note/Distribuzioni discrete.md",
     "Secondo anno/Probabilità e statistica/Distribuzioni note/Distribuzioni continue.md",
     "Secondo anno/Probabilità e statistica/Distribuzioni note",
-    "Secondo anno/Algoritmi e strutture dati/Mod. 2/3 - Alberi/Alberi binari di ricerca.md",
     "Secondo anno/Algoritmi e strutture dati/Mod. 2/Images/Cancellazione bst con due figli.svg",
     "Secondo anno/Algoritmi e strutture dati/Mod. 2/Images/Cancellazione albero binario di ricerca.svg",
     "Excalidraw/Drawing 2023-11-23 13.38.31.excalidraw.md",
     "Excalidraw/Drawing 2023-11-23 12.31.50.excalidraw.md",
-    "Excalidraw",
     "Secondo anno/Algoritmi e strutture dati/Mod. 2/3 - Alberi/Cos'è un albero.md",
     "Secondo anno/Algoritmi e strutture dati/Mod. 2/3 - Alberi/Implementazioni.md",
     "Secondo anno/Algoritmi e strutture dati/Mod. 2/3 - Alberi/Decomposizione.md",
@@ -169,34 +185,23 @@
     "Primo anno/Secondo semestre/Programmazione e laboratorio/Notes/Riassunto.md",
     "Primo anno/Secondo semestre/Programmazione e laboratorio/Notes/Classi.md",
     "Secondo anno/Programmazione ad oggetti mod. 1/Ereditarietà.md",
-    "Secondo anno/Sistemi operativi mod. 1/File systems.md",
     "Secondo anno/Algoritmi e strutture dati/Mod. 1/2 - Classi asintotiche.md",
     "Secondo anno/Sistemi operativi mod. 1/Memoria/Memoria virtuale.md",
     "Primo anno/Primo semestre/Architettura degli elaboratori mod. 1/1 - Rappresentazione dell'informazione/Altri tipi di rappresentazioni.md",
     "Secondo anno/Algoritmi e strutture dati/Mod. 2/3 - Alberi/Visite.md",
-    "Secondo anno/Basi di dati mod. 1/SQL/DML.md",
     "Secondo anno/Programmazione ad oggetti mod. 1/Documentazione.md",
     "Secondo anno/Programmazione ad oggetti mod. 1/Methods dispatching.md",
     "Secondo anno/Programmazione ad oggetti mod. 1/Classi.md",
-    "Secondo anno/Programmazione ad oggetti mod. 1/Information hiding.md",
-    "Secondo anno/Programmazione ad oggetti mod. 1/Dispatching 1.md",
     "Secondo anno/Sistemi operativi mod. 1/Images/Mapping combinato.png",
     "Secondo anno/Sistemi operativi mod. 1/Images/Mapping combinato.png.crdownload",
-    "Secondo anno/Sistemi operativi mod. 1/Memoria/Segmentazione.md",
     "Pasted image 20231116111143.png",
     "Secondo anno/Algoritmi e strutture dati/Mod. 1/Images/Albero delle ricorsioni teorema master.svg",
     "Secondo anno/Basi di dati mod. 1/SQL",
     "Secondo anno/Algoritmi e strutture dati/Mod. 2/Images/Sucessore.svg",
-    "Secondo anno/Algoritmi e strutture dati/Mod. 2/Images/Alberi binari di ricerca.svg",
-    "Secondo anno/Algoritmi e strutture dati/Mod. 2/Images/Albero bilanciato.svg",
-    "Secondo anno/Sistemi operativi mod. 1/Images/Tabella inversa delle pagine.png",
     "Secondo anno/Sistemi operativi mod. 1/Images/Tabella inversa delle pagine.png.crdownload",
-    "Secondo anno/Sistemi operativi mod. 1/Images/Pagine multilivello.png",
     "Secondo anno/Sistemi operativi mod. 1/Images/Mapping diretto_associativo.png.crdownload",
     "Secondo anno/Algoritmi e strutture dati/Mod. 2/3 - Alberi",
     "Secondo anno/Sistemi operativi mod. 1/Images/Paginazione.png.crdownload",
-    "Secondo anno/Sistemi operativi mod. 1/Memoria",
-    "Secondo anno/Algoritmi e strutture dati/Mod. 2/2 - Dizionari/Implementazioni",
     "Untitled.canvas"
   ]
 }

@@ -69,6 +69,7 @@ Oppure si possono usare le **giunzioni** (tutti i tipi di `JOIN`) per creare una
 Le giunzioni possibili sono: `[CROSS | NATURAL] [LEFT | RIGHT | FULL] JOIN`.
 > Usare il `CROSS JOIN` equivale ad usare `FROM` su più tabelle.
 > `JOIN` e `INNER JOIN` hanno lo stesso effetto.
+> Si può usare `USING` per specificare le colonne su cui effettuare la natural join.
 
 ```sql
 SELECT Nome, Cognome, Matricola, Data, Materia
@@ -139,3 +140,125 @@ FROM Studenti
 WHERE Nome LIKE "A%a" OR Nome LIKE "A%i"
 -- Studenti che iniziano con 'A' e terminano per 'a' oppure 'i'
 ```
+
+### Sottoselect
+La clausola `WHERE` usa una combinazione booleana di predicati sotto forma di: `Expr Comp Expr`, è possibile inserire nel campo `WHERE` una condizione che usa una select annidata, dove si può:
+- Eseguire **confronti** con la tabella di ritorno della sottoselect
+- Verificare la **presenza di valori** all'interno della tabella ritornata dalla sottoselect
+- Verificare se l'insieme di valori ritornato dalla sottoselect è **vuoto**
+```sql
+SELECT *
+FROM Studenti
+WHERE (Matricola <> "1234") AND
+	Provincia = (SELECT Provincia
+				 FROM Studenti
+				 Where Matricola = "1234")
+
+-- Oppure, senza sottoselect
+SELECT altri.*
+FROM Studenti altri JOIN Studenti s USING (Provincia)
+WHERE altri.Matricola <> "1234" AND s.Matricola = "1234"
+
+/*
+* Studenti che vivono nella stessa provincia dello studente con la matricola 
+* 1234, escluso lo studente stesso
+*/
+```
+
+## Quantificazione
+Esistono quantificazioni **esistenziali** ed **universali**.
+- Esistenziale negata = universale
+- Universale negata = esistenziale
+
+Nella clausola `WHERE`, possiamo specificare varie quantificazioni:
+
+#### Esistenziale
+
+**EXISTS**:
+`WHERE [NOT] EXISTS (Sottoselect)`, verifica se la sottoselect ritorna una tabella non vuota.
+```sql
+SELECT *
+FROM Studenti s
+WHERE EXISTS (SELECT *
+			  FROM Esami e
+			  WHERE e.Candidato = s.Matricola AND e.Voto > 27)
+-- Studenti con almeno un voto > 27
+```
+
+**ANY**:
+`WHERE Expr Comp ANY (Sottoselect)`.
+- TRUE se esiste un valore `v` restituito dalla sottoselect che è in relazione `Comp` con `Expr`, cioè `Expr Comp v` è vera
+- FALSE se nella sottoselect tutti i valori sono diversi da `NULL` e non esiste un valore `v` tale che `Expr Comp v` è vera, quindi se la sottoselect è vuota è false
+- UNKNOWN se nella sottoselect ci sono valori `NULL` e per tutti i valori diversi da `NULL` si ha che `Expr Comp v` è falsa
+```sql
+SELECT *
+FROM Studenti s
+WHERE s.Matricola = ANY (SELECT e.Candidato
+						 FROM Esami e
+						 WHERE e.Voto > 27)
+-- Studenti con almeno un voto > 27
+```
+
+**IN**:
+```sql
+SELECT *
+FROM Studenti s
+WHERE s.Matricola IN (SELECT e.Candidato
+					  FROM Esami e
+					  WHERE e.Voto > 27)
+-- Studenti con almeno un voto > 27
+```
+
+#### Universale
+Non disponendo di un operatore del tipo "forall" in sql, dobbiamo trasformare la quantificazione universale in una esistenziale negata.
+```sql
+SELECT *
+FROM Studenti s
+WHERE NOT EXISTS (SELECT *
+				  FROM Esami e
+				  WHERE e.Candidato = s.Matricola AND e.Voto <> 30)
+-- Gli studenti che hanno preso solo 30
+-- ATTENZIONE: con questa query si prendono anche gli studenti che devono ancora superare qualche esame, quindi con valore NULL
+
+SELECT *
+FROM Studenti s
+WHERE NOT EXISTS (SELECT *
+				  FROM Esami e
+				  WHERE e.Candidato = s.Matricola AND e.Voto <> 30)
+	  AND EXISTS (SELECT *
+				  FROM Esami e
+				  WHERE e.Candidato = s.Matricola)
+-- Studenti che hanno preso solo trenta e hanno superato qualche esame
+```
+
+**ALL**:
+`WHERE Expr Comp ALL (Sottoselect)`
+Forma specchiata di `ANY`.
+- TRUE se tutti i valori della sottoselect sono diversi da `NULL`, e per ogni `v` del risultato della sottoselect, `Expr Comp v` è vera
+- FALSE se esiste un `v` risultato della sottoselect tale che `Expr Comp v` è false
+- UNKNOWN se nella sottoselect ci sono valori `NULL` e per tutti i valori `v` diversi da `NULL`, si ha che `Expr Comp v` è vera
+```sql
+SELECT *
+FROM Studenti s
+WHERE s.Matricola <> ALL (SELECT e.Candidato
+						  FROM Esami e
+						  WHERE e.Voto <> 30)
+-- Gli studenti che hanno preso solo 30
+```
+
+>[!Tip] ANY vs ALL
+>- `ANY` = `OR` generalizzato
+>- `ALL` = `AND` generalizzato
+
+
+### Group by
+Partiziona la tabella risultante (dalle operazioni di select, from, where) rispetto all'uguaglianza su tutti i campi ed elimina i gruppi che non rispettano la clausola `HAVING`, da ogni gruppo poi viene estratta una riga tramite la `SELECT`.
+
+```sql
+SELECT Candidato, COUNT(*) AS NEsami, MIN(Voto), MAX(Voto), AVG(Voto)
+FROM Esami
+GROUP BY Candidato
+HAVING AVG(Voto) > 23
+-- Mostra delle statistiche solo per candidati con media superiore a 23
+```
+![[GROUP BY.svg|600]]
