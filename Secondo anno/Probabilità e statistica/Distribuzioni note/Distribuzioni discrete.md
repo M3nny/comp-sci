@@ -78,7 +78,7 @@ questa approssimazione è anche nota come **legge degli eventi rari**, in quanto
 
 >[!Example]
 >Una fabbrica fornisce il $3\%$ dei chip acquistati da un produttore di telefoni.
->Quale è la probabilità che su $100$ chi, ve ne siano _al massimo_ $3$ provenienti da quella fabbrica?
+>Quale è la probabilità che su $100$ chip, ve ne siano _al massimo_ $3$ provenienti da quella fabbrica?
 >
 >Usando la binomiale:
 >$$\mathbb{P}[X\leq 3]=\sum_{k=0}^3\binom{100}{k}0.003^k0.97^{100-k}=0.64724921$$
