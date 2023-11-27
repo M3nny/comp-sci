@@ -249,8 +249,6 @@ WHERE s.Matricola <> ALL (SELECT e.Candidato
 >[!Tip] ANY vs ALL
 >- `ANY` = `OR` generalizzato
 >- `ALL` = `AND` generalizzato
-
-
 ### Group by
 Partiziona la tabella risultante (dalle operazioni di select, from, where) rispetto all'uguaglianza su tutti i campi ed elimina i gruppi che non rispettano la clausola `HAVING`, da ogni gruppo poi viene estratta una riga tramite la `SELECT`.
 
@@ -262,3 +260,67 @@ HAVING AVG(Voto) > 23
 -- Mostra delle statistiche solo per candidati con media superiore a 23
 ```
 ![[GROUP BY.svg|600]]
+
+>[!Attention]
+>- Gli attributi non aggregati nella `SELECT` e `HAVING` devono essere presenti nel `GROUP BY`.
+>- La clausola `HAVING` presenta solo attributi raggruppati oppure funzioni di aggregazione applicate ad attributi non raggruppati.
+
+Nel raggruppamento si assume `NULL = NULL`.
+```sql
+SELECT Tutor, COUNT(*), AS NStud
+FROM Studenti
+GROUP BY Tutor
+-- Matricole dei tutor e relativo numero di studenti di cui sono tutor
+```
+
+#### Cases
+La clausola `CASE` crea varie condizioni e ritorna la prima query che rispetta una di esse, se nessuna è rispettata verrà eseguito il ramo `ELSE`, oppure verrà ritornato `NULL` in assenza di `ELSE`.
+```sql
+CASE
+	WHEN cond1 THEN result1
+	WHEN cond2 THEN result2
+	ELSE result
+END
+```
+
+---
+## Modifica dei dati
+
+**INSERT**
+Vengono specificati in ordine gli attributi da inserire in una nuova riga di una tabella, se non si specificano tutti, quelli rimanenti prenderanno valore `NULL` oppure `default`.
+```sql
+INSERT INTO Studenti (Matricola, Nome, Cognome)
+VALUES ("1234", "Mario", "Rossi")
+
+INSERT INTO StNomeCognome AS
+	SELECT Nome, Cognome FROM Studenti
+
+/*
+* Insert di righe prodotte da una SELECT
+* StNomeCognome(Nome, Cognome) è una tabella valida per questo tipo
+* di inserimento
+**
+
+```
+I valori `NOT NULL` e senza valore di `default` devono essere specificati.
+
+**DELETE**:
+Simile alla `SELECT`, a differenza che cancella righe intere.
+```sql
+DELETE FROM Studenti
+WHERE Matricola NOT IN (SELECT Candidato FROM Esami)
+-- Cancella gli studenti che non hanno sostenuto esami
+```
+
+>`DELETE FROM Tabella` cancella tutte le righe.
+
+**UPDATE**:
+Aggiorna i valori presenti in una tabella.
+```sql
+UPDATE Esami
+SET Voto = Voto + 1
+WHERE Voto > 23 AND Voto < 30
+-- Aumenta di 1 punto il voto a tutti gli esami con voto > 23
+```
+
+Anche qui è possibile usare delle sottoselect.

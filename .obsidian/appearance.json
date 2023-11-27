@@ -5,8 +5,11 @@
   "enabledCssSnippets": [
     "center_image"
   ],
-  "baseFontSize": 18,
+  "baseFontSize": 19,
   "accentColor": "",
   "showViewHeader": false,
-  "nativeMenus": false
+  "nativeMenus": false,
+  "monospaceFontFamily": "",
+  "interfaceFontFamily": "",
+  "textFontFamily": ""
 }

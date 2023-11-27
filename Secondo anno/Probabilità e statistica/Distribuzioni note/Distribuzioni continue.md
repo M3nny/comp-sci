@@ -47,4 +47,40 @@ $$\text{Bin}(n,p)\approx N(np,np(1-p))$$
 >\mathbb{P}[800\leq X\leq 850]&=\mathbb{P}[799.5<X<850.5]\\
 >&\approx\Phi\left(\frac{850.5-840}{23.36664}\right)-\Phi\left(\frac{799.5-840}{23.36664}\right)\\
 >&\approx\Phi(0.4493586)-\Phi(-1.73324)=0.631887
->\end{flalign}
+>\end{flalign}$$
+
+### Distribuzione gamma
+La v.a. $X$ con **distribuzione gamma** ha parametri $\alpha>0$ e $\lambda>0$.
+$$X\sim \text{Ga}(\alpha,\lambda)$$
+- $f(x)=\begin{cases}\frac{\lambda^\alpha}{\Gamma(\alpha)}x^{\alpha-1}e^{-\lambda x}&x\in(0,\infty)\\0&\text{altrimenti}\end{cases}$
+	dove $\Gamma(\alpha)=\int_0^\infty x^{\alpha-1}e^{-x}dx$ è la funzione gamma.
+- $\mathbb{E}[X]=\frac{\alpha}{\lambda}$
+- $Var[X]=\frac{\alpha}{\lambda^2}$
+
+La funzione di ripartizione si può calcolare quando $\alpha$ è intero, questo perchè possiamo riscrivere $\Gamma$ come un fattoriale: $\Gamma(\alpha)=\int_0^\infty x^{\alpha-1}e^{-x}dx=(\alpha-1)!$
+
+### Distribuzione esponenziale
+Viene chiamata così la distribuzione gamma con $\alpha=1$, essa viene usata per modellare tempi di attesa e lunghezze.
+$$X\sim \text{Exp}(\lambda)$$
+- $f(x)=\begin{cases}\lambda e^{-\lambda x}&x\in(0,\infty)\\0&\text{altrimenti}\end{cases}$
+- $F(x)=\begin{cases}0&x<0\\1-e^{-\lambda x}&x\geq 0\end{cases}$
+- $\mathbb{E}[X]=\frac{1}{\lambda}$
+- $Var[X]=\frac{1}{\lambda^2}$
+
+Questa è l'unica distribuzione continua con **mancanza di memoria** (come la geometrica per le discrete), la proprietà può essere descritta come:
+$$\begin{flalign}
+\mathbb{P}[X>t+s|X>t]&=\frac{\mathbb{P}[X>t+s]}{\mathbb{P}[X>t]}\\
+&=\mathbb{P}[X>s]
+\end{flalign}
+$$
+tenendo conto che $\mathbb{P}[X>x]=e^{-\lambda x}$ con $x>0$.
+
+>[!Example]
+>In un ora viene installato un software in circa 30 pc.
+>Assumendo che il tempo di installazione su ogni pc esegua una distribuzione esponenziale, calcolare la probabilità che si impieghi più di 5 minuti per installare il software nel prossimo pc.
+>
+>$X$ = tempo di attesa in ore $\sim Exp(30)$ (30 pc in media)
+>$$\mathbb{P}[X>5/60]=\mathbb{P}[X>1/12]=e^{-30/12}$$
+>
+>$x$ = tempo di attesa in minuti $\sim Exp(1/2)$
+>$$\mathbb{P}[X>5]=e^{-5/2}$$
