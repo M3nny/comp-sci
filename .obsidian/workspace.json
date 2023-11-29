@@ -4,22 +4,35 @@
     "type": "split",
     "children": [
       {
-        "id": "51fa245db4f1d0c8",
+        "id": "0e38df113f2ca6ee",
         "type": "tabs",
         "children": [
           {
-            "id": "c6a59e81bdea4c2d",
+            "id": "afe72dab9aadb194",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Secondo anno/Programmazione ad oggetti mod. 1/Collections.md",
+                "file": "Secondo anno/Algoritmi e strutture dati/Mod. 2/3 - Alberi/Alberi binari di ricerca.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "48355914c1bc10a4",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Secondo anno/Algoritmi e strutture dati/Mod. 2/3 - Alberi/Alberi binari di ricerca.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -69,8 +82,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 305.5110321044922,
-    "collapsed": true
+    "width": 305.5110321044922
   },
   "right": {
     "id": "282a9548711da6a0",
@@ -86,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Secondo anno/Programmazione ad oggetti mod. 1/Collections.md",
+                "file": "Secondo anno/Algoritmi e strutture dati/Mod. 2/3 - Alberi/Alberi binari di ricerca.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Secondo anno/Programmazione ad oggetti mod. 1/Collections.md",
+                "file": "Secondo anno/Algoritmi e strutture dati/Mod. 2/3 - Alberi/Alberi binari di ricerca.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Secondo anno/Programmazione ad oggetti mod. 1/Collections.md"
+                "file": "Secondo anno/Algoritmi e strutture dati/Mod. 2/3 - Alberi/Alberi binari di ricerca.md"
               }
             }
           },
@@ -156,9 +168,10 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "a1163d9af64d6878",
+  "active": "48355914c1bc10a4",
   "lastOpenFiles": [
     "Secondo anno/Programmazione ad oggetti mod. 1/Subtyping e generics.md",
+    "Secondo anno/Algoritmi e strutture dati/Mod. 2/3 - Alberi/Alberi binari di ricerca.md",
     "Secondo anno/Programmazione ad oggetti mod. 1/Collections.md",
     "Secondo anno/Programmazione ad oggetti mod. 1/Methods dispatching.md",
     "Secondo anno/Probabilità e statistica/Distribuzioni note/Distribuzioni continue.md",
@@ -177,7 +190,6 @@
     "Excalidraw",
     "Untitled.md",
     "Secondo anno/Sistemi operativi mod. 1/File systems.md",
-    "Secondo anno/Algoritmi e strutture dati/Mod. 2/3 - Alberi/Alberi binari di ricerca.md",
     "Secondo anno/Probabilità e statistica/Distribuzioni note",
     "Secondo anno/Algoritmi e strutture dati/Mod. 2/Images/Cancellazione bst con due figli.svg",
     "Secondo anno/Algoritmi e strutture dati/Mod. 2/Images/Cancellazione albero binario di ricerca.svg",

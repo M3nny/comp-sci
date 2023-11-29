@@ -260,3 +260,53 @@ usando il teorema master:
 - $g(n)=n^{\log_2 2}=n$
 Verifichiamo di essere nel primo caso: $f(n)=O(n^{1-\epsilon})$, $\epsilon>0$
 Se $\epsilon=1$ otteniamo $n^0=1$, quindi $T(n)=\Theta(n)$.
+
+---
+>[!Example]
+>Dato un albero di ricerca $t$, scrivere una funzione EFFICIENTE che restituisce il numero massimo di ripetizioni di una chiave in $t$ e analizzarne la complessità.
+>Non è possibile usare strutture dati ausiliarie.
+>
+>```cpp
+>int massimoRip(Ptree t) {
+>	PNode iter;
+>	int maxrip; // attuale massimo numero di ripetizioni
+>	int count; // numero di ripetizioni della chiave attuale
+>	int val; // rappresenta la chiave visitata precedente
+>	if (t->root == nullptr) {
+>		return 0;
+>	}
+>	
+>	iter = tree_min(t->root); // O(h)
+>	maxrip = count = 1;
+>	val = iter->key;
+>	iter = Tree_successor(iter); // O(h)
+>	
+>	while (iter != nullptr) { // n - 1 volte
+>		if (iter->key == val) {
+>			count++;
+>		} else {
+>			if (maxrip < count) {
+>				maxrip = count;
+>			}
+>			count = 1;
+>			val = iter->key;
+>		}
+>		iter = Tree_successor(iter); // O(h)
+>	}
+>	
+>	if (maxrip < count) {
+>		maxrip = count;
+>	}
+>	return maxrip;
+>}
+>```
+>Anche facendo una visita simmetrica partendo da `Tree_min()` e facendo `Tree_successor()` $n-1$ volte si ottiene una complessità $\Theta(n)$ perchè:
+>- Richiede $\Omega(n)$ per effettuare $n$ chiamate di procedura.
+>- Attraversa ognuno degli $n-1$ archi al massimo due volte, il che richiede $O(n)$
+>
+>Sia $(u,v)$ un generico arco.
+>Partendo dalla radice, dobbiamo attraversare $(u,v)$ da $u$ a $v$, prima di attraversarlo da $v$ a $u$.
+>L'unico modo di attraversarlo downward è nella procedura `Tree_min()`, mentre upward è nella procedura `Tree_successor()` quando il nodo a cui si applica NON ha un sottoalbero destro.
+
+
+
