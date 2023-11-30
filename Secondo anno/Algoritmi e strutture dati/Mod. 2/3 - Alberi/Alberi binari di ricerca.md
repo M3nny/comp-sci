@@ -308,5 +308,20 @@ Se $\epsilon=1$ otteniamo $n^0=1$, quindi $T(n)=\Theta(n)$.
 >Partendo dalla radice, dobbiamo attraversare $(u,v)$ da $u$ a $v$, prima di attraversarlo da $v$ a $u$.
 >L'unico modo di attraversarlo downward è nella procedura `Tree_min()`, mentre upward è nella procedura `Tree_successor()` quando il nodo a cui si applica NON ha un sottoalbero destro.
 
+---
+## Altri alberi di ricerca
+#### Alberi AVL
+Sono alberi binari di ricerca bilanciati.
+Per ogni nodo, oltre la chiave mantengono il **fattore di bilanciamento**, il quale rappresenta la differenza tra l'altezza del suo sottoalbero sx e dx, il valore assoluto di quest'ultimo è al massimo $1$ su ogni nodo.
 
-
+Le operazioni di inserimento e cancellazione sono più complesse in quanto necessitano di eseguire rotazioni per mantenere il bilanciamento dell'albero.
+#### B_Alberi
+Sono alberi di ricerca bilanciati che sono di grado $t\geq 2$, e hanno le seguenti proprietà:
+- Tutte le foglie hanno la stessa profondità
+- Ogni nodo $v$ diverso dalla radice mantiene $K(v)$ chiavi ordinate tali che $t-1\leq K(v)\leq 2t-1$
+- La radice mantiene almeno $1$ chiave e al massimo $2t-1$ chiavi ordinate
+- Ogni nodo diverso dalla radice ha $K(v)+1$ figli
+- Le chiavi in un nodo separano gli intervalli di chiavi memorizzate in ciascun sottoalbero
+#### Alberi rosso-nero
+Sono alberi binari di ricerca che oltre alla chiave memorizzano il colore del nodo, che può essere rosso o nero.
+Vincolando in modo opportuno come i due colori possono essere distribuiti riusciamo a mantenere la seguente invariante: il cammino più lungo nell'albero è lungo al massimo il doppio del cammino più breve, l'albero è quindi bilanciato.
