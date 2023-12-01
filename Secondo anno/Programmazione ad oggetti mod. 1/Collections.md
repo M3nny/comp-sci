@@ -78,3 +78,8 @@ String[] f = c.split(“d“); // {"abc", "ef"}
 ```
 
 >Stampare un oggetto manderà in output il nome e hashcode di quest'ultimo.
+
+### Wrappers
+Per ogni tipo primitivo esiste un wrapper che lo rappresenta, è meno efficiente ma è più strutturato, e consente di convertire un tipo ad un altro.
+
+>Ogni tipo primitivo è un oggetto.

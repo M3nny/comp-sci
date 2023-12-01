@@ -11,8 +11,12 @@
             "id": "18592351d5e4c1c1",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {}
+              "type": "markdown",
+              "state": {
+                "file": "Secondo anno/Programmazione ad oggetti mod. 1/Collections.md",
+                "mode": "source",
+                "source": false
+              }
             }
           }
         ]
@@ -65,7 +69,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 305.5110321044922
+    "width": 305.5110321044922,
+    "collapsed": true
   },
   "right": {
     "id": "282a9548711da6a0",
@@ -81,6 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "Secondo anno/Programmazione ad oggetti mod. 1/Collections.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -97,6 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "Secondo anno/Programmazione ad oggetti mod. 1/Collections.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -118,7 +125,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "Secondo anno/Programmazione ad oggetti mod. 1/Collections.md"
+              }
             }
           },
           {
