@@ -4,19 +4,15 @@
     "type": "split",
     "children": [
       {
-        "id": "68a2d90dfde544bf",
+        "id": "784323bc5223a878",
         "type": "tabs",
         "children": [
           {
-            "id": "18592351d5e4c1c1",
+            "id": "c2ed0cd66c74e638",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Secondo anno/Programmazione ad oggetti mod. 1/Collections.md",
-                "mode": "source",
-                "source": false
-              }
+              "type": "empty",
+              "state": {}
             }
           }
         ]
@@ -86,7 +82,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Secondo anno/Programmazione ad oggetti mod. 1/Collections.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +98,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Secondo anno/Programmazione ad oggetti mod. 1/Collections.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,9 +119,7 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "Secondo anno/Programmazione ad oggetti mod. 1/Collections.md"
-              }
+              "state": {}
             }
           },
           {
@@ -156,8 +148,20 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "18592351d5e4c1c1",
+  "active": "a1163d9af64d6878",
   "lastOpenFiles": [
+    "Secondo anno/Sistemi operativi mod. 1/Dischi.md",
+    "Secondo anno/Sistemi operativi mod. 1/Images/Schema hard disk.png",
+    "Excalidraw/Drawing 2023-12-01 22.31.01.excalidraw.md",
+    "Excalidraw",
+    "Secondo anno/Sistemi operativi mod. 1/Processi.md",
+    "Primo anno/Secondo semestre/Architettura degli elaboratori mod. 2/Input Output/Controller.md",
+    "Secondo anno/Sistemi operativi mod. 1/Thread.md",
+    "Secondo anno/Sistemi operativi mod. 1/Scheduling.md",
+    "Secondo anno/Sistemi operativi mod. 1/Images/Comunicazione IO DMA.png",
+    "Secondo anno/Sistemi operativi mod. 1/Images/Comunicazione IO mappato in memoria.png",
+    "Secondo anno/Sistemi operativi mod. 1/File systems.md",
+    "Secondo anno/Programmazione ad oggetti mod. 1/Collections.md",
     "Secondo anno/Probabilità e statistica/Distribuzioni note/Distribuzioni discrete.md",
     "Secondo anno/Probabilità e statistica/Distribuzioni note/Distribuzioni continue.md",
     "Secondo anno/Algoritmi e strutture dati/Mod. 2/4 - Ordinamento/Insertion sort.md",
@@ -166,9 +170,7 @@
     "Secondo anno/Algoritmi e strutture dati/Mod. 2/Images/Insertion sort animation.gif.crdownload",
     "Excalidraw/Drawing 2023-11-30 21.55.48.excalidraw.md",
     "Secondo anno/Algoritmi e strutture dati/Mod. 2/Images/Insertion sample.svg",
-    "Excalidraw",
     "Secondo anno/Algoritmi e strutture dati/Mod. 2/3 - Alberi/Alberi binari di ricerca.md",
-    "Secondo anno/Sistemi operativi mod. 1/File systems.md",
     "Secondo anno/Algoritmi e strutture dati/Mod. 2/4 - Ordinamento",
     "Secondo anno/Algoritmi e strutture dati/Mod. 1/4 - Teorema master.md",
     "Secondo anno/Algoritmi e strutture dati/Mod. 1/3 - Complessità di un algoritmo.md",
@@ -176,30 +178,20 @@
     "Primo anno/Primo semestre/Matematica discreta/Le sommatorie.md",
     "Secondo anno/Algoritmi e strutture dati/Mod. 2/3 - Alberi/Decomposizione.md",
     "Secondo anno/Programmazione ad oggetti mod. 1/Subtyping e generics.md",
-    "Secondo anno/Programmazione ad oggetti mod. 1/Collections.md",
     "Secondo anno/Programmazione ad oggetti mod. 1/Methods dispatching.md",
     "Secondo anno/Basi di dati mod. 1/SQL/DML.md",
     "Secondo anno/Probabilità e statistica/Variabili casuali.md",
     "Secondo anno/Probabilità e statistica/Formulario.md",
     "Secondo anno/Probabilità e statistica/Costanti caratteristiche.md",
     "Secondo anno/Basi di dati mod. 1/Images/GROUP BY.svg",
-    "Excalidraw/Drawing 2023-11-24 18.00.24.excalidraw.md",
     "Calcolo 1/Images/Pasted Image 20231124180127_842.png",
     "Calcolo 1/Images/Pasted Image 20231124180111_820.png",
     "Calcolo 1/Images/Pasted Image 20231124180054_816.png",
     "Calcolo 1/Images",
     "Calcolo 1",
-    "Untitled.md",
     "Secondo anno/Probabilità e statistica/Distribuzioni note",
     "Secondo anno/Algoritmi e strutture dati/Mod. 2/Images/Cancellazione bst con due figli.svg",
-    "Secondo anno/Algoritmi e strutture dati/Mod. 2/Images/Cancellazione albero binario di ricerca.svg",
-    "Excalidraw/Drawing 2023-11-23 13.38.31.excalidraw.md",
-    "Excalidraw/Drawing 2023-11-23 12.31.50.excalidraw.md",
-    "Secondo anno/Algoritmi e strutture dati/Mod. 2/3 - Alberi/Cos'è un albero.md",
-    "Secondo anno/Algoritmi e strutture dati/Mod. 2/3 - Alberi/Implementazioni.md",
-    "Secondo anno/Sistemi operativi mod. 1/Images/Mapping combinato.png",
     "Secondo anno/Sistemi operativi mod. 1/Images/Mapping combinato.png.crdownload",
-    "Pasted image 20231116111143.png",
     "Secondo anno/Basi di dati mod. 1/SQL",
     "Secondo anno/Sistemi operativi mod. 1/Images/Tabella inversa delle pagine.png.crdownload",
     "Secondo anno/Sistemi operativi mod. 1/Images/Mapping diretto_associativo.png.crdownload",
