@@ -13,8 +13,9 @@ $$X\sim N(\micro,\sigma^2)$$
 - $\mathbb{E}[X]=\micro$
 - $Var[X]=\sigma^2$
 
-la v.a. $Z\sim N(0,1)$ viene anche chiamata **normale standard** e si denota con $\Phi$, si può arrivare alla forma standard da quella normale come segue:
+la v.a. $Z\sim N(0,1)$ viene anche chiamata **normale standard** e si può arrivare alla forma standard da quella normale come segue:
 $$X\sim N(\micro,\sigma^2)\implies Z=\frac{X-\micro}{\sigma}\sim N(0,1)$$
+con versione standardizzata è possibile calcolare la funzione di ripartizione ($\Phi$) attraverso la [tavola della distribuzione normale standard](https://www.sjsu.edu/faculty/gerstman/EpiInfo/z-table.htm).
 
 >[!Example]
 >Una macchina produce tubi di diametro $X$ (mm).

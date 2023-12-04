@@ -75,6 +75,7 @@ $$X\sim\text{Po}(\lambda)$$
 è possibile **approssimare la binomiale** utilizzando questa distribuzione, nel caso in cui $n\geq 100$ e $p\leq 0.05$ (per la binomiale):
 $$\lim_{\substack{n\to\infty\\p\to 0\\np\to\lambda}}\binom{n}{k}p^k(1-p)^{n-k}= \frac{\lambda^k}{k!}e^{-\lambda}$$
 questa approssimazione è anche nota come **legge degli eventi rari**, in quanto si va a sperimentare la distribuzione dei successi, quando sono presenti _molti esperimenti_ ($n\to\infty$), ma la probabilità di successo è _molto piccola_ ($p\to 0$).
+>Si sostitusice $\lambda$ con $n\cdot\lambda$ (se $n\geq 100$ e $p\leq 0.05$)
 
 >[!Example]
 >Una fabbrica fornisce il $3\%$ dei chip acquistati da un produttore di telefoni.
@@ -105,4 +106,4 @@ tenendo conto che $\mathbb{P}[X>k]=(1-p)^k$
 >$$\mathbb{P}[X=15]=0.2\cdot (1-0.2)^{15-1}=0.0088$$
 >
 >Quale è la probabilità che si debbano visitare più di $10$ pagine sapendo che ne sono già state visitate $4$?
->$$\mathbb{P}[X>10|x>4]=\mathbb[x>10-4=6]=(1-0.2)^6=0.2621$$
+>$$\mathbb{P}[X>10|x>4]=\mathbb{P}[x>10-4=6]=(1-0.2)^6=0.2621$$
