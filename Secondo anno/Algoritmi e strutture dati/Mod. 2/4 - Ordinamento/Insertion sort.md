@@ -10,7 +10,6 @@ insertionSort(array A)
 			i = i - 1
 		A[i+1] = key
 ```
-
 ![[Insertion sort animation.gif]]
 **Invariante del ciclo** (for):
 Il sottoarray $A[1 ... j-1]$ è formato dagli elementi ordinati che originariamente erano in $A[1 ... j-1]$.
