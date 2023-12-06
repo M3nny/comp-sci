@@ -4,16 +4,28 @@
     "type": "split",
     "children": [
       {
-        "id": "02cd91c8506fc7a5",
+        "id": "5a267cb4009d6a62",
         "type": "tabs",
         "children": [
           {
-            "id": "1bdd820207bb39d9",
+            "id": "465072b5e691c598",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Secondo anno/Programmazione ad oggetti mod. 1/Exceptions.md",
+                "file": "Secondo anno/Sistemi operativi mod. 1/Dischi.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "26d3a66f6de74bbb",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Primo anno/Secondo semestre/Architettura degli elaboratori mod. 2/Cache/Cache diretta.md",
                 "mode": "source",
                 "source": false
               }
@@ -86,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Secondo anno/Programmazione ad oggetti mod. 1/Exceptions.md",
+                "file": "Secondo anno/Sistemi operativi mod. 1/Dischi.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Secondo anno/Programmazione ad oggetti mod. 1/Exceptions.md",
+                "file": "Secondo anno/Sistemi operativi mod. 1/Dischi.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Secondo anno/Programmazione ad oggetti mod. 1/Exceptions.md"
+                "file": "Secondo anno/Sistemi operativi mod. 1/Dischi.md"
               }
             }
           },
@@ -156,8 +168,10 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "1bdd820207bb39d9",
+  "active": "a1163d9af64d6878",
   "lastOpenFiles": [
+    "Primo anno/Secondo semestre/Architettura degli elaboratori mod. 2/Cache/Cache diretta.md",
+    "Secondo anno/Sistemi operativi mod. 1/Dischi.md",
     "Secondo anno/Probabilità e statistica/Congiunte.md",
     "Secondo anno/Programmazione ad oggetti mod. 1/Exceptions.md",
     "Secondo anno/Probabilità e statistica/Variabili casuali.md",
@@ -190,12 +204,10 @@
     "Secondo anno/Probabilità e statistica/Probabilità condizionata.md",
     "Secondo anno/Probabilità e statistica/Distribuzioni note/Distribuzioni discrete.md",
     "Secondo anno/Probabilità e statistica/Probabilità elementare.md",
-    "Secondo anno/Sistemi operativi mod. 1/Dischi.md",
     "Secondo anno/Sistemi operativi mod. 1/Memoria/Memoria virtuale.md",
     "Secondo anno/Sistemi operativi mod. 1/Scheduling.md",
     "Secondo anno/Algoritmi e strutture dati/Mod. 2/3 - Alberi/Decomposizione.md",
     "Secondo anno/Sistemi operativi mod. 1/Images/Schema hard disk.png",
-    "Excalidraw/Drawing 2023-12-01 22.31.01.excalidraw.md",
     "Secondo anno/Sistemi operativi mod. 1/Images/Comunicazione IO DMA.png",
     "Secondo anno/Algoritmi e strutture dati/Mod. 2/Images/Insertion sort animation.gif.crdownload",
     "Secondo anno/Algoritmi e strutture dati/Mod. 2/4 - Ordinamento",

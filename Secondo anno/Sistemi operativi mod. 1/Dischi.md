@@ -110,3 +110,22 @@ Gli algoritmi più moderni ottimizzano anche il **tempo di rotazione**.
 
 > Sia SPTF e SATF possono implementare LOOK per migliorare le prestazioni.
 
+### Considerazioni di sistema
+Lo scheduling del disco è spesso utile ma non sempre:
+- Poco utile in sistemi processor-bound
+- L'overhead dello scheduling potrebbe ridurre le prestazioni
+- Il modo in cui vengono organizzati i file potrebbe andare in contrasto con gli algoritmi di scheduling
+- Le geometrie del disco potrebbero vanificare i vantaggi dello scheduling
+
+La **buffer cache** può essere usata per memorizzare temporaneamente in RAM delle copie dei dati sul disco per accederci più velocemente, oppure per posticipare le scritture ad un momento in cui il disco sarà meno occupato.
+Per garantire la coerenza del buffer vengono usati i meccanismi di [[Cache diretta#Politiche di coerenza|write-through]] o [[Cache diretta#Politiche di coerenza|write-back]].
+
+**Gestione degli errori**:
+Eventuali settori difettosi possono essere sostituiti da settori di riserva, inoltre per avere operazioni di lettura e scrittura stabile, assumendo di disporre di un RAID che ci consente di avere dati duplicati su almeno due dischi, se la lettura o scrittura non è corretta $n$ volte su un disco, viene usato il disco clone.
+
+#### Ottimizzazioni
+- **Deframmentazione**: operazione eseguita periodicamente per inserire i dati in settori contigui
+- **Compressione**: i dati occupano meno spazio e migliora i tempi di trasferimento, bisogna tenere conto però dell'overhead di compressione/decompressione
+- **Copie multiple**: in questo modo la testina può scegliere la copia più vicina da leggere, occupa più memoria ed un overhead in più
+- **Accorpamento di record (blocking)**: leggere e scrivere più record come unico blocco di dati
+- **Anticipazione del braccio del disco**: quando inattivo il braccio del disco può posizionarsi dove è maggiore la probabilità del prossimo accesso (o al centro)
