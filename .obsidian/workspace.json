@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "a09d16bdfa06a6be",
+        "id": "02cd91c8506fc7a5",
         "type": "tabs",
         "children": [
           {
-            "id": "319667852c55309e",
+            "id": "1bdd820207bb39d9",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Secondo anno/Algoritmi e strutture dati/Mod. 2/4 - Ordinamento/Quicksort.md",
+                "file": "Secondo anno/Programmazione ad oggetti mod. 1/Exceptions.md",
                 "mode": "source",
                 "source": false
               }
@@ -69,7 +69,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 305.5110321044922
+    "width": 305.5110321044922,
+    "collapsed": true
   },
   "right": {
     "id": "282a9548711da6a0",
@@ -85,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Secondo anno/Algoritmi e strutture dati/Mod. 2/4 - Ordinamento/Quicksort.md",
+                "file": "Secondo anno/Programmazione ad oggetti mod. 1/Exceptions.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Secondo anno/Algoritmi e strutture dati/Mod. 2/4 - Ordinamento/Quicksort.md",
+                "file": "Secondo anno/Programmazione ad oggetti mod. 1/Exceptions.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +126,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Secondo anno/Algoritmi e strutture dati/Mod. 2/4 - Ordinamento/Quicksort.md"
+                "file": "Secondo anno/Programmazione ad oggetti mod. 1/Exceptions.md"
               }
             }
           },
@@ -155,10 +156,23 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "319667852c55309e",
+  "active": "1bdd820207bb39d9",
   "lastOpenFiles": [
-    "Secondo anno/Algoritmi e strutture dati/Mod. 2/4 - Ordinamento/Merge sort.md",
+    "Secondo anno/Probabilità e statistica/Congiunte.md",
+    "Secondo anno/Programmazione ad oggetti mod. 1/Exceptions.md",
+    "Secondo anno/Probabilità e statistica/Variabili casuali.md",
+    "Secondo anno/Probabilità e statistica/Images/Ripartizione congiunte.svg",
+    "Excalidraw/Drawing 2023-12-06 12.15.41.excalidraw.md",
+    "Excalidraw/Drawing 2023-12-06 11.41.59.excalidraw.md",
+    "Secondo anno/Probabilità e statistica/Introduzione.md",
+    "Secondo anno/Probabilità e statistica/Images/Area congiunte.svg",
+    "Secondo anno/Probabilità e statistica/Formulario.md",
+    "Secondo anno/Probabilità e statistica/Costanti caratteristiche.md",
+    "Secondo anno/Probabilità e statistica/Images/Congiunte.svg",
+    "Excalidraw",
+    "Secondo anno/Sistemi operativi mod. 1/Memoria/Memoria fisica.md",
     "Secondo anno/Algoritmi e strutture dati/Mod. 2/4 - Ordinamento/Quicksort.md",
+    "Secondo anno/Algoritmi e strutture dati/Mod. 2/4 - Ordinamento/Merge sort.md",
     "Secondo anno/Algoritmi e strutture dati/Mod. 2/4 - Ordinamento/Insertion sort.md",
     "Secondo anno/Algoritmi e strutture dati/Mod. 2/Images/Merge sample.svg",
     "Excalidraw/Drawing 2023-12-05 22.03.25.excalidraw.md",
@@ -167,36 +181,24 @@
     "Secondo anno/Algoritmi e strutture dati/Mod. 2/Images/Insertion sort animation.gif",
     "Secondo anno/Algoritmi e strutture dati/Mod. 2/Images/Quicksort animation.gif",
     "Secondo anno/Algoritmi e strutture dati/Mod. 2/Images/Merge sort animation.gif",
-    "Excalidraw",
     "Secondo anno/Basi di dati mod. 1/PostgreSQL/DML.md",
     "Secondo anno/Basi di dati mod. 1/PostgreSQL/DDL.md",
     "Secondo anno/Algoritmi e strutture dati/Mod. 2/Images/Merge sort animation.gif.crdownload",
     "Secondo anno/Algoritmi e strutture dati/Mod. 2/Images/Quicksort animation.gif.crdownload",
     "Secondo anno/Algoritmi e strutture dati/Mod. 2/3 - Alberi/Visite.md",
-    "Secondo anno/Probabilità e statistica/Formulario.md",
     "Secondo anno/Probabilità e statistica/Distribuzioni note/Distribuzioni continue.md",
     "Secondo anno/Probabilità e statistica/Probabilità condizionata.md",
     "Secondo anno/Probabilità e statistica/Distribuzioni note/Distribuzioni discrete.md",
-    "Secondo anno/Probabilità e statistica/Costanti caratteristiche.md",
     "Secondo anno/Probabilità e statistica/Probabilità elementare.md",
-    "Secondo anno/Probabilità e statistica/Variabili casuali.md",
     "Secondo anno/Sistemi operativi mod. 1/Dischi.md",
     "Secondo anno/Sistemi operativi mod. 1/Memoria/Memoria virtuale.md",
     "Secondo anno/Sistemi operativi mod. 1/Scheduling.md",
     "Secondo anno/Algoritmi e strutture dati/Mod. 2/3 - Alberi/Decomposizione.md",
     "Secondo anno/Sistemi operativi mod. 1/Images/Schema hard disk.png",
     "Excalidraw/Drawing 2023-12-01 22.31.01.excalidraw.md",
-    "Secondo anno/Sistemi operativi mod. 1/Processi.md",
-    "Primo anno/Secondo semestre/Architettura degli elaboratori mod. 2/Input Output/Controller.md",
-    "Secondo anno/Sistemi operativi mod. 1/Thread.md",
     "Secondo anno/Sistemi operativi mod. 1/Images/Comunicazione IO DMA.png",
-    "Secondo anno/Sistemi operativi mod. 1/Images/Comunicazione IO mappato in memoria.png",
-    "Secondo anno/Sistemi operativi mod. 1/File systems.md",
-    "Secondo anno/Programmazione ad oggetti mod. 1/Collections.md",
     "Secondo anno/Algoritmi e strutture dati/Mod. 2/Images/Insertion sort animation.gif.crdownload",
-    "Excalidraw/Drawing 2023-11-30 21.55.48.excalidraw.md",
     "Secondo anno/Algoritmi e strutture dati/Mod. 2/4 - Ordinamento",
-    "Secondo anno/Basi di dati mod. 1/Images/GROUP BY.svg",
     "Calcolo 1/Images",
     "Calcolo 1",
     "Secondo anno/Probabilità e statistica/Distribuzioni note",
