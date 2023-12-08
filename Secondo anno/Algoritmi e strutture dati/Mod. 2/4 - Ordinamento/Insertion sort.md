@@ -29,8 +29,8 @@ Il ciclo for viene eseguito $n-1$ volte, il numero totale di confronti è dato d
 $$\sum_{j=2}^nj-1=\sum_{k=1}^{n-1}k=\frac{(n-1)(n-1+1)}{2}=\frac{n(n-1)}{2}=\Theta(n^2)$$
 
 | Caso migliore | Caso medio | Caso peggiore |
-| ------------- | ---------- | ------------- |
-| $\Theta(n)$   | $O(n^2)$   | $\Theta(n^2)$ |
+|:-------------:|:----------:|:-------------:|
+|  $\Theta(n)$  |  $O(n^2)$  | $\Theta(n^2)$ |
 
 **Vantaggi**:
 - In loco

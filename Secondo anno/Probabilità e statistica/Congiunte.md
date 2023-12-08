@@ -36,8 +36,6 @@ La funzione di probabilità congiunta e le marginali possono essere rappresentat
 >&=1-(0.2+0.2+0.1)=0.5
 >\end{flalign}
 >$$
-
-
 ### Funzioni congiuntamente continue
 $X$ e $Y$ sono **congiuntamente continue** se esiste una funzione $f:\mathbb{R}^2\to\mathbb{R}$ integrabile e tale che:
 1. $f(x,y)\geq 0,\quad\forall(x,y)\in\mathbb{R}^2$
@@ -73,5 +71,39 @@ $$
 >&=\int_0^1 2x^3\space dx = \frac{1}{2}
 >\end{flalign}$$
 
+Dalla **densità congiunta** si può ricavare la **f.r. congiunta**:
+$$F(x,y)=\mathbb{P}[X\leq x, Y\leq y]=\int_{-\infty}^y\int_{-\infty}^xf(s,t)dsdt$$
+dalla **f.r. congiunta** si può ricavare la **densità congiunta**:
+$$f(x,y)=\frac{d^2F(x,y)}{dxdy}$$
+dalla **densità congiunta** si possono ricavare le **funzioni di densità marginali**:
+$$f_X(x)=\int_\mathbb{R}f(x,y)dy$$
+$$f_Y(y)=\int_\mathbb{R}f(x,y)dx$$
+### Congiunte indipendenti
+Il concetto di [[Probabilità condizionata#Eventi indipendenti|indipendenza degli eventi]] si estende anche alle v.a.
+Due v.a. sono **indipendenti** in modo generale quando:
+$$\boxed{F(x,y)=F_X(x)\cdot f_Y(y)\quad\forall(x,y)}$$
+è possibile verificarlo in un altro modo in base al tipo di v.a.:
+- **Discrete**: $p(x,y)=p_X(x)p_Y(y)\quad\forall(x,y)$
+- **Continue**: $f(x,y)=f_X(x)f_Y(y)\quad\forall(x,y)$
 
+>[!Example]
+>$$f(x,y)=\begin{cases}24xy&x,y\in(0,1),\space x+y\in(0,1)\\0&\text{altrimenti}\end{cases}$$
+>$X$ e $Y$ sono indipendenti?
+>Si può procedere in due modi:
+>1. Trovare le marginali e vedere se $f(x,y)=f_X(x)f_Y(y)$
+>2. Vedere dal grafico se conoscere $X$ o $Y$ dice qualcosa dell'altro
+>![[Esempio indipendenza congiunte.svg]]
+>Si, conoscere una v.a. ci dice qualcosa sull'altra in quanto, più alto è il valore di una v.a., più basso è il valore dell'altra, quindi $X$ e $Y$ <u>non sono</u> indipendenti.
 
+### Congiunte condizionate
+Anche in questo caso, il concetto di [[Probabilità condizionata|probabilità condizionata]] si estende alle v.a.
+Siano $X$ e $Y$ due v.a. con probabilità congiunta $p(x,y)$, la **funzione di probabilità condizionata** di $X$ dato $Y=y$ è:
+$$p_{X|Y}(x|y)=\frac{p(x,y)}{p_Y(y)}\quad\forall y|p_Y(y)>0$$
+analogamente, conoscendo $X=x$:
+$$p_{Y|X}(y|x)=\frac{p(x,y)}{p_X(x)}\quad\forall x|p_X(x)>0$$
+per le **v.a. continue** invece viene usata la **funzione di densità**:
+$$f_{X|Y}(x|y)=\frac{f(x,y)}{f_Y(y)}\quad\forall y|f_Y(y)>0$$
+$$f_{Y|X}(y|x)=\frac{f(x,y)}{f_X(x)}\quad\forall x|f_X(x)>0$$
+da cui:
+- $\mathbb{P}[X\in A|Y=y]=\int_Af_{X|Y}(x|y)dx$
+- $\mathbb{P}[Y\in B|X=x]=\int_Bf_{Y|X}(y|x)dy$
