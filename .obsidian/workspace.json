@@ -4,15 +4,19 @@
     "type": "split",
     "children": [
       {
-        "id": "9ecba34aa6708688",
+        "id": "cde5f236bff2660b",
         "type": "tabs",
         "children": [
           {
-            "id": "2a54a5e791d3a487",
+            "id": "ed357483f4b8d5e3",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {}
+              "type": "markdown",
+              "state": {
+                "file": "Secondo anno/Probabilità e statistica/Congiunte.md",
+                "mode": "source",
+                "source": false
+              }
             }
           }
         ]
@@ -65,7 +69,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 305.5110321044922
+    "width": 305.5110321044922,
+    "collapsed": true
   },
   "right": {
     "id": "282a9548711da6a0",
@@ -81,6 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "Secondo anno/Probabilità e statistica/Congiunte.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -97,6 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "Secondo anno/Probabilità e statistica/Congiunte.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -118,7 +125,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "Secondo anno/Probabilità e statistica/Congiunte.md"
+              }
             }
           },
           {
@@ -147,9 +156,11 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "2a54a5e791d3a487",
+  "active": "ed357483f4b8d5e3",
   "lastOpenFiles": [
+    "Secondo anno/Algoritmi e strutture dati/Mod. 2/3 - Alberi/Visite.md",
     "Secondo anno/Probabilità e statistica/Congiunte.md",
+    "Secondo anno/Algoritmi e strutture dati/Mod. 2/3 - Alberi/Decomposizione.md",
     "Excalidraw/Drawing 2023-12-08 19.49.56.excalidraw.md",
     "Secondo anno/Probabilità e statistica/Images/Esempio indipendenza congiunte.svg",
     "Secondo anno/Probabilità e statistica/Probabilità condizionata.md",
@@ -186,7 +197,6 @@
     "Secondo anno/Basi di dati mod. 1/PostgreSQL/DDL.md",
     "Secondo anno/Algoritmi e strutture dati/Mod. 2/Images/Merge sort animation.gif.crdownload",
     "Secondo anno/Algoritmi e strutture dati/Mod. 2/Images/Quicksort animation.gif.crdownload",
-    "Secondo anno/Algoritmi e strutture dati/Mod. 2/3 - Alberi/Visite.md",
     "Secondo anno/Algoritmi e strutture dati/Mod. 2/Images/Insertion sort animation.gif.crdownload",
     "Secondo anno/Algoritmi e strutture dati/Mod. 2/4 - Ordinamento",
     "Calcolo 1/Images",
