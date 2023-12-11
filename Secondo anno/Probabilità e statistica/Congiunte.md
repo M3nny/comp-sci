@@ -150,7 +150,7 @@ $$\mathbb{E}[g(X,Y)]=\begin{cases}
 Due conseguenze del precedente risultato sono:
 1. $\mathbb{E}[X+Y]=\mathbb{E}[X]+\mathbb{E}[Y]$
 	in generale: $\mathbb{E}[\sum\limits_{i=1}^n a_iX_i]=\sum\limits_{i=1}^n a_i\mathbb{E}[X_i]$.
-2. Se $X$ e $Y$ sono indipendenti, allora: $\mathbb{E}[X\cdot Y]=\mathbb{E}[X]\cdot\mathbb{E}[Y]$
+2. Se $X$ e $Y$ sono **indipendenti**, allora: $\mathbb{E}[X\cdot Y]=\mathbb{E}[X]\cdot\mathbb{E}[Y]$
 
 >[!Example]
 >Avendo la seguente distribuzione congiunta rappresentate la distribuzione degli errori in due moduli di un programma:
@@ -167,4 +167,44 @@ Due conseguenze del precedente risultato sono:
 >
 >Il numero atteso di errori nel programma è dato da:
 >$$\mathbb{P}[X+Y]=0.5+1.05=1.55$$
+
+### Covarianza
+Date due v.a. $X$ e $Y$, si definisce **covarianza** il valore atteso del prodotto delle loro distanze dalla media.
+$$\boxed{\text{Cov}(X,Y)=\mathbb{E}[XY]-\mathbb{E}[X]\mathbb{E}[Y]}$$
+Due v.a. si dicono **incorrelate** se $\text{Cov}[X,Y]=0$, se le due v.a. sono indipendenti allora $\text{Cov}[X,Y]=0$ (ma non è detto viceversa).
+
+**Proprietà della covarianza**:
+1. $\text{Cov}[X,Y]=\text{Cov}[Y,X]$
+2. $\text{Cov}[X,X]=Var[X]$
+3. $\text{Cov}[aX,Y]=a\text{Cov}[X,Y]$
+4. $\text{Cov}[X,a]=0$
+5. $\text{Cov}[\sum_i X_i,\sum_j Y_j] = \sum_i\sum_j\text{Cov}[X_i,Y_j]$
+6. $\text{Cov}(aX,aX)=a^2\text{Cov}(X,X)$
+
+Se le $X_i$ sono **a due a due indipendenti**, allora si ha:
+- $\text{Cov}[X_i,X_j]=0$ per $i\neq j$
+- $Var[\sum\limits_i X_i]=\sum\limits_i Var[X_i]$
+
+### Correlazione
+Una **correlazione** è una relazione tra due v.a. $X$ e $Y$ la quale indica una tendenza di una variabile a cambiare in funzione dell'altra, ed è definita come:
+$$\boxed{\text{Cor}[X,Y]=\frac{\text{Cov}[X,Y]}{\sqrt{Var[X]\cdot Var[Y]}}\quad\text{con Var[X] e Var[Y]}\neq 0}$$
+il valore generato sarà compreso tra $-1$ e $1$.
+- Vicino a $-1$ si ha una forte relazione lineare con pendenza **negativa**
+- Vicino a $1$ si ha una forte relazione lineare con pendenza **positiva**
+
+>[!Example]
+>Tornando all'esempio del numero di errori nei due moduli di un programma.
+>
+>|   $X/Y$    |  $0$   |  $1$   |  $2$   |  $3$   | $p_X(x)$ |
+>|:--------:|:------:|:------:|:------:|:------:|:--------:|
+>|   $0$    | $0.2$ | $0.2$ | $0.05$ | $0.05$ |  $0.5$   |
+>|   $1$    | $0.2$ | $0.1$ | $0.1$ | $0.1$ |  $0.5$   |
+>| $p_Y(y)$ | $0.4$ | $0.3$ | $0.15$ | $0.15$ |   $1$    |
+>$$\begin{flalign}
+>\text{Cov}[X,Y]&=\mathbb{E}[XY]-\mathbb{E}[X]\mathbb{E}[Y]\\
+>&=1\cdot 1\cdot 0.1+1\cdot 2\cdot 0.1+1\cdot 3\cdot0.1-0.5\cdot 1.05\\
+>&=0.6-0.525=0.075
+>\end{flalign}$$
+>Dato che $Var[X]=0.5^2$ e $Var[Y]=1.0712^2$:
+>$$\text{Cor}[X,Y]=\frac{0.075}{0.5\cdot 1.0712}=0.14$$
 

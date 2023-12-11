@@ -146,4 +146,19 @@ SELECT AVG(Max) FROM ProvMax;
 -- Trova la media dei voti massimi ottenuti nelle varie province
 ```
 
----
+è anche possibile usare il costrutto `WITH` per scrivere una query utilizzando una vista temporanea.
+```sql
+WITH ProvinceMedia AS (
+	SELECT s.Provincia, AVG(e.Voto) AS Media
+	FROM Studenti s JOIN Esami e ON s.Matricola = e.Candidato
+	GROUP BY s.Provincia
+)
+
+SELECT Provincia, Media
+FROM ProvinceMedia
+WHERE Media = (
+	SELECT MAX(Media)
+	FROM ProvinceMedia
+);
+-- Trova la media dei voti massimi ottenuti nelle varie province
+```

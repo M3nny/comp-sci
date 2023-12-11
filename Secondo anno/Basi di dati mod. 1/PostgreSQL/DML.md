@@ -324,3 +324,55 @@ WHERE Voto > 23 AND Voto < 30
 ```
 
 Anche qui è possibile usare delle sottoselect.
+
+---
+### Considerazioni varie
+Quando abbiamo **associazioni simmetriche**, come una tabella "persone", dove abbiamo una tabella di relazione chiamata "fratelli", possiamo gestire gli inserimenti in "fratelli" in due modi:
+1. Inserire (f1,f2) e (f2,f1) porta a ridondanza
+```sql
+SELECT p1.*, p2.*
+FROM Persone p1 JOIN Fratelli f ON p1.Id = f.Id1
+	JOIN Persone p2 ON f.Id2 = p2.Id
+WHERE f.Id1 < f.Id2
+-- Ottiene la lista dei fratelli senza ripetizioni
+```
+2. Inserire solo (f1,f2) complica le query
+```sql
+SELECT p.*
+FROM Persone p, Fratelli f
+WHERE (f.Id1 = 21 AND p.Id = f.Id2) OR (f.Id2 = 21 AND p.Id = f.Id1)
+-- Ottiene la lista dei fratelli senza ripetizioni
+```
+
+Possiamo usare la **quantificazione universale senza una sottoselect** in tre modi:
+
+1. Trasformando l'universale in una esistenziale negata
+```sql
+SELECT s.*
+FROM Studenti s
+WHERE s.Matricola NOT IN (SELECT e.Candidato
+						  FROM Esami e
+						  WHERE e.Voto <> 30);
+-- Gli studenti che hanno preso tutti trenta
+```
+
+2. Usando l'operatore di differenza (usare questo metodo in algebra relazionale)
+```sql
+SELECT s.*
+FROM Studenti s
+
+EXCEPT
+ 
+SELECT s.*
+FROM Studenti s JOIN Esami e ON s.Matricola=e.Candidato
+WHERE e.Voto <> 30;
+-- Gli studenti che hanno preso tutti trenta
+```
+
+3. Sfruttando le condizioni in una giunzione esterna
+```sql
+SELECT s.*
+FROM Studenti s LEFT JOIN Esami e
+	ON s.Matricola = e.Candidato AND e.Voto <> 30
+WHERE e.Voto IS NULL;
+```

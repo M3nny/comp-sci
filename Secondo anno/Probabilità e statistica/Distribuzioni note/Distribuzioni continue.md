@@ -52,7 +52,7 @@ $$\text{Bin}(n,p)\approx N(np,np(1-p))$$
 
 ---
 ### Distribuzione gamma
-La v.a. $X$ con **distribuzione gamma** ha parametri $\alpha>0$ e $\lambda>0$.
+La v.a. $X$ con **distribuzione gamma** ha parametri $\alpha>0$ e $\lambda>0$, dove $\alpha$ è il numero di eventi che si stanno osservando, e $\lambda$ è il tempo di attesa medio ad ogni evento.
 $$X\sim \text{Ga}(\alpha,\lambda)$$
 - $f(x)=\begin{cases}\frac{\lambda^\alpha}{\Gamma(\alpha)}x^{\alpha-1}e^{-\lambda x}&x\in(0,\infty)\\0&\text{altrimenti}\end{cases}$
 	dove $\Gamma(\alpha)=\int_0^\infty x^{\alpha-1}e^{-x}dx$ è la funzione gamma.
