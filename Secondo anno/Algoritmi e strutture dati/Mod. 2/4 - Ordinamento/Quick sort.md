@@ -98,3 +98,81 @@ randomized_partition(Array A, int p, int r) -> int
     scambia A[i] e A[r]
     return partition(A, p, r) // partition normale
 ```
+
+### Miglioramenti
+1. Usare l'**insertion sort** per vettori di piccole dimensioni, facendo diventare il caso base il seguente:
+```
+if (r - p <= M) // caso base del quicksort
+	insertionsort(A, p, r)
+```
+un altro modo di usare l'insertion sort per vettori piccoli è il seguente:
+```
+if (r - p <= M) // caso base del quicksort
+	return
+
+void sort(array A, int p, int r)
+	quicksort(A, p, r) // restituisce vettore quasi ordinato
+	insertionsort(A, p, r) // sensibile all'ordinamento
+```
+dove $5\leq M\leq 25$.
+
+2. Scegliere il pivot come **mediana** di tre elementi del vettore (e.g. 1, n/2, A.length)
+
+3. Risolvere il problema delle **chiavi duplicate**.
+Con tante chiavi uguali, scegliere una chiave random non aiuta, avremo sempre due array fortemente sbilanciati.
+
+Si va a costruire una terza partizione (creata da `partition`) rappresentante gli elementi uguali ad $x$ e si applica il quicksort solo alle due partizioni minori e maggiori di $x$.
+`partition` in questo caso ritornerà una coppia di indici rappresentanti l'inizio e la fine della partizione in cui gli elementi sono uguali a $x$.
+
+```
+partition(array A, int p, int r) -> <int, int>
+	x = A[r]
+	min = eq = p
+	mag = r
+	while eq < mag
+		if A[eq] < x
+			scambia A[eq] e A[min]
+			min++
+			eq++
+		else
+			if A[eq] == x
+				eq++
+			else
+				mag--
+				scambia A[eq] e A[mag]
+	scambia A[r] e A[mag]
+	return <min, mag>
+```
+
+![[Terza partizione quicksort.svg]]
+In questa implementazione il pivot viene nuovamente scelto come l'ultimo elemento dell'array.
+
+- Da $p$ a $min-1$ sono presenti tutti gli elementi minori del pivot
+- Da $min$ a $eq-1$ sono presenti gli elementi uguali al pivot
+- Da $eq$ a $mag-1$ sono presenti gli elementi di cui non sappiamo a quale partizione appartengono, questa partizione diventerà sempre più piccola, finchè, alla fine dell'algoritmo, sarà scomparsa del tutto
+- Da $mag$ a $r-1$ sono presenti tutti gli elementi maggiori del pivot
+- In posizione $r$ è presente il pivot
+
+**Invariante del ciclo**:
+$A[p ... min-1]$ rappresenta gli elementi minori del pivot, $A[min ... eq-1]$ rappresenta gli elementi uguali al pivot, $A[mag ... r-1]$ rappresenta gli elementi maggiori del pivot.
+
+- **Conclusione**: quando il ciclo termina, $eq == mag$, con l'ultimo scambio, il pivot $x$ viene posizionato correttamente in modo da avere un vettore diviso in tre partizioni ordinate.
+
+l'implementazione del quicksort con questo miglioramento è la seguente:
+```
+quicksort(array A, int p, int r)
+	if p < r
+		<q, t> = partition (a, p, r)
+		quicksort(A, p, q-1)
+		quicksort(A, t+1, r)
+```
+
+Il tempo di esecuzione di `partition` è $\Theta(r-p)$.
+Nel caso tutti gli elementi siano uguali, `partition` verrà chiamata solo una volta ed il `quicksort` verrà chiamato su due sottoarray vuoti, portando così la complessità di questo quicksort (in questo caso) a $\Theta(n)$.
+
+**Vantaggi**:
+- In loco
+- Caso medio $\Theta(n\log n)$
+**Svantaggi**:
+- Caso peggiore $O(n^2)$
+- Non è stabile

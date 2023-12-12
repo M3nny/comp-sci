@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "170c74d4a20b1dd6",
+        "id": "a32c7a673d533904",
         "type": "tabs",
         "children": [
           {
-            "id": "c39230ec8d6f418e",
+            "id": "078d9d3713648b25",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Secondo anno/Probabilità e statistica/Congiunte.md",
+                "file": "Secondo anno/Algoritmi e strutture dati/Mod. 2/4 - Ordinamento/Quick sort.md",
                 "mode": "source",
                 "source": false
               }
@@ -69,8 +69,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 305.5110321044922,
-    "collapsed": true
+    "width": 305.5110321044922
   },
   "right": {
     "id": "282a9548711da6a0",
@@ -86,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Secondo anno/Probabilità e statistica/Congiunte.md",
+                "file": "Secondo anno/Algoritmi e strutture dati/Mod. 2/4 - Ordinamento/Quick sort.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Secondo anno/Probabilità e statistica/Congiunte.md",
+                "file": "Secondo anno/Algoritmi e strutture dati/Mod. 2/4 - Ordinamento/Quick sort.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Secondo anno/Probabilità e statistica/Congiunte.md"
+                "file": "Secondo anno/Algoritmi e strutture dati/Mod. 2/4 - Ordinamento/Quick sort.md"
               }
             }
           },
@@ -156,10 +155,18 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "c39230ec8d6f418e",
+  "active": "078d9d3713648b25",
   "lastOpenFiles": [
-    "Secondo anno/Probabilità e statistica/Distribuzioni note/Distribuzioni continue.md",
+    "Secondo anno/Algoritmi e strutture dati/Mod. 2/4 - Ordinamento/Heap sort.md",
+    "Excalidraw/Drawing 2023-12-12 23.28.45.excalidraw.md",
+    "Secondo anno/Algoritmi e strutture dati/Mod. 2/Images/Max-heap.svg",
+    "Secondo anno/Algoritmi e strutture dati/Mod. 2/4 - Ordinamento/Quick sort.md",
+    "Secondo anno/Algoritmi e strutture dati/Mod. 2/4 - Ordinamento/Merge sort.md",
+    "Excalidraw/Drawing 2023-12-12 22.46.45.excalidraw.md",
+    "Secondo anno/Algoritmi e strutture dati/Mod. 2/Images/Terza partizione quicksort.svg",
+    "Excalidraw",
     "Secondo anno/Probabilità e statistica/Congiunte.md",
+    "Secondo anno/Probabilità e statistica/Distribuzioni note/Distribuzioni continue.md",
     "Secondo anno/Sistemi operativi mod. 1/Dischi.md",
     "Secondo anno/Basi di dati mod. 1/PostgreSQL/DML.md",
     "Secondo anno/Basi di dati mod. 1/PostgreSQL/DDL.md",
@@ -178,23 +185,14 @@
     "Secondo anno/Probabilità e statistica/Images/Esempio indipendenza congiunte.svg",
     "Secondo anno/Probabilità e statistica/Probabilità condizionata.md",
     "Secondo anno/Probabilità e statistica/Probabilità elementare.md",
-    "Secondo anno/Algoritmi e strutture dati/Mod. 2/4 - Ordinamento/Merge sort.md",
     "Excalidraw/Drawing 2023-12-08 17.33.25.excalidraw.md",
-    "Secondo anno/Algoritmi e strutture dati/Mod. 2/4 - Ordinamento/Quick sort.md",
-    "Secondo anno/Algoritmi e strutture dati/Mod. 2/4 - Ordinamento/Insertion sort.md",
     "Secondo anno/Algoritmi e strutture dati/Mod. 2/Images/Quicksort caso medio.svg",
-    "Primo anno/Primo semestre/Matematica discreta/Le sommatorie.md",
     "Secondo anno/Algoritmi e strutture dati/Mod. 2/Images/Insertion sample.svg",
     "Secondo anno/Algoritmi e strutture dati/Mod. 2/Images/Insertion sort animation.gif",
     "Secondo anno/Algoritmi e strutture dati/Mod. 2/Images/Quicksort animation.gif",
     "Secondo anno/Algoritmi e strutture dati/Mod. 2/Images/Merge sort animation.gif",
     "Secondo anno/Algoritmi e strutture dati/Mod. 2/Images/Merge sample.svg",
     "Secondo anno/Algoritmi e strutture dati/Mod. 2/Images/Quicksort sample.svg",
-    "Excalidraw/Drawing 2023-12-08 16.27.21.excalidraw.md",
-    "Excalidraw",
-    "Primo anno/Secondo semestre/Architettura degli elaboratori mod. 2/Cache/Cache diretta.md",
-    "Secondo anno/Probabilità e statistica/Images/Ripartizione congiunte.svg",
-    "Secondo anno/Probabilità e statistica/Images/Area congiunte.svg",
     "Secondo anno/Algoritmi e strutture dati/Mod. 2/Images/Merge sort animation.gif.crdownload",
     "Secondo anno/Algoritmi e strutture dati/Mod. 2/Images/Quicksort animation.gif.crdownload",
     "Secondo anno/Algoritmi e strutture dati/Mod. 2/Images/Insertion sort animation.gif.crdownload",
