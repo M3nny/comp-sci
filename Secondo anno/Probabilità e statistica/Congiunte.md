@@ -101,6 +101,7 @@ $$\boxed{F(x,y)=F_X(x)\cdot F_Y(y)\quad\forall(x,y)}$$
 >|   $0$    | $0.2$ | $0.2$ | $0.05$ | $0.05$ |  $0.5$   |
 >|   $1$    | $0.2$ | $0.1$ | $0.1$ | $0.1$ |  $0.5$   |
 >| $p_Y(y)$ | $0.4$ | $0.3$ | $0.15$ | $0.15$ |   $1$    |
+>
 >Dato che siamo in presenza di una bivariata discreta, perchè $X$ e $Y$ siano indipendenti, deve valere $p(x,y)=p_X(x)p_Y(y)\quad\forall(x,y)$.
 >- $p(0,0)=p_X(0)p_Y(0)\Rightarrow 0.2 = 0.5\cdot 0.4$
 >- $p(0,1)=p_X(0)\cdot p_Y(1)\Rightarrow 0.2\neq 0.5\cdot 0.3$
@@ -192,6 +193,8 @@ il valore generato sarà compreso tra $-1$ e $1$.
 - Vicino a $-1$ si ha una forte relazione lineare con pendenza **negativa**
 - Vicino a $1$ si ha una forte relazione lineare con pendenza **positiva**
 
+![[Correlazione.svg]]
+
 >[!Example]
 >Tornando all'esempio del numero di errori nei due moduli di un programma.
 >
@@ -200,6 +203,7 @@ il valore generato sarà compreso tra $-1$ e $1$.
 >|   $0$    | $0.2$ | $0.2$ | $0.05$ | $0.05$ |  $0.5$   |
 >|   $1$    | $0.2$ | $0.1$ | $0.1$ | $0.1$ |  $0.5$   |
 >| $p_Y(y)$ | $0.4$ | $0.3$ | $0.15$ | $0.15$ |   $1$    |
+>
 >$$\begin{flalign}
 >\text{Cov}[X,Y]&=\mathbb{E}[XY]-\mathbb{E}[X]\mathbb{E}[Y]\\
 >&=1\cdot 1\cdot 0.1+1\cdot 2\cdot 0.1+1\cdot 3\cdot0.1-0.5\cdot 1.05\\
@@ -207,4 +211,39 @@ il valore generato sarà compreso tra $-1$ e $1$.
 >\end{flalign}$$
 >Dato che $Var[X]=0.5^2$ e $Var[Y]=1.0712^2$:
 >$$\text{Cor}[X,Y]=\frac{0.075}{0.5\cdot 1.0712}=0.14$$
+
+### Somma di v.a.
+Sotto la condizione di **indipendenza** è facile trovare la distribuzione di due v.a.
+- $\sum\limits_{i=0}^n\text{Bin}(1,p)=\text{Bin}(n, p)$
+- $\sum\limits_{i=0}^n\text{Po}(\lambda_i)=\text{Po}(\sum\limits_{i=0}^n\lambda_i)$
+- $\sum\limits_{i=0}^n\text{Exp}(\lambda)=\text{Ga}(n,\lambda)$
+- $\sum\limits_{i=0}^n\text{N}(\micro_i,\sigma_i^2)=\text{N}(\sum\limits_{i=0}^n\micro_i,\sum\limits_{i=0}^n\sigma_i^2)$
+
+### Media campionaria
+Avendo $n$ variabili **indipendenti** e tutte con la stessa distribuzione (i.i.d.), dove ognuna ha: $\mathbb{E}[X_i]=\micro$ e $Var[X_i]=\sigma^2$, la media campionaria si calcola come:
+$$\boxed{\overline{X}_n=\frac{\sum_i X_i}{n}}$$
+- $\mathbb{E}[\overline{X}_n]=\micro$
+- $Var[\overline{X}_n]=\frac{\sigma^2}{n}$
+
+### Legge dei grandi numeri
+Date $n$ v.a. i.i.d. con $\mathbb{E}[X_i]=\micro$ e $Var[X_i]=\sigma^2<\infty$, allora:
+$$\boxed{\overline{X}_n\stackrel{p}{\to}\micro\quad\text{quando }n\to\infty}$$
+ovvero la distribuzione di $\overline{X}_n$ si concentra attorno al valore atteso $\micro$.
+
+>La LGM _forte_ dice che **quasi sicuramente** per $n$ grande i valori tendono al valore atteso.
+
+### Teorema del limite centrale
+Date $n$ v.a. i.i.d. con $\mathbb{E}[X_i]=\micro$ e $Var[X_i]=\sigma^2<\infty$, allora:
+$$\boxed{\overline{X}_n\sim\text{N}(\micro,\frac{\sigma^2}{n})}$$
+ovvero la distribuzione di $\overline{X}_n$ si avvicina ad una normale sebbene la distribuzione delle sue v.a. non è una normale.
+
+>[!Example]
+>Il numero di studenti iscritti a un corso di laurea segue una distribuzione di Poisson di media $100$. Se gli iscritti superano i $120$ bisogna sdoppiare i corsi. Qual è la probabilità che ciò accada?
+>- $X\sim\text{Po}(100)$
+>Si può vedere $X$ come la somma di $100$ v.a. $\text{Po}(1)$, la possiamo approssimare con la normale applicando la correzione per continuità:
+>$$\begin{flalign}
+>\mathbb{P}[X\geq 120]&=\mathbb{P}[X\geq 119.5]=\mathbb{P}[\sum_{i=1}^{100} X_i\geq 119.5]\\
+>&=\mathbb{P}[Z\geq\frac{119.5-100}{\sqrt{100}}]\\
+>&=1-\Phi(1.95)=0.0256
+>\end{flalign}$$
 
