@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "31e02786d0378f51",
+        "id": "bf7f828db0708095",
         "type": "tabs",
         "children": [
           {
-            "id": "24f5043f0ae022a4",
+            "id": "2956c996a92d38e4",
             "type": "leaf",
             "state": {
               "type": "empty",
@@ -81,7 +81,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Secondo anno/Probabilità e statistica/Congiunte.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -98,7 +97,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Secondo anno/Probabilità e statistica/Congiunte.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -120,9 +118,7 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "Secondo anno/Probabilità e statistica/Congiunte.md"
-              }
+              "state": {}
             }
           },
           {
@@ -153,8 +149,24 @@
   },
   "active": "a1163d9af64d6878",
   "lastOpenFiles": [
-    "Secondo anno/Probabilità e statistica/Costanti caratteristiche.md",
+    "Primo anno/Primo semestre/Algebra lineare/Matrici.md",
+    "Secondo anno/Probabilità e statistica/Catene di Markov.md",
+    "Secondo anno/Probabilità e statistica/Images/Random walk.svg",
+    "Secondo anno/Probabilità e statistica/Images/Non confermato 653701.crdownload",
+    "Primo anno/Primo semestre/Algebra lineare/Riassunto.md",
+    "Secondo anno/Probabilità e statistica/Images/Catena di Markov.svg",
+    "Primo anno/Primo semestre/Algebra lineare/Sistemi lineari.md",
+    "Primo anno/Primo semestre/Algebra lineare/Numeri Complessi.md",
+    "Excalidraw/Drawing 2023-12-14 21.50.03.excalidraw.md",
+    "Secondo anno/Algoritmi e strutture dati/Mod. 2/4 - Ordinamento/Heap sort.md",
+    "Excalidraw/Drawing 2023-12-14 20.10.15.excalidraw.md",
+    "Secondo anno/Algoritmi e strutture dati/Mod. 2/Images/build_max_heap.svg",
+    "Excalidraw",
+    "Secondo anno/Algoritmi e strutture dati/Mod. 2/2 - Dizionari.md",
+    "Secondo anno/Basi di dati mod. 1/Linguaggi relazionali.md",
+    "Secondo anno/Basi di dati mod. 1/PostgreSQL/DML.md",
     "Secondo anno/Probabilità e statistica/Congiunte.md",
+    "Secondo anno/Probabilità e statistica/Costanti caratteristiche.md",
     "Secondo anno/Probabilità e statistica/Probabilità condizionata.md",
     "Secondo anno/Probabilità e statistica/Images/9_Bivariate_Sol.pdf",
     "Secondo anno/Probabilità e statistica/Images/Non confermato 514881.crdownload",
@@ -171,34 +183,17 @@
     "Primo anno/Primo semestre/Matematica discreta/La cardinalità.md",
     "Primo anno/Primo semestre/Matematica discreta/Gli insiemi.md",
     "Secondo anno/Algoritmi e strutture dati/Mod. 1/4 - Teorema master.md",
-    "Secondo anno/Algoritmi e strutture dati/Mod. 1/3 - Complessità di un algoritmo.md",
-    "Secondo anno/Algoritmi e strutture dati/Mod. 1/2 - Classi asintotiche.md",
-    "Secondo anno/Algoritmi e strutture dati/Mod. 2/1 - Strutture dati.md",
-    "Secondo anno/Algoritmi e strutture dati/Mod. 2/2 - Dizionari.md",
-    "Secondo anno/Algoritmi e strutture dati/Mod. 2/4 - Ordinamento/Quick sort.md",
-    "Secondo anno/Algoritmi e strutture dati/Mod. 2/4 - Ordinamento/Heap sort.md",
-    "Excalidraw/Drawing 2023-12-12 23.28.45.excalidraw.md",
     "Secondo anno/Algoritmi e strutture dati/Mod. 2/Images/Max-heap.svg",
-    "Secondo anno/Algoritmi e strutture dati/Mod. 2/4 - Ordinamento/Merge sort.md",
-    "Excalidraw/Drawing 2023-12-12 22.46.45.excalidraw.md",
     "Secondo anno/Algoritmi e strutture dati/Mod. 2/Images/Terza partizione quicksort.svg",
-    "Excalidraw",
-    "Secondo anno/Probabilità e statistica/Distribuzioni note/Distribuzioni continue.md",
-    "Secondo anno/Sistemi operativi mod. 1/Dischi.md",
-    "Secondo anno/Basi di dati mod. 1/PostgreSQL/DML.md",
     "Secondo anno/Probabilità e statistica/Images/Esempio indipendenza congiunte.svg",
     "Secondo anno/Algoritmi e strutture dati/Mod. 2/Images/Quicksort caso medio.svg",
     "Secondo anno/Algoritmi e strutture dati/Mod. 2/Images/Insertion sample.svg",
     "Secondo anno/Algoritmi e strutture dati/Mod. 2/Images/Insertion sort animation.gif",
-    "Secondo anno/Algoritmi e strutture dati/Mod. 2/Images/Quicksort animation.gif",
-    "Secondo anno/Algoritmi e strutture dati/Mod. 2/Images/Merge sort animation.gif",
-    "Secondo anno/Algoritmi e strutture dati/Mod. 2/Images/Merge sample.svg",
     "Secondo anno/Algoritmi e strutture dati/Mod. 2/Images/Merge sort animation.gif.crdownload",
     "Secondo anno/Algoritmi e strutture dati/Mod. 2/Images/Quicksort animation.gif.crdownload",
     "Secondo anno/Algoritmi e strutture dati/Mod. 2/Images/Insertion sort animation.gif.crdownload",
     "Secondo anno/Algoritmi e strutture dati/Mod. 2/4 - Ordinamento",
     "Calcolo 1/Images",
-    "Calcolo 1",
     "Untitled.canvas"
   ]
 }
