@@ -11,8 +11,12 @@
             "id": "2956c996a92d38e4",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {}
+              "type": "markdown",
+              "state": {
+                "file": "Secondo anno/Programmazione ad oggetti mod. 1/Annotations.md",
+                "mode": "source",
+                "source": false
+              }
             }
           }
         ]
@@ -65,7 +69,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 305.5110321044922
+    "width": 305.5110321044922,
+    "collapsed": true
   },
   "right": {
     "id": "282a9548711da6a0",
@@ -81,6 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "Secondo anno/Programmazione ad oggetti mod. 1/Annotations.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -97,6 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "Secondo anno/Programmazione ad oggetti mod. 1/Annotations.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -118,7 +125,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "Secondo anno/Programmazione ad oggetti mod. 1/Annotations.md"
+              }
             }
           },
           {
@@ -147,8 +156,9 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "a1163d9af64d6878",
+  "active": "2956c996a92d38e4",
   "lastOpenFiles": [
+    "Secondo anno/Programmazione ad oggetti mod. 1/Annotations.md",
     "Primo anno/Primo semestre/Algebra lineare/Matrici.md",
     "Secondo anno/Probabilità e statistica/Catene di Markov.md",
     "Secondo anno/Probabilità e statistica/Images/Random walk.svg",
