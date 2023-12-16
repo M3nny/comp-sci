@@ -4,19 +4,15 @@
     "type": "split",
     "children": [
       {
-        "id": "bf7f828db0708095",
+        "id": "cb3b0b94251238c8",
         "type": "tabs",
         "children": [
           {
-            "id": "2956c996a92d38e4",
+            "id": "ba0e5c3180d31bae",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Secondo anno/Programmazione ad oggetti mod. 1/Annotations.md",
-                "mode": "source",
-                "source": false
-              }
+              "type": "empty",
+              "state": {}
             }
           }
         ]
@@ -86,7 +82,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Secondo anno/Programmazione ad oggetti mod. 1/Annotations.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +98,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Secondo anno/Programmazione ad oggetti mod. 1/Annotations.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,9 +119,7 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "Secondo anno/Programmazione ad oggetti mod. 1/Annotations.md"
-              }
+              "state": {}
             }
           },
           {
@@ -156,8 +148,15 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "2956c996a92d38e4",
+  "active": "ba0e5c3180d31bae",
   "lastOpenFiles": [
+    "Secondo anno/Sistemi operativi mod. 1/Casi di studio/Linux.md",
+    "Secondo anno/Sistemi operativi mod. 1/File systems.md",
+    "Secondo anno/Sistemi operativi mod. 1/Dischi.md",
+    "Secondo anno/Sistemi operativi mod. 1/Images/Schema hard disk.png.crdownload",
+    "Secondo anno/Sistemi operativi mod. 1/Memoria/Memoria virtuale.md",
+    "Secondo anno/Sistemi operativi mod. 1/Images/Indirizzo virtuale linux.png",
+    "Secondo anno/Sistemi operativi mod. 1/Casi di studio",
     "Secondo anno/Programmazione ad oggetti mod. 1/Annotations.md",
     "Primo anno/Primo semestre/Algebra lineare/Matrici.md",
     "Secondo anno/Probabilità e statistica/Catene di Markov.md",
@@ -188,22 +187,14 @@
     "Primo anno/Secondo semestre/Calcolo 2/Riassunto.md",
     "Primo anno/Secondo semestre/Architettura degli elaboratori mod. 2/Riassunto.md",
     "Primo anno/Primo semestre/Matematica discreta/Le relazioni.md",
-    "Primo anno/Primo semestre/Matematica discreta/Numeri primi.md",
-    "Primo anno/Primo semestre/Matematica discreta/Regole di divisibilità.md",
-    "Primo anno/Primo semestre/Matematica discreta/La cardinalità.md",
-    "Primo anno/Primo semestre/Matematica discreta/Gli insiemi.md",
-    "Secondo anno/Algoritmi e strutture dati/Mod. 1/4 - Teorema master.md",
     "Secondo anno/Algoritmi e strutture dati/Mod. 2/Images/Max-heap.svg",
     "Secondo anno/Algoritmi e strutture dati/Mod. 2/Images/Terza partizione quicksort.svg",
     "Secondo anno/Probabilità e statistica/Images/Esempio indipendenza congiunte.svg",
     "Secondo anno/Algoritmi e strutture dati/Mod. 2/Images/Quicksort caso medio.svg",
     "Secondo anno/Algoritmi e strutture dati/Mod. 2/Images/Insertion sample.svg",
-    "Secondo anno/Algoritmi e strutture dati/Mod. 2/Images/Insertion sort animation.gif",
     "Secondo anno/Algoritmi e strutture dati/Mod. 2/Images/Merge sort animation.gif.crdownload",
     "Secondo anno/Algoritmi e strutture dati/Mod. 2/Images/Quicksort animation.gif.crdownload",
     "Secondo anno/Algoritmi e strutture dati/Mod. 2/Images/Insertion sort animation.gif.crdownload",
-    "Secondo anno/Algoritmi e strutture dati/Mod. 2/4 - Ordinamento",
-    "Calcolo 1/Images",
     "Untitled.canvas"
   ]
 }
