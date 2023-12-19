@@ -94,3 +94,7 @@ Il for viene eseguito fino a $2$ in quanto l'ultimo elemento rimanente è obblig
 
 **Invariante del ciclo**: il sottoarray $A[1 ... i]$ è un max-heap che contiene gli $i$ elementi più piccoli di $A[1 ... n]$ e il sottoarray $A[i+1 ... n]$ contiene gli $n-1$ elementi più grandi di $A[1 ... n]$ <u>ordinati</u>.
 - **Conclusione**: quando il ciclo termina $i=1$, il sottoarray $A[1 ... 1]$ è un max-heap che contiene l'elemento più piccolo di $A[1 ... n]$, mentre $A[2 ... n]$ contiene gli $n-1$ elementi più grandi di $A[1 ... n]$ <u>ordinati</u>, nè risulta quindi che l'intero array è ordinato.
+
+**Complessità**: $T(n)=O(n)+n\cdot O(\log n)=O(n \log n)$
+
+**Teorema**: l'algoritmo ordina in loco $n$ elementi eseguendo nel caso peggiore $O(n\log n)$ confronti.

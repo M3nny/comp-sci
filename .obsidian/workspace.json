@@ -4,19 +4,15 @@
     "type": "split",
     "children": [
       {
-        "id": "bcf32f08b5665f5b",
+        "id": "3ce988ac2a4eb625",
         "type": "tabs",
         "children": [
           {
-            "id": "816ed184eda8e7f7",
+            "id": "9446f7fcd71caa5c",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Secondo anno/Programmazione ad oggetti mod. 1/Reflection.md",
-                "mode": "source",
-                "source": false
-              }
+              "type": "empty",
+              "state": {}
             }
           }
         ]
@@ -69,8 +65,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 305.5110321044922,
-    "collapsed": true
+    "width": 305.5110321044922
   },
   "right": {
     "id": "282a9548711da6a0",
@@ -86,7 +81,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Secondo anno/Programmazione ad oggetti mod. 1/Reflection.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +97,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Secondo anno/Programmazione ad oggetti mod. 1/Reflection.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,9 +118,7 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "Secondo anno/Programmazione ad oggetti mod. 1/Reflection.md"
-              }
+              "state": {}
             }
           },
           {
@@ -156,8 +147,11 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "816ed184eda8e7f7",
+  "active": "9446f7fcd71caa5c",
   "lastOpenFiles": [
+    "Secondo anno/Algoritmi e strutture dati/Mod. 2/5 - Code di priorità.md",
+    "Secondo anno/Algoritmi e strutture dati/Mod. 2/4 - Ordinamento/Heap sort.md",
+    "Secondo anno/Algoritmi e strutture dati/Mod. 2/1 - Strutture dati.md",
     "Secondo anno/Programmazione ad oggetti mod. 1/Reflection.md",
     "Secondo anno/Sistemi operativi mod. 1/Memoria/Memoria virtuale.md",
     "Secondo anno/Sistemi operativi mod. 1/Casi di studio/Linux.md",
@@ -183,7 +177,6 @@
     "Primo anno/Primo semestre/Algebra lineare/Sistemi lineari.md",
     "Primo anno/Primo semestre/Algebra lineare/Numeri Complessi.md",
     "Excalidraw/Drawing 2023-12-14 21.50.03.excalidraw.md",
-    "Secondo anno/Algoritmi e strutture dati/Mod. 2/4 - Ordinamento/Heap sort.md",
     "Excalidraw/Drawing 2023-12-14 20.10.15.excalidraw.md",
     "Secondo anno/Algoritmi e strutture dati/Mod. 2/Images/build_max_heap.svg",
     "Excalidraw",
@@ -196,8 +189,6 @@
     "Secondo anno/Probabilità e statistica/Images/Non confermato 514881.crdownload",
     "Secondo anno/Probabilità e statistica/Images/Correlazione.svg",
     "Secondo anno/Probabilità e statistica/Images/Non confermato 970451.crdownload",
-    "Secondo anno/Programmazione ad oggetti mod. 1/Ereditarietà.md",
-    "Secondo anno/Algoritmi e strutture dati/Mod. 1/1 - Fibonacci.md",
     "Secondo anno/Algoritmi e strutture dati/Mod. 2/Images/Max-heap.svg",
     "Secondo anno/Algoritmi e strutture dati/Mod. 2/Images/Terza partizione quicksort.svg",
     "Secondo anno/Probabilità e statistica/Images/Esempio indipendenza congiunte.svg",
