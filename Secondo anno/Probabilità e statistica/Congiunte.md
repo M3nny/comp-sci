@@ -224,7 +224,21 @@ Avendo $n$ variabili **indipendenti** e tutte con la stessa distribuzione (i.i.d
 $$\boxed{\overline{X}_n=\frac{\sum_i X_i}{n}}$$
 - $\mathbb{E}[\overline{X}_n]=\micro$
 - $Var[\overline{X}_n]=\frac{\sigma^2}{n}$
-
+### Disuguaglianza di Chebyshev
+Per qualsiasi v.a., conoscendo $\mathbb{E}[X]$ e $Var[X] < \infty$, si può determinare un **limite superiore** alla probabilità che la v.a. assuma valori che si discostano di almeno $\epsilon$ da $\mathbb{E}[X]$, ovvero:
+$$\mathbb{P}[|X-\mathbb{E}[X]|>\epsilon]\leq\frac{Var[X]}{\epsilon^2}$$
+il **limite inferiore** è il seguente:
+$$\mathbb{P}[|X-\mathbb{E}[X]|>\epsilon]\geq1-\frac{Var[X]}{\epsilon^2}$$
+>[!Example]
+>Con una popolazione di media $175$ e varianza $42$, applicando la disuguaglianza di Chebyshev.
+>
+>Si determini il limite inferiore della probabilità che la media campionaria sia compresa tra $170$ e $180$ assumendo una numerosità campionaria pari a $50$.
+>- $\overline{X}_{50}\sim N(175, \frac{42}{50})$
+>- Discostamento dalla media: $\epsilon=180-175=5$
+>$$\begin{flalign}
+>\mathbb{P}[|\overline{X}_{50}-175|>5]&\geq1-\frac{\frac{42}{50}}{5^2}\\
+>&\geq 0.9664
+>\end{flalign}$$
 ### Legge dei grandi numeri
 Date $n$ v.a. i.i.d. con $\mathbb{E}[X_i]=\micro$ e $Var[X_i]=\sigma^2<\infty$, allora:
 $$\boxed{\overline{X}_n\stackrel{p}{\to}\micro\quad\text{quando }n\to\infty}$$

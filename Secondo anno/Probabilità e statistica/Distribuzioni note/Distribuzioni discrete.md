@@ -62,7 +62,7 @@ In particolare si usa quando si vuole contare qualcosa all'interno di un interva
 
 Si indica con $\lambda$ il conteggio, e con $k$ l'intervallo in cui succede il conteggio.
 $$X\sim\text{Po}(\lambda)$$
-- $\mathbb{P}[X=k]=\frac{\lambda^k}{k!}e^{-k}$ con $k\in\mathbb{N}$
+- $\mathbb{P}[X=k]=\frac{\lambda^k}{k!}e^{-\lambda}$ con $k\in\mathbb{N}$
 - $\mathbb{E}[X]=\lambda$
 - $Var[X]=\lambda$
 

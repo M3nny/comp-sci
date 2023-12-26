@@ -11,9 +11,9 @@ Sia $A[p...r]$ l'array da ordinare, e inizialmente $p=1$ e $r=A.length$:
 mergesort(array A, int p, int r)
 	if p < r
 		q = (p+r) / 2
-	mergesort(A, p, q)
-	mergesort(A, q+1, r)
-	merge(A, p, q, r)
+		mergesort(A, p, q)
+		mergesort(A, q+1, r)
+		merge(A, p, q, r)
 
 merge(array A, int p, int q, int r)
 	n1 = q - p + 1
@@ -31,10 +31,10 @@ merge(array A, int p, int q, int r)
 	for k = p to r
 		if L[i] <= R[j]
 			A[k] = L[i]
-			i = i +1
+			i++
 		else
 			A[k] = R[j]
-			j = j + 1
+			j++
 ```
 
 Il `merge` fonde i due array in input in un unico array ordinato, per eseguirlo però:

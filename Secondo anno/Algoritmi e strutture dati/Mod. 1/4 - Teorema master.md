@@ -72,7 +72,7 @@ Se $f(n)$ occupa più tempo della parte ricorsiva, allora il tempo impiegato dal
 >- $d=\frac{1}{2}$
 >- $f(n)=n$
 >- $g(n)=\sqrt{n}$
->**Caso 3**: $f(n)$ occupa più tempo di $g(n)$, devo verificare se esiste un $\epsilon>0$ per cui $f(n)=\Omega(n^{\frac{1}{2}}+\epsilon)$, questa condizione è verificata ponendo $\epsilon=\frac{1}{2}$ in quanto ottengo $f(n)=\Omega(n)$.
+>**Caso 3**: $f(n)$ occupa più tempo di $g(n)$, devo verificare se esiste un $\epsilon>0$ per cui $f(n)=\Omega(n^{\frac{1}{2}+\epsilon})$, questa condizione è verificata ponendo $\epsilon=\frac{1}{2}$ in quanto ottengo $f(n)=\Omega(n)$.
 >Devo anche verificare la condizione ausiliaria, ovvero vedere se esiste $0<c<1$ per $n$ suff. grande per cui $a\cdot f(\frac{n}{b})\leq c\cdot f(n)$:
 >$$3\cdot\frac{n}{9}\leq c\cdot n\quad\implies\quad\frac{1}{3}\leq c$$
 >Scelgo $c=\frac{1}{3}$ verificando così la condizione ausiliaria.
