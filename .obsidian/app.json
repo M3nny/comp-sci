@@ -9,11 +9,11 @@
   "showUnsupportedFiles": false,
   "showLineNumber": false,
   "pdfExportSettings": {
-    "includeName": true,
-    "pageSize": "Letter",
+    "includeName": false,
+    "pageSize": "A4",
     "landscape": false,
     "margin": "0",
-    "downscalePercent": 100
+    "downscalePercent": 30
   },
   "readableLineLength": true
 }

@@ -228,7 +228,7 @@ $$\boxed{\overline{X}_n=\frac{\sum_i X_i}{n}}$$
 Per qualsiasi v.a., conoscendo $\mathbb{E}[X]$ e $Var[X] < \infty$, si può determinare un **limite superiore** alla probabilità che la v.a. assuma valori che si discostano di almeno $\epsilon$ da $\mathbb{E}[X]$, ovvero:
 $$\mathbb{P}[|X-\mathbb{E}[X]|>\epsilon]\leq\frac{Var[X]}{\epsilon^2}$$
 il **limite inferiore** è il seguente:
-$$\mathbb{P}[|X-\mathbb{E}[X]|>\epsilon]\geq1-\frac{Var[X]}{\epsilon^2}$$
+$$\mathbb{P}[|X-\mathbb{E}[X]|<\epsilon]\geq1-\frac{Var[X]}{\epsilon^2}$$
 >[!Example]
 >Con una popolazione di media $175$ e varianza $42$, applicando la disuguaglianza di Chebyshev.
 >
@@ -236,7 +236,7 @@ $$\mathbb{P}[|X-\mathbb{E}[X]|>\epsilon]\geq1-\frac{Var[X]}{\epsilon^2}$$
 >- $\overline{X}_{50}\sim N(175, \frac{42}{50})$
 >- Discostamento dalla media: $\epsilon=180-175=5$
 >$$\begin{flalign}
->\mathbb{P}[|\overline{X}_{50}-175|>5]&\geq1-\frac{\frac{42}{50}}{5^2}\\
+>\mathbb{P}[|\overline{X}_{50}-175|<5]&\geq1-\frac{\frac{42}{50}}{5^2}\\
 >&\geq 0.9664
 >\end{flalign}$$
 ### Legge dei grandi numeri

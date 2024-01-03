@@ -26,9 +26,9 @@ Viene usato `@interface` per definire una nuova annotazione, solitamente vengono
 ```
 se un valore di default non è specificato, deve essere assegnato quando si usa l'annotazione in questione.
 
-è possibile <u>annotare le annotazioni</u> per limitarne l'utilizzo **solo su componenti specifici** grazie a `@target`.
+è possibile <u>annotare le annotazioni</u> per limitarne l'utilizzo **solo su componenti specifici** grazie a `@Target`.
 ```java
-@target({
+@Target({
 	ElementType.FIELD,
 	ElementType.METHOD,
 	ElementType.PARAMETER
@@ -39,9 +39,9 @@ se un valore di default non è specificato, deve essere assegnato quando si usa 
 }
 ```
 
-grazie a `@retention` è possibile specificare la `RuntimePolicy`, ovvero come verrà considerata l'annotazione dal compilatore:
+grazie a `@Retention` è possibile specificare la `RuntimePolicy`, ovvero come verrà considerata l'annotazione dal compilatore:
 ```
-@retention(
+@Retention(
 	RetentionPolicy.<RuntimePolicy>
 )
 @interface ...

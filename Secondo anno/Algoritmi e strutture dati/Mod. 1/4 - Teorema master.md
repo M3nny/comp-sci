@@ -78,6 +78,29 @@ Se $f(n)$ occupa più tempo della parte ricorsiva, allora il tempo impiegato dal
 >Scelgo $c=\frac{1}{3}$ verificando così la condizione ausiliaria.
 >La complessità dell'algoritmo è quindi:
 >$$T(n)=\Theta(n)$$
+>---
+>$$T(n)=7T(\frac{n}{3})+n^2$$
+>- $d = \log_3 7$
+>Si ottiene: $n^2 > n^{\log_3 7}$.
+>**Caso3**:
+>$\exists\epsilon >0: f(n) = n^2 = \Omega(n^{\log_3 7+\epsilon})$, questo è vero per $\epsilon = 2-\log_3 7$.
+>$\exists c\in(0,1)$ per $n$ suff. grande: $7\cdot(\frac{n}{3})^2\leq c\cdot n^2$
+>$$7\cdot\frac{n^2}{9}\leq c\cdot n^2\quad\implies\quad\frac{7}{9}\leq c$$
+>scegliendo $c=\frac{7}{9}$, $n$ è sempre valido.
+>---
+>$$T(n) = 4T(\frac{n}{2})+2^n$$
+>- $d=\log_2 4 = 2$
+>Si ottiene $2^n > n^2$.
+>**Caso 3**:
+>$\exists\epsilon>0: f(n)=2^n=\Omega(n^{2+\epsilon})$, questo è vero per $\epsilon = 1$.
+>$\exists c\in(0,1)$ per $n$ suff. grande: $4\cdot 2^{\frac{n}{2}}\leq c\cdot 2^n$
+>$$2^{\frac{n}{2}+2}\leq c\cdot 2^n\quad\implies\quad\frac{2^{\frac{n}{2}+2}}{2^n}\leq c$$
+>bisogna trovare il primo $n\in\mathbb{N}$ per cui  $\frac{2^{\frac{n}{2}+2}}{2^n}< 1$.
+>In questo caso è $n=5$:
+>$$\frac{2^{\frac{5}{2}+2}}{2^5}\leq c\quad\implies\quad\frac{\sqrt{2}}{2}\leq c$$
+>L'intervallo di $c$ che si possono scegliere è il seguente:
+>$$\frac{\sqrt{2}}{2}\leq c < 1$$
+>Quindi scegliendo $c=\frac{\sqrt{2}}{2}$ vale per ogni $n\geq 5$.
 
 ---
 ## Dimostrazione

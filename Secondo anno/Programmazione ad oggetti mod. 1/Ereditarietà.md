@@ -85,6 +85,16 @@ I **costruttori** ed i metodi `abstract`, <u>non possono essere preceduti</u> da
 | Static   |  ❌   |  ✅   |   ✅   |        |       |          |
 | Final    |  ✅   |  ✅   |   ✅   |   ✅   |       |          |
 | Abstract |  ✅   |  ❌   |   ✅   |   ❌   |  ❌   |          |
+- **Static**:
+	- **Field**: il campo è condiviso tra tutte le istanze della classe
+	- **Method**: permette al metodo di essere chiamato anche senza nessun oggetto istanziato
+- **Final**:
+	- **Class**: la classe non può essere estesa
+	- **Field**: il campo dopo essere stato inizializzato è read-only
+	- **Method**: non si può eseguire l'override del metodo
+- **Abstract**: 
+	- **Class**: una classe che non può essere istanziata, ma solo estesa
+	- **Method**: un metodo con solo la firma, può essere implementato dalle classi figlio 
 
 ---
 ## Interfacce

@@ -98,3 +98,10 @@ Il for viene eseguito fino a $2$ in quanto l'ultimo elemento rimanente è obblig
 **Complessità**: $T(n)=O(n)+n\cdot O(\log n)=O(n \log n)$
 
 **Teorema**: l'algoritmo ordina in loco $n$ elementi eseguendo nel caso peggiore $O(n\log n)$ confronti.
+
+**Vantaggi**:
+- In loco
+- $O(n\log n)$
+**Svantaggi**:
+- Non è stabile
+- Non è sensibile all'ordinamento
