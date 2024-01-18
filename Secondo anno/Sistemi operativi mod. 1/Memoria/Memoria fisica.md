@@ -17,7 +17,7 @@ L'**allocazione** può essere:
 	Con l'**overlay** è inoltre possibile imitare la _memoria virtuale_ dividendo il programma in sezioni e mettendo in memoria principale solo le sezioni attive, il che porta anche delle complicazioni come la modifica dei programmi oppure l'organizzazione degli overlay.
 	
 - **Non contigua**:
-	Il programma è diviso in **segmenti** allocati diverse parti della memoria, essendo più facile trovare buchi, ci possono stare più processi, il che compensa l'overhead di questa tecnica.
+	Il programma è diviso in **segmenti** allocati in diverse parti della memoria, essendo più facile trovare buchi, ci possono stare più processi, il che compensa l'overhead di questa tecnica.
 
 Usiamo dei **registri limite** (base/limite o basso/alto) per delimitare l'area di memoria accessibile da un programma, possono essere anche riallocati dinamicamente (impostati solo da istruzioni privilegiate).
 

@@ -9,13 +9,15 @@ Le <u>informazioni sono organizzate a livelli</u>, il livello più alto, compren
 - **File**: gruppo di record _collegati_
 
 Il livello più alto rappresenta un **file system** (o un _database_), dove i suoi file sono memorizzati in **volumi**, fisici (singolo dispositivo di memoria) o logici (può comprendere più dispositivi di memoria).
+- $1$ record fisico : $1$ record logico = **non bloccante**
+- $1$ record fisico : $n$ record logici = **bloccante**
 
 ### Caratteristiche di un file
 Le **operazioni** che si possono fare su un file sono: open, close, create, delete, copy, rename, read, write, append, seek, get/set attributes.
-La **struttura** di un file può essere: una sequenza di bye, una sequenza di record, un albero.
+La **struttura** di un file può essere: una sequenza di byte, una sequenza di record, un albero.
 Un file ha un **tipo** che può essere: file, directory, speciale (a caratteri o a blocchi).
 Possono essere eseguiti principalmente due tipi di **accesso**:
-- _Sequenziale_: legge i bytes dall'inizio, può tornare anche indietro, ma non può saltare
+- _Sequenziale_: legge i byte dall'inizio, può tornare anche indietro, ma non può saltare
 - _Casuale_: legge i byte in qualsiasi ordine
 
 Un file può avere vari **attributi** che contengono: creatore, flags, data creazione, data modifica, dimensione...
@@ -89,7 +91,7 @@ creando così una lista collegata per ogni file, dove: si <u>elimina la framment
 
 Quando viene assegnato il blocco, il sistema alloca **blocchi di settori contigui** (_extent_).
 La **ricerca** di un record deve essere **effettuata dall'inizio** e può essere lenta se i blocchi contenenti i record sono dispersi.
-
+![[Allocazione non contigua con liste collegate.svg]]
 La dimensione del blocco può essere:
 - **Grande**: frammentazione interna, meno operazioni di I/O
 - **Piccola**: più dispersione dei dati, più operazioni di I/O
@@ -97,13 +99,13 @@ La dimensione del blocco può essere:
 Ogni riga della directory indica il **primo blocco** di un file.
 Vengono utilizzate **tabelle** (memorizzate in cache) che memorizzano i **puntatori ai blocchi** dei file.
 Il numero di blocco attuale viene usato come indice nella tabella per trovare la posizione del blocco successivo (l'ultimo è null).
-
+![[Allocazione non contigua tabellare.svg]]
 La **dimensione della tabella** è data da: $\text{n° blocchi }\times\text{ spazio del blocco}$.
 >Una implementazione popolare è il file system FAT  in windows.
 ### Allocazione non contigua indicizzata
-Le righe della directory puntano ai **blocchi indice** del file.  
-Ogni file ha almeno un **blocco indice**(i-node in unix), dove ognuno di essi contiene un **elenco di puntatori** ai **blocchi di dati** dei file, oppure ad altri _blocchi indice_ (chaining).
-
+Le righe della directory puntano ai **blocchi indice** del file.
+Ogni file ha almeno un **blocco indice** (i-node in unix), dove ognuno di essi contiene un **elenco di puntatori** ai **blocchi di dati** dei file, oppure ad altri _blocchi indice_ (chaining).
+![[Allocazione dei file non contigua indicizzata.svg]]
 Solitamente i blocchi di indice risiedono vicino ai blocchi di dati per un rapido accesso, si sfrutta anche la cache.
 >Una implementazione popolare è il file system NTFS in windows.
 
@@ -124,6 +126,7 @@ Per gestire lo **spazio libero**, alcuni sistemi usano una **linked list** conte
 Per evitare l'allocazione sparsa si può forzare il FS ad allocare in blocchi contigui.
 
 Alternativamente si può usare una **bitmap**, la quale contiene un bit per ogni blocco in memoria (0-libero, 1-in uso), questo permette di determinare velocemente se blocchi contigui sono disponibili, ma per trovare un blocco libero si deve cercare sull'intera bitmap.
+La tabella occupa meno spazio della linked list, in quanto ogni blocco è rappresentato da $1$ bit e non da un puntatore.
 
 ### Backup e recovery
 Con **backup** si intende conservare **copie ridondanti**, mentre con **recovery** intendiamo il ripristino dei dati in caso di errore.
@@ -154,7 +157,7 @@ Vediamo ora alcuni metodi per il controllo degli accessi:
 	Si usa una **matrice degli accessi**, dove $mat_{i,j}$ indica se all'utente $i$  è consentito l'accesso al file $j$, $1$ se è consentito $0$ altrimenti. 
 	Può essere inefficiente in sistemi con tanti file e tanti utenti.
 - **Access Control List (ACL)**:
-	I privilegio possono essere memorizzati in due modi:
+	I privilegi possono essere memorizzati in due modi:
 		1. Ogni utente ha memorizzato i file a cui può accedere
 		2. Ogni file ha memorizzato gli utenti che gli possono accedere
 	Occupa meno spazio della matrice di controllo degli accessi, ma la ricerca potrebbe non essere efficiente.

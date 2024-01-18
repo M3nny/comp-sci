@@ -47,8 +47,12 @@ Quando un hdd viene **formattato**, viene definito il blocco di avvio, directory
 Vengono usati i **RAID** (visti dal sistema come **singola unità disco**) per aumentare l'**affidabilità** attraverso la gestione di molte copie di dati su più dischi in modo parallelo.
 
 Un livello di RAID può avere **striping** per aumentare il throughput usando diversi dischi in parallelo, **mirroring** se ci sono dischi che contengono dati copiati e blocchi di parità per verificare che i dati non siano corrotti.
-
-
+- **Livello 0**: solo _striping_
+- **Livello 1**: solo _mirroring_, ovvero metà dei dischi contiene la copia dell'altra metà
+- **Livello 4**: utilizza almeno 3 dischi (1 di parità), se un disco si danneggia, i dati possono essere recuperati tramite xor
+- **Livello 5**: _striping_ con blocchi di parità sparsi su tutti i dischi
+- **Livello 6**: come il _livello 5_ ma con il doppio dei blocchi di parità
+- **Livello 10**: _striping_ di più gruppi di dischi ognuno formato da dischi in _mirroring_
 ## Scheduling del disco
 Gli algoritmi di scheduling del disco cercano di minimizzare il **tempo di risposta** medio e aumentare il **throughput**
 
@@ -99,12 +103,12 @@ Gli algoritmi più moderni ottimizzano anche il **tempo di rotazione**.
 	Facile da implementare, raggiunge prestazioni quasi ottimali per la latenza rotazionale.
 
 - **Shortest Positioning Time First (SPTF)**:
-	serve le richieste con il minimo tempo di posizionamento, il quale è dato dalla somma di tempo di ricerca e latenza di rotazione.
+	serve le richieste con il minimo _tempo di posizionamento_: $\text{seek + latenza di rotazione}$.
 	
 	Throughput elevato ma può causare attesa infinita, inoltre richiede la conoscenza delle prestazioni del disco.
 
 - **Shortest Access Time First (SATF)**:
-	variante di SPTF che tiene conto anche del tempo di trasmissione
+	variante di SPTF che tiene conto anche del tempo di trasmissione, serve le richieste con il minimo _tempo di accesso_: $\text{seek + latenza di rotazione + tempo di trasmissione}$.  
 	
 	Throughput elevato ma può causare attesa infinita, inoltre richiede la conoscenza delle prestazioni del disco.
 

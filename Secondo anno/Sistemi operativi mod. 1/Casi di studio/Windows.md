@@ -40,7 +40,7 @@ Per descrivere i **processi** vengono usati dei blocchi:
 - **KPROCESS**: usato al livello _kernel_, fornisce informazioni di scheduling e di sincronizzazione tra processi
 - **EPROCESS**: usato dal livello _executive_, descrive un processo, contiene un _KPROCESS_ e punta ad un _PEB_
 
-I blocchi usati per descrivere i **thread** si differenziano di poco, viene usato un **TEB**, ed esso è puntato da **KTHREAD**, inoltre utilizzano una memoria locale (**TLS**) per memorizzare dati locali (e.g. DLL), volendo può avere molti indici TLS.
+I blocchi usati per descrivere i **thread** si differenziano di poco, viene usato un **TEB**, ed esso è puntato da **KTHREAD**, inoltre utilizzano una memoria locale **TLS** (Thread Local Storage) per memorizzare dati locali (e.g. DLL), volendo può avere molti indici TLS.
 >I thread che appartengono ad un processo condividono lo _spazio di indirizzamento virtuale_.
 >Viene utilizzato un modello di threading [[Thread#Ibridi (molti-a-molti)|ibrido]].
 
@@ -50,7 +50,7 @@ I blocchi usati per descrivere i **thread** si differenziano di poco, viene usat
 I **jobs** sono gruppi di processi che vengono trattati come una singola _unità_, (e.g. tempo di CPU unificato) questo comporta che terminare un job, terminerà tutti i suoi processi.
 >Un processo può far parte di un solo job.
 
-I **fibers** sono schedulati dai thread che li creano ed eseguiti nello stesso contesto ("sono i thread dei thread"), anche loro usano una memoria locale **FLS**.
+I **fibers** sono schedulati dai thread che li creano ed eseguiti nello stesso contesto ("sono i thread dei thread"), anche loro usano una memoria locale **FLS** (Fiber Local Storage).
 
 ### Scheduling di thread
 I thread sono schedulati senza considerare i processi, e hanno **32 livelli di priorità** (0 = priorità minima) dove ognuna ha una coda "ready" disciplinata dall'algoritmo **round-robin**.

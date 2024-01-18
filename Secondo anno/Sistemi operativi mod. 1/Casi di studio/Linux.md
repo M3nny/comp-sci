@@ -12,7 +12,7 @@ Oppure al posto di estendere il nucleo con il _porting_, è possibile **integrar
 - **Kmod** è un sottosistema che gestisce i moduli e le loro dipendenze senza l'intervento dell'utente.
 
 ## Gestione dei processi
-Sia i processi che i thread sono **tasks**, i loro riferimento sono mantenuti dal gestore di processi tramite una **lista circolare** ed una **tabella hash**.
+Sia i processi che i thread sono **tasks**, i loro riferimenti sono mantenuti dal gestore di processi tramite una **lista circolare** ed una **tabella hash**.
 La creazione di un task avviene assegnando un **PID** per identificare univocamente il task.
 
 **Init** è il padre di tutti i task, da esso vengono chiamati:
@@ -53,7 +53,7 @@ Per quanto riguarda lo **scheduling multiprocessore**, ogni processore ha la sua
 ## Organizzazione della memoria
 Viene usata esclusivamente la **paginazione**, con tre o quattro livelli di tabelle di pagina:
 - Directory **globale** di pagina
-- (Directory **alta** di pagina)
+- Directory **alta** di pagina
 - Directory **intermedia** di pagina
 - **Tabella delle pagine**
 ![[Indirizzo virtuale linux.png|600]]
@@ -86,7 +86,7 @@ la pagine riferite per la prima volta entrano nella lista inattiva, se vengono r
 ### Swapping
 Il demone swap del nucleo **kswapd**:
 - Libera periodicamente le pagine sporche sul disco (swap out)
-- Scambia le pagina dalla lista inattiva ad attiva
+- Scambia le pagine dalla lista inattiva ad attiva
 
 Non può liberare _immediatamente_ pagine libere se:
 - La pagina è condivisa
@@ -148,6 +148,6 @@ Consente agli utenti di ottenere informazioni riguardo al sistema e all'hardware
 Il **Network File System** viene usato per avere un file system distribuito su più computer remoti.
 
 ## Drivers
-I **device driver** sono una interfaccia sw tra OS e dispositivo hardware, in genere sono implementati come moduli caricabili nel nucleo.
+I **device driver** sono una interfaccia software tra OS e dispositivo hardware, in genere sono implementati come moduli caricabili nel nucleo.
 
 I dispositivi sono raggruppati in base alle loro funzioni simili e hanno **numeri di identificazione** per essere identificati dai driver, il primo numero è per identificare la classe di dispositivi, il secondo per identificare il dispositivo stesso.

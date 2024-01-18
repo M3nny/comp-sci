@@ -57,7 +57,7 @@ Le _PTE_ sono prevalentemente nelle tabelle in _RAM_, però quelle più utilizza
 ### Tabelle di pagine multilivello
 Per evitare sprechi di memoria **teniamo in RAM solo le pagine usate** al momento.
 
-In particolare <u>la traduzione vera e propria viene effettuata nella tabella di gerarchia più bassa</u>, mentre nelle tabelle di livello più alto teniamo i puntatori verso le altre tabelle di livello inferiore,**memorizzando così in RAM solo l'ultima tabella**.
+In particolare <u>la traduzione vera e propria viene effettuata nella tabella di gerarchia più bassa</u>, mentre nelle tabelle di livello più alto teniamo i puntatori verso le altre tabelle di livello inferiore, **memorizzando così in RAM solo l'ultima tabella**.
 ![[Pagine multilivello.png|600]]
 Il procedimento per la traduzione è lo stesso del _mapping diretto_ a differenza che si passa per più page table.
 In questo caso $v=(p,t,d)$ dove $p$ è l'indice delle pagine di primo livello, $t$ l'indice delle pagine di secondo livello dal quale troveremo poi $p'$ al quale verrà aggiunto l'offset $d$.
@@ -95,7 +95,7 @@ Per evitare i **page fault** usiamo le seguenti strategie di sostituzione:
 - **FIFO**:
 	sostituisce la pagina che è <u>più vecchia</u> (potrebbe essere molto usata comunque).
 
-- **Least Frequently Used (LRU)**:
+- **Least Recently Used (LRU)**:
 	sostituisce la pagina che <u>non viene riferita da più tempo</u>.
 
 - **Not Frequently Used (NFU)**:
@@ -142,10 +142,10 @@ La dimensione della pagina, inoltre, può variare tra vari sistemi operativi:
 Sono strategie applicate a tutti i processi, quindi ignorano le caratteristiche individuali di comportamento del processo.
 
 - **Global LRU (gLRU)**:
-	sostituisce la pagina <u>meno usata di recente in tutto il sistema</u>.
+	sostituisce la pagina che <u>non viene riferita da più tempo in tutto il sistema</u>.
 
 - **SEQ**: 
-	usa la <u>gLRU finchè non avvengono page fault in pagine contigue</u>, allora lì utilizza la MRU.
+	usa la <u>gLRU finchè non avvengono page fault in pagine contigue</u>, allora lì utilizza la MRU (Most Recently Used) che rimuove la pagina più usata di recente, questo per interrompere i page fault, considerando che verrà ricaricata a breve.
 
 ---
 ## Segmentazione
@@ -157,7 +157,7 @@ Ogni riga nella mappa dei segmenti contiene:
 - $s$ inizia all'indirizzo $s'$ in memoria reale
 - **Bit di residenza**
 - **Lunghezza**: usata per evitare che un processo riferisca al di fuori del segmento
-- **Bits di protezione**: controlla se il tipo di operazione è ammessa, altrimenti genera un'eccezione, i bit di protezione sono: R(read)-W(write)-E(execute)-A(append)
+- **Bit di protezione**: controlla se il tipo di operazione è ammessa, altrimenti genera un'eccezione, i bit di protezione sono: R(read)-W(write)-E(execute)-A(append)
 
 Durante un riferimento possono avvenire le seguenti eccezioni:
 - **Missing segment fault**: il segmento non è in memoria
@@ -174,7 +174,7 @@ La **condivisione** con i segmenti può causare meno overhead rispetto a quella 
 ## Paginazione + Segmentazione
 Per sfruttare i vantaggi delle due tecniche: i segmenti possono occupare più pagine, e le pagine del segmento possono non essere in RAM contemporaneamente.
 
-L'indirizzo virtuale viene implementato tramite una **tripla ordinata** formata dal numero del segmento, numero della pagina e displacement:
+L'indirizzo virtuale viene implementato tramite una **tripla ordinata** formata dal numero del segmento, numero della pagina all'interno del segmento e displacement all'interno della pagina:
 $$v=(s,p,d)$$
 considerando la TLB contenuta in memoria associativa, la traduzione avviene come segue:
 ![[Mapping combinato.png|600]]
