@@ -9,11 +9,14 @@ Viene usato come rappresentazione delle interrogazioni esprimendo **cosa** vogli
 ## Algebra relazionale
 - **Ridenominazione (alias)**: $\rho$
 	Cambia il nome di un attributo, utile quando in una query usiamo tabelle con attributi che hanno alcuni nomi uguali.
+	$\rho_{A\leftarrow B}(R)$: rinomino l'attributo $A$ (di $R$) con $B$.
 
 - **Unione e differenza (UNION, -)**: $\cup, -$
 	Gli operatori di unione e differenza possono essere usati solo su relazioni dello stesso tipo.
-	Con $R\cup S$ creo una tabella con le righe di $R$ e $S$ togliendo i duplicati.
-	Con $R-S$ creo una tabella con le righe di $R$ che non compaiono in $S$.
+	Con $R\cup S$ creo una tabella con le righe di $R$ e $S$ togliendo i duplicati:
+	$R\cup S\{t: t\in R\lor t\in S\}$.
+	Con $R-S$ creo una tabella con le righe di $R$ che non compaiono in $S$:
+	$R-S=\{t:t\in R\land t \notin S\}$.
 
 - **Proiezione (select)**: $\pi$
 	Seleziona un sottoinsieme di attributi nella relazione.
@@ -98,17 +101,21 @@ $R \underset{R.ID=S.ID}{\stackrel{\rightarrow}{\bowtie}} S$:
 
 - **Divisione**: $\textdiv$
 	Crea una tabella dove ogni elemento $t_1$ non appartenente alla seconda tabella è concatenato almeno con i valori della seconda tabella.
+	Crea una tabella partendo da $R$ dove:
+		- Le colonne in comune con $S$ sono rimosse
+		- Vengono mantenute le righe di $R$ che possedevano almeno tutti i valori delle colonne condivise
+	Esprimibile come: $\pi_X(R)-\pi_X((\pi_X(R)\times S)-R)$ 
 
 $R$:
 
-| X   | Y   |
-| --- | --- |
-| a   | 1   |
-| b   | 2   |
-| a   | 2   |
-| c   | 1   |
-| c   | 2   |
-| a   | 3   |
+| $X$ | $Y$ |
+| ---- | ---- |
+| a | 1 |
+| a | 2 |
+| a | 3 |
+| b | 1 |
+| c | 1 |
+| c | 2 |
 
 $S$:
 
@@ -177,6 +184,15 @@ in questa differenza solo una singola occorrenza di ogni elemento in $O_2$ vie
 - $(R\times S)\equiv(S\times R)$
 - $\sigma_C(_X\gamma_F(R))\equiv _X\gamma_F(\sigma_C(R))$
 
+>[!Example]
+>- Trovare le lingue ufficiali parlate da piu del 50% della popolazione di una nazione europea.
+> 	$\pi_{language}(\sigma_{\text{continent='Europe'}\land \text{percentage}>50\land \text{isofficial = true}} (\text{Contrylanguage}\underset{\text{code=countrycode}}{\bowtie}\text{Country}))$
+> - Trovare il nome dei prodotti fabbricati da produttori colombiani aventi costo maggiore di 1000 dollari.
+> 	$\pi_{\text{nomeProdotto}}(\sigma_{\text{prezzo} > 1000\land \text{paese = 'Colombia'}}(\text{produttori} \bowtie \rho_{\text{nome}\leftarrow\text{nomeProdotto}}(\text{prodotti})))$
+> - Trovare il nome e cognome degli atleti italiani o svedesi che hanno vinto una medaglia d’argento nella disciplina Short track.
+> 	$\pi_{\text{nome, cognome}(\sigma_{(\text{nazione='Italia'}\lor\text{nazione='Svezia})\land\text{tipo='Argento'}\land\text{disciplina='Short track'}}(\text{atleti }\bowtie\text{ medaglie})}$
+
+
 ---
 ## Calcolo relazionale
 Il **calcolo relazionale (CR)** è un'alternativa all'algebra relazionale, ne esistono due varianti:
@@ -197,3 +213,4 @@ Vengono quindi usati:
 - **Intersezione**: $\text{Studenti}\cap\text{Docenti}=\{t|t\in\text{Studenti}\land t\in\text{Docenti}\}$
 - **Differenza**: $\text{Studenti - Docenti} = \{t|t\in\text{Studenti}\land\neg(t\in\text{Docenti}\}$
 - **Prodotto**: $\text{Studenti}\times\text{Esami}=\{s,e|s\in\text{Studenti}\land e\in\text{Esami}\}$
+
