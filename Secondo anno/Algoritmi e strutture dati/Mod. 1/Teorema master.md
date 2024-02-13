@@ -40,7 +40,7 @@ $$\implies T(n)=\Theta(f(n))$$
 Se $f(n)$ occupa più tempo della parte ricorsiva, allora il tempo impiegato dall'algoritmo sarà uguale a quello impiegato per $f(n)$.
 
 >[!Example]
->Risolviamo gli stessi esempi risolti con il [[3 - Complessità di un algoritmo#Metodo dell'iterazione|metodo dell'iterazione]] + uno nuovo.
+>Risolviamo gli stessi esempi risolti con il [[Complessità di un algoritmo#Metodo dell'iterazione|metodo dell'iterazione]] + uno nuovo.
 >$$T(n)=T\Big(\frac{n}{2}\Big)+c$$
 >Posso usare il teorema master?
 >- Posso esprimere la ricorrenza come $a\cdot T(\frac{n}{b})+f(n)$?

@@ -56,7 +56,7 @@ T_{\text{merge}}(n)&=\underbrace{q-p+1}_{n1}+\underbrace{r-q}_{n2}+\underbrace{r
 \end{flalign}
 $$
 Sapendo ora che la complessità di `merge` è $\Theta(n)$, la complessità totale è data da:
-$$T_{\text{mergesort}}=\begin{cases}\Theta(1)&n\leq 1\\ 2T(\frac{n}{2}+\Theta(n)&n>1\end{cases}$$
+$$T_{\text{mergesort}}=\begin{cases}\Theta(1)&n\leq 1\\ 2T(\frac{n}{2})+\Theta(n)&n>1\end{cases}$$
 Possiamo usare il teorema master:
 - $f(n)=n$
 - $n^{\log_ba}=n^{\log_22}=n$
