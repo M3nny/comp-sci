@@ -11,8 +11,12 @@
             "id": "3a011a52678fec6d",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {}
+              "type": "markdown",
+              "state": {
+                "file": "Secondo anno/Algoritmi e strutture dati/Mod. 2/Tabelle hash.md",
+                "mode": "source",
+                "source": false
+              }
             }
           }
         ]
@@ -65,8 +69,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 336.5124969482422,
-    "collapsed": true
+    "width": 336.5124969482422
   },
   "right": {
     "id": "282a9548711da6a0",
@@ -82,6 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "Secondo anno/Algoritmi e strutture dati/Mod. 2/Tabelle hash.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -98,6 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "Secondo anno/Algoritmi e strutture dati/Mod. 2/Tabelle hash.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -119,7 +124,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "Secondo anno/Algoritmi e strutture dati/Mod. 2/Tabelle hash.md"
+              }
             }
           },
           {
@@ -148,15 +155,22 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "3a011a52678fec6d",
+  "active": "a1163d9af64d6878",
   "lastOpenFiles": [
-    "Secondo anno/Basi di dati/Mod. 1/PostgreSQL/DML.md",
+    "Secondo anno/Probabilità e statistica/Distribuzioni note/Distribuzioni discrete.md",
+    "Secondo anno/Algoritmi e strutture dati/Mod. 2/Tabelle hash.md",
+    "Secondo anno/Algoritmi e strutture dati/Mod. 2/Images/Tabella hash.svg",
+    "Excalidraw/Drawing 2024-02-14 18.33.59.excalidraw.md",
+    "Excalidraw/Drawing 2024-02-14 18.03.09.excalidraw.md",
+    "Secondo anno/Algoritmi e strutture dati/Mod. 2/Images/Indirizzamento diretto.svg",
+    "Excalidraw",
+    "Secondo anno/Algoritmi e strutture dati/Mod. 2/Ordinamento/Lineare/Radix sort.md",
+    "Secondo anno/Algoritmi e strutture dati/Mod. 2/Ordinamento/Lineare/Counting sort.md",
     "Secondo anno/Basi di dati/Mod. 2/Dipendenze funzionali.md",
+    "Secondo anno/Basi di dati/Mod. 1/PostgreSQL/DML.md",
     "Secondo anno/Basi di dati/Mod. 1/Untitled.md",
     "Secondo anno/Basi di dati/Mod. 1",
     "Secondo anno/Basi di dati/Mod. 2",
-    "Secondo anno/Algoritmi e strutture dati/Mod. 2/Ordinamento/Lineare/Counting sort.md",
-    "Secondo anno/Algoritmi e strutture dati/Mod. 2/Ordinamento/Lineare/Radix sort.md",
     "Excalidraw/Drawing 2024-02-13 19.25.57.excalidraw.md",
     "Secondo anno/Algoritmi e strutture dati/Mod. 2/Images/Radix sample.svg",
     "Secondo anno/Algoritmi e strutture dati/Mod. 2/Images/Counting sample.svg",
@@ -173,11 +187,8 @@
     "Secondo anno/Algoritmi e strutture dati/Mod. 2/Images/Quicksort animation.gif",
     "Secondo anno/Algoritmi e strutture dati/Mod. 2/Images/Insertion sample.svg",
     "Secondo anno/Algoritmi e strutture dati/Mod. 2/Images/Quicksort caso medio.svg",
-    "Secondo anno/Algoritmi e strutture dati/Mod. 2/Ordinamento/Lineare/Counting sort.gif",
     "Secondo anno/Algoritmi e strutture dati/Mod. 2/Ordinamento/Lineare/Counting sort.gif.crdownload",
     "Secondo anno/Algoritmi e strutture dati/Mod. 2/Alberi/Cos'è un albero.md",
-    "Secondo anno/Algoritmi e strutture dati/Mod. 2/Images/Albero decisione.svg",
-    "Excalidraw",
     "Secondo anno/Algoritmi e strutture dati/Mod. 2/4 - Ordinamento/Untitled.md",
     "Secondo anno/Algoritmi e strutture dati/Mod. 2/Ordinamento/Lineare",
     "Secondo anno/Algoritmi e strutture dati/Mod. 2/Code di priorità.md",
@@ -186,11 +197,6 @@
     "Secondo anno/Basi di dati/Mod. 1/Linguaggi relazionali.md",
     "Secondo anno/Basi di dati/Mod. 1/Progettazione e modellazione.md",
     "Primo anno/Primo semestre/Matematica discreta/Le relazioni.md",
-    "Secondo anno/Basi di dati/Mod. 1/PostgreSQL/DDL.md",
-    "Secondo anno/Basi di dati/Mod. 1/Introduzione.md",
-    "Secondo anno/Algoritmi e strutture dati/Mod. 1/Teorema master.md",
-    "Secondo anno/Algoritmi e strutture dati/Mod. 2/Alberi/Visite.md",
-    "Secondo anno/Sistemi operativi mod. 1/Images/Allocazione dei file non contigua indicizzata.svg",
     "Secondo anno/Probabilità e statistica/Images/Calcolo combinatorio.png.crdownload",
     "Secondo anno/Sistemi operativi mod. 1/Images/Schema hard disk.png.crdownload",
     "Secondo anno/Sistemi operativi mod. 1/Casi di studio",

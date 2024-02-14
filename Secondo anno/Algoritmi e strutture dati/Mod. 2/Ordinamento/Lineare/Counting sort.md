@@ -75,6 +75,8 @@ Cosa fanno i `for`:
 
 Partendo dalla fine (nell'ultimo `for`) rende **stabile** l'algoritmo.
 
+>È possibile lavorare anche con numeri negativi sommando $|M|$ ad ogni elemento, dove $M$ è il valore più piccolo, in questo modo si partirà da $0$.
+
 **Complessità**:
 $T(n) = \Theta(k)+\Theta(n)+\Theta(k)+\Theta(n) = \Theta(k+n)$.
 Se $k\leq n$, allora $T(n)=\Theta(n)$.
@@ -82,4 +84,3 @@ Se $k\leq n$, allora $T(n)=\Theta(n)$.
 >[!Attention]
 >Questo algoritmo non è vantaggioso se $k>n$.
 >e.g. se la lunghezza è $n$, e $k=n^3$, la complessità sarà pari a $\Theta(n^3)$.
-
