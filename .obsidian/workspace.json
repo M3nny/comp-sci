@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "20ba1d7cede233fe",
+        "id": "31d39861957dffa3",
         "type": "tabs",
         "children": [
           {
-            "id": "2fb5fd508abe890d",
+            "id": "2eba799b18160f1e",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Secondo anno/Sistemi operativi/Mod. 2/Comunicazione tra processi e thread.md",
+                "file": "Secondo anno/Basi di dati/Mod. 2/Dipendenze funzionali.md",
                 "mode": "source",
                 "source": false
               }
@@ -69,7 +69,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 336.5124969482422
+    "width": 336.5124969482422,
+    "collapsed": true
   },
   "right": {
     "id": "282a9548711da6a0",
@@ -85,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Secondo anno/Sistemi operativi/Mod. 2/Comunicazione tra processi e thread.md",
+                "file": "Secondo anno/Basi di dati/Mod. 2/Dipendenze funzionali.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Secondo anno/Sistemi operativi/Mod. 2/Comunicazione tra processi e thread.md",
+                "file": "Secondo anno/Basi di dati/Mod. 2/Dipendenze funzionali.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +126,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Secondo anno/Sistemi operativi/Mod. 2/Comunicazione tra processi e thread.md"
+                "file": "Secondo anno/Basi di dati/Mod. 2/Dipendenze funzionali.md"
               }
             }
           },
@@ -155,8 +156,9 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "2fb5fd508abe890d",
+  "active": "2eba799b18160f1e",
   "lastOpenFiles": [
+    "Secondo anno/Sistemi operativi/Mod. 2/Comunicazione tra processi e thread.md",
     "Secondo anno/Programmazione ad oggetti Mod. 1/Information hiding.md",
     "Secondo anno/Programmazione ad oggetti Mod. 1/Introduzione.md",
     "Secondo anno/Programmazione ad oggetti/Mod. 2/Introduzione.md",
@@ -165,7 +167,6 @@
     "Secondo anno/Programmazione ad oggetti/Mod. 1",
     "Secondo anno/Sistemi operativi/Mod. 1/Scheduling.md",
     "Secondo anno/Sistemi operativi/Mod. 1/Thread.md",
-    "Secondo anno/Sistemi operativi/Mod. 2/Comunicazione tra processi e thread.md",
     "Secondo anno/Sistemi operativi/Mod. 1/Dischi.md",
     "Secondo anno/Sistemi operativi/Mod. 2/Processi",
     "Secondo anno/Sistemi operativi mod. 1/Mod. 1/Domande.md",
