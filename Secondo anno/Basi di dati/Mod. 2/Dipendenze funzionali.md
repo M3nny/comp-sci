@@ -64,9 +64,7 @@ Dato un insieme di dipendenze funzionali $F$, la sua chiusura $F^+$ rappresenta 
 $$F^+=\{X\rightarrow Y\space|\space F\vdash X\rightarrow Y\}$$
 ovvero: $F^+=\{\text{dipendenze funzionali } | \text{ dipendenze derivate}\}$.
 
-Sia $R(T, F)$ lo schema di relazione, la chiusura di un attributo $X\subseteq T$ rispetto ad $F$ è definita come l'insieme di dipendenze funzionali di $F^+$ le quali hanno attributi che dipendono da $X$.
+Sia $R(T, F)$ lo schema di relazione, la chiusura di un attributo $X\subseteq T$ rispetto ad $F$ è definita come l'insieme di dipendenze funzionali (e derivate) di $F^+$ le quali hanno attributi che dipendono da $X$.
 $$X_F^+=\{A\in T\space|\space F\vdash X\rightarrow A\}$$
 dove $A$ è un attributo che dipende da $X$, infatti:
 $$F\vdash X\rightarrow A\iff A\subseteq X_F^+$$
-
-

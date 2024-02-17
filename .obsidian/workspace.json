@@ -4,11 +4,23 @@
     "type": "split",
     "children": [
       {
-        "id": "31d39861957dffa3",
+        "id": "a14c3c55ee9020d0",
         "type": "tabs",
         "children": [
           {
-            "id": "2eba799b18160f1e",
+            "id": "3f46629b59cf5bb2",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Secondo anno/Basi di dati/Mod. 2/Chiavi e coperture canoniche.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "913d2063d1a7cea9",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -86,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Secondo anno/Basi di dati/Mod. 2/Dipendenze funzionali.md",
+                "file": "Secondo anno/Basi di dati/Mod. 2/Chiavi e coperture canoniche.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Secondo anno/Basi di dati/Mod. 2/Dipendenze funzionali.md",
+                "file": "Secondo anno/Basi di dati/Mod. 2/Chiavi e coperture canoniche.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Secondo anno/Basi di dati/Mod. 2/Dipendenze funzionali.md"
+                "file": "Secondo anno/Basi di dati/Mod. 2/Chiavi e coperture canoniche.md"
               }
             }
           },
@@ -156,8 +168,10 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "2eba799b18160f1e",
+  "active": "3f46629b59cf5bb2",
   "lastOpenFiles": [
+    "Secondo anno/Basi di dati/Mod. 2/Dipendenze funzionali.md",
+    "Secondo anno/Basi di dati/Mod. 2/Chiavi e coperture canoniche.md",
     "Secondo anno/Sistemi operativi/Mod. 2/Comunicazione tra processi e thread.md",
     "Secondo anno/Programmazione ad oggetti Mod. 1/Information hiding.md",
     "Secondo anno/Programmazione ad oggetti Mod. 1/Introduzione.md",
@@ -181,7 +195,6 @@
     "Excalidraw",
     "Secondo anno/Algoritmi e strutture dati/Mod. 2/Ordinamento/Lineare/Radix sort.md",
     "Secondo anno/Algoritmi e strutture dati/Mod. 2/Ordinamento/Lineare/Counting sort.md",
-    "Secondo anno/Basi di dati/Mod. 2/Dipendenze funzionali.md",
     "Secondo anno/Basi di dati/Mod. 1/PostgreSQL/DML.md",
     "Secondo anno/Basi di dati/Mod. 1/Untitled.md",
     "Secondo anno/Basi di dati/Mod. 1",
@@ -195,7 +208,6 @@
     "Secondo anno/Algoritmi e strutture dati/Mod. 2/Strutture dati.md",
     "Secondo anno/Algoritmi e strutture dati/Mod. 2/Ordinamento/Insertion sort.md",
     "Secondo anno/Algoritmi e strutture dati/Mod. 2/Ordinamento/Heap sort.md",
-    "Secondo anno/Algoritmi e strutture dati/Mod. 2/Ordinamento/Quick sort.md",
     "Secondo anno/Algoritmi e strutture dati/Mod. 2/Images/Quicksort sample.svg",
     "Secondo anno/Algoritmi e strutture dati/Mod. 2/Images/Insertion sort animation.gif",
     "Secondo anno/Algoritmi e strutture dati/Mod. 2/Images/Quicksort animation.gif",
