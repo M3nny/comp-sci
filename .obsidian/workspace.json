@@ -4,28 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "a14c3c55ee9020d0",
+        "id": "4178b0a382a55b60",
         "type": "tabs",
         "children": [
           {
-            "id": "3f46629b59cf5bb2",
+            "id": "fb745afdae24c77d",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
                 "file": "Secondo anno/Basi di dati/Mod. 2/Chiavi e coperture canoniche.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "913d2063d1a7cea9",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Secondo anno/Basi di dati/Mod. 2/Dipendenze funzionali.md",
                 "mode": "source",
                 "source": false
               }
@@ -168,7 +156,7 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "3f46629b59cf5bb2",
+  "active": "fb745afdae24c77d",
   "lastOpenFiles": [
     "Secondo anno/Basi di dati/Mod. 2/Dipendenze funzionali.md",
     "Secondo anno/Basi di dati/Mod. 2/Chiavi e coperture canoniche.md",
