@@ -105,18 +105,43 @@ Ogni sottoinsieme di $T$ però potrebbe essere una chiave.
 >
 >Le chiavi sono: $BDA$ e $BDE$.
 
+### Forma canonica
+La forma canonica rappresenta una forma più "disciplinata", equivalente all'originale delle dipendenze funzionali originali.
+Di seguito sono riportati termini nuovi per comprendere cos'è una _forma canonica_.
 
+**Equivalenza**: due insiemi di dipendenze funzionali $F$ e $G$ sono _equivalenti_ se:
+$$F\equiv G\iff F^+=G^+$$
+inoltre: $F=G\implies F\equiv G$.
 
+**Attributo estraneo**: sia $(X\rightarrow Y)\in F$, l'attributo $A\in X$ è _estraneo_ sse $X\setminus\{A\}\rightarrow Y\in F^+$.
 
+**Dipendenza ridondante**: $(X\rightarrow Y)\in F$ è _ridondante_ sse $(X\rightarrow Y)\in(F\setminus\{X\rightarrow Y\})^+$.
 
+**Forma canonica**: $F$ è in _forma canonica_ sse per ogni $(X\rightarrow Y)\in F$:
+- $|Y|=1$, ovvero la cardinalità dell'insieme $Y$ è pari a $1$
+- $X$ non contiene attributi estranei
+- $X\rightarrow Y$ non è ridondante
 
+$G$ è una copertura canonica di $F$ sse $F\equiv G$ e $G$ è in forma canonica.
+I passaggi per trovarne una sono i seguenti:
+1. Suddivido gli insiemi con cardinalità > 1 che dipendono da altri attributi
+2. Elimino gli attributi estranei (presenti solo in insiemi con cardinalità > 1 a sx della freccia), ovvero quelli che non compaiono nella chiusura di un attributo a sx (uno vale l'altro, questo porterà a differenti coperture, ma non è detto che ce ne debba essere solo una)
+3. Trovo le chiusure dell'elemento a sx per ogni dipendenza funzionale, togliendo a $F$ la dipendenza funzionale stessa, se come risultato danno l'insieme di tutti gli elementi in $T$, allora quella dipendenza può essere rimossa
 
+>Per ogni insieme di dipendenze $F$ esiste una copertura canonica.
+>Può esistere più di una copertura canonica per insieme di dipendenze.
 
-
-
-
-
-
+>[!Example]
+>Trovare una copertura canonica per:
+>$G=\{A\rightarrow BC, B\rightarrow C, A\rightarrow B, AB\rightarrow C\}$.
+>1. $G=\{A\rightarrow B, A\rightarrow C, B\rightarrow C, A\rightarrow B, AB\rightarrow C\}$
+>2. $G=\{A\rightarrow B,A\rightarrow C, B\rightarrow C, \cancel{A\rightarrow B}, \cancel{B\rightarrow C}\}$
+>	- L'unica dipendenza che può contenere attributi estranei è $AB\rightarrow C$, $A$ è estraneo perchè non compare in $B_G^+=BC$, per cui va eliminato e si ottiene $B\rightarrow C$
+>	- Elimino i doppioni
+>3. $G=\{B\rightarrow C, A\rightarrow B\}$
+>	- $A_{G\setminus\{A\rightarrow B\}}^+=AC$
+>	- $A_{G\setminus\{A\rightarrow C\}}^+=ABC$ elimino $A\rightarrow C$ perchè comunque senza di esso posso derivare tutti gli elementi
+>	- $B_{G\setminus\{B\rightarrow C\}}^+=B$
 
 
 

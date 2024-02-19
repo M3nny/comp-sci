@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "4178b0a382a55b60",
+        "id": "429b6c236b4ca524",
         "type": "tabs",
         "children": [
           {
-            "id": "fb745afdae24c77d",
+            "id": "ee32eecd172ea57f",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Secondo anno/Basi di dati/Mod. 2/Chiavi e coperture canoniche.md",
+                "file": "Secondo anno/Algoritmi e strutture dati/Mod. 2/Tabelle hash.md",
                 "mode": "source",
                 "source": false
               }
@@ -69,8 +69,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 336.5124969482422,
-    "collapsed": true
+    "width": 336.5124969482422
   },
   "right": {
     "id": "282a9548711da6a0",
@@ -86,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Secondo anno/Basi di dati/Mod. 2/Chiavi e coperture canoniche.md",
+                "file": "Secondo anno/Algoritmi e strutture dati/Mod. 2/Tabelle hash.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Secondo anno/Basi di dati/Mod. 2/Chiavi e coperture canoniche.md",
+                "file": "Secondo anno/Algoritmi e strutture dati/Mod. 2/Tabelle hash.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Secondo anno/Basi di dati/Mod. 2/Chiavi e coperture canoniche.md"
+                "file": "Secondo anno/Algoritmi e strutture dati/Mod. 2/Tabelle hash.md"
               }
             }
           },
@@ -156,53 +155,53 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "fb745afdae24c77d",
+  "active": "a1163d9af64d6878",
   "lastOpenFiles": [
-    "Secondo anno/Basi di dati/Mod. 2/Dipendenze funzionali.md",
-    "Secondo anno/Basi di dati/Mod. 2/Chiavi e coperture canoniche.md",
+    "Excalidraw/Drawing 2024-02-19 19.06.28.excalidraw.md",
+    "Secondo anno/Algoritmi e strutture dati/Mod. 2/Images/Metodo della moltiplicazione semplificato.svg",
+    "Secondo anno/Algoritmi e strutture dati/Mod. 2/Tabelle hash.md",
+    "Excalidraw",
     "Secondo anno/Sistemi operativi/Mod. 2/Comunicazione tra processi e thread.md",
-    "Secondo anno/Programmazione ad oggetti Mod. 1/Information hiding.md",
-    "Secondo anno/Programmazione ad oggetti Mod. 1/Introduzione.md",
-    "Secondo anno/Programmazione ad oggetti/Mod. 2/Introduzione.md",
-    "Secondo anno/Programmazione ad oggetti/Mod. 2.md",
+    "Primo anno/Secondo semestre/Architettura degli elaboratori mod. 2/CPU con pipeline/Processori superscalari.md",
+    "Primo anno/Secondo semestre/Architettura degli elaboratori mod. 2/CPU con pipeline/Previsione del branch, interruzioni e ottimizzazione.md",
+    "Primo anno/Secondo semestre/Architettura degli elaboratori mod. 2/CPU con pipeline/Introduzione.md",
+    "Primo anno/Secondo semestre/Architettura degli elaboratori mod. 2/CPU con pipeline/Implementazione.md",
+    "Primo anno/Secondo semestre/Architettura degli elaboratori mod. 2/CPU con pipeline/Dipendenze RAW.md",
+    "Primo anno/Secondo semestre/Architettura degli elaboratori mod. 2/Riassunto.md",
+    "Primo anno/Secondo semestre/Architettura degli elaboratori mod. 2/Assembly/Introduzione.md",
+    "Primo anno/Secondo semestre/Architettura degli elaboratori mod. 2/Assembly/Costrutti principali.md",
+    "Primo anno/Primo semestre/Matematica discreta/Regole di divisibilità.md",
+    "Primo anno/Primo semestre/Matematica discreta/Numeri primi.md",
+    "Primo anno/Primo semestre/Matematica discreta/mcm e MCD.md",
+    "Primo anno/Primo semestre/Matematica discreta/Le sommatorie.md",
+    "Primo anno/Primo semestre/Matematica discreta/Le relazioni.md",
+    "Primo anno/Primo semestre/Matematica discreta/Le funzioni.md",
+    "Primo anno/Primo semestre/Matematica discreta/La Logica.md",
+    "Primo anno/Primo semestre/Matematica discreta/Elementi di calcolo combinatorio.md",
+    "Primo anno/Primo semestre/Matematica discreta/Aritmetica modulare.md",
+    "Primo anno/Secondo semestre/Programmazione e laboratorio/Notes/Riassunto.md",
+    "Primo anno/Secondo semestre/Programmazione e laboratorio/Notes/Guida a C++.md",
+    "Primo anno/Secondo semestre/Programmazione e laboratorio/Notes/Liste.md",
+    "Primo anno/Secondo semestre/Programmazione e laboratorio/Notes/Debugging.md",
+    "Primo anno/Secondo semestre/Programmazione e laboratorio/Notes/Compilazione.md",
+    "Secondo anno/Algoritmi e strutture dati/Mod. 2/Tabelle hash",
     "Secondo anno/Programmazione ad oggetti/Mod. 2",
     "Secondo anno/Programmazione ad oggetti/Mod. 1",
-    "Secondo anno/Sistemi operativi/Mod. 1/Scheduling.md",
-    "Secondo anno/Sistemi operativi/Mod. 1/Thread.md",
-    "Secondo anno/Sistemi operativi/Mod. 1/Dischi.md",
     "Secondo anno/Sistemi operativi/Mod. 2/Processi",
-    "Secondo anno/Sistemi operativi mod. 1/Mod. 1/Domande.md",
     "Secondo anno/Sistemi operativi/Mod. 2",
-    "Secondo anno/Algoritmi e strutture dati/Mod. 2/Tabelle hash.md",
     "Secondo anno/Sistemi operativi/Mod. 1",
-    "Secondo anno/Probabilità e statistica/Distribuzioni note/Distribuzioni discrete.md",
     "Secondo anno/Algoritmi e strutture dati/Mod. 2/Images/Tabella hash.svg",
-    "Excalidraw/Drawing 2024-02-14 18.33.59.excalidraw.md",
-    "Excalidraw/Drawing 2024-02-14 18.03.09.excalidraw.md",
     "Secondo anno/Algoritmi e strutture dati/Mod. 2/Images/Indirizzamento diretto.svg",
-    "Excalidraw",
-    "Secondo anno/Algoritmi e strutture dati/Mod. 2/Ordinamento/Lineare/Radix sort.md",
-    "Secondo anno/Algoritmi e strutture dati/Mod. 2/Ordinamento/Lineare/Counting sort.md",
-    "Secondo anno/Basi di dati/Mod. 1/PostgreSQL/DML.md",
-    "Secondo anno/Basi di dati/Mod. 1/Untitled.md",
     "Secondo anno/Basi di dati/Mod. 1",
     "Secondo anno/Basi di dati/Mod. 2",
-    "Excalidraw/Drawing 2024-02-13 19.25.57.excalidraw.md",
     "Secondo anno/Algoritmi e strutture dati/Mod. 2/Images/Radix sample.svg",
     "Secondo anno/Algoritmi e strutture dati/Mod. 2/Images/Counting sample.svg",
-    "Excalidraw/Drawing 2024-02-13 18.05.01.excalidraw.md",
-    "Excalidraw/Drawing 2024-02-13 17.11.10.excalidraw.md",
-    "Secondo anno/Algoritmi e strutture dati/Mod. 2/Dizionari.md",
-    "Secondo anno/Algoritmi e strutture dati/Mod. 2/Strutture dati.md",
-    "Secondo anno/Algoritmi e strutture dati/Mod. 2/Ordinamento/Insertion sort.md",
-    "Secondo anno/Algoritmi e strutture dati/Mod. 2/Ordinamento/Heap sort.md",
     "Secondo anno/Algoritmi e strutture dati/Mod. 2/Images/Quicksort sample.svg",
     "Secondo anno/Algoritmi e strutture dati/Mod. 2/Images/Insertion sort animation.gif",
     "Secondo anno/Algoritmi e strutture dati/Mod. 2/Images/Quicksort animation.gif",
     "Secondo anno/Algoritmi e strutture dati/Mod. 2/Images/Insertion sample.svg",
     "Secondo anno/Algoritmi e strutture dati/Mod. 2/Images/Quicksort caso medio.svg",
     "Secondo anno/Algoritmi e strutture dati/Mod. 2/Ordinamento/Lineare/Counting sort.gif.crdownload",
-    "Secondo anno/Algoritmi e strutture dati/Mod. 2/Ordinamento/Lineare",
     "Untitled.canvas"
   ]
 }

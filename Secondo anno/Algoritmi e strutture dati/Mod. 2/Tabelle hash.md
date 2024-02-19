@@ -38,9 +38,12 @@ Metodi per risolvere le collisioni:
 
 >[!Attention]
 >La complessità della funzione di **hashing** verrà sempre considerata **costante**.
-### Concatenamento
+
+---
+## Concatenamento
 Si avrà una lista per ogni cella, contenente gli elementi che sono associati alla stessa cella, oppure $NIL$ se non è stato mappato nessun elemento in quella cella.
 
+**Inserimento**:
 ```
 chainedHashInsert(T, x)
 	inserisce x in testa alla lista T[h(x.key)]
@@ -48,12 +51,14 @@ chainedHashInsert(T, x)
 $$T(n) = O(1)$$
 - Si suppone che l'elemento da inserire non sia presente nella lista, altrimenti bisognerebbe cercare se esiste prima procedere con l'inserimento, in tal caso il costo dell'operazione diventa pari al costo di ricerca.
 
+**Ricerca**:
 ```
 chainedHashSearch(T, k)
 	ricerca un elemento con chiave k nella lista T[h(k)]
 ```
 Il tempo di esecuzione nel caso peggiore è lineare, ovvero proporzionale alla lunghezza della lista `T[h(k)]`.
 
+**Cancellazione**:
 ```
 chainedHashDelete(T, x)
 	cancella x dalla lista T[h(x.key)]
@@ -107,3 +112,112 @@ $$\text{Ricerca con successo:}\quad T(n)=\Theta\Big(1+\frac{\alpha}{2}\Big)=\The
 $$\alpha=\frac{n}{m}=\frac{O(m)}{m}=O(1)$$
 ovvero: se ci sono tante celle quante sono le chiavi, allora ogni lista avrà un solo elemento rendendo la ricerca costante.
 Per mantenere le prestazioni con $n$ elevato, bisognerà riallocare una tabella più grande e copiare gli elementi attuali nella nuova tabella (overhead significativo).
+
+---
+## Funzioni hash
+Nella migliore delle ipotesi una funzione hash distribuisce le chiavi $k$ in modo uniforme ed indipendente nell'intervallo $0\leq k<1$.
+$$h(k)=\lfloor k\cdot m\rfloor\quad\text{(H.U.I.)}$$
+**Ipotesi**: le chiavi sono numeri naturali.
+Questa ipotesi non è restrittiva in quanto ci si può riportare a numeri naturali tramite varie codifiche.
+
+### Metodo della divisione
+$$h(k)=k\text{ mod } m$$
+In questo metodo il valore dell'hashing sarà dato dal resto della divisione tra la chiave e la dimensione della tabella hash.
+- **Vantaggio**: facile da calcolare
+- **Svantaggi**: rende la dimensione della tabella un <u>dato critico</u>
+
+Sono da evitare alcuni valori per $m$, in particolare le potenze di $2$: se $m=2^p$, $h(k)$ rappresenta i $p$-bit meno significativi di $k$, così il valore hash dipenderà solo dagli ultimi bit, vorremmo che usasse tutti i bit della divisione, inoltre usando gli ultimi bit, essi si ripeteranno con più frequenza portando ad una distribuzione non uniforme.
+
+Una buona scelta per $m$ è un numero primo non troppo vicino ad una potenza di $2$ o $10$.
+>[!Example]
+>Volendo memorizzare $2000$ elementi e prevedendo una media di $3$ collisioni, cerco un numero primo vicino a $\frac{n}{3}=\frac{2000}{3}\simeq 666.6$, scelgo arbitrariamente $701$, questo valore permette di distribuire in modo opportuno gli elementi nella tabella perchè $\frac{n}{3}\leq 701$.
+
+
+### Metodo della moltiplicazione
+$$h(k)=\lfloor m\cdot k\rfloor,\quad k\in[0,1[$$
+L'idea è quella di trasformare $k$ in un numero $\in[0,1[$ per poi applicare la funzione hash:
+1. Fisso una costante $A\in]0,1[$
+2. Calcolo $k\cdot A$
+3. Estraggo la parte frazionaria: $(k\cdot A)\text{ mod }1$
+
+La funzione hash sarà quindi:
+$$h(k)=\lfloor m\cdot((k\cdot A)\text{ mod }1)\rfloor$$
+**Vantaggi**:
+- La dimensione $m$ della tabella hash, non è un <u>valore critico</u>
+- Funziona bene con tutti i valori di $A$
+- L'informatico Donald Knuth ha osservato che l'algoritmo funziona bene con l'inverso del rapporto aureo: $A\simeq\frac{\sqrt{5}-1}{2}=0.618034$
+
+#### Semplificare il calcolo
+Sia $w$ la lunghezza di una [[Linguaggio macchina MIPS#Istruzioni e linguaggio macchina|word]] di memoria, assumiamo che $k$ entri in una singola word.
+Scelgo un intero $q\in]0,2^w[$ e $m=2^p$, con $p\in]0,w]$.
+Pongo $A=\frac{q}{2^w}<1$, il prodotto tra $k\cdot A$ diventerà:
+$$k\cdot A=\frac{k\cdot q}{2^w}$$
+![[Metodo della moltiplicazione semplificato.svg]]
+Siamo interessati ai $p$ bit più significativi (quindi alla parte frazionaria) della word meno significativa del prodotto $k\cdot q$. (inizio della seconda word):
+$$
+\begin{flalign}
+h(k)&=\lfloor m\cdot((k\cdot A)\text{ mod }1)\rfloor\\
+&=\Big\lfloor \Big(2^p\cdot\Big(\frac{k\cdot q}{2^w}\Big)\Big)\text{ mod }1\Big\rfloor\\
+&=((k\cdot q)\text{ mod }2^w)\gg(w-p)
+\end{flalign}
+$$
+**Hashing universale (randomizzato)**: invece di avere una singola funzione hash $h$, si ha un insieme $\mathcal{H}$ di quest'ultime, all'inizio dell'esecuzione il programma ne sceglierà una casualmente.
+Questo viene fatto per evitare possibili attacchi, dove, sapendo la funzione di hashing di partenza si vanno ad inserire valori che andranno mappati tutti in una singola cella, compromettendo la performance del programma.
+
+---
+## Indirizzamento aperto
+Questo metodo non necessità di strutture dati ausiliarie, tutti gli elementi sono memorizzati nella tabella hash stessa, ogni cella contiene un elemento dell'insieme dinamico oppure `NIL`.
+
+Per cercare un elemento con chiave $k$:
+1. Calcolo $h(k)$ ed esamino il contenuto (**ispezione**)
+2. Se la cella $h(k)$ contiene $k$ o `NIL`, la ricerca ha _successo_
+3. La cella $h(k)$ potrebbe essere diversa da $k$ o `NIL`, allora calcoliamo l'indice di un'altra cella in base alla chiave $k$ ed al numero di ispezioni eseguite finora
+4. Si continua la scansione della tabella finchè non si trova $k$ o `NIL` oppure ho eseguito $m$ ispezioni senza successo (_insuccesso_)
+
+La funzione hash diventa:
+$$h:U\times\underbrace{\{0,...,m-1\}}_\text{Numero di ispezione}\rightarrow\{0,...,m-1\}$$
+$h(k,i)$ rappresenta la posizione della chiave $k$ dopo $i$ ispezioni fallite.
+
+Si richiede che per ogni chiave, la sequenza di ispezioni: $<h(k,0),...,h(k,m-1)>$ sia una permutazione di $<0,...,m-1>$ in modo che ogni posizione della tabella hash possa essere considerata come possibile cella in cui inserire una nuova chiave mentre la tabella si riempie.
+
+**Ipotesi**: per semplicità si assuma che gli elementi della tabella hash siano chiavi senza dati satellite, ovvero che contengano solo la chiave.
+
+**Inserimento**:
+- **Post**: restituisce l'indice della tabella ove ha memorizzato la chiave $k$ oppure segnala un errore se la tabella è piena
+```
+hashInsert(T, k)
+	i = 0
+	found = false
+	repeat
+		j = h(k, i)
+		if T[j] == NIL
+			T[j] = k
+			found = true
+		else
+			i++
+	until found or i == m
+	if found
+		return j
+	else
+		error "Overflow della tabella hash"
+```
+
+**Ricerca**:
+- **Post**: restituisce $j$ se la cella $j$ contiene $k$, oppure restituisce `NIL` se la chiave $k$ si trova nella tabella $T$
+```
+hashSearch(T, k)
+	i = 0
+	found = false
+	repeat
+		j = h(k, i)
+		if T[j] == k
+			found = true
+		else
+			i++
+	until found or T[j] == NIL or i== m
+	if found
+		return j
+	else
+		return NIL
+```
+
