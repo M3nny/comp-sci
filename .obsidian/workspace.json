@@ -4,16 +4,18 @@
     "type": "split",
     "children": [
       {
-        "id": "429b6c236b4ca524",
+        "id": "31f58bed3de577bf",
         "type": "tabs",
         "children": [
           {
-            "id": "ee32eecd172ea57f",
+            "id": "a311503dc42fac49",
             "type": "leaf",
             "state": {
-              "type": "image",
+              "type": "markdown",
               "state": {
-                "file": "Secondo anno/Algoritmi e strutture dati/Mod. 2/Images/Metodo della moltiplicazione semplificato.svg"
+                "file": "Secondo anno/Programmazione ad oggetti/Mod. 2/Guida a Java.md",
+                "mode": "source",
+                "source": false
               }
             }
           }
@@ -83,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Secondo anno/Algoritmi e strutture dati/Mod. 2/Images/Metodo della moltiplicazione semplificato.svg",
+                "file": "Secondo anno/Programmazione ad oggetti/Mod. 2/Guida a Java.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -100,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Secondo anno/Algoritmi e strutture dati/Mod. 2/Images/Metodo della moltiplicazione semplificato.svg",
+                "file": "Secondo anno/Programmazione ad oggetti/Mod. 2/Guida a Java.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -123,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Secondo anno/Algoritmi e strutture dati/Mod. 2/Images/Metodo della moltiplicazione semplificato.svg"
+                "file": "Secondo anno/Programmazione ad oggetti/Mod. 2/Guida a Java.md"
               }
             }
           },
@@ -153,13 +155,26 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "ee32eecd172ea57f",
+  "active": "a311503dc42fac49",
   "lastOpenFiles": [
-    "Secondo anno/Algoritmi e strutture dati/Mod. 2/Tabelle hash.md",
-    "Secondo anno/Algoritmi e strutture dati/Mod. 2/Images/Metodo della moltiplicazione semplificato.svg",
-    "Excalidraw/Drawing 2024-02-19 19.06.28.excalidraw.md",
+    "Secondo anno/Programmazione ad oggetti/Mod. 2/Guida a Java.md",
+    "Excalidraw/Drawing 2024-02-21 19.17.04.excalidraw.md",
+    "Secondo anno/Programmazione ad oggetti/Mod. 2/Images",
+    "Secondo anno/Programmazione ad oggetti/Mod. 2/Images/UML ArrayList.svg",
     "Excalidraw",
+    "Secondo anno/Programmazione ad oggetti/Mod. 1/Methods dispatching.md",
+    "Secondo anno/Programmazione ad oggetti/Mod. 1/Introduzione.md",
+    "Secondo anno/Programmazione ad oggetti/Mod. 2",
+    "Secondo anno/Programmazione ad oggetti/Mod. 1",
+    "Secondo anno/Sistemi operativi/Mod. 2/Processi/Creazione di processi.md",
+    "Secondo anno/Sistemi operativi/Mod. 1/Memoria/Memoria virtuale.md",
+    "Secondo anno/Sistemi operativi/Mod. 1/Processi.md",
     "Secondo anno/Sistemi operativi/Mod. 2/Comunicazione tra processi e thread.md",
+    "Secondo anno/Sistemi operativi/Mod. 2/Processi",
+    "Secondo anno/Basi di dati/Mod. 2/Chiavi e coperture canoniche.md",
+    "Secondo anno/Algoritmi e strutture dati/Mod. 2/Images/Metodo della moltiplicazione semplificato.svg",
+    "Secondo anno/Algoritmi e strutture dati/Mod. 2/Tabelle hash.md",
+    "Excalidraw/Drawing 2024-02-19 19.06.28.excalidraw.md",
     "Primo anno/Secondo semestre/Architettura degli elaboratori mod. 2/CPU con pipeline/Processori superscalari.md",
     "Primo anno/Secondo semestre/Architettura degli elaboratori mod. 2/CPU con pipeline/Previsione del branch, interruzioni e ottimizzazione.md",
     "Primo anno/Secondo semestre/Architettura degli elaboratori mod. 2/CPU con pipeline/Introduzione.md",
@@ -174,32 +189,19 @@
     "Primo anno/Primo semestre/Matematica discreta/Le sommatorie.md",
     "Primo anno/Primo semestre/Matematica discreta/Le relazioni.md",
     "Primo anno/Primo semestre/Matematica discreta/Le funzioni.md",
-    "Primo anno/Primo semestre/Matematica discreta/La Logica.md",
-    "Primo anno/Primo semestre/Matematica discreta/Elementi di calcolo combinatorio.md",
-    "Primo anno/Primo semestre/Matematica discreta/Aritmetica modulare.md",
-    "Primo anno/Secondo semestre/Programmazione e laboratorio/Notes/Riassunto.md",
-    "Primo anno/Secondo semestre/Programmazione e laboratorio/Notes/Guida a C++.md",
-    "Primo anno/Secondo semestre/Programmazione e laboratorio/Notes/Liste.md",
-    "Primo anno/Secondo semestre/Programmazione e laboratorio/Notes/Debugging.md",
-    "Primo anno/Secondo semestre/Programmazione e laboratorio/Notes/Compilazione.md",
     "Secondo anno/Algoritmi e strutture dati/Mod. 2/Tabelle hash",
     "Secondo anno/Programmazione ad oggetti/Mod. 2",
     "Secondo anno/Programmazione ad oggetti/Mod. 1",
     "Secondo anno/Sistemi operativi/Mod. 2/Processi",
     "Secondo anno/Sistemi operativi/Mod. 2",
-    "Secondo anno/Sistemi operativi/Mod. 1",
     "Secondo anno/Algoritmi e strutture dati/Mod. 2/Images/Tabella hash.svg",
     "Secondo anno/Algoritmi e strutture dati/Mod. 2/Images/Indirizzamento diretto.svg",
-    "Secondo anno/Basi di dati/Mod. 1",
-    "Secondo anno/Basi di dati/Mod. 2",
     "Secondo anno/Algoritmi e strutture dati/Mod. 2/Images/Radix sample.svg",
     "Secondo anno/Algoritmi e strutture dati/Mod. 2/Images/Counting sample.svg",
     "Secondo anno/Algoritmi e strutture dati/Mod. 2/Images/Quicksort sample.svg",
     "Secondo anno/Algoritmi e strutture dati/Mod. 2/Images/Insertion sort animation.gif",
     "Secondo anno/Algoritmi e strutture dati/Mod. 2/Images/Quicksort animation.gif",
     "Secondo anno/Algoritmi e strutture dati/Mod. 2/Images/Insertion sample.svg",
-    "Secondo anno/Algoritmi e strutture dati/Mod. 2/Images/Quicksort caso medio.svg",
-    "Secondo anno/Algoritmi e strutture dati/Mod. 2/Ordinamento/Lineare/Counting sort.gif.crdownload",
     "Untitled.canvas"
   ]
 }

@@ -56,10 +56,10 @@ I messaggi possono essere **accodati** sulla porta, quindi l'invio è meno probl
 La comunicazione a scambio di messaggi è adatta nelle situazioni in cui un processo **produce** un dato e un altro lo **consuma**.
 
 ```shell
-> ls
+~ ls
 hello.c  sistemi.md
 
-> ls | grep sistemi
+~ ls | grep sistemi
 sistemi.md
 ```
 
