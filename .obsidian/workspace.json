@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "31f58bed3de577bf",
+        "id": "0b90b55afa7e539e",
         "type": "tabs",
         "children": [
           {
-            "id": "a311503dc42fac49",
+            "id": "f2e03a37b301ad5b",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Secondo anno/Programmazione ad oggetti/Mod. 2/Guida a Java.md",
+                "file": "Secondo anno/Sistemi operativi/Mod. 2/Processi/Esecuzione e terminazione.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Secondo anno/Programmazione ad oggetti/Mod. 2/Guida a Java.md",
+                "file": "Secondo anno/Sistemi operativi/Mod. 2/Processi/Esecuzione e terminazione.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Secondo anno/Programmazione ad oggetti/Mod. 2/Guida a Java.md",
+                "file": "Secondo anno/Sistemi operativi/Mod. 2/Processi/Esecuzione e terminazione.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Secondo anno/Programmazione ad oggetti/Mod. 2/Guida a Java.md"
+                "file": "Secondo anno/Sistemi operativi/Mod. 2/Processi/Esecuzione e terminazione.md"
               }
             }
           },
@@ -155,9 +155,12 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "a311503dc42fac49",
+  "active": "f2e03a37b301ad5b",
   "lastOpenFiles": [
+    "Secondo anno/Sistemi operativi/Mod. 2/Comunicazione tra processi e thread.md",
     "Secondo anno/Programmazione ad oggetti/Mod. 2/Guida a Java.md",
+    "Secondo anno/Sistemi operativi/Mod. 2/Processi/Esecuzione e terminazione.md",
+    "Secondo anno/Sistemi operativi/Mod. 2/Processi/Creazione di processi.md",
     "Excalidraw/Drawing 2024-02-21 19.17.04.excalidraw.md",
     "Secondo anno/Programmazione ad oggetti/Mod. 2/Images",
     "Secondo anno/Programmazione ad oggetti/Mod. 2/Images/UML ArrayList.svg",
@@ -166,10 +169,8 @@
     "Secondo anno/Programmazione ad oggetti/Mod. 1/Introduzione.md",
     "Secondo anno/Programmazione ad oggetti/Mod. 2",
     "Secondo anno/Programmazione ad oggetti/Mod. 1",
-    "Secondo anno/Sistemi operativi/Mod. 2/Processi/Creazione di processi.md",
     "Secondo anno/Sistemi operativi/Mod. 1/Memoria/Memoria virtuale.md",
     "Secondo anno/Sistemi operativi/Mod. 1/Processi.md",
-    "Secondo anno/Sistemi operativi/Mod. 2/Comunicazione tra processi e thread.md",
     "Secondo anno/Sistemi operativi/Mod. 2/Processi",
     "Secondo anno/Basi di dati/Mod. 2/Chiavi e coperture canoniche.md",
     "Secondo anno/Algoritmi e strutture dati/Mod. 2/Images/Metodo della moltiplicazione semplificato.svg",

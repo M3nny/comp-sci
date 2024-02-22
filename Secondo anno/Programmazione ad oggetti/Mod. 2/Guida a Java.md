@@ -48,8 +48,8 @@ Dog fido = new Dog (20, false);
 Dog pippo = fido; // fido si chiama anche pippo ora
 Animal pluto = new Dog (40, true);
 
-// Animal non possiede il metodo bark()
-// errore di compilazione a causa del dispatch statico
+// errore di compilazione: Animal non possiede il metodo bark()
+// bisogna eseguire il casting a Dog
 pluto.bark();
 
 // viene invocato eat di Dog a causa del dispatch dinamico
@@ -76,3 +76,52 @@ Consideriamo `Collection`, se si fosse usato `Object` avremmo potuto metterci de
 
 >`contains(Object o)` di `Collection` è un rimasuglio di java originale che è rimasto senza generics per 10 anni (dovuto quindi alla retro-compatibilità).
 
+## Eccezioni
+Possiamo decidere che tipo di eccezione lanciare in base ad alcuni fattori:
+**Checked**:
+- Quando avviene è possibile gestirla
+- Generalmente avviene poche volte
+- Comporta un try-catch ad ogni sua invocazione per sapere se è andata a buon fine
+**Unchecked**:
+- L'anomalia non è in nostro controllo
+- L'anomalia avviene poco spesso
+- Non serve dichiarare che si lancia l'eccezione
+
+Inoltre quando usiamo una eccezione _checked_, bisogna estenderla da `Exception` (secondo lo standard), e poi è necessario riportare a cascata sulle funzioni che la chiamano che anch'esse lanciano quel tipo di eccezione.
+È possibile estendere anche `RuntimeException` per le eccezioni _unchecked_, però generalmente non è richiesto.
+
+### Classi anonime
+Una classe **anonima** (o nested) serve solo agli scopi di qualche funzione della classe enclosing, solitamente viene messa come `private`.
+
+Non va messa `static` perchè altrimenti non avrebbe la visibilità delle funzioni della classe enclosing, questo è dovuto al fatto che una classe statica non possiede `this.` della classe enclosing nello scope (possiede comunque il proprio `this`).
+
+```java
+public class ArrayList<T> implements List<T> {
+	public boolean size() {...}
+	public T get(int i) {...}
+	
+	private class MyIterator implements Iterator<T> {
+		private int pos = 0;
+		
+		@Override
+		public boolean hasNext() {
+			// ArrayList.this.size()
+			return pos < size();
+		}
+		
+		@Override
+		public T next() {
+			// ArrayList.this.get()
+			return get(pos++);
+		}
+	}
+	
+	public Iterator<T> iterator() {
+		return MyIterator(); // subsume a Iterator
+    }
+}
+```
+
+È possibile chiamare le funzioni della classe enclosing senza senza dover specificare la **full qualification**: `<enclosing_class>.this.<func>()`.
+
+Non specificare un costruttore chiamerà il **default constructor** il quale chiamerà i default constructor di tutti i campi dell'oggetto in questione (gli `int` ad esempio li inizializza a $0$).
