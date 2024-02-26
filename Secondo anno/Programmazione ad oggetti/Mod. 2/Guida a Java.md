@@ -90,38 +90,22 @@ Possiamo decidere che tipo di eccezione lanciare in base ad alcuni fattori:
 Inoltre quando usiamo una eccezione _checked_, bisogna estenderla da `Exception` (secondo lo standard), e poi è necessario riportare a cascata sulle funzioni che la chiamano che anch'esse lanciano quel tipo di eccezione.
 È possibile estendere anche `RuntimeException` per le eccezioni _unchecked_, però generalmente non è richiesto.
 
-### Classi anonime
-Una classe **anonima** (o nested) serve solo agli scopi di qualche funzione della classe enclosing, solitamente viene messa come `private`.
+### Oggetti in memoria
+Un oggetto occuperà in memoria:
+- La somma della dimensione dei suoi campi, dove:
+	- Tutti i **reference type** occupano 8 byte (puntatore per architetture a 64 bit)
+	- I tipi **primitivi** occupano la loro grandezza rispettiva (e.g. `int`: 4 byte)
+- **Virtual table**
 
-Non va messa `static` perchè altrimenti non avrebbe la visibilità delle funzioni della classe enclosing, questo è dovuto al fatto che una classe statica non possiede `this.` della classe enclosing nello scope (possiede comunque il proprio `this`).
+>[!Virtual table]
+>Java per garantire il dynamic dispatching fa tenere in memoria agli oggetti la propria **virtual table**, la quale contiene tanti puntatori quanti sono i metodi dell'oggetto in questione.
 
-```java
-public class ArrayList<T> implements List<T> {
-	public boolean size() {...}
-	public T get(int i) {...}
-	
-	private class MyIterator implements Iterator<T> {
-		private int pos = 0;
-		
-		@Override
-		public boolean hasNext() {
-			// ArrayList.this.size()
-			return pos < size();
-		}
-		
-		@Override
-		public T next() {
-			// ArrayList.this.get()
-			return get(pos++);
-		}
-	}
-	
-	public Iterator<T> iterator() {
-		return MyIterator(); // subsume a Iterator
-    }
-}
-```
+Quando viene chiamata una funzione dell'oggetto, viene eseguita una `jump` all'indirizzo presente nella _virtual table_, così anche in caso di _subsumption_, l'oggetto chiamerà la funzione corretta, questo perchè quando viene passato ad una funzione, assieme ai suoi campi viene passata anche la _virtual table_ con i suoi metodi specifici.
 
-È possibile chiamare le funzioni della classe enclosing senza senza dover specificare la **full qualification**: `<enclosing_class>.this.<func>()`.
+>I costruttori sono fuori dalla virtual table, in quanto gli oggetti non possono essere costruiti polimorficamente, questo significa che a destra dell'operatore di assegnamento viene sempre specificato il tipo.
 
-Non specificare un costruttore chiamerà il **default constructor** il quale chiamerà i default constructor di tutti i campi dell'oggetto in questione (gli `int` ad esempio li inizializza a $0$).
+Quando viene chiamato un costruttore, esso _non inizializza_ i campi, li _riassegna_, infatti i campi vengono inizializzati dal compilatore con il loro valore di default:
+- Tipi numerici: `0`
+- Booleani: `false`
+- Reference type: `null`
+

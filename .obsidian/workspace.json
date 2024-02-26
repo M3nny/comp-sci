@@ -4,19 +4,15 @@
     "type": "split",
     "children": [
       {
-        "id": "0b90b55afa7e539e",
+        "id": "8c670039e42619cd",
         "type": "tabs",
         "children": [
           {
-            "id": "f2e03a37b301ad5b",
+            "id": "8549f69eab0a3afe",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Secondo anno/Sistemi operativi/Mod. 2/Processi/Esecuzione e terminazione.md",
-                "mode": "source",
-                "source": false
-              }
+              "type": "empty",
+              "state": {}
             }
           }
         ]
@@ -85,7 +81,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Secondo anno/Sistemi operativi/Mod. 2/Processi/Esecuzione e terminazione.md",
+                "file": "Secondo anno/Basi di dati/Mod. 2/Decomposizione.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +98,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Secondo anno/Sistemi operativi/Mod. 2/Processi/Esecuzione e terminazione.md",
+                "file": "Secondo anno/Basi di dati/Mod. 2/Decomposizione.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +121,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Secondo anno/Sistemi operativi/Mod. 2/Processi/Esecuzione e terminazione.md"
+                "file": "Secondo anno/Basi di dati/Mod. 2/Decomposizione.md"
               }
             }
           },
@@ -155,11 +151,15 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "f2e03a37b301ad5b",
+  "active": "a1163d9af64d6878",
   "lastOpenFiles": [
-    "Secondo anno/Sistemi operativi/Mod. 2/Comunicazione tra processi e thread.md",
     "Secondo anno/Programmazione ad oggetti/Mod. 2/Guida a Java.md",
+    "Secondo anno/Programmazione ad oggetti/Mod. 2/Tipi di classi.md",
+    "Secondo anno/Basi di dati/Mod. 2/Decomposizione.md",
+    "Secondo anno/Basi di dati/Mod. 2/Chiavi e coperture canoniche.md",
+    "Secondo anno/Basi di dati/Mod. 2/Dipendenze funzionali.md",
     "Secondo anno/Sistemi operativi/Mod. 2/Processi/Esecuzione e terminazione.md",
+    "Secondo anno/Sistemi operativi/Mod. 2/Comunicazione tra processi e thread.md",
     "Secondo anno/Sistemi operativi/Mod. 2/Processi/Creazione di processi.md",
     "Excalidraw/Drawing 2024-02-21 19.17.04.excalidraw.md",
     "Secondo anno/Programmazione ad oggetti/Mod. 2/Images",
@@ -172,7 +172,6 @@
     "Secondo anno/Sistemi operativi/Mod. 1/Memoria/Memoria virtuale.md",
     "Secondo anno/Sistemi operativi/Mod. 1/Processi.md",
     "Secondo anno/Sistemi operativi/Mod. 2/Processi",
-    "Secondo anno/Basi di dati/Mod. 2/Chiavi e coperture canoniche.md",
     "Secondo anno/Algoritmi e strutture dati/Mod. 2/Images/Metodo della moltiplicazione semplificato.svg",
     "Secondo anno/Algoritmi e strutture dati/Mod. 2/Tabelle hash.md",
     "Excalidraw/Drawing 2024-02-19 19.06.28.excalidraw.md",
@@ -187,9 +186,6 @@
     "Primo anno/Primo semestre/Matematica discreta/Regole di divisibilità.md",
     "Primo anno/Primo semestre/Matematica discreta/Numeri primi.md",
     "Primo anno/Primo semestre/Matematica discreta/mcm e MCD.md",
-    "Primo anno/Primo semestre/Matematica discreta/Le sommatorie.md",
-    "Primo anno/Primo semestre/Matematica discreta/Le relazioni.md",
-    "Primo anno/Primo semestre/Matematica discreta/Le funzioni.md",
     "Secondo anno/Algoritmi e strutture dati/Mod. 2/Tabelle hash",
     "Secondo anno/Programmazione ad oggetti/Mod. 2",
     "Secondo anno/Programmazione ad oggetti/Mod. 1",
