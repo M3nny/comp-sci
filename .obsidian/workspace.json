@@ -11,8 +11,12 @@
             "id": "8549f69eab0a3afe",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {}
+              "type": "markdown",
+              "state": {
+                "file": "Secondo anno/Programmazione ad oggetti/Mod. 2/Guida a Java.md",
+                "mode": "source",
+                "source": false
+              }
             }
           }
         ]
@@ -81,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Secondo anno/Basi di dati/Mod. 2/Decomposizione.md",
+                "file": "Secondo anno/Programmazione ad oggetti/Mod. 2/Guida a Java.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -98,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Secondo anno/Basi di dati/Mod. 2/Decomposizione.md",
+                "file": "Secondo anno/Programmazione ad oggetti/Mod. 2/Guida a Java.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -121,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Secondo anno/Basi di dati/Mod. 2/Decomposizione.md"
+                "file": "Secondo anno/Programmazione ad oggetti/Mod. 2/Guida a Java.md"
               }
             }
           },
@@ -151,9 +155,12 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "a1163d9af64d6878",
+  "active": "8549f69eab0a3afe",
   "lastOpenFiles": [
+    "Secondo anno/Interazione uomo-macchina/L'uomo.md",
     "Secondo anno/Programmazione ad oggetti/Mod. 2/Guida a Java.md",
+    "Secondo anno/Interazione uomo macchina.md",
+    "Secondo anno/Interazione uomo-macchina",
     "Secondo anno/Programmazione ad oggetti/Mod. 2/Tipi di classi.md",
     "Secondo anno/Basi di dati/Mod. 2/Decomposizione.md",
     "Secondo anno/Basi di dati/Mod. 2/Chiavi e coperture canoniche.md",
@@ -184,13 +191,10 @@
     "Primo anno/Secondo semestre/Architettura degli elaboratori mod. 2/Assembly/Introduzione.md",
     "Primo anno/Secondo semestre/Architettura degli elaboratori mod. 2/Assembly/Costrutti principali.md",
     "Primo anno/Primo semestre/Matematica discreta/Regole di divisibilità.md",
-    "Primo anno/Primo semestre/Matematica discreta/Numeri primi.md",
-    "Primo anno/Primo semestre/Matematica discreta/mcm e MCD.md",
     "Secondo anno/Algoritmi e strutture dati/Mod. 2/Tabelle hash",
     "Secondo anno/Programmazione ad oggetti/Mod. 2",
     "Secondo anno/Programmazione ad oggetti/Mod. 1",
     "Secondo anno/Sistemi operativi/Mod. 2/Processi",
-    "Secondo anno/Sistemi operativi/Mod. 2",
     "Secondo anno/Algoritmi e strutture dati/Mod. 2/Images/Tabella hash.svg",
     "Secondo anno/Algoritmi e strutture dati/Mod. 2/Images/Indirizzamento diretto.svg",
     "Secondo anno/Algoritmi e strutture dati/Mod. 2/Images/Radix sample.svg",

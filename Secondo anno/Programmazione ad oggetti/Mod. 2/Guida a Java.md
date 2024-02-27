@@ -22,6 +22,7 @@ Ciò che differenzia un linguaggio ad oggetti dagli altri è il **polimorfismo**
 >- **Sussunzione**: dato un concetto dettagliato ne sussumo uno più generico
 
 Una classe è un **tipo**, una variabile è la locazione di memoria dove verrà istanziato l'**oggetto**.
+Un **campo** è diverso da una variabile, in quanto esso ha un modificatore di visibilità e fa parte dello stato dell'oggetto.
 
 Tutti gli oggetti vengono passati per **reference**, mentre i tipi primitivi per **copia**.
 
@@ -108,4 +109,15 @@ Quando viene chiamato un costruttore, esso _non inizializza_ i campi, li _riasse
 - Tipi numerici: `0`
 - Booleani: `false`
 - Reference type: `null`
+
+### Operatori di uguaglianza
+L'operatore `==` fa un confronto "shallow", ovvero:
+- Reference type: controlla se sono lo stesso puntatore
+- Tipi primitivi: confronta il loro valore
+
+è _polimorfo omogeneo_, questo vuol dire che esegue l'operazione (uguaglianza) su due tipi uguali.
+
+
+Il metodo `.equals`: fa un confronto "deep", ovvero oltre a fare `==` controlla se gli stati dei due oggetti confrontati sono uguali.
+è _polimorfo eterogeneo_, questo vuol dire che il tipo che chiama il metodo ed il parametro passato possono essere di tipo diverso.
 

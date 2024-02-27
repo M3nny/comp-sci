@@ -72,7 +72,8 @@ Se la static nested class fosse stata top-level, verrebbe chiamata allo stesso m
 Farla globale però non avrebbe senso, in quanto inquinerebbe il package con una classe "inutile" in quanto usata solo allo scopo di ritornare l'iteratore.
 
 ### Anonima
-- È può essere usata solo nel `return`
+- Crea direttamente un oggetto
+- Porta con sè i campi definiti
 - Si comporta come una normale nested class
 ```java
 public class ArrayList<T> implements List<T> {
@@ -81,7 +82,7 @@ public class ArrayList<T> implements List<T> {
 	
 	@Override
     public Iterator<T> iterator() {
-	    return new Iterator<T>() {
+	    return new Iterator<T>() { // closure
 		    private int pos = 0;
 		    
             @Override
@@ -97,3 +98,6 @@ public class ArrayList<T> implements List<T> {
     }
 }
 ```
+
+Aggiungere metodi non avrebbe senso perchè darebbe errore a compile time nel momento in cui si prova ad invocarli (non sono definiti in `Iterator<T>`).
+
