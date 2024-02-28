@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "8c670039e42619cd",
+        "id": "4d5a36913cf17209",
         "type": "tabs",
         "children": [
           {
-            "id": "8549f69eab0a3afe",
+            "id": "21fa773b35c98b18",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Secondo anno/Programmazione ad oggetti/Mod. 2/Guida a Java.md",
+                "file": "Secondo anno/Algoritmi e strutture dati/Mod. 2/Tabelle hash/Indirizzamento aperto.md",
                 "mode": "source",
                 "source": false
               }
@@ -69,7 +69,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 336.5124969482422
+    "width": 336.5124969482422,
+    "collapsed": true
   },
   "right": {
     "id": "282a9548711da6a0",
@@ -85,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Secondo anno/Programmazione ad oggetti/Mod. 2/Guida a Java.md",
+                "file": "Secondo anno/Algoritmi e strutture dati/Mod. 2/Tabelle hash/Indirizzamento aperto.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Secondo anno/Programmazione ad oggetti/Mod. 2/Guida a Java.md",
+                "file": "Secondo anno/Algoritmi e strutture dati/Mod. 2/Tabelle hash/Indirizzamento aperto.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +126,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Secondo anno/Programmazione ad oggetti/Mod. 2/Guida a Java.md"
+                "file": "Secondo anno/Algoritmi e strutture dati/Mod. 2/Tabelle hash/Indirizzamento aperto.md"
               }
             }
           },
@@ -155,10 +156,21 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "8549f69eab0a3afe",
+  "active": "21fa773b35c98b18",
   "lastOpenFiles": [
-    "Secondo anno/Interazione uomo-macchina/L'uomo.md",
+    "Secondo anno/Algoritmi e strutture dati/Mod. 2/Tabelle hash/Concatenamento.md",
+    "Secondo anno/Algoritmi e strutture dati/Mod. 2/Tabelle hash/Indirizzamento aperto.md",
+    "Excalidraw/Drawing 2024-02-28 09.33.59.excalidraw.md",
+    "Secondo anno/Algoritmi e strutture dati/Mod. 2/Images/Ispezione lineare.svg",
+    "Secondo anno/Algoritmi e strutture dati/Mod. 2/Tabelle hash/Funzioni hash.md",
+    "Excalidraw/Drawing 2024-02-28 09.00.01.excalidraw.md",
+    "Secondo anno/Algoritmi e strutture dati/Mod. 2/Images/Cancellazione indirizzamento aperto.svg",
+    "Excalidraw",
+    "Secondo anno/Algoritmi e strutture dati/Mod. 2/Tabelle hash/Tabelle ad indirizzamento diretto.md",
+    "Secondo anno/Algoritmi e strutture dati/Mod. 2/Tabelle hash.md",
+    "Secondo anno/Algoritmi e strutture dati/Mod. 2/Tabelle hash",
     "Secondo anno/Programmazione ad oggetti/Mod. 2/Guida a Java.md",
+    "Secondo anno/Interazione uomo-macchina/L'uomo.md",
     "Secondo anno/Interazione uomo macchina.md",
     "Secondo anno/Interazione uomo-macchina",
     "Secondo anno/Programmazione ad oggetti/Mod. 2/Tipi di classi.md",
@@ -171,7 +183,6 @@
     "Excalidraw/Drawing 2024-02-21 19.17.04.excalidraw.md",
     "Secondo anno/Programmazione ad oggetti/Mod. 2/Images",
     "Secondo anno/Programmazione ad oggetti/Mod. 2/Images/UML ArrayList.svg",
-    "Excalidraw",
     "Secondo anno/Programmazione ad oggetti/Mod. 1/Methods dispatching.md",
     "Secondo anno/Programmazione ad oggetti/Mod. 1/Introduzione.md",
     "Secondo anno/Programmazione ad oggetti/Mod. 2",
@@ -180,29 +191,18 @@
     "Secondo anno/Sistemi operativi/Mod. 1/Processi.md",
     "Secondo anno/Sistemi operativi/Mod. 2/Processi",
     "Secondo anno/Algoritmi e strutture dati/Mod. 2/Images/Metodo della moltiplicazione semplificato.svg",
-    "Secondo anno/Algoritmi e strutture dati/Mod. 2/Tabelle hash.md",
     "Excalidraw/Drawing 2024-02-19 19.06.28.excalidraw.md",
     "Primo anno/Secondo semestre/Architettura degli elaboratori mod. 2/CPU con pipeline/Processori superscalari.md",
     "Primo anno/Secondo semestre/Architettura degli elaboratori mod. 2/CPU con pipeline/Previsione del branch, interruzioni e ottimizzazione.md",
-    "Primo anno/Secondo semestre/Architettura degli elaboratori mod. 2/CPU con pipeline/Introduzione.md",
-    "Primo anno/Secondo semestre/Architettura degli elaboratori mod. 2/CPU con pipeline/Implementazione.md",
-    "Primo anno/Secondo semestre/Architettura degli elaboratori mod. 2/CPU con pipeline/Dipendenze RAW.md",
-    "Primo anno/Secondo semestre/Architettura degli elaboratori mod. 2/Riassunto.md",
-    "Primo anno/Secondo semestre/Architettura degli elaboratori mod. 2/Assembly/Introduzione.md",
-    "Primo anno/Secondo semestre/Architettura degli elaboratori mod. 2/Assembly/Costrutti principali.md",
-    "Primo anno/Primo semestre/Matematica discreta/Regole di divisibilità.md",
     "Secondo anno/Algoritmi e strutture dati/Mod. 2/Tabelle hash",
     "Secondo anno/Programmazione ad oggetti/Mod. 2",
     "Secondo anno/Programmazione ad oggetti/Mod. 1",
-    "Secondo anno/Sistemi operativi/Mod. 2/Processi",
     "Secondo anno/Algoritmi e strutture dati/Mod. 2/Images/Tabella hash.svg",
     "Secondo anno/Algoritmi e strutture dati/Mod. 2/Images/Indirizzamento diretto.svg",
     "Secondo anno/Algoritmi e strutture dati/Mod. 2/Images/Radix sample.svg",
     "Secondo anno/Algoritmi e strutture dati/Mod. 2/Images/Counting sample.svg",
     "Secondo anno/Algoritmi e strutture dati/Mod. 2/Images/Quicksort sample.svg",
     "Secondo anno/Algoritmi e strutture dati/Mod. 2/Images/Insertion sort animation.gif",
-    "Secondo anno/Algoritmi e strutture dati/Mod. 2/Images/Quicksort animation.gif",
-    "Secondo anno/Algoritmi e strutture dati/Mod. 2/Images/Insertion sample.svg",
     "Untitled.canvas"
   ]
 }
