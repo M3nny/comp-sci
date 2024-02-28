@@ -135,13 +135,14 @@ I passaggi per trovarne una sono i seguenti:
 >Trovare una copertura canonica per:
 >$G=\{A\rightarrow BC, B\rightarrow C, A\rightarrow B, AB\rightarrow C\}$.
 >1. $G=\{A\rightarrow B, A\rightarrow C, B\rightarrow C, A\rightarrow B, AB\rightarrow C\}$
->2. $G=\{A\rightarrow B,A\rightarrow C, B\rightarrow C, \cancel{A\rightarrow B}, \cancel{B\rightarrow C}\}$
 >	- L'unica dipendenza che può contenere attributi estranei è $AB\rightarrow C$, $A$ è estraneo perchè non compare in $B_G^+=BC$, per cui va eliminato e si ottiene $B\rightarrow C$
 >	- Elimino i doppioni
->3. $G=\{B\rightarrow C, A\rightarrow B\}$
+>2. $G=\{A\rightarrow B,A\rightarrow C, B\rightarrow C, \cancel{A\rightarrow B}, \cancel{B\rightarrow C}\}$
 >	- $A_{G\setminus\{A\rightarrow B\}}^+=AC$
 >	- $A_{G\setminus\{A\rightarrow C\}}^+=ABC$ elimino $A\rightarrow C$ perchè comunque senza di esso posso derivare tutti gli elementi
 >	- $B_{G\setminus\{B\rightarrow C\}}^+=B$
+>3. $G=\{B\rightarrow C, A\rightarrow B\}$
+
 
 
 

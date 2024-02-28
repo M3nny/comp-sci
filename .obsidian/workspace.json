@@ -4,19 +4,15 @@
     "type": "split",
     "children": [
       {
-        "id": "4d5a36913cf17209",
+        "id": "1b362a71821b301a",
         "type": "tabs",
         "children": [
           {
-            "id": "21fa773b35c98b18",
+            "id": "458e2a5b7f932702",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Secondo anno/Algoritmi e strutture dati/Mod. 2/Tabelle hash/Indirizzamento aperto.md",
-                "mode": "source",
-                "source": false
-              }
+              "type": "empty",
+              "state": {}
             }
           }
         ]
@@ -69,8 +65,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 336.5124969482422,
-    "collapsed": true
+    "width": 336.5124969482422
   },
   "right": {
     "id": "282a9548711da6a0",
@@ -86,7 +81,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Secondo anno/Algoritmi e strutture dati/Mod. 2/Tabelle hash/Indirizzamento aperto.md",
+                "file": "Secondo anno/Basi di dati/Mod. 2/Forme normali.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +98,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Secondo anno/Algoritmi e strutture dati/Mod. 2/Tabelle hash/Indirizzamento aperto.md",
+                "file": "Secondo anno/Basi di dati/Mod. 2/Forme normali.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +121,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Secondo anno/Algoritmi e strutture dati/Mod. 2/Tabelle hash/Indirizzamento aperto.md"
+                "file": "Secondo anno/Basi di dati/Mod. 2/Forme normali.md"
               }
             }
           },
@@ -156,10 +151,14 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "21fa773b35c98b18",
+  "active": "a1163d9af64d6878",
   "lastOpenFiles": [
-    "Secondo anno/Algoritmi e strutture dati/Mod. 2/Tabelle hash/Concatenamento.md",
+    "Secondo anno/Basi di dati/Mod. 2/Chiavi e coperture canoniche.md",
+    "Secondo anno/Basi di dati/Mod. 2/Forme normali.md",
+    "Secondo anno/Basi di dati/Mod. 2/Decomposizione.md",
     "Secondo anno/Algoritmi e strutture dati/Mod. 2/Tabelle hash/Indirizzamento aperto.md",
+    "Secondo anno/Basi di dati/Mod. 2/Dipendenze funzionali.md",
+    "Secondo anno/Algoritmi e strutture dati/Mod. 2/Tabelle hash/Concatenamento.md",
     "Excalidraw/Drawing 2024-02-28 09.33.59.excalidraw.md",
     "Secondo anno/Algoritmi e strutture dati/Mod. 2/Images/Ispezione lineare.svg",
     "Secondo anno/Algoritmi e strutture dati/Mod. 2/Tabelle hash/Funzioni hash.md",
@@ -174,9 +173,6 @@
     "Secondo anno/Interazione uomo macchina.md",
     "Secondo anno/Interazione uomo-macchina",
     "Secondo anno/Programmazione ad oggetti/Mod. 2/Tipi di classi.md",
-    "Secondo anno/Basi di dati/Mod. 2/Decomposizione.md",
-    "Secondo anno/Basi di dati/Mod. 2/Chiavi e coperture canoniche.md",
-    "Secondo anno/Basi di dati/Mod. 2/Dipendenze funzionali.md",
     "Secondo anno/Sistemi operativi/Mod. 2/Processi/Esecuzione e terminazione.md",
     "Secondo anno/Sistemi operativi/Mod. 2/Comunicazione tra processi e thread.md",
     "Secondo anno/Sistemi operativi/Mod. 2/Processi/Creazione di processi.md",
