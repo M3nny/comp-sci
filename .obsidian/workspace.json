@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "1b362a71821b301a",
+        "id": "ffa36eb592a83831",
         "type": "tabs",
         "children": [
           {
-            "id": "458e2a5b7f932702",
+            "id": "eab9279ed7fc8d30",
             "type": "leaf",
             "state": {
               "type": "empty",
@@ -81,7 +81,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Secondo anno/Basi di dati/Mod. 2/Forme normali.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -98,7 +97,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Secondo anno/Basi di dati/Mod. 2/Forme normali.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -120,9 +118,7 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "Secondo anno/Basi di dati/Mod. 2/Forme normali.md"
-              }
+              "state": {}
             }
           },
           {
@@ -153,15 +149,26 @@
   },
   "active": "a1163d9af64d6878",
   "lastOpenFiles": [
+    "Secondo anno/Algoritmi e strutture dati/Mod. 2/Tabelle hash/Indirizzamento aperto.md",
+    "Secondo anno/Algoritmi e strutture dati/Mod. 2/Images/Concatenamento vs indirizzamento aperto.png",
+    "Untitled 1.md",
+    "Secondo anno/Sistemi operativi/Mod. 2/Comunicazione tra processi e thread.md",
+    "Untitled.md",
+    "Secondo anno/Sistemi operativi/Mod. 2/Processi/Segnali.md",
+    "Secondo anno/Sistemi operativi/Mod. 2/Processi/Esecuzione e terminazione.md",
+    "Secondo anno/Sistemi operativi/Mod. 2/Processi/Creazione di processi.md",
+    "Secondo anno/Algoritmi e strutture dati/Mod. 2/Tabelle hash/Funzioni hash.md",
+    "Secondo anno/Algoritmi e strutture dati/Mod. 2/Programmazione dinamica/Approccio dinamico.md",
+    "Secondo anno/Algoritmi e strutture dati/Mod. 2/Alberi/Decomposizione.md",
+    "Secondo anno/Algoritmi e strutture dati/Mod. 1/Fibonacci.md",
+    "Secondo anno/Algoritmi e strutture dati/Mod. 2/Programmazione dinamica",
     "Secondo anno/Basi di dati/Mod. 2/Chiavi e coperture canoniche.md",
     "Secondo anno/Basi di dati/Mod. 2/Forme normali.md",
     "Secondo anno/Basi di dati/Mod. 2/Decomposizione.md",
-    "Secondo anno/Algoritmi e strutture dati/Mod. 2/Tabelle hash/Indirizzamento aperto.md",
     "Secondo anno/Basi di dati/Mod. 2/Dipendenze funzionali.md",
     "Secondo anno/Algoritmi e strutture dati/Mod. 2/Tabelle hash/Concatenamento.md",
     "Excalidraw/Drawing 2024-02-28 09.33.59.excalidraw.md",
     "Secondo anno/Algoritmi e strutture dati/Mod. 2/Images/Ispezione lineare.svg",
-    "Secondo anno/Algoritmi e strutture dati/Mod. 2/Tabelle hash/Funzioni hash.md",
     "Excalidraw/Drawing 2024-02-28 09.00.01.excalidraw.md",
     "Secondo anno/Algoritmi e strutture dati/Mod. 2/Images/Cancellazione indirizzamento aperto.svg",
     "Excalidraw",
@@ -173,32 +180,20 @@
     "Secondo anno/Interazione uomo macchina.md",
     "Secondo anno/Interazione uomo-macchina",
     "Secondo anno/Programmazione ad oggetti/Mod. 2/Tipi di classi.md",
-    "Secondo anno/Sistemi operativi/Mod. 2/Processi/Esecuzione e terminazione.md",
-    "Secondo anno/Sistemi operativi/Mod. 2/Comunicazione tra processi e thread.md",
-    "Secondo anno/Sistemi operativi/Mod. 2/Processi/Creazione di processi.md",
     "Excalidraw/Drawing 2024-02-21 19.17.04.excalidraw.md",
     "Secondo anno/Programmazione ad oggetti/Mod. 2/Images",
     "Secondo anno/Programmazione ad oggetti/Mod. 2/Images/UML ArrayList.svg",
-    "Secondo anno/Programmazione ad oggetti/Mod. 1/Methods dispatching.md",
-    "Secondo anno/Programmazione ad oggetti/Mod. 1/Introduzione.md",
     "Secondo anno/Programmazione ad oggetti/Mod. 2",
     "Secondo anno/Programmazione ad oggetti/Mod. 1",
-    "Secondo anno/Sistemi operativi/Mod. 1/Memoria/Memoria virtuale.md",
-    "Secondo anno/Sistemi operativi/Mod. 1/Processi.md",
     "Secondo anno/Sistemi operativi/Mod. 2/Processi",
     "Secondo anno/Algoritmi e strutture dati/Mod. 2/Images/Metodo della moltiplicazione semplificato.svg",
-    "Excalidraw/Drawing 2024-02-19 19.06.28.excalidraw.md",
-    "Primo anno/Secondo semestre/Architettura degli elaboratori mod. 2/CPU con pipeline/Processori superscalari.md",
-    "Primo anno/Secondo semestre/Architettura degli elaboratori mod. 2/CPU con pipeline/Previsione del branch, interruzioni e ottimizzazione.md",
     "Secondo anno/Algoritmi e strutture dati/Mod. 2/Tabelle hash",
     "Secondo anno/Programmazione ad oggetti/Mod. 2",
-    "Secondo anno/Programmazione ad oggetti/Mod. 1",
     "Secondo anno/Algoritmi e strutture dati/Mod. 2/Images/Tabella hash.svg",
     "Secondo anno/Algoritmi e strutture dati/Mod. 2/Images/Indirizzamento diretto.svg",
     "Secondo anno/Algoritmi e strutture dati/Mod. 2/Images/Radix sample.svg",
     "Secondo anno/Algoritmi e strutture dati/Mod. 2/Images/Counting sample.svg",
     "Secondo anno/Algoritmi e strutture dati/Mod. 2/Images/Quicksort sample.svg",
-    "Secondo anno/Algoritmi e strutture dati/Mod. 2/Images/Insertion sort animation.gif",
     "Untitled.canvas"
   ]
 }

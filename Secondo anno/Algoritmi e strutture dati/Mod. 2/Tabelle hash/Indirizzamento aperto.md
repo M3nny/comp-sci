@@ -178,3 +178,16 @@ Nell'ipotesi di H.U.I., data una tabella hash a indirizzamento aperto con fattor
 **Interpretazione**: se $\alpha$ è costante, una _ricerca con successo_ viene eseguita in tempo medio $O(1)$.
 - Se $\alpha=0.5$ (tabella metà piena), il numero medio di ispezioni è al massimo $\frac{1}{0.5}\log\Big(\frac{1}{1-0.5}\Big)=1.3863$
 
+
+## Confronto tra concatenamento e indirizzamento aperto
+
+![[Concatenamento vs indirizzamento aperto.png]]
+
+Nel grafico sono riportate le collisioni al crescere del fattore di carico $\alpha$ durante l'operazione di ricerca.
+- <span style="color:#E76BF3">Concatenamento: successo</span>
+- <span style="color:#00BF7D">Concatenamento: senza successo</span>
+- <span style="color:#00B0F6">Indirizzamento aperto: successo</span>
+- <span style="color:#EA8331">Indirizzamento aperto: senza successo</span>
+
+È possibile notare che quando $\alpha > \frac{1}{2}$, le tabelle hash con indirizzamento aperto subiscono una grande perdita di performance, per cui è meglio riallocarle su una tabella più grande.
+
