@@ -11,8 +11,12 @@
             "id": "eab9279ed7fc8d30",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {}
+              "type": "markdown",
+              "state": {
+                "file": "Secondo anno/Interazione uomo macchina/L'uomo.md",
+                "mode": "source",
+                "source": false
+              }
             }
           }
         ]
@@ -65,7 +69,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 336.5124969482422
+    "width": 336.5124969482422,
+    "collapsed": true
   },
   "right": {
     "id": "282a9548711da6a0",
@@ -81,6 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "Secondo anno/Interazione uomo macchina/L'uomo.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -97,6 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "Secondo anno/Interazione uomo macchina/L'uomo.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -118,7 +125,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "Secondo anno/Interazione uomo macchina/L'uomo.md"
+              }
             }
           },
           {
@@ -149,6 +158,8 @@
   },
   "active": "a1163d9af64d6878",
   "lastOpenFiles": [
+    "Secondo anno/Interazione uomo macchina/L'uomo.md",
+    "Secondo anno/Interazione uomo macchina",
     "Secondo anno/Algoritmi e strutture dati/Mod. 2/Tabelle hash/Indirizzamento aperto.md",
     "Secondo anno/Algoritmi e strutture dati/Mod. 2/Images/Concatenamento vs indirizzamento aperto.png",
     "Untitled 1.md",
@@ -188,7 +199,6 @@
     "Secondo anno/Sistemi operativi/Mod. 2/Processi",
     "Secondo anno/Algoritmi e strutture dati/Mod. 2/Images/Metodo della moltiplicazione semplificato.svg",
     "Secondo anno/Algoritmi e strutture dati/Mod. 2/Tabelle hash",
-    "Secondo anno/Programmazione ad oggetti/Mod. 2",
     "Secondo anno/Algoritmi e strutture dati/Mod. 2/Images/Tabella hash.svg",
     "Secondo anno/Algoritmi e strutture dati/Mod. 2/Images/Indirizzamento diretto.svg",
     "Secondo anno/Algoritmi e strutture dati/Mod. 2/Images/Radix sample.svg",
