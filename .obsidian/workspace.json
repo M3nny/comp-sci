@@ -4,19 +4,15 @@
     "type": "split",
     "children": [
       {
-        "id": "ffa36eb592a83831",
+        "id": "7459a6b6791e24d4",
         "type": "tabs",
         "children": [
           {
-            "id": "eab9279ed7fc8d30",
+            "id": "172bcc56e0e2e438",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Secondo anno/Interazione uomo macchina/L'uomo.md",
-                "mode": "source",
-                "source": false
-              }
+              "type": "empty",
+              "state": {}
             }
           }
         ]
@@ -69,8 +65,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 336.5124969482422,
-    "collapsed": true
+    "width": 336.5124969482422
   },
   "right": {
     "id": "282a9548711da6a0",
@@ -86,7 +81,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Secondo anno/Interazione uomo macchina/L'uomo.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +97,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Secondo anno/Interazione uomo macchina/L'uomo.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,9 +118,7 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "Secondo anno/Interazione uomo macchina/L'uomo.md"
-              }
+              "state": {}
             }
           },
           {
@@ -156,9 +147,10 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "a1163d9af64d6878",
+  "active": "172bcc56e0e2e438",
   "lastOpenFiles": [
     "Secondo anno/Interazione uomo macchina/L'uomo.md",
+    "Secondo anno/Interazione uomo macchina/La macchina.md",
     "Secondo anno/Interazione uomo macchina",
     "Secondo anno/Algoritmi e strutture dati/Mod. 2/Tabelle hash/Indirizzamento aperto.md",
     "Secondo anno/Algoritmi e strutture dati/Mod. 2/Images/Concatenamento vs indirizzamento aperto.png",
@@ -191,7 +183,6 @@
     "Secondo anno/Interazione uomo macchina.md",
     "Secondo anno/Interazione uomo-macchina",
     "Secondo anno/Programmazione ad oggetti/Mod. 2/Tipi di classi.md",
-    "Excalidraw/Drawing 2024-02-21 19.17.04.excalidraw.md",
     "Secondo anno/Programmazione ad oggetti/Mod. 2/Images",
     "Secondo anno/Programmazione ad oggetti/Mod. 2/Images/UML ArrayList.svg",
     "Secondo anno/Programmazione ad oggetti/Mod. 2",
