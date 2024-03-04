@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "7459a6b6791e24d4",
+        "id": "db38b99ff0193680",
         "type": "tabs",
         "children": [
           {
-            "id": "172bcc56e0e2e438",
+            "id": "ee1df662ac083899",
             "type": "leaf",
             "state": {
               "type": "empty",
@@ -65,7 +65,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 336.5124969482422
+    "width": 336.5124969482422,
+    "collapsed": true
   },
   "right": {
     "id": "282a9548711da6a0",
@@ -147,8 +148,14 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "172bcc56e0e2e438",
+  "active": "a1163d9af64d6878",
   "lastOpenFiles": [
+    "Secondo anno/Algoritmi e strutture dati/Mod. 2/Code di priorità.md",
+    "Secondo anno/Algoritmi e strutture dati/Mod. 2/Images/Albero ricorsione taglio aste.svg",
+    "Secondo anno/Algoritmi e strutture dati/Mod. 2/Programmazione dinamica/Approccio dinamico.md",
+    "Excalidraw/Drawing 2024-03-04 17.51.30.excalidraw.md",
+    "Excalidraw/Drawing 2024-03-04 16.26.17.excalidraw.md",
+    "Excalidraw",
     "Secondo anno/Interazione uomo macchina/L'uomo.md",
     "Secondo anno/Interazione uomo macchina/La macchina.md",
     "Secondo anno/Interazione uomo macchina",
@@ -161,7 +168,6 @@
     "Secondo anno/Sistemi operativi/Mod. 2/Processi/Esecuzione e terminazione.md",
     "Secondo anno/Sistemi operativi/Mod. 2/Processi/Creazione di processi.md",
     "Secondo anno/Algoritmi e strutture dati/Mod. 2/Tabelle hash/Funzioni hash.md",
-    "Secondo anno/Algoritmi e strutture dati/Mod. 2/Programmazione dinamica/Approccio dinamico.md",
     "Secondo anno/Algoritmi e strutture dati/Mod. 2/Alberi/Decomposizione.md",
     "Secondo anno/Algoritmi e strutture dati/Mod. 1/Fibonacci.md",
     "Secondo anno/Algoritmi e strutture dati/Mod. 2/Programmazione dinamica",
@@ -174,15 +180,11 @@
     "Secondo anno/Algoritmi e strutture dati/Mod. 2/Images/Ispezione lineare.svg",
     "Excalidraw/Drawing 2024-02-28 09.00.01.excalidraw.md",
     "Secondo anno/Algoritmi e strutture dati/Mod. 2/Images/Cancellazione indirizzamento aperto.svg",
-    "Excalidraw",
     "Secondo anno/Algoritmi e strutture dati/Mod. 2/Tabelle hash/Tabelle ad indirizzamento diretto.md",
     "Secondo anno/Algoritmi e strutture dati/Mod. 2/Tabelle hash.md",
     "Secondo anno/Algoritmi e strutture dati/Mod. 2/Tabelle hash",
     "Secondo anno/Programmazione ad oggetti/Mod. 2/Guida a Java.md",
-    "Secondo anno/Interazione uomo-macchina/L'uomo.md",
-    "Secondo anno/Interazione uomo macchina.md",
     "Secondo anno/Interazione uomo-macchina",
-    "Secondo anno/Programmazione ad oggetti/Mod. 2/Tipi di classi.md",
     "Secondo anno/Programmazione ad oggetti/Mod. 2/Images",
     "Secondo anno/Programmazione ad oggetti/Mod. 2/Images/UML ArrayList.svg",
     "Secondo anno/Programmazione ad oggetti/Mod. 2",
@@ -193,8 +195,6 @@
     "Secondo anno/Algoritmi e strutture dati/Mod. 2/Images/Tabella hash.svg",
     "Secondo anno/Algoritmi e strutture dati/Mod. 2/Images/Indirizzamento diretto.svg",
     "Secondo anno/Algoritmi e strutture dati/Mod. 2/Images/Radix sample.svg",
-    "Secondo anno/Algoritmi e strutture dati/Mod. 2/Images/Counting sample.svg",
-    "Secondo anno/Algoritmi e strutture dati/Mod. 2/Images/Quicksort sample.svg",
     "Untitled.canvas"
   ]
 }
