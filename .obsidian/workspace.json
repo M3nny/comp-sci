@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "db38b99ff0193680",
+        "id": "508a7a9ee8e4af33",
         "type": "tabs",
         "children": [
           {
-            "id": "ee1df662ac083899",
+            "id": "be2bef66d68c860e",
             "type": "leaf",
             "state": {
               "type": "empty",
@@ -65,8 +65,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 336.5124969482422,
-    "collapsed": true
+    "width": 336.5124969482422
   },
   "right": {
     "id": "282a9548711da6a0",
@@ -150,6 +149,9 @@
   },
   "active": "a1163d9af64d6878",
   "lastOpenFiles": [
+    "Secondo anno/Sistemi operativi/Mod. 2/Processi/Pipe.md",
+    "Secondo anno/Sistemi operativi/Mod. 2/Processi/Esecuzione e terminazione.md",
+    "Secondo anno/Sistemi operativi/Mod. 2/Processi/Segnali.md",
     "Secondo anno/Algoritmi e strutture dati/Mod. 2/Code di priorità.md",
     "Secondo anno/Algoritmi e strutture dati/Mod. 2/Images/Albero ricorsione taglio aste.svg",
     "Secondo anno/Algoritmi e strutture dati/Mod. 2/Programmazione dinamica/Approccio dinamico.md",
@@ -164,8 +166,6 @@
     "Untitled 1.md",
     "Secondo anno/Sistemi operativi/Mod. 2/Comunicazione tra processi e thread.md",
     "Untitled.md",
-    "Secondo anno/Sistemi operativi/Mod. 2/Processi/Segnali.md",
-    "Secondo anno/Sistemi operativi/Mod. 2/Processi/Esecuzione e terminazione.md",
     "Secondo anno/Sistemi operativi/Mod. 2/Processi/Creazione di processi.md",
     "Secondo anno/Algoritmi e strutture dati/Mod. 2/Tabelle hash/Funzioni hash.md",
     "Secondo anno/Algoritmi e strutture dati/Mod. 2/Alberi/Decomposizione.md",
@@ -183,7 +183,6 @@
     "Secondo anno/Algoritmi e strutture dati/Mod. 2/Tabelle hash/Tabelle ad indirizzamento diretto.md",
     "Secondo anno/Algoritmi e strutture dati/Mod. 2/Tabelle hash.md",
     "Secondo anno/Algoritmi e strutture dati/Mod. 2/Tabelle hash",
-    "Secondo anno/Programmazione ad oggetti/Mod. 2/Guida a Java.md",
     "Secondo anno/Interazione uomo-macchina",
     "Secondo anno/Programmazione ad oggetti/Mod. 2/Images",
     "Secondo anno/Programmazione ad oggetti/Mod. 2/Images/UML ArrayList.svg",
