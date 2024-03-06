@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "508a7a9ee8e4af33",
+        "id": "eac868769732b5c0",
         "type": "tabs",
         "children": [
           {
-            "id": "be2bef66d68c860e",
+            "id": "63722334bdec5cd0",
             "type": "leaf",
             "state": {
               "type": "empty",
@@ -81,6 +81,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "Secondo anno/Algoritmi e strutture dati/Mod. 2/Programmazione dinamica/LCS.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -97,6 +98,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "Secondo anno/Algoritmi e strutture dati/Mod. 2/Programmazione dinamica/LCS.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -118,7 +120,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "Secondo anno/Algoritmi e strutture dati/Mod. 2/Programmazione dinamica/LCS.md"
+              }
             }
           },
           {
@@ -149,12 +153,20 @@
   },
   "active": "a1163d9af64d6878",
   "lastOpenFiles": [
+    "Secondo anno/Basi di dati/Mod. 2/Amministrazione/Vincoli di integrità.md",
+    "Secondo anno/Basi di dati/Mod. 1/PostgreSQL/DML.md",
+    "Excalidraw/Drawing 2024-03-06 18.15.03.excalidraw.md",
+    "Secondo anno/Algoritmi e strutture dati/Mod. 2/Programmazione dinamica/Approccio dinamico.md",
+    "Secondo anno/Basi di dati/Mod. 2/Amministrazione",
+    "Secondo anno/Basi di dati/Mod. 2/Normalizzazione",
+    "Secondo anno/Algoritmi e strutture dati/Mod. 2/Programmazione dinamica/LCS.md",
+    "Secondo anno/Algoritmi e strutture dati/Mod. 2/Images/Sottostruttura LCS.svg",
+    "Excalidraw/Drawing 2024-03-06 17.42.23.excalidraw.md",
     "Secondo anno/Sistemi operativi/Mod. 2/Processi/Pipe.md",
     "Secondo anno/Sistemi operativi/Mod. 2/Processi/Esecuzione e terminazione.md",
     "Secondo anno/Sistemi operativi/Mod. 2/Processi/Segnali.md",
     "Secondo anno/Algoritmi e strutture dati/Mod. 2/Code di priorità.md",
     "Secondo anno/Algoritmi e strutture dati/Mod. 2/Images/Albero ricorsione taglio aste.svg",
-    "Secondo anno/Algoritmi e strutture dati/Mod. 2/Programmazione dinamica/Approccio dinamico.md",
     "Excalidraw/Drawing 2024-03-04 17.51.30.excalidraw.md",
     "Excalidraw/Drawing 2024-03-04 16.26.17.excalidraw.md",
     "Excalidraw",
@@ -171,26 +183,19 @@
     "Secondo anno/Algoritmi e strutture dati/Mod. 2/Alberi/Decomposizione.md",
     "Secondo anno/Algoritmi e strutture dati/Mod. 1/Fibonacci.md",
     "Secondo anno/Algoritmi e strutture dati/Mod. 2/Programmazione dinamica",
-    "Secondo anno/Basi di dati/Mod. 2/Chiavi e coperture canoniche.md",
-    "Secondo anno/Basi di dati/Mod. 2/Forme normali.md",
-    "Secondo anno/Basi di dati/Mod. 2/Decomposizione.md",
-    "Secondo anno/Basi di dati/Mod. 2/Dipendenze funzionali.md",
-    "Secondo anno/Algoritmi e strutture dati/Mod. 2/Tabelle hash/Concatenamento.md",
-    "Excalidraw/Drawing 2024-02-28 09.33.59.excalidraw.md",
+    "Secondo anno/Basi di dati/Mod. 2/Normalizzazione/Chiavi e coperture canoniche.md",
+    "Secondo anno/Basi di dati/Mod. 2/Normalizzazione/Forme normali.md",
+    "Secondo anno/Basi di dati/Mod. 2/Normalizzazione/Decomposizione.md",
+    "Secondo anno/Basi di dati/Mod. 2/Normalizzazione/Dipendenze funzionali.md",
     "Secondo anno/Algoritmi e strutture dati/Mod. 2/Images/Ispezione lineare.svg",
-    "Excalidraw/Drawing 2024-02-28 09.00.01.excalidraw.md",
     "Secondo anno/Algoritmi e strutture dati/Mod. 2/Images/Cancellazione indirizzamento aperto.svg",
-    "Secondo anno/Algoritmi e strutture dati/Mod. 2/Tabelle hash/Tabelle ad indirizzamento diretto.md",
-    "Secondo anno/Algoritmi e strutture dati/Mod. 2/Tabelle hash.md",
     "Secondo anno/Algoritmi e strutture dati/Mod. 2/Tabelle hash",
     "Secondo anno/Interazione uomo-macchina",
     "Secondo anno/Programmazione ad oggetti/Mod. 2/Images",
     "Secondo anno/Programmazione ad oggetti/Mod. 2/Images/UML ArrayList.svg",
     "Secondo anno/Programmazione ad oggetti/Mod. 2",
     "Secondo anno/Programmazione ad oggetti/Mod. 1",
-    "Secondo anno/Sistemi operativi/Mod. 2/Processi",
     "Secondo anno/Algoritmi e strutture dati/Mod. 2/Images/Metodo della moltiplicazione semplificato.svg",
-    "Secondo anno/Algoritmi e strutture dati/Mod. 2/Tabelle hash",
     "Secondo anno/Algoritmi e strutture dati/Mod. 2/Images/Tabella hash.svg",
     "Secondo anno/Algoritmi e strutture dati/Mod. 2/Images/Indirizzamento diretto.svg",
     "Secondo anno/Algoritmi e strutture dati/Mod. 2/Images/Radix sample.svg",

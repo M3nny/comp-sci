@@ -1,4 +1,4 @@
-L'obiettivo delle forme normali è garantire che uno schema sia di buona qualità, e viene spesso ottenuto tramite un processo di **normalizzazione** basato su una [[Secondo anno/Basi di dati/Mod. 2/Decomposizione|decomposizione]] dello schema di partenza.
+L'obiettivo delle forme normali è garantire che uno schema sia di buona qualità, e viene spesso ottenuto tramite un processo di **normalizzazione** basato su una [[Secondo anno/Basi di dati/Mod. 2/Normalizzazione/Decomposizione|decomposizione]] dello schema di partenza.
 
 **Proprietà desiderabili**:
 - Lo schema non deve contenere anomalie

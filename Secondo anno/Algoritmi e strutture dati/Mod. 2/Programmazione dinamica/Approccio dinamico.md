@@ -1,7 +1,7 @@
 La **programmazione dinamica** è una tecnica per progettare algoritmi, si applica quando:
 - Il problema si riduce ad un insieme di sotto-problemi più piccoli
 
-Diversamente dal [[Secondo anno/Basi di dati/Mod. 2/Decomposizione|divide et impera]], i sotto-problemi sono **sovrapposti**, questo vuol dire che molti sotto-problemi si ripetono, e nel caso del _divide et impera_ bisognerebbe risolverli ogni volta che ricapitano.
+Diversamente dal [[Secondo anno/Basi di dati/Mod. 2/Normalizzazione/Decomposizione|divide et impera]], i sotto-problemi sono **sovrapposti**, questo vuol dire che molti sotto-problemi si ripetono, e nel caso del _divide et impera_ bisognerebbe risolverli ogni volta che ricapitano.
 
 **Idea**: ogni sotto-problema viene risolto una singola volta, viene memorizzata la sua soluzione e la si riutilizza quando si incontra lo stesso problema.
 
