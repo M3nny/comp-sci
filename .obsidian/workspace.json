@@ -4,19 +4,15 @@
     "type": "split",
     "children": [
       {
-        "id": "a7fa9d487fafac79",
+        "id": "e9b49e3c4c395fbe",
         "type": "tabs",
         "children": [
           {
-            "id": "9b0a9cb3eb9c65c3",
+            "id": "87f86d5cb094712d",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Secondo anno/Basi di dati/Mod. 2/Amministrazione/Trigger.md",
-                "mode": "source",
-                "source": false
-              }
+              "type": "empty",
+              "state": {}
             }
           }
         ]
@@ -86,7 +82,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Secondo anno/Basi di dati/Mod. 2/Amministrazione/Trigger.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +98,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Secondo anno/Basi di dati/Mod. 2/Amministrazione/Trigger.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,9 +119,7 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "Secondo anno/Basi di dati/Mod. 2/Amministrazione/Trigger.md"
-              }
+              "state": {}
             }
           },
           {
@@ -156,11 +148,13 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "9b0a9cb3eb9c65c3",
+  "active": "a1163d9af64d6878",
   "lastOpenFiles": [
-    "Secondo anno/Basi di dati/Mod. 2/Amministrazione/Vincoli di integrità.md",
     "Secondo anno/Basi di dati/Mod. 2/Amministrazione/Trigger.md",
+    "Secondo anno/Algoritmi e strutture dati/Mod. 2/Programmazione dinamica/Approccio dinamico.md",
+    "Secondo anno/Algoritmi e strutture dati/Mod. 2/Programmazione dinamica/Taglio delle aste.md",
     "Secondo anno/Algoritmi e strutture dati/Mod. 2/Programmazione dinamica/LCS.md",
+    "Secondo anno/Basi di dati/Mod. 2/Amministrazione/Vincoli di integrità.md",
     "Secondo anno/Sistemi operativi/Mod. 2/Processi/Pipe.md",
     "Secondo anno/Sistemi operativi/Mod. 2/Processi/Esecuzione e terminazione.md",
     "Secondo anno/Sistemi operativi/Mod. 2/Processi/Segnali.md",
@@ -173,7 +167,6 @@
     "Secondo anno/Algoritmi e strutture dati/Mod. 2/Ordinamento/Merge sort.md",
     "Secondo anno/Basi di dati/Mod. 1/PostgreSQL/DML.md",
     "Excalidraw/Drawing 2024-03-06 18.15.03.excalidraw.md",
-    "Secondo anno/Algoritmi e strutture dati/Mod. 2/Programmazione dinamica/Approccio dinamico.md",
     "Secondo anno/Basi di dati/Mod. 2/Amministrazione",
     "Secondo anno/Basi di dati/Mod. 2/Normalizzazione",
     "Secondo anno/Algoritmi e strutture dati/Mod. 2/Images/Sottostruttura LCS.svg",
@@ -190,7 +183,6 @@
     "Untitled 1.md",
     "Secondo anno/Sistemi operativi/Mod. 2/Comunicazione tra processi e thread.md",
     "Untitled.md",
-    "Secondo anno/Algoritmi e strutture dati/Mod. 2/Alberi/Decomposizione.md",
     "Secondo anno/Algoritmi e strutture dati/Mod. 2/Programmazione dinamica",
     "Secondo anno/Algoritmi e strutture dati/Mod. 2/Images/Ispezione lineare.svg",
     "Secondo anno/Algoritmi e strutture dati/Mod. 2/Images/Cancellazione indirizzamento aperto.svg",

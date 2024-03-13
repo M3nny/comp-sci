@@ -158,3 +158,24 @@ tdLCSaux(X, Y, c, i, j)
 			c[i, j] = max(tdLCSaux(X, Y, c, i-1, j), tdLCSaux(X, Y, c, i, j-1)
 	return c[i, j]
 ```
+
+**Complessità**:
+Il numero complessivo di chiamate ricorsive `tdLCSaux` è $O(m\cdot n)$ nel caso peggiore in quanto ogni sottoproblema è risolto una sola volta ed il costo di tale soluzione è costante (escluso le sottochiamate ricorsive).
+
+Il tempo di esecuzione di `tdLCS` è:
+$$T(n)=\Theta(m\cdot n)+O(m\cdot n)=\Theta(m\cdot n)$$
+
+L'approccio top-down tuttavia risolve $O(m)$ problemi, a differenza dell'approccio bottom-up che ne risolve $\Theta(m\cdot n)$.
+
+Considerando le due stringhe uguali $\text{CANE}$, la tabella $c$ risulta essere:
+
+| $X$ \ $Y$  |  $\epsilon$  | $\text{C}$ | $\text{A}$ | $\text{N}$ | $\text{E}$ |
+|:----------:|:------------:|:----------:|:----------:|:----------:|:----------:|
+| $\epsilon$ | $\checkmark$ |            |            |            |            |
+| $\text{C}$ |              |    $4$     |            |            |            |
+| $\text{A}$ |              |            |    $3$     |            |            |
+| $\text{N}$ |              |            |            |    $2$     |            |
+| $\text{E}$ |              |            |            |            |    $1$     |
+
+>In questo problema, l'approccio top-down, sebbene abbia la stessa complessità asintotica è più efficiente rispetto a quello bottom-up il quale risolverà sempre tutti i sottoproblemi.
+
