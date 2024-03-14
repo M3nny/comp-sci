@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "e9b49e3c4c395fbe",
+        "id": "35acc96f96ac705d",
         "type": "tabs",
         "children": [
           {
-            "id": "87f86d5cb094712d",
+            "id": "5e43f7d664102e21",
             "type": "leaf",
             "state": {
               "type": "empty",
@@ -65,8 +65,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 336.5124969482422,
-    "collapsed": true
+    "width": 336.5124969482422
   },
   "right": {
     "id": "282a9548711da6a0",
@@ -148,8 +147,11 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "a1163d9af64d6878",
+  "active": "5e43f7d664102e21",
   "lastOpenFiles": [
+    "Secondo anno/Sistemi operativi/Mod. 1/Processi.md",
+    "Secondo anno/Sistemi operativi/Mod. 2/Thread/Produttore e consumatore.md",
+    "Secondo anno/Sistemi operativi/Mod. 2/Thread",
     "Secondo anno/Basi di dati/Mod. 2/Amministrazione/Trigger.md",
     "Secondo anno/Algoritmi e strutture dati/Mod. 2/Programmazione dinamica/Approccio dinamico.md",
     "Secondo anno/Algoritmi e strutture dati/Mod. 2/Programmazione dinamica/Taglio delle aste.md",
@@ -181,8 +183,6 @@
     "Secondo anno/Interazione uomo macchina",
     "Secondo anno/Algoritmi e strutture dati/Mod. 2/Images/Concatenamento vs indirizzamento aperto.png",
     "Untitled 1.md",
-    "Secondo anno/Sistemi operativi/Mod. 2/Comunicazione tra processi e thread.md",
-    "Untitled.md",
     "Secondo anno/Algoritmi e strutture dati/Mod. 2/Programmazione dinamica",
     "Secondo anno/Algoritmi e strutture dati/Mod. 2/Images/Ispezione lineare.svg",
     "Secondo anno/Algoritmi e strutture dati/Mod. 2/Images/Cancellazione indirizzamento aperto.svg",
@@ -191,7 +191,6 @@
     "Secondo anno/Programmazione ad oggetti/Mod. 2/Images",
     "Secondo anno/Programmazione ad oggetti/Mod. 2/Images/UML ArrayList.svg",
     "Secondo anno/Programmazione ad oggetti/Mod. 2",
-    "Secondo anno/Programmazione ad oggetti/Mod. 1",
     "Secondo anno/Algoritmi e strutture dati/Mod. 2/Images/Metodo della moltiplicazione semplificato.svg",
     "Secondo anno/Algoritmi e strutture dati/Mod. 2/Images/Tabella hash.svg",
     "Secondo anno/Algoritmi e strutture dati/Mod. 2/Images/Indirizzamento diretto.svg",

@@ -64,6 +64,7 @@ Il sistema mantiene almeno:
 - Un intero che specifica come deve aspettare
 
 Valori di ritorno di `wait` (gestiti dalle macro):
+- `WEXITSTATUS(status)` ritorna il bit di stato con cui è uscito il processo
 - `WIFEXITED(status) == true` se il figlio è uscito normalmente con una `exit`
 - `WIFSIGNALED(status) == true` se il figlio è stato terminato in maniera anomala
 
