@@ -4,19 +4,15 @@
     "type": "split",
     "children": [
       {
-        "id": "35acc96f96ac705d",
+        "id": "b8d647ad38ce2dcb",
         "type": "tabs",
         "children": [
           {
-            "id": "5e43f7d664102e21",
+            "id": "d563fcae09783aff",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Secondo anno/Algoritmi e strutture dati/Mod. 1/Grafi/Introduzione.md",
-                "mode": "source",
-                "source": false
-              }
+              "type": "empty",
+              "state": {}
             }
           }
         ]
@@ -85,7 +81,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Secondo anno/Algoritmi e strutture dati/Mod. 1/Grafi/Introduzione.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +97,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Secondo anno/Algoritmi e strutture dati/Mod. 1/Grafi/Introduzione.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -124,9 +118,7 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "Secondo anno/Algoritmi e strutture dati/Mod. 1/Grafi/Introduzione.md"
-              }
+              "state": {}
             }
           },
           {
@@ -155,10 +147,23 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "5e43f7d664102e21",
+  "active": "d563fcae09783aff",
   "lastOpenFiles": [
-    "Primo anno/Primo semestre/Matematica discreta/Le relazioni.md",
+    "Secondo anno/Sistemi operativi/Mod. 2/Thread/Sezione critica.md",
     "Secondo anno/Algoritmi e strutture dati/Mod. 1/Grafi/Introduzione.md",
+    "Secondo anno/Algoritmi e strutture dati/Mod. 1/Images/Sottografo indotto.svg",
+    "Excalidraw/TEMPLATE GRAFO.excalidraw.md",
+    "Secondo anno/Algoritmi e strutture dati/Mod. 1/Images/Sottografi.svg",
+    "Secondo anno/Algoritmi e strutture dati/Mod. 1/Images/Grafo per matrice incidenza.svg",
+    "Primo anno/Primo semestre/Algebra lineare/Matrici.md",
+    "Secondo anno/Algoritmi e strutture dati/Mod. 1/Images/Grafo orientato.svg",
+    "Secondo anno/Algoritmi e strutture dati/Mod. 1/Images/Lista di adiacenza.svg",
+    "Secondo anno/Algoritmi e strutture dati/Mod. 1/Images/Grafo non orientato.svg",
+    "Secondo anno/Algoritmi e strutture dati/Mod. 1/Images/Plot complessità.png",
+    "Secondo anno/Algoritmi e strutture dati/Mod. 1/Images/Albero delle ricorsioni teorema master.svg",
+    "Excalidraw/Drawing 2024-03-18 19.15.24.excalidraw.md",
+    "Primo anno/Primo semestre/Algebra lineare/Grafi.md",
+    "Primo anno/Primo semestre/Matematica discreta/Le relazioni.md",
     "Secondo anno/Probabilità e statistica/Probabilità elementare.md",
     "Primo anno/Primo semestre/Matematica discreta/Elementi di calcolo combinatorio.md",
     "Secondo anno/Probabilità e statistica/Probabilità condizionata.md",
@@ -166,8 +171,6 @@
     "Secondo anno/Probabilità e statistica/Formulario.md",
     "Secondo anno/Algoritmi e strutture dati/Mod. 1/Complessità di un algoritmo.md",
     "Secondo anno/Algoritmi e strutture dati/Mod. 1/Images/Non confermato 956157.crdownload",
-    "Excalidraw/Drawing 2024-03-18 19.15.24.excalidraw.md",
-    "Secondo anno/Algoritmi e strutture dati/Mod. 1/Images/Grafo orientato.svg",
     "Secondo anno/Algoritmi e strutture dati/Mod. 1/Images/graphviz (1).svg",
     "Excalidraw",
     "Secondo anno/Algoritmi e strutture dati/Mod. 1/Fibonacci.md",
@@ -185,24 +188,13 @@
     "Secondo anno/Sistemi operativi/Mod. 1/Processi.md",
     "Secondo anno/Sistemi operativi/Mod. 2/Thread/Produttore e consumatore.md",
     "Secondo anno/Sistemi operativi/Mod. 2/Thread",
-    "Secondo anno/Algoritmi e strutture dati/Mod. 2/Programmazione dinamica/Approccio dinamico.md",
-    "Secondo anno/Algoritmi e strutture dati/Mod. 2/Programmazione dinamica/Taglio delle aste.md",
-    "Secondo anno/Algoritmi e strutture dati/Mod. 2/Programmazione dinamica/LCS.md",
-    "Secondo anno/Sistemi operativi/Mod. 2/Processi/Pipe.md",
     "Secondo anno/Basi di dati/Mod. 2/Amministrazione",
     "Secondo anno/Basi di dati/Mod. 2/Normalizzazione",
     "Secondo anno/Algoritmi e strutture dati/Mod. 2/Images/Sottostruttura LCS.svg",
-    "Secondo anno/Algoritmi e strutture dati/Mod. 2/Images/Albero ricorsione taglio aste.svg",
     "Secondo anno/Interazione uomo macchina",
-    "Secondo anno/Algoritmi e strutture dati/Mod. 2/Images/Concatenamento vs indirizzamento aperto.png",
     "Secondo anno/Algoritmi e strutture dati/Mod. 2/Programmazione dinamica",
-    "Secondo anno/Algoritmi e strutture dati/Mod. 2/Images/Ispezione lineare.svg",
-    "Secondo anno/Algoritmi e strutture dati/Mod. 2/Images/Cancellazione indirizzamento aperto.svg",
     "Secondo anno/Algoritmi e strutture dati/Mod. 2/Tabelle hash",
     "Secondo anno/Interazione uomo-macchina",
-    "Secondo anno/Programmazione ad oggetti/Mod. 2/Images/UML ArrayList.svg",
-    "Secondo anno/Algoritmi e strutture dati/Mod. 2/Images/Metodo della moltiplicazione semplificato.svg",
-    "Secondo anno/Algoritmi e strutture dati/Mod. 2/Images/Tabella hash.svg",
     "Untitled.canvas"
   ]
 }
