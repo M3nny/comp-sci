@@ -110,9 +110,10 @@ ovvero: i vertici sono un sottoinsieme di quelli originali, e gli archi presenti
 ![[Sottografi.svg]]
 
 ### Sottografi indotti
-Dato un grafo $G=(V,E)$, un **sottografo indotto** $G'=(V',E')$ è definito come:
+Dato un grafo $G=(V,E)$, un **sottografo indotto** $G[V']=(V',E')$ è definito come:
 $$\begin{cases}V'\subseteq V\\E'\boldsymbol= E\cap V'\times V'\end{cases}$$
 a differenza dei sottografi, gli archi presenti sono **tutti** quelli riguardanti solo e soltanto i vertici coinvolti.
+
 Considerando il grafo originale precedente:
 ![[Sottografo indotto.svg]]
 
@@ -130,9 +131,49 @@ Un **ciclo** è una cammino dove $x_0=x_q$, inoltre per avere un ciclo in un gra
 Un grafo viene definito:
 - **Aciclico (o foresta)** se non presenta cicli
 - **Connesso**: se presi due qualsiasi nodi esiste un cammino che li collega
-- **Albero libero** (non radicato): se è _aciclico_ e _connesso_, questo garantisce le seguenti due proprietà:
+- **Albero libero**: se è _aciclico_ e _connesso_, questo garantisce le seguenti due proprietà:
 	1. $m=n-1$
 	2. Il cammino che collega due vertici è unico
+- **Albero radicato**: questo tipo di [[Cos'è un albero|albero]] impone che ci sia una radice, questo genera una gerarchia
 
 
+### Componente connessa
+Dato un grafo $G=(V,E)$, una **componente connessa** di $G$ è un sottoinsieme di vertici $V'$ tale che:
+- Il sottografo indotto $G[V']$ è connesso
+- La componente connessa non deve appartenere ad un'altra più grande, ovvero $V'$ non è contenuto in nessun insieme di vertici che induca ad un sottografo connesso
 
+Un esempio è il seguente grafo, il quale contiene $3$ componenti connesse:
+![[Componenti connesse.svg]]
+**Proprietà**: l'insieme delle componenti connesse di un grafo formano una [[Gli insiemi#Partizione|partizione]] di $V$.
+
+### Tipi di grafi
+- **Grafo vuoto**: indicato da $E_n$, indica un grafo con $0$ archi
+- **Grafo completo**: indicato da $K_n$, indica un grafo con $n^2$ archi se orientato, $\frac{n(n-1)}{2}$ se non orientato
+- **Grafo complemento**: indicato con $\overline{G}=(V,\overline{E})$, si ha $(u,v)\in E\iff (u,v)\in \overline{E}$, praticamente in $\overline{G}$ ci sono gli stessi nodi di $G$, ma ci sono solo gli archi non presenti in $G$, risulta essere vero quindi:
+	- $G$ è completo $\iff$ $\overline{G}$ è vuoto
+	- $G=K_n\iff \overline{G}=E_n$ 
+![[Grafo complemento.svg]]
+- **Grafo bipartito**: si dice tale se gli archi di un insieme di nodi vanno solo a nodi dell'altro insieme, inoltre se ogni nodo del primo insieme è connesso ad ogni altro nodo dell'altro insieme e viceversa, viene chiamato **bipartito completo**
+![[Grafo bipartito completo.svg]]
+>Nel caso di grafo non orientato bipartito completo, esistono $n_1\times n_2$ archi.
+
+### Grado di un grafo
+Dato un grafo non orientato $G=(V,E)$ con $u\in V$,
+$\deg(u)=|N(u)|$, dove $N(u)=\{v\in V|(u,v)\in E\}$.
+![[Grado di un grafo.svg]]
+Non è possibile avere $n$ vertici con grado diverso, in quanto $0\leq \deg(u)\leq n-1$, infatti dovrebbe esiste un nodo con grado $0$ ed uno con grado $n-1$, ma questo è assurdo perchè il primo indica che non è collegato con nessun'altro nodo, mentre il secondo indica che è collegato con tutti.
+
+**Lemma (stretta di mano)** <u>vale solo per grafi non orientati!</u>:
+$$\sum_{u\in V}\deg(u)=2m$$
+inoltre data la **matrice di adiacenze** $A=a_{ij}$ con $i,j\in V$:
+$$\deg(i)=\sum_{j=1}^na_{ij}$$ovvero: il grado di un nodo è dato sommando le righe o le colonne del nodo relativo (per grafo non orientato).
+
+#### Grafo regolare
+$G=(V,E)$ è $k$-**regolare**, se $\forall u\in V$, si ha $\deg(u)=k$, ovvero se tutti i nodi hanno lo stesso grado.
+
+**Proprietà**:
+- $2$-regolare $\implies$ $n=m$
+- $3$-regolare $\implies$ $n$ è pari
+- $4$-regolare $\implies$ $m$ è pari
+
+**Teorema**: Se $G$ è un grafo non orientato, allora il numero di vertici di grado dispari è pari.
