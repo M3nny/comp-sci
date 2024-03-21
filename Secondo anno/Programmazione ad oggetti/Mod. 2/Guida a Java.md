@@ -121,3 +121,29 @@ L'operatore `==` fa un confronto "shallow", ovvero:
 Il metodo `.equals`: fa un confronto "deep", ovvero oltre a fare `==` controlla se gli stati dei due oggetti confrontati sono uguali.
 è _polimorfo eterogeneo_, questo vuol dire che il tipo che chiama il metodo ed il parametro passato possono essere di tipo diverso.
 
+---
+#### Protected o private
+Se un campo viene messo `private`, bisognerà fornire anche un getter e setter (se lo si vuole esporre), oppure lo si mette `protected`, questo facilita la gestione dei campi da parte delle classi figlio, le quali potranno accederci direttamente e non usando dei metodi come qualsiasi altra classe esterna.
+
+In pratica `private` non si usa quasi mai in quanto limita l'estendibilità della classe.
+
+#### Stub o wrapper
+- **Stub**: una funzione che ne chiama un'altra senza aggiungere altro
+- **Wrapper**: oltre a chiamare una funzione già fatta aggiunge qualcosa in più all'elaborazione
+
+L'ereditarietà è una modalità di _stubbing_ automatica, in quanto vengono generati automaticamente i metodi del padre, solo che al posto di usare la classe in cui sono stati definiti si usa `this` che li chiama allo stesso modo.
+
+#### Abstract class o interfaccia
+Inizialmente la differenza tra classi astratte ed interfacce era più ampia, in quanto le prime consentono tutt'ora di dare una definizione di default dei metodi, mentre le interfacce servivano solo per definire firme dei metodi.
+
+Da `Java 8` però vengono i metodi di `default` nelle interfacce, rendendole quasi uguali alle `abstract class`.
+
+Oggi l'unica differenza tra classi astratte ed interfacce è che le classi astratte possono avere **campi**.
+
+#### Const e final
+La keyword `const` in C++ fa parte del tipo specificato, quindi può stare alla sinistra di ogni tipo, mentre `final` ina Java può essere messo solo in posizioni di binding, e quello che fa è disabilitare l'assegnamento, ad esempio:
+```java
+private final List<Pair<K, V>> l = new ArrayList<>();
+```
+questo non impedisce di modificare `ArrayList` con nuovi elementi oppure cancellandone, ma impedisce solo di eseguire `l = ...`.
+
