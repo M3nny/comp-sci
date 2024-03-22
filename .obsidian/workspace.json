@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "37f5adafab434a22",
+        "id": "6db6b6eaae87d3b4",
         "type": "tabs",
         "children": [
           {
-            "id": "7c35359141df93bd",
+            "id": "456e0bc42c655206",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Secondo anno/Basi di dati/Mod. 2/Amministrazione/Sicurezza.md",
+                "file": "Secondo anno/Algoritmi e strutture dati/Mod. 1/Grafi/Introduzione.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Secondo anno/Basi di dati/Mod. 2/Amministrazione/Sicurezza.md",
+                "file": "Secondo anno/Algoritmi e strutture dati/Mod. 1/Grafi/Introduzione.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Secondo anno/Basi di dati/Mod. 2/Amministrazione/Sicurezza.md",
+                "file": "Secondo anno/Algoritmi e strutture dati/Mod. 1/Grafi/Introduzione.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Secondo anno/Basi di dati/Mod. 2/Amministrazione/Sicurezza.md"
+                "file": "Secondo anno/Algoritmi e strutture dati/Mod. 1/Grafi/Introduzione.md"
               }
             }
           },
@@ -155,17 +155,22 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "7c35359141df93bd",
+  "active": "456e0bc42c655206",
   "lastOpenFiles": [
-    "Secondo anno/Programmazione ad oggetti/Mod. 2/Guida a Java.md",
+    "Secondo anno/Algoritmi e strutture dati/Mod. 1/Grafi/Introduzione.md",
+    "Secondo anno/Algoritmi e strutture dati/Mod. 1/Teorema master.md",
+    "Secondo anno/Algoritmi e strutture dati/Mod. 1/Images/Grafi isomorfi pentagono.svg",
+    "Excalidraw/TEMPLATE GRAFO.excalidraw.md",
+    "Secondo anno/Algoritmi e strutture dati/Mod. 1/Images/Grafi non isomorfi.svg",
+    "Secondo anno/Algoritmi e strutture dati/Mod. 1/Images/Grafi isomorfi.svg",
+    "Secondo anno/Algoritmi e strutture dati/Mod. 1/Images/GNO rombo 4.svg",
     "Secondo anno/Basi di dati/Mod. 2/Amministrazione/Sicurezza.md",
+    "Secondo anno/Programmazione ad oggetti/Mod. 2/Guida a Java.md",
     "Secondo anno/Programmazione ad oggetti/Mod. 2/Tipi di classi.md",
     "Secondo anno/Sistemi operativi/Mod. 2/Thread/Thread POSIX.md",
     "Secondo anno/Algoritmi e strutture dati/Mod. 2/Tabelle hash/Concatenamento.md",
-    "Secondo anno/Algoritmi e strutture dati/Mod. 1/Grafi/Introduzione.md",
     "Secondo anno/Algoritmi e strutture dati/Mod. 1/Images/Grado di un grafo.svg",
     "Secondo anno/Algoritmi e strutture dati/Mod. 1/Classi asintotiche.md",
-    "Excalidraw/TEMPLATE GRAFO.excalidraw.md",
     "Secondo anno/Algoritmi e strutture dati/Mod. 1/Images/Grafo bipartito completo.svg",
     "Secondo anno/Algoritmi e strutture dati/Mod. 1/Images/Grafo complemento.svg",
     "Primo anno/Primo semestre/Matematica discreta/Gli insiemi.md",
@@ -176,11 +181,7 @@
     "Secondo anno/Algoritmi e strutture dati/Mod. 2/Tabelle hash/Tabelle ad indirizzamento diretto.md",
     "Secondo anno/Sistemi operativi/Mod. 2/Thread/Sezione critica.md",
     "Secondo anno/Algoritmi e strutture dati/Mod. 1/Images/Sottografo indotto.svg",
-    "Secondo anno/Algoritmi e strutture dati/Mod. 1/Images/Sottografi.svg",
-    "Secondo anno/Algoritmi e strutture dati/Mod. 1/Images/Grafo per matrice incidenza.svg",
     "Primo anno/Primo semestre/Algebra lineare/Matrici.md",
-    "Secondo anno/Algoritmi e strutture dati/Mod. 1/Images/Grafo orientato.svg",
-    "Secondo anno/Algoritmi e strutture dati/Mod. 1/Images/Lista di adiacenza.svg",
     "Excalidraw/Drawing 2024-03-18 19.15.24.excalidraw.md",
     "Primo anno/Primo semestre/Algebra lineare/Grafi.md",
     "Primo anno/Primo semestre/Matematica discreta/Elementi di calcolo combinatorio.md",
@@ -193,7 +194,6 @@
     "Secondo anno/Algoritmi e strutture dati/Mod. 1/Fibonacci.md",
     "Secondo anno/Algoritmi e strutture dati/Mod. 2/Dizionari.md",
     "Secondo anno/Algoritmi e strutture dati/Mod. 2/Strutture dati.md",
-    "Secondo anno/Algoritmi e strutture dati/Mod. 2/Alberi/Cos'è un albero.md",
     "Secondo anno/Algoritmi e strutture dati/Mod. 1/Grafi",
     "Secondo anno/Sistemi operativi/Mod. 2/Thread",
     "Secondo anno/Basi di dati/Mod. 2/Amministrazione",
