@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "6db6b6eaae87d3b4",
+        "id": "88709fad67c11b68",
         "type": "tabs",
         "children": [
           {
-            "id": "456e0bc42c655206",
+            "id": "f18b490c68f9d95a",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Secondo anno/Algoritmi e strutture dati/Mod. 1/Grafi/Introduzione.md",
+                "file": "Secondo anno/Interazione uomo macchina/L'interazione.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Secondo anno/Algoritmi e strutture dati/Mod. 1/Grafi/Introduzione.md",
+                "file": "Secondo anno/Interazione uomo macchina/L'interazione.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Secondo anno/Algoritmi e strutture dati/Mod. 1/Grafi/Introduzione.md",
+                "file": "Secondo anno/Interazione uomo macchina/L'interazione.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Secondo anno/Algoritmi e strutture dati/Mod. 1/Grafi/Introduzione.md"
+                "file": "Secondo anno/Interazione uomo macchina/L'interazione.md"
               }
             }
           },
@@ -155,8 +155,15 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "456e0bc42c655206",
+  "active": "f18b490c68f9d95a",
   "lastOpenFiles": [
+    "Secondo anno/Interazione uomo macchina/La macchina.md",
+    "Secondo anno/Interazione uomo macchina/L'interazione.md",
+    "Secondo anno/Algoritmi e strutture dati/Mod. 2/Ordinamento/Lineare/Counting sort.md",
+    "Secondo anno/Algoritmi e strutture dati/Mod. 2/Tabelle hash/Indirizzamento aperto.md",
+    "Secondo anno/Algoritmi e strutture dati/Mod. 2/Tabelle hash/Tabelle ad indirizzamento diretto.md",
+    "Secondo anno/Algoritmi e strutture dati/Mod. 2/Tabelle hash/Funzioni hash.md",
+    "Secondo anno/Algoritmi e strutture dati/Mod. 2/Tabelle hash/Concatenamento.md",
     "Secondo anno/Algoritmi e strutture dati/Mod. 1/Grafi/Introduzione.md",
     "Secondo anno/Algoritmi e strutture dati/Mod. 1/Teorema master.md",
     "Secondo anno/Algoritmi e strutture dati/Mod. 1/Images/Grafi isomorfi pentagono.svg",
@@ -168,7 +175,6 @@
     "Secondo anno/Programmazione ad oggetti/Mod. 2/Guida a Java.md",
     "Secondo anno/Programmazione ad oggetti/Mod. 2/Tipi di classi.md",
     "Secondo anno/Sistemi operativi/Mod. 2/Thread/Thread POSIX.md",
-    "Secondo anno/Algoritmi e strutture dati/Mod. 2/Tabelle hash/Concatenamento.md",
     "Secondo anno/Algoritmi e strutture dati/Mod. 1/Images/Grado di un grafo.svg",
     "Secondo anno/Algoritmi e strutture dati/Mod. 1/Classi asintotiche.md",
     "Secondo anno/Algoritmi e strutture dati/Mod. 1/Images/Grafo bipartito completo.svg",
@@ -177,8 +183,6 @@
     "Secondo anno/Probabilità e statistica/Probabilità elementare.md",
     "Primo anno/Primo semestre/Matematica discreta/Le relazioni.md",
     "Secondo anno/Algoritmi e strutture dati/Mod. 1/Images/Componenti connesse.svg",
-    "Secondo anno/Algoritmi e strutture dati/Mod. 2/Tabelle hash/Indirizzamento aperto.md",
-    "Secondo anno/Algoritmi e strutture dati/Mod. 2/Tabelle hash/Tabelle ad indirizzamento diretto.md",
     "Secondo anno/Sistemi operativi/Mod. 2/Thread/Sezione critica.md",
     "Secondo anno/Algoritmi e strutture dati/Mod. 1/Images/Sottografo indotto.svg",
     "Primo anno/Primo semestre/Algebra lineare/Matrici.md",
@@ -188,12 +192,8 @@
     "Secondo anno/Probabilità e statistica/Probabilità condizionata.md",
     "Secondo anno/Probabilità e statistica/Costanti caratteristiche.md",
     "Secondo anno/Probabilità e statistica/Formulario.md",
-    "Secondo anno/Algoritmi e strutture dati/Mod. 1/Complessità di un algoritmo.md",
     "Secondo anno/Algoritmi e strutture dati/Mod. 1/Images/Non confermato 956157.crdownload",
     "Excalidraw",
-    "Secondo anno/Algoritmi e strutture dati/Mod. 1/Fibonacci.md",
-    "Secondo anno/Algoritmi e strutture dati/Mod. 2/Dizionari.md",
-    "Secondo anno/Algoritmi e strutture dati/Mod. 2/Strutture dati.md",
     "Secondo anno/Algoritmi e strutture dati/Mod. 1/Grafi",
     "Secondo anno/Sistemi operativi/Mod. 2/Thread",
     "Secondo anno/Basi di dati/Mod. 2/Amministrazione",
