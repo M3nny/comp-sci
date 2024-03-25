@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "d5cedbeafb4b8f0b",
+        "id": "a3edc01c173c1dff",
         "type": "tabs",
         "children": [
           {
-            "id": "144f92153cc9aa77",
+            "id": "8ec8ad09311217cf",
             "type": "leaf",
             "state": {
               "type": "empty",
@@ -147,8 +147,10 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "144f92153cc9aa77",
+  "active": "a1163d9af64d6878",
   "lastOpenFiles": [
+    "Secondo anno/Basi di dati/Mod. 2/Amministrazione/Indici e viste materializzate.md",
+    "Secondo anno/Algoritmi e strutture dati/Mod. 2/Alberi/Alberi binari di ricerca.md",
     "Secondo anno/Algoritmi e strutture dati/Mod. 1/Grafi/Matrici.md",
     "Secondo anno/Algoritmi e strutture dati/Mod. 1/Grafi/Connettività.md",
     "Secondo anno/Algoritmi e strutture dati/Mod. 1/Grafi/Introduzione.md",
@@ -182,8 +184,6 @@
     "Secondo anno/Algoritmi e strutture dati/Mod. 1/Images/Grafo bipartito completo.svg",
     "Secondo anno/Algoritmi e strutture dati/Mod. 1/Images/Grafo complemento.svg",
     "Primo anno/Primo semestre/Matematica discreta/Gli insiemi.md",
-    "Secondo anno/Probabilità e statistica/Probabilità elementare.md",
-    "Primo anno/Primo semestre/Matematica discreta/Le relazioni.md",
     "Secondo anno/Algoritmi e strutture dati/Mod. 1/Images/Non confermato 956157.crdownload",
     "Excalidraw",
     "Secondo anno/Algoritmi e strutture dati/Mod. 1/Grafi",
