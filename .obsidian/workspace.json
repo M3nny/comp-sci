@@ -4,19 +4,15 @@
     "type": "split",
     "children": [
       {
-        "id": "88709fad67c11b68",
+        "id": "d5cedbeafb4b8f0b",
         "type": "tabs",
         "children": [
           {
-            "id": "f18b490c68f9d95a",
+            "id": "144f92153cc9aa77",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Secondo anno/Interazione uomo macchina/L'interazione.md",
-                "mode": "source",
-                "source": false
-              }
+              "type": "empty",
+              "state": {}
             }
           }
         ]
@@ -69,7 +65,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 336.5124969482422
+    "width": 350.5124969482422
   },
   "right": {
     "id": "282a9548711da6a0",
@@ -85,7 +81,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Secondo anno/Interazione uomo macchina/L'interazione.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +97,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Secondo anno/Interazione uomo macchina/L'interazione.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -124,9 +118,7 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "Secondo anno/Interazione uomo macchina/L'interazione.md"
-              }
+              "state": {}
             }
           },
           {
@@ -155,8 +147,20 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "f18b490c68f9d95a",
+  "active": "144f92153cc9aa77",
   "lastOpenFiles": [
+    "Secondo anno/Algoritmi e strutture dati/Mod. 1/Grafi/Matrici.md",
+    "Secondo anno/Algoritmi e strutture dati/Mod. 1/Grafi/Connettività.md",
+    "Secondo anno/Algoritmi e strutture dati/Mod. 1/Grafi/Introduzione.md",
+    "Secondo anno/Probabilità e statistica/Distribuzioni note/Distribuzioni discrete.md",
+    "Secondo anno/Algoritmi e strutture dati/Mod. 1/Grafi/Isomorfismo.md",
+    "Secondo anno/Algoritmi e strutture dati/Mod. 1/Grafi/Grado.md",
+    "Secondo anno/Algoritmi e strutture dati/Mod. 1/Grafi/Tipologie.md",
+    "Secondo anno/Algoritmi e strutture dati/Mod. 1/Complessità di un algoritmo.md",
+    "Secondo anno/Algoritmi e strutture dati/Mod. 1/Images/Clique.svg",
+    "Excalidraw/TEMPLATE GRAFO.excalidraw.md",
+    "Excalidraw/Drawing 2024-03-25 17.47.30.excalidraw.md",
+    "Secondo anno/Algoritmi e strutture dati/Mod. 1/Images/Grafo triangolo.svg",
     "Secondo anno/Interazione uomo macchina/La macchina.md",
     "Secondo anno/Interazione uomo macchina/L'interazione.md",
     "Secondo anno/Algoritmi e strutture dati/Mod. 2/Ordinamento/Lineare/Counting sort.md",
@@ -164,10 +168,8 @@
     "Secondo anno/Algoritmi e strutture dati/Mod. 2/Tabelle hash/Tabelle ad indirizzamento diretto.md",
     "Secondo anno/Algoritmi e strutture dati/Mod. 2/Tabelle hash/Funzioni hash.md",
     "Secondo anno/Algoritmi e strutture dati/Mod. 2/Tabelle hash/Concatenamento.md",
-    "Secondo anno/Algoritmi e strutture dati/Mod. 1/Grafi/Introduzione.md",
     "Secondo anno/Algoritmi e strutture dati/Mod. 1/Teorema master.md",
     "Secondo anno/Algoritmi e strutture dati/Mod. 1/Images/Grafi isomorfi pentagono.svg",
-    "Excalidraw/TEMPLATE GRAFO.excalidraw.md",
     "Secondo anno/Algoritmi e strutture dati/Mod. 1/Images/Grafi non isomorfi.svg",
     "Secondo anno/Algoritmi e strutture dati/Mod. 1/Images/Grafi isomorfi.svg",
     "Secondo anno/Algoritmi e strutture dati/Mod. 1/Images/GNO rombo 4.svg",
@@ -182,16 +184,6 @@
     "Primo anno/Primo semestre/Matematica discreta/Gli insiemi.md",
     "Secondo anno/Probabilità e statistica/Probabilità elementare.md",
     "Primo anno/Primo semestre/Matematica discreta/Le relazioni.md",
-    "Secondo anno/Algoritmi e strutture dati/Mod. 1/Images/Componenti connesse.svg",
-    "Secondo anno/Sistemi operativi/Mod. 2/Thread/Sezione critica.md",
-    "Secondo anno/Algoritmi e strutture dati/Mod. 1/Images/Sottografo indotto.svg",
-    "Primo anno/Primo semestre/Algebra lineare/Matrici.md",
-    "Excalidraw/Drawing 2024-03-18 19.15.24.excalidraw.md",
-    "Primo anno/Primo semestre/Algebra lineare/Grafi.md",
-    "Primo anno/Primo semestre/Matematica discreta/Elementi di calcolo combinatorio.md",
-    "Secondo anno/Probabilità e statistica/Probabilità condizionata.md",
-    "Secondo anno/Probabilità e statistica/Costanti caratteristiche.md",
-    "Secondo anno/Probabilità e statistica/Formulario.md",
     "Secondo anno/Algoritmi e strutture dati/Mod. 1/Images/Non confermato 956157.crdownload",
     "Excalidraw",
     "Secondo anno/Algoritmi e strutture dati/Mod. 1/Grafi",
