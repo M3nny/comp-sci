@@ -4,15 +4,19 @@
     "type": "split",
     "children": [
       {
-        "id": "a3edc01c173c1dff",
+        "id": "29bb70de9d14b9f9",
         "type": "tabs",
         "children": [
           {
-            "id": "8ec8ad09311217cf",
+            "id": "24149a47fb2ccb22",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {}
+              "type": "markdown",
+              "state": {
+                "file": "Secondo anno/Sistemi operativi/Mod. 2/Thread/Semafori.md",
+                "mode": "source",
+                "source": false
+              }
             }
           }
         ]
@@ -65,7 +69,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 350.5124969482422
+    "width": 350.5124969482422,
+    "collapsed": true
   },
   "right": {
     "id": "282a9548711da6a0",
@@ -81,6 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "Secondo anno/Sistemi operativi/Mod. 2/Thread/Semafori.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -97,6 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "Secondo anno/Sistemi operativi/Mod. 2/Thread/Semafori.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -118,7 +125,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "Secondo anno/Sistemi operativi/Mod. 2/Thread/Semafori.md"
+              }
             }
           },
           {
@@ -147,8 +156,12 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "a1163d9af64d6878",
+  "active": "24149a47fb2ccb22",
   "lastOpenFiles": [
+    "Secondo anno/Algoritmi e strutture dati/Mod. 2/Tabelle hash/Indirizzamento aperto.md",
+    "Secondo anno/Sistemi operativi/Mod. 2/Thread/Semafori.md",
+    "Secondo anno/Algoritmi e strutture dati/Mod. 2/Tabelle hash/Tabelle ad indirizzamento diretto.md",
+    "Secondo anno/Algoritmi e strutture dati/Mod. 2/Ordinamento/Lineare/Radix sort.md",
     "Secondo anno/Basi di dati/Mod. 2/Amministrazione/Indici e viste materializzate.md",
     "Secondo anno/Algoritmi e strutture dati/Mod. 2/Alberi/Alberi binari di ricerca.md",
     "Secondo anno/Algoritmi e strutture dati/Mod. 1/Grafi/Matrici.md",
@@ -166,8 +179,6 @@
     "Secondo anno/Interazione uomo macchina/La macchina.md",
     "Secondo anno/Interazione uomo macchina/L'interazione.md",
     "Secondo anno/Algoritmi e strutture dati/Mod. 2/Ordinamento/Lineare/Counting sort.md",
-    "Secondo anno/Algoritmi e strutture dati/Mod. 2/Tabelle hash/Indirizzamento aperto.md",
-    "Secondo anno/Algoritmi e strutture dati/Mod. 2/Tabelle hash/Tabelle ad indirizzamento diretto.md",
     "Secondo anno/Algoritmi e strutture dati/Mod. 2/Tabelle hash/Funzioni hash.md",
     "Secondo anno/Algoritmi e strutture dati/Mod. 2/Tabelle hash/Concatenamento.md",
     "Secondo anno/Algoritmi e strutture dati/Mod. 1/Teorema master.md",
@@ -180,10 +191,8 @@
     "Secondo anno/Programmazione ad oggetti/Mod. 2/Tipi di classi.md",
     "Secondo anno/Sistemi operativi/Mod. 2/Thread/Thread POSIX.md",
     "Secondo anno/Algoritmi e strutture dati/Mod. 1/Images/Grado di un grafo.svg",
-    "Secondo anno/Algoritmi e strutture dati/Mod. 1/Classi asintotiche.md",
     "Secondo anno/Algoritmi e strutture dati/Mod. 1/Images/Grafo bipartito completo.svg",
     "Secondo anno/Algoritmi e strutture dati/Mod. 1/Images/Grafo complemento.svg",
-    "Primo anno/Primo semestre/Matematica discreta/Gli insiemi.md",
     "Secondo anno/Algoritmi e strutture dati/Mod. 1/Images/Non confermato 956157.crdownload",
     "Excalidraw",
     "Secondo anno/Algoritmi e strutture dati/Mod. 1/Grafi",
