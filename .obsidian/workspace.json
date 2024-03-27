@@ -8,7 +8,7 @@
         "type": "tabs",
         "children": [
           {
-            "id": "591a7f69902b77b9",
+            "id": "9c89444667fccf9d",
             "type": "leaf",
             "state": {
               "type": "empty",
@@ -147,8 +147,11 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "591a7f69902b77b9",
+  "active": "9c89444667fccf9d",
   "lastOpenFiles": [
+    "Secondo anno/Basi di dati/Mod. 2/Programmazione/Transazioni.md",
+    "Secondo anno/Basi di dati/Mod. 1/Modello relazionale.md",
+    "Secondo anno/Basi di dati/Mod. 2/Programmazione",
     "Secondo anno/Algoritmi e strutture dati/Mod. 1/Grafi/Connettività e aciclicità.md",
     "Secondo anno/Algoritmi e strutture dati/Mod. 1/Alberi/Minimum Spanning Tree.md",
     "Excalidraw/TEMPLATE GRAFO.excalidraw.md",
@@ -182,7 +185,6 @@
     "Secondo anno/Algoritmi e strutture dati/Mod. 2/Tabelle hash/Concatenamento.md",
     "Secondo anno/Algoritmi e strutture dati/Mod. 1/Teorema master.md",
     "Secondo anno/Basi di dati/Mod. 2/Amministrazione/Sicurezza.md",
-    "Secondo anno/Programmazione ad oggetti/Mod. 2/Guida a Java.md",
     "Secondo anno/Algoritmi e strutture dati/Mod. 1/Images/Grado di un grafo.svg",
     "Secondo anno/Algoritmi e strutture dati/Mod. 1/Images/Non confermato 956157.crdownload",
     "Excalidraw",
@@ -192,7 +194,6 @@
     "Secondo anno/Basi di dati/Mod. 2/Normalizzazione",
     "Secondo anno/Interazione uomo macchina",
     "Secondo anno/Algoritmi e strutture dati/Mod. 2/Programmazione dinamica",
-    "Secondo anno/Algoritmi e strutture dati/Mod. 2/Tabelle hash",
     "Untitled.canvas"
   ]
 }
