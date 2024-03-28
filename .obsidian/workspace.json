@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "59f9b29ddeb03990",
+        "id": "01e5d45d035fb689",
         "type": "tabs",
         "children": [
           {
-            "id": "9c89444667fccf9d",
+            "id": "ae34c6727c216297",
             "type": "leaf",
             "state": {
               "type": "empty",
@@ -120,17 +120,8 @@
               "type": "outline",
               "state": {}
             }
-          },
-          {
-            "id": "3464361bbfd9948f",
-            "type": "leaf",
-            "state": {
-              "type": "advanced-tables-toolbar",
-              "state": {}
-            }
           }
-        ],
-        "currentTab": 4
+        ]
       }
     ],
     "direction": "horizontal",
@@ -143,12 +134,18 @@
       "graph:Open graph view": false,
       "canvas:Create new canvas": true,
       "command-palette:Open command palette": true,
-      "table-editor-obsidian:Advanced Tables Toolbar": false,
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "9c89444667fccf9d",
+  "active": "ae34c6727c216297",
   "lastOpenFiles": [
+    "Secondo anno/Sistemi operativi/Mod. 2/Thread/Semafori POSIX.md",
+    "Secondo anno/Sistemi operativi/Mod. 2/Thread/Semafori.md",
+    "Secondo anno/Sistemi operativi/Mod. 2/Thread/Sezione critica.md",
+    "Secondo anno/Sistemi operativi/Mod. 2/Thread/Thread POSIX.md",
+    "Secondo anno/Programmazione ad oggetti/Mod. 2/Lambda.md",
+    "Secondo anno/Programmazione ad oggetti/Mod. 2/Tipi di classi.md",
+    "Secondo anno/Programmazione ad oggetti/Mod. 2/Guida a Java.md",
     "Secondo anno/Basi di dati/Mod. 2/Programmazione/Transazioni.md",
     "Secondo anno/Basi di dati/Mod. 1/Modello relazionale.md",
     "Secondo anno/Basi di dati/Mod. 2/Programmazione",
@@ -162,7 +159,6 @@
     "Secondo anno/Algoritmi e strutture dati/Mod. 1/Images/Grafi isomorfi.svg",
     "Secondo anno/Algoritmi e strutture dati/Mod. 1/Images/GNO rombo 4.svg",
     "Secondo anno/Algoritmi e strutture dati/Mod. 1/Images/Componenti connesse.svg",
-    "Secondo anno/Sistemi operativi/Mod. 2/Thread/Semafori.md",
     "Secondo anno/Algoritmi e strutture dati/Mod. 2/Tabelle hash/Indirizzamento aperto.md",
     "Secondo anno/Algoritmi e strutture dati/Mod. 2/Tabelle hash/Tabelle ad indirizzamento diretto.md",
     "Secondo anno/Algoritmi e strutture dati/Mod. 2/Ordinamento/Lineare/Radix sort.md",
@@ -179,12 +175,6 @@
     "Excalidraw/Drawing 2024-03-25 17.47.30.excalidraw.md",
     "Secondo anno/Algoritmi e strutture dati/Mod. 1/Images/Grafo triangolo.svg",
     "Secondo anno/Interazione uomo macchina/La macchina.md",
-    "Secondo anno/Interazione uomo macchina/L'interazione.md",
-    "Secondo anno/Algoritmi e strutture dati/Mod. 2/Ordinamento/Lineare/Counting sort.md",
-    "Secondo anno/Algoritmi e strutture dati/Mod. 2/Tabelle hash/Funzioni hash.md",
-    "Secondo anno/Algoritmi e strutture dati/Mod. 2/Tabelle hash/Concatenamento.md",
-    "Secondo anno/Algoritmi e strutture dati/Mod. 1/Teorema master.md",
-    "Secondo anno/Basi di dati/Mod. 2/Amministrazione/Sicurezza.md",
     "Secondo anno/Algoritmi e strutture dati/Mod. 1/Images/Grado di un grafo.svg",
     "Secondo anno/Algoritmi e strutture dati/Mod. 1/Images/Non confermato 956157.crdownload",
     "Excalidraw",

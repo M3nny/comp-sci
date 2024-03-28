@@ -74,7 +74,7 @@ Indici:
 4. Quando tutti i thread hanno finito di accedere alla sezione critica, il valore del semaforo sarà di nuovo $1$
 
 ### Attendere un thread
-Supponiamo che `T2` debba aspettare `T1` prima di eseguire la porzione di codice `< A >`, possiamo procedere come segue:
+Supponiamo che `T2` debba aspettare che `T1` esegua `< A >` prima di eseguire la sua porzione di codice `< D >`, possiamo procedere come segue:
 ```
 semaphore S=0;
 
@@ -129,7 +129,7 @@ con **tanti produttori e consumatori** si potrebbero creare interferenze in scri
 ```c
 semaphore piene=0, vuote=MAX, mutex=1;
 
-Produttore {
+Produttore() {
 	while(1) {
 	    < produce d >
 	    P(vuote); // richiede una cella vuota
@@ -142,7 +142,7 @@ Produttore {
 }
  
 Consumatore() {
-	while( {
+	while(1) {
 	    P(piene); // richiede una cella piena
 	    P(mutex); // entra in sezione critica
 	    d = buffer[preleva];
