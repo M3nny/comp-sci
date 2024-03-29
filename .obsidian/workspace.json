@@ -11,8 +11,12 @@
             "id": "89eaf5a3ede6c023",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {}
+              "type": "markdown",
+              "state": {
+                "file": "Secondo anno/Interazione uomo macchina/Mobile UI.md",
+                "mode": "source",
+                "source": false
+              }
             }
           }
         ]
@@ -65,7 +69,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 350.5124969482422
+    "width": 350.5124969482422,
+    "collapsed": true
   },
   "right": {
     "id": "282a9548711da6a0",
@@ -81,6 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "Secondo anno/Interazione uomo macchina/Mobile UI.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -97,6 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "Secondo anno/Interazione uomo macchina/Mobile UI.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -118,7 +125,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "Secondo anno/Interazione uomo macchina/Mobile UI.md"
+              }
             }
           }
         ]
@@ -137,8 +146,9 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "89eaf5a3ede6c023",
+  "active": "a1163d9af64d6878",
   "lastOpenFiles": [
+    "Secondo anno/Interazione uomo macchina/Mobile UI.md",
     "Secondo anno/Interazione uomo macchina/L'interazione.md",
     "Secondo anno/Sistemi operativi/Mod. 2/Thread/Semafori POSIX.md",
     "Secondo anno/Sistemi operativi/Mod. 2/Thread/Semafori.md",
@@ -173,7 +183,6 @@
     "Secondo anno/Algoritmi e strutture dati/Mod. 1/Grafi/Tipologie.md",
     "Secondo anno/Algoritmi e strutture dati/Mod. 1/Complessità di un algoritmo.md",
     "Secondo anno/Algoritmi e strutture dati/Mod. 1/Images/Clique.svg",
-    "Excalidraw/Drawing 2024-03-25 17.47.30.excalidraw.md",
     "Secondo anno/Algoritmi e strutture dati/Mod. 1/Images/Grafo triangolo.svg",
     "Secondo anno/Algoritmi e strutture dati/Mod. 1/Images/Grado di un grafo.svg",
     "Secondo anno/Algoritmi e strutture dati/Mod. 1/Images/Non confermato 956157.crdownload",
