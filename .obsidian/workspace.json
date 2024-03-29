@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "01e5d45d035fb689",
+        "id": "3b35df22dd54c36e",
         "type": "tabs",
         "children": [
           {
-            "id": "ae34c6727c216297",
+            "id": "89eaf5a3ede6c023",
             "type": "leaf",
             "state": {
               "type": "empty",
@@ -137,8 +137,9 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "ae34c6727c216297",
+  "active": "89eaf5a3ede6c023",
   "lastOpenFiles": [
+    "Secondo anno/Interazione uomo macchina/L'interazione.md",
     "Secondo anno/Sistemi operativi/Mod. 2/Thread/Semafori POSIX.md",
     "Secondo anno/Sistemi operativi/Mod. 2/Thread/Semafori.md",
     "Secondo anno/Sistemi operativi/Mod. 2/Thread/Sezione critica.md",
@@ -174,7 +175,6 @@
     "Secondo anno/Algoritmi e strutture dati/Mod. 1/Images/Clique.svg",
     "Excalidraw/Drawing 2024-03-25 17.47.30.excalidraw.md",
     "Secondo anno/Algoritmi e strutture dati/Mod. 1/Images/Grafo triangolo.svg",
-    "Secondo anno/Interazione uomo macchina/La macchina.md",
     "Secondo anno/Algoritmi e strutture dati/Mod. 1/Images/Grado di un grafo.svg",
     "Secondo anno/Algoritmi e strutture dati/Mod. 1/Images/Non confermato 956157.crdownload",
     "Excalidraw",
