@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "3b35df22dd54c36e",
+        "id": "06aff2f5d2979c01",
         "type": "tabs",
         "children": [
           {
-            "id": "89eaf5a3ede6c023",
+            "id": "6b62beadb0e59b80",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Secondo anno/Interazione uomo macchina/Mobile UI.md",
+                "file": "Secondo anno/Interazione uomo macchina/UI/Sistemi di navigazione.md",
                 "mode": "source",
                 "source": false
               }
@@ -86,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Secondo anno/Interazione uomo macchina/Mobile UI.md",
+                "file": "Secondo anno/Interazione uomo macchina/UI/Sistemi di navigazione.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Secondo anno/Interazione uomo macchina/Mobile UI.md",
+                "file": "Secondo anno/Interazione uomo macchina/UI/Sistemi di navigazione.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +126,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Secondo anno/Interazione uomo macchina/Mobile UI.md"
+                "file": "Secondo anno/Interazione uomo macchina/UI/Sistemi di navigazione.md"
               }
             }
           }
@@ -146,10 +146,16 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "a1163d9af64d6878",
+  "active": "6b62beadb0e59b80",
   "lastOpenFiles": [
-    "Secondo anno/Interazione uomo macchina/Mobile UI.md",
+    "Secondo anno/Interazione uomo macchina/UI/Architettura dell'informazione.md",
+    "Secondo anno/Interazione uomo macchina/UI/Componenti.md",
     "Secondo anno/Interazione uomo macchina/L'interazione.md",
+    "Secondo anno/Interazione uomo macchina/La macchina.md",
+    "Secondo anno/Interazione uomo macchina/L'uomo.md",
+    "Secondo anno/Interazione uomo macchina/UI/Sistemi di navigazione.md",
+    "Secondo anno/Interazione uomo macchina/Mobile UI.md",
+    "Secondo anno/Interazione uomo macchina/UI",
     "Secondo anno/Sistemi operativi/Mod. 2/Thread/Semafori POSIX.md",
     "Secondo anno/Sistemi operativi/Mod. 2/Thread/Semafori.md",
     "Secondo anno/Sistemi operativi/Mod. 2/Thread/Sezione critica.md",
@@ -177,11 +183,6 @@
     "Secondo anno/Algoritmi e strutture dati/Mod. 2/Alberi/Alberi binari di ricerca.md",
     "Secondo anno/Algoritmi e strutture dati/Mod. 1/Grafi/Matrici.md",
     "Secondo anno/Algoritmi e strutture dati/Mod. 1/Grafi/Introduzione.md",
-    "Secondo anno/Probabilità e statistica/Distribuzioni note/Distribuzioni discrete.md",
-    "Secondo anno/Algoritmi e strutture dati/Mod. 1/Grafi/Isomorfismo.md",
-    "Secondo anno/Algoritmi e strutture dati/Mod. 1/Grafi/Grado.md",
-    "Secondo anno/Algoritmi e strutture dati/Mod. 1/Grafi/Tipologie.md",
-    "Secondo anno/Algoritmi e strutture dati/Mod. 1/Complessità di un algoritmo.md",
     "Secondo anno/Algoritmi e strutture dati/Mod. 1/Images/Clique.svg",
     "Secondo anno/Algoritmi e strutture dati/Mod. 1/Images/Grafo triangolo.svg",
     "Secondo anno/Algoritmi e strutture dati/Mod. 1/Images/Grado di un grafo.svg",
@@ -192,7 +193,6 @@
     "Secondo anno/Basi di dati/Mod. 2/Amministrazione",
     "Secondo anno/Basi di dati/Mod. 2/Normalizzazione",
     "Secondo anno/Interazione uomo macchina",
-    "Secondo anno/Algoritmi e strutture dati/Mod. 2/Programmazione dinamica",
     "Untitled.canvas"
   ]
 }

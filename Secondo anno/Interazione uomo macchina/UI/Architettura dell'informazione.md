@@ -1,7 +1,3 @@
-Il processo di design richiede vari step.
-
----
-## Requisiti
 In questo punto si identificano le **informazioni** di cui si ha bisogno, si presta attenzione ai **bisogni del pubblico di riferimento** e si prende nota dei vari **vincoli** che esistono: sia riguardanti al contesto, sia riguardanti le tecnologie.
 
 ---
