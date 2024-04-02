@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "9ce9970d3f58fbb3",
+        "id": "2960ce7654337d81",
         "type": "tabs",
         "children": [
           {
-            "id": "e2a829204009c010",
+            "id": "979b69d945467143",
             "type": "leaf",
             "state": {
               "type": "empty",
@@ -137,8 +137,15 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "e2a829204009c010",
+  "active": "979b69d945467143",
   "lastOpenFiles": [
+    "Secondo anno/Sistemi operativi/Mod. 2/Thread/Problemi noti.md",
+    "Secondo anno/Sistemi operativi/Mod. 2/Thread/Semafori.md",
+    "Secondo anno/Sistemi operativi/Mod. 2/Thread/Semafori POSIX.md",
+    "Secondo anno/Sistemi operativi/Mod. 2/Thread/Thread POSIX.md",
+    "Secondo anno/Programmazione ad oggetti/Mod. 2/Guida a Java.md",
+    "Secondo anno/Programmazione ad oggetti/Mod. 2/Lambda.md",
+    "Secondo anno/Programmazione ad oggetti/Mod. 2/Tipi di classi.md",
     "Secondo anno/Interazione uomo macchina/UX.md",
     "Secondo anno/Interazione uomo macchina/UI/Sistemi di navigazione.md",
     "Secondo anno/Interazione uomo macchina/UI/Architettura dell'informazione.md",
@@ -148,13 +155,7 @@
     "Secondo anno/Interazione uomo macchina/L'uomo.md",
     "Secondo anno/Interazione uomo macchina/Mobile UI.md",
     "Secondo anno/Interazione uomo macchina/UI",
-    "Secondo anno/Sistemi operativi/Mod. 2/Thread/Semafori POSIX.md",
-    "Secondo anno/Sistemi operativi/Mod. 2/Thread/Semafori.md",
     "Secondo anno/Sistemi operativi/Mod. 2/Thread/Sezione critica.md",
-    "Secondo anno/Sistemi operativi/Mod. 2/Thread/Thread POSIX.md",
-    "Secondo anno/Programmazione ad oggetti/Mod. 2/Lambda.md",
-    "Secondo anno/Programmazione ad oggetti/Mod. 2/Tipi di classi.md",
-    "Secondo anno/Programmazione ad oggetti/Mod. 2/Guida a Java.md",
     "Secondo anno/Basi di dati/Mod. 2/Programmazione/Transazioni.md",
     "Secondo anno/Basi di dati/Mod. 1/Modello relazionale.md",
     "Secondo anno/Basi di dati/Mod. 2/Programmazione",
@@ -173,7 +174,6 @@
     "Secondo anno/Algoritmi e strutture dati/Mod. 2/Ordinamento/Lineare/Radix sort.md",
     "Secondo anno/Basi di dati/Mod. 2/Amministrazione/Indici e viste materializzate.md",
     "Secondo anno/Algoritmi e strutture dati/Mod. 2/Alberi/Alberi binari di ricerca.md",
-    "Secondo anno/Algoritmi e strutture dati/Mod. 1/Grafi/Matrici.md",
     "Secondo anno/Algoritmi e strutture dati/Mod. 1/Images/Clique.svg",
     "Secondo anno/Algoritmi e strutture dati/Mod. 1/Images/Grafo triangolo.svg",
     "Secondo anno/Algoritmi e strutture dati/Mod. 1/Images/Grado di un grafo.svg",

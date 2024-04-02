@@ -83,15 +83,19 @@ Non è necessario specificare il tipo di `x`, ma volendo è possibile.
 
 Se volessimo cambiare operazione da fare su ogni elemento di `l` basterebbe cambiare funzione passata a `forEach` oppure cambiare la lambda; se volessimo incrementare di $1$ il valore degli elementi dovremo creare un **side effect** in quanto con `MyFunction` non abbiamo un tipo di ritorno:
 ```java
+// questa funzione incrementa i valori copia nella funzione forEach
+// ritornati da iterator
 forEach(l, x -> x = x + 1);
 ```
 
 Se volessimo usare una lambda più complessa che contiene più di una espressione, dovremo usare le grafe `{}`, ad esempio se voglio incrementare l'elemento solo se è maggiore di $5$ procederò come segue:
 ```java
+// questa funzione incrementa i valori copia nella funzione forEach
+// ritornati da iterator
 forEach(l, x -> {if (x > 5) x = x + 1;});
 ```
 
-### Ritornare valori
+### Ritornare valori - map
 Questa volta non vogliamo side effects, bensì vogliamo creare una nuova lista con i valori modificati dalla lambda, creiamo una nuova funzione `map`:
 ```java
 interface Function<A, B> {
@@ -119,4 +123,63 @@ Se voglio una lista che mi indica se in posizione `i` l'elemento è positivo o m
 ```java
 Collection<Boolean> r3 = map(l2, x -> x > 0);
 ```
+
+### Filter
+La funzione `filter` permette di ritornare una collezione contenente i soli elementi che rispettano una determinata condizione.
+
+**Filter pura**: crea una nuova collezione e lascia inalterata quella passata in input
+```java
+public static <T>
+List<T> filter(Iterable<T> c, Function<T, Boolean> f) {
+    List<T> r = new ArrayList<>();
+    for (T x : c) {
+		if (f.apply(x))
+			r.add(x);
+	}
+	return r;
+}
+
+// main
+List<Integer> l = List.of(1,2,3,4,5);
+
+// 00111 => r = 3,4,5
+Collection<Integer> r = filter(l, x -> x > 2);
+```
+
+è possibile usare anche l'interfaccia [Predicate](https://docs.oracle.com/javase/8/docs/api/java/util/function/Predicate.html) la quale riassume:
+`Function<T, Boolean>` in `Predicate<T>`.
+Non serve cambiare altro, se non il modo in cui viene chiamata la funzione, ovvero al posto di `apply` si usa `test`, il main rimane invariato.
+
+**Filter impura**: modifica la collezione passata in input
+```java
+public static <T>
+void filterImpure(Iterable<T> c, Function<T, Boolean> f) {
+	Iterator<T> it = c.iterator();
+	while (it.hasNext()) {
+		if (!f.apply(it.next()))
+			// rimuove l'ultimo elemento ritornato da next()
+			it.remove();
+	}
+}
+
+// main
+List<Integer> l = new ArrayList<>(List.of(1,2,3,4,5));
+
+// 00111 => l = 3,4,5
+filterImpure(l, x -> x > 2);
+```
+
+in questo caso però è stata usata `ArrayList` in quanto il tipo di lista ritornato da `List.of` è **immutabile**, questo vuole dire che non supporta operazioni come la `remove`.
+
+#### Restrizione dei tipi
+Il **tipo in input** (parametro nella firma della funzione) è **più amplio possibile** (più vicino a `Object`) pur sempre considerando le funzioni che si dovranno usare con quel tipo, negli esempi sopra serviva solo l'iteratore.
+
+Il **tipo di ritorno** è solo **un livello di gerarchia verso l'alto**.
+
+>[!Tip]
+>Anche volendo non si potrebbe ritornare il container specifico passato in input tramite qualche meccanismo di generics in quanto Java non lo consentirebbe, questo perchè non possiede "il tipo del tipo" ([Kind](https://docs.scala-lang.org/scala3/reference/other-new-features/kind-polymorphism.html)), infatti dovrebbe possedere due tipi di generics, cosa che non ha.
+
+
+
+
 
