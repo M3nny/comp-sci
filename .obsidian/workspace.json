@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "2960ce7654337d81",
+        "id": "40fa9fcc801ba627",
         "type": "tabs",
         "children": [
           {
-            "id": "979b69d945467143",
+            "id": "e978b9f77723026b",
             "type": "leaf",
             "state": {
               "type": "empty",
@@ -137,8 +137,10 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "979b69d945467143",
+  "active": "a1163d9af64d6878",
   "lastOpenFiles": [
+    "Secondo anno/Basi di dati/Mod. 2/Programmazione/SQL in app.md",
+    "Secondo anno/Algoritmi e strutture dati/Mod. 1/Alberi/Minimum Spanning Tree.md",
     "Secondo anno/Sistemi operativi/Mod. 2/Thread/Problemi noti.md",
     "Secondo anno/Sistemi operativi/Mod. 2/Thread/Semafori.md",
     "Secondo anno/Sistemi operativi/Mod. 2/Thread/Semafori POSIX.md",
@@ -160,7 +162,6 @@
     "Secondo anno/Basi di dati/Mod. 1/Modello relazionale.md",
     "Secondo anno/Basi di dati/Mod. 2/Programmazione",
     "Secondo anno/Algoritmi e strutture dati/Mod. 1/Grafi/Connettività e aciclicità.md",
-    "Secondo anno/Algoritmi e strutture dati/Mod. 1/Alberi/Minimum Spanning Tree.md",
     "Excalidraw/TEMPLATE GRAFO.excalidraw.md",
     "Secondo anno/Algoritmi e strutture dati/Mod. 1/Images/MST.svg",
     "Secondo anno/Algoritmi e strutture dati/Mod. 1/Alberi",
@@ -173,7 +174,6 @@
     "Secondo anno/Algoritmi e strutture dati/Mod. 2/Tabelle hash/Tabelle ad indirizzamento diretto.md",
     "Secondo anno/Algoritmi e strutture dati/Mod. 2/Ordinamento/Lineare/Radix sort.md",
     "Secondo anno/Basi di dati/Mod. 2/Amministrazione/Indici e viste materializzate.md",
-    "Secondo anno/Algoritmi e strutture dati/Mod. 2/Alberi/Alberi binari di ricerca.md",
     "Secondo anno/Algoritmi e strutture dati/Mod. 1/Images/Clique.svg",
     "Secondo anno/Algoritmi e strutture dati/Mod. 1/Images/Grafo triangolo.svg",
     "Secondo anno/Algoritmi e strutture dati/Mod. 1/Images/Grado di un grafo.svg",

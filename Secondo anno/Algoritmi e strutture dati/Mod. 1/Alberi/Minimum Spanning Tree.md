@@ -32,3 +32,66 @@ Un MST è detto tale se:
 
 >Sappiamo sempre che un MST sarà composto da $|V|-1$ archi.
 
+### Fatto cruciale degli MST
+Un **taglio** rappresenta una suddivisione del grafo originale in $S$ e $V/S$.
+
+Una volta effettuato un taglio, esiste sempre almeno un arco che lo attraversa in quanto il grafo è _connesso_.
+
+L'arco con peso minimo che attraversa il _taglio_ viene chiamato **arco leggero**.
+
+>[!Info] Fatto cruciale degli MST - I
+>Il **fatto cruciale degli MST** afferma che: se $(u,v)$ è un arco leggero che attraversa un taglio qualsiasi, allora questo arco appartiene ad un $MST$.
+
+**Dimostrazione - cuci e taglia**:
+Sia $T$ un $MST$ di $G$, consideriamo $(u,v)\in T$ come l'arco leggero di un taglio:
+1. $(u,v)\in T$, la condizione è verificata in partenza
+2. $(u,v)\notin T$, procediamo come segue:
+	- **Cuci**: aggiungo l'arco $T'=T\cup \{(u,v)\}$, in questo modo si creerà un ciclo in quanto sarà presente un altro arco $(x,y)\in T$ che attraversa il taglio
+	- **Taglia**: tolgo l'altro arco $T''=T'\setminus\{(x,y)\}$, ora $T''\in ST(G)$
+
+Dimostrando che $W(T'')=W(T)$ validerebbe il _fatto cruciale_:
+$$W(T'')=W(T)+\underbrace{w(u,v)-w(x,y)}_{\leq 0}\leq W(T)$$
+ciò è sempre vero in quanto abbiamo aggiunto l'arco leggero a $T$, quindi:
+$$W(T)\leq W(T'')\leq W(T)\implies W(T)=W(T'')$$
+>Praticamente l'arco aggiunto e quello tolto hanno peso uguale.
+
+>[!Info] Fatto cruciale degli MST - II
+>Se invece $(u,v)$ fosse **l'unico arco leggero** che attraversa il taglio (non ce ne sono altri con peso uguale minimo), allora **per ogni** $T\in MST(G)$ si ha che $(u,v)\in T$ (ogni $MST$ possibile di $G$ possiede l'arco $(u,v)$).
+
+**Dimostrazione per assurdo**: supponiamo che la tesi sia falsa e che quindi esista un $T\in MST(G)$ tale che $(u,v)\notin T$:
+- **Cuci**: $T'=T\cup \{(u,v)\}$, si forma un ciclo
+- **Taglia**: $T''=T'\setminus\{(x,y)\}$, ora $T''\in ST(G)$
+
+$$W(T'')=W(T)+\underbrace{w(u,v)-w(x,y)}_{< 0}< W(T)$$
+questa volta però $w(u,v)-w(x,y)<0$ in quanto $(u,v)$ è l'unico arco leggero (quindi con valore minimo) che attraversa il taglio.
+
+Ciò ci farebbe concludere che $W(T'')<W(T)$, ma questo è assurdo perchè così facendo avrei trovato un $ST$ con peso minore rispetto a quello originale, ma non è possibile dato che per ipotesi $T$ era già un $MST$ in partenza.
+
+>[!Info] Proprietà derivante dal fatto cruciale degli MST
+>Dato un grafo non orientato pesato, sia $(u,v)\in E$ un arco di peso minimo, allora di conseguenza $\exists MST(G)$ tale che $(u,v)\in T$.
+>
+>>L'arco che pesa di meno in $G$ appartiene sicuramente ad un $MST$ costruitito su $G$.
+
+La dimostrazione è la stessa fatta per la prima parte del fatto cruciale.
+
+### Teorema fondamentale degli MST
+Sia $G=(V,E)$ un **grafo non orientato connesso**, siano:
+- $A\subseteq E$ un sottoinsieme di archi contenuto in qualche $MST$
+- $(S,V\setminus S)$ un taglio di $G$ che **rispetta** $A$, ovvero nessun arco di $A$ attraversa il taglio
+- $(u,v)\in E$ un arco leggero che attraversa il taglio
+
+allora il **teorema fondamentale degli MST** afferma che _esiste_ un $MST(G)$ che contiene $A\cup\{(u,v)\}$, brevemente si dice che l'arco $(u,v)$ è **sicuro** per $A$.
+
+**Dimostrazione - cuci e taglia**:
+sia $T\in MST(G)$ tale che $A\subseteq T$, abbiamo due casi (come nel fatto cruciale):
+1. $(u,v)\in T$, la condizione è verificata in partenza
+2. $(u,v)\notin T$, procediamo come segue:
+	- **Cuci**: aggiungo l'arco $T'=T\cup \{(u,v)\}$, in questo modo si creerà un ciclo in quanto sarà presente un altro arco $(x,y)\in T$ che attraversa il taglio
+	- **Taglia**: tolgo l'altro arco $T''=T'\setminus\{(x,y)\}$, ora $T''\in ST(G)$
+
+procedendo analogamente alla dimostrazione fatta per il fatto cruciale, abbiamo:
+$$W(T)=W(T'')$$
+abbiamo dimostrato che l'arco $(u,v)$ appartiene ad un $MST(G)$, ora però dobbiamo dimostrare anche che $A\cup\{(u,v)\}\subseteq T''$, ma questo è sempre vero in quanto ci è garantito dal secondo punto dell'ipotesi, ovvero:
+- $A\subseteq T''$ perchè nessun arco in $A$ non attraversa il taglio
+Inoltre $(u,v)\in T''$ per costruzione.
+
