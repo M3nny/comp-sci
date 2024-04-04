@@ -180,6 +180,38 @@ Il **tipo di ritorno** è solo **un livello di gerarchia verso l'alto**.
 >Anche volendo non si potrebbe ritornare il container specifico passato in input tramite qualche meccanismo di generics in quanto Java non lo consentirebbe, questo perchè non possiede "il tipo del tipo" ([Kind](https://docs.scala-lang.org/scala3/reference/other-new-features/kind-polymorphism.html)), infatti dovrebbe possedere due tipi di generics, cosa che non ha.
 
 
+### Trasformazione sintattica delle lambda
+Le funzioni lambda in realtà sono **zucchero sintattico**, in quanto esse vengono trasformate in [[Tipi di classi#Anonima|anonymous class]], questo perchè sono state introdotte tardi nel linguaggio.
 
+La trasformazione avviene a **compile time** utilizzando i tipi dedotti della lambda, ovvero:
+- Tipo di input della funzione
+- Tipo di ritorno
 
+l'unica cosa che non è possibile sapere in modo "assoluto", sono:
+- Nome dell'interfaccia con cui costruire la anonymous class
+- Nome del metodo da applicare
+
+queste ultime due informazioni **sono ricavate dal contesto** di passaggio.
+
+Ciò porta a situazioni limite di questo genere:
+```java
+public static <A, B>
+Collection<B> map(Collection<A> c, PippoFunction<A, B> f) {...}
+
+// lhs ha tipi diversi con rhs uguali!
+Function<Zoo.Dog, Zoo.Cat> f = (d) -> new Zoo.Cat(d.getWeight());
+PippoFunction<Zoo.Dog, Zoo.Cat> g = (d) -> new Zoo.Cat(d.getWeight());
+
+// errore
+List<Zoo.Cat> cats = map(dogs, f); // usa Function
+
+// corretto
+List<Zoo.Cat> cats2 = map(dogs, g); // usa PippoFunction
+
+// corretto
+// dezucchera automaticamente e sceglie correttamente PippoFunction 
+List<Zoo.Cat> cats3 = map(dogs, (d) -> new Zoo.Cat(d.getWeight())); 
+```
+
+Java in pratica dezucchera qualsiasi lambda, purchè sia rappresentabile in una anonymous class, inoltre l'interfaccia usata per costruirla dovrà contenere **solo 1 metodo**, in questa maniera il compilatore saprà per certo il nome del metodo da chiamare all'interno della anonymous class.
 

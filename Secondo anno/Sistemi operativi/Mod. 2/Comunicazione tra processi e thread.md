@@ -11,7 +11,7 @@ Ci sono tanti altri casi in cui l'**interazione** è voluta:
 - **Possibilità di parallelismo**: incrementa le prestazioni usando più core fisici
 - **Modularità**: un'applicazione complessa è divisa in attività distinte più semplici
 - **Multitasking**: lanciare un'attività mentre si continua con un'altra
-- **Replicazione**: per quando è necessario l'esecuzione simultanea della stessa attività (e.g. [[Thread#Thread nei sistemi distribuiti|pop-up thread]])
+- **Replicazione**: per quando è necessario l'esecuzione simultanea della stessa attività (e.g. [[Secondo anno/Sistemi operativi/Mod. 1/Thread#Thread nei sistemi distribuiti|pop-up thread]])
 ---
 ## Modelli di comunicazione
 Per cooperare usiamo principalmente due modelli di **comunicazione**:

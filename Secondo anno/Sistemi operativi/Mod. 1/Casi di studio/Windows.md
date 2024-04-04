@@ -42,7 +42,7 @@ Per descrivere i **processi** vengono usati dei blocchi:
 
 I blocchi usati per descrivere i **thread** si differenziano di poco, viene usato un **TEB**, ed esso è puntato da **KTHREAD**, inoltre utilizzano una memoria locale **TLS** (Thread Local Storage) per memorizzare dati locali (e.g. DLL), volendo può avere molti indici TLS.
 >I thread che appartengono ad un processo condividono lo _spazio di indirizzamento virtuale_.
->Viene utilizzato un modello di threading [[Thread#Ibridi (molti-a-molti)|ibrido]].
+>Viene utilizzato un modello di threading [[Secondo anno/Sistemi operativi/Mod. 1/Thread#Ibridi (molti-a-molti)|ibrido]].
 
 **Creazione di processi**: padre e figlio sono indipendenti e possiedono un thread principale, però è possibile l'ereditarietà per attributi del figlio dal padre.
 **Terminazione di processi**: avviene se tutti i suoi thread terminano oppure se l'utente che possiede il processo si disconnette, terminare il padre non comporta la terminazione del figlio.
