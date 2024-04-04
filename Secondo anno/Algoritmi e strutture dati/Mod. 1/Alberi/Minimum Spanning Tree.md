@@ -95,3 +95,14 @@ abbiamo dimostrato che l'arco $(u,v)$ appartiene ad un $MST(G)$, ora però dobbi
 - $A\subseteq T''$ perchè nessun arco in $A$ non attraversa il taglio
 Inoltre $(u,v)\in T''$ per costruzione.
 
+##### Corollario del teorema fondamentale degli MST
+Sia $G=(V,E)$ un **grafo non orientato connesso**, siano:
+- $A\subseteq E$ un sottoinsieme di archi contenuto in qualche $MST$
+- $C=(V_C,E_C)$ una componente connessa della [[Tipologie#Grafo aciclico (o foresta)|foresta]] $G_A=(V,A)$
+- $(u,v)$ un arco leggero che connette $C$ ad un'altra componente connessa di $G_A$
+
+allora $(u,v)$ è **sicuro** per $A$, cioè $A\cup\{(u,v)\}$ è contenuto in qualche $MST$.
+
+**Dimostrazione**: considerando il _teorema fondamentale degli MST_, dato che $C$ è una componente connessa della foresta $G_A=(V,A)$, allora il taglio $(V_C,V\setminus V_C)$ **rispetta** $A$ (nessun arco di $A$ attraversa il taglio), di conseguenza, sempre per il teorema fondamentale, l'arco leggero $(u,v)$, il quale è incidente a due vertici, uno in $V_C$ e l'altro in $V\setminus V_C$ è un arco sicuro per $A$.
+
+
