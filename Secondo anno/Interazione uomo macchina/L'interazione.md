@@ -134,3 +134,46 @@ Secondo **Norman** e **Nielsen** le interfacce gestuali hanno portato problemi t
 Le gestures in aria hanno ancora più problemi di standardizzazione, inoltre sono soggette a **problemi di identificazione del significato** a causa di vari aspetti culturali.
 >Pure i linguaggi dei segni cambiano di paese in paese.
 
+---
+## Modelli di interazione
+I **modelli di interazione** sono utili per identificare le componenti del dialogo tra utente e sistema, e gli eventuali problemi.
+
+- **Dominio**: descrive un'area di interesse
+- **Obiettivo**: il risultato che si desidera ottenere
+- **intenzione**: modalità con cui si raggiunge l'obiettivo
+- **Compito (task)**: articolazione dell'intenzione in **azioni**
+
+#### Ciclo di esecuzione e valutazione (D. Norman)
+Formato da 7 componenti:
+1. Stabilire l'obiettivo
+2. Concepire l'intenzione
+3. Formulare una sequenza di azioni
+4. Eseguire le azioni
+5. Percepire lo stato del sistema
+6. Interpretare lo stato del sistema
+7. Valutare lo stato del sistema rispetto all'obiettivo
+
+Questo modello si concentra solo sull'**interfaccia** che viene percepita dall'utente come sistema.
+
+#### Interaction framework (Abowd & Beale)
+Rappresenta un'estensione del modello di Norman, nella quale viene esplicitamente considerato il sistema dietro l'interfaccia.
+
+Formato da 4 componenti:
+1. Utente
+2. Interfaccia di input
+3. Sistema
+4. Interfaccia di output
+
+  I problemi di interazione sono **problemi di traduzione**, le traduzioni che avvengono le seguenti:
+  - **Articolazione**: l'utente articola il linguaggio del compito in linguaggio di input
+  - **Performance**: l'interfaccia traduce il linguaggio di input in stimoli per il sistema
+  - **Presentazione**: il sistema presenta il risultato formulato nel linguaggio di output
+  - **Osservazione** l'utente traduce il linguaggio di output nel proprio linguaggio
+
+
+  
+  **Risoluzione di problemi**:
+  - È possibile applicare delle etichette esplicite che spieghino il significato di input
+- Bisogna tradurre bene lo stato del sistema in output in questo modo si evitano incomprensioni
+- 
+  

@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "7c990885c65ac429",
+        "id": "4a61d9bd5146be17",
         "type": "tabs",
         "children": [
           {
-            "id": "06e32f36b7272205",
+            "id": "5caeb548379fea9b",
             "type": "leaf",
             "state": {
               "type": "empty",
@@ -137,8 +137,12 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "06e32f36b7272205",
+  "active": "5caeb548379fea9b",
   "lastOpenFiles": [
+    "Secondo anno/Interazione uomo macchina/Pervasive computing.md",
+    "Secondo anno/Interazione uomo macchina/L'interazione.md",
+    "Primo anno/Primo semestre/Matematica discreta/Le sommatorie.md",
+    "Secondo anno/Algoritmi e strutture dati/Mod. 2/Tabelle hash/Indirizzamento aperto.md",
     "Excalidraw/TEMPLATE GRAFO.excalidraw.md",
     "Secondo anno/Algoritmi e strutture dati/Mod. 1/Alberi/Prim.md",
     "Secondo anno/Algoritmi e strutture dati/Mod. 1/Alberi/Kruscal.md",
@@ -156,7 +160,6 @@
     "Secondo anno/Sistemi operativi/Mod. 2/Thread/Semafori POSIX.md",
     "Secondo anno/Programmazione ad oggetti/Mod. 2/Lambda.md",
     "Secondo anno/Programmazione ad oggetti/Mod. 2/Thread.md",
-    "Secondo anno/Algoritmi e strutture dati/Mod. 2/Tabelle hash/Indirizzamento aperto.md",
     "Secondo anno/Algoritmi e strutture dati/Mod. 2/Tabelle hash/Concatenamento.md",
     "Secondo anno/Basi di dati/Mod. 2/Programmazione/SQL in app.md",
     "Secondo anno/Sistemi operativi/Mod. 2/Thread/Thread POSIX.md",
@@ -166,8 +169,6 @@
     "Secondo anno/Interazione uomo macchina/UI/Sistemi di navigazione.md",
     "Secondo anno/Interazione uomo macchina/UI/Architettura dell'informazione.md",
     "Secondo anno/Interazione uomo macchina/UI/Componenti.md",
-    "Secondo anno/Interazione uomo macchina/L'interazione.md",
-    "Secondo anno/Interazione uomo macchina/La macchina.md",
     "Secondo anno/Interazione uomo macchina/UI",
     "Secondo anno/Basi di dati/Mod. 2/Programmazione",
     "Secondo anno/Algoritmi e strutture dati/Mod. 1/Images/MST.svg",
