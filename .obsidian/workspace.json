@@ -4,15 +4,19 @@
     "type": "split",
     "children": [
       {
-        "id": "4a61d9bd5146be17",
+        "id": "151568ca1db7574f",
         "type": "tabs",
         "children": [
           {
-            "id": "5caeb548379fea9b",
+            "id": "ea08d3a104ec625d",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {}
+              "type": "markdown",
+              "state": {
+                "file": "Secondo anno/Algoritmi e strutture dati/Mod. 1/Alberi/Prim.md",
+                "mode": "source",
+                "source": false
+              }
             }
           }
         ]
@@ -81,6 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "Secondo anno/Algoritmi e strutture dati/Mod. 1/Alberi/Prim.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -97,6 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "Secondo anno/Algoritmi e strutture dati/Mod. 1/Alberi/Prim.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -118,7 +124,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "Secondo anno/Algoritmi e strutture dati/Mod. 1/Alberi/Prim.md"
+              }
             }
           }
         ]
@@ -137,38 +145,38 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "5caeb548379fea9b",
+  "active": "a1163d9af64d6878",
   "lastOpenFiles": [
-    "Secondo anno/Interazione uomo macchina/Pervasive computing.md",
-    "Secondo anno/Interazione uomo macchina/L'interazione.md",
-    "Primo anno/Primo semestre/Matematica discreta/Le sommatorie.md",
-    "Secondo anno/Algoritmi e strutture dati/Mod. 2/Tabelle hash/Indirizzamento aperto.md",
+    "Secondo anno/Algoritmi e strutture dati/Mod. 1/Images/Exec Prim 2.svg",
     "Excalidraw/TEMPLATE GRAFO.excalidraw.md",
     "Secondo anno/Algoritmi e strutture dati/Mod. 1/Alberi/Prim.md",
-    "Secondo anno/Algoritmi e strutture dati/Mod. 1/Alberi/Kruscal.md",
-    "Secondo anno/Algoritmi e strutture dati/Mod. 1/Alberi/Generic-MST.md",
-    "Secondo anno/Algoritmi e strutture dati/Mod. 1/Alberi/Minimum Spanning Tree.md",
     "Secondo anno/Algoritmi e strutture dati/Mod. 1/Images/Exec Prim.svg",
     "Secondo anno/Algoritmi e strutture dati/Mod. 1/Images/Exec Kruskal.svg",
+    "Excalidraw/Drawing 2024-04-08 17.22.04.excalidraw.md",
+    "Secondo anno/Algoritmi e strutture dati/Mod. 1/Alberi/Kruscal.md",
+    "Secondo anno/Algoritmi e strutture dati/Mod. 1/Grafi/Grado.md",
+    "Secondo anno/Algoritmi e strutture dati/Mod. 1/Grafi/Introduzione.md",
+    "Secondo anno/Sistemi operativi/Mod. 2/Thread/Semafori.md",
+    "Secondo anno/Sistemi operativi/Mod. 2/Thread/Semafori POSIX.md",
+    "Secondo anno/Sistemi operativi/Mod. 2/Thread/Problemi noti.md",
+    "Secondo anno/Interazione uomo macchina/L'interazione.md",
+    "Secondo anno/Interazione uomo macchina/UX.md",
+    "Secondo anno/Interazione uomo macchina/UI/Architettura dell'informazione.md",
+    "Secondo anno/Interazione uomo macchina/Pervasive computing.md",
+    "Primo anno/Primo semestre/Matematica discreta/Le sommatorie.md",
+    "Secondo anno/Algoritmi e strutture dati/Mod. 2/Tabelle hash/Indirizzamento aperto.md",
+    "Secondo anno/Algoritmi e strutture dati/Mod. 1/Alberi/Generic-MST.md",
+    "Secondo anno/Algoritmi e strutture dati/Mod. 1/Alberi/Minimum Spanning Tree.md",
     "Secondo anno/Algoritmi e strutture dati/Mod. 1/Images/Kruskal.svg",
     "Secondo anno/Algoritmi e strutture dati/Mod. 1/Images/Connected components.svg",
     "Excalidraw/Drawing 2024-04-04 19.00.48.excalidraw.md",
     "Excalidraw/Drawing 2024-04-04 18.27.07.excalidraw.md",
     "Secondo anno/Algoritmi e strutture dati/Mod. 1/Alberi/Algoritmi su MST.md",
-    "Secondo anno/Sistemi operativi/Mod. 2/Thread/Semafori.md",
-    "Secondo anno/Sistemi operativi/Mod. 2/Thread/Problemi noti.md",
-    "Secondo anno/Sistemi operativi/Mod. 2/Thread/Semafori POSIX.md",
     "Secondo anno/Programmazione ad oggetti/Mod. 2/Lambda.md",
     "Secondo anno/Programmazione ad oggetti/Mod. 2/Thread.md",
     "Secondo anno/Algoritmi e strutture dati/Mod. 2/Tabelle hash/Concatenamento.md",
     "Secondo anno/Basi di dati/Mod. 2/Programmazione/SQL in app.md",
     "Secondo anno/Sistemi operativi/Mod. 2/Thread/Thread POSIX.md",
-    "Secondo anno/Programmazione ad oggetti/Mod. 2/Guida a Java.md",
-    "Secondo anno/Programmazione ad oggetti/Mod. 2/Tipi di classi.md",
-    "Secondo anno/Interazione uomo macchina/UX.md",
-    "Secondo anno/Interazione uomo macchina/UI/Sistemi di navigazione.md",
-    "Secondo anno/Interazione uomo macchina/UI/Architettura dell'informazione.md",
-    "Secondo anno/Interazione uomo macchina/UI/Componenti.md",
     "Secondo anno/Interazione uomo macchina/UI",
     "Secondo anno/Basi di dati/Mod. 2/Programmazione",
     "Secondo anno/Algoritmi e strutture dati/Mod. 1/Images/MST.svg",
@@ -176,8 +184,6 @@
     "Secondo anno/Algoritmi e strutture dati/Mod. 1/Images/Grafi isomorfi pentagono.svg",
     "Secondo anno/Algoritmi e strutture dati/Mod. 1/Images/Grafi non isomorfi.svg",
     "Secondo anno/Algoritmi e strutture dati/Mod. 1/Images/Grafi isomorfi.svg",
-    "Secondo anno/Algoritmi e strutture dati/Mod. 1/Images/GNO rombo 4.svg",
-    "Secondo anno/Algoritmi e strutture dati/Mod. 1/Images/Componenti connesse.svg",
     "Secondo anno/Algoritmi e strutture dati/Mod. 1/Images/Non confermato 956157.crdownload",
     "Excalidraw",
     "Secondo anno/Algoritmi e strutture dati/Mod. 1/Grafi",

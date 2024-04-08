@@ -1,7 +1,7 @@
 L'algoritmo di **Kruskal** parte con un insieme vuoto di archi $A$ e poi aggiunge ad esso un arco a patto che non crei un ciclo, gli archi sono estratti in modo crescente.
 ```
 Kruskal(G, w)
-	A = emptyset
+	A = ∅
 	
 	for each v in V[G]
 		makeSet(v)

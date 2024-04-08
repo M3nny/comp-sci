@@ -5,11 +5,11 @@ ovvero: <u>il grado un nodo è pari alla cardinalità del suo</u> **intorno** ($
 ![[Grado di un grafo.svg]]
 <u>Non è possibile avere</u> $n$ <u>vertici con grado diverso</u>, in quanto $0\leq \deg(u)\leq n-1$, infatti dovrebbe esiste un nodo con grado $0$ ed uno con grado $n-1$, ma questo è assurdo perchè il primo indica che non è collegato con nessun'altro nodo, mentre il secondo indica che è collegato con tutti.
 
->[!Lemma (stretta di mano)]
-><u>Vale solo per grafi non orientati</u>:
->$$\sum_{u\in V}\deg(u)=2m$$
->**Corollario**:
->Se $G$ è un grafo non orientato, allora il numero di vertici di grado dispari è pari.
+### Lemma della stretta di mano
+<u>Vale solo per grafi non orientati</u>:
+$$\sum_{u\in V}\deg(u)=2m$$
+**Corollario**:
+Se $G$ è un grafo non orientato, allora il numero di vertici di grado dispari è pari.
 
 **Dimostrazione**:
 Definiamo $P=\{u\in V|\deg(u)\text{ è pari}\}$ e  $D=\{u\in V|\deg(u)\text{ è dispari}\}$, dal lemma della stretta di mano otteniamo:
