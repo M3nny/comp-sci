@@ -21,13 +21,13 @@ I semafori vengono incrementati/decrementati tramite funzioni che gestiscono la 
 - `V(S)` o `post(S)`: incrementa `S.val`, se ci sono thread in attesa, viene sbloccato il primo della coda
 
 ```c
-P(semaphore S) {
+P(semaphore S) { // sem_wait
 	S.valore--;
 	if (S.valore<0)
 	    // Metti il thread corrente in attesa su S.queue
 }
 
-V(semaphore S) {
+V(semaphore S) { // sem_post
 	S.valore++;
 	if (S.valore<=0)
 	    // Sblocca il primo thread in attesa su S.queue

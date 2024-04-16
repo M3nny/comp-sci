@@ -4,15 +4,19 @@
     "type": "split",
     "children": [
       {
-        "id": "9727a5f0221f103a",
+        "id": "288e0351b72b4a3a",
         "type": "tabs",
         "children": [
           {
-            "id": "9414ebe22f8f87da",
+            "id": "4e713eadae4ad52b",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {}
+              "type": "markdown",
+              "state": {
+                "file": "Secondo anno/Sistemi operativi/Mod. 2/Thread/Semafori/Semafori.md",
+                "mode": "source",
+                "source": false
+              }
             }
           }
         ]
@@ -65,8 +69,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 350.5124969482422,
-    "collapsed": true
+    "width": 350.5124969482422
   },
   "right": {
     "id": "282a9548711da6a0",
@@ -82,6 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "Secondo anno/Sistemi operativi/Mod. 2/Thread/Semafori/Semafori.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -98,6 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "Secondo anno/Sistemi operativi/Mod. 2/Thread/Semafori/Semafori.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -119,7 +124,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "Secondo anno/Sistemi operativi/Mod. 2/Thread/Semafori/Semafori.md"
+              }
             }
           }
         ]
@@ -138,8 +145,19 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "a1163d9af64d6878",
+  "active": "4e713eadae4ad52b",
   "lastOpenFiles": [
+    "Secondo anno/Sistemi operativi/Mod. 2/Thread/Monitor/Monitor.md",
+    "Secondo anno/Sistemi operativi/Mod. 2/Thread/Produttore e consumatore.md",
+    "Primo anno/Primo semestre/Calcolo 1/Funzioni/Funzioni elementari.md",
+    "Secondo anno/Programmazione ad oggetti/Mod. 2/Thread.md",
+    "Secondo anno/Sistemi operativi/Mod. 2/Thread/Semafori/Semafori.md",
+    "Secondo anno/Sistemi operativi/Mod. 2/Thread/Monitor",
+    "Secondo anno/Sistemi operativi/Mod. 2/Thread/Semafori/Problemi noti.md",
+    "Secondo anno/Sistemi operativi/Mod. 2/Thread/Semafori",
+    "Secondo anno/Sistemi operativi/Mod. 2/Thread/Semafori/Semafori POSIX.md",
+    "Secondo anno/Sistemi operativi/Mod. 2/Thread/Thread POSIX.md",
+    "Secondo anno/Sistemi operativi/Mod. 2/Thread/Sezione critica.md",
     "Secondo anno/Algoritmi e strutture dati/Mod. 1/Cammini minimi/Dijkstra.md",
     "Secondo anno/Algoritmi e strutture dati/Mod. 1/Grafi/Grado.md",
     "Secondo anno/Algoritmi e strutture dati/Mod. 1/Alberi/Prim.md",
@@ -162,16 +180,8 @@
     "Secondo anno/Algoritmi e strutture dati/Mod. 1/Images/Exec Kruskal.svg",
     "Excalidraw/Drawing 2024-04-08 17.22.04.excalidraw.md",
     "Secondo anno/Algoritmi e strutture dati/Mod. 1/Grafi/Introduzione.md",
-    "Secondo anno/Sistemi operativi/Mod. 2/Thread/Semafori.md",
-    "Secondo anno/Sistemi operativi/Mod. 2/Thread/Semafori POSIX.md",
-    "Secondo anno/Sistemi operativi/Mod. 2/Thread/Problemi noti.md",
     "Secondo anno/Interazione uomo macchina/L'interazione.md",
     "Secondo anno/Interazione uomo macchina/UX.md",
-    "Secondo anno/Interazione uomo macchina/UI/Architettura dell'informazione.md",
-    "Secondo anno/Interazione uomo macchina/Pervasive computing.md",
-    "Primo anno/Primo semestre/Matematica discreta/Le sommatorie.md",
-    "Secondo anno/Algoritmi e strutture dati/Mod. 2/Tabelle hash/Indirizzamento aperto.md",
-    "Secondo anno/Algoritmi e strutture dati/Mod. 1/Alberi/Minimum Spanning Tree.md",
     "Secondo anno/Algoritmi e strutture dati/Mod. 1/Images/Kruskal.svg",
     "Secondo anno/Algoritmi e strutture dati/Mod. 1/Images/Connected components.svg",
     "Secondo anno/Interazione uomo macchina/UI",
@@ -183,8 +193,6 @@
     "Excalidraw",
     "Secondo anno/Algoritmi e strutture dati/Mod. 1/Grafi",
     "Secondo anno/Sistemi operativi/Mod. 2/Thread",
-    "Secondo anno/Basi di dati/Mod. 2/Amministrazione",
-    "Secondo anno/Basi di dati/Mod. 2/Normalizzazione",
     "Untitled.canvas"
   ]
 }
