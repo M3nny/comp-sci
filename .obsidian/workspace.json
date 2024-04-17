@@ -4,22 +4,35 @@
     "type": "split",
     "children": [
       {
-        "id": "288e0351b72b4a3a",
+        "id": "41686213830b19ee",
         "type": "tabs",
         "children": [
           {
-            "id": "4e713eadae4ad52b",
+            "id": "b3db100a0d19c1c7",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Secondo anno/Sistemi operativi/Mod. 2/Thread/Semafori/Semafori.md",
+                "file": "Secondo anno/Algoritmi e strutture dati/Mod. 1/Cammini minimi/Bellman-Ford.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "92144584fce07bbd",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Secondo anno/Algoritmi e strutture dati/Mod. 1/Cammini minimi/Dijkstra.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -69,7 +82,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 350.5124969482422
+    "width": 350.5124969482422,
+    "collapsed": true
   },
   "right": {
     "id": "282a9548711da6a0",
@@ -85,7 +99,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Secondo anno/Sistemi operativi/Mod. 2/Thread/Semafori/Semafori.md",
+                "file": "Secondo anno/Algoritmi e strutture dati/Mod. 1/Cammini minimi/Dijkstra.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +116,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Secondo anno/Sistemi operativi/Mod. 2/Thread/Semafori/Semafori.md",
+                "file": "Secondo anno/Algoritmi e strutture dati/Mod. 1/Cammini minimi/Dijkstra.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +139,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Secondo anno/Sistemi operativi/Mod. 2/Thread/Semafori/Semafori.md"
+                "file": "Secondo anno/Algoritmi e strutture dati/Mod. 1/Cammini minimi/Dijkstra.md"
               }
             }
           }
@@ -145,25 +159,31 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "4e713eadae4ad52b",
+  "active": "92144584fce07bbd",
   "lastOpenFiles": [
+    "Secondo anno/Algoritmi e strutture dati/Mod. 1/Cammini minimi/Bellman-Ford.md",
+    "Secondo anno/Algoritmi e strutture dati/Mod. 1/Cammini minimi/Dijkstra.md",
+    "Excalidraw/TEMPLATE GRAFO.excalidraw.md",
+    "Secondo anno/Algoritmi e strutture dati/Mod. 1/Images/Arco negativo Dijkstra.svg",
+    "Secondo anno/Algoritmi e strutture dati/Mod. 1/Images/Osservazione Dijkstra.svg",
+    "Secondo anno/Algoritmi e strutture dati/Mod. 1/Cammini minimi/Introduzione.md",
+    "Secondo anno/Algoritmi e strutture dati/Mod. 1/Alberi/Prim.md",
+    "Primo anno/Primo semestre/Architettura degli elaboratori mod. 1/7 - Valutazione delle prestazioni.md",
+    "Primo anno/Primo semestre/Architettura degli elaboratori mod. 1/1 - Rappresentazione dell'informazione/Conversioni.md",
+    "Primo anno/Primo semestre/Architettura degli elaboratori mod. 1/1 - Rappresentazione dell'informazione/Complemento a 2.md",
+    "Secondo anno/Sistemi operativi/Mod. 2/Thread/Semafori/Semafori.md",
     "Secondo anno/Sistemi operativi/Mod. 2/Thread/Monitor/Monitor.md",
     "Secondo anno/Sistemi operativi/Mod. 2/Thread/Produttore e consumatore.md",
     "Primo anno/Primo semestre/Calcolo 1/Funzioni/Funzioni elementari.md",
     "Secondo anno/Programmazione ad oggetti/Mod. 2/Thread.md",
-    "Secondo anno/Sistemi operativi/Mod. 2/Thread/Semafori/Semafori.md",
     "Secondo anno/Sistemi operativi/Mod. 2/Thread/Monitor",
     "Secondo anno/Sistemi operativi/Mod. 2/Thread/Semafori/Problemi noti.md",
     "Secondo anno/Sistemi operativi/Mod. 2/Thread/Semafori",
     "Secondo anno/Sistemi operativi/Mod. 2/Thread/Semafori/Semafori POSIX.md",
     "Secondo anno/Sistemi operativi/Mod. 2/Thread/Thread POSIX.md",
     "Secondo anno/Sistemi operativi/Mod. 2/Thread/Sezione critica.md",
-    "Secondo anno/Algoritmi e strutture dati/Mod. 1/Cammini minimi/Dijkstra.md",
     "Secondo anno/Algoritmi e strutture dati/Mod. 1/Grafi/Grado.md",
-    "Secondo anno/Algoritmi e strutture dati/Mod. 1/Alberi/Prim.md",
-    "Secondo anno/Algoritmi e strutture dati/Mod. 1/Cammini minimi/Introduzione.md",
     "Excalidraw/Drawing 2024-04-15 15.51.27.excalidraw.md",
-    "Excalidraw/TEMPLATE GRAFO.excalidraw.md",
     "Secondo anno/Algoritmi e strutture dati/Mod. 1/Images/Grafo dei predecessori.svg",
     "Secondo anno/Basi di dati/Mod. 1/Modello relazionale.md",
     "Secondo anno/Basi di dati/Mod. 1/Progettazione e modellazione.md",
@@ -178,17 +198,11 @@
     "Secondo anno/Algoritmi e strutture dati/Mod. 1/Images/Exec Prim 2.svg",
     "Secondo anno/Algoritmi e strutture dati/Mod. 1/Images/Exec Prim.svg",
     "Secondo anno/Algoritmi e strutture dati/Mod. 1/Images/Exec Kruskal.svg",
-    "Excalidraw/Drawing 2024-04-08 17.22.04.excalidraw.md",
-    "Secondo anno/Algoritmi e strutture dati/Mod. 1/Grafi/Introduzione.md",
-    "Secondo anno/Interazione uomo macchina/L'interazione.md",
-    "Secondo anno/Interazione uomo macchina/UX.md",
     "Secondo anno/Algoritmi e strutture dati/Mod. 1/Images/Kruskal.svg",
     "Secondo anno/Algoritmi e strutture dati/Mod. 1/Images/Connected components.svg",
     "Secondo anno/Interazione uomo macchina/UI",
     "Secondo anno/Basi di dati/Mod. 2/Programmazione",
-    "Secondo anno/Algoritmi e strutture dati/Mod. 1/Images/MST.svg",
     "Secondo anno/Algoritmi e strutture dati/Mod. 1/Alberi",
-    "Secondo anno/Algoritmi e strutture dati/Mod. 1/Images/Grafi isomorfi pentagono.svg",
     "Secondo anno/Algoritmi e strutture dati/Mod. 1/Images/Non confermato 956157.crdownload",
     "Excalidraw",
     "Secondo anno/Algoritmi e strutture dati/Mod. 1/Grafi",
