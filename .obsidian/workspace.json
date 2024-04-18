@@ -4,35 +4,22 @@
     "type": "split",
     "children": [
       {
-        "id": "41686213830b19ee",
+        "id": "81b48d541e75fba0",
         "type": "tabs",
         "children": [
           {
-            "id": "b3db100a0d19c1c7",
+            "id": "b3c5ad867e02892a",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Secondo anno/Algoritmi e strutture dati/Mod. 1/Cammini minimi/Bellman-Ford.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "92144584fce07bbd",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Secondo anno/Algoritmi e strutture dati/Mod. 1/Cammini minimi/Dijkstra.md",
+                "file": "Secondo anno/Sistemi operativi/Mod. 2/Thread/Monitor/Programmazione con i monitor.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -99,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Secondo anno/Algoritmi e strutture dati/Mod. 1/Cammini minimi/Dijkstra.md",
+                "file": "Secondo anno/Sistemi operativi/Mod. 2/Thread/Monitor/Programmazione con i monitor.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -116,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Secondo anno/Algoritmi e strutture dati/Mod. 1/Cammini minimi/Dijkstra.md",
+                "file": "Secondo anno/Sistemi operativi/Mod. 2/Thread/Monitor/Programmazione con i monitor.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -139,7 +126,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Secondo anno/Algoritmi e strutture dati/Mod. 1/Cammini minimi/Dijkstra.md"
+                "file": "Secondo anno/Sistemi operativi/Mod. 2/Thread/Monitor/Programmazione con i monitor.md"
               }
             }
           }
@@ -159,10 +146,16 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "92144584fce07bbd",
+  "active": "b3c5ad867e02892a",
   "lastOpenFiles": [
-    "Secondo anno/Algoritmi e strutture dati/Mod. 1/Cammini minimi/Bellman-Ford.md",
+    "Secondo anno/Sistemi operativi/Mod. 2/Thread/Monitor/Monitor.md",
+    "Secondo anno/Sistemi operativi/Mod. 2/Thread/Monitor/Programmazione con i monitor.md",
+    "Secondo anno/Programmazione ad oggetti/Mod. 2/Co-varianza e contro-varianza.md",
+    "Secondo anno/Programmazione ad oggetti/Mod. 2/Guida a Java.md",
+    "Secondo anno/Algoritmi e strutture dati/Mod. 2/Programmazione dinamica/LCS.md",
+    "Secondo anno/Algoritmi e strutture dati/Mod. 2/Programmazione dinamica/Approccio dinamico.md",
     "Secondo anno/Algoritmi e strutture dati/Mod. 1/Cammini minimi/Dijkstra.md",
+    "Secondo anno/Algoritmi e strutture dati/Mod. 1/Cammini minimi/Bellman-Ford.md",
     "Excalidraw/TEMPLATE GRAFO.excalidraw.md",
     "Secondo anno/Algoritmi e strutture dati/Mod. 1/Images/Arco negativo Dijkstra.svg",
     "Secondo anno/Algoritmi e strutture dati/Mod. 1/Images/Osservazione Dijkstra.svg",
@@ -172,7 +165,6 @@
     "Primo anno/Primo semestre/Architettura degli elaboratori mod. 1/1 - Rappresentazione dell'informazione/Conversioni.md",
     "Primo anno/Primo semestre/Architettura degli elaboratori mod. 1/1 - Rappresentazione dell'informazione/Complemento a 2.md",
     "Secondo anno/Sistemi operativi/Mod. 2/Thread/Semafori/Semafori.md",
-    "Secondo anno/Sistemi operativi/Mod. 2/Thread/Monitor/Monitor.md",
     "Secondo anno/Sistemi operativi/Mod. 2/Thread/Produttore e consumatore.md",
     "Primo anno/Primo semestre/Calcolo 1/Funzioni/Funzioni elementari.md",
     "Secondo anno/Programmazione ad oggetti/Mod. 2/Thread.md",
@@ -188,13 +180,8 @@
     "Secondo anno/Basi di dati/Mod. 1/Modello relazionale.md",
     "Secondo anno/Basi di dati/Mod. 1/Progettazione e modellazione.md",
     "Secondo anno/Algoritmi e strutture dati/Mod. 1/Images/Relax grafo.svg",
-    "Secondo anno/Algoritmi e strutture dati/Mod. 1/Alberi/Generic-MST.md",
-    "Secondo anno/Algoritmi e strutture dati/Mod. 2/Code di priorità.md",
-    "Secondo anno/Algoritmi e strutture dati/Mod. 1/Alberi/Kruscal.md",
     "Secondo anno/Algoritmi e strutture dati/Mod. 1/Images/Ciclo negativo.svg",
     "Secondo anno/Algoritmi e strutture dati/Mod. 1/Cammini minimi",
-    "ColtiWare.md",
-    "ColtiWare.md",
     "Secondo anno/Algoritmi e strutture dati/Mod. 1/Images/Exec Prim 2.svg",
     "Secondo anno/Algoritmi e strutture dati/Mod. 1/Images/Exec Prim.svg",
     "Secondo anno/Algoritmi e strutture dati/Mod. 1/Images/Exec Kruskal.svg",
