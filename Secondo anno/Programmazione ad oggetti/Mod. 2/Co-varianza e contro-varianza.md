@@ -4,7 +4,7 @@ La **firma** di un metodo comprende:
 - Ordine dei parametri
 - Tipo di parametri
 
-questo vuol dire che **non comprende** neanche il **tipo di ritorno**, ciò rende Java **context-dependent**.
+questo vuol dire che **non comprende** neanche il **tipo di ritorno**, ciò rende Java **context-independent**.
 
 ### Co-varianza
 La **co-varianza** sul **tipo di ritorno** è <u>generalmente ammessa</u> dai linguaggi di programmazione.

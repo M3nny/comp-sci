@@ -4,19 +4,15 @@
     "type": "split",
     "children": [
       {
-        "id": "81b48d541e75fba0",
+        "id": "d3ae9c6446d6b426",
         "type": "tabs",
         "children": [
           {
-            "id": "b3c5ad867e02892a",
+            "id": "f275c13c2b8c64a2",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Secondo anno/Sistemi operativi/Mod. 2/Thread/Monitor/Programmazione con i monitor.md",
-                "mode": "source",
-                "source": false
-              }
+              "type": "empty",
+              "state": {}
             }
           }
         ]
@@ -69,8 +65,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 350.5124969482422,
-    "collapsed": true
+    "width": 350.5124969482422
   },
   "right": {
     "id": "282a9548711da6a0",
@@ -86,7 +81,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Secondo anno/Sistemi operativi/Mod. 2/Thread/Monitor/Programmazione con i monitor.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +97,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Secondo anno/Sistemi operativi/Mod. 2/Thread/Monitor/Programmazione con i monitor.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,9 +118,7 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "Secondo anno/Sistemi operativi/Mod. 2/Thread/Monitor/Programmazione con i monitor.md"
-              }
+              "state": {}
             }
           }
         ]
@@ -146,11 +137,12 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "b3c5ad867e02892a",
+  "active": "f275c13c2b8c64a2",
   "lastOpenFiles": [
-    "Secondo anno/Sistemi operativi/Mod. 2/Thread/Monitor/Monitor.md",
-    "Secondo anno/Sistemi operativi/Mod. 2/Thread/Monitor/Programmazione con i monitor.md",
     "Secondo anno/Programmazione ad oggetti/Mod. 2/Co-varianza e contro-varianza.md",
+    "Secondo anno/Programmazione ad oggetti/Mod. 2/Thread.md",
+    "Secondo anno/Sistemi operativi/Mod. 2/Thread/Monitor/Programmazione con i monitor.md",
+    "Secondo anno/Sistemi operativi/Mod. 2/Thread/Monitor/Monitor.md",
     "Secondo anno/Programmazione ad oggetti/Mod. 2/Guida a Java.md",
     "Secondo anno/Algoritmi e strutture dati/Mod. 2/Programmazione dinamica/LCS.md",
     "Secondo anno/Algoritmi e strutture dati/Mod. 2/Programmazione dinamica/Approccio dinamico.md",
@@ -167,7 +159,6 @@
     "Secondo anno/Sistemi operativi/Mod. 2/Thread/Semafori/Semafori.md",
     "Secondo anno/Sistemi operativi/Mod. 2/Thread/Produttore e consumatore.md",
     "Primo anno/Primo semestre/Calcolo 1/Funzioni/Funzioni elementari.md",
-    "Secondo anno/Programmazione ad oggetti/Mod. 2/Thread.md",
     "Secondo anno/Sistemi operativi/Mod. 2/Thread/Monitor",
     "Secondo anno/Sistemi operativi/Mod. 2/Thread/Semafori/Problemi noti.md",
     "Secondo anno/Sistemi operativi/Mod. 2/Thread/Semafori",
