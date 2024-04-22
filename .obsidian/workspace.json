@@ -4,15 +4,19 @@
     "type": "split",
     "children": [
       {
-        "id": "d3ae9c6446d6b426",
+        "id": "094b375d2423de24",
         "type": "tabs",
         "children": [
           {
-            "id": "f275c13c2b8c64a2",
+            "id": "fcdffd48639a3ec3",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {}
+              "type": "markdown",
+              "state": {
+                "file": "Secondo anno/Algoritmi e strutture dati/Mod. 2/Programmazione dinamica/Approccio dinamico.md",
+                "mode": "source",
+                "source": false
+              }
             }
           }
         ]
@@ -81,6 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "Secondo anno/Algoritmi e strutture dati/Mod. 2/Programmazione dinamica/Approccio dinamico.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -97,6 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "Secondo anno/Algoritmi e strutture dati/Mod. 2/Programmazione dinamica/Approccio dinamico.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -118,7 +124,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "Secondo anno/Algoritmi e strutture dati/Mod. 2/Programmazione dinamica/Approccio dinamico.md"
+              }
             }
           }
         ]
@@ -137,22 +145,29 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "f275c13c2b8c64a2",
+  "active": "fcdffd48639a3ec3",
   "lastOpenFiles": [
+    "Excalidraw/TEMPLATE GRAFO.excalidraw.md",
+    "Secondo anno/Algoritmi e strutture dati/Mod. 1/Images/Nodi intermedi.svg",
+    "Secondo anno/Algoritmi e strutture dati/Mod. 1/Images/Nodi intermedi.svg",
+    "Secondo anno/Algoritmi e strutture dati/Mod. 1/Cammini minimi/Floyd-Warshall.md",
+    "Secondo anno/Algoritmi e strutture dati/Mod. 1/Cammini minimi/Dijkstra.md",
+    "Secondo anno/Algoritmi e strutture dati/Mod. 1/Cammini minimi/Bellman-Ford.md",
+    "Secondo anno/Algoritmi e strutture dati/Mod. 1/Cammini minimi/Introduzione.md",
+    "Secondo anno/Algoritmi e strutture dati/Mod. 1/Alberi/Prim.md",
+    "Secondo anno/Algoritmi e strutture dati/Mod. 1/Alberi/Kruscal.md",
+    "Secondo anno/Algoritmi e strutture dati/Mod. 1/Alberi/Generic-MST.md",
+    "Secondo anno/Algoritmi e strutture dati/Mod. 1/Alberi/Minimum Spanning Tree.md",
+    "Secondo anno/Algoritmi e strutture dati/Mod. 2/Programmazione dinamica/LCS.md",
+    "Secondo anno/Algoritmi e strutture dati/Mod. 2/Programmazione dinamica/Approccio dinamico.md",
+    "Secondo anno/Algoritmi e strutture dati/Mod. 2/Programmazione dinamica/Taglio delle aste.md",
     "Secondo anno/Programmazione ad oggetti/Mod. 2/Co-varianza e contro-varianza.md",
     "Secondo anno/Programmazione ad oggetti/Mod. 2/Thread.md",
     "Secondo anno/Sistemi operativi/Mod. 2/Thread/Monitor/Programmazione con i monitor.md",
     "Secondo anno/Sistemi operativi/Mod. 2/Thread/Monitor/Monitor.md",
     "Secondo anno/Programmazione ad oggetti/Mod. 2/Guida a Java.md",
-    "Secondo anno/Algoritmi e strutture dati/Mod. 2/Programmazione dinamica/LCS.md",
-    "Secondo anno/Algoritmi e strutture dati/Mod. 2/Programmazione dinamica/Approccio dinamico.md",
-    "Secondo anno/Algoritmi e strutture dati/Mod. 1/Cammini minimi/Dijkstra.md",
-    "Secondo anno/Algoritmi e strutture dati/Mod. 1/Cammini minimi/Bellman-Ford.md",
-    "Excalidraw/TEMPLATE GRAFO.excalidraw.md",
     "Secondo anno/Algoritmi e strutture dati/Mod. 1/Images/Arco negativo Dijkstra.svg",
     "Secondo anno/Algoritmi e strutture dati/Mod. 1/Images/Osservazione Dijkstra.svg",
-    "Secondo anno/Algoritmi e strutture dati/Mod. 1/Cammini minimi/Introduzione.md",
-    "Secondo anno/Algoritmi e strutture dati/Mod. 1/Alberi/Prim.md",
     "Primo anno/Primo semestre/Architettura degli elaboratori mod. 1/7 - Valutazione delle prestazioni.md",
     "Primo anno/Primo semestre/Architettura degli elaboratori mod. 1/1 - Rappresentazione dell'informazione/Conversioni.md",
     "Primo anno/Primo semestre/Architettura degli elaboratori mod. 1/1 - Rappresentazione dell'informazione/Complemento a 2.md",
@@ -163,21 +178,13 @@
     "Secondo anno/Sistemi operativi/Mod. 2/Thread/Semafori/Problemi noti.md",
     "Secondo anno/Sistemi operativi/Mod. 2/Thread/Semafori",
     "Secondo anno/Sistemi operativi/Mod. 2/Thread/Semafori/Semafori POSIX.md",
-    "Secondo anno/Sistemi operativi/Mod. 2/Thread/Thread POSIX.md",
-    "Secondo anno/Sistemi operativi/Mod. 2/Thread/Sezione critica.md",
-    "Secondo anno/Algoritmi e strutture dati/Mod. 1/Grafi/Grado.md",
-    "Excalidraw/Drawing 2024-04-15 15.51.27.excalidraw.md",
     "Secondo anno/Algoritmi e strutture dati/Mod. 1/Images/Grafo dei predecessori.svg",
-    "Secondo anno/Basi di dati/Mod. 1/Modello relazionale.md",
-    "Secondo anno/Basi di dati/Mod. 1/Progettazione e modellazione.md",
     "Secondo anno/Algoritmi e strutture dati/Mod. 1/Images/Relax grafo.svg",
     "Secondo anno/Algoritmi e strutture dati/Mod. 1/Images/Ciclo negativo.svg",
     "Secondo anno/Algoritmi e strutture dati/Mod. 1/Cammini minimi",
     "Secondo anno/Algoritmi e strutture dati/Mod. 1/Images/Exec Prim 2.svg",
     "Secondo anno/Algoritmi e strutture dati/Mod. 1/Images/Exec Prim.svg",
     "Secondo anno/Algoritmi e strutture dati/Mod. 1/Images/Exec Kruskal.svg",
-    "Secondo anno/Algoritmi e strutture dati/Mod. 1/Images/Kruskal.svg",
-    "Secondo anno/Algoritmi e strutture dati/Mod. 1/Images/Connected components.svg",
     "Secondo anno/Interazione uomo macchina/UI",
     "Secondo anno/Basi di dati/Mod. 2/Programmazione",
     "Secondo anno/Algoritmi e strutture dati/Mod. 1/Alberi",

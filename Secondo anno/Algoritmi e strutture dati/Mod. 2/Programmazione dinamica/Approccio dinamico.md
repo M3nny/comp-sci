@@ -23,5 +23,6 @@ Per sviluppare un algoritmo di programmazione dinamica bisogna quindi:
 1. Fornire una caratterizzazione della struttura di una soluzione ottima
 2. Dare una definizione ricorsiva del valore di una soluzione ottima
 3. Calcolare il valore di una soluzione ottima (top-down, bottom-up)
-4. Individuare una soluzione ottima in base alle informazioni calcolate al passo 3
+4. Individuare una soluzione ottima in base alle informazioni calcolate
+	al passo 3
 

@@ -24,13 +24,13 @@ Da notare anche che la sorgente è sempre pari a $0$, tranne quando compare in u
 ### Tipi di problemi
 Di seguito sono riportati i quattro tipi di problemi riguardanti i cammini minimi:
 
-| Sorgenti \ Destinazioni | Singola                            | Multipla                                               |
+| Sorgenti \ Destinazioni | Singola                            | Multiple                                               |
 | ----------------------- | ---------------------------------- | ------------------------------------------------------ |
 | **Singola**             | in: $(u,v)$<br>out: $\delta(u,v)$  | in: $s\in V$<br>out: $\delta(s,v)\space\forall v\in V$ |
-| **Multipla**            | in: $d\in V$<br>out: $\delta(u,d)$ | in: $G$<br>out: $\delta(u,v)\space\forall (u,v)\in V$  |
+| **Multiple**            | in: $d\in V$<br>out: $\delta(u,d)$ | in: $G$<br>out: $\delta(u,v)\space\forall (u,v)\in V$  |
 **Algoritmi**:
 - **Dijkstra** e **Bellman-Ford**: sorgente singola - destinazioni multiple
-- **Floyd-Warshall**: sorgente multipla - destinazioni multiple
+- **Floyd-Warshall**: sorgenti multiple - destinazioni multiple
 
 **Osservazioni**:
 - Sorgente multipla - destinazione singola può essere risolto invertendo la direzione degli archi del grafo per poi applicare un algoritmo per ss - dm

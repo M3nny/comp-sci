@@ -52,3 +52,43 @@ la [[Secondo anno/Algoritmi e strutture dati/Mod. 1/Cammini minimi/Introduzione#
 $$\delta(s,v)\leq\delta(s,u)+w(u,v)\implies d[v]\leq d[v]+w(u,v)$$
 che è quello che volevamo dimostrare.
 
+Dimostrazione **cicli negativi**:
+vogliamo dimostrare che in presenza di cicli negativi raggiungibili dalla sorgente, l'algoritmo restituisca `false`.
+
+Assumiamo per _assurdo_ che restituisca `true` anche in caso di cicli negativi raggiungibili dalla sorgente, perchè ciò avvenga, non dovrà mai entrare nell'`if` e quindi per ogni arco dovrà valere:
+$$\forall(u,v)\in E:\space d[v]\leq d[u]+w(u,v)$$
+
+chiamiamo $c$ il _ciclo negativo_ $c=<x_0,...,x_q>$ con $x_0=x_q$, e sottolineiamo che la proprietà sopra elencata (dato che vale per ogni arco) sarà vera anche per gli archi in $c$, "traducendo" la proprietà per gli archi in $c$ otteniamo:
+$$\forall i=1,...,q:\space d[x_i]\leq d[x_{i-1}]+w(x_{i-1}x_i)$$
+possiamo esprimere tutto in termini di sommatorie:
+$$\sum_{i=1}^q d[x_i]\leq\sum_{i=1}^q d[x_{i-1}]+\sum_{i=1}^q w(x_{i-1},x_i)$$
+ma espandendo le sommatorie e sapendo che $x_0=x_q$, otteniamo:
+$$\sum_{i=1}^q d[x_i]=d[x_1]+d[x_2]+...+d[x_{q-1}]+d[x_q]$$
+$$\sum_{i=1}^q d[x_{i-1}]=d[x_0]+d[x_1]+d[x_2]...+d[x_{q-1}]$$
+
+le due sommatorie quindi sono uguali, e cancellandole otteniamo:
+$$0\leq\sum_{i=1}^qw(x_{i-1},x_i)$$
+
+che è assurdo in quanto per ipotesi il ciclo ha peso negativo.
+
+
+#### Osservazioni su Bellman-Ford e Dijkstra
+
+|    $G$\Implementazione    | Dijkstra (Heap) | Dijkstra (Array) | Bellman-Ford |
+| :-----------------------: | :-------------: | :--------------: | :----------: |
+| **Sparso** ($m\simeq n$)  |    $n\log n$    |      $n^2$       |    $n^2$     |
+| **Denso** ($m\simeq n^2$) |   $n^2\log n$   |      $n^2$       |    $n^3$     |
+
+Volendo è possibile usare questi due algoritmi per implementare una soluzione a **sorgenti multiple - destinazioni multiple**:
+```
+Iterated_BF(G, w)
+	for each v in V[G]
+		Bellman-Ford(G, w, v)
+```
+
+confrontando i due algoritmi implementati in questo modo, otteniamo le seguenti complessità:
+
+|    $G$\Implementazione    | Dijkstra (Heap) | Dijkstra (Array) | Bellman-Ford |
+| :-----------------------: | :-------------: | :--------------: | :----------: |
+| **Sparso** ($m\simeq n$)  |   $n^2\log n$   |      $n^3$       |    $n^3$     |
+| **Denso** ($m\simeq n^2$) |   $n^3\log n$   |      $n^3$       |    $n^4$     |
