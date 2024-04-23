@@ -90,3 +90,25 @@ public class A {
 
 neanche così andrebbe bene, per lo stesso motivo.
 
+>**Riassunto**: il tipo di ritorno può scendere, mentre il tipo dei parametri può salire di gerarchia (ma Java non lo consente normalmente).
+
+### Wildcards
+Prendiamo come esempio la funzione `sort` della JDK:
+```java
+public static <T> void sort(List<T> list, Comparator<? super T> c);
+```
+
+viene usata una **wildcard** per `Comparator`, in modo da farlo funzionare anche con **tipi superiori**, usare un `Comparator` con **tipi inferiori** tuttavia non avrebbe senso in quanto potrebbero avere più campi da confrontare di `T`.
+
+Confrontare tipi superiori rispetto a `T` funziona perchè con un `Comparator` di tipo superiore si è sicuri che avrà un sotto insieme di campi che ha anche `T`.
+
+Con l'uso delle _wildcards_ è possibile **contro-variare** l'input di una funzione quando viene specificato un **upper bound** tramite `super`, tuttavia è anche possibile specificare un **lower bound** tramite `extends`.
+
+Le wildcards sono usate per **subsumere** il **type argument** (tipo generico) in quanto Java possiede solo un tipo di generics per il _container_ e subsumere il _type argument_ in automatico potrebbe causare problemi, infatti non lo consente.
+
+Da notare che nel **type parameter** è possibile utilizzare al massimo un tipo più specifico tramite `extends` (senza l'utilizzo delle wildcards), ma non è possibile usare `super`:
+```java
+public static <T extends Object> void sort(...);
+```
+
+
