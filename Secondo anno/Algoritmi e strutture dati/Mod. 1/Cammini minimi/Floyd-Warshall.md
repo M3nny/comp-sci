@@ -24,7 +24,7 @@ Floyd-Warshall(W)
 $$T(n)=\Theta(n^3)$$
 
 ### Correttezza
-Consideriamo i nodi $i,j,k\in V$, definiamo $\mathscr{D}_{ij}^k$ come l'insieme di cammini **semplici** da $i$ a $j$ che possiedono vertici **intermedi** $\leq k$:
+Consideriamo i nodi $i,j,k\in V$, definiamo $\mathscr{D}_{ij}^{(k)}$ come l'insieme di cammini **semplici** da $i$ a $j$ che possiedono vertici **intermedi** $\leq k$:
 $$\mathscr{D}_{i,j}^{(k)}=\{p\space|\space p\text{ è un cammino semplice da }i\text{ a }j \text{ con vertici intermedi}\leq k\}$$
 
 dove per **nodi intermedi** si intendono i nodi presenti nel cammino da $i$ a $j$ con $i$ e $j$ esclusi.
@@ -42,7 +42,50 @@ e quando $k=n$, si avrà: $\mathscr{D}_{i,j}^{(k)}=\mathscr{D}_{i,j}$.
 Quello che vogliamo calcolare con questo algoritmo è il peso del cammino minimo tra $i$ e $j$, cioè:
 $$\delta(i,j)=\min_{p\in\mathscr{D}_{i,j}} w(p)$$
 
-definiamo ora $d_{i,j}^(k)$ come il peso del cammino minimo tra $i$ e $j$ dove i valori dei vertici intermedi hanno valore $\leq k$, cioè:
+definiamo ora $d_{i,j}^{(k)}$ come il peso del cammino minimo tra $i$ e $j$ dove i valori dei vertici intermedi hanno valore $\leq k$, cioè:
 $$d(i,j)=\min_{p\in\mathscr{D}_{i,j}} w(p)$$
-dato che siamo riusciti a dimostrare che per $k=n$ vale che $\mathscr{D}_{i,j}^k=\mathscr{D}_{i,j}$, allora è anche vero che $\delta(i,j)=d_{i,j}^{(n)}$, che è l'elemento $i,j$-esimo dell'ultima matrice risultato prodotta.
+dato che siamo riusciti a dimostrare che per $k=n$ vale che $\mathscr{D}_{i,j}^{(k)}=\mathscr{D}_{i,j}$, allora è anche vero che $\delta(i,j)=d_{i,j}^{(n)}$, che è l'elemento $i,j$-esimo dell'ultima matrice risultato prodotta.
+
+Per dimostrare la correttezza dell'algoritmo dobbiamo verificare la veridicità dell'uguaglianza all'interno dei cicli `for`, e per farlo ci avvaliamo del seguente **principio**:
+	Sia $X$ un insieme, diviso in due partizioni $Y$ e $Z$, allora $\min X=\min\{\min Y,\min Z\}$.
+
+ciò ci permette di applicare un algoritmo [[Teorema master#Divide et impera|divide et impera]] o, in questo caso di **programmazione dinamica** al problema dei cammini minimi.
+
+![[Insieme cammini Floyd-Warshall.svg|500]]
+dividiamo l'insieme dei cammini da $i$ a $j$ in due sottocammini:
+- Quelli che passano per $k$
+- Quelli che _non_ passano per $k$
+poichè stiamo assumendo che **i cammini siano semplici**, non essendoci cicli siamo sicuri che $k$ non è compreso in nessuno dei due insiemi di sottocammini $\mathscr{D}_{i,k}^{(k-1)}$ e $\mathscr{D}_{k,j}^{(k-1)}$, e che tutti i vertici compresi in quei sottocammini abbiano valore $\leq k-1$.
+
+Definiamo il seguente insieme:
+$$\hat{\mathscr{D}}_{i,j}^{(k)}=\{p\space|\space p\in\mathscr{D}_{i,k}^{(k)} \text{ passanti per } k\}$$
+quindi:
+$$\mathscr{D}_{i,k}^{(k)}=\hat{\mathscr{D}}_{i,k}^{(k)}\cup\mathscr{D}_{i,k}^{(k-1)}$$
+usando la definizione di $d_{i,j}^{(k)}$:
+$$\begin{flalign}
+d_{i,j}^{(k)}&=\min_{p\in\mathscr{D}_{i,j}^{(k)}}w(p)\\
+
+&=\min \left\{\min_{p\in\hat{\mathscr{D}}_{i,j}^{(k)}} w(p),\min_{p\in\mathscr{D}_{i,j}^{(k-1)}} w(p)\right\}\\
+
+&=\min \left\{\min_{p\in\mathscr{D}_{i,k}^{(k-1)}} w(p)+\min_{p\in\mathscr{D}_{k,j}^{(k-1)}} w(p),\space d_{i,j}^{(k-1)}\right\}\\
+&=\min \left\{d_{i,k}^{(k-1)}+d_{k,j}^{(k-1)},\space d_{i,j}^{(k-1)}\right\}
+\end{flalign}$$
+verificando così l'uguaglianza all'intero dei cicli `for`.
+
+### Ottimizzazione dello spazio
+All'algoritmo servono solo _due matrici_:
+- Quella che viene costruita nell'iterazione corrente
+- Quella che viene costruita nell'iterazione precedente
+
+È possibile limitare la complessità spaziale ad **una matrice** se valgono le seguenti condizioni:
+
+##### Prima condizione
+Se non esistono cicli negativi $\forall \ell=1,...,n$ tale che $d_{ii}^{(\ell)}=0\space\forall i=1,...,n$, ovvero se non esistono cicli negativi la diagonale principale sarà uguale a $0$.
+
+**Dimostrazione** per induzione su $\ell$:
+**Caso base**: per $\ell=0$ la condizione è verificata per definizione di $W$.
+**Passo induttivo**: assumiamo per ipotesi induttiva che la proprietà valga fino a $\ell-1$ e lo dimostriamo per $\ell$.
+$$d_{i,i}^{(\ell)}=\min\{\underbrace{d_{i,i}^{(\ell-1)}}_\text{=0 per ip. ind.},\space \underbrace{d_{i,\ell}^{(\ell-1)}+d_{\ell,i}^{(\ell-1)}}_{\geq 0\text{ perchè }\nexists\text{ cicli neg. }}\}=0$$
+questo verifica la proprietà.
+>Applicando l'algoritmo di **Floyd-Warshall** ad un grafo qualsiasi è possibile capire se ci sono cicli negativi verificando la presenza di valori negativi nella diagonale principale.
 

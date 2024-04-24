@@ -92,3 +92,36 @@ confrontando i due algoritmi implementati in questo modo, otteniamo le seguenti 
 | :-----------------------: | :-------------: | :--------------: | :----------: |
 | **Sparso** ($m\simeq n$)  |   $n^2\log n$   |      $n^3$       |    $n^3$     |
 | **Denso** ($m\simeq n^2$) |   $n^3\log n$   |      $n^3$       |    $n^4$     |
+
+### Esercizi per riduzione
+**Es1**:
+Sia $G$ un grafo orientato con pesi $w(u,v)>0$, determinare se esiste un ciclo $C=<x_0,...,x_q>$ raggiungibile da $s\in V$ tale che:
+$$\prod_{i=1}^q w(x_{i-1},x_i)<1$$
+Possiamo ricondurci ad un problema risolvibile con i cammini minimi, infatti applicando il logaritmo otteniamo:
+$$\log\left(\prod_{i=1}^q w(x_{i-1},x_i)\right)<\log(1)\quad\iff\quad\sum_{i=1}^q \log w(x_{i-1},x_i)<0$$
+
+creando un grafo $G'$ con peso $w'=\log w$, che può assumere valori negativi se $w(u,v)\in[0,1]$, possiamo applicare direttamente l'algoritmo di **bellman-ford** il quale ritornerà `false` se la condizione del problema originale sarà verificata.
+
+**Es 2**:
+Sia $G$ un grafo orientato, dove $\forall(u,v)\in E$, il peso $r(u,v)\in]0,1]$ rappresenta il valore di affidabilità, ovvero una probabilità indipendente dalle altre, di un canale di comunicazione, vogliamo trovare il cammino avente affidabilità massima.
+
+Questo è un problema di _massimizzazione_ che possiamo riformulare nei termini di un problema di cammini minimi, dato un cammino $p$, la sua affidabilità si può vedere come il prodotto dell'affidabilità degli archi che lo costituiscono:
+$$\mathbb{P}(A,B)=\mathbb{P}(A)\mathbb{P}(B)=\alpha(p)$$
+$$\alpha(p)=\prod_{i=1}^q r(x_{i-1},x_i)$$
+noi vogliamo trovare tra tutti i possibili cammini $p=<x_0,...,x_q>\in\mathscr{C}(u,v)$ con $x_0=u$ e $x_q=v$, quello che massimizza l'affidabilità, quindi:
+$$\max_{p\in\mathscr{C}(u,v)}\prod_{i=1}^q r(x_{i-1},x_i)$$
+
+vogliamo tradurre il problema in un problema di cammini minimi e quindi che rispecchi la seguente definizione di problema:
+$$\min_{p\in\mathscr{C}(u,v)}\sum_{i=1}^q r(x_{i-1},x_i)$$
+
+in realtà quello che vogliamo è il cammino che massimizzi questa "affidabilità", quindi non usiamo $\max$, bensì $\arg\max$ che ritorna l'argomento che rende la funzione minima (ragionamento analogo per $\arg\min$), quindi attraverso alcune trasformazioni, otteniamo:
+$$\begin{flalign}
+\arg\max_{p\in\mathscr{C}(u,v)}\prod_{i=1}^q r(x_{i-1},x_i)&=\arg\max_{p\in\mathscr{C}(u,v)}\log\left(\prod_{i=1}^q r(x_{i-1},x_i)\right)\\
+&=\arg\max_{p\in\mathscr{C}(u,v)}\underbrace{\sum_{i=1}^q \log \overbrace{r(x_{i-1},x_i)}^{>0}}_{<0}
+\end{flalign}$$
+
+invertendo la funzione e trovarne il minimo equivale a trovare il massimo della funzione originale, per cui otteniamo:
+$$\arg\min_{p\in\mathscr{C}(u,v)}\sum_{i=1}^q \log\left(\frac{1}{r(x_{i-1},x_i)}\right)$$
+
+dato che l'affidabilità di ogni arco è positiva, il reciproco dell'affidabilità è una quantità positiva, possiamo quindi costruire un nuovo grafo $G'$ con una nuova funzione peso $w(u,v)=\log\left(\frac{1}{r(u,v)}\right)$, in questo modo possiamo applicare direttamente l'algoritmo di **Dijkstra**, in questo caso scegliamo Dijkstra perchè sappiamo che i pesi sono positivi e quindi funzionerà e avrà una complessità minore rispetto a quello di Bellman-Ford.
+
