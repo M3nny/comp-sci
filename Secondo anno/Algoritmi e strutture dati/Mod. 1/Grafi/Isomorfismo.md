@@ -8,7 +8,8 @@ essi sono isomorfi perchè rappresentano la stessa relazione indipendentemente d
 
 La **degree-sequence** ($\text{deg-seq}(G)$) di un grafo è un vettore di $n$ elementi contenente i gradi dei vertici secondo un certo ordine (solitamente è crescente).
 
-Per elencare una condizione necessaria per l'isomorfismo, dobbiamo introdurre il concetto di **clique**, ovvero un **sottografo completo**, in particolare:
+#### Clique
+Per elencare una condizione necessaria per l'isomorfismo, dobbiamo introdurre il concetto di **clique**, ovvero un [[Tipologie#Sottografo|sottografo]] [[Tipologie#Grafo completo|completo]], in particolare:
 - **Clique massima**: sottografo completo più grande in $G$
 - **Clique massimale**: clique che non è contenuta in una clique più grande
 ![[Clique.svg|500]]

@@ -89,3 +89,29 @@ $$d_{i,i}^{(\ell)}=\min\{\underbrace{d_{i,i}^{(\ell-1)}}_\text{=0 per ip. ind.},
 questo verifica la proprietà.
 >Applicando l'algoritmo di **Floyd-Warshall** ad un grafo qualsiasi è possibile capire se ci sono cicli negativi verificando la presenza di valori negativi nella diagonale principale.
 
+##### Seconda condizione
+Presi due vertici $i,j\in V$ ed un ulteriore vertice $k\in V$, vale che:
+$$\begin{cases}
+d_{i,k}^{(k)}=d_{i,k}^{(k-1)}\\
+d_{k,j}^{(k)}=d_{k,j}^{(k-1)}
+\end{cases}$$
+cioè la $k$-esima riga e la $k$-esima colonna restano inalterate tra la matrice $D^{(k)}$ e la matrice $D^{(k-1)}$.
+
+**Dimostrazione** per definizione di $d_{i,k}^{(k)}$ sia ha che:
+$$d_{i,k}^{(k)}=\min\{d_{i,k}^{(k-1)},d_{i,k}^{(k-1)}+d_{k,k}^{(k-1)}\}=d_{i,k}^{(k-1)}$$
+questo perchè $d_{k,k}^{(k-1)}=0$ dato che si trova nella diagonale principale.
+
+l'algoritmo riscritto risulterebbe essere:
+```
+Floyd-Warshall(W)
+	n = rows(W)
+	D = W
+	for k = 1,...,n
+		for i = 1,...,n
+			for j = 1,...,n
+				d[i][j] = min(d[i][j], d[i][k] + d[k][j])
+	return D
+```
+
+La complessità temporale rimane invariata, ora però la **complessità spaziale** è quadratica: $S(n)=\Theta(n^2)$.
+
