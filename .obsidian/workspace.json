@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "7932c2997ce39e6e",
+        "id": "1d4a1cb764b18b15",
         "type": "tabs",
         "children": [
           {
-            "id": "8ba79bae85a18ce9",
+            "id": "98e84d3c35cf2766",
             "type": "leaf",
             "state": {
               "type": "empty",
@@ -65,7 +65,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 350.5124969482422
+    "width": 350.5124969482422,
+    "collapsed": true
   },
   "right": {
     "id": "282a9548711da6a0",
@@ -137,8 +138,18 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "8ba79bae85a18ce9",
+  "active": "a1163d9af64d6878",
   "lastOpenFiles": [
+    "Secondo anno/Basi di dati/Mod. 2/Programmazione/Transazioni.md",
+    "Secondo anno/Basi di dati/Mod. 2/NoSQL.md",
+    "Secondo anno/Basi di dati/Mod. 2/NoSQL.md",
+    "Secondo anno/Basi di dati/Mod. 1/Introduzione.md",
+    "Secondo anno/Basi di dati/Mod. 2/Programmazione/SQL in app.md",
+    "Secondo anno/Basi di dati/Mod. 2/NoSQL",
+    "Secondo anno/Basi di dati/Mod. 2/Programmazione/Web.md",
+    "Primo anno/Primo semestre/Algebra lineare/Matrici.md",
+    "Untitled.md",
+    "Secondo anno/Algoritmi e strutture dati/Mod. 2/Programmazione dinamica/Taglio delle aste.md",
     "Secondo anno/Algoritmi e strutture dati/Mod. 1/Cammini minimi/Floyd-Warshall.md",
     "Secondo anno/Algoritmi e strutture dati/Mod. 1/Images/Insieme cammini Floyd-Warshall.svg",
     "Excalidraw/TEMPLATE GRAFO.excalidraw.md",
@@ -159,16 +170,8 @@
     "Secondo anno/Algoritmi e strutture dati/Mod. 1/Alberi/Prim.md",
     "Secondo anno/Algoritmi e strutture dati/Mod. 1/Alberi/Kruscal.md",
     "Secondo anno/Algoritmi e strutture dati/Mod. 1/Alberi/Generic-MST.md",
-    "Secondo anno/Algoritmi e strutture dati/Mod. 1/Alberi/Minimum Spanning Tree.md",
-    "Secondo anno/Algoritmi e strutture dati/Mod. 2/Programmazione dinamica/LCS.md",
-    "Secondo anno/Algoritmi e strutture dati/Mod. 2/Programmazione dinamica/Taglio delle aste.md",
-    "Secondo anno/Programmazione ad oggetti/Mod. 2/Thread.md",
-    "Secondo anno/Sistemi operativi/Mod. 2/Thread/Monitor/Programmazione con i monitor.md",
-    "Secondo anno/Sistemi operativi/Mod. 2/Thread/Monitor/Monitor.md",
     "Secondo anno/Algoritmi e strutture dati/Mod. 1/Images/Arco negativo Dijkstra.svg",
     "Secondo anno/Algoritmi e strutture dati/Mod. 1/Images/Osservazione Dijkstra.svg",
-    "Primo anno/Primo semestre/Architettura degli elaboratori mod. 1/7 - Valutazione delle prestazioni.md",
-    "Primo anno/Primo semestre/Architettura degli elaboratori mod. 1/1 - Rappresentazione dell'informazione/Conversioni.md",
     "Secondo anno/Sistemi operativi/Mod. 2/Thread/Monitor",
     "Secondo anno/Sistemi operativi/Mod. 2/Thread/Semafori",
     "Secondo anno/Algoritmi e strutture dati/Mod. 1/Images/Grafo dei predecessori.svg",
@@ -182,7 +185,6 @@
     "Secondo anno/Algoritmi e strutture dati/Mod. 1/Images/Non confermato 956157.crdownload",
     "Excalidraw",
     "Secondo anno/Algoritmi e strutture dati/Mod. 1/Grafi",
-    "Secondo anno/Sistemi operativi/Mod. 2/Thread",
     "Untitled.canvas"
   ]
 }
