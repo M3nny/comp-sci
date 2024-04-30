@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "0b4d5a98dd60efe9",
+        "id": "ef29868abaf74b83",
         "type": "tabs",
         "children": [
           {
-            "id": "3ff4beedabe36f7b",
+            "id": "8f4292fe0bf326b4",
             "type": "leaf",
             "state": {
               "type": "empty",
@@ -81,7 +81,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Secondo anno/Algoritmi e strutture dati/Mod. 1/Algoritmi greedy.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -98,7 +97,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Secondo anno/Algoritmi e strutture dati/Mod. 1/Algoritmi greedy.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -120,9 +118,7 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "Secondo anno/Algoritmi e strutture dati/Mod. 1/Algoritmi greedy.md"
-              }
+              "state": {}
             }
           }
         ]
@@ -141,8 +137,9 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "a1163d9af64d6878",
+  "active": "8f4292fe0bf326b4",
   "lastOpenFiles": [
+    "Secondo anno/Programmazione ad oggetti/Mod. 2/Oggetti in C++.md",
     "Secondo anno/Algoritmi e strutture dati/Mod. 1/Algoritmi greedy.md",
     "Excalidraw/TEMPLATE GRAFO.excalidraw.md",
     "Secondo anno/Algoritmi e strutture dati/Mod. 1/Images/Is clique-2.svg",
