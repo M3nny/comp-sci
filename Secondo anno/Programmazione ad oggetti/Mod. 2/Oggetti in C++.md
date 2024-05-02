@@ -59,6 +59,24 @@ Il **padre** in C++ è considerato un campo da inizializzare, a differenza di Ja
 dog(int w, double sp, bool ped) : animal(w, sp), has_pedigree(ped) {}
 ```
 
+I **costruttori di conversione** vengono utilizzati per convertire i valori _rhs_ di un _operatore qualsiasi_ in un oggetto costruito con i valori _rhs_ (se possibile), l'utilizzo della keyword `explicit` ne vieta l'utilizzo.
+```cpp
+class animal {
+    int age;
+ 
+public:
+    explicit animal(int a) {
+        age = a;
+    }
+};
+ 
+int main() {
+    animal a1(10); // Ok
+    animal a2 = 10; // No viable conversion
+    animal a3 = (animal)10; // Ok con type casting
+}
+```
+
 ### Dichiarazione e costruzione
 In C++ a differenza di C, <u>non si dichiara</u>, si **costruisce**, infatti pure tipi primitivi come `int` se non specificato chiamano il _default constructor_ che li inizializza a $0$.
 

@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "ef29868abaf74b83",
+        "id": "9c68c4656daeefbb",
         "type": "tabs",
         "children": [
           {
-            "id": "8f4292fe0bf326b4",
+            "id": "6d325d01f65c873c",
             "type": "leaf",
             "state": {
               "type": "empty",
@@ -137,9 +137,10 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "8f4292fe0bf326b4",
+  "active": "6d325d01f65c873c",
   "lastOpenFiles": [
     "Secondo anno/Programmazione ad oggetti/Mod. 2/Oggetti in C++.md",
+    "Secondo anno/Algoritmi e strutture dati/Mod. 2/Programmazione dinamica/Taglio delle aste.md",
     "Secondo anno/Algoritmi e strutture dati/Mod. 1/Algoritmi greedy.md",
     "Excalidraw/TEMPLATE GRAFO.excalidraw.md",
     "Secondo anno/Algoritmi e strutture dati/Mod. 1/Images/Is clique-2.svg",
@@ -169,7 +170,6 @@
     "Secondo anno/Basi di dati/Mod. 2/Programmazione/SQL in app.md",
     "Secondo anno/Basi di dati/Mod. 2/NoSQL",
     "Secondo anno/Basi di dati/Mod. 2/Programmazione/Web.md",
-    "Primo anno/Primo semestre/Algebra lineare/Matrici.md",
     "Secondo anno/Algoritmi e strutture dati/Mod. 1/Images/Insieme cammini Floyd-Warshall.svg",
     "Secondo anno/Algoritmi e strutture dati/Mod. 1/Images/Nodi intermedi.svg",
     "Secondo anno/Algoritmi e strutture dati/Mod. 1/Images/Nodi intermedi.svg",
