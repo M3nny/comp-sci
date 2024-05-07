@@ -59,7 +59,7 @@ Il **padre** in C++ è considerato un campo da inizializzare, a differenza di Ja
 dog(int w, double sp, bool ped) : animal(w, sp), has_pedigree(ped) {}
 ```
 
-I **costruttori di conversione** vengono utilizzati per convertire i valori _rhs_ di un _operatore qualsiasi_ in un oggetto costruito con i valori _rhs_ (se possibile), l'utilizzo della keyword `explicit` ne vieta l'utilizzo.
+I **costruttori di conversione** vengono utilizzati per convertire i valori _rhs_ di un _operatore qualsiasi_ in un oggetto costruito con i valori _rhs_ (se possibile), lo stesso vale per il passaggio di argomenti alle funzioni; l'utilizzo della keyword `explicit` ne vieta l'utilizzo.
 ```cpp
 class animal {
     int age;
@@ -127,3 +127,32 @@ int& weight() { return weight; }
 
 La keyword `const` dopo la firma di una funzione non permette di modificare i campi di `this` (oggetto su cui è chiamato il metodo).
 
+### Overload degli operatori
+C++ avendo un paradigma **orientato ai valori**, utilizza un sistema di [[Guida a C++#Templates|templates]], ed inoltre ogni operatore è una chiamata a funzione.
+
+```cpp
+template <class T>
+class matrix {
+	matrix<T>& operator=(const matrix<T>& m) {
+		cols = m.cols;
+		v = m.v;
+		return *this;
+	}
+}
+```
+
+È possibile ridefinire gli operatori a proprio piacimento, purchè dopo ne vengano rispettate le firme.
+
+Quello nell'esempio è un operatore di assegnamento **eterogeneo**, ed è detto tale perchè il tipo di _lhs_ (this) è `T`, e lo stesso vale per il tipo di _rhs_.
+
+Viene ritornato `matrix<T>&` per convenzione, in quanto questo consente concatenamento di assegnamenti, ad esempio:
+```cpp
+m = m2 = m3
+```
+
+ciò non sarebbe stato possibile ritornando `void` in quanto il "dezuccheramento" dell'operatore sarebbe stato il seguente:
+```cpp
+m.operator=(m2.operator=(m3))
+// m2.operator=(m3) è OK
+// ma m.operator=(void) non è valido
+```

@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "28aa0bd52d510813",
+        "id": "5fabbfa025867be6",
         "type": "tabs",
         "children": [
           {
-            "id": "d4255eae32330531",
+            "id": "108c8e2d161c9445",
             "type": "leaf",
             "state": {
               "type": "empty",
@@ -137,8 +137,15 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "d4255eae32330531",
+  "active": "108c8e2d161c9445",
   "lastOpenFiles": [
+    "Secondo anno/Programmazione ad oggetti/Mod. 2/Oggetti in C++.md",
+    "Secondo anno/Programmazione ad oggetti/Mod. 2/Co-varianza e contro-varianza.md",
+    "Secondo anno/Programmazione ad oggetti/Mod. 2/Guida a Java.md",
+    "Secondo anno/Programmazione ad oggetti/Mod. 2/Tipi di classi.md",
+    "Secondo anno/Algoritmi e strutture dati/Mod. 2/Programmazione dinamica/Taglio delle aste.md",
+    "Secondo anno/Algoritmi e strutture dati/Mod. 2/Programmazione dinamica/Approccio dinamico.md",
+    "Secondo anno/Algoritmi e strutture dati/Mod. 1/Alberi/Prim.md",
     "Secondo anno/Algoritmi e strutture dati/Mod. 1/Images/Verifica ciclo Hamiltoniano.svg",
     "Secondo anno/Algoritmi e strutture dati/Mod. 1/Teoria della NP completezza.md",
     "Secondo anno/Algoritmi e strutture dati/Mod. 1/Cammini minimi/Bellman-Ford.md",
@@ -147,24 +154,18 @@
     "Secondo anno/Algoritmi e strutture dati/Mod. 1/Algoritmi greedy.md",
     "Secondo anno/Algoritmi e strutture dati/Mod. 1/Fibonacci.md",
     "Secondo anno/Programmazione ad oggetti/Mod. 2/Thread.md",
-    "Secondo anno/Programmazione ad oggetti/Mod. 2/Co-varianza e contro-varianza.md",
     "Secondo anno/Sistemi operativi/Mod. 2/Thread/Monitor/Thread in Java.md",
     "Secondo anno/Sistemi operativi/Mod. 2/Thread/Monitor/Monitor.md",
     "Secondo anno/Sistemi operativi/Mod. 2/Thread/Thread POSIX.md",
     "Secondo anno/Sistemi operativi/Mod. 2/Comunicazione tra processi e thread.md",
     "Secondo anno/Interazione uomo macchina/L'interazione.md",
     "Secondo anno/Interazione uomo macchina/La macchina.md",
-    "Secondo anno/Algoritmi e strutture dati/Mod. 1/Alberi/Prim.md",
     "Secondo anno/Algoritmi e strutture dati/Mod. 1/Alberi/Kruscal.md",
     "Secondo anno/Algoritmi e strutture dati/Mod. 1/Alberi/Generic-MST.md",
     "Secondo anno/Algoritmi e strutture dati/Mod. 1/Alberi/Minimum Spanning Tree.md",
     "Secondo anno/Algoritmi e strutture dati/Mod. 1/Cammini minimi/Floyd-Warshall.md",
     "Secondo anno/Algoritmi e strutture dati/Mod. 1/Cammini minimi/Dijkstra.md",
     "Secondo anno/Algoritmi e strutture dati/Mod. 1/Cammini minimi/Introduzione.md",
-    "Secondo anno/Algoritmi e strutture dati/Mod. 1/Grafi/Connettività e aciclicità.md",
-    "Secondo anno/Algoritmi e strutture dati/Mod. 1/Grafi/Tipologie.md",
-    "Secondo anno/Algoritmi e strutture dati/Mod. 1/Grafi/Matrici.md",
-    "Secondo anno/Algoritmi e strutture dati/Mod. 1/Grafi/Grado.md",
     "Secondo anno/Algoritmi e strutture dati/Mod. 1/Images/Is clique-2.svg",
     "Secondo anno/Algoritmi e strutture dati/Mod. 1/Images/Is clique-1.svg",
     "Secondo anno/Algoritmi e strutture dati/Mod. 1/Images/Is clique-2.svg",
