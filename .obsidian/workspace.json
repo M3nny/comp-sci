@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "5fabbfa025867be6",
+        "id": "e36858f91c736d5f",
         "type": "tabs",
         "children": [
           {
-            "id": "108c8e2d161c9445",
+            "id": "090c1c31ae2a9631",
             "type": "leaf",
             "state": {
               "type": "empty",
@@ -137,8 +137,16 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "108c8e2d161c9445",
+  "active": "090c1c31ae2a9631",
   "lastOpenFiles": [
+    "Secondo anno/Algoritmi e strutture dati/Mod. 1/Teoria della NP completezza.md",
+    "Secondo anno/Algoritmi e strutture dati/Mod. 1/Images/SAT-3FNC to Clique.svg",
+    "Excalidraw/TEMPLATE GRAFO.excalidraw.md",
+    "Secondo anno/Algoritmi e strutture dati/Mod. 1/Algoritmi greedy.md",
+    "Excalidraw/Drawing 2024-05-06 16.51.48.excalidraw.md",
+    "Secondo anno/Algoritmi e strutture dati/Mod. 1/Images/Classi di problemi.svg",
+    "Secondo anno/Algoritmi e strutture dati/Mod. 1/Images/NPC - NPCI.svg",
+    "Secondo anno/Algoritmi e strutture dati/Mod. 1/Grafi/Isomorfismo.md",
     "Secondo anno/Programmazione ad oggetti/Mod. 2/Oggetti in C++.md",
     "Secondo anno/Programmazione ad oggetti/Mod. 2/Co-varianza e contro-varianza.md",
     "Secondo anno/Programmazione ad oggetti/Mod. 2/Guida a Java.md",
@@ -147,11 +155,7 @@
     "Secondo anno/Algoritmi e strutture dati/Mod. 2/Programmazione dinamica/Approccio dinamico.md",
     "Secondo anno/Algoritmi e strutture dati/Mod. 1/Alberi/Prim.md",
     "Secondo anno/Algoritmi e strutture dati/Mod. 1/Images/Verifica ciclo Hamiltoniano.svg",
-    "Secondo anno/Algoritmi e strutture dati/Mod. 1/Teoria della NP completezza.md",
     "Secondo anno/Algoritmi e strutture dati/Mod. 1/Cammini minimi/Bellman-Ford.md",
-    "Excalidraw/TEMPLATE GRAFO.excalidraw.md",
-    "Excalidraw/Drawing 2024-05-06 16.51.48.excalidraw.md",
-    "Secondo anno/Algoritmi e strutture dati/Mod. 1/Algoritmi greedy.md",
     "Secondo anno/Algoritmi e strutture dati/Mod. 1/Fibonacci.md",
     "Secondo anno/Programmazione ad oggetti/Mod. 2/Thread.md",
     "Secondo anno/Sistemi operativi/Mod. 2/Thread/Monitor/Thread in Java.md",
@@ -164,17 +168,11 @@
     "Secondo anno/Algoritmi e strutture dati/Mod. 1/Alberi/Generic-MST.md",
     "Secondo anno/Algoritmi e strutture dati/Mod. 1/Alberi/Minimum Spanning Tree.md",
     "Secondo anno/Algoritmi e strutture dati/Mod. 1/Cammini minimi/Floyd-Warshall.md",
-    "Secondo anno/Algoritmi e strutture dati/Mod. 1/Cammini minimi/Dijkstra.md",
-    "Secondo anno/Algoritmi e strutture dati/Mod. 1/Cammini minimi/Introduzione.md",
     "Secondo anno/Algoritmi e strutture dati/Mod. 1/Images/Is clique-2.svg",
     "Secondo anno/Algoritmi e strutture dati/Mod. 1/Images/Is clique-1.svg",
     "Secondo anno/Algoritmi e strutture dati/Mod. 1/Images/Is clique-2.svg",
     "Secondo anno/Algoritmi e strutture dati/Mod. 1/Images/Is clique.svg",
     "Secondo anno/Basi di dati/Mod. 2/NoSQL",
-    "Secondo anno/Algoritmi e strutture dati/Mod. 1/Images/Insieme cammini Floyd-Warshall.svg",
-    "Secondo anno/Algoritmi e strutture dati/Mod. 1/Images/Nodi intermedi.svg",
-    "Secondo anno/Algoritmi e strutture dati/Mod. 1/Images/Nodi intermedi.svg",
-    "Secondo anno/Algoritmi e strutture dati/Mod. 1/Images/Arco negativo Dijkstra.svg",
     "Secondo anno/Sistemi operativi/Mod. 2/Thread/Monitor",
     "Secondo anno/Sistemi operativi/Mod. 2/Thread/Semafori",
     "Secondo anno/Algoritmi e strutture dati/Mod. 1/Cammini minimi",
