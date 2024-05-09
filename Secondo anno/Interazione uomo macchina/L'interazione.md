@@ -154,7 +154,6 @@ Formato da 7 componenti:
 7. Valutare lo stato del sistema rispetto all'obiettivo
 
 Questo modello si concentra solo sull'**interfaccia** che viene percepita dall'utente come sistema.
-
 #### Interaction framework (Abowd & Beale)
 Rappresenta un'estensione del modello di Norman, nella quale viene esplicitamente considerato il sistema dietro l'interfaccia.
 
@@ -170,10 +169,9 @@ Formato da 4 componenti:
   - **Presentazione**: il sistema presenta il risultato formulato nel linguaggio di output
   - **Osservazione** l'utente traduce il linguaggio di output nel proprio linguaggio
 
-
-  
   **Risoluzione di problemi**:
   - È possibile applicare delle etichette esplicite che spieghino il significato di input
 - Bisogna tradurre bene lo stato del sistema in output in questo modo si evitano incomprensioni
-- 
+
+
   

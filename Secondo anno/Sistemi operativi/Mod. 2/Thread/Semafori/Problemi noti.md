@@ -135,7 +135,7 @@ Filosofo(i) {
 
 Potrebbe però verificarsi un **deadlock** (i thread si aspettano a vicenda per sempre) nel caso tutti i filosofi prendessero la bacchetta a sinistra in quanto rimarrebbero tutti in attesa della bacchetta destra.
 
-**Limitare il numero di posti**:
+##### Limitare il numero di posti
 Utilizzando un numero di posti inferiore a $5$, una bacchetta sarebbe sempre libera nel tavolo, in questo modo se arriva un altro filosofo, dovrà accodarsi al tavolo.
 ```
 semaphore bacchette[5]={1,1,1,1,1};
@@ -156,7 +156,7 @@ Filosofo(i) {
 }
 ```
 
-**Raccolta atomica**:
+##### Raccolta atomica
 Si può usare un mutex in più per garantire che le bacchette vengano raccolte da un filosofo alla volta.
 
 Tuttavia questa soluzione sincronizza troppo in quanto un filosofo che è in attesa della bacchetta destra farà aspettare anche gli altri che possono già mangiare, riducendo il parallelismo.
@@ -179,7 +179,7 @@ Filosofo(i) {
 }
 ```
 
-**Filosofo mancino**:
+##### Filosofo mancino
 Forzando un filosofo a raccogliere per prima la bacchetta di destra si evita la situazione di _deadlock_.
 
 Non è più possibile che tutti raccolgano la bacchetta di sinistra mettendosi in attesa su quella di destra, dato che almeno uno cercherà di raccogliere prima quella di destra.
