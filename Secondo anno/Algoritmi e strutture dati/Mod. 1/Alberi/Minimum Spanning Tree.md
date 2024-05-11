@@ -81,6 +81,7 @@ Sia $G=(V,E)$ un **grafo non orientato connesso**, siano:
 - $(u,v)\in E$ un arco leggero che attraversa il taglio
 
 allora il **teorema fondamentale degli MST** afferma che _esiste_ un $MST(G)$ che contiene $A\cup\{(u,v)\}$, brevemente si dice che l'arco $(u,v)$ è **sicuro** per $A$.
+>L'arco viene detto _sicuro_ in quanto aggiungendolo ad $A$ continuerà ad essere un sottoinsieme di archi contenuto in qualche $MST$.
 
 **Dimostrazione - cuci e taglia**:
 sia $T\in MST(G)$ tale che $A\subseteq T$, abbiamo due casi (come nel fatto cruciale):
@@ -98,7 +99,7 @@ Inoltre $(u,v)\in T''$ per costruzione.
 ##### Corollario del teorema fondamentale degli MST
 Sia $G=(V,E)$ un **grafo non orientato connesso**, siano:
 - $A\subseteq E$ un sottoinsieme di archi contenuto in qualche $MST$
-- $C=(V_C,E_C)$ una componente connessa della [[Tipologie#Grafo aciclico (o foresta)|foresta]] $G_A=(V,A)$
+- $C=(V_C,E_C)$ una componente connessa della [[Tipologie#Foresta|foresta]] $G_A=(V,A)$
 - $(u,v)$ un arco leggero che connette $C$ ad un'altra componente connessa di $G_A$
 
 allora $(u,v)$ è **sicuro** per $A$, cioè $A\cup\{(u,v)\}$ è contenuto in qualche $MST$.

@@ -38,9 +38,8 @@ Sia $G=(V,E)$ un grafo orientato pesato con $w:E\to\mathbb{R}$, con sorgente $s\
 - $d[u]=\delta(s,u)\space\forall u\in V$
 - $G_\pi$ è un albero di cammini minimi
 
-Dimostriamo solo il primo punto attraverso varie **osservazioni**, ma per prima cosa,
-
-supponiamo che per _assurdo_ esista un vertice $u\in V$ che al momento dell'estrazione abbia $d[u]\neq\delta(s,u)$ e supponiamo che $u$ sia il primo vertice per cui questo accade.  
+Dimostriamo solo il primo punto attraverso varie **osservazioni**:
+supponiamo che **per assurdo** esista un vertice $u\in V$ che al momento dell'estrazione abbia $d[u]\neq\delta(s,u)$ e supponiamo che $u$ sia il primo vertice per cui questo accade.  
 
 **Osservazioni**:
 - $u\neq s$ in quanto $d[s]=0=\delta(s,s)$ e non può neanche valere $-\infty$ perchè per ipotesi non ci sono cicli negativi ($w(u,v)\geq 0$)
@@ -55,7 +54,7 @@ per il punto precedente infatti, esiste un cammino minimo $p$ tra $s$ e $u$, e $
 
 1. $d[x]=\delta(s,x)$ dato che il primo a violare la condizione abbiamo detto essere $u$
 2. $d[y]=\delta(s,y)$ per la [[Secondo anno/Algoritmi e strutture dati/Mod. 1/Cammini minimi/Introduzione#Proprietà della convergenza|proprietà della convergenza]] in quanto all'estrazione di $x$ applichiamo la `Relax` su $y$, ottenendo $d[y]=\delta(s,x)+w(x,y)=\delta(s,y)$
-3. $d[u]\leq d[y]$ perchè ora stiamo per estrarre il nodo $u$, e sappiamo che l'algoritmo estrare prima il vertice avente campo $d$ più piccolo
+3. $d[u]\leq d[y]$ perchè ora stiamo per estrarre il nodo $u$, e sappiamo che l'algoritmo estrae prima il vertice avente campo $d$ più piccolo
 4. $\delta(s,y)\leq \delta(s,u)$ perchè ci troviamo in un cammino minimo con pesi $\geq 0$
 5. $\delta(s,u)\leq d[u]$ per la [[Secondo anno/Algoritmi e strutture dati/Mod. 1/Cammini minimi/Introduzione#Proprietà del limite inferiore|proprietà del limite inferiore]]
 

@@ -1,5 +1,5 @@
 ### Grafo pesato
-È possibile aggiungere delle informazioni sui vertici e/o archi di un grafo, questa informazione $W:E\to\mathbb{R}$ viene chiamata **peso**, rappresentato un numero reale, il quale significato dipende dalla realtà di riferimento.
+È possibile aggiungere delle informazioni sui vertici e/o archi di un grafo, questa informazione $W:E\to\mathbb{R}$ viene chiamata **peso**, rappresenta un numero reale, il quale significato dipende dalla realtà di riferimento.
 - $G=(V,E,W)$ rappresenta un grafo pesato sui vertici o sugli archi
 - $G=(V,E,W_1,W_2)$ rappresenta un grafo pesato sui vertici e sugli archi.
 
@@ -38,13 +38,16 @@ Si dice tale se gli archi di un insieme di nodi vanno solo a nodi dell'altro ins
 >Nel caso di grafo non orientato bipartito completo, esistono $n_1\times n_2$ archi.
 
 ---
-#### Grafo aciclico (o foresta)
+#### Grafo aciclico
 Non presenta [[Secondo anno/Algoritmi e strutture dati/Mod. 1/Grafi/Introduzione#Cammini|cicli]].
 #### Grafo Connesso
 Presi due nodi distinti qualsiasi, esiste un cammino che li collega.
 #### Albero libero
-È un grafo [[Tipologie#Grafo aciclico (o foresta)|aciclico]] e [[Tipologie#Grafo Connesso|connesso]], questo garantisce le seguenti due proprietà:
+È un grafo [[Tipologie#Grafo aciclico|aciclico]] e [[Tipologie#Grafo Connesso|connesso]], questo garantisce le seguenti due proprietà:
 	1. $m=n-1$
 	2. Il cammino che collega due vertici è unico
+
+#### Foresta
+Insieme di [[Tipologie#Albero libero|alberi]] disgiunti.
 #### Albero radicato
-Questo tipo di [[Cos'è un albero|albero]] impone che ci sia una radice, ciò genera una gerarchia.
+[[Cos'è un albero|Questo tipo di albero]] impone che ci sia una radice, ciò genera una gerarchia.

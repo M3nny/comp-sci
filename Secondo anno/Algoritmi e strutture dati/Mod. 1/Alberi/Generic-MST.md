@@ -14,7 +14,7 @@ Le strutture dati trattate, come le operazioni sono molto astratte in modo da po
 Definiamo **rappresentante** di un insieme un elemento che compare solo in un insieme.
 
 **Operatori**:
-- $\text{makeSet(x)} \rightarrow \{x\}$: crea un set con un unico elemento `x`
+- $\text{makeSet(x)} \rightarrow \{x\}$: crea un set con un unico elemento $x$
 - $\text{union(x, y)} \rightarrow S_X\cup S_y$: esegue l'unione degli insiemi aventi come rappresentanti $x$ e $y$
 - $\text{findSet}\rightarrow y:x\in S_y$: dato $x$ ritorna il rappresentante dell'insieme che contiene $x$
 
@@ -22,7 +22,7 @@ Definiamo **rappresentante** di un insieme un elemento che compare solo in un in
 - **Liste concatenate**: in testa è presente il _rappresentante_ dell'insieme e finisce con NIL
 - **Heap binari** ([[Heap sort|heap]]): nella radice troviamo il _rappresentante_ dell'insieme, bisogna fare attenzione all'unione che potrebbe portare a violazioni delle proprietà degli heap (bisogna aggiustare l'heap quindi)
 
-### Verifica della componenti connesse
+### Verifica delle componenti connesse
 Dato un grafo vogliamo un algoritmo che verifichi se si tratta di un'unica componente connessa, e nel caso non lo sia, ritorni le sue componenti connesse.
 ```
 Connected_Components(G)

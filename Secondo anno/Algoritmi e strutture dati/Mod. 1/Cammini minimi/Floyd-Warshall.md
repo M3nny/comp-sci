@@ -6,26 +6,22 @@ w(i,j)&\text{se }i\neq j\text{ e }(i,j)\in E\\
 +\infty&\text{se }i\neq j\text{ e }(i,j)\notin E
 \end{cases}$$
 Ad ogni iterazione l'algoritmo **crea** una matrice delle distanze $D$, anch'essa di dimensioni $n\times n$ e con elementi $d_{ij}$.
->Nell'ultima matrice prodotta varrà: $d_{i,j}=\delta(i,j)$.
 
-```
-Floyd-Warshall(W)
-	n = rows(W)
-	D^(0) = W
-	for k = 1,...,n
-		for i = 1,...,n
-			for j = 1,...,n
-				d^(k) [i][j] =
-				min(d^(k-1) [i][j], d^(k-1) [i][k] + d^(k-1) [k][j])
-	return D^(n)
-```
+>$\text{Floyd-Warshall(W)}$
+>	$\text{n = rows(W)}$
+>	$D^{(0)} = W$
+>	$\text{for k = 1,..., n}$
+>		$\text{for i = 1,..., n}$
+>			$\text{for j = 1,..., n}$
+>				$d_{i,j}^{(k)} = \min(d_{i,j}^{(k-1)}, d_{i,k}^{(k-1)}+d_{k,j}^{(k-1)})$
+>	$\text{return }D^{(n)}$
 
 ### Complessità
 $$T(n)=\Theta(n^3)$$
 
 ### Correttezza
-Consideriamo i nodi $i,j,k\in V$, definiamo $\mathscr{D}_{ij}^{(k)}$ come l'insieme di cammini **semplici** da $i$ a $j$ che possiedono vertici **intermedi** $\leq k$:
-$$\mathscr{D}_{i,j}^{(k)}=\{p\space|\space p\text{ è un cammino semplice da }i\text{ a }j \text{ con vertici intermedi}\leq k\}$$
+Consideriamo i nodi $i,j,k\in V$, definiamo $\mathscr{D}_{ij}^{(k)}$ come l'insieme di cammini **semplici** da $i$ a $j$ che possiedono vertici **intermedi** con valore $\leq k$:
+$$\mathscr{D}_{i,j}^{(k)}=\{p\space|\space p\text{ è un cammino semplice da }i\text{ a }j \text{ con vertici intermedi con valore}\leq k\}$$
 
 dove per **nodi intermedi** si intendono i nodi presenti nel cammino da $i$ a $j$ con $i$ e $j$ esclusi.
 >Questi dovranno essere $\leq k$ nella nostra definizione, tuttavia all'interno di $\mathscr{D}$ compariranno i cammini semplici interi compresi i nodi $i$ e $j$.
@@ -37,38 +33,41 @@ dove per **nodi intermedi** si intendono i nodi presenti nel cammino da $i$ a $j
 
 **Nota**: l'insieme $\mathscr{D}^{(k)}$ conterrà anche tutti i cammini di $\mathscr{D}^{(k-1)}$, abbiamo quindi che:
 $$\forall k\quad\mathscr{D}_{i,j}^{(k-1)}\subseteq\mathscr{D}_{i,j}^{(k)}$$
-e quando $k=n$, si avrà: $\mathscr{D}_{i,j}^{(k)}=\mathscr{D}_{i,j}$.
+e quando $k=n$, si avrà: $\mathscr{D}_{i,j}^{(k)}=\mathscr{D}_{i,j}^{(n)}$.
 
 Quello che vogliamo calcolare con questo algoritmo è il peso del cammino minimo tra $i$ e $j$, cioè:
 $$\delta(i,j)=\min_{p\in\mathscr{D}_{i,j}} w(p)$$
 
 definiamo ora $d_{i,j}^{(k)}$ come il peso del cammino minimo tra $i$ e $j$ dove i valori dei vertici intermedi hanno valore $\leq k$, cioè:
-$$d(i,j)=\min_{p\in\mathscr{D}_{i,j}} w(p)$$
-dato che siamo riusciti a dimostrare che per $k=n$ vale che $\mathscr{D}_{i,j}^{(k)}=\mathscr{D}_{i,j}$, allora è anche vero che $\delta(i,j)=d_{i,j}^{(n)}$, che è l'elemento $i,j$-esimo dell'ultima matrice risultato prodotta.
+$$d_{i,j}^{(k)}=\min_{p\in\mathscr{D}_{i,j}^{(k)}} w(p)$$
+dato che abbiamo visto che per $k=n$ vale che $\mathscr{D}_{i,j}^{(k)}=\mathscr{D}_{i,j}^{(n)}$, allora è anche vero che $\delta(i,j)=d_{i,j}^{(n)}$, che è l'elemento $i,j$-esimo dell'ultima matrice risultato prodotta.
 
 Per dimostrare la correttezza dell'algoritmo dobbiamo verificare la veridicità dell'uguaglianza all'interno dei cicli `for`, e per farlo ci avvaliamo del seguente **principio**:
 	Sia $X$ un insieme, diviso in due partizioni $Y$ e $Z$, allora $\min X=\min\{\min Y,\min Z\}$.
 
-ciò ci permette di applicare un algoritmo [[Teorema master#Divide et impera|divide et impera]] o, in questo caso di **programmazione dinamica** al problema dei cammini minimi.
+ciò ci permette di applicare un algoritmo [[Teorema master#Divide et impera|divide et impera]] o, in questo caso di [[Approccio dinamico|programmazione dinamica]] al problema dei cammini minimi.
+
+Dividiamo l'insieme dei cammini da $i$ a $j$ in due sottocammini:
+- Quelli che **passano per** $k$: dovranno avere valori intermedi $\leq k$, li indichiamo con $\hat{\mathscr{D}}_{i,j}^{(k)}$
+- Quelli che **non passano per** $k$: avranno valori intermedi $< k$, li indichiamo normalmente con $\mathscr{D}_{i,j}^{(k-1)}$
+
+Poichè stiamo assumendo che **i cammini siano semplici**, non essendoci cicli siamo sicuri che $k$ comparirà solo una volta, quindi possiamo suddividere $\hat{\mathscr{D}}_{i,j}^{(k)}$ come segue:
+$$\hat{\mathscr{D}}_{i,j}^{(k)} = \mathscr{D}_{i,k}^{(k-1)}\cup\mathscr{D}_{k,j}^{(k-1)}$$
 
 ![[Insieme cammini Floyd-Warshall.svg|500]]
-dividiamo l'insieme dei cammini da $i$ a $j$ in due sottocammini:
-- Quelli che passano per $k$
-- Quelli che _non_ passano per $k$
-poichè stiamo assumendo che **i cammini siano semplici**, non essendoci cicli siamo sicuri che $k$ non è compreso in nessuno dei due insiemi di sottocammini $\mathscr{D}_{i,k}^{(k-1)}$ e $\mathscr{D}_{k,j}^{(k-1)}$, e che tutti i vertici compresi in quei sottocammini abbiano valore $\leq k-1$.
 
-Definiamo il seguente insieme:
-$$\hat{\mathscr{D}}_{i,j}^{(k)}=\{p\space|\space p\in\mathscr{D}_{i,k}^{(k)} \text{ passanti per } k\}$$
-quindi:
-$$\mathscr{D}_{i,k}^{(k)}=\hat{\mathscr{D}}_{i,k}^{(k)}\cup\mathscr{D}_{i,k}^{(k-1)}$$
+
+Quindi otteniamo:
+$$\mathscr{D}_{i,j}^{(k)}=\hat{\mathscr{D}}_{i,j}^{(k)}\cup\mathscr{D}_{i,j}^{(k-1)}$$
 usando la definizione di $d_{i,j}^{(k)}$:
 $$\begin{flalign}
 d_{i,j}^{(k)}&=\min_{p\in\mathscr{D}_{i,j}^{(k)}}w(p)\\
 
-&=\min \left\{\min_{p\in\hat{\mathscr{D}}_{i,j}^{(k)}} w(p),\min_{p\in\mathscr{D}_{i,j}^{(k-1)}} w(p)\right\}\\
+&=\min \left\{\min_{p\in\mathscr{D}_{i,j}^{(k-1)}} w(p),\min_{p\in\hat{\mathscr{D}}_{i,j}^{(k)}} w(p)\right\}\\
 
-&=\min \left\{\min_{p\in\mathscr{D}_{i,k}^{(k-1)}} w(p)+\min_{p\in\mathscr{D}_{k,j}^{(k-1)}} w(p),\space d_{i,j}^{(k-1)}\right\}\\
-&=\min \left\{d_{i,k}^{(k-1)}+d_{k,j}^{(k-1)},\space d_{i,j}^{(k-1)}\right\}
+&=\min \left\{d_{i,j}^{(k-1)},\min_{p\in\mathscr{D}_{i,k}^{(k-1)}} w(p)+\min_{p\in\mathscr{D}_{k,j}^{(k-1)}} w(p)\right\}\\
+
+&=\min \left\{d_{i,j}^{(k-1)},d_{i,k}^{(k-1)}+d_{k,j}^{(k-1)}\right\}
 \end{flalign}$$
 verificando così l'uguaglianza all'intero dei cicli `for`.
 
@@ -101,17 +100,16 @@ cioè la $k$-esima riga e la $k$-esima colonna restano inalterate tra la matrice
 $$d_{i,k}^{(k)}=\min\{d_{i,k}^{(k-1)},d_{i,k}^{(k-1)}+d_{k,k}^{(k-1)}\}=d_{i,k}^{(k-1)}$$
 questo perchè $d_{k,k}^{(k-1)}=0$ dato che si trova nella diagonale principale.
 
-l'algoritmo riscritto risulterebbe essere:
-```
-Floyd-Warshall(W)
-	n = rows(W)
-	D = W
-	for k = 1,...,n
-		for i = 1,...,n
-			for j = 1,...,n
-				d[i][j] = min(d[i][j], d[i][k] + d[k][j])
-	return D
-```
+l'algoritmo che utilizza una sola matrice è il seguente:
+
+>$\text{Floyd-Warshall(W)}$
+>	$\text{n = rows(W)}$
+>	$D = W$
+>	$\text{for k = 1,..., n}$
+>		$\text{for i = 1,..., n}$
+>			$\text{for j = 1,..., n}$
+>				$d_{i,j} = \min(d_{i,j}, d_{i,k}+d_{k,j})$
+>	$\text{return }D$
 
 La complessità temporale rimane invariata, ora però la **complessità spaziale** è quadratica: $S(n)=\Theta(n^2)$.
 

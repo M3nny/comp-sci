@@ -8,7 +8,7 @@ Un esempio è il seguente grafo, il quale contiene $3$ componenti connesse:
 **Proprietà**: l'insieme delle componenti connesse di un grafo formano una [[Gli insiemi#Partizione|partizione]] di $V$.
 
 ---
-### Condizione necessaria per connettività
+### Condizione necessaria per la connettività
 Se $G$ è [[Tipologie#Grafo Connesso|connesso]] allora è **necessario** (ma **non sufficiente**) che:
 $$|E|\geq |V|-1$$
 **Dimostrazione per induzione su** $n=|V|$:
@@ -38,8 +38,8 @@ $$\begin{flalign}
 &\geq|V|-1
 \end{flalign}$$
 
-### Condizione sufficiente per connettività
-La condizione precedente non è sufficiente per dimostrare che un grafo è connesso, infatti se banalmente prendiamo il grafo circolare $C_3$ con un nodo distaccato avremo: $|E|=3$, $|V|=4$, la condizione precedente è vera, ma il grafo non è connesso. 
+### Condizione sufficiente per la connettività
+La condizione precedente non è sufficiente per dimostrare che un grafo è connesso, infatti se banalmente prendiamo il grafo circolare $C_3$ con un nodo distaccato avremo: $|E|=3$, $|V|=4$, la condizione precedente è vera, ma il grafo non è connesso.
 
 Una condizione **sufficiente** per la connettività è la seguente:
 $$\forall u\in V,\space \deg(u)>\frac{n-1}{2}$$

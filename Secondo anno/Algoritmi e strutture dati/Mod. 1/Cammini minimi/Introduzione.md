@@ -15,7 +15,7 @@ $$\delta(u,v)=
 
 ![[Ciclo negativo.svg]]
 
-Nell'esempio soprastante abbiamo un **ciclo negativo**, si verifica quando la somma dei pesi degli archi che lo compongono è negativa, questo rende indeterminato (o meglio, $-\infty$) il valore minimo in quanto, ci potrebbero fare infiniti cicli per abbassare il costo del cammino.
+Nell'esempio soprastante abbiamo un **ciclo negativo**, si verifica quando la somma dei pesi degli archi che lo compongono è negativa, questo rende indeterminato (o meglio, $-\infty$) il valore minimo in quanto, si potrebbero fare infiniti cicli per abbassare il costo del cammino.
 
 Nella componente connessa di destra però, viene usato $+\infty$ dato che quei nodi **non sono raggiungibili dalla sorgente**.
 
@@ -63,7 +63,7 @@ Denotiamo l'**albero dei cammini minimi** il sottografo di $G$: $G'=(V',E')$  do
 
 #### Inizializzazione
 ```
-INIT_SS(G)
+INIT_SS(G, s)
 	for each u in V[G]
 		d[u] = +∞
 		π[u] = NIL
@@ -74,7 +74,7 @@ pone a $+\infty$ tutte le distanze dei nodi, tranne il nodo sorgente a cui verr�
 
 #### Relax (aggiornamento)
 ```
-Relax((u, v), w(u,v))
+Relax(u, v, w(u,v))
 	if d[v] > d[u] + w(u, v)
 		d[v] = d[u] + w(u, v)
 		π[v] = u
@@ -84,7 +84,7 @@ Relax((u, v), w(u,v))
 L'operazione di `relax` serve ad aggiornare le strutture dati quando viene trovato un cammino con peso minore rispetto a quello conosciuto (inizialmente $+\infty$).
 Inizializzazione infatti, $d[u]$ rappresenta una stima del peso del cammino.
 
->`relax` comunque cambierà al massimo il valore del vertice con arco entrante, e ne diminuirà sempre la sua distanza (se entra nell'else).
+>`relax` cambierà al massimo il valore del vertice con arco entrante, e ne diminuirà sempre la sua distanza (se entra nell'if).
 
 Alla fine degli algoritmi ci aspettiamo che: $\forall v\in V,\space d[v]=\delta(s,v)$.
 
@@ -138,7 +138,7 @@ $$d[u]+\cancel{w(u,v)}\leq\delta(s,u)+\cancel{w(u,v)}\implies d[u]\leq \delta(s,
 ma è assurdo perchè allora $v$ non sarebbe il primo vertice che infrange la proprietà, ma sarebbe $u$.
 
 ##### Proprietà della convergenza
-In un **cammino minimo** per qualche coppia per vertici $u,v\in V$, supponiamo che dopo una serie di `Relax` si abbia $d[u]=\delta(s,u)$, allora `Relax((u,v),w(u,v))` farà in modo che $d[v]=\delta(s,v)$.
+In un **cammino minimo** per qualche coppia per vertici $u,v\in V$, supponiamo che dopo una serie di `Relax` si abbia $d[u]=\delta(s,u)$, allora `Relax(u, v, w(u,v))` farà in modo che $d[v]=\delta(s,v)$.
 
 **Dimostrazione**:
 $$\begin{flalign}

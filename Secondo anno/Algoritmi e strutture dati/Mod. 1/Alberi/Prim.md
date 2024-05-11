@@ -1,13 +1,13 @@
-L'algoritmo di **Prim** a differenza di quello di [[Kruscal]] non usa tanti insiemi sparpagliati per poi unirli, ma fa crescere un albero, in particolare il nodo da cui si parte (il quale sarà la **radice** dell'albero) sarà il **predecessore** di tutti gli altri.
+L'algoritmo di **Prim** a differenza di quello di [[Kruskal]] non usa tanti insiemi sparpagliati per poi unirli, ma fa crescere un albero, in particolare il nodo da cui si parte (il quale sarà la **radice** dell'albero) sarà il **predecessore** di tutti gli altri.
 
 La struttura implicita di **predecessori** sarà un albero vero e proprio dove ogni vertice punta al suo padre, in questo modo sarà facile ricostruire il $MST$.
->Viene creato un albero radicato,
+>Viene creato un albero radicato.
 
 Per ogni vertice vengono mantenute due informazioni nell'algoritmo:
 1. $Key[u]$: elemento della _coda di priorità_ (intero)
 2. $\pi[u]$: predecessore (puntatore)
 
-viene usata una **coda con priorità** $Q\subseteq V[G]$ la quale implementata tramite **heap binario** e contiene i **vertici da estrarre**.
+Viene usata una **coda con priorità** $Q\subseteq V[G]$ la quale implementata tramite **heap binario** e contiene i **vertici da estrarre**.
 - $V\setminus Q$: vertici già estratti
 - $Q$: vertici da estrarre
 >Ad ogni step abbiamo un **taglio** del grafo.
@@ -20,7 +20,7 @@ $\pi[u]$ ovvero il **predecessore**, è dato dal vertice collegato al nodo $u$ t
 
 ![[Exec Prim.svg|700]]
 
-L'algoritmo estrae il nodo con chiave minore e poi aggiorna le i valori delle strutture dati con il nuovo taglio.
+L'algoritmo estrae il nodo con chiave minore e poi aggiorna i valori delle strutture dati con il nuovo taglio.
 
 Riassumendo:
 1. **Inizializzazione**:
@@ -45,20 +45,20 @@ Prim(G, w, r)
 			if v in Q and w(u, v) < Key[v]
 				π[v] = u
 				Key[v] = w(u, v)
-	return {(u, π[v]) | v in V \ {r}}
+	return A = {(v, π[v]) | v in V \ {r}}
 ```
 
 **Osservazioni**: `Adj[u]` indica i vertici adiacenti al nodo estratto `u`, viene ritornato il valore:
-$$\{(u,\pi[u])\space|\space v\in V\setminus Q\setminus {r}\}$$
+$$\{(v,\pi[v])\space|\space v\in V\setminus Q\setminus {r}\}$$
 più in particolare, in quanto $Q$ sarà vuoto:
-$$\{(u,\pi[u])\space|\space v\in V\setminus {r}\}$$
-perchè questo è il modo per ritornare gli archi che formano l'MST ad ogni passo (come $A$ nell'algoritmo di [[Kruscal]]), alla fine lo ritorniamo nella sua forma senza $Q$ in quanto esso sarà vuoto.
+$$\{(v,\pi[v])\space|\space v\in V\setminus {r}\}$$
+perchè questo è il modo per ritornare gli archi che formano l'MST ad ogni passo (come $A$ nell'algoritmo di [[Kruskal]]), alla fine lo ritorniamo nella sua forma senza $Q$ in quanto esso sarà vuoto.
 
 L'algoritmo è **corretto** per il [[Minimum Spanning Tree#Teorema fondamentale degli MST|teorema fondamentale degli MST]], in quanto prendiamo sempre un arco leggero.
 
 **Complessità** (indicando il numero di nodi con $n$ e di archi $m$):
 l'inizializzazione ha costo $n$, il `while` viene eseguito $n$ volte, però il numero di volte che viene eseguito il `for each` dipende dall'iterazione corrente, il `for each` infatti esso viene eseguito per ogni nodo $u$: $\deg(u)$ volte, per un totale di $\sum\limits_{i=1}^n\deg(u_i)$ iterazioni, che per il [[Grado#Lemma della stretta di mano|lemma della stretta di mano]] è pari a $2m$.
-Da notare le operazioni fatte su heap binario come [[Code di priorità#Extract max|extract min]], oppure l'operazione `Key[v] = w(u, v)` che ha complessità $\log(n)$  quanto $Key$ usa un heap binario, per cui ad ogni modifica bisogna verificare se la proprietà di heap binario vale per ogni nodo.
+Da notare le operazioni fatte su heap binario come [[Code di priorità#Extract max|extract min]], oppure l'operazione `Key[v] = w(u, v)` che ha complessità $\log(n)$  in quanto $Key$ usa un heap binario, per cui ad ogni modifica bisogna verificare se la proprietà di heap binario vale per ogni nodo.
 $$T(n,m)=\underbrace{n}_{\text{init}}+\underbrace{n\log(n)}_{\text{estrazione}}+\underbrace{m\log(n)}_{\text{aggiornamento}}=\space O(m\log(n))$$
 
 **Esecuzione formale dell'algoritmo** (usando $a$ come radice):

@@ -107,4 +107,4 @@ I cammini inoltre possono essere di due tipi:
 - **Semplici**: una volta visitato un nodo, non si ritorna più su di esso
 - **Non semplici**: un nodo viene visitato più volte
 
-Un **ciclo** è una cammino dove $x_0=x_q$, inoltre per avere un ciclo in un grafo **non orientato**, ci devono essere almeno $3$ vertici.
+Un **ciclo** è un cammino dove $x_0=x_q$, inoltre per avere un ciclo in un grafo **non orientato**, ci devono essere almeno $3$ vertici.

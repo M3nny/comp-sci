@@ -10,7 +10,7 @@ Bellman-Ford(G, w, s)
 	
 	for i = 1 to |V[G]| - 1
 		for each (u, v) in E[G]
-			Relax((u, v), w(u,v))
+			Relax(u, v, w(u,v))
 	
 	for each(u, v) in E[G]
 		if d[v] > d[u] + w(u, v)
@@ -49,13 +49,13 @@ Dimostrazione del **terzo punto**:
 se alla fine l'algoritmo restituisce `true`, allora dovrà valere che:
 $$\forall(u,v)\in E,\quad d[v]\leq d[u]+w(u,v)$$
 la [[Secondo anno/Algoritmi e strutture dati/Mod. 1/Cammini minimi/Introduzione#Disuguaglianza triangolare|disuguaglianza triangolare]] afferma: $\delta(s,v)\leq\delta(s,u)+w(u,v)$, ma avendo dimostrato il _primo punto_, possiamo sostituire le stime delle distanze alle distanze reali, ovvero $d[u]=\delta(s,u)$:
-$$\delta(s,v)\leq\delta(s,u)+w(u,v)\implies d[v]\leq d[v]+w(u,v)$$
+$$\delta(s,v)\leq\delta(s,u)+w(u,v)\implies d[v]\leq d[u]+w(u,v)$$
 che è quello che volevamo dimostrare.
 
 Dimostrazione **cicli negativi**:
 vogliamo dimostrare che in presenza di cicli negativi raggiungibili dalla sorgente, l'algoritmo restituisca `false`.
 
-Assumiamo per _assurdo_ che restituisca `true` anche in caso di cicli negativi raggiungibili dalla sorgente, perchè ciò avvenga, non dovrà mai entrare nell'`if` e quindi per ogni arco dovrà valere:
+Assumiamo **per assurdo** che restituisca `true` anche in caso di cicli negativi raggiungibili dalla sorgente, perchè ciò avvenga, non dovrà mai entrare nell'`if` e quindi per ogni arco dovrà valere:
 $$\forall(u,v)\in E:\space d[v]\leq d[u]+w(u,v)$$
 
 chiamiamo $c$ il _ciclo negativo_ $c=<x_0,...,x_q>$ con $x_0=x_q$, e sottolineiamo che la proprietà sopra elencata (dato che vale per ogni arco) sarà vera anche per gli archi in $c$, "traducendo" la proprietà per gli archi in $c$ otteniamo:

@@ -20,9 +20,10 @@ $$a_{ii}^{(2)}=\sum_{k=1}^na_{ik}\cdot a_{ki}=\sum_{k=1}^na_{ik}\cdot a_{ik}=\su
 dove $a_{ik}^2=a_{ik}$ in quanto **la matrice è binaria**.
 
 2. Dimostriamo che $a_{ij}$ è uguale al numero di cammini di lunghezza $2$ tra $i$ e $j$ $\forall i\neq j$:
-$$a_{ij}^{(2)}=\sum_{\ell=1}^n a_{i\ell}\cdot a_{\ell i}$$
-tale prodotto è uguale a $1$ sse $a_{i\ell}=1$, cioè $(i,\ell)\in E$, e $a_{i\ell}=1$ e i due archi $(i,\ell)$ e $(\ell, i)$ rappresentano proprio un cammino di lunghezza $2$ che va da $i$ a $j$.
+$$a_{ij}^{(2)}=\sum_{\ell=1}^n a_{i\ell}\cdot a_{\ell j}$$
+tale prodotto è uguale a $1$ sse $a_{i\ell}=1$, e $a_{\ell j}=1$ e i due archi $(i,\ell)$ e $(\ell, j)$ rappresentano effettivamente un cammino di lunghezza $2$ che va da $i$ a $j$.
 
+**Generalizzazione**:
 È possibile generalizzare questo concetto dicendo che: il prodotto di $k$ matrici di adiacenza $A^k$, ci da informazioni sul numero di cammini di lunghezza $k$ tra i nodi $i$ e $j$.
 **Dimostrazione**:
 Sia $A^k=\underbrace{A\times A\times ...\times A}_k=A^{k-1}\times A$ il prodotto di $k$ matrici di adiacenza per un certo grafo $G$

@@ -1,7 +1,7 @@
 Un algoritmo viene definito **greedy** se la scelta compiuta durante un'iterazione è basata sulla strada che _sembra_ più **promettente**.
 
 Vari algoritmi greedy che abbiamo incontrato risultano essere:
-- [[Kruscal|L'algoritmo di Kruskal]]: prende sempre l'arco leggero
+- [[Kruskal|L'algoritmo di Kruskal]]: prende sempre l'arco leggero
 - [[Prim|L'algoritmo di Prim]]: sceglie sempre il vertice con `Key` minore
 - [[Dijkstra|L'algoritmo di Dijkstra]]: sceglie sempre il vertice con `d` minore
 
