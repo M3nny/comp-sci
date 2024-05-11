@@ -59,24 +59,6 @@ Il **padre** in C++ è considerato un campo da inizializzare, a differenza di Ja
 dog(int w, double sp, bool ped) : animal(w, sp), has_pedigree(ped) {}
 ```
 
-I **costruttori di conversione** vengono utilizzati per convertire i valori _rhs_ di un _operatore qualsiasi_ in un oggetto costruito con i valori _rhs_ (se possibile), lo stesso vale per il passaggio di argomenti alle funzioni; l'utilizzo della keyword `explicit` ne vieta l'utilizzo.
-```cpp
-class animal {
-    int age;
- 
-public:
-    explicit animal(int a) {
-        age = a;
-    }
-};
- 
-int main() {
-    animal a1(10); // Ok
-    animal a2 = 10; // No viable conversion
-    animal a3 = (animal)10; // Ok con type casting
-}
-```
-
 ### Dichiarazione e costruzione
 In C++ a differenza di C, <u>non si dichiara</u>, si **costruisce**, infatti pure tipi primitivi come `int` se non specificato chiamano il _default constructor_ che li inizializza a $0$.
 
@@ -156,3 +138,84 @@ m.operator=(m2.operator=(m3))
 // m2.operator=(m3) è OK
 // ma m.operator=(void) non è valido
 ```
+
+### Conversioni
+I **costruttori di conversione** vengono utilizzati per convertire i valori _rhs_ di un _operatore qualsiasi_ in un oggetto costruito con i valori _rhs_ (se possibile), lo stesso vale per il passaggio di argomenti alle funzioni; l'utilizzo della keyword `explicit` ne vieta l'utilizzo.
+```cpp
+class animal {
+    int age;
+ 
+public:
+    explicit animal(int a) {
+        age = a;
+    }
+};
+ 
+int main() {
+    animal a1(10); // Ok
+    animal a2 = 10; // No viable conversion
+    animal a3 = (animal)10; // Ok con type casting
+}
+```
+
+È possibile definire dei **copy constructor di "conversione"** passando un tipo diverso da `this`:
+```cpp
+template <class T>
+class matrix {
+	template <class S>
+	matrix(const matrix<S>& m) : cols(m.get_cols()), v(m.get_rows() * m.get_cols()) {
+		for (int i = 0; i < v.size(); i++)
+			v[i] = m.v[i]; // m.v deve essere accedibile (pubblico)
+	}
+}
+```
+il **chiamante è responsabile**, e deve sapere se la conversione è fattibile.
+
+Gli **operatori di conversione** vengono usati per convertire la classe in cui sono definiti in qualche altro tipo, la sintassi è la seguente:
+`operator <toType>() {... return <toType>}`
+```cpp
+class kilogram {
+private:
+    double weight;
+public:
+    kilogram(double w) : weight(w) {}
+};
+
+class pound {
+private:
+    double weight;
+public:
+    pound(double w) : weight(w) {}
+    operator kilogram() const {
+        return kilogram(weight * 0.453592);
+    }
+};
+
+int main() {
+    pound p(10.0);
+    
+	// operatore di conversione
+    kilogram k = p;
+```
+
+### Iteratori
+Gli **iteratori** sono definiti all'interno delle classi e vengono utilizzati per scorrerne il contenuto, per stampare un vector si può procedere come segue:
+```cpp
+void printVec(vector<int>& v) {
+    for (typename vector<int>::iterator it = v.begin(); it != v.end(); it++) {
+        cout << *it;
+    }
+}
+
+// oppure con "auto"
+void printVec2(vector<int>& v) {
+    for (auto it = v.begin(); it != v.end(); it++) {
+        cout << *it;
+    }
+}
+
+```
+
+è consigliato usare `typename` prima di un tipo all'interno di una classe templetizzata (come `vector`) per dire al compilatore che si tratta effettivamente di un tipo e non di una variabile. 
+>Non tutti gli iteratori sono implementati con i _puntatori_.
+
