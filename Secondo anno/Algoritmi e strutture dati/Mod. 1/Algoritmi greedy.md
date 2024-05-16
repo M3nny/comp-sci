@@ -153,5 +153,5 @@ L'algoritmo estrarrebbe e terrebbe solamente i vertici $1,7$, mentre la _clique 
 >[!Question] Problema NP-Completo
 >È inverosimile che un algoritmo polinomiale possa risolvere questo problema, tuttavia non lo si sa ancora per certo.
 >
->Questo problema rientra nella categoria dei problemi **NP-Completi**.
+>Questo problema rientra nella categoria dei problemi [[Teoria della NP completezza#Classe NPC|NP-Completi]].
 

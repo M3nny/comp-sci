@@ -35,7 +35,7 @@ $$T(n,m)=\underbrace{n}_\text{Init}+\underbrace{n^2}_\text{Extract}+\underbrace{
 
 ### Correttezza
 Sia $G=(V,E)$ un grafo orientato pesato con $w:E\to\mathbb{R}$, con sorgente $s\in V$ e $\forall(u,v)\in E$ si ha $w(u,v)\geq 0$, allora alla fine dell'algoritmo si avrà:
-- $d[u]=\delta(s,u)\space\forall u\in V$
+- $d[u]=\delta(s,u)\space\forall u\in V$, in particolare, <u>all'estrazione questa proprietà diventa verificata</u> per $u$
 - $G_\pi$ è un albero di cammini minimi
 
 Dimostriamo solo il primo punto attraverso varie **osservazioni**:

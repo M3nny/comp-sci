@@ -63,3 +63,36 @@ $$\Theta\Big(\frac{nc\cancel{\log n}}{\cancel{\log n}}\Big)=\Theta(n)$$
 Si deduce che, con un intervallo di cifre: $[0,...,n^c-1]$ con $n$ numeri:
 - `countingSort`: $\Theta(n+n^c)=\Theta(n^c)$
 - `radixSort`: $\Theta(n)$
+
+Il `radixSort` generalizzato utilizzando un `countingSort`che effettua il cambio di base è il seguente:
+```
+radixSort(array A, int d, int k, string order)
+    for i = 1 to d
+        countingSort(A, k, i, order)
+
+countingSort(array A, int k, int i, string order)
+    B[1...A.length]
+    C[0...k]
+    
+    for j = 0 to k
+        C[j] = 0
+	
+    for j = 1 to A.length
+        C[cifra(A[j], k, i)]++
+	
+    if order == "asc"           // somme prefisse
+        for j = 1 to k
+            C[j] += C[j-1]
+    if order == "desc"          // somme postfisse
+        for j = k-1 down to 0
+            C[j] += C[j+1]
+	
+    for j = A.length down to 1
+        B[C[cifra(A[j], k, i)]] = A[j]
+        C[cifra(A[j], k, i)]--
+	
+    A = B
+
+cifra(int x, int k, int i)
+    return (x / (n^(i-1))) % n
+```
