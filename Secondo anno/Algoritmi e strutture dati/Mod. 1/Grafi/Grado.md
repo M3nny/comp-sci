@@ -1,9 +1,9 @@
 ## Grafi non orientati
 Dato un grafo _non orientato_ $G=(V,E)$ con $u\in V$:
 $$\underbrace{N(u)}_{\text{intorno di }u}=\{v\in V|(u,v)\in E\};\quad\underbrace{\deg(u)}_{\text{grado di }u}=|N(u)|;$$
-ovvero: <u>il grado un nodo è pari alla cardinalità del suo</u> **intorno** ($N$).
+ovvero: <u>il grado di un nodo è pari alla cardinalità del suo</u> **intorno** ($N$).
 ![[Grado di un grafo.svg]]
-<u>Non è possibile avere</u> $n$ <u>vertici con grado diverso</u>, in quanto $0\leq \deg(u)\leq n-1$, infatti dovrebbe esiste un nodo con grado $0$ ed uno con grado $n-1$, ma questo è assurdo perchè il primo indica che non è collegato con nessun'altro nodo, mentre il secondo indica che è collegato con tutti.
+<u>Non è possibile avere</u> $n$ <u>vertici con grado diverso</u>, in quanto $0\leq \deg(u)\leq n-1$, infatti dovrebbe esistere un nodo con grado $0$ ed uno con grado $n-1$, ma questo è assurdo perchè il primo indica che non è collegato con nessun'altro nodo, mentre il secondo indica che è collegato con tutti.
 
 ### Lemma della stretta di mano
 <u>Vale solo per grafi non orientati</u>:

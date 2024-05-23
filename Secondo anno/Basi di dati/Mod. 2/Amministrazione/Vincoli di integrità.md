@@ -64,9 +64,8 @@ CREATE TABLE Movies (
 
 ### Check
 È possibile specificare **vincoli complessi** tramite **CHECK** seguita da un'espressione booleana:
-- Non è possibile usare sottoquery
 - Il vincolo è controllato ad ogni `INSERT` o `UPDATE`
-- Il alcuni DBMS non è possibile usare delle sottoquery per i `CHECK`
+- In alcuni DBMS non è possibile usare delle sottoquery per i `CHECK`
 ```sql
 CREATE TABLE Person (
 	age INT CHECK (age >= 0)

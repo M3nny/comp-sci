@@ -66,7 +66,12 @@ Ogni sottoinsieme di $T$ però potrebbe essere una chiave.
 		3. Si aggiungono ai candidati: $[X\cup(Y\setminus X^+)_0::((Y\setminus X^+)_1,...,(Y\setminus X^+)_n)],...,[X\cup(Y\setminus X^+)_n::()]$
 3. L'algoritmo termina quando non ci sono più candidati
 
->Partiamo dall'insieme di attributi che non dipende da nessun'altro, perchè esso farà parte di tutte le chiavi.
+- **Se tutti gli attributi compaiono a destra**, allora si deve usare un approccio "brute-force" partendo dagli attributi singoli e vedendo se essi sono chiave, poi verificare con insiemi di 2 attributi, etc.. verificando sempre che le chiavi già trovate _non_ siano dentro ad altre chiavi (questo perchè altrimenti non sarebbero minime e devono essere scartate)
+
+>[!Tip] Attributi che non compaiono
+>- L'attributo **non compare a destra**: fa parte di tutte le chiavi
+>- L'attributo **non compare a sinistra**: non fa parte di nessuna chiave
+
 
 >[!Example]
 >Sia $G=\{AB\rightarrow C, E\rightarrow A, A\rightarrow E, B\rightarrow F\}$.
@@ -121,11 +126,13 @@ inoltre: $F=G\implies F\equiv G$.
 - $|Y|=1$, ovvero la cardinalità dell'insieme $Y$ è pari a $1$
 - $X$ non contiene attributi estranei
 - $X\rightarrow Y$ non è ridondante
+	questa operazione è da fare con gli attributi rimanenti dal passaggio precedente, quindi la chiusura non dovrà comprendere anche gli attributi che sono spariti del tutto.
 
 $G$ è una copertura canonica di $F$ sse $F\equiv G$ e $G$ è in forma canonica.
 I passaggi per trovarne una sono i seguenti:
 1. Suddivido gli insiemi con cardinalità > 1 che dipendono da altri attributi
-2. Elimino gli attributi estranei (presenti solo in insiemi con cardinalità > 1 a sx della freccia), ovvero quelli che non compaiono nella chiusura di un attributo a sx (uno vale l'altro, questo porterà a differenti coperture, ma non è detto che ce ne debba essere solo una)
+2. Elimino gli attributi estranei (presenti solo in insiemi con cardinalità > 1 a sx della freccia), ovvero quelli che se rimossi consentono comunque a $X$ di possedere $Y$ nella propria chiusura $X_F^+$ (uno vale l'altro, questo porterà a differenti coperture, ma non è detto che ce ne debba essere solo una)
+	Questo passaggio è da ripetere se dopo l'eliminazione di un estraneo rimangono $|X|>1$ elementi.
 3. Trovo le chiusure dell'elemento a sx per ogni dipendenza funzionale, togliendo a $F$ la dipendenza funzionale stessa, se come risultato danno l'insieme di tutti gli elementi in $T$, allora quella dipendenza può essere rimossa
 
 >Per ogni insieme di dipendenze $F$ esiste una copertura canonica.

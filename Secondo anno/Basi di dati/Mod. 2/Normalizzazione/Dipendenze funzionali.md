@@ -68,3 +68,9 @@ Sia $R(T, F)$ lo schema di relazione, la chiusura di un attributo $X\subseteq T$
 $$X_F^+=\{A\in T\space|\space F\vdash X\rightarrow A\}$$
 dove $A$ è un attributo che dipende da $X$, infatti:
 $$F\vdash X\rightarrow A\iff A\subseteq X_F^+$$
+>[!Example]
+>$$G = {AB \rightarrow C,BC \rightarrow AD,D \rightarrow E,CF \rightarrow B}$$
+>Determinare se la dipendenza funzionale $AB \rightarrow D$ e implicata da $G$.
+>$$AB_G^+=ABCDE$$
+>L'attributo $D$ compare nella chiusura da $AB$, per cui è possibile affermare che la dipendenza funzionale $AB \rightarrow D$ e implicata da $G$.
+

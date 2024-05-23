@@ -36,7 +36,7 @@ Dimostrazione del **primo punto**:
 $$\forall u\in V,\space\delta(s, u)=\begin{cases}+\infty\\\in\mathbb{R}\\-\infty\end{cases}$$
 ignoriamo il caso in cui otteniamo $+\infty$ in quanto quel vertice non essendo raggiungibile da $s$ avrebbe $d[u]=\delta(s,u)$ subito dopo `INIT_SS`, ed il caso in cui otteniamo $-\infty$ in quanto abbiamo detto che non ci sono cicli negativi raggiungibili da $s$ (per cui $s$ non può essere all'interno di un ciclo negativo).
 
-se $s\in\mathbb{R}$ esiste un cammino minimo tra $s$ e $u$, sia $p$ un **cammino minimo semplice** (senza cicli) tra $s$ e $u$ (potrebbero esistere anche cammini minimi non semplici se il ciclo ha costo pari a $0$, tuttavia è possibile togliere questo ciclo così da ottenere sempre un cammino minimo semplice).
+se $\delta(s,u)\in\mathbb{R}$ esiste un cammino minimo tra $s$ e $u$, sia $p$ un **cammino minimo semplice** (senza cicli) tra $s$ e $u$ (potrebbero esistere anche cammini minimi non semplici se il ciclo ha costo pari a $0$, tuttavia è possibile togliere questo ciclo così da ottenere sempre un cammino minimo semplice).
 
 questo cammino potrà avere fino a $n-1$ archi in totale (nel caso attraversasse tutti i vertici), poichè <u>i sottocammini di camminimi minimi sono anch'essi minimi</u> possiamo applicare la [[Secondo anno/Algoritmi e strutture dati/Mod. 1/Cammini minimi/Introduzione#Proprietà della convergenza|proprietà della convergenza]] tante volte quante sono le iterazioni dell'algoritmo, generando così, un "effetto domino":
 - Subito dopo l'inizializzazione sarà vero che $d[s]=0=\delta(s,s)$

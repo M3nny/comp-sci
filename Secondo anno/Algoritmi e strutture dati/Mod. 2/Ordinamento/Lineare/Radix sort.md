@@ -64,35 +64,38 @@ Si deduce che, con un intervallo di cifre: $[0,...,n^c-1]$ con $n$ numeri:
 - `countingSort`: $\Theta(n+n^c)=\Theta(n^c)$
 - `radixSort`: $\Theta(n)$
 
-Il `radixSort` generalizzato utilizzando un `countingSort`che effettua il cambio di base è il seguente:
-```
-radixSort(array A, int d, int k, string order)
-    for i = 1 to d
-        countingSort(A, k, i, order)
+---
 
-countingSort(array A, int k, int i, string order)
+Segue un `radixSort` che ordina un array di $n$ elementi compresi tra $0$ e $n^4 -1$  utilizzando un cambio di base, in questo caso viene usata come base la lunghezza dell'array, ovvero `A.length` (che sarebbe $n$), ciò significa che in base $n$, i valori saranno tutti lunghi $4$ **cifre** rendendo il range degli elementi minore di quello della lunghezza dell'array, in questo modo viene garantito un ordinamento in tempo lineare.
+```
+radixSort(array A)
+	base = A.length()
+    for i = 1 to 4
+        countingSort(A, base, i)
+
+countingSort(array A, int base, int i)
     B[1...A.length]
-    C[0...k]
+    C[0...base]
     
-    for j = 0 to k
+    for j = 0 to base
         C[j] = 0
 	
     for j = 1 to A.length
-        C[cifra(A[j], k, i)]++
+        C[digit(A[j], base, i)]++
 	
-    if order == "asc"           // somme prefisse
-        for j = 1 to k
+	// somme prefisse (crescente)
+        for j = 1 to base
             C[j] += C[j-1]
-    if order == "desc"          // somme postfisse
-        for j = k-1 down to 0
+    // somme postfisse (decrescente)
+        for j = base-1 down to 0
             C[j] += C[j+1]
 	
     for j = A.length down to 1
-        B[C[cifra(A[j], k, i)]] = A[j]
-        C[cifra(A[j], k, i)]--
+        B[C[digit(A[j], base, i)]] = A[j]
+        C[digit(A[j], base, i)]--
 	
     A = B
 
-cifra(int x, int k, int i)
-    return (x / (n^(i-1))) % n
+digit(int x, int base, int i)
+    return (x / (base^(i-1))) % base
 ```

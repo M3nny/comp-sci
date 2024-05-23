@@ -87,7 +87,6 @@ $$\begin{flalign}
 ### Riflessioni sui grafi complementari
 Sulla base che $G$ sia connesso oppure no, possiamo avere le seguenti combinazioni con $\overline{G}$ (ovvero il suo [[Tipologie#Grafo complemento|complementare]]):
 
-
 |     | $G$         |            | $G'$        |       |
 | --- | ----------- | ---------- | ----------- | ----- |
 | 1.  | Connesso    | $\implies$ | Connesso    | Falso |

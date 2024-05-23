@@ -63,12 +63,12 @@ $$ LANGUAGE plpgsql;
 
 Ogni statement è una istruzione SQL.
 
-### Passaggio di parametri
+### Variabili speciali
 Quando una funzione viene invocata, vengono create nel suo scope alcune variabili speciali, tra cui:
 - `NEW`: la nuova riga per operazioni di `INSERT/UPDATE` all'interno di un trigger per riga (`NULL` in caso di `DELETE`)
 - `OLD`: la vecchia riga per operazioni di `DELETE/UPDATE` all'interno di un trigger per riga (`NULL` in caso di `INSERT`)
-- `TG_NARGS`: numero di argomenti passati tramite la `CREATE TRIGGER`
-- `TG_ARGV`: vettore di argomenti passati tramite la `CREATE TRIGGER`
+- `TG_OP`: l'operazione che ha fatto scaturire il trigger (e.g. insert)
+- `TG_TABLE_NAME`: la tabella che ha fatto scaturire il trigger
 
 ### Valore di ritorno
 Una funzione associata ad un **BEFORE trigger per riga**, può:
@@ -138,3 +138,37 @@ BEGIN
 END;
 $$ LANGUAGE plpgsql;
 ```
+
+---
+## Constraint vs Trigger
+I **constraint** possono essere usati solo se la condizione da verificare è sulla riga stessa.
+
+I **trigger** vanno usati quando:
+- È necessaria una sotto-query per verificare una condizione trasversale a più tabelle che **non richiede aggregazione** :`for each row`
+- È **necessario un calcolo aggregato**: `for each statement`
+
+La keyword `WHEN` può essere **usata solo nei trigger per riga** per discriminare quando chiamare la funzione associata o meno, in base alla
+riga modificata.
+>Non è possibile usare sotto-query nel `WHEN`.
+
+#### Righe modificate
+- **Trigger per statement**: non possono accedere ai valori di ogni riga direttamente, il trigger dovrà referenziare `OLD table | NEW table` (possibile solo su `AFTER` trigger) se si vuole osservare la differenza tra righe prima e dopo l'operazione
+- **Trigger per riga**: possono accedere per ogni riga al cambiamento ad esempio su una condizione è possibile fare `if campo = NEW.campo`, inoltre possono anche referenziare `OLD table | NEW table` (possibile solo su `AFTER` trigger)
+
+>[!Attention]
+>Le tabelle di transizione `OLD table` e `NEW table` possono essere referenziate solo se il trigger risponde ad un solo tipo evento.
+
+`REFERENCING [OLD TABLE | NEW TABLE]` è **specificabile solo con trigger AFTER**, consente di avere delle tabelle di transizione che contengono tutte le righe che sono state prese in considerazione dall'evento e non solo una riga per volta come quando si accede ai campi con `NEW.campo | OLD.campo`.
+
+|            | BEFORE                                                                                                                  | AFTER                                                                                      |
+| ---------- | ----------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------ |
+| **INSERT** | **OLD**: non disponibile<br>**NEW**: contiene la riga che sta per essere inserita                                       | **OLD**: non disponibile<br>**NEW**: contiene la nuova riga                                |
+| **UPDATE** | **OLD**: contiene la riga prima dell'aggiornamento<br>**NEW**: contiene la riga con l'aggiornamento che verrà applicato | **OLD**: contiene la riga prima dell'aggiornamento<br>**NEW**: contiene la riga aggiornata |
+| **DELETE** | **OLD**: contiene la riga che sta per essere cancellata<br>**NEW**: non disponibile                                     | **OLD**: contiene la riga che è stata cancellata<br>**NEW**: non disponibile               |
+
+Eseguire una **query sulla tabella attuale** cambia in base al tipo di trigger:
+- **BEFORE trigger**: la query viene eseguita sulla tabella prima della modifica
+- **AFTER trigger**: la query viene eseguita sulla tabella modificata
+
+- `OLD` non è disponibile nei trigger `INSERT` perché non esiste una riga vecchia prima dell'inserimento.
+- `NEW` non è disponibile nei trigger `DELETE` perché non esiste una nuova riga dopo la cancellazione.
