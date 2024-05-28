@@ -33,8 +33,8 @@ Di seguito sono riportati i quattro tipi di problemi riguardanti i cammini minim
 - **Floyd-Warshall**: sorgenti multiple - destinazioni multiple
 
 **Osservazioni**:
-- Sorgente multipla - destinazione singola può essere risolto invertendo la direzione degli archi del grafo per poi applicare un algoritmo per ss - dm
-- Sorgente singola - destinazione singola comunque dovrà esplorare tutto il grafo, quindi la sua complessità non risulta essere migliore di quelle degli algoritmi con ss - dm
+- **Sorgente multipla - destinazione singola** può essere risolto invertendo la direzione degli archi del grafo per poi applicare un algoritmo per ss - dm
+- **Sorgente singola - destinazione singola** comunque dovrà esplorare tutto il grafo, quindi la sua complessità non risulta essere migliore di quelle degli algoritmi con ss - dm
 
 ---
 ### Strutture dati

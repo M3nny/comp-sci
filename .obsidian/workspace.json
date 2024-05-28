@@ -4,15 +4,19 @@
     "type": "split",
     "children": [
       {
-        "id": "d6c684f43cf3d067",
+        "id": "d19cf7e7beac3227",
         "type": "tabs",
         "children": [
           {
-            "id": "dee1a0797c340326",
+            "id": "34eb207f1c4e0239",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {}
+              "type": "markdown",
+              "state": {
+                "file": "Secondo anno/Algoritmi e strutture dati/Mod. 2/Programmazione dinamica/Taglio delle aste.md",
+                "mode": "source",
+                "source": false
+              }
             }
           }
         ]
@@ -81,6 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "Secondo anno/Algoritmi e strutture dati/Mod. 2/Programmazione dinamica/Taglio delle aste.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -97,6 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "Secondo anno/Algoritmi e strutture dati/Mod. 2/Programmazione dinamica/Taglio delle aste.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -118,7 +124,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "Secondo anno/Algoritmi e strutture dati/Mod. 2/Programmazione dinamica/Taglio delle aste.md"
+              }
             }
           }
         ]
@@ -137,34 +145,34 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "dee1a0797c340326",
+  "active": "34eb207f1c4e0239",
   "lastOpenFiles": [
-    "Secondo anno/Algoritmi e strutture dati/Mod. 1/Teoria della NP completezza.md",
-    "Secondo anno/Algoritmi e strutture dati/Mod. 1/Alberi/Minimum Spanning Tree.md",
-    "Secondo anno/Algoritmi e strutture dati/Mod. 1/Alberi/Kruskal.md",
+    "Secondo anno/Algoritmi e strutture dati/Mod. 1/Riassunto.md",
+    "Secondo anno/Algoritmi e strutture dati/Mod. 2/Programmazione dinamica/LCS.md",
+    "Secondo anno/Algoritmi e strutture dati/Mod. 1/Cammini minimi/Introduzione.md",
+    "Primo anno/Primo semestre/Matematica discreta/Aritmetica modulare.md",
+    "Primo anno/Primo semestre/Matematica discreta/La cardinalità.md",
     "Secondo anno/Algoritmi e strutture dati/Mod. 1/Alberi/Prim.md",
+    "Secondo anno/Algoritmi e strutture dati/Mod. 1/Alberi/Kruskal.md",
+    "Secondo anno/Algoritmi e strutture dati/Mod. 1/Alberi/Generic-MST.md",
+    "Secondo anno/Algoritmi e strutture dati/Mod. 2/Ordinamento/Lineare/Radix sort.md",
     "Secondo anno/Algoritmi e strutture dati/Mod. 1/Cammini minimi/Floyd-Warshall.md",
     "Secondo anno/Algoritmi e strutture dati/Mod. 1/Cammini minimi/Bellman-Ford.md",
     "Secondo anno/Algoritmi e strutture dati/Mod. 1/Cammini minimi/Dijkstra.md",
-    "Secondo anno/Algoritmi e strutture dati/Mod. 1/Cammini minimi/Introduzione.md",
-    "Secondo anno/Algoritmi e strutture dati/Mod. 1/Grafi/Isomorfismo.md",
-    "Secondo anno/Algoritmi e strutture dati/Mod. 1/Grafi/Matrici.md",
+    "Secondo anno/Algoritmi e strutture dati/Mod. 1/Alberi/Minimum Spanning Tree.md",
     "Secondo anno/Algoritmi e strutture dati/Mod. 1/Grafi/Grado.md",
+    "Secondo anno/Algoritmi e strutture dati/Mod. 1/Teoria della NP completezza.md",
+    "Secondo anno/Algoritmi e strutture dati/Mod. 1/Algoritmi greedy.md",
     "Secondo anno/Algoritmi e strutture dati/Mod. 1/Grafi/Connettività e aciclicità.md",
+    "Secondo anno/Algoritmi e strutture dati/Mod. 1/Grafi/Isomorfismo.md",
     "Secondo anno/Algoritmi e strutture dati/Mod. 1/Grafi/Tipologie.md",
+    "Secondo anno/Algoritmi e strutture dati/Mod. 1/Grafi/Matrici.md",
     "Secondo anno/Algoritmi e strutture dati/Mod. 1/Grafi/Introduzione.md",
-    "Secondo anno/Basi di dati/Mod. 2/Amministrazione/Trigger.md",
-    "Secondo anno/Basi di dati/Mod. 2/Amministrazione/Funzioni e procedure.md",
-    "Secondo anno/Basi di dati/Mod. 2/Normalizzazione/Forme normali.md",
-    "Secondo anno/Basi di dati/Mod. 1/PostgreSQL/DML.md",
-    "Secondo anno/Basi di dati/Mod. 2/Amministrazione/Vincoli di integrità.md",
-    "Secondo anno/Basi di dati/Mod. 2/Programmazione/Transazioni.md",
-    "Secondo anno/Basi di dati/Mod. 1/PostgreSQL/DDL.md",
-    "Secondo anno/Basi di dati/Mod. 1/Linguaggi relazionali.md",
-    "Primo anno/Primo semestre/Matematica discreta/La Logica.md",
-    "Primo anno/Primo semestre/Matematica discreta/Le relazioni.md",
-    "Secondo anno/Algoritmi e strutture dati/Mod. 1/Teorema master.md",
-    "Secondo anno/Algoritmi e strutture dati/Mod. 1/Classi asintotiche.md",
+    "Secondo anno/Algoritmi e strutture dati/Mod. 2/Tabelle hash/Indirizzamento aperto.md",
+    "Secondo anno/Algoritmi e strutture dati/Mod. 2/Tabelle hash/Concatenamento.md",
+    "Secondo anno/Algoritmi e strutture dati/Mod. 2/Tabelle hash/Funzioni hash.md",
+    "Secondo anno/Algoritmi e strutture dati/Mod. 2/Tabelle hash/Tabelle ad indirizzamento diretto.md",
+    "Secondo anno/Algoritmi e strutture dati/Mod. 2/Programmazione dinamica/Approccio dinamico.md",
     "Secondo anno/Basi di dati/Mod. 2/Normalizzazione/Forme normali.md~",
     "Secondo anno/Basi di dati/Mod. 2/Normalizzazione/4913",
     "Secondo anno/Programmazione ad oggetti/Mod. 2/Images/UML ArrayList.svg",

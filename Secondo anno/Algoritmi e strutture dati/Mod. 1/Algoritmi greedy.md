@@ -39,7 +39,7 @@ gantt
     6   : 1, 7
 ```
 
-Le attività $1,4,6$ sono compatibili, lo stesso vale per $3,4,6$ oppure $1,5,6$, il numero totale di attività tra loro compatibili è la massimo $3$ per qualsiasi combinazione.
+Le attività $1,4,6$ sono compatibili, lo stesso vale per $3,4,6$ oppure $1,5,6$, il numero totale di attività tra loro compatibili è al massimo $3$ per qualsiasi combinazione.
 
 Per trovare il numero massimo di attività compatibili dobbiamo **sceglierne alcune** e **scartarne altre**, ciò ci suggerisce di usare un algoritmo _greedy_.
 Per confrontare le attività utilizziamo il tempo di fine, e le ordiniamo rispetto ad esso, in questo modo le attività saranno ordinate come segue:
@@ -141,7 +141,7 @@ $$T(n)=O(n\log n+n^2)=O(n^2)$$
 per come è costruito l'insieme $C$, il risultato è **sicuramente una clique** ma **non è detto che sia massima**.
 ![[Is clique-1.svg]]
 
-L'algoritmo estrarrebbe il vertice $1$ e poi il vertice $7$, e questi due vertici formano una _clique_, ma non massima, l'algoritmo poi continua ad estrarre gli altri vertici ma nessuno formerà una clique assieme ai vertici $\{1,7\}$ per cui l'algoritmo alla fine ritornerà $\{1,7\}$, quando in realtà questi due vertici formando una **clique massimale** e **non massima**, la _clique massima_ è data da: $7,8,9$.
+L'algoritmo estrarrebbe il vertice $1$ e poi il vertice $7$, e questi due vertici formano una _clique_, ma non massima, l'algoritmo poi continua ad estrarre gli altri vertici ma nessuno formerà una clique assieme ai vertici $\{1,7\}$ per cui l'algoritmo alla fine ritornerà $\{1,7\}$, quando in realtà questi due vertici formano una **clique massimale** e **non massima**, la _clique massima_ è data da: $7,8,9$.
 
 Per verificare che non è colpa del criterio di ordinamento se l'algoritmo non funziona, introduciamo il concetto di **triangolo**, ovvero una clique formata da $3$ vertici (formeranno un ciclo).
 

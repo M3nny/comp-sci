@@ -53,7 +53,7 @@ $$\text{Co-NP}=\{\mathscr{P}|\mathscr{P}\text{ è un problema decisionale tale c
 
 dove $\overline{\mathscr{P}}$ è il **complemento di un problema decisionale**, ovvero: le istanze positive del problema originale sono negative, e quelle negative sono positive.
 
-Prendendo il problema del **ciclo Hamiltoniano** come esempio, se volessimo verificare che un grafo non sia Hamiltoniano, non possiamo usare lo stesso certificato usato precedentemente, infatti dovremmo testare tutte le $n!$ permutazioni dei vertici (questo sarebbe il nuovo certificato), il che non potrebbe mai risultare in un algoritmo polinomiale.
+Prendendo il problema del **ciclo Hamiltoniano** come esempio, se volessimo verificare che un grafo non sia Hamiltoniano, non potremmo usare lo stesso certificato usato precedentemente, infatti dovremmo testare tutte le $n!$ permutazioni dei vertici (questo sarebbe il nuovo certificato), il che non potrebbe mai risultare in un algoritmo polinomiale.
 >L'appartenenza alla classe $\text{Co-NP}$ _non esclude_ l'appartenenza alla classe $\text{NP}$.
 
 ![[Classi di problemi.svg]]
@@ -83,7 +83,7 @@ Un problema di classe $\text{NPC}$ si dice **NP completo**.
 La **seconda condizione** della classe $\text{NPC}$ definisce la classe $\text{NP-hard}$, ovvero:
 tutti i problemi in $\text{NP}$ possono essere mappati in qualsiasi problema $\text{NPC}$.
 
-Questo vuol dire che anche i problemi $\text{P}$ e $\text{NPC}$ in quanto sottoinsiemi di $\text{NP}$ possono essere ridotti a problemi $\text{NPC}$ e grazie a questa proprietà è possibile notare come i problemi $\text{NPC}$ siano riducibili tra loro, **rendendo la riducibilità simmetrica tra problemi** $\text{NCP}$. 
+Questo vuol dire che anche i problemi $\text{P}$ e $\text{NPC}$ in quanto sottoinsiemi di $\text{NP}$ possono essere ridotti a problemi $\text{NPC}$ e grazie a questa proprietà è possibile notare come i problemi $\text{NPC}$ siano riducibili tra loro, **rendendo la riducibilità simmetrica tra problemi** $\text{NPC}$. 
 
 #### Teorema fondamentale della NP completezza
 $$P\cap NPC\neq\emptyset\implies P=NP$$
@@ -103,7 +103,7 @@ Da questo teorema emerge che $\text{NPC}$ e $\text{P}$ formino l'insieme $\text{
 ### Il problema CIRCUIT-SAT
 Il primo problema che è stato dimostrato appartenere alla classe $\text{NPC}$ è il problema del **CIRCUIT-SAT** (Circuit-Satisfiability) la cui NP-completezza è garantita dal **teorema di Cook**. 
 
-Il problema si chiede se dato un circuito logico con $n$ linee in input esiste una configurazione delle linee che produca in output $1$ (attraverso varie porte logiche).
+Il problema si chiede se dato un circuito logico con $n$ linee in input esista una configurazione delle linee che produca in output $1$ (attraverso varie porte logiche).
 
 L'algoritmo di verifica prenderà in input un **circuito** e come certificato una **configurazione** che _dovrebbe_ ritornare $1$ (quindi essere soddisfacibile), e dato che il risultato di una singola porta logica ha complessità costante, la correttezza del certificato si può verificare in tempo polinomiale (da cui l'appartenenza alla classe $\text{NP}$).
 

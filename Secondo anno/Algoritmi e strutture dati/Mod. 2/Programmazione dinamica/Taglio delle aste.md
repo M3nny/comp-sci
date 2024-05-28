@@ -1,4 +1,4 @@
-Un'azienda produce asta d'acciaio e le vende a pezzi:
+Un'azienda produce aste d'acciaio e le vende a pezzi:
 - Le aste prodotte hanno lunghezza $n$
 - Sul mercato i pezzi hanno un prezzo che dipende dalla lunghezza
 
@@ -34,7 +34,7 @@ Possiamo dare una caratterizzazione più semplice al problema usando una sola ch
 
 $$\begin{cases}
 r_0=0\\
-r_n=\max_{1\leq i\leq n}\{\underbrace{p_i}_{\text{prezzo esatto}}+\underbrace{r_{n-i}}_{\text{ricavo ottimale}}\}
+r_n=\max\limits_{1\leq i\leq n}\{\underbrace{p_i}_{\text{prezzo esatto}}+\underbrace{r_{n-i}}_{\text{ricavo ottimale}}\}
 \end{cases}
 $$
 dove $p_i$ sarà il prezzo della parte sinistra che non verrà più tagliata, mentre $r_{n-i}$ sarà il ricavo ottimale della parte destra che eventualmente sarà tagliata (il ricavo massimo potrebbe essere anche dato senza effettuare un taglio).
@@ -96,7 +96,7 @@ memoized_cut_rod_aux(p, j, r)
 		else
 			q = -1
 			for i = 1 to j
-				q = max(1, p[i] + memoized_cut_rod_aux(p, j-i, r))
+				q = max(q, p[i] + memoized_cut_rod_aux(p, j-i, r))
 		return r[j]
 ```
 
