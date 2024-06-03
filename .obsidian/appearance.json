@@ -3,7 +3,8 @@
   "cssTheme": "Big Sur Aesthetic",
   "translucency": false,
   "enabledCssSnippets": [
-    "center_image"
+    "center_image",
+    "mathjax_size"
   ],
   "baseFontSize": 19,
   "accentColor": "",

@@ -63,7 +63,7 @@ CREATE TABLE Movies (
 ```
 
 ### Check
-È possibile specificare **vincoli complessi** tramite **CHECK** seguita da un'espressione booleana:
+È possibile specificare **vincoli complessi** tramite **CHECK** seguiti da un'espressione booleana:
 - Il vincolo è controllato ad ogni `INSERT` o `UPDATE`
 - In alcuni DBMS non è possibile usare delle sottoquery per i `CHECK`
 ```sql

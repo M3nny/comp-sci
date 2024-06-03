@@ -1,6 +1,6 @@
 Un **indice** è una struttura dati ausiliaria che ci permette di accedere in maniera efficiente alle righe di una relazione che soddisfano una determinata proprietà.
 
-Solitamente è memorizzato in un binary search tree ([[Alberi binari di ricerca#B_Alberi|b-albero]]) che consente di trovare velocemente i puntatori alle righe che soddisfano una determinata condizione su una tabella.
+Solitamente vengono usati binary search tree ([[Alberi binari di ricerca#B_Alberi|b-albero]]) che consentono di trovare velocemente i puntatori alle righe che soddisfano una determinata condizione su una tabella.
 
 Per creare un [indice](https://www.postgresql.org/docs/current/indexes-intro.html) su postgres si procede come segue:
 ```sql
@@ -25,7 +25,7 @@ applicare un indice **multiattributo** su `(studio, year)` incrementa ancora di 
 >L'ordine degli attributi su cui si specifica un indice _multiattributo_ è importante.
 
 ### Costo di una query
-Una metrica ottimale per misurare il costo di una query è il numero di **pagine** caricate in RAM:
+Una metrica ottimale per misurare il costo di una query è il numero di [[Memoria virtuale#Paginazione|pagine caricate in RAM]]:
 - Ciascuna contiene molteplici righe
 - Se viene richiesta una singola riga, comunque viene allocata una pagina
 - L'accesso a tutte le righe in una pagina ha quasi lo stesso costo di accedere ad una singola riga
@@ -51,7 +51,7 @@ CLUSTER tabella USING myIndex
 
 ### Analisi sugli indici
 È possibile usare i seguenti comandi per ottenere delle informazioni sugli indici utilizzati in una query:
-- `ANALYZE`: colleziona statistiche sulla distribuzione dei dati, il _query planner_ le utilizzerà per decidere quali indici usare
+- `ANALYZE`: colleziona statistiche sulla distribuzione dei dati, il **query planner** le utilizzerà per decidere quali indici usare
 - `EXPLAIN`: per verificare quali indici sono stati usati in una query
 
 ```sql

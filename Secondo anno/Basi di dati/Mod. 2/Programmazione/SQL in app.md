@@ -1,5 +1,5 @@
 ### Linguaggi integrati
-Un esempio di linguaggio integrato è PL/pgSQL.
+Un esempio di linguaggio integrato è **PL/pgSQL**, il quale viene anche usato per le funzioni dei [[Trigger|trigger]].
 
 **Vantaggi**:
 - Stesso livello di astrazione di SQL
@@ -20,8 +20,24 @@ Un esempio di linguaggio integrato è  [SQLJ](https://it.wikipedia.org/wiki/SQLJ
 - Differenza di tipi fra linguaggio ospite e SQL (impedance mismatch)
 - È richiesto un opportuno pre-processore
 
+```java
+String prov = "Venezia";
+String sigla = "VE";
+int numeroComuni = 44;
+
+Class.forName(DatabaseDriver); // carica il driver
+#sql context MyContext;
+MyContext contesto = new MyContext(urlDb, user, pwd);
+
+// uso le variabili java nelle query con :nome_var
+#sql [contesto] INSERT INTO Province VALUES (:prov, :sigla, :numeroComuni);
+```
+
+>Pre-processore $\rightarrow$ Compilatore java $\rightarrow$ Runtime Java $\rightarrow$ DBMS.
+
 ---
 ### Librerie esterne
+Un esempio è la libreria [JDBC](https://docs.oracle.com/javase/8/docs/technotes/guides/jdbc/) per Java. 
 **Vantaggi**:
 - Costo ridotto di apprendimento
 - Non è richiesto alcun pre-processore
@@ -29,6 +45,20 @@ Un esempio di linguaggio integrato è  [SQLJ](https://it.wikipedia.org/wiki/SQLJ
 **Svantaggi**:
 - Differenza di tipi fra linguaggio ospite e SQL (impedance mismatch)
 - Assenza di controlli a compile time
+
+```java
+String db = "jdbc:oracle:oci";
+String u = "stefano";
+String p = "secret";
+Connection con = DriverManager.getConnection(db, u, p);
+
+Statement stmt = con.createStatement();
+String val = "VALUES (Venezia, VE, 44)"
+String query = "INSERT INTO Province " + val;
+stmt.executeQuery(query);
+```
+
+>Compilatore java $\rightarrow$ Runtime Java $\rightarrow$ DBMS.
 
 ---
 ### Object Relational Mapping (ORM)
@@ -43,3 +73,16 @@ Questo approccio consiste in librerie esterne in grado di fornire una interazion
 **Svantaggi**:
 - Tipicamente più lento delle query scritte ad hoc
 - Poco adatto all'esecuzione di query complesse
+
+```java
+// JDBC
+Statement stmt = con.createStatement();
+String query = "SELECT * FROM Students WHERE id = 10"
+ResultSet rs = stmt.executeQuery(query);
+String name = rs.next().getString("Name");
+
+// ORM
+Student stud = db.getStudent(10);
+String name = stud.getName();
+```
+

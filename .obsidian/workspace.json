@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "d19cf7e7beac3227",
+        "id": "3d5dc385f6f9bf89",
         "type": "tabs",
         "children": [
           {
-            "id": "34eb207f1c4e0239",
+            "id": "45b40fe3d0c8fd1b",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Secondo anno/Algoritmi e strutture dati/Mod. 2/Programmazione dinamica/Taglio delle aste.md",
+                "file": "Secondo anno/Basi di dati/Mod. 2/Programmazione/SQL in app.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Secondo anno/Algoritmi e strutture dati/Mod. 2/Programmazione dinamica/Taglio delle aste.md",
+                "file": "Secondo anno/Basi di dati/Mod. 2/Programmazione/SQL in app.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Secondo anno/Algoritmi e strutture dati/Mod. 2/Programmazione dinamica/Taglio delle aste.md",
+                "file": "Secondo anno/Basi di dati/Mod. 2/Programmazione/SQL in app.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Secondo anno/Algoritmi e strutture dati/Mod. 2/Programmazione dinamica/Taglio delle aste.md"
+                "file": "Secondo anno/Basi di dati/Mod. 2/Programmazione/SQL in app.md"
               }
             }
           }
@@ -145,34 +145,34 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "34eb207f1c4e0239",
+  "active": "45b40fe3d0c8fd1b",
   "lastOpenFiles": [
-    "Secondo anno/Algoritmi e strutture dati/Mod. 1/Riassunto.md",
-    "Secondo anno/Algoritmi e strutture dati/Mod. 2/Programmazione dinamica/LCS.md",
-    "Secondo anno/Algoritmi e strutture dati/Mod. 1/Cammini minimi/Introduzione.md",
-    "Primo anno/Primo semestre/Matematica discreta/Aritmetica modulare.md",
-    "Primo anno/Primo semestre/Matematica discreta/La cardinalità.md",
-    "Secondo anno/Algoritmi e strutture dati/Mod. 1/Alberi/Prim.md",
-    "Secondo anno/Algoritmi e strutture dati/Mod. 1/Alberi/Kruskal.md",
-    "Secondo anno/Algoritmi e strutture dati/Mod. 1/Alberi/Generic-MST.md",
-    "Secondo anno/Algoritmi e strutture dati/Mod. 2/Ordinamento/Lineare/Radix sort.md",
-    "Secondo anno/Algoritmi e strutture dati/Mod. 1/Cammini minimi/Floyd-Warshall.md",
-    "Secondo anno/Algoritmi e strutture dati/Mod. 1/Cammini minimi/Bellman-Ford.md",
-    "Secondo anno/Algoritmi e strutture dati/Mod. 1/Cammini minimi/Dijkstra.md",
-    "Secondo anno/Algoritmi e strutture dati/Mod. 1/Alberi/Minimum Spanning Tree.md",
+    "Secondo anno/Basi di dati/Mod. 2/Normalizzazione/Dipendenze funzionali.md",
+    "Secondo anno/Basi di dati/Mod. 2/Amministrazione/Sicurezza.md",
+    "Secondo anno/Basi di dati/Mod. 2/Amministrazione/Funzioni e procedure.md",
+    "Secondo anno/Basi di dati/Mod. 2/Amministrazione/Trigger.md",
+    "Secondo anno/Basi di dati/Mod. 2/Amministrazione/Vincoli di integrità.md",
+    "Secondo anno/Basi di dati/Mod. 2/Normalizzazione/Forme normali.md",
+    "Secondo anno/Basi di dati/Mod. 2/Domande.md",
+    "Secondo anno/Basi di dati/Mod. 2/NoSQL.md",
+    "Secondo anno/Algoritmi e strutture dati/Mod. 1/Teorema master.md",
+    "Secondo anno/Basi di dati/Mod. 2/Programmazione/Web.md",
+    "Secondo anno/Basi di dati/Mod. 2/Programmazione/SQL in app.md",
+    "Secondo anno/Basi di dati/Mod. 2/Programmazione/Transazioni.md",
+    "Secondo anno/Basi di dati/Mod. 2/Amministrazione/Indici e viste materializzate.md",
+    "Secondo anno/Basi di dati/Mod. 2/Normalizzazione/Decomposizione.md",
+    "Secondo anno/Basi di dati/Mod. 2/Normalizzazione/Chiavi e coperture canoniche.md",
     "Secondo anno/Algoritmi e strutture dati/Mod. 1/Grafi/Grado.md",
-    "Secondo anno/Algoritmi e strutture dati/Mod. 1/Teoria della NP completezza.md",
-    "Secondo anno/Algoritmi e strutture dati/Mod. 1/Algoritmi greedy.md",
-    "Secondo anno/Algoritmi e strutture dati/Mod. 1/Grafi/Connettività e aciclicità.md",
+    "Secondo anno/Algoritmi e strutture dati/Mod. 1/Classi asintotiche.md",
+    "Secondo anno/Algoritmi e strutture dati/Mod. 1/Complessità di un algoritmo.md",
     "Secondo anno/Algoritmi e strutture dati/Mod. 1/Grafi/Isomorfismo.md",
-    "Secondo anno/Algoritmi e strutture dati/Mod. 1/Grafi/Tipologie.md",
-    "Secondo anno/Algoritmi e strutture dati/Mod. 1/Grafi/Matrici.md",
-    "Secondo anno/Algoritmi e strutture dati/Mod. 1/Grafi/Introduzione.md",
-    "Secondo anno/Algoritmi e strutture dati/Mod. 2/Tabelle hash/Indirizzamento aperto.md",
-    "Secondo anno/Algoritmi e strutture dati/Mod. 2/Tabelle hash/Concatenamento.md",
-    "Secondo anno/Algoritmi e strutture dati/Mod. 2/Tabelle hash/Funzioni hash.md",
-    "Secondo anno/Algoritmi e strutture dati/Mod. 2/Tabelle hash/Tabelle ad indirizzamento diretto.md",
-    "Secondo anno/Algoritmi e strutture dati/Mod. 2/Programmazione dinamica/Approccio dinamico.md",
+    "Secondo anno/Algoritmi e strutture dati/Mod. 1/Grafi/Connettività e aciclicità.md",
+    "Secondo anno/Algoritmi e strutture dati/Mod. 1/Algoritmi greedy.md",
+    "Secondo anno/Basi di dati/Mod. 1/PostgreSQL/DML.md",
+    "Secondo anno/Basi di dati/Mod. 1/Introduzione.md",
+    "Primo anno/Primo semestre/Matematica discreta/Le sommatorie.md",
+    "Secondo anno/Programmazione ad oggetti/Mod. 1/Information hiding.md",
+    "Secondo anno/Algoritmi e strutture dati/Mod. 2/Programmazione dinamica/Taglio delle aste.md",
     "Secondo anno/Basi di dati/Mod. 2/Normalizzazione/Forme normali.md~",
     "Secondo anno/Basi di dati/Mod. 2/Normalizzazione/4913",
     "Secondo anno/Programmazione ad oggetti/Mod. 2/Images/UML ArrayList.svg",

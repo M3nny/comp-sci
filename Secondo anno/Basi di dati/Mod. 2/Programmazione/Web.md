@@ -37,12 +37,12 @@ Una **risposta HTTP** è strutturata come segue:
 - **Corpo** (opzionale)
 
 
-| **Status code** | **Category** | **Example**                |
-| --------------- | ------------ | -------------------------- |
-| 2XX             | Success      | 200 OK                     |
-| 3XX             | Redirection  | 301 Moved Permanently      |
-| 4XX             | Client error | 404 Not Found              |
-| 5XX             | Server error | 500 Internal Server Errror |
+| **Status code** | **Category** | **Example**               |
+| --------------- | ------------ | ------------------------- |
+| 2XX             | Success      | 200 OK                    |
+| 3XX             | Redirection  | 301 Moved Permanently     |
+| 4XX             | Client error | 404 Not Found             |
+| 5XX             | Server error | 500 Internal Server Error |
 
 ### Cookie
 La **gestione dello stato** è delegata al **client** attraverso i **cookie** nella forma:

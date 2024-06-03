@@ -9,7 +9,7 @@ La complessità di un algoritmo di questo tipo è data da tre parti:
 Considerando $a$ come il numero **costante** di sottoproblemi, $n$ la dimensione iniziale del problema e $\frac{n}{b}$ la dimensione dei sottoproblemi, si può riassumere come: 
 $$\boxed{\begin{flalign}
 T(n)=&T_\text{split}(n)+\\
-&a\cdot T(\frac{n}{b})+\\
+&a\cdot T\left(\frac{n}{b}\right)+\\
 &T_\text{merge}(n)
 \end{flalign}}$$
 Dato che $T_\text{split}(n)$ e $T_\text{merge}(n)$ non sono funzioni ricorsive, possiamo considerarli come risultato di una funzione $f(n)$ la quale complessità dipenderà dalla dimensione del problema, quindi: $f(n)=T_\text{split}(n)+T_\text{merge}(n)$
@@ -124,44 +124,46 @@ le <u>chiamate ricorsive finiranno</u> quando $\frac{n}{b^i}=1$, isolando $i$ ot
 $$i=\log_b n$$
 
 Il **numero di foglie** è pari a:
-$$n_\text{foglie}=a^{\log_bn}=a^{\log_ba\cdot\log_an}=(a^{\log_an})^{\log_ba}=n^{\log_ba}=n^d$$
+$$n_\text{foglie}=a^{\log_bn}=a^\frac{\log_an}{\log_ab}=a^{\log_ba\cdot\log_an}=(a^{\log_an})^{\log_ba}=n^{\log_ba}=n^d$$
+>Da cui deriva il termine $d=\log_b a$.
+
 Il **numero di nodi** è pari a:
 $$n_\text{nodi}=\sum_{i=0}^{\log_bn}a^i\overset{\text{progressione geometrica}}{=}\frac{a^{\log_bn+1}-1}{a-1}=\frac{a\cdot a^{\log_bn}-1}{a-1}=\frac{a\cdot n^d-1}{a-1}=\Theta(n^d)$$
 #### Parte 2
 Dimostriamo ogni caso.
 ##### Caso 1
-Per ipotesi sappiamo che $\exists\epsilon>0:f(n)=O(n^{d-\epsilon})$, applichiamola alla formula della complessità totale del livello $i$-esimo.
+Per ipotesi sappiamo che $\exists\epsilon>0:f(n)=O(n^{d-\epsilon})$, applichiamola alla formula della **complessità totale del livello $i$-esimo**.
 $$\begin{flalign}
-a^i\cdot f(\frac{n}{b^i})&=a^i\cdot O((\frac{n}{b})^{d-\epsilon})\space\text{per ipotesi}\\
-&=O(a^i\cdot(\frac{n}{b^i})^{d-\epsilon})\\
-&=O(a^i\cdot(\frac{n^{d-\epsilon}}{(b^i)^{d-\epsilon}}))\\
-&=O(a^i\cdot\frac{n^{d-\epsilon}}{(b^i)^d(b^i)^{-\epsilon}})\\
-&=O(a^i\cdot\frac{n^{d-\epsilon}}{(b^d)^i(b^i)^{-\epsilon}})\space\text{dato }d=\log_ba,\space (b^d)^i=a^i\text{ possiamo semplificare}\\
-&=O(\frac{n^{d-\epsilon}}{(b^i)^{-\epsilon}})\\
+a^i\cdot f\Big(\frac{n}{b^i}\Big)&=a^i\cdot O\Big(\Big(\frac{n}{b^i}\Big)^{d-\epsilon}\Big)\space\text{per ipotesi}\\
+&=O\Big(a^i\cdot\Big(\frac{n}{b^i}\Big)^{d-\epsilon}\Big)\\
+&=O\Big(a^i\cdot\Big(\frac{n^{d-\epsilon}}{(b^i)^{d-\epsilon}}\Big)\Big)\\
+&=O\Big(a^i\cdot\frac{n^{d-\epsilon}}{(b^i)^d(b^i)^{-\epsilon}}\Big)\\
+&=O\Big(a^i\cdot\frac{n^{d-\epsilon}}{(b^d)^i(b^i)^{-\epsilon}}\Big)\space\text{dato }d=\log_ba,\space (b^d)^i=a^i\text{ possiamo semplificare}\\
+&=O\Big(\frac{n^{d-\epsilon}}{(b^i)^{-\epsilon}}\Big)\\
 &=O((b^i)^\epsilon\cdot n^{d-\epsilon})\\
 &=O((b^\epsilon)^i\cdot n^{d-\epsilon})
 \end{flalign}$$
 
-Per trovare la complessità totale, calcoliamo la sommatoria dei livelli usando il risultato appena trovato.
+Per trovare la complessità totale, calcoliamo la **sommatoria dei livelli** usando il risultato appena trovato.
 $$\begin{flalign}
-T(n)&=\sum_{i=0}^{\log_bn}a^i\cdot f(\frac{n}{b^i})=\sum_{i=0}^{\log_bn}O((b^\epsilon)^i\cdot n^{n-\epsilon})\\
-&=O((n^{d-\epsilon})\cdot\sum_{i=0}^{\log_bn}(b^\epsilon)^i)\\
-&=O(n^{d-\epsilon}\cdot\frac{(b^\epsilon)^{\log_bn+1}-1}{b^\epsilon-1})\space\text{sfruttando la progressione geometrica}\\
-&=O(n^{d-\epsilon}\cdot\frac{b^\epsilon\cdot(b^\epsilon)^{\log_bn}-1}{b^\epsilon-1})\\
-&=O(n^{d-\epsilon}\cdot\frac{b^\epsilon\cdot(b^{\log_bn})^\epsilon-1}{b^\epsilon-1})\\
-&=O(n^{d-\epsilon}\cdot\frac{b^\epsilon\cdot n^\epsilon-1}{b^\epsilon-1})\\
+T(n)&=\sum_{i=0}^{\log_bn}a^i\cdot f\Big(\frac{n}{b^i}\Big)=\sum_{i=0}^{\log_bn}O((b^\epsilon)^i\cdot n^{n-\epsilon})\\
+&=O\Big((n^{d-\epsilon})\cdot\sum_{i=0}^{\log_bn}(b^\epsilon)^i\Big)\\
+&=O\Big(n^{d-\epsilon}\cdot\frac{(b^\epsilon)^{\log_bn+1}-1}{b^\epsilon-1}\Big)\space\text{sfruttando la progressione geometrica}\\
+&=O\Big(n^{d-\epsilon}\cdot\frac{b^\epsilon\cdot(b^\epsilon)^{\log_bn}-1}{b^\epsilon-1}\Big)\\
+&=O\Big(n^{d-\epsilon}\cdot\frac{b^\epsilon\cdot(b^{\log_bn})^\epsilon-1}{b^\epsilon-1}\Big)\\
+&=O\Big(n^{d-\epsilon}\cdot\frac{b^\epsilon\cdot n^\epsilon-1}{b^\epsilon-1}\Big)\\
 &=O(n^{d-\epsilon}\cdot n^\epsilon)\space\text{togliendo le costanti}\\
 &=O(n^d)
 \end{flalign}$$
 Per quanto riguarda $T(n)=\Omega(n^d)$, questo risulta vero dato che l'algoritmo deve passare tutti i $n^d$ nodi foglia, quindi:
-$$T(n)=\Theta(n)$$
+$$T(n)=\Theta(n^d)$$
 ##### Caso 2
 Dall'ipotesi sappiamo che $f(n)=\Theta(n^d)\implies T(n)=\Theta(n^d\log n)$, applichiamola alla formula della complessità totale del livello $i$-esimo.
 
 $$\begin{flalign}
-a^i\cdot f(\frac{n}{b^i})&=a^i\cdot\Theta((\frac{n}{b^i})^d)\space\text{per ipotesi}\\
-&=\Theta(a^i\cdot\frac{n^d}{(b^i)^d})\\
-&=\Theta(a^i\cdot\frac{n^d}{(b^d)^i})\space\text{dato }d=\log_ba,\space (b^d)^i=a^i\text{ possiamo semplificare}\\
+a^i\cdot f\Big(\frac{n}{b^i}\Big)&=a^i\cdot\Theta\Big(\Big(\frac{n}{b^i}\Big)^d\Big)\space\text{per ipotesi}\\
+&=\Theta\Big(a^i\cdot\frac{n^d}{(b^i)^d}\Big)\\
+&=\Theta\Big(a^i\cdot\frac{n^d}{(b^d)^i}\Big)\space\text{dato }d=\log_ba,\space (b^d)^i=a^i\text{ possiamo semplificare}\\
 &=\Theta(n^d)
 \end{flalign}$$
 Calcoliamo la complessità totale.
@@ -174,15 +176,15 @@ T(n)&=\sum_{i=0}^{\log_bn}a^if(\frac{n}{b^i})=\sum_{i=0}^{\log_bn}\Theta(n^d)=\T
 Dall'ipotesi otteniamo due condizioni, ovvero che $\exists\epsilon>0:f(n)=\Omega(n^{d+\epsilon})$ e che $\exists 0<c<1$ per $n$ suff. grande. $a\cdot f(\frac{n}{b})\leq c\cdot f(n)$.
 
 Dato che il tempo di split e merge occupa la maggior parte del tempo, otteniamo che:
-$$\forall i\geq 0:\space a^if(\frac{n}{b^i})\leq c^if(n)$$
+$$\forall i\geq 0:\space a^if\Big(\frac{n}{b^i}\Big)\leq c^if(n)$$
 Calcoliamo la complessità totale.
 $$\begin{flalign}
-T(n)&=\sum_{i=0}^{\log_bn}a^i\cdot f(\frac{n}{b^i})\\
+T(n)&=\sum_{i=0}^{\log_bn}a^i\cdot f\Big(\frac{n}{b^i}\Big)\\
 &\leq\sum_{i=0}^{\log_bn}c^i\cdot f(n)=f(n)\sum_{i=0}^{\log_bn}c^i\\
 &\leq f(n)\sum_{i=0}^{\infty}c^i=f(n)\frac{1}{1-c}\space\text{sfruttando la serie geometrica}\\
 &\leq f(n)\space\text{togliendo le costanti}
 \end{flalign}$$
 Abbiamo quindi che $T(n)=O(f(n))$, per quanto riguarda $T(n)=\Omega(f(n))$ sappiamo che è sicuramente vero, perchè:
-$$T(n)=a\cdot T(\frac{n}{b})+f(n)$$
+$$T(n)=a\cdot T\Big(\frac{n}{b}\Big)+f(n)$$
 dove $a\cdot T(\frac{n}{b})\geq 0$, quindi sicuramente $T(n)\geq f(n)$, quindi:
 $$T(n)=\Theta(f(n))$$

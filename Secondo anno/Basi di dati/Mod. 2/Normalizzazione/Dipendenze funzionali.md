@@ -17,7 +17,7 @@ I problemi principali sono:
 - **Anomalie di inserimento/cancellazione**: Una cattiva progettazione può rendere impossibile rappresentare certe informazioni, conducendo ad anomalie in presenza di operazioni di inserimento e cancellazione.
 
 ### Dipendenze funzionali
-Sia $R(T)$ uno schema di relazione, $r$ una sua istanza (tabella) e siano $X, Y$ due insiemi di attributi non vuoti della tabella $r$,  una **dipendenza funzionale** è un qualsiasi vincolo della forma:
+Sia $R(T)$ uno schema di relazione, $r$ una sua istanza (tabella) e siano $X, Y$ due insiemi di attributi non vuoti della tabella $r$,  una **dipendenza funzionale** è un qualsiasi vincolo nella forma:
 $$X\rightarrow Y\quad (Y\text{ dipende da }X)$$
 Si dice **soddisfatta** sse per ogni coppia di tuple $t_1$ e $t_2$ di $r$ aventi gli stessi valori sui campi $X$, $t_1$ e $t_2$ hanno gli stessi valori anche sui campi $Y$.
 

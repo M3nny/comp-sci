@@ -24,10 +24,10 @@ Dopo aver tolto $z$, $G'$ potrebbe essere connesso oppure no, in base a quale no
 
 Indicando con $E_i$, $V_i$ il numero di archi e vertici della $i$-esima componente connessa, vogliamo dimostrare che $|E_i|\geq |V_i|-1$:
 $$\begin{flalign}
-|E|&=\sum_{i=1}^k(\underbrace{|E_i|}_{|V_i|-1}+\underbrace{\deg(z)}_\text{archi del nodo rimosso})\\
+|E|&=\sum_{i=1}^k(\underbrace{|E_i|}_{|V_i|-1})+\underbrace{\deg(z)}_\text{archi del nodo rimosso}\\
 &\geq\sum_{i=1}^k(|V_i|-1)+\deg(z)\quad\text{(maggiorazione)}\\
-&\geq\sum_{i=1}^k(|V_i|)-k+\deg(z)\\
-&\geq |V|-1+\deg(z)-k
+&=\sum_{i=1}^k(|V_i|)-k+\deg(z)\\
+&= |V|-1+\deg(z)-k
 \end{flalign}$$
 Nell'ultima riga viene scritto $-1$ per via di $z$ che non appartiene a $G'$ in quanto viene tolto.
 
@@ -39,10 +39,9 @@ $$\begin{flalign}
 \end{flalign}$$
 
 ### Condizione sufficiente per la connettività
-La condizione precedente non è sufficiente per dimostrare che un grafo è connesso, infatti se banalmente prendiamo il grafo circolare $C_3$ con un nodo distaccato avremo: $|E|=3$, $|V|=4$, la condizione precedente è vera, ma il grafo non è connesso.
-
+La condizione precedente non è sufficiente per dimostrare che un grafo è connesso.
 Una condizione **sufficiente** per la connettività è la seguente:
-$$\forall u\in V,\space \deg(u)>\frac{n-1}{2}$$
+$$\forall u\in V,\space \deg(u)\geq\frac{n-1}{2}$$
 
 **Dimostrazione per assurdo**:
 Assumiamo che $G$ sia un grafo **non connesso** e che abbia (per semplicità) un numero di componenti connesse (cc) $\geq 2$, indichiamo con $V_1$ e $V_2$ due cc di $G$, abbiamo che $n=|V|\geq |V_1|+|V_2|$, ed indichiamo: $n_1=|V_1|$ e $n_2=|V_2|$.

@@ -2,7 +2,7 @@
 $$O(g(n))=\{f(n)|\exists c>0,\quad \exists n_0\in\mathbb{N}|\forall n \geq n_0:\quad f(n)\leq c\cdot g(n)\}$$
 **Notazione**: $f(n)=O(g(n))$ 
 
->Il simbolo $=$ presente nelle notazioni significa "appartiene a"
+>Il simbolo $=$ presente nelle notazioni significa "appartiene a".
 
 Per $n$ sufficientemente grande $f(n)$ sarà sempre _sotto o uguale_ ad una funzione $g(n)$ moltiplicata per una costante positiva $c$.
 
@@ -12,7 +12,7 @@ Per $n$ sufficientemente grande $f(n)$ sarà sempre _sotto o uguale_ ad una funz
 >$$\frac{1}{2}n-3\leq c\cdot n\quad\iff\quad\frac{1}{2}n-cn\leq 3\quad\iff\quad (\frac{1}{2}-c)n\leq 3$$
 >Se $(\frac{1}{2}-c)$ fosse $\leq 0$ allora sarebbe sempre $\leq 3$ da cui:
 >$$c\geq \frac{1}{2}>0\space\forall n\geq 1$$
->Usiamo $\geq 1$ in quanto consideriamo in numeri naturali che partono da 1.
+>Usiamo $\geq 1$ in quanto consideriamo i numeri naturali che partono da 1.
 >Ci sono infinite scelte delle costanti $c$ ed $n_0$, in questo caso sceglieremo $c=\frac{1}{2}$ e $n_0=1$
 
 ## Classe $\Omega$
@@ -134,7 +134,7 @@ $$\lim\limits_{n\to\infty}\frac{f(n)}{g(n)}=+\infty\implies f(n)=\Omega(g(n))$$
 
 - Se $\lim\limits_{n\to\infty}\frac{f(n)}{g(n)}=\ell\space\text{con}\space 0<\ell<\infty$ allora $f(n)=\Theta(g(n))$
 	versione generalizzata:
-	$$\boxed{\lim_{n\to\infty}\frac{f(n)}{g(n)}=\begin{cases}0\space (\iff f(n)=o(g(n))&\implies f(n)=O(g(n))\\\ell,\space \ell\in]0,\infty[&\implies f(n)=\Theta(g(n))\\\infty\space(\iff f(n)=\omega(g(n))&\implies f(n)=\Omega(g(n))\end{cases}}$$
+	$$\boxed{\lim_{n\to\infty}\frac{f(n)}{g(n)}=\begin{cases}0\space \iff f(n)=o(g(n))&\implies f(n)=O(g(n))\\\ell,\space \ell\in]0,\infty[&\implies f(n)=\Theta(g(n))\\\infty\space\iff f(n)=\omega(g(n))&\implies f(n)=\Omega(g(n))\end{cases}}$$
 	Tuttavia questa osservazione non vale per funzioni il cui limite non è definito come $\sin,\cos...$ (questi casi non si verificheranno nel corso)	
 
 ### Polinomi

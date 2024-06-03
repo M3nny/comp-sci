@@ -1,12 +1,9 @@
 Operazioni **concorrenti** su una base dati possono creare problemi e quindi danneggiarne l'**integrità**.
 
-Una **transazione** deve rispettare le proprietà **ACID** per evitare _race conditions_:
-- **A**tomicità: la transazione deve accadere in una volta
-- **C**onsistenza: il database deve rispettare l'[[Modello relazionale#Chiavi|integrità referenziale]] prima e dopo la transazione
-- **I**solamento: più transazioni devono poter avvenire senza interferenze
-- **D**urabilità: il database deve essere salvato permanentemente sul disco alla fine della transazione
-
-in questo modo due transazioni non possono avvenire contemporaneamente in quanto viene reso valido il principio di **serializzabilità**, ovvero l'esecuzione di più transazioni è equivalente ad una loro esecuzione sequenziale.
+Una **transazione** deve rispettare le seguenti **tre proprietà**:
+- **Serializzabilità**: : l’esecuzione concorrente di più transazioni è equivalente ad una loro esecuzione seriale in un qualche ordine
+- **Atomicità**: la transazione deve accadere in una volta e se termina prematuramente tutti i suoi effetti parziali sono annullati
+- **Persistenza**: le modifiche effettuate da una transazione terminata correttamente sono permanenti
 
 Se avviene un **fallimento** in un certo punto della transazione, il risultato viene scartato e le istruzioni successive (se presenti) non vengono eseguite.
 
@@ -66,7 +63,7 @@ Consente di leggere i dati scritti da altre transazioni solo dopo che hanno eseg
 	4. B esegue dato(12)-4 =  dato(8), errato in quanto dato è stato aggiornato
 
 ### Repeatable read
-A differenza dei livelli precedenti, viene acquisito il lock anche in read oltre che in write (impedisce: dirty read, unrepeatable read, lost update).
+A differenza dei livelli precedenti, viene acquisito il <u>lock anche in read oltre che in write</u> (impedisce: dirty read, unrepeatable read, lost update).
 
 Prevenzione di _unrepeatable read_:
 1. A somma i voti di tutti gli studenti
@@ -89,14 +86,19 @@ Prevenzione di _lost update_:
 	4. B esegue il commit e rilascia il lock
 	5. A calcola il numero di studenti e calcola la media (sbagliata)
 
+#### Riassunto
+- **Dirty read**: vengono letti dati da altre transazioni non concluse (che potrebbero eseguire un rollback)
+- **Unrepeatable read**: vengono letti gli stessi dati più volte e si  ottengono risultati diversi perché un'altra transazione ha modificato i dati e fatto il commit tra le letture
+- **Lost update**: quando due o più transazioni leggono lo stesso dato e poi lo aggiornano in base alla lettura fatta, ma l'aggiornamento di una transazione sovrascrive l'aggiornamento dell'altra senza alcuna sincronizzazione
+- **Phantom read**: quando una transazione esegue una query che rispetta una condizione, ma poi eseguendola successivamente ottiene righe diverse in quanto un'altra transazione ha modificato (cancellando o inserendo altre righe) la tabella in questione
 
 
 | Isolamento      | Dirty read | Unrepeatable read | Lost update | Phantom read |
-| --------------- | ---------- | ----------------- | ----------- | ------------ |
-| Read uncommited | si         | si                | si          | si           |
-| Read committed  | no         | si                | si          | si           |
-| Repeatable read | no         | no                | no          | si           |
-| Serializable    | si         | si                | si          | si           |
+| --------------- | :--------: | :---------------: | :---------: | :----------: |
+| Read uncommited |     ✅      |         ✅         |      ✅      |      ✅       |
+| Read committed  |     ❌      |         ✅         |      ✅      |      ✅       |
+| Repeatable read |     ❌      |         ❌         |      ❌      |      ✅       |
+| Serializable    |     ❌      |         ❌         |      ❌      |      ❌       |
 
 >Il livello di isolamento di default in postgres è `READ COMMITED`.
 

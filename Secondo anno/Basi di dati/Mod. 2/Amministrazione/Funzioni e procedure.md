@@ -2,8 +2,8 @@ Utilizziamo funzioni per centralizzare lato server una sequenza di operazioni di
 
 Una funzione si dichiara come segue:
 ```sql
-CREATE FUNCTION my_fun ( args ) RETURNS type AS
-$$ DECLARE
+CREATE FUNCTION my_fun ( args ) RETURNS type AS $$
+DECLARE
 	num INT;
 	name TEXT;
 BEGIN
@@ -64,7 +64,7 @@ se la query ritorna più di una riga, la variabile assumerà il valore della pri
 
 **Ritorno singolo**:
 ```sql
-CREATE OR FUNCTION sum(x INT, y INT) RETURNS INT AS $$
+CREATE FUNCTION sum(x INT, y INT) RETURNS INT AS $$
 DECLARE
     result INT;
 BEGIN
@@ -79,7 +79,7 @@ SELECT sum(10, 5);
 
 **Ritorno multiplo**: viene utilizzato `OUT` nella firma
 ```sql
-CREATE OR FUNCTION
+CREATE FUNCTION
 sum_prod(x INT, y INT, OUT sum_result INT, OUT product_result INT)
 AS $$
 BEGIN
