@@ -147,3 +147,19 @@ private final List<Pair<K, V>> l = new ArrayList<>();
 ```
 questo non impedisce di modificare `ArrayList` con nuovi elementi oppure cancellandone, ma impedisce solo di eseguire `l = ...`.
 
+#### Comparable e Comparator
+Sono entrambe **interfacce** che implementano metodi per comparare oggetti, ma si differenziano in base a dove il metodo è implementato rispetto a quello che si deve confrontare:
+- `Comparable<Persona>`:
+	possiede il metodo `compareTo(Persona p)` ed è da implementare all'interno della classe `Persona`.
+
+- `Comparator<Persona>`:
+	possiede il metodo `compare(Persona p1, Persona p2)` il quale può applicare politiche di ordinamento diverse da quelle dell'ordinamento naturale eseguito da `Persona`.
+
+```java
+// utilizza compareTo di "Persona"
+Collections.sort(listaPersona);
+
+// utilizza un comparator con politica di ordinamento personalizzata
+Collections.sort(listaPersona, MyComparator);
+```
+

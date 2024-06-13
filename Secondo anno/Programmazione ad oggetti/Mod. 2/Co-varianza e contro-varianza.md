@@ -9,7 +9,7 @@ questo vuol dire che **non comprende** neanche il **tipo di ritorno**, ciò rend
 ### Co-varianza
 La **co-varianza** sul **tipo di ritorno** è <u>generalmente ammessa</u> dai linguaggi di programmazione.
 
-Questo vuol dire che il tipo di ritorno può essere più specifico (o uguale) nella funzione con **override** rispetto a quella originale, ma non è possibile che il tipo ritornato sia più generale del tipo ritornato nella funzione originale.
+Questo vuol dire che **il tipo di ritorno può essere più specifico (o uguale)** nella funzione con **override** rispetto a quella originale, ma non è possibile che il tipo ritornato sia più generale del tipo ritornato nella funzione originale.
 
 ```java
 public static class A {
@@ -59,7 +59,7 @@ public static void main(String[] args) {
 }
 ```
 
-in questo caso abbiamo che il metodo con _override_ ritorna qualcosa più generale di `Number`, ovvero `Integer` e l'assegnamento non funzionerebbe in quanto si aspetta un `Integer` o qualcosa che può subsumere ad `Integer`, ma ritornando un `Number`, che è più generale, non è possibile.
+in questo caso abbiamo che il metodo con _override_ ritorna qualcosa più generale di `Integer`, ovvero `Number` e l'assegnamento non funzionerebbe in quanto si aspetta un `Integer` o qualcosa che può subsumere ad `Integer`, ma ritornando un `Number`, che è più generale, non è possibile.
 
 Questo è il motivo per cui la contro-varianza sul tipo di ritorno è illegale, infatti Java lancia un errore quando il tipo di ritorno è più generale del metodo originale.
 

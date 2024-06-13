@@ -5,12 +5,12 @@ Per realizzare ciò usiamo l'**incapsulamento** per garantire la consistenza del
 Usiamo quindi vari **modificatori di accesso** i quali definiscono vari privilegi per leggere e modificare lo stato di un oggetto.
 
 ##### Modificatori di accesso
-|           | Same class | Same package | Subclasses | Everywhere |
-|:---------:|:----------:|:------------:|:----------:|:----------:|
-|  **Public**   |     ✅     |      ✅      |     ✅     |     ✅     |
-| **Protected** |     ✅     |      ✅      |     ✅     |     ❌     |
-|  **Default**  |     ✅     |      ✅      |     ❌     |     ❌     |
-|  **Private**  |     ✅     |      ❌      |     ❌     |     ❌     |
+|               | Same class | Same package | Subclasses | Everywhere |
+| :-----------: | :--------: | :----------: | :--------: | :--------: |
+|  **Public**   |     ✅      |      ✅       |     ✅      |     ✅      |
+| **Protected** |     ✅      |      ✅       |     ✅      |     ❌      |
+|  **Default**  |     ✅      |      ✅       |     ❌      |     ❌      |
+|  **Private**  |     ✅      |      ❌       |     ❌      |     ❌      |
 
 - **Public**: tutto ciò che rappresenta l'API esterna, dovrà contenere le funzionalità minime per funzionare
 - **Protected**: tutto ciò che deve essere acceduto dalla stessa unità software

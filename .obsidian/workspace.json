@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "3d5dc385f6f9bf89",
+        "id": "28e0081d6d15927a",
         "type": "tabs",
         "children": [
           {
-            "id": "45b40fe3d0c8fd1b",
+            "id": "0dc89dc889b98385",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Secondo anno/Basi di dati/Mod. 2/Programmazione/SQL in app.md",
+                "file": "Secondo anno/Programmazione ad oggetti/Mod. 2/Oggetti in C++.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Secondo anno/Basi di dati/Mod. 2/Programmazione/SQL in app.md",
+                "file": "Secondo anno/Programmazione ad oggetti/Mod. 2/Oggetti in C++.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Secondo anno/Basi di dati/Mod. 2/Programmazione/SQL in app.md",
+                "file": "Secondo anno/Programmazione ad oggetti/Mod. 2/Oggetti in C++.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Secondo anno/Basi di dati/Mod. 2/Programmazione/SQL in app.md"
+                "file": "Secondo anno/Programmazione ad oggetti/Mod. 2/Oggetti in C++.md"
               }
             }
           }
@@ -145,34 +145,34 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "45b40fe3d0c8fd1b",
+  "active": "0dc89dc889b98385",
   "lastOpenFiles": [
-    "Secondo anno/Basi di dati/Mod. 2/Normalizzazione/Dipendenze funzionali.md",
-    "Secondo anno/Basi di dati/Mod. 2/Amministrazione/Sicurezza.md",
-    "Secondo anno/Basi di dati/Mod. 2/Amministrazione/Funzioni e procedure.md",
-    "Secondo anno/Basi di dati/Mod. 2/Amministrazione/Trigger.md",
-    "Secondo anno/Basi di dati/Mod. 2/Amministrazione/Vincoli di integrità.md",
-    "Secondo anno/Basi di dati/Mod. 2/Normalizzazione/Forme normali.md",
-    "Secondo anno/Basi di dati/Mod. 2/Domande.md",
-    "Secondo anno/Basi di dati/Mod. 2/NoSQL.md",
-    "Secondo anno/Algoritmi e strutture dati/Mod. 1/Teorema master.md",
-    "Secondo anno/Basi di dati/Mod. 2/Programmazione/Web.md",
-    "Secondo anno/Basi di dati/Mod. 2/Programmazione/SQL in app.md",
-    "Secondo anno/Basi di dati/Mod. 2/Programmazione/Transazioni.md",
-    "Secondo anno/Basi di dati/Mod. 2/Amministrazione/Indici e viste materializzate.md",
-    "Secondo anno/Basi di dati/Mod. 2/Normalizzazione/Decomposizione.md",
-    "Secondo anno/Basi di dati/Mod. 2/Normalizzazione/Chiavi e coperture canoniche.md",
-    "Secondo anno/Algoritmi e strutture dati/Mod. 1/Grafi/Grado.md",
+    "Secondo anno/Programmazione ad oggetti/Mod. 2/Formulario java.md",
+    "Secondo anno/Programmazione ad oggetti/Mod. 2/Lambda.md",
+    "Secondo anno/Programmazione ad oggetti/Mod. 2/Thread.md",
+    "Secondo anno/Programmazione ad oggetti/Mod. 2/Oggetti in C++.md",
+    "Secondo anno/Programmazione ad oggetti/Mod. 2/Formulario.md",
+    "Secondo anno/Programmazione ad oggetti/Mod. 2/Formulario C++.md",
+    "Secondo anno/Programmazione ad oggetti/Mod. 2/Tipi di classi.md",
+    "Secondo anno/Programmazione ad oggetti/Mod. 2/Guida a Java.md",
+    "Secondo anno/Programmazione ad oggetti/Mod. 2/Co-varianza e contro-varianza.md",
+    "Secondo anno/Programmazione ad oggetti/Mod. 1/Collections.md",
+    "Secondo anno/Algoritmi e strutture dati/Mod. 1/Domande.md",
     "Secondo anno/Algoritmi e strutture dati/Mod. 1/Classi asintotiche.md",
     "Secondo anno/Algoritmi e strutture dati/Mod. 1/Complessità di un algoritmo.md",
-    "Secondo anno/Algoritmi e strutture dati/Mod. 1/Grafi/Isomorfismo.md",
-    "Secondo anno/Algoritmi e strutture dati/Mod. 1/Grafi/Connettività e aciclicità.md",
-    "Secondo anno/Algoritmi e strutture dati/Mod. 1/Algoritmi greedy.md",
-    "Secondo anno/Basi di dati/Mod. 1/PostgreSQL/DML.md",
-    "Secondo anno/Basi di dati/Mod. 1/Introduzione.md",
+    "Secondo anno/Algoritmi e strutture dati/Mod. 1/Cammini minimi/Dijkstra.md",
+    "Secondo anno/Algoritmi e strutture dati/Mod. 1/Alberi/Minimum Spanning Tree.md",
+    "Secondo anno/Algoritmi e strutture dati/Mod. 2/Alberi/Alberi binari di ricerca.md",
+    "Secondo anno/Algoritmi e strutture dati/Mod. 1/Teoria della NP completezza.md",
+    "Secondo anno/Algoritmi e strutture dati/Mod. 1/Teorema master.md",
     "Primo anno/Primo semestre/Matematica discreta/Le sommatorie.md",
-    "Secondo anno/Programmazione ad oggetti/Mod. 1/Information hiding.md",
-    "Secondo anno/Algoritmi e strutture dati/Mod. 2/Programmazione dinamica/Taglio delle aste.md",
+    "Secondo anno/Algoritmi e strutture dati/Mod. 1/Cammini minimi/Floyd-Warshall.md",
+    "Secondo anno/Algoritmi e strutture dati/Mod. 1/Cammini minimi/Bellman-Ford.md",
+    "Secondo anno/Algoritmi e strutture dati/Mod. 1/Cammini minimi/Introduzione.md",
+    "Secondo anno/Algoritmi e strutture dati/Mod. 1/Alberi/Prim.md",
+    "Secondo anno/Algoritmi e strutture dati/Mod. 1/Alberi/Generic-MST.md",
+    "Secondo anno/Algoritmi e strutture dati/Mod. 1/Alberi/Kruskal.md",
+    "Secondo anno/Algoritmi e strutture dati/Mod. 1/Grafi/Connettività e aciclicità.md",
     "Secondo anno/Basi di dati/Mod. 2/Normalizzazione/Forme normali.md~",
     "Secondo anno/Basi di dati/Mod. 2/Normalizzazione/4913",
     "Secondo anno/Programmazione ad oggetti/Mod. 2/Images/UML ArrayList.svg",

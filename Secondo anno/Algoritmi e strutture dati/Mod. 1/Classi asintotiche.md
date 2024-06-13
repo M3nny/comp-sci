@@ -90,7 +90,7 @@ Ovvero se $f(n)$ sta sotto a $g(n)$ e quest'ultima sta sotto a sua volta a $h(n)
 	 **Tesi**: voglio dimostrare che: $\exists c_3>0,\exists n_3\in\mathbb{N}|\forall n\geq n_3:\quad f(n)\leq c_3\cdot h(n)$
 	 
 	 $f(n)\leq c_1\cdot g(n)\land g(n)\leq c_2\cdot h(n)$
-	 Sostituisco $c_2\cdot h(n)$ a $g(n)$ e noto che $f(n)\leq c_1\cdot c_2\cdot h(n)$ quindi ponendo $c_3 = c_1\cdot c_2$ e $n_3=\max\{n_1,n_2\}\space \forall n\geq n_3$ (considerando quindi il punto in cui le funzioni non si incrociano più) la proprietà è verificata.
+	 Sostituisco $c_2\cdot h(n)$ a $g(n)$ e noto che $f(n)\leq c_1\cdot (c_2\cdot h(n))$ quindi ponendo $c_3 = c_1\cdot c_2$ e $n_3=\max\{n_1,n_2\}\space \forall n\geq n_3$ (considerando quindi il punto in cui le funzioni non si incrociano più) la proprietà è verificata.
 ---
 
 ## Classe $o$ 

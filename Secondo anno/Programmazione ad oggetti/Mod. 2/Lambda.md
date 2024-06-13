@@ -33,10 +33,10 @@ Non è possibile però applicare direttamente la funzione `printf` in quanto C n
 ### Interfacce funzionali in Java
 In Java esistono $4$ interfacce per esprimere una funzione:
 
-|                      |                                        Ritorna                                         |                                      Non ritorna                                       |
-| :------------------: | :------------------------------------------------------------------------------------: | :------------------------------------------------------------------------------------: |
-|   **Prende input**   | [Function](https://docs.oracle.com/javase/8/docs/api/java/util/function/Function.html) | [Consumer](https://docs.oracle.com/javase/8/docs/api/java/util/function/Consumer.html) |
-| **Non prende input** | [Supplier](https://docs.oracle.com/javase/8/docs/api/java/util/function/Supplier.html) |     [Runnable](https://docs.oracle.com/javase/8/docs/api/java/lang/Runnable.html)      |
+|                      |                                                   Ritorna                                                   |                                                  Non ritorna                                                   |
+| :------------------: | :---------------------------------------------------------------------------------------------------------: | :------------------------------------------------------------------------------------------------------------: |
+|   **Prende input**   | [Function](https://docs.oracle.com/javase/8/docs/api/java/util/function/Function.html) <br>`A apply(B val)` | [Consumer](https://docs.oracle.com/javase/8/docs/api/java/util/function/Consumer.html)<br>`void accept(T val)` |
+| **Non prende input** |     [Supplier](https://docs.oracle.com/javase/8/docs/api/java/util/function/Supplier.html)<br>`T get()`     |         [Runnable](https://docs.oracle.com/javase/8/docs/api/java/lang/Runnable.html)<br>`void run()`          |
 
 Non possono essere espresse tutte con `Function` ritornando `void`, perchè `void` non è un tipo. è solo una keyword che indica che la funzione non ha return statement.
 >Volendo è possibile definire una classe vuota `Void` usata per quando si _deve_ ritornare qualcosa ma _non si vuole_ ritornare qualcosa, utile per far valere il polimorfismo.
@@ -171,6 +171,22 @@ filterImpure(l, x -> x > 2);
 
 in questo caso però è stata usata `ArrayList` in quanto il tipo di lista ritornato da `List.of` è **immutabile**, questo vuole dire che non supporta operazioni come la `remove`.
 
+#### Method reference
+È possibile passare una funzione già esistente al posto di una lambda usando i **method reference**.
+```java
+// class A<T>
+public A(Comparator<? super T> cmp) {
+	this.cmp = cmp;
+}
+
+class B <T extends Comparable<? super T>> extends A<T> {
+	public subBST() {
+		super(Comparable::compareTo);
+		// oppure
+		super((T a, T b) -> a.compareTo(b));
+	}
+}
+```
 #### Restrizione dei tipi
 Il **tipo in input** (parametro nella firma della funzione) è **più amplio possibile** (più vicino a `Object`) pur sempre considerando le funzioni che si dovranno usare con quel tipo, negli esempi sopra serviva solo l'iteratore.
 
