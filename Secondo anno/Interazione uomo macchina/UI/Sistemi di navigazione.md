@@ -25,6 +25,7 @@ Questi sistemi di navigazione vengono usati come "backup" nel caso non si capisc
 
 - **Sitemaps**:
 	rappresentano la struttura del sito in modo gerarchico, è necessario che le label elencate nella sitemaps
+
 - **Indici**:
 	elencano in modo alfabetico i contenuto del sito, si possono avere vari livelli di granularità (profondità di livelli elencati)
 

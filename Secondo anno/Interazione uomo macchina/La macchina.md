@@ -1,4 +1,4 @@
-Con i processi **batch** l'interazione era limitata ad un input iniziale ed un output finale, i risultati erano scritti su schede perforate, grandi come un dollaro per facilitarne il trasporto.
+Con i processi [[Secondo anno/Sistemi operativi/Mod. 1/Introduzione#II gen.|batch]] l'interazione era limitata ad un input iniziale ed un output finale, i risultati erano scritti su schede perforate, grandi come un dollaro per facilitarne il trasporto.
 
 ## Dispositivi di immissione del testo
 
@@ -15,7 +15,7 @@ La tastiera DVORAK è sovrapponibile a quella QWERTY, ma le lettere sono assegna
 ### Tastiere ad accordi
 Queste tastiere sono caratterizzate dalla presenza di pochi tasti, le sequenze di lettere vengono ottenute premendo contemporaneamente tasti.
 
-La **tastiera ad accordi Michela** è formata da due semitastiere (piccole) con tasti uguali per forma e disposizione a quelli di un pianoforte, viene usata redigere resoconti stenografici in quanto consente di riprendere il parlato ad altissima velocità.
+La **tastiera ad accordi Michela** è formata da due semi-tastiere (piccole) con tasti uguali per forma e disposizione a quelli di un pianoforte, viene usata redigere resoconti stenografici in quanto consente di riprendere il parlato ad altissima velocità.
 ### Tastierino numerico
 Esistono principalmente due formati:
 - **Formato calcolatore**: 123 nella riga inferiore
@@ -25,7 +25,7 @@ Inizialmente i **messaggi** venivano mandati usando il tastierino numerico al qu
 - Premere la cifra tante volte in base alla lettera che si voleva scrivere
 - Usare l'algoritmo T9, il quale consentiva di premere solo una volta la cifra, poi attraverso un dizionario veniva riconosciuto il pattern inserito visualizzando la parola corretta (in caso di conflitti venivano mostrate più alternative)
 
-Nelle prime **calcolatrici meccaniche**, si avevano $n$ colonne, dove ognuna 10 cifre, in questo modo si potevano discriminare unità, decine, centinaia, etc.
+Nelle prime **calcolatrici meccaniche**, si avevano $n$ colonne, dove ognuna aveva 10 cifre, in questo modo si potevano discriminare unità, decine, centinaia, etc.
 Le cifre erano organizzate disponendo quelle più piccole in basso, per questo ancora oggi nei tastierini numerici la riga in basso parte con 123.
 
 ### Riconoscimento della scrittura

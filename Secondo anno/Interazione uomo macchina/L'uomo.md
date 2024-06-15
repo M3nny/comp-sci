@@ -14,9 +14,9 @@ Analizzeremo come vengono utilizzati i **5 sensi**, per interagire con sistemi d
 
 ---
 ## Vista
-L'occhio è un meccanismo per ricevere luce e trasformala in un impulso elettrico, le informazioni ricevuto vengono filtrate per eliminare le ambiguità.
+L'occhio è un meccanismo per ricevere luce e trasformala in un impulso elettrico, le informazioni ricevute vengono filtrate per eliminare le ambiguità.
 
-Tuttavia ci sono fattori che influenzano la percezione di **dimensioni** e **profondità**:
+Ci sono fattori che influenzano la percezione di **dimensioni** e **profondità**:
 - **Familiarità** e aspettative
 - **Contesto**: può generare illusioni ottiche
 - **Sovrapposizione** di oggetti
@@ -24,7 +24,7 @@ Tuttavia ci sono fattori che influenzano la percezione di **dimensioni** e **pro
 
 Indichiamo con **luminanza** la quantità di luce emessa o riflessa da un oggetto, mentre con **brillantezza** la reazione soggettiva ai livelli di luce.
 
-L'**acutezza visiva** indica la capacità di distinguere i dettagli, essa aumenta con la _luminanza_, tuttavia con l'aumentare di quest'ultima aumenta anche lo **sfarfallio** per fonti di illuminazione artificiale.
+L'**acutezza visiva** indica la capacità di distinguere i dettagli, essa aumenta con la _luminanza_, con l'aumentare di quest'ultima però, aumenta anche lo **sfarfallio** per fonti di illuminazione artificiale.
 
 #### Colori
 Possiamo rappresentare il **colore** attraverso:
@@ -51,7 +51,7 @@ I **suoni** si distinguono in base a tre parametri fondamentali:
 - **Timbro**
 
 L'**effetto mascheramento** avviene quando:
-- Il suono di una certa frequenza nasconde i suoni di frequenze vicine e intensità minori
+- Il suono di una certa frequenza nasconde i suoni di frequenze vicine con intensità minori
 - Per suoni diversi vicini nel tempo, i suoni a livello più basso vengono cancellati dalla percezione
 
 Possibili **impieghi** per il suono sono:
@@ -70,7 +70,9 @@ la **cinestesia** o **propriocezione** è la capacità di riconoscere la posizio
 - Ad addattamento lento
 - Posizionali
 
-Il tempo di risposta ad uno **stimolo** avviene in rapporto a al **tempo di reazione** + **tempo motorio**, dove quest'ultimo è in funzione dell'età e della salute del soggetto.
+Il tempo di risposta ad uno **stimolo** avviene in rapporto al **tempo di reazione** + **tempo motorio**,
+- Il **tempo di reazione** è funzione del canale sensoriale, inoltre diminuisce se lo stimolo avviene su più canali sensoriali
+- Il **tempo motorio** è in funzione dell'età e della salute del soggetto.
 
 La **legge di Fitts** suggerisce di interagire con oggetti grandi con spostamenti minimi, nelle interfacce si traduce in:
 - Pulsanti grandi
@@ -134,7 +136,7 @@ Si tende ad utilizzare solo le **prove positive**.
 ### Ragionamento abduttivo
 Nel ragionamento abduttivo, <u>si passa da un fatto all'azione che lo ha generato</u>, si rischia di mettere in relazione eventi e azioni non correlate, potrebbe causare problemi nell'uso dei sistemi interattivi.
 
-e.g. Mario mangia sempre molto alla sera quanto è andato in palestra.
+e.g. Mario mangia sempre molto alla sera quando è andato in palestra.
 
 ### Problem solving
 Con il problem solving <u>si trovano soluzioni ad attività non familiari</u> usando le informazioni di cui si dispone.

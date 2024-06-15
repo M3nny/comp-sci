@@ -10,7 +10,7 @@ La qualità dell'esperienza nella realtà virtuale può essere misurata con i pa
 
 ##### Modalità di interazione
 - **Navigazione assistita**: vincolata o guidata
-- **Multimodalità**: prevede l'utilizzo di diversi canali sensoriali
+- **Multi-modalità**: prevede l'utilizzo di diversi canali sensoriali
 - **Navigazione multipla**: l'utente sceglie come vuole navigare la realtà virtuale
 - **Navigazione basata su descrizione semantica**: per trovare più facilmente componenti rilevanti di una o più scene tridimensionali
 

@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "28e0081d6d15927a",
+        "id": "553eb7bfae183784",
         "type": "tabs",
         "children": [
           {
-            "id": "0dc89dc889b98385",
+            "id": "7ed2ee5834920d03",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Secondo anno/Programmazione ad oggetti/Mod. 2/Oggetti in C++.md",
+                "file": "Secondo anno/Interazione uomo macchina/L'uomo.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Secondo anno/Programmazione ad oggetti/Mod. 2/Oggetti in C++.md",
+                "file": "Secondo anno/Interazione uomo macchina/L'uomo.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Secondo anno/Programmazione ad oggetti/Mod. 2/Oggetti in C++.md",
+                "file": "Secondo anno/Interazione uomo macchina/L'uomo.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Secondo anno/Programmazione ad oggetti/Mod. 2/Oggetti in C++.md"
+                "file": "Secondo anno/Interazione uomo macchina/L'uomo.md"
               }
             }
           }
@@ -145,34 +145,34 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "0dc89dc889b98385",
+  "active": "7ed2ee5834920d03",
   "lastOpenFiles": [
-    "Secondo anno/Programmazione ad oggetti/Mod. 2/Formulario java.md",
+    "Secondo anno/Basi di dati/Mod. 2/Domande.md",
+    "Secondo anno/Interazione uomo macchina/L'uomo.md",
+    "Secondo anno/Algoritmi e strutture dati/Mod. 1/Domande.md",
+    "Secondo anno/Algoritmi e strutture dati/Mod. 1/Riassunto.md",
+    "Secondo anno/Interazione uomo macchina/La macchina.md",
+    "Secondo anno/Interazione uomo macchina/Mixed reality.md",
+    "Secondo anno/Interazione uomo macchina/Pervasive computing.md",
+    "Secondo anno/Interazione uomo macchina/UX/Misurare l'esperienza utente.md",
+    "Secondo anno/Interazione uomo macchina/UX/Prototipazione.md",
+    "Secondo anno/Interazione uomo macchina/UI/Interfacce tangibili.md",
+    "Secondo anno/Interazione uomo macchina/UI/Componenti.md",
+    "Secondo anno/Interazione uomo macchina/UI/Sistemi di navigazione.md",
+    "Secondo anno/Interazione uomo macchina/UI/Architettura dell'informazione.md",
+    "Secondo anno/Interazione uomo macchina/L'interazione.md",
+    "Secondo anno/Sistemi operativi/Mod. 1/Introduzione.md",
+    "Secondo anno/Sistemi operativi/Mod. 1/Scheduling.md",
     "Secondo anno/Programmazione ad oggetti/Mod. 2/Lambda.md",
-    "Secondo anno/Programmazione ad oggetti/Mod. 2/Thread.md",
-    "Secondo anno/Programmazione ad oggetti/Mod. 2/Oggetti in C++.md",
     "Secondo anno/Programmazione ad oggetti/Mod. 2/Formulario.md",
+    "Secondo anno/Programmazione ad oggetti/Mod. 2/Oggetti in C++.md",
+    "Secondo anno/Programmazione ad oggetti/Mod. 2/Formulario java.md",
+    "Secondo anno/Programmazione ad oggetti/Mod. 2/Thread.md",
     "Secondo anno/Programmazione ad oggetti/Mod. 2/Formulario C++.md",
     "Secondo anno/Programmazione ad oggetti/Mod. 2/Tipi di classi.md",
     "Secondo anno/Programmazione ad oggetti/Mod. 2/Guida a Java.md",
     "Secondo anno/Programmazione ad oggetti/Mod. 2/Co-varianza e contro-varianza.md",
     "Secondo anno/Programmazione ad oggetti/Mod. 1/Collections.md",
-    "Secondo anno/Algoritmi e strutture dati/Mod. 1/Domande.md",
-    "Secondo anno/Algoritmi e strutture dati/Mod. 1/Classi asintotiche.md",
-    "Secondo anno/Algoritmi e strutture dati/Mod. 1/Complessità di un algoritmo.md",
-    "Secondo anno/Algoritmi e strutture dati/Mod. 1/Cammini minimi/Dijkstra.md",
-    "Secondo anno/Algoritmi e strutture dati/Mod. 1/Alberi/Minimum Spanning Tree.md",
-    "Secondo anno/Algoritmi e strutture dati/Mod. 2/Alberi/Alberi binari di ricerca.md",
-    "Secondo anno/Algoritmi e strutture dati/Mod. 1/Teoria della NP completezza.md",
-    "Secondo anno/Algoritmi e strutture dati/Mod. 1/Teorema master.md",
-    "Primo anno/Primo semestre/Matematica discreta/Le sommatorie.md",
-    "Secondo anno/Algoritmi e strutture dati/Mod. 1/Cammini minimi/Floyd-Warshall.md",
-    "Secondo anno/Algoritmi e strutture dati/Mod. 1/Cammini minimi/Bellman-Ford.md",
-    "Secondo anno/Algoritmi e strutture dati/Mod. 1/Cammini minimi/Introduzione.md",
-    "Secondo anno/Algoritmi e strutture dati/Mod. 1/Alberi/Prim.md",
-    "Secondo anno/Algoritmi e strutture dati/Mod. 1/Alberi/Generic-MST.md",
-    "Secondo anno/Algoritmi e strutture dati/Mod. 1/Alberi/Kruskal.md",
-    "Secondo anno/Algoritmi e strutture dati/Mod. 1/Grafi/Connettività e aciclicità.md",
     "Secondo anno/Basi di dati/Mod. 2/Normalizzazione/Forme normali.md~",
     "Secondo anno/Basi di dati/Mod. 2/Normalizzazione/4913",
     "Secondo anno/Programmazione ad oggetti/Mod. 2/Images/UML ArrayList.svg",

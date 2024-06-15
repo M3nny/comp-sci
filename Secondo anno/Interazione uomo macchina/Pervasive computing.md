@@ -10,7 +10,7 @@ Per **attenzione periferica** si intende qualcosa su cui siamo sintonizzati senz
 
 ### Context-aware computing
 Con i **sensori** l'utente per assurdo potrebbe non rendersi conto di tutti i segnali che sta dando all'ambiente circostante.
-Queste informazioni vengono usato da sistemi che fanno **inferenze** sul nostro comportamento passato e quello attuale al fine di modificare le interfacce esplicite con cui interagiamo
+Queste informazioni vengono usate da sistemi che fanno **inferenze** sul nostro comportamento passato e quello attuale al fine di modificare le interfacce esplicite con cui interagiamo.
 
 Nel **context-aware computing** l'interazione è implicita, in quanto l'ambiente che utilizza i _sensori_ utilizza euristiche per prevedere ciò che è utile per l'utente.
 Esempi del contesto sono:
@@ -22,7 +22,7 @@ Esempi del contesto sono:
 
 >Viene usato il _context-aware computing_ per **diminuire il carico cognitivo** delle persone e per **aumentare l'engagement** dell'utente.
 
-Se da un parte abbiamo l'**iHCI (Implicit Human Computer Interaction**) dall'altra abbiamo anche **output impliciti** da parte del sistema pervasivo, i quali non sono dovuto a input espliciti e si integrano perfettamente con l'ambiente e all'attività dell'utente.
+Se da una parte abbiamo l'**iHCI (Implicit Human Computer Interaction**) dall'altra abbiamo anche **output impliciti** da parte del sistema pervasivo, i quali non sono dovuti a input espliciti e si integrano perfettamente con l'ambiente e all'attività dell'utente.
 #### Prossemica
 La **prossemica** è la disciplina che studia i gesti, il comportamento, lo spazio e le distanze coinvolte in una comunicazione verbale e non.
 È stato osservato che la distanza relazione tra le persone è correlata con la distanza fisica:
@@ -44,7 +44,7 @@ La qualità dell'interazione implicita con sistemi che usano input implicito vie
 
 Al giorno d'oggi l'**interazione continua** sposta la computazione da uno strumento fisso ad una presenza costante che si focalizza su attività informali e non strutturare (grande differenza rispetto a task che hanno un inizio ed una fine).
 
-La **progettazione di interazione costantemente disponibili** richiede di affrontare i seguenti punti:
+La **progettazione di interazioni costantemente disponibili** richiede di affrontare i seguenti punti:
 - Raramente le attività informali hanno un inizio o una fine
 - Ci si deve aspettare interruzioni
 - Molteplici attività vengono eseguite contemporaneamente

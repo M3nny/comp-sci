@@ -31,7 +31,7 @@ nascono con l'avvento dei personal computer per renderli più usufruibili da pi�
 
 Nascono negli anni '70 nei laboratori di **Xerox**.
 
-Vengono utilizzate delle **metafore** per insegnare nuovi concetti in riferimenti a quelli già noti, in particolare nelle interfacce WIMP viene usata la metafora dell'ufficio, dove si ha una scrivania e si può interagire con varie elementi.
+Vengono utilizzate delle **metafore** per insegnare nuovi concetti in riferimento a quelli già noti, in particolare nelle interfacce WIMP viene usata la metafora dell'ufficio, dove si ha una scrivania e si può interagire con varie elementi.
 Bisogna rendere le **metafore coerenti** con tutta l'interfaccia grafica.
 
 Viene usata la metafora **mondo modello** per dire che l'interfaccia è un mondo su cui l'utente agisce e ne cambia lo stato, l'utente inoltre ha la sensazione che le sua azioni siano **dirette** senza elementi intermedi.
@@ -163,7 +163,7 @@ Formato da 4 componenti:
 3. Sistema
 4. Interfaccia di output
 
-  I problemi di interazione sono **problemi di traduzione**, le traduzioni che avvengono le seguenti:
+  I problemi di interazione sono **problemi di traduzione**, le traduzioni che avvengono sono le seguenti:
   - **Articolazione**: l'utente articola il linguaggio del compito in linguaggio di input
   - **Performance**: l'interfaccia traduce il linguaggio di input in stimoli per il sistema
   - **Presentazione**: il sistema presenta il risultato formulato nel linguaggio di output

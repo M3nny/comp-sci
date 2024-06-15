@@ -19,7 +19,6 @@ Questo tipo di interfacce vengono usate per: **Gioco e Apprendimento**, **Pianif
 - **Poca versatilità e malleabilità**
 - **Affaticamento dell'utente**
 
-
 ### Paradigma TAC
 Il paradigma **TAC** usato per interfacce tangibili utilizza quattro componenti:
 - **Pyfo**: oggetto fisico a cui **non** è collegata alcuna informazione o funzione computazionale
