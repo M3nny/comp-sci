@@ -15,7 +15,7 @@ La tastiera DVORAK è sovrapponibile a quella QWERTY, ma le lettere sono assegna
 ### Tastiere ad accordi
 Queste tastiere sono caratterizzate dalla presenza di pochi tasti, le sequenze di lettere vengono ottenute premendo contemporaneamente tasti.
 
-La **tastiera ad accordi Michela** è formata da due semi-tastiere (piccole) con tasti uguali per forma e disposizione a quelli di un pianoforte, viene usata redigere resoconti stenografici in quanto consente di riprendere il parlato ad altissima velocità.
+La **tastiera ad accordi Michela** è formata da due semi-tastiere (piccole) con tasti uguali per forma e disposizione a quelli di un pianoforte, viene usata per redigere resoconti stenografici in quanto consente di riprendere il parlato ad altissima velocità.
 ### Tastierino numerico
 Esistono principalmente due formati:
 - **Formato calcolatore**: 123 nella riga inferiore
@@ -75,7 +75,7 @@ Può essere usato per analizzare un utente durante la sua navigazione in una pag
 Recentemente vengono usati come complemento a sistemi di realtà virtuale per monitorare il comportamento dell'utente.
 
 #### Rilevazione della gestualità
-Realizzato con un telecomando con molteplici sensori, oppure tramite telecamere particolari in grado di analizzare le gestualità in input
+Realizzato con un telecomando con molteplici sensori, oppure tramite telecamere particolari in grado di analizzare le gestualità in input.
 
 ---
 ### Dispositivi di visualizzazione
@@ -128,7 +128,7 @@ Viene usato da molto nel cinema per rappresentare espressioni complesse, ma il t
 
 ---
 #### Dispositivi di output audio
-Oltre al valore estetico ed emotivo, il canale audio può essere anche usato per rappresentare un'azione, (e.g. audio-bell nel terminale).
+Oltre al valore estetico ed emotivo, il canale audio può essere anche usato per rappresentare un'azione (e.g. audio-bell nel terminale).
 #### Dispositivi a ritorno tattile
 Vengono usati per simulare azioni fisiche, ad esempio il feedback aptico dei touchpad di apple.
 

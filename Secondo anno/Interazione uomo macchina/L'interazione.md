@@ -9,7 +9,7 @@ Inizialmente erano presenti solo dei **menu grezzi**, in questa forma limitata d
 
 L'utilizzo del **linguaggio naturale** non funziona bene con i computer, in quanto il nostro linguaggio può essere ambiguo, per questo utilizziamo linguaggi formali per comunicare con il computer.
 
-- L'interfaccia a **scelta multipla e risposta aperta** è adatta ad utenti occasionali.
+- L'interfaccia a **scelta multipla e risposta aperta** è adatta ad utenti occasionali
 - L'interfaccia con **linguaggi di interrogazione** non è adatta ad utenti occasionali e serve per recuperare informazioni da un database
 
 ### Linguaggi visuali
@@ -34,10 +34,10 @@ Nascono negli anni '70 nei laboratori di **Xerox**.
 Vengono utilizzate delle **metafore** per insegnare nuovi concetti in riferimento a quelli già noti, in particolare nelle interfacce WIMP viene usata la metafora dell'ufficio, dove si ha una scrivania e si può interagire con varie elementi.
 Bisogna rendere le **metafore coerenti** con tutta l'interfaccia grafica.
 
-Viene usata la metafora **mondo modello** per dire che l'interfaccia è un mondo su cui l'utente agisce e ne cambia lo stato, l'utente inoltre ha la sensazione che le sua azioni siano **dirette** senza elementi intermedi.
+Viene usata la metafora **mondo modello** per dire che l'interfaccia è un mondo su cui l'utente agisce e ne cambia lo stato, l'utente inoltre ha la sensazione che le sue azioni siano **dirette** senza elementi intermedi.
 >Per l'utente l'interfaccia **è** il sistema.
 
-Caratteristiche della manipolazione diretta:
+Caratteristiche della **manipolazione diretta**:
 - Visibilità degli oggetti
 - Azioni incrementali e feedback veloce
 - Reversabilità delle azioni
@@ -75,7 +75,7 @@ I **menu circolari** vengono generati dopo una combinazione di tasti e mostrano 
 **Tabs**: collezioni di pulsanti per organizzare informazioni correlate, possono creare **ambiguità** se usate assieme a _finestre modali_ in quanto con l'opzione OK non si sa se si va a confermare le scelte della tab oppure dell'intera finestra modale.
 È possibile sciogliere queste ambiguità rappresentando se il pulsante OK fa parte della tab o meno.
 
-**Ribbon**: evoluzione della _toolbar_, ospita categorie diverse di entità
+**Ribbon**: evoluzione della _toolbar_, ospita categorie diverse di entità.
 
 >[!Info] Cose da non fare
 >- Tabs su righe multiple
@@ -140,7 +140,7 @@ I **modelli di interazione** sono utili per identificare le componenti del dialo
 
 - **Dominio**: descrive un'area di interesse
 - **Obiettivo**: il risultato che si desidera ottenere
-- **intenzione**: modalità con cui si raggiunge l'obiettivo
+- **Intenzione**: modalità con cui si raggiunge l'obiettivo
 - **Compito (task)**: articolazione dell'intenzione in **azioni**
 
 #### Ciclo di esecuzione e valutazione (D. Norman)
@@ -167,7 +167,7 @@ Formato da 4 componenti:
   - **Articolazione**: l'utente articola il linguaggio del compito in linguaggio di input
   - **Performance**: l'interfaccia traduce il linguaggio di input in stimoli per il sistema
   - **Presentazione**: il sistema presenta il risultato formulato nel linguaggio di output
-  - **Osservazione** l'utente traduce il linguaggio di output nel proprio linguaggio
+  - **Osservazione**: l'utente traduce il linguaggio di output nel proprio linguaggio
 
   **Risoluzione di problemi**:
   - È possibile applicare delle etichette esplicite che spieghino il significato di input

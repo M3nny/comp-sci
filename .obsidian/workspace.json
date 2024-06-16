@@ -4,19 +4,15 @@
     "type": "split",
     "children": [
       {
-        "id": "553eb7bfae183784",
+        "id": "ec55f25e991ff84c",
         "type": "tabs",
         "children": [
           {
-            "id": "7ed2ee5834920d03",
+            "id": "0aa356e11440c1f2",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Secondo anno/Interazione uomo macchina/L'uomo.md",
-                "mode": "source",
-                "source": false
-              }
+              "type": "empty",
+              "state": {}
             }
           }
         ]
@@ -85,7 +81,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Secondo anno/Interazione uomo macchina/L'uomo.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +97,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Secondo anno/Interazione uomo macchina/L'uomo.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -124,9 +118,7 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "Secondo anno/Interazione uomo macchina/L'uomo.md"
-              }
+              "state": {}
             }
           }
         ]
@@ -145,34 +137,34 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "7ed2ee5834920d03",
+  "active": "0aa356e11440c1f2",
   "lastOpenFiles": [
-    "Secondo anno/Basi di dati/Mod. 2/Domande.md",
+    "Secondo anno/Sistemi operativi/Mod. 2/Lo stallo.md",
+    "Secondo anno/Sistemi operativi/Mod. 2/Thread/Monitor/Thread in Java.md",
+    "Secondo anno/Sistemi operativi/Mod. 2/Thread/Monitor/Programmazione con i monitor.md",
+    "Secondo anno/Sistemi operativi/Mod. 2/Thread/Monitor/Monitor.md",
+    "Secondo anno/Sistemi operativi/Mod. 2/Thread/Semafori/Problemi noti.md",
+    "Secondo anno/Sistemi operativi/Mod. 2/Thread/Produttore e consumatore.md",
+    "Secondo anno/Sistemi operativi/Mod. 2/Thread/Semafori/Semafori POSIX.md",
+    "Secondo anno/Sistemi operativi/Mod. 2/Thread/Semafori/Semafori.md",
+    "Secondo anno/Sistemi operativi/Mod. 2/Thread/Thread POSIX.md",
+    "Secondo anno/Sistemi operativi/Mod. 2/Thread/Sezione critica.md",
+    "Secondo anno/Sistemi operativi/Mod. 2/Processi/Pipe.md",
+    "Secondo anno/Sistemi operativi/Mod. 2/Processi/Segnali.md",
+    "Secondo anno/Sistemi operativi/Mod. 2/Processi/Esecuzione e terminazione.md",
+    "Secondo anno/Sistemi operativi/Mod. 2/Processi/Creazione di processi.md",
+    "Secondo anno/Sistemi operativi/Mod. 2/Comunicazione tra processi e thread.md",
+    "Secondo anno/Interazione uomo macchina/UX/Misurare l'esperienza utente.md",
     "Secondo anno/Interazione uomo macchina/L'uomo.md",
-    "Secondo anno/Algoritmi e strutture dati/Mod. 1/Domande.md",
-    "Secondo anno/Algoritmi e strutture dati/Mod. 1/Riassunto.md",
-    "Secondo anno/Interazione uomo macchina/La macchina.md",
+    "Secondo anno/Interazione uomo macchina/UX/Prototipazione.md",
     "Secondo anno/Interazione uomo macchina/Mixed reality.md",
     "Secondo anno/Interazione uomo macchina/Pervasive computing.md",
-    "Secondo anno/Interazione uomo macchina/UX/Misurare l'esperienza utente.md",
-    "Secondo anno/Interazione uomo macchina/UX/Prototipazione.md",
     "Secondo anno/Interazione uomo macchina/UI/Interfacce tangibili.md",
     "Secondo anno/Interazione uomo macchina/UI/Componenti.md",
     "Secondo anno/Interazione uomo macchina/UI/Sistemi di navigazione.md",
     "Secondo anno/Interazione uomo macchina/UI/Architettura dell'informazione.md",
     "Secondo anno/Interazione uomo macchina/L'interazione.md",
-    "Secondo anno/Sistemi operativi/Mod. 1/Introduzione.md",
-    "Secondo anno/Sistemi operativi/Mod. 1/Scheduling.md",
-    "Secondo anno/Programmazione ad oggetti/Mod. 2/Lambda.md",
-    "Secondo anno/Programmazione ad oggetti/Mod. 2/Formulario.md",
-    "Secondo anno/Programmazione ad oggetti/Mod. 2/Oggetti in C++.md",
-    "Secondo anno/Programmazione ad oggetti/Mod. 2/Formulario java.md",
-    "Secondo anno/Programmazione ad oggetti/Mod. 2/Thread.md",
-    "Secondo anno/Programmazione ad oggetti/Mod. 2/Formulario C++.md",
-    "Secondo anno/Programmazione ad oggetti/Mod. 2/Tipi di classi.md",
-    "Secondo anno/Programmazione ad oggetti/Mod. 2/Guida a Java.md",
-    "Secondo anno/Programmazione ad oggetti/Mod. 2/Co-varianza e contro-varianza.md",
-    "Secondo anno/Programmazione ad oggetti/Mod. 1/Collections.md",
+    "Secondo anno/Interazione uomo macchina/La macchina.md",
     "Secondo anno/Basi di dati/Mod. 2/Normalizzazione/Forme normali.md~",
     "Secondo anno/Basi di dati/Mod. 2/Normalizzazione/4913",
     "Secondo anno/Programmazione ad oggetti/Mod. 2/Images/UML ArrayList.svg",
