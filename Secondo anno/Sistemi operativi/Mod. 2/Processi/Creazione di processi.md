@@ -95,7 +95,7 @@ else if (pid == 0) { // figlio
 }
 ```
 
-Se un processo figlio è terminato, ma è in attesa il genitore lo riconosca come tale, esso sarà uno **zombie**.
+Se un processo figlio è terminato, ma è in attesa che il genitore lo riconosca come tale, esso sarà uno **zombie**.
 ```c
 // ...
 else if (pid == 0) {

@@ -1,4 +1,4 @@
-Il modello a scambio di messaggi, lo schema produttore/consumatore utilizza una **send asincrona** (bloccante quando il buffer è pieno) ed una **receive sincrona**, ovvero:
+Nel modello a scambio di messaggi, lo schema produttore/consumatore utilizza una **send asincrona** (bloccante quando il buffer è pieno) ed una **receive sincrona**, ovvero:
 - Il consumatore attende se non ci sono dati da consumare
 - Il produttore attende se non c'è spazio nel buffer
 
@@ -13,7 +13,7 @@ Nel [[Processi#Process Control Block|PCB]] di un processo troviamo la **memoria*
 ### Produttore e consumatore con memoria condivisa
 Consideriamo di usare un ipotetico array "infinito" come canale di comunicazione tra due thread.
 
-**Problema**: il consumatore legga memoria sporca nel caso legga più velocemente di quanto viene prodotto.
+**Problema**: il consumatore legge memoria sporca nel caso legga più velocemente di quanto viene prodotto.
 **Soluzione**: far ciclare a vuoto il consumatore (busy-waiting) finchè non ci sono elementi da consumare.
 
 Sebbene possa funzionare, è una soluzione irrealistica a causa dell'array infinito, potremmo sostituirlo con un buffer circolare.

@@ -106,7 +106,7 @@ int main() {
     }
 	
     char* message = "Ciao da un'altro processo\0";
-    write (fd, message, strlen(message));
+    write(fd, message, strlen(message));
 	
     close(fd); // chiude il descrittore
 }

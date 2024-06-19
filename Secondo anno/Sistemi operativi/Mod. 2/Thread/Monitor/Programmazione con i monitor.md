@@ -153,6 +153,6 @@ Monitor rw {
 
 Oltre alla coda abbiamo:
 - Aggiunto `notifyAll()` alla fine di `ini_leggi` per sbloccare altri lettori in attesa che potrebbero essersi ribloccati in quanto non erano i primi della coda
-- Sostituito la `notify()` con `notifyAll()` in `end_legg()` in quanto i thread sulla coda potrebbero non essere nello stesso ordine dei thread sulla condition, per questo li sblocchiamo tutti e lasciamo che loro stessi si riblocchino.
+- Sostituito la `notify()` con `notifyAll()` in `end_leggi()` in quanto i thread sulla coda potrebbero non essere nello stesso ordine dei thread sulla condition, per questo li sblocchiamo tutti e lasciamo che loro stessi si riblocchino.
 	Se sbloccassimo un solo thread ed esso non fosse il primo della coda, si ribloccherebbe e nessun altro thread verrebbe eseguito
 

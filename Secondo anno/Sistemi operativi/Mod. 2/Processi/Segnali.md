@@ -7,7 +7,7 @@ Quando arriva un segnale possiamo:
 Vediamo in quale caso alcuni segnali vengono inviati ad un processo:
 - `SIGHUP`: il terminale a cui è associato viene chiuso
 - `SIGINT`: interrompe il processo con Ctrl-C
-- `SIGQUIT`: termina il processo con Ctrl-\
+- `SIGQUIT`: termina il processo con Ctrl-\\
 - `SIGILL` (istruzione illegale), `SIGABRT` (invocazione di _abort_), `SIGFPE` (errore aritmetico), `SIGSEGV` (riferimento a memoria illegale): corrispondono ad azioni del processo stesso
 - `SIGKILL`, `SIGTERM`: inviati da un processo a un altro, vengono utilizzati per terminare un processo
 - `SIGPIPE`: scrittura su una pipe che non ha lettori

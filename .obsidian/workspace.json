@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "ec55f25e991ff84c",
+        "id": "4c574315a27eeb82",
         "type": "tabs",
         "children": [
           {
-            "id": "0aa356e11440c1f2",
+            "id": "93561af27b9c016d",
             "type": "leaf",
             "state": {
               "type": "empty",
@@ -65,7 +65,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 350.5124969482422
+    "width": 350.5124969482422,
+    "collapsed": true
   },
   "right": {
     "id": "282a9548711da6a0",
@@ -137,9 +138,11 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "0aa356e11440c1f2",
+  "active": "93561af27b9c016d",
   "lastOpenFiles": [
+    "Sistemi Operativi 2.1.pdf",
     "Secondo anno/Sistemi operativi/Mod. 2/Lo stallo.md",
+    "Secondo anno/Sistemi operativi/Mod. 2/Domande.md",
     "Secondo anno/Sistemi operativi/Mod. 2/Thread/Monitor/Thread in Java.md",
     "Secondo anno/Sistemi operativi/Mod. 2/Thread/Monitor/Programmazione con i monitor.md",
     "Secondo anno/Sistemi operativi/Mod. 2/Thread/Monitor/Monitor.md",
@@ -163,8 +166,6 @@
     "Secondo anno/Interazione uomo macchina/UI/Componenti.md",
     "Secondo anno/Interazione uomo macchina/UI/Sistemi di navigazione.md",
     "Secondo anno/Interazione uomo macchina/UI/Architettura dell'informazione.md",
-    "Secondo anno/Interazione uomo macchina/L'interazione.md",
-    "Secondo anno/Interazione uomo macchina/La macchina.md",
     "Secondo anno/Basi di dati/Mod. 2/Normalizzazione/Forme normali.md~",
     "Secondo anno/Basi di dati/Mod. 2/Normalizzazione/4913",
     "Secondo anno/Programmazione ad oggetti/Mod. 2/Images/UML ArrayList.svg",
@@ -184,7 +185,6 @@
     "Secondo anno/Basi di dati/Mod. 2/NoSQL",
     "Secondo anno/Sistemi operativi/Mod. 2/Thread/Monitor",
     "Secondo anno/Sistemi operativi/Mod. 2/Thread/Semafori",
-    "Secondo anno/Algoritmi e strutture dati/Mod. 1/Cammini minimi",
     "Untitled.canvas"
   ]
 }

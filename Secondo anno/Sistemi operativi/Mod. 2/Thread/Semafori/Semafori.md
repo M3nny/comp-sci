@@ -1,4 +1,4 @@
-Gli spinlock utilizzati solo dai sistemi operativi, ma quasi mai nelle applicazioni, vediamo ora uno dei metodi più semplici ed efficaci.
+Gli spinlock sono utilizzati solo dai sistemi operativi, ma quasi mai nelle applicazioni, vediamo ora uno dei metodi più semplici ed efficaci.
 
 Un **semaforo** è un contatore (intero) con una coda di attesa:
 ```c
