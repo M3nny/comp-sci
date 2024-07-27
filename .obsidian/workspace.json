@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "4c574315a27eeb82",
+        "id": "402dc183e49ee4a6",
         "type": "tabs",
         "children": [
           {
-            "id": "93561af27b9c016d",
+            "id": "5292cde4ae4e9ed7",
             "type": "leaf",
             "state": {
               "type": "empty",
@@ -65,8 +65,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 350.5124969482422,
-    "collapsed": true
+    "width": 350.5124969482422
   },
   "right": {
     "id": "282a9548711da6a0",
@@ -82,6 +81,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "Secondo anno/Algoritmi e strutture dati/Template grafi/Template.excalidraw",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -98,6 +98,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "Secondo anno/Algoritmi e strutture dati/Template grafi/Template.excalidraw",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -119,7 +120,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "Secondo anno/Algoritmi e strutture dati/Template grafi/Template.excalidraw"
+              }
             }
           }
         ]
@@ -138,8 +141,23 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "93561af27b9c016d",
+  "active": "a1163d9af64d6878",
   "lastOpenFiles": [
+    "Secondo anno/Algoritmi e strutture dati/Template grafi/Template.excalidraw.md",
+    "Secondo anno/Algoritmi e strutture dati/Template grafi/Template.excalidraw",
+    "Secondo anno/Basi di dati/Mod. 2/Amministrazione/Sicurezza.md",
+    "Secondo anno/Programmazione ad oggetti/Mod. 2/Formulario.md",
+    "Secondo anno/Programmazione ad oggetti/Mod. 2/Formulario C++.md",
+    "Secondo anno/Programmazione ad oggetti/Mod. 2/Formulario java.md",
+    "Secondo anno/Algoritmi e strutture dati/Template grafi/Template.svg",
+    "Secondo anno/Algoritmi e strutture dati/Disegni grafi/Disegni.excalidraw",
+    "Secondo anno/Algoritmi e strutture dati/Template grafi",
+    "Excalidraw/TEMPLATE GRAFO.excalidraw.svg",
+    "Secondo anno/Basi di dati/Mod. 1/Modello relazionale.md",
+    "Terzo anno",
+    "Secondo anno/Basi di dati/Mod. 2/Amministrazione/Vincoli di integrità.md",
+    "Stage.md",
+    "Deep learning.md",
     "Sistemi Operativi 2.1.pdf",
     "Secondo anno/Sistemi operativi/Mod. 2/Lo stallo.md",
     "Secondo anno/Sistemi operativi/Mod. 2/Domande.md",
@@ -157,15 +175,6 @@
     "Secondo anno/Sistemi operativi/Mod. 2/Processi/Esecuzione e terminazione.md",
     "Secondo anno/Sistemi operativi/Mod. 2/Processi/Creazione di processi.md",
     "Secondo anno/Sistemi operativi/Mod. 2/Comunicazione tra processi e thread.md",
-    "Secondo anno/Interazione uomo macchina/UX/Misurare l'esperienza utente.md",
-    "Secondo anno/Interazione uomo macchina/L'uomo.md",
-    "Secondo anno/Interazione uomo macchina/UX/Prototipazione.md",
-    "Secondo anno/Interazione uomo macchina/Mixed reality.md",
-    "Secondo anno/Interazione uomo macchina/Pervasive computing.md",
-    "Secondo anno/Interazione uomo macchina/UI/Interfacce tangibili.md",
-    "Secondo anno/Interazione uomo macchina/UI/Componenti.md",
-    "Secondo anno/Interazione uomo macchina/UI/Sistemi di navigazione.md",
-    "Secondo anno/Interazione uomo macchina/UI/Architettura dell'informazione.md",
     "Secondo anno/Basi di dati/Mod. 2/Normalizzazione/Forme normali.md~",
     "Secondo anno/Basi di dati/Mod. 2/Normalizzazione/4913",
     "Secondo anno/Programmazione ad oggetti/Mod. 2/Images/UML ArrayList.svg",
@@ -175,16 +184,10 @@
     "Secondo anno/Sistemi operativi/Mod. 2/Images/Sequenza sicura.png",
     "Secondo anno/Sistemi operativi/Mod. 2/Images/Filosofi mancini.png",
     "Secondo anno/Sistemi operativi/Mod. 2/Images",
-    "Secondo anno/Sistemi operativi/Mod. 2/Stallo",
     "Secondo anno/Algoritmi e strutture dati/Mod. 1/Images/SAT-3FNC to Clique.svg",
     "Secondo anno/Algoritmi e strutture dati/Mod. 1/Images/Classi di problemi.svg",
     "Secondo anno/Algoritmi e strutture dati/Mod. 1/Images/NPC - NPCI.svg",
     "Secondo anno/Algoritmi e strutture dati/Mod. 1/Images/Verifica ciclo Hamiltoniano.svg",
-    "Secondo anno/Algoritmi e strutture dati/Mod. 1/Images/Is clique-2.svg",
-    "Secondo anno/Algoritmi e strutture dati/Mod. 1/Images/Is clique-1.svg",
-    "Secondo anno/Basi di dati/Mod. 2/NoSQL",
-    "Secondo anno/Sistemi operativi/Mod. 2/Thread/Monitor",
-    "Secondo anno/Sistemi operativi/Mod. 2/Thread/Semafori",
     "Untitled.canvas"
   ]
 }
