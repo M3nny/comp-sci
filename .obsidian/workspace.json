@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "402dc183e49ee4a6",
+        "id": "27913046ffb9fd9b",
         "type": "tabs",
         "children": [
           {
-            "id": "5292cde4ae4e9ed7",
+            "id": "b37342bfff6ce2f2",
             "type": "leaf",
             "state": {
               "type": "empty",
@@ -81,7 +81,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Secondo anno/Algoritmi e strutture dati/Template grafi/Template.excalidraw",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -98,7 +97,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Secondo anno/Algoritmi e strutture dati/Template grafi/Template.excalidraw",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -120,9 +118,7 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "Secondo anno/Algoritmi e strutture dati/Template grafi/Template.excalidraw"
-              }
+              "state": {}
             }
           }
         ]
@@ -141,8 +137,13 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "a1163d9af64d6878",
+  "active": "b37342bfff6ce2f2",
   "lastOpenFiles": [
+    "Terzo anno/Sicurezza/Stream editor e regex.md",
+    "Untitled.md",
+    "Terzo anno/Sicurezza/Untitled",
+    "Terzo anno/Sicurezza",
+    "Terzo anno",
     "Secondo anno/Algoritmi e strutture dati/Template grafi/Template.excalidraw.md",
     "Secondo anno/Algoritmi e strutture dati/Template grafi/Template.excalidraw",
     "Secondo anno/Basi di dati/Mod. 2/Amministrazione/Sicurezza.md",
@@ -174,16 +175,12 @@
     "Secondo anno/Sistemi operativi/Mod. 2/Processi/Segnali.md",
     "Secondo anno/Sistemi operativi/Mod. 2/Processi/Esecuzione e terminazione.md",
     "Secondo anno/Sistemi operativi/Mod. 2/Processi/Creazione di processi.md",
-    "Secondo anno/Sistemi operativi/Mod. 2/Comunicazione tra processi e thread.md",
     "Secondo anno/Basi di dati/Mod. 2/Normalizzazione/Forme normali.md~",
     "Secondo anno/Basi di dati/Mod. 2/Normalizzazione/4913",
     "Secondo anno/Programmazione ad oggetti/Mod. 2/Images/UML ArrayList.svg",
     "Secondo anno/Interazione uomo macchina/Images/TACs.png",
-    "Secondo anno/Interazione uomo macchina/Images",
-    "Secondo anno/Interazione uomo macchina/UX",
     "Secondo anno/Sistemi operativi/Mod. 2/Images/Sequenza sicura.png",
     "Secondo anno/Sistemi operativi/Mod. 2/Images/Filosofi mancini.png",
-    "Secondo anno/Sistemi operativi/Mod. 2/Images",
     "Secondo anno/Algoritmi e strutture dati/Mod. 1/Images/SAT-3FNC to Clique.svg",
     "Secondo anno/Algoritmi e strutture dati/Mod. 1/Images/Classi di problemi.svg",
     "Secondo anno/Algoritmi e strutture dati/Mod. 1/Images/NPC - NPCI.svg",
