@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "27913046ffb9fd9b",
+        "id": "822a0b61522f3715",
         "type": "tabs",
         "children": [
           {
-            "id": "b37342bfff6ce2f2",
+            "id": "7a62f23bea5e5881",
             "type": "leaf",
             "state": {
               "type": "empty",
@@ -81,6 +81,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "Terzo anno/Sicurezza/Introduzione a Python.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -97,6 +98,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "Terzo anno/Sicurezza/Introduzione a Python.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -118,7 +120,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "Terzo anno/Sicurezza/Introduzione a Python.md"
+              }
             }
           }
         ]
@@ -137,8 +141,9 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "b37342bfff6ce2f2",
+  "active": "a1163d9af64d6878",
   "lastOpenFiles": [
+    "Terzo anno/Sicurezza/Introduzione a Python.md",
     "Terzo anno/Sicurezza/Stream editor e regex.md",
     "Untitled.md",
     "Terzo anno/Sicurezza/Untitled",
@@ -174,7 +179,6 @@
     "Secondo anno/Sistemi operativi/Mod. 2/Processi/Pipe.md",
     "Secondo anno/Sistemi operativi/Mod. 2/Processi/Segnali.md",
     "Secondo anno/Sistemi operativi/Mod. 2/Processi/Esecuzione e terminazione.md",
-    "Secondo anno/Sistemi operativi/Mod. 2/Processi/Creazione di processi.md",
     "Secondo anno/Basi di dati/Mod. 2/Normalizzazione/Forme normali.md~",
     "Secondo anno/Basi di dati/Mod. 2/Normalizzazione/4913",
     "Secondo anno/Programmazione ad oggetti/Mod. 2/Images/UML ArrayList.svg",
