@@ -25,6 +25,7 @@ N.B. quando usati col nome `v` essi rappresentano vettori di numeri con i quali 
 
 ### Registri speciali
 Non possono essere usati direttamente nelle istruzioni.
+
 | **Nome** | **Significato**                                                |
 | -------- | -------------------------------------------------------------- |
 | XZR      | viene sempre letto col valore 0, non può essere scritto        |
@@ -38,6 +39,7 @@ Utilizzati per configurare CPU o sistema di memoria, possono essere letti o scri
 
 ### Application Program Status Register (APSR)
 Contiene una copia dei codici di controllo generati dall'ALU:
+
 | **31** | **30** | **29** | **28** | **27** | **26-24** | **23-20** | **19-16** | **15-0** |
 | ------ | ------ | ------ | ------ | ------ | --------- | --------- | --------- | -------- |
 | N      | Z      | C      | V      | Q      | RAZ/SBZP  | Reserved  | GE        | Reserved         |

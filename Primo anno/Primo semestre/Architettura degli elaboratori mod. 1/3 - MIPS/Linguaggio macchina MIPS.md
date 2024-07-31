@@ -18,6 +18,7 @@ Con le istruzioni **sw**/**lw** carico in/dalla memoria registri.
 Il formato Register type per istruzioni aritmetico-logiche è rappresentato come segue:
 
 `add $8, $17, $18`
+
 | **000000** | **10001** | **10010** | **01000** | **00000** | **100000** |
 |:----------:|:---------:|:---------:|:---------:|:---------:|:----------:|
 |    _op_    |    _rs_   |    _rt_   |    _rd_   |  _shamt_  |   _funct_  |
@@ -33,6 +34,7 @@ Il formato Register type per istruzioni aritmetico-logiche è rappresentato come
 Il formato Immediate type è diverso dal formato precedente in quanto non utilizza tre registri per le operazioni, bensì due + un valore costante, viene utilizzato per diverse istruzioni, ad esempio lw e sw.
 
 ` lw $9, 32($18)`
+
 | **35** | **18** | **9** |      **32**     |
 |:------:|:------:|:-----:|:---------------:|
 |  _op_  |  _rs_  |  _rt_ | _16 bit number_ |
