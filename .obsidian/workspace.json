@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "024f31de8653f71f",
+        "id": "27c07cea7fdd3fd1",
         "type": "tabs",
         "children": [
           {
-            "id": "5b55e9f9bdb5375c",
+            "id": "a5ae244891b2cf71",
             "type": "leaf",
             "state": {
               "type": "empty",
@@ -81,7 +81,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Terzo anno/Sicurezza/Program analysis/Assembly x86-64.md",
+                "file": "Terzo anno/Sicurezza/Program analysis/Analisi statica e dinamica.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -98,7 +98,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Terzo anno/Sicurezza/Program analysis/Assembly x86-64.md",
+                "file": "Terzo anno/Sicurezza/Program analysis/Analisi statica e dinamica.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -121,7 +121,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Terzo anno/Sicurezza/Program analysis/Assembly x86-64.md"
+                "file": "Terzo anno/Sicurezza/Program analysis/Analisi statica e dinamica.md"
               }
             }
           }
@@ -143,9 +143,10 @@
   },
   "active": "a1163d9af64d6878",
   "lastOpenFiles": [
+    "Terzo anno/Sicurezza/Program analysis/Assembly x86-64.md",
+    "Terzo anno/Sicurezza/Program analysis/Analisi statica e dinamica.md",
     "Primo anno/Primo semestre/Architettura degli elaboratori mod. 1/3 - MIPS/Linguaggio macchina MIPS.md",
     "Primo anno/Secondo semestre/Architettura degli elaboratori mod. 2/ARM ISA/Istruzioni logico-aritmetiche.md",
-    "Terzo anno/Sicurezza/Program analysis/Assembly x86-64.md",
     "Primo anno/Secondo semestre/Architettura degli elaboratori mod. 2/Assembly/Funzioni e stack.md",
     "Primo anno/Secondo semestre/Architettura degli elaboratori mod. 2/ARM ISA/Registri.md",
     "Terzo anno/Sicurezza/Images/Layout memoria.png",
@@ -184,7 +185,6 @@
     "Secondo anno/Sistemi operativi/Mod. 2/Lo stallo.md",
     "Secondo anno/Sistemi operativi/Mod. 2/Domande.md",
     "Secondo anno/Sistemi operativi/Mod. 2/Thread/Monitor/Thread in Java.md",
-    "Secondo anno/Sistemi operativi/Mod. 2/Thread/Monitor/Programmazione con i monitor.md",
     "Secondo anno/Programmazione ad oggetti/Mod. 2/Images/UML ArrayList.svg",
     "Secondo anno/Interazione uomo macchina/Images/TACs.png",
     "Secondo anno/Sistemi operativi/Mod. 2/Images/Sequenza sicura.png",
