@@ -4,15 +4,19 @@
     "type": "split",
     "children": [
       {
-        "id": "27c07cea7fdd3fd1",
+        "id": "a5a1c28854c2359a",
         "type": "tabs",
         "children": [
           {
-            "id": "a5ae244891b2cf71",
+            "id": "a1a22ef1ec9825d7",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {}
+              "type": "markdown",
+              "state": {
+                "file": "Terzo anno/Sicurezza/Program exploitation/Buffer overflow.md",
+                "mode": "source",
+                "source": false
+              }
             }
           }
         ]
@@ -65,7 +69,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 350.5124969482422
+    "width": 350.5124969482422,
+    "collapsed": true
   },
   "right": {
     "id": "282a9548711da6a0",
@@ -81,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Terzo anno/Sicurezza/Program analysis/Analisi statica e dinamica.md",
+                "file": "Terzo anno/Sicurezza/Program exploitation/Buffer overflow.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -98,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Terzo anno/Sicurezza/Program analysis/Analisi statica e dinamica.md",
+                "file": "Terzo anno/Sicurezza/Program exploitation/Buffer overflow.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -121,7 +126,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Terzo anno/Sicurezza/Program analysis/Analisi statica e dinamica.md"
+                "file": "Terzo anno/Sicurezza/Program exploitation/Buffer overflow.md"
               }
             }
           }
@@ -141,10 +146,16 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "a1163d9af64d6878",
+  "active": "a1a22ef1ec9825d7",
   "lastOpenFiles": [
+    "Primo anno/Secondo semestre/Architettura degli elaboratori mod. 2/Memoria virtuale/Mapping.md",
     "Terzo anno/Sicurezza/Program analysis/Assembly x86-64.md",
     "Terzo anno/Sicurezza/Program analysis/Analisi statica e dinamica.md",
+    "Terzo anno/Sicurezza/Program exploitation/Buffer overflow.md",
+    "Primo anno/Secondo semestre/Architettura degli elaboratori mod. 2/ARM ISA/Load&Store.md",
+    "Primo anno/Secondo semestre/Architettura degli elaboratori mod. 2/ARM ISA/Branches.md",
+    "Primo anno/Secondo semestre/Architettura degli elaboratori mod. 2/Cache/Cache diretta.md",
+    "Terzo anno/Sicurezza/Program exploitation",
     "Primo anno/Primo semestre/Architettura degli elaboratori mod. 1/3 - MIPS/Linguaggio macchina MIPS.md",
     "Primo anno/Secondo semestre/Architettura degli elaboratori mod. 2/ARM ISA/Istruzioni logico-aritmetiche.md",
     "Primo anno/Secondo semestre/Architettura degli elaboratori mod. 2/Assembly/Funzioni e stack.md",
@@ -179,12 +190,6 @@
     "Secondo anno/Basi di dati/Mod. 1/Modello relazionale.md",
     "Terzo anno",
     "Secondo anno/Basi di dati/Mod. 2/Amministrazione/Vincoli di integrità.md",
-    "Stage.md",
-    "Deep learning.md",
-    "Sistemi Operativi 2.1.pdf",
-    "Secondo anno/Sistemi operativi/Mod. 2/Lo stallo.md",
-    "Secondo anno/Sistemi operativi/Mod. 2/Domande.md",
-    "Secondo anno/Sistemi operativi/Mod. 2/Thread/Monitor/Thread in Java.md",
     "Secondo anno/Programmazione ad oggetti/Mod. 2/Images/UML ArrayList.svg",
     "Secondo anno/Interazione uomo macchina/Images/TACs.png",
     "Secondo anno/Sistemi operativi/Mod. 2/Images/Sequenza sicura.png",

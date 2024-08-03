@@ -7,6 +7,8 @@ L'**analisi statica** consiste nel capire la logica del programma osservando il 
 ```bash
 gcc count.c -o count -g
 gdb -q count
+
+gdb -q --args count arg1 arg2 arg3
 ```
 
 - **list**: mostra il codice
@@ -21,4 +23,25 @@ gdb -q count
 - **delete 1**: cancella il _breakpoint_ numero 1
 
 >È possibile accorciare i comandi se non ce ne sono che iniziano con lo stesso prefisso inserito (e.g. `disas main`).
+
+#### Esaminare la memoria
+```bash
+x/<num><format><size><addr>
+```
+- **num**: il numero di elementi da ispezionare
+- **format**: il formato che deve essere usato per mostrare i valori
+	**o**ctal, **h**exadecimal, **u**nsigned int, **t**binary, **i**nstruction, **c**har, **s**tring.
+- **size**: la dimensione degli elementi
+	**b**yte, **h**alfword, **w** 4b, **g** 8b
+
+
+È possibile definire funzioni in gdb:
+```bash
+(gdb) define mystep
+>while(1)
+ >nexti
+ >x/1i $rip
+ >end
+>end 
+```
 

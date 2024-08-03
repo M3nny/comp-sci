@@ -1,12 +1,14 @@
 ## Salti non condizionati
 Supportano un offset di $\pm$ 128MB.
 - Il registro `x30` è noto anche come **link register** (`lr`) 
+
 | `B label`                             | `BL label`                                                                                              | `RET`                                            | `BR x<m>`                                        | `BLR x<m>`                                                                                                          |
 | ------------------------------------- | ------------------------------------------------------------------------------------------------------- | ------------------------------------------------ | ------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------- |
 | salta all'indirizzo indicato da label | salta all'indirizzo indicato da label e salva l'indirizzo dell'istruzione successiva nel registro `x30` | salta all'indirizzo contenuto nel registro `x30` | Salta all'indirizzo contenuto nel registro `x<m>` | Salta all'indirizzo contenuto nel registro `x<m>` e salva l'indirizzo dell'istruzione successiva nel registro `x30` |
 
 ## Branch condizionati
 Il registro (**reg**.) usato per il branch può essere di tipo `w<n>` oppure `x<n>`, inoltre **label** deve trovarsi a $\pm$ 1MB dal PC.
+
 | `CBZ reg, label` | `CBNZ reg, label`|
 | -------------------------- | ----------- | 
 | Salta a label se reg. = 0  | Salta a label se reg. $\neq$ 0            |       
