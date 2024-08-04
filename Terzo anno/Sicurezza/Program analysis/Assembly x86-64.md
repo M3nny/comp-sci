@@ -127,7 +127,7 @@ mov QWORD PTR [rbp-0x8], rax  # esegue "b = x" e lo mette sotto ad a
 | **Stack**          | **Delimitatori** |
 | ------------------ | ---------------- |
 | `10 (0xa)`         | `rsp`            |
-| `0 (0x0`           |                  |
+| `0 (0x0)`          |                  |
 | `10 (0xa)`         | `rbp`            |
 | `<old rbp>`        |                  |
 | `return <address>` |                  |

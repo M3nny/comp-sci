@@ -4,19 +4,15 @@
     "type": "split",
     "children": [
       {
-        "id": "a5a1c28854c2359a",
+        "id": "df75ea8f8a078c57",
         "type": "tabs",
         "children": [
           {
-            "id": "a1a22ef1ec9825d7",
+            "id": "aa13ee25ebcf60d0",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Terzo anno/Sicurezza/Program exploitation/Buffer overflow.md",
-                "mode": "source",
-                "source": false
-              }
+              "type": "empty",
+              "state": {}
             }
           }
         ]
@@ -69,8 +65,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 350.5124969482422,
-    "collapsed": true
+    "width": 350.5124969482422
   },
   "right": {
     "id": "282a9548711da6a0",
@@ -86,7 +81,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Terzo anno/Sicurezza/Program exploitation/Buffer overflow.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +97,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Terzo anno/Sicurezza/Program exploitation/Buffer overflow.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,9 +118,7 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "Terzo anno/Sicurezza/Program exploitation/Buffer overflow.md"
-              }
+              "state": {}
             }
           }
         ]
@@ -146,14 +137,23 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "a1a22ef1ec9825d7",
+  "active": "aa13ee25ebcf60d0",
   "lastOpenFiles": [
-    "Primo anno/Secondo semestre/Architettura degli elaboratori mod. 2/Memoria virtuale/Mapping.md",
+    "Terzo anno/Sicurezza/Program exploitation/Stack overflow.md",
+    "Primo anno/Secondo semestre/Architettura degli elaboratori mod. 2/CPU con pipeline/Previsione del branch, interruzioni e ottimizzazione.md",
+    "Primo anno/Secondo semestre/Architettura degli elaboratori mod. 2/CPU con pipeline/Dipendenze RAW.md",
+    "Primo anno/Secondo semestre/Architettura degli elaboratori mod. 2/ARM ISA/Branches.md",
+    "Secondo anno/Sistemi operativi/Mod. 1/Processi.md",
+    "Secondo anno/Sistemi operativi/Mod. 1/Memoria/Memoria virtuale.md",
+    "Secondo anno/Sistemi operativi/Mod. 1/Casi di studio/Linux.md",
+    "Terzo anno/Sicurezza/Images/ROP.png",
+    "Terzo anno/Sicurezza/Images/Shellcode 32-bit.png",
+    "Terzo anno/Sicurezza/Images/Shellcode.png",
+    "Terzo anno/Sicurezza/Program exploitation/Buffer overflow.md",
     "Terzo anno/Sicurezza/Program analysis/Assembly x86-64.md",
     "Terzo anno/Sicurezza/Program analysis/Analisi statica e dinamica.md",
-    "Terzo anno/Sicurezza/Program exploitation/Buffer overflow.md",
+    "Primo anno/Secondo semestre/Architettura degli elaboratori mod. 2/Memoria virtuale/Mapping.md",
     "Primo anno/Secondo semestre/Architettura degli elaboratori mod. 2/ARM ISA/Load&Store.md",
-    "Primo anno/Secondo semestre/Architettura degli elaboratori mod. 2/ARM ISA/Branches.md",
     "Primo anno/Secondo semestre/Architettura degli elaboratori mod. 2/Cache/Cache diretta.md",
     "Terzo anno/Sicurezza/Program exploitation",
     "Primo anno/Primo semestre/Architettura degli elaboratori mod. 1/3 - MIPS/Linguaggio macchina MIPS.md",
@@ -179,21 +179,12 @@
     "Terzo anno",
     "Secondo anno/Algoritmi e strutture dati/Template grafi/Template.excalidraw.md",
     "Secondo anno/Algoritmi e strutture dati/Template grafi/Template.excalidraw",
-    "Secondo anno/Basi di dati/Mod. 2/Amministrazione/Sicurezza.md",
-    "Secondo anno/Programmazione ad oggetti/Mod. 2/Formulario.md",
-    "Secondo anno/Programmazione ad oggetti/Mod. 2/Formulario C++.md",
-    "Secondo anno/Programmazione ad oggetti/Mod. 2/Formulario java.md",
     "Secondo anno/Algoritmi e strutture dati/Template grafi/Template.svg",
     "Secondo anno/Algoritmi e strutture dati/Disegni grafi/Disegni.excalidraw",
     "Secondo anno/Algoritmi e strutture dati/Template grafi",
     "Excalidraw/TEMPLATE GRAFO.excalidraw.svg",
-    "Secondo anno/Basi di dati/Mod. 1/Modello relazionale.md",
     "Terzo anno",
-    "Secondo anno/Basi di dati/Mod. 2/Amministrazione/Vincoli di integrità.md",
     "Secondo anno/Programmazione ad oggetti/Mod. 2/Images/UML ArrayList.svg",
-    "Secondo anno/Interazione uomo macchina/Images/TACs.png",
-    "Secondo anno/Sistemi operativi/Mod. 2/Images/Sequenza sicura.png",
-    "Secondo anno/Sistemi operativi/Mod. 2/Images/Filosofi mancini.png",
     "Untitled.canvas"
   ]
 }
