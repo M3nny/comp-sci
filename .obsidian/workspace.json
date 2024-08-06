@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "df75ea8f8a078c57",
+        "id": "42ec5466e93f0e4d",
         "type": "tabs",
         "children": [
           {
-            "id": "aa13ee25ebcf60d0",
+            "id": "cd093d74253b8f98",
             "type": "leaf",
             "state": {
               "type": "empty",
@@ -137,8 +137,10 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "aa13ee25ebcf60d0",
+  "active": "cd093d74253b8f98",
   "lastOpenFiles": [
+    "Terzo anno/Sicurezza/Program exploitation/Format strings.md",
+    "Terzo anno/Sicurezza/Program analysis/Assembly x86-64.md",
     "Terzo anno/Sicurezza/Program exploitation/Stack overflow.md",
     "Primo anno/Secondo semestre/Architettura degli elaboratori mod. 2/CPU con pipeline/Previsione del branch, interruzioni e ottimizzazione.md",
     "Primo anno/Secondo semestre/Architettura degli elaboratori mod. 2/CPU con pipeline/Dipendenze RAW.md",
@@ -150,7 +152,6 @@
     "Terzo anno/Sicurezza/Images/Shellcode 32-bit.png",
     "Terzo anno/Sicurezza/Images/Shellcode.png",
     "Terzo anno/Sicurezza/Program exploitation/Buffer overflow.md",
-    "Terzo anno/Sicurezza/Program analysis/Assembly x86-64.md",
     "Terzo anno/Sicurezza/Program analysis/Analisi statica e dinamica.md",
     "Primo anno/Secondo semestre/Architettura degli elaboratori mod. 2/Memoria virtuale/Mapping.md",
     "Primo anno/Secondo semestre/Architettura degli elaboratori mod. 2/ARM ISA/Load&Store.md",
@@ -177,7 +178,6 @@
     "Untitled.md",
     "Terzo anno/Sicurezza",
     "Terzo anno",
-    "Secondo anno/Algoritmi e strutture dati/Template grafi/Template.excalidraw.md",
     "Secondo anno/Algoritmi e strutture dati/Template grafi/Template.excalidraw",
     "Secondo anno/Algoritmi e strutture dati/Template grafi/Template.svg",
     "Secondo anno/Algoritmi e strutture dati/Disegni grafi/Disegni.excalidraw",
