@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "42ec5466e93f0e4d",
+        "id": "7f5b4e32aaf188e9",
         "type": "tabs",
         "children": [
           {
-            "id": "cd093d74253b8f98",
+            "id": "577502d2642ae1dc",
             "type": "leaf",
             "state": {
               "type": "empty",
@@ -137,8 +137,10 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "cd093d74253b8f98",
+  "active": "a1163d9af64d6878",
   "lastOpenFiles": [
+    "Terzo anno/Sicurezza/Program exploitation/Secure coding.md",
+    "Terzo anno/Sicurezza/Images/Livelli di priorità.png",
     "Terzo anno/Sicurezza/Program exploitation/Format strings.md",
     "Terzo anno/Sicurezza/Program analysis/Assembly x86-64.md",
     "Terzo anno/Sicurezza/Program exploitation/Stack overflow.md",
@@ -173,9 +175,7 @@
     "Primo anno/Secondo semestre/Architettura degli elaboratori mod. 2/Assembly/Costrutti principali.md",
     "Terzo anno/Sicurezza/Background and tools/Introduzione a Python.md",
     "Terzo anno/Sicurezza/Program analysis",
-    "Terzo anno/Sicurezza/Background and tools/Stream editor e regex.md",
     "Terzo anno/Sicurezza/Background and tools",
-    "Untitled.md",
     "Terzo anno/Sicurezza",
     "Terzo anno",
     "Secondo anno/Algoritmi e strutture dati/Template grafi/Template.excalidraw",
@@ -184,7 +184,6 @@
     "Secondo anno/Algoritmi e strutture dati/Template grafi",
     "Excalidraw/TEMPLATE GRAFO.excalidraw.svg",
     "Terzo anno",
-    "Secondo anno/Programmazione ad oggetti/Mod. 2/Images/UML ArrayList.svg",
     "Untitled.canvas"
   ]
 }
