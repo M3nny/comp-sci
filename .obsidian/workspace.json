@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "7f5b4e32aaf188e9",
+        "id": "9e008ce2f2c36867",
         "type": "tabs",
         "children": [
           {
-            "id": "577502d2642ae1dc",
+            "id": "f7402a09072b66b7",
             "type": "leaf",
             "state": {
               "type": "empty",
@@ -137,8 +137,13 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "a1163d9af64d6878",
+  "active": "f7402a09072b66b7",
   "lastOpenFiles": [
+    "Terzo anno/Sicurezza/System and network security/Identification.md",
+    "Secondo anno/Algoritmi e strutture dati/Mod. 2/Tabelle hash/Funzioni hash.md",
+    "Secondo anno/Algoritmi e strutture dati/Mod. 2/Tabelle hash/Tabelle ad indirizzamento diretto.md",
+    "Secondo anno/Algoritmi e strutture dati/Mod. 2/Tabelle hash/Concatenamento.md",
+    "Terzo anno/Sicurezza/System and network security",
     "Terzo anno/Sicurezza/Program exploitation/Secure coding.md",
     "Terzo anno/Sicurezza/Images/Livelli di priorità.png",
     "Terzo anno/Sicurezza/Program exploitation/Format strings.md",
@@ -171,9 +176,6 @@
     "Secondo anno/Sistemi operativi/Mod. 1/File systems.md",
     "Primo anno/Primo semestre/Architettura degli elaboratori mod. 1/1 - Rappresentazione dell'informazione/Altri tipi di rappresentazioni.md",
     "Primo anno/Secondo semestre/Architettura degli elaboratori mod. 2/Riassunto.md",
-    "Primo anno/Secondo semestre/Architettura degli elaboratori mod. 2/Assembly/Programmi.md",
-    "Primo anno/Secondo semestre/Architettura degli elaboratori mod. 2/Assembly/Costrutti principali.md",
-    "Terzo anno/Sicurezza/Background and tools/Introduzione a Python.md",
     "Terzo anno/Sicurezza/Program analysis",
     "Terzo anno/Sicurezza/Background and tools",
     "Terzo anno/Sicurezza",
@@ -183,7 +185,6 @@
     "Secondo anno/Algoritmi e strutture dati/Disegni grafi/Disegni.excalidraw",
     "Secondo anno/Algoritmi e strutture dati/Template grafi",
     "Excalidraw/TEMPLATE GRAFO.excalidraw.svg",
-    "Terzo anno",
     "Untitled.canvas"
   ]
 }
