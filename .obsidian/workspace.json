@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "9e008ce2f2c36867",
+        "id": "c388398e7633579f",
         "type": "tabs",
         "children": [
           {
-            "id": "f7402a09072b66b7",
+            "id": "5331bafbb8aa9179",
             "type": "leaf",
             "state": {
               "type": "empty",
@@ -137,8 +137,12 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "f7402a09072b66b7",
+  "active": "5331bafbb8aa9179",
   "lastOpenFiles": [
+    "Terzo anno/Sicurezza/System and network security/Unix access control.md",
+    "Primo anno/Primo semestre/Calcolo 1/Riassunto.md",
+    "Primo anno/Primo semestre/Calcolo 1/Infiniti e infinitesimi/Polinomio di Taylor.md",
+    "Secondo anno/Sistemi operativi/Mod. 1/File systems.md",
     "Terzo anno/Sicurezza/System and network security/Identification.md",
     "Secondo anno/Algoritmi e strutture dati/Mod. 2/Tabelle hash/Funzioni hash.md",
     "Secondo anno/Algoritmi e strutture dati/Mod. 2/Tabelle hash/Tabelle ad indirizzamento diretto.md",
@@ -167,15 +171,11 @@
     "Primo anno/Primo semestre/Architettura degli elaboratori mod. 1/3 - MIPS/Linguaggio macchina MIPS.md",
     "Primo anno/Secondo semestre/Architettura degli elaboratori mod. 2/ARM ISA/Istruzioni logico-aritmetiche.md",
     "Primo anno/Secondo semestre/Architettura degli elaboratori mod. 2/Assembly/Funzioni e stack.md",
-    "Primo anno/Secondo semestre/Architettura degli elaboratori mod. 2/ARM ISA/Registri.md",
     "Terzo anno/Sicurezza/Images/Layout memoria.png",
     "Terzo anno/Sicurezza/Images/Layout memoria.png",
     "Pasted image 20240731092603.png",
     "Terzo anno/Sicurezza/Images/Porzioni dei registri.png",
     "Terzo anno/Sicurezza/Images",
-    "Secondo anno/Sistemi operativi/Mod. 1/File systems.md",
-    "Primo anno/Primo semestre/Architettura degli elaboratori mod. 1/1 - Rappresentazione dell'informazione/Altri tipi di rappresentazioni.md",
-    "Primo anno/Secondo semestre/Architettura degli elaboratori mod. 2/Riassunto.md",
     "Terzo anno/Sicurezza/Program analysis",
     "Terzo anno/Sicurezza/Background and tools",
     "Terzo anno/Sicurezza",
