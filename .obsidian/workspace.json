@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "c388398e7633579f",
+        "id": "1d8051ed8be0b47c",
         "type": "tabs",
         "children": [
           {
-            "id": "5331bafbb8aa9179",
+            "id": "18c182501bdc27f7",
             "type": "leaf",
             "state": {
               "type": "empty",
@@ -137,8 +137,11 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "5331bafbb8aa9179",
+  "active": "18c182501bdc27f7",
   "lastOpenFiles": [
+    "Terzo anno/Sicurezza/System and network security/Firewalls - netfilter.md",
+    "Terzo anno/Sicurezza/Images/DNAT.png",
+    "Terzo anno/Sicurezza/Images/SNAT.png",
     "Terzo anno/Sicurezza/System and network security/Unix access control.md",
     "Primo anno/Primo semestre/Calcolo 1/Riassunto.md",
     "Primo anno/Primo semestre/Calcolo 1/Infiniti e infinitesimi/Polinomio di Taylor.md",
@@ -169,8 +172,6 @@
     "Primo anno/Secondo semestre/Architettura degli elaboratori mod. 2/Cache/Cache diretta.md",
     "Terzo anno/Sicurezza/Program exploitation",
     "Primo anno/Primo semestre/Architettura degli elaboratori mod. 1/3 - MIPS/Linguaggio macchina MIPS.md",
-    "Primo anno/Secondo semestre/Architettura degli elaboratori mod. 2/ARM ISA/Istruzioni logico-aritmetiche.md",
-    "Primo anno/Secondo semestre/Architettura degli elaboratori mod. 2/Assembly/Funzioni e stack.md",
     "Terzo anno/Sicurezza/Images/Layout memoria.png",
     "Terzo anno/Sicurezza/Images/Layout memoria.png",
     "Pasted image 20240731092603.png",
@@ -181,10 +182,8 @@
     "Terzo anno/Sicurezza",
     "Terzo anno",
     "Secondo anno/Algoritmi e strutture dati/Template grafi/Template.excalidraw",
-    "Secondo anno/Algoritmi e strutture dati/Template grafi/Template.svg",
     "Secondo anno/Algoritmi e strutture dati/Disegni grafi/Disegni.excalidraw",
     "Secondo anno/Algoritmi e strutture dati/Template grafi",
-    "Excalidraw/TEMPLATE GRAFO.excalidraw.svg",
     "Untitled.canvas"
   ]
 }
