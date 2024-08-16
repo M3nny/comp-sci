@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "1d8051ed8be0b47c",
+        "id": "d9c56d43aa4f3211",
         "type": "tabs",
         "children": [
           {
-            "id": "18c182501bdc27f7",
+            "id": "fd4dca775b3bb41d",
             "type": "leaf",
             "state": {
               "type": "empty",
@@ -137,8 +137,13 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "18c182501bdc27f7",
+  "active": "fd4dca775b3bb41d",
   "lastOpenFiles": [
+    "Terzo anno/Sicurezza/Web security/Server/Web attacks.md",
+    "().md",
+    "Terzo anno/Sicurezza/Web security/Untitled.md",
+    "Terzo anno/Sicurezza/Web security/Server",
+    "Terzo anno/Sicurezza/Web security",
     "Terzo anno/Sicurezza/System and network security/Firewalls - netfilter.md",
     "Terzo anno/Sicurezza/Images/DNAT.png",
     "Terzo anno/Sicurezza/Images/SNAT.png",
@@ -169,9 +174,7 @@
     "Terzo anno/Sicurezza/Program analysis/Analisi statica e dinamica.md",
     "Primo anno/Secondo semestre/Architettura degli elaboratori mod. 2/Memoria virtuale/Mapping.md",
     "Primo anno/Secondo semestre/Architettura degli elaboratori mod. 2/ARM ISA/Load&Store.md",
-    "Primo anno/Secondo semestre/Architettura degli elaboratori mod. 2/Cache/Cache diretta.md",
     "Terzo anno/Sicurezza/Program exploitation",
-    "Primo anno/Primo semestre/Architettura degli elaboratori mod. 1/3 - MIPS/Linguaggio macchina MIPS.md",
     "Terzo anno/Sicurezza/Images/Layout memoria.png",
     "Terzo anno/Sicurezza/Images/Layout memoria.png",
     "Pasted image 20240731092603.png",
@@ -182,8 +185,6 @@
     "Terzo anno/Sicurezza",
     "Terzo anno",
     "Secondo anno/Algoritmi e strutture dati/Template grafi/Template.excalidraw",
-    "Secondo anno/Algoritmi e strutture dati/Disegni grafi/Disegni.excalidraw",
-    "Secondo anno/Algoritmi e strutture dati/Template grafi",
     "Untitled.canvas"
   ]
 }
