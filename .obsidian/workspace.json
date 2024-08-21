@@ -4,19 +4,15 @@
     "type": "split",
     "children": [
       {
-        "id": "d9c56d43aa4f3211",
+        "id": "b011a78659b26662",
         "type": "tabs",
         "children": [
           {
-            "id": "fd4dca775b3bb41d",
+            "id": "f4bdc4896fd8eb38",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Terzo anno/Sicurezza/Web security/Server/Web attacks and defences.md",
-                "mode": "source",
-                "source": false
-              }
+              "type": "empty",
+              "state": {}
             }
           }
         ]
@@ -85,7 +81,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Terzo anno/Sicurezza/Web security/Server/Web attacks and defences.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +97,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Terzo anno/Sicurezza/Web security/Server/Web attacks and defences.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -124,9 +118,7 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "Terzo anno/Sicurezza/Web security/Server/Web attacks and defences.md"
-              }
+              "state": {}
             }
           }
         ]
@@ -145,16 +137,18 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "fd4dca775b3bb41d",
+  "active": "f4bdc4896fd8eb38",
   "lastOpenFiles": [
-    "Secondo anno/Basi di dati/Mod. 2/Amministrazione/Sicurezza.md",
+    "Terzo anno/Sicurezza/Web security/Server/Side channels.md",
+    "Secondo anno/Basi di dati/Mod. 2/Amministrazione/Trigger.md",
+    "Terzo anno/Sicurezza/Web security/Server/Web attacks.md",
     "Terzo anno/Sicurezza/Web security/Server/Web attacks and defences.md",
+    "Secondo anno/Basi di dati/Mod. 2/Amministrazione/Sicurezza.md",
     "Secondo anno/Basi di dati/Mod. 2/Programmazione/Transazioni.md",
     "Secondo anno/Basi di dati/Mod. 2/Programmazione/SQL in app.md",
     "Terzo anno/Sicurezza/Program exploitation/Secure coding.md",
     "Terzo anno/Sicurezza/Images/HMAC.png",
     "Untitled.md",
-    "Terzo anno/Sicurezza/Web security/Server/Web attacks.md",
     "().md",
     "Terzo anno/Sicurezza/Web security/Untitled.md",
     "Terzo anno/Sicurezza/Web security/Server",
@@ -178,8 +172,6 @@
     "Primo anno/Secondo semestre/Architettura degli elaboratori mod. 2/CPU con pipeline/Previsione del branch, interruzioni e ottimizzazione.md",
     "Primo anno/Secondo semestre/Architettura degli elaboratori mod. 2/CPU con pipeline/Dipendenze RAW.md",
     "Primo anno/Secondo semestre/Architettura degli elaboratori mod. 2/ARM ISA/Branches.md",
-    "Secondo anno/Sistemi operativi/Mod. 1/Processi.md",
-    "Secondo anno/Sistemi operativi/Mod. 1/Memoria/Memoria virtuale.md",
     "Terzo anno/Sicurezza/Images/ROP.png",
     "Terzo anno/Sicurezza/Images/Shellcode 32-bit.png",
     "Terzo anno/Sicurezza/Images/Shellcode.png",
