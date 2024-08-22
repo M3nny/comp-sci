@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "b011a78659b26662",
+        "id": "50294403ed3e1117",
         "type": "tabs",
         "children": [
           {
-            "id": "f4bdc4896fd8eb38",
+            "id": "4c17193290c38680",
             "type": "leaf",
             "state": {
               "type": "empty",
@@ -137,8 +137,11 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "f4bdc4896fd8eb38",
+  "active": "4c17193290c38680",
   "lastOpenFiles": [
+    "Terzo anno/Sicurezza/Web security/Client/Web security.md",
+    "Terzo anno/Sicurezza/Images/SOP.png",
+    "Terzo anno/Sicurezza/Web security/Client",
     "Terzo anno/Sicurezza/Web security/Server/Side channels.md",
     "Secondo anno/Basi di dati/Mod. 2/Amministrazione/Trigger.md",
     "Terzo anno/Sicurezza/Web security/Server/Web attacks.md",
@@ -170,21 +173,16 @@
     "Terzo anno/Sicurezza/Program analysis/Assembly x86-64.md",
     "Terzo anno/Sicurezza/Program exploitation/Stack overflow.md",
     "Primo anno/Secondo semestre/Architettura degli elaboratori mod. 2/CPU con pipeline/Previsione del branch, interruzioni e ottimizzazione.md",
-    "Primo anno/Secondo semestre/Architettura degli elaboratori mod. 2/CPU con pipeline/Dipendenze RAW.md",
-    "Primo anno/Secondo semestre/Architettura degli elaboratori mod. 2/ARM ISA/Branches.md",
     "Terzo anno/Sicurezza/Images/ROP.png",
     "Terzo anno/Sicurezza/Images/Shellcode 32-bit.png",
     "Terzo anno/Sicurezza/Images/Shellcode.png",
     "Terzo anno/Sicurezza/Program exploitation",
     "Terzo anno/Sicurezza/Images/Layout memoria.png",
-    "Terzo anno/Sicurezza/Images/Layout memoria.png",
-    "Pasted image 20240731092603.png",
     "Terzo anno/Sicurezza/Images",
     "Terzo anno/Sicurezza/Program analysis",
     "Terzo anno/Sicurezza/Background and tools",
     "Terzo anno/Sicurezza",
     "Terzo anno",
-    "Secondo anno/Algoritmi e strutture dati/Template grafi/Template.excalidraw",
     "Untitled.canvas"
   ]
 }
