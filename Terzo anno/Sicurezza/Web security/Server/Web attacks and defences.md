@@ -1,4 +1,4 @@
-Abbiamo visto come sfruttare nelle [[Web attacks#SQL injection|sql injection]] la clausola `where` in query che non controllano l'input dell'utente in modo da far sempre valere la condizione.
+Abbiamo visto come sfruttare nelle [[Terzo anno/Sicurezza/Web security/Server/Web attacks#SQL injection|sql injection]] la clausola `where` in query che non controllano l'input dell'utente in modo da far sempre valere la condizione.
 
 È anche possibile effettuare un leak di altre tabelle attraverso `UNION` oppure `UNION ALL`, ma per farlo <u>serve conoscere il numero di colonne</u>, è possibile dunque procedere per **brute-force** finchè non si ottiene qualche forma di output (se il numero di colonne inserito è sbagliato la query fallisce).
 ```

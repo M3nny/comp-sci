@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "50294403ed3e1117",
+        "id": "f787d6baf5471460",
         "type": "tabs",
         "children": [
           {
-            "id": "4c17193290c38680",
+            "id": "1f0dcc30679f6ffd",
             "type": "leaf",
             "state": {
               "type": "empty",
@@ -81,6 +81,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "Terzo anno/Sicurezza/Web security/Client/Web attacks.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -97,6 +98,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "Terzo anno/Sicurezza/Web security/Client/Web attacks.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -118,7 +120,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "Terzo anno/Sicurezza/Web security/Client/Web attacks.md"
+              }
             }
           }
         ]
@@ -137,15 +141,25 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "4c17193290c38680",
+  "active": "a1163d9af64d6878",
   "lastOpenFiles": [
+    "Terzo anno/Sicurezza/Images/Origin.png",
+    "Terzo anno/Sicurezza/Images/Anti-CSRF token.png",
+    "Terzo anno/Sicurezza/Images/CSRF.png",
+    "Terzo anno/Sicurezza/Images/XSS.png",
     "Terzo anno/Sicurezza/Web security/Client/Web security.md",
-    "Terzo anno/Sicurezza/Images/SOP.png",
-    "Terzo anno/Sicurezza/Web security/Client",
-    "Terzo anno/Sicurezza/Web security/Server/Side channels.md",
-    "Secondo anno/Basi di dati/Mod. 2/Amministrazione/Trigger.md",
+    "Terzo anno/Sicurezza/Web security/Client/Web attacks.md",
     "Terzo anno/Sicurezza/Web security/Server/Web attacks.md",
     "Terzo anno/Sicurezza/Web security/Server/Web attacks and defences.md",
+    "Terzo anno/Sicurezza/Web security/Server/Side channels.md",
+    "Secondo anno/Basi di dati/Mod. 2/NoSQL.md",
+    "Secondo anno/Basi di dati/Mod. 1/Modello relazionale.md",
+    "Secondo anno/Basi di dati/Mod. 1/Progettazione e modellazione.md",
+    "Terzo anno/Sicurezza/System and network security/Identification.md",
+    "Secondo anno/Basi di dati/Mod. 2/Amministrazione/Indici e viste materializzate.md",
+    "Secondo anno/Basi di dati/Mod. 2/Amministrazione/Trigger.md",
+    "Terzo anno/Sicurezza/Images/SOP.png",
+    "Terzo anno/Sicurezza/Web security/Client",
     "Secondo anno/Basi di dati/Mod. 2/Amministrazione/Sicurezza.md",
     "Secondo anno/Basi di dati/Mod. 2/Programmazione/Transazioni.md",
     "Secondo anno/Basi di dati/Mod. 2/Programmazione/SQL in app.md",
@@ -163,21 +177,13 @@
     "Primo anno/Primo semestre/Calcolo 1/Riassunto.md",
     "Primo anno/Primo semestre/Calcolo 1/Infiniti e infinitesimi/Polinomio di Taylor.md",
     "Secondo anno/Sistemi operativi/Mod. 1/File systems.md",
-    "Terzo anno/Sicurezza/System and network security/Identification.md",
     "Secondo anno/Algoritmi e strutture dati/Mod. 2/Tabelle hash/Funzioni hash.md",
     "Secondo anno/Algoritmi e strutture dati/Mod. 2/Tabelle hash/Tabelle ad indirizzamento diretto.md",
-    "Secondo anno/Algoritmi e strutture dati/Mod. 2/Tabelle hash/Concatenamento.md",
     "Terzo anno/Sicurezza/System and network security",
     "Terzo anno/Sicurezza/Images/Livelli di priorità.png",
-    "Terzo anno/Sicurezza/Program exploitation/Format strings.md",
-    "Terzo anno/Sicurezza/Program analysis/Assembly x86-64.md",
-    "Terzo anno/Sicurezza/Program exploitation/Stack overflow.md",
-    "Primo anno/Secondo semestre/Architettura degli elaboratori mod. 2/CPU con pipeline/Previsione del branch, interruzioni e ottimizzazione.md",
     "Terzo anno/Sicurezza/Images/ROP.png",
     "Terzo anno/Sicurezza/Images/Shellcode 32-bit.png",
-    "Terzo anno/Sicurezza/Images/Shellcode.png",
     "Terzo anno/Sicurezza/Program exploitation",
-    "Terzo anno/Sicurezza/Images/Layout memoria.png",
     "Terzo anno/Sicurezza/Images",
     "Terzo anno/Sicurezza/Program analysis",
     "Terzo anno/Sicurezza/Background and tools",
