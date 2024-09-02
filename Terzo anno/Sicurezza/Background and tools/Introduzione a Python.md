@@ -45,7 +45,7 @@ m[1:3] # ["b", "c"]
 - `map(f, iterable)`: ritorna un iteratore di elementi trasformati da `f(item)`
 
 ### Set, tuple e dizionari
-**Set**: elementi unici sena ordinamento
+**Set**: elementi unici senza ordinamento
 - `in`: controllo della presenza (e.g. `1 in {1,2,3}`)
 - `|`: unione (e.g. `{1,2,3}|{4} => {1,2,3,4}`)
 - `&`: intersezione (e.g. `{1,2,3}&{3,4} => {3}`)

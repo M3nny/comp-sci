@@ -1,4 +1,4 @@
-I bug giusti possono essere usati per alterare l'esecuzione del codice, è importante quindi capire come i programmi vengono compilati.
+I bug possono essere usati per alterare l'esecuzione del codice, è importante quindi capire come i programmi vengono compilati.
 In questo corso prendiamo in considerazione **assembly x86-64** (conosciuto anche come: _x64, AMD64 e Intel 64_).
 
 ### Registri
@@ -160,7 +160,7 @@ ret                          # rip viene assegnato alla prossima
 
 ---
 ### Leggere codice macchina
-Con **objdump** possiamo produrre il codice assembly (-d) di un eseguibile e mostrarne le sezioni (-s) nella sintassi Intel (-M intel).
+Con **objdump** possiamo produrre il codice assembly (`-d`) di un eseguibile e mostrarne le sezioni (`-s`) nella sintassi Intel (`-M intel`).
 
 ```bash
 objdump -M intel -ds count > count.s
@@ -200,7 +200,7 @@ int main() {
     11b1:	c3                   	ret    
 ```
 
-Possiamo seguire l'esecuzione del programma osservando gli indirizzi a sinistra, da notare l'istruzione `lea    rax,[rip+0xe7a]`, la quale assegna a `rax` la stringa `"%d "`, in python è possibile calcolare l'indirizzo con:
+Possiamo seguire l'esecuzione del programma osservando gli indirizzi a sinistra, da notare l'istruzione `lea rax,[rip+0xe7a]`, la quale assegna a `rax` la stringa `"%d "`, in python è possibile calcolare l'indirizzo con:
 ```python
 >>> hex(0x118a + 0xe7a)
 '0x2004'

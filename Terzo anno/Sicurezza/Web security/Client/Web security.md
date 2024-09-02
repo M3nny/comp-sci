@@ -6,7 +6,7 @@ Il token di sessione può essere memorizzato in vari modi:
 - **URL parameter**: all'interno dei link delle pagine
 	Scarsa sicurezza.
 - **Hidden form field**: inoltrato quando i form sono compilati
-	La sessione dovrebbe essere rappresentata in ogni pagine della web app, non solo nei form
+	La sessione dovrebbe essere rappresentata in ogni pagina della web app, non solo nei form
 
 >[!Attention]
 >Se un token di sessione viene indovinato da terzi, la sessione può essere **dirottata**, essi devono quindi rimanere segreti e difficilmente indovinabili.
@@ -46,7 +46,7 @@ La **cancellazione** avviene impostando la data di scadenza ad una data già pas
 "username=; expires=Thu, 01 Jan 1970 00:00:00 UTC"
 ```
 
-Se i path non sono disgiunti ed i cookie hanno lo stesso nome, allora vengono **entrambi inoltrati** al server, quale verrà usato è a discrezione del linguaggio, framework e libreria (il che porta a vulnerabilità).
+Se i path non sono disgiunti ed i cookie hanno lo stesso nome, allora vengono **entrambi inoltrati** al server, quale verrà usato è a discrezione del linguaggio, framework e librerie (il che porta a vulnerabilità).
 
 Java, JavaScript e Go leggono i cookie come **liste**.
 PHP, Python, ASP, ASP.NET, Node.js, JQuery forniscono solo un **dizionario** il quale comprende un solo cookie, quale? Dipende dal linguaggio.
@@ -72,7 +72,7 @@ Questo è un esempio realistico in quanto spesso i cookie sono impostati prima d
 In questo caso bisogna sempre **aggiornare** il token quando l'utente si identifica.
 
 ### HttpOnly
-Un codice javascript malevolo potrebbe essere inserito in una pagina web ed eseguire il **leak dei cookie** (XSS), questa flag previene previene che javascript acceda a questo tipo di cookie.
+Un codice javascript malevolo potrebbe essere inserito in una pagina web ed eseguire il **leak dei cookie** (XSS), questa flag previene che javascript acceda a questo tipo di cookie.
 >I cookie di sessione dovrebbero sempre avere la flag `HttpOnly=True`.
 >Questo tipo di cookie sono inviati al server ma sono invisibili a javascript.
 
@@ -89,7 +89,7 @@ Lo stato della sessione può essere salvato nel client o nel server (oppure un m
 ## Same Origin Policy
 La **same origin policy (SOP)** è una policy standard dei browser che **restringe l'accesso** ai documenti e script caricati da diversi domini.
 
-Fornisce una semplice un semplice ma necessario **isolamento** tra le web app in esecuzione nello stesso web browser.
+Fornisce un semplice ma necessario **isolamento** tra le web app in esecuzione nello stesso web browser.
 >Senza SOP un sito malevolo potrebbe dirottare qualsiasi altra sessione salvata nel browser.
 
 Due pagine hanno la **stessa origine** se possiedono lo stesso **protocollo**, **porta** e **host**.

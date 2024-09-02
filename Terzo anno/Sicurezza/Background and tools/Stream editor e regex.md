@@ -18,7 +18,7 @@ sed -n '1p' test.txt # 123456789
 
 La **sostituzione** avviene <u>una volta per riga</u> normalmente usando il formato: 
 `s/da_sostituire/sostituto`, è possibile aggiungere alla fine:
-- `/2`: per specificare la istanza da sostituire per ogni riga è la seconda
+- `/2`: per specificare che la istanza da sostituire per ogni riga è la seconda
 - `/g`: per una sostituzione di tutte le istanze di `da_sostituire`
 - `/i`: per rendere la ricerca case insensitive
 ```bash

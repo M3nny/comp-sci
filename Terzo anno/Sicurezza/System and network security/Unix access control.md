@@ -7,7 +7,6 @@ Dopo essersi [[Identification|identificati]], si è soggetti a delle **policy di
 - **Role-based access control (RBAC)**: basata sui _ruoli_ che gli utenti hanno nel sistema e sulle regole che determinano le autorizzazioni dei ruoli
 - **Attribute-based access control (ABAC)**: basata sugli attributi dell'utente e dalle condizioni di _environment_ attuali (e.g. l'accesso ad un film potrebbe dipendere dal tipo di abbonamento)
 
-
 Un **soggetto** è un'entità capace di accedere a risorse (oggetti)
 - Qualsiasi utente o applicazione accede ad un oggetto tramite un _processo_
 - Il processo eredita gli attributi dell'utente, tra cui i suoi diritti d'accesso

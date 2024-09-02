@@ -88,7 +88,7 @@ TRUE
 >Worst case: 5 query per i caratteri lowercase ($\log_226 \sim 4.7$).
 
 ## Totally blind SQL injection
-Nel caso in cui la web app non mostri nessun tipo di risultato l'attaccante puà comunque usare il **tempo** come side channel.
+Nel caso in cui la web app non mostri nessun tipo di risultato l'attaccante può comunque usare il **tempo** come side channel.
 
 L'attaccante può ancora usare la ricerca binaria:
 ```sql

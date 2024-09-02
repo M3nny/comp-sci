@@ -29,10 +29,10 @@ Netfilter è il tool standard per i firewall in Linux, consente:
 - NAT (tabella _nat_)
 - Alterazione di pacchetti (tabella _mangle_)
 
-Esso è configurato attraverso `iptables`, il quale utilizza tabelle per raggruppare regola in base alle azioni.
+Esso è configurato attraverso `iptables`, il quale utilizza tabelle per raggruppare regole in base alle azioni.
 
 Le **catene** sono **liste di regole** che sono ispezionate sequenzialmente.
-Se un pacchetto è conforme ad una regola allora esso viene processato in base al **rule target**, altrimenti viene esaminate la prossima regola nella catena, se un pacchetto non è conforme a nessuna regola allora viene attivata una **default policy**.
+Se un pacchetto è conforme ad una regola allora esso viene processato in base al **rule target**, altrimenti viene esaminata la prossima regola nella catena, se un pacchetto non è conforme a nessuna regola allora viene attivata una **default policy**.
 
 ```bash
 # -t specifica la tabella (filter di default)
@@ -48,7 +48,7 @@ Chain OUTPUT (policy ACCEPT)
 target     prot opt source               destination
 ```
 
-È buona norma mettere la **default policy** a **DROP** e abilitare solo i pacchetti che volgiamo far passare.
+È buona norma mettere la **default policy** a **DROP** e abilitare solo i pacchetti che vogliamo far passare.
 Per non rimanere bloccati, prima di impostare la policy bisogna abilitare _ssh_ sia in input e sia in output:
 ```bash
 # -A aggiunge la regola alla catena specificata
