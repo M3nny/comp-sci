@@ -4,15 +4,19 @@
     "type": "split",
     "children": [
       {
-        "id": "f787d6baf5471460",
+        "id": "7d2a9d92c434eb94",
         "type": "tabs",
         "children": [
           {
-            "id": "1f0dcc30679f6ffd",
+            "id": "d9caa576998c6f09",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {}
+              "type": "markdown",
+              "state": {
+                "file": "Terzo anno/Sicurezza/System and network security/Unix access control.md",
+                "mode": "source",
+                "source": false
+              }
             }
           }
         ]
@@ -81,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Terzo anno/Sicurezza/Web security/Client/Web attacks.md",
+                "file": "Terzo anno/Sicurezza/System and network security/Unix access control.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -98,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Terzo anno/Sicurezza/Web security/Client/Web attacks.md",
+                "file": "Terzo anno/Sicurezza/System and network security/Unix access control.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -121,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Terzo anno/Sicurezza/Web security/Client/Web attacks.md"
+                "file": "Terzo anno/Sicurezza/System and network security/Unix access control.md"
               }
             }
           }
@@ -141,15 +145,21 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "a1163d9af64d6878",
+  "active": "d9caa576998c6f09",
   "lastOpenFiles": [
+    "Terzo anno/Sicurezza/Program analysis/Assembly x86-64.md",
+    "Terzo anno/Sicurezza/Program analysis/Analisi statica e dinamica.md",
+    "Terzo anno/Sicurezza/Background and tools/Stream editor e regex.md",
+    "Terzo anno/Sicurezza/Background and tools/Introduzione a Python.md",
+    "Terzo anno/Sicurezza/Web security/Server/Web attacks.md",
+    "Secondo anno/Programmazione ad oggetti/Mod. 2/Oggetti in C++.md",
+    "Terzo anno/Sicurezza/System and network security/Firewalls - netfilter.md",
     "Terzo anno/Sicurezza/Images/Origin.png",
     "Terzo anno/Sicurezza/Images/Anti-CSRF token.png",
     "Terzo anno/Sicurezza/Images/CSRF.png",
     "Terzo anno/Sicurezza/Images/XSS.png",
     "Terzo anno/Sicurezza/Web security/Client/Web security.md",
     "Terzo anno/Sicurezza/Web security/Client/Web attacks.md",
-    "Terzo anno/Sicurezza/Web security/Server/Web attacks.md",
     "Terzo anno/Sicurezza/Web security/Server/Web attacks and defences.md",
     "Terzo anno/Sicurezza/Web security/Server/Side channels.md",
     "Secondo anno/Basi di dati/Mod. 2/NoSQL.md",
@@ -170,19 +180,13 @@
     "Terzo anno/Sicurezza/Web security/Untitled.md",
     "Terzo anno/Sicurezza/Web security/Server",
     "Terzo anno/Sicurezza/Web security",
-    "Terzo anno/Sicurezza/System and network security/Firewalls - netfilter.md",
     "Terzo anno/Sicurezza/Images/DNAT.png",
     "Terzo anno/Sicurezza/Images/SNAT.png",
     "Terzo anno/Sicurezza/System and network security/Unix access control.md",
     "Primo anno/Primo semestre/Calcolo 1/Riassunto.md",
-    "Primo anno/Primo semestre/Calcolo 1/Infiniti e infinitesimi/Polinomio di Taylor.md",
-    "Secondo anno/Sistemi operativi/Mod. 1/File systems.md",
-    "Secondo anno/Algoritmi e strutture dati/Mod. 2/Tabelle hash/Funzioni hash.md",
-    "Secondo anno/Algoritmi e strutture dati/Mod. 2/Tabelle hash/Tabelle ad indirizzamento diretto.md",
     "Terzo anno/Sicurezza/System and network security",
     "Terzo anno/Sicurezza/Images/Livelli di priorità.png",
     "Terzo anno/Sicurezza/Images/ROP.png",
-    "Terzo anno/Sicurezza/Images/Shellcode 32-bit.png",
     "Terzo anno/Sicurezza/Program exploitation",
     "Terzo anno/Sicurezza/Images",
     "Terzo anno/Sicurezza/Program analysis",

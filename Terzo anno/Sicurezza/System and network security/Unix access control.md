@@ -92,6 +92,11 @@ alice[~]$ ls -al
 drwxr-sr-x 2 alice alice 4096 Nov 3 17:14 .
 ```
 
+Nel caso fosse presente una quarta cifra oltre alle tre triadi, questa è usata per impostare dei **bit speciali**:
+- `4xxx`: **SUID** file eseguibile con i permessi di chi l'ha creato
+- `2xxx`: **SGID** file eseguibile con i permessi del gruppo di chi l'ha creato
+- `1xxx`: **Sticky bit** solo il proprietario di un file (o root) può cancellare quest'ultimo
+
 **Gestire i permessi**: è possibile usare `chmod` per cambiare i permessi dei file, è possibile specificare un numero come opzione, esso viene interpretato in base $8$, ogni cifra corrisponde ai $3$ bit di permessi.
 ```bash
 chmod 600 myfile
