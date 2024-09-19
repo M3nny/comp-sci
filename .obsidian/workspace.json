@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Terzo anno/Sicurezza/System and network security/Unix access control.md",
+                "file": "Terzo anno/Ricerca operativa/Definizioni generali.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Terzo anno/Sicurezza/System and network security/Unix access control.md",
+                "file": "Terzo anno/Ricerca operativa/Definizioni generali.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Terzo anno/Sicurezza/System and network security/Unix access control.md",
+                "file": "Terzo anno/Ricerca operativa/Definizioni generali.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Terzo anno/Sicurezza/System and network security/Unix access control.md"
+                "file": "Terzo anno/Ricerca operativa/Definizioni generali.md"
               }
             }
           }
@@ -147,8 +147,11 @@
   },
   "active": "d9caa576998c6f09",
   "lastOpenFiles": [
+    "Terzo anno/Ricerca operativa/Definizioni generali.md",
     "Terzo anno/Sicurezza/Program analysis/Assembly x86-64.md",
+    "Terzo anno/Ricerca operativa",
     "Terzo anno/Sicurezza/Program analysis/Analisi statica e dinamica.md",
+    "Terzo anno/Sicurezza/System and network security/Unix access control.md",
     "Terzo anno/Sicurezza/Background and tools/Stream editor e regex.md",
     "Terzo anno/Sicurezza/Background and tools/Introduzione a Python.md",
     "Terzo anno/Sicurezza/Web security/Server/Web attacks.md",
@@ -182,8 +185,6 @@
     "Terzo anno/Sicurezza/Web security",
     "Terzo anno/Sicurezza/Images/DNAT.png",
     "Terzo anno/Sicurezza/Images/SNAT.png",
-    "Terzo anno/Sicurezza/System and network security/Unix access control.md",
-    "Primo anno/Primo semestre/Calcolo 1/Riassunto.md",
     "Terzo anno/Sicurezza/System and network security",
     "Terzo anno/Sicurezza/Images/Livelli di priorità.png",
     "Terzo anno/Sicurezza/Images/ROP.png",
@@ -192,7 +193,6 @@
     "Terzo anno/Sicurezza/Program analysis",
     "Terzo anno/Sicurezza/Background and tools",
     "Terzo anno/Sicurezza",
-    "Terzo anno",
     "Untitled.canvas"
   ]
 }
