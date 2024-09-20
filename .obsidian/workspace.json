@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "7d2a9d92c434eb94",
+        "id": "7e8f14f181188203",
         "type": "tabs",
         "children": [
           {
-            "id": "d9caa576998c6f09",
+            "id": "47743a68d75a8fe1",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Terzo anno/Ricerca operativa/Definizioni generali.md",
+                "file": "Terzo anno/Reti di calcolatori/Livello fisico.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Terzo anno/Ricerca operativa/Definizioni generali.md",
+                "file": "Terzo anno/Reti di calcolatori/Livello fisico.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Terzo anno/Ricerca operativa/Definizioni generali.md",
+                "file": "Terzo anno/Reti di calcolatori/Livello fisico.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Terzo anno/Ricerca operativa/Definizioni generali.md"
+                "file": "Terzo anno/Reti di calcolatori/Livello fisico.md"
               }
             }
           }
@@ -145,9 +145,17 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "d9caa576998c6f09",
+  "active": "47743a68d75a8fe1",
   "lastOpenFiles": [
+    "Terzo anno/Reti di calcolatori/Images/FM 2 bit.png",
+    "Terzo anno/Reti di calcolatori/Images/FM.png",
+    "Terzo anno/Reti di calcolatori/Images",
+    "Terzo anno/Reti di calcolatori/Livello fisico.md",
+    "Terzo anno/Reti di calcolatori",
+    "Terzo anno/Reti di calcolatori/Livello fisico.md",
+    "Terzo anno/Reti di calcolatori/Images",
     "Terzo anno/Ricerca operativa/Definizioni generali.md",
+    "Terzo anno/Reti di calcolatori",
     "Terzo anno/Sicurezza/Program analysis/Assembly x86-64.md",
     "Terzo anno/Ricerca operativa",
     "Terzo anno/Sicurezza/Program analysis/Analisi statica e dinamica.md",
@@ -178,21 +186,12 @@
     "Secondo anno/Basi di dati/Mod. 2/Programmazione/SQL in app.md",
     "Terzo anno/Sicurezza/Program exploitation/Secure coding.md",
     "Terzo anno/Sicurezza/Images/HMAC.png",
-    "Untitled.md",
-    "().md",
-    "Terzo anno/Sicurezza/Web security/Untitled.md",
     "Terzo anno/Sicurezza/Web security/Server",
     "Terzo anno/Sicurezza/Web security",
     "Terzo anno/Sicurezza/Images/DNAT.png",
     "Terzo anno/Sicurezza/Images/SNAT.png",
     "Terzo anno/Sicurezza/System and network security",
-    "Terzo anno/Sicurezza/Images/Livelli di priorità.png",
-    "Terzo anno/Sicurezza/Images/ROP.png",
     "Terzo anno/Sicurezza/Program exploitation",
-    "Terzo anno/Sicurezza/Images",
-    "Terzo anno/Sicurezza/Program analysis",
-    "Terzo anno/Sicurezza/Background and tools",
-    "Terzo anno/Sicurezza",
     "Untitled.canvas"
   ]
 }
