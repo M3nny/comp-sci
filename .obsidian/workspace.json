@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "7e8f14f181188203",
+        "id": "44330c7e8cbe005c",
         "type": "tabs",
         "children": [
           {
-            "id": "47743a68d75a8fe1",
+            "id": "59580c57de04ccf0",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Terzo anno/Reti di calcolatori/Livello fisico.md",
+                "file": "Terzo anno/Calcolabilità e linguaggi formali/Automi a stati finiti.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Terzo anno/Reti di calcolatori/Livello fisico.md",
+                "file": "Terzo anno/Calcolabilità e linguaggi formali/Automi a stati finiti.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Terzo anno/Reti di calcolatori/Livello fisico.md",
+                "file": "Terzo anno/Calcolabilità e linguaggi formali/Automi a stati finiti.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Terzo anno/Reti di calcolatori/Livello fisico.md"
+                "file": "Terzo anno/Calcolabilità e linguaggi formali/Automi a stati finiti.md"
               }
             }
           }
@@ -145,16 +145,27 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "47743a68d75a8fe1",
+  "active": "a1163d9af64d6878",
   "lastOpenFiles": [
+    "Terzo anno/Calcolabilità e linguaggi formali/Automi a stati finiti.md",
+    "Terzo anno/Calcolabilità e linguaggi formali/Images/Dimostrazione regolarità.svg",
+    "Excalidraw/Drawing 2024-09-20 16.28.23.excalidraw.md",
+    "Excalidraw/Drawing 2024-09-20 16.32.45.excalidraw.md",
+    "Excalidraw/Drawing 2024-09-20 17.44.13.excalidraw.md",
+    "Terzo anno/Calcolabilità e linguaggi formali/Images/DFA.svg",
+    "Terzo anno/Ricerca operativa/Definizioni generali.md",
+    "Terzo anno/Calcolabilità e linguaggi formali/Images",
+    "Excalidraw/Drawing 2024-09-20 16.31.11.excalidraw.md",
+    "Secondo anno/Algoritmi e strutture dati/Template grafi/Template.excalidraw",
+    "Secondo anno/Algoritmi e strutture dati/Template grafi/Template.svg",
+    "Excalidraw",
+    "Terzo anno/Reti di calcolatori/Livello fisico.md",
+    "Terzo anno/Calcolabilità e linguaggi formali",
     "Terzo anno/Reti di calcolatori/Images/FM 2 bit.png",
     "Terzo anno/Reti di calcolatori/Images/FM.png",
     "Terzo anno/Reti di calcolatori/Images",
-    "Terzo anno/Reti di calcolatori/Livello fisico.md",
     "Terzo anno/Reti di calcolatori",
-    "Terzo anno/Reti di calcolatori/Livello fisico.md",
     "Terzo anno/Reti di calcolatori/Images",
-    "Terzo anno/Ricerca operativa/Definizioni generali.md",
     "Terzo anno/Reti di calcolatori",
     "Terzo anno/Sicurezza/Program analysis/Assembly x86-64.md",
     "Terzo anno/Ricerca operativa",
@@ -179,19 +190,7 @@
     "Terzo anno/Sicurezza/System and network security/Identification.md",
     "Secondo anno/Basi di dati/Mod. 2/Amministrazione/Indici e viste materializzate.md",
     "Secondo anno/Basi di dati/Mod. 2/Amministrazione/Trigger.md",
-    "Terzo anno/Sicurezza/Images/SOP.png",
     "Terzo anno/Sicurezza/Web security/Client",
-    "Secondo anno/Basi di dati/Mod. 2/Amministrazione/Sicurezza.md",
-    "Secondo anno/Basi di dati/Mod. 2/Programmazione/Transazioni.md",
-    "Secondo anno/Basi di dati/Mod. 2/Programmazione/SQL in app.md",
-    "Terzo anno/Sicurezza/Program exploitation/Secure coding.md",
-    "Terzo anno/Sicurezza/Images/HMAC.png",
-    "Terzo anno/Sicurezza/Web security/Server",
-    "Terzo anno/Sicurezza/Web security",
-    "Terzo anno/Sicurezza/Images/DNAT.png",
-    "Terzo anno/Sicurezza/Images/SNAT.png",
-    "Terzo anno/Sicurezza/System and network security",
-    "Terzo anno/Sicurezza/Program exploitation",
     "Untitled.canvas"
   ]
 }
