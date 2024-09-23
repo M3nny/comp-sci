@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "44330c7e8cbe005c",
+        "id": "8a997170ee160580",
         "type": "tabs",
         "children": [
           {
-            "id": "59580c57de04ccf0",
+            "id": "19cf777b71733d43",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Terzo anno/Calcolabilità e linguaggi formali/Automi a stati finiti.md",
+                "file": "Terzo anno/Ricerca operativa/Definizioni generali.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Terzo anno/Calcolabilità e linguaggi formali/Automi a stati finiti.md",
+                "file": "Terzo anno/Ricerca operativa/Definizioni generali.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Terzo anno/Calcolabilità e linguaggi formali/Automi a stati finiti.md",
+                "file": "Terzo anno/Ricerca operativa/Definizioni generali.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Terzo anno/Calcolabilità e linguaggi formali/Automi a stati finiti.md"
+                "file": "Terzo anno/Ricerca operativa/Definizioni generali.md"
               }
             }
           }
@@ -147,13 +147,29 @@
   },
   "active": "a1163d9af64d6878",
   "lastOpenFiles": [
+    "Terzo anno/Ricerca operativa/Images/Combinazione affine.svg",
+    "Excalidraw/Template RO.md",
+    "Terzo anno/Ricerca operativa/Images/Combinazioni coniche.svg",
+    "Terzo anno/Ricerca operativa/Images/Combinazione convessa.svg",
+    "Terzo anno/Ricerca operativa/Definizioni generali.md",
+    "Terzo anno/Ricerca operativa/Images",
+    "Primo anno/Primo semestre/Algebra lineare/Riassunto.md",
+    "Primo anno/Primo semestre/Algebra lineare/Matrici.md",
+    "Primo anno/Primo semestre/Calcolo 1/Derivate/Algebra delle derivate.md",
+    "Primo anno/Secondo semestre/Calcolo 2/Curve parametriche/Funzioni vettoriali.md",
+    "Primo anno/Secondo semestre/Calcolo 2/Funzioni a più variabili reali/Limiti e continuità.md",
+    "Primo anno/Primo semestre/Calcolo 1/Limiti/Funzioni continue.md",
+    "Primo anno/Primo semestre/Calcolo 1/Derivate/Asintoti.md",
+    "Primo anno/Secondo semestre/Calcolo 2/Funzioni a più variabili reali/Calcolo differenziale.md",
+    "Primo anno/Secondo semestre/Calcolo 2/Equazioni differenziali/EDO del primo ordine.md",
+    "Primo anno/Secondo semestre/Calcolo 2/Curve parametriche/Curve regolari e forma polare.md",
+    "Primo anno/Secondo semestre/Calcolo 2/Curve parametriche/Lunghezza arco e integrali di linea.md",
     "Terzo anno/Calcolabilità e linguaggi formali/Automi a stati finiti.md",
+    "Excalidraw/Template CLF.md",
     "Terzo anno/Calcolabilità e linguaggi formali/Images/Dimostrazione regolarità.svg",
-    "Excalidraw/Drawing 2024-09-20 16.28.23.excalidraw.md",
     "Excalidraw/Drawing 2024-09-20 16.32.45.excalidraw.md",
     "Excalidraw/Drawing 2024-09-20 17.44.13.excalidraw.md",
     "Terzo anno/Calcolabilità e linguaggi formali/Images/DFA.svg",
-    "Terzo anno/Ricerca operativa/Definizioni generali.md",
     "Terzo anno/Calcolabilità e linguaggi formali/Images",
     "Excalidraw/Drawing 2024-09-20 16.31.11.excalidraw.md",
     "Secondo anno/Algoritmi e strutture dati/Template grafi/Template.excalidraw",
@@ -174,23 +190,6 @@
     "Terzo anno/Sicurezza/Background and tools/Stream editor e regex.md",
     "Terzo anno/Sicurezza/Background and tools/Introduzione a Python.md",
     "Terzo anno/Sicurezza/Web security/Server/Web attacks.md",
-    "Secondo anno/Programmazione ad oggetti/Mod. 2/Oggetti in C++.md",
-    "Terzo anno/Sicurezza/System and network security/Firewalls - netfilter.md",
-    "Terzo anno/Sicurezza/Images/Origin.png",
-    "Terzo anno/Sicurezza/Images/Anti-CSRF token.png",
-    "Terzo anno/Sicurezza/Images/CSRF.png",
-    "Terzo anno/Sicurezza/Images/XSS.png",
-    "Terzo anno/Sicurezza/Web security/Client/Web security.md",
-    "Terzo anno/Sicurezza/Web security/Client/Web attacks.md",
-    "Terzo anno/Sicurezza/Web security/Server/Web attacks and defences.md",
-    "Terzo anno/Sicurezza/Web security/Server/Side channels.md",
-    "Secondo anno/Basi di dati/Mod. 2/NoSQL.md",
-    "Secondo anno/Basi di dati/Mod. 1/Modello relazionale.md",
-    "Secondo anno/Basi di dati/Mod. 1/Progettazione e modellazione.md",
-    "Terzo anno/Sicurezza/System and network security/Identification.md",
-    "Secondo anno/Basi di dati/Mod. 2/Amministrazione/Indici e viste materializzate.md",
-    "Secondo anno/Basi di dati/Mod. 2/Amministrazione/Trigger.md",
-    "Terzo anno/Sicurezza/Web security/Client",
     "Untitled.canvas"
   ]
 }
