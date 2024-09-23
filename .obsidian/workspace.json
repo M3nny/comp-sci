@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Terzo anno/Ricerca operativa/Definizioni generali.md",
+                "file": "Terzo anno/Data and web mining/Introduzione.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Terzo anno/Ricerca operativa/Definizioni generali.md",
+                "file": "Terzo anno/Data and web mining/Introduzione.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Terzo anno/Ricerca operativa/Definizioni generali.md",
+                "file": "Terzo anno/Data and web mining/Introduzione.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Terzo anno/Ricerca operativa/Definizioni generali.md"
+                "file": "Terzo anno/Data and web mining/Introduzione.md"
               }
             }
           }
@@ -147,11 +147,15 @@
   },
   "active": "a1163d9af64d6878",
   "lastOpenFiles": [
+    "Terzo anno/Data and web mining/Images",
+    "Terzo anno/Data and web mining/Images/KNN.png",
+    "Terzo anno/Ricerca operativa/Definizioni generali.md",
+    "Terzo anno/Data and web mining/Introduzione.md",
+    "Terzo anno/Data and web mining",
     "Terzo anno/Ricerca operativa/Images/Combinazione affine.svg",
     "Excalidraw/Template RO.md",
     "Terzo anno/Ricerca operativa/Images/Combinazioni coniche.svg",
     "Terzo anno/Ricerca operativa/Images/Combinazione convessa.svg",
-    "Terzo anno/Ricerca operativa/Definizioni generali.md",
     "Terzo anno/Ricerca operativa/Images",
     "Primo anno/Primo semestre/Algebra lineare/Riassunto.md",
     "Primo anno/Primo semestre/Algebra lineare/Matrici.md",
@@ -184,12 +188,10 @@
     "Terzo anno/Reti di calcolatori/Images",
     "Terzo anno/Reti di calcolatori",
     "Terzo anno/Sicurezza/Program analysis/Assembly x86-64.md",
-    "Terzo anno/Ricerca operativa",
     "Terzo anno/Sicurezza/Program analysis/Analisi statica e dinamica.md",
     "Terzo anno/Sicurezza/System and network security/Unix access control.md",
     "Terzo anno/Sicurezza/Background and tools/Stream editor e regex.md",
     "Terzo anno/Sicurezza/Background and tools/Introduzione a Python.md",
-    "Terzo anno/Sicurezza/Web security/Server/Web attacks.md",
     "Untitled.canvas"
   ]
 }
