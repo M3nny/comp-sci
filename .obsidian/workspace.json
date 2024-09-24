@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "8a997170ee160580",
+        "id": "dba949197f15f842",
         "type": "tabs",
         "children": [
           {
-            "id": "19cf777b71733d43",
+            "id": "c595f83125aaba91",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Terzo anno/Data and web mining/Introduzione.md",
+                "file": "Terzo anno/Reti di calcolatori/Livello datalink.md",
                 "mode": "source",
                 "source": false
               }
@@ -69,7 +69,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 350.5124969482422
+    "width": 350.5124969482422,
+    "collapsed": true
   },
   "right": {
     "id": "282a9548711da6a0",
@@ -85,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Terzo anno/Data and web mining/Introduzione.md",
+                "file": "Terzo anno/Reti di calcolatori/Livello datalink.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Terzo anno/Data and web mining/Introduzione.md",
+                "file": "Terzo anno/Reti di calcolatori/Livello datalink.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +126,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Terzo anno/Data and web mining/Introduzione.md"
+                "file": "Terzo anno/Reti di calcolatori/Livello datalink.md"
               }
             }
           }
@@ -145,12 +146,15 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "a1163d9af64d6878",
+  "active": "c595f83125aaba91",
   "lastOpenFiles": [
+    "Terzo anno/Reti di calcolatori/Livello fisico.md",
+    "Terzo anno/Reti di calcolatori/Livello datalink.md",
+    "Terzo anno/Reti di calcolatori/Images/Time sequence diagram.png",
+    "Terzo anno/Data and web mining/Introduzione.md",
     "Terzo anno/Data and web mining/Images",
     "Terzo anno/Data and web mining/Images/KNN.png",
     "Terzo anno/Ricerca operativa/Definizioni generali.md",
-    "Terzo anno/Data and web mining/Introduzione.md",
     "Terzo anno/Data and web mining",
     "Terzo anno/Ricerca operativa/Images/Combinazione affine.svg",
     "Excalidraw/Template RO.md",
@@ -179,19 +183,16 @@
     "Secondo anno/Algoritmi e strutture dati/Template grafi/Template.excalidraw",
     "Secondo anno/Algoritmi e strutture dati/Template grafi/Template.svg",
     "Excalidraw",
-    "Terzo anno/Reti di calcolatori/Livello fisico.md",
     "Terzo anno/Calcolabilità e linguaggi formali",
     "Terzo anno/Reti di calcolatori/Images/FM 2 bit.png",
     "Terzo anno/Reti di calcolatori/Images/FM.png",
     "Terzo anno/Reti di calcolatori/Images",
     "Terzo anno/Reti di calcolatori",
     "Terzo anno/Reti di calcolatori/Images",
-    "Terzo anno/Reti di calcolatori",
     "Terzo anno/Sicurezza/Program analysis/Assembly x86-64.md",
     "Terzo anno/Sicurezza/Program analysis/Analisi statica e dinamica.md",
     "Terzo anno/Sicurezza/System and network security/Unix access control.md",
     "Terzo anno/Sicurezza/Background and tools/Stream editor e regex.md",
-    "Terzo anno/Sicurezza/Background and tools/Introduzione a Python.md",
     "Untitled.canvas"
   ]
 }
