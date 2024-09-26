@@ -56,6 +56,7 @@ Per indicare le **funzioni continue** nell'intervallo $[a,b]$ usiamo la seguente
 $$C^0[a,b]=\{\sin(x),\cos(x),...\}$$
 >$C^0$ rappresenta le funzioni continue, $C^1$ le funzioni derivabili almeno una volta, dove la derivata è anch'essa continua (vedi [[Funzioni vettoriali#Continuità/Derivabilità/Integrabilità|continuità]]).
 
+Per indicare i **polinomi ad una variabile** con grado massimo $n$ usiamo la seguente notazione: $P_n(x)$.
 
 ### Combinazioni lineari
 Una **combinazione lineare** dati $z_1,...,z_m\in\mathbb{R}^n$ e $a_1,...,a_m\in\mathbb{R}$ è definita come:
@@ -79,3 +80,52 @@ geometricamente appare come un segmento delimitato da due punti specifici dei ve
 ![[Combinazione convessa.svg]]
 in tre dimensioni è un taglio (base) di una piramide.
 In questo caso la combinazione convessa $z$ dei vettori $z_1$ e $z_2$ si ottiene tramite la relazione: $z=a_1z_1+a_2z_2$, dove $a_1+a_2=1$ e $a_1,a_2\geq 0$.
+
+---
+### Prodotto scalare
+Dato uno spazio vettoriale $V^n(K)$, il **prodotto scalare** (o interno) è una funzione indicata come $<\bullet,\bullet>$ e definita come segue:
+$$V^n(K)\times V^n(K)\to \mathbb{R}$$
+
+Possiede le seguenti proprietà:
+1. $\forall v\in V^n(K),\quad<v,v>\geq 0,= 0 \iff v=w$
+	
+	Il prodotto scalare di un vettore per se stesso è $\geq 0$, è uguale a $0$ sse il vettore rappresenta vettore nullo.
+	
+2. $\forall u,v,z\in v^n(K),\quad<u+v,z>=<u,z>+<v,z>$
+	
+	Proprietà _distributiva_, l'operatore $+$ viene utilizzato sia per la somma tra vettori e sia per la somma tra scalari.
+	
+3. $\forall u,v\in V^n(K),\quad<u,v>=<v,u>$
+	Proprietà _commutativa_.
+
+Il **prodotto scalare standard**, dati due vettori $u,v$ è definito come:
+$$\forall u,v\in\mathbb{R}^n,<u,v>=u_1v_1+...u_n v_n$$
+Due vettori $u,v$ si dicono **ortogonali** ($u\bot v$) sse il prodotto scalare standard $<u,v>$ è pari a $0$.
+>Due vettori ortogonali sono linearmente indipendenti, non è detto viceversa.
+
+### Norma
+Dato uno spazio vettoriale $V^n(K)$, la **norma** di un vettore può essere vista come la lunghezza del vettore stesso, essa è indicata come $||\bullet||_*$, ed è definita come:
+$$V^n(K)\to\mathbb{R}^+$$
+Possiede le seguenti proprietà:
+1. $\forall v\in V^n(K),\quad||v||_*\geq 0,=0\iff v=w$
+	
+	La norma è $\geq 0$, è uguale a $0$ sse il vettore rappresenta il vettore nullo.
+	
+2. $\forall v\in v^n(K),\forall\alpha\in\mathbb{R},\quad||\alpha\bullet v||_* =|\alpha|\cdot||v||_*$
+	
+	La norma del prodotto di uno scalare per un vettore è uguale al valore assoluto dello scalare per la norma del vettore.
+	
+1. $\forall u,v\in V^n(K),\quad||u+v||_*\leq||u||_*+||v||_*$
+	La norma della somma di due vettori è minore della somma delle norme dei due vettori ([[Secondo anno/Algoritmi e strutture dati/Mod. 1/Cammini minimi/Introduzione#Disuguaglianza triangolare|disuguaglianza triangolare]])
+
+>[!Info]
+>La norma viene indicata con $*$ (star) come pedice in quanto esistono varie norme, ovvero diversi metodi di misura di una lunghezza (che danno risultati diversi).
+
+**Norma euclidea**: $||v||_2=\sqrt{v_1^2+...+v_n^2}$
+**Norma 1**: $||v||_1=|v_1|+...+|v_n|$
+**Norma $\infty$**: $||v||_\infty=\max\limits_{1\leq i\leq n}|v_i|$
+
+Di seguito le rappresentazioni geometriche per le norme pari a $1$:
+![[Norme.png]]
+
+>Notare come solo in quattro punti il loro risultato combacia.
