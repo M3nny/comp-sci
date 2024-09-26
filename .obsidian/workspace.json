@@ -4,19 +4,15 @@
     "type": "split",
     "children": [
       {
-        "id": "b481af85d3515173",
+        "id": "7315199bf4282238",
         "type": "tabs",
         "children": [
           {
-            "id": "277ffc3f91c3ac73",
+            "id": "3864bdead9106ddf",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Terzo anno/Ricerca operativa/Definizioni generali.md",
-                "mode": "source",
-                "source": false
-              }
+              "type": "empty",
+              "state": {}
             }
           }
         ]
@@ -85,7 +81,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Terzo anno/Ricerca operativa/Definizioni generali.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +97,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Terzo anno/Ricerca operativa/Definizioni generali.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -124,9 +118,7 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "Terzo anno/Ricerca operativa/Definizioni generali.md"
-              }
+              "state": {}
             }
           }
         ]
@@ -145,13 +137,20 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "277ffc3f91c3ac73",
+  "active": "3864bdead9106ddf",
   "lastOpenFiles": [
+    "Terzo anno/Data and web mining/Decision trees.md",
+    "Excalidraw/Template DWM.md",
+    "Terzo anno/Data and web mining/Images/Decision tree.svg",
+    "Excalidraw/Template CLF.md",
+    "Excalidraw/Untitled.md",
+    "Terzo anno/Data and web mining/Images/KNN.png",
+    "Terzo anno/Data and web mining/Images/Scatter plot decision tree.png",
+    "Terzo anno/Data and web mining/Supervised learning - KNN.md",
     "Terzo anno/Ricerca operativa/Definizioni generali.md",
     "Terzo anno/Ricerca operativa/Images/Norme.png",
     "Secondo anno/Algoritmi e strutture dati/Mod. 1/Cammini minimi/Introduzione.md",
     "Secondo anno/Algoritmi e strutture dati/Mod. 1/Cammini minimi/Bellman-Ford.md",
-    "Terzo anno/Data and web mining/Introduzione.md",
     "Terzo anno/Reti di calcolatori/Livello datalink.md",
     "Terzo anno/Reti di calcolatori/Livello fisico.md",
     "Terzo anno/Reti di calcolatori/Images/Selective repeat.png",
@@ -160,11 +159,8 @@
     "Terzo anno/Reti di calcolatori/Images/Mittente ABP.png",
     "Terzo anno/Reti di calcolatori/Images/Ack exchange.png",
     "Terzo anno/Reti di calcolatori/Images/Datalink state machine.png",
-    "Terzo anno/Reti di calcolatori/Images/Time sequence diagram.png",
     "Terzo anno/Data and web mining/Images",
-    "Terzo anno/Data and web mining/Images/KNN.png",
     "Terzo anno/Data and web mining",
-    "Terzo anno/Ricerca operativa/Images/Combinazione affine.svg",
     "Excalidraw/Template RO.md",
     "Terzo anno/Ricerca operativa/Images",
     "Primo anno/Primo semestre/Algebra lineare/Riassunto.md",
@@ -179,19 +175,15 @@
     "Primo anno/Secondo semestre/Calcolo 2/Curve parametriche/Curve regolari e forma polare.md",
     "Primo anno/Secondo semestre/Calcolo 2/Curve parametriche/Lunghezza arco e integrali di linea.md",
     "Terzo anno/Calcolabilità e linguaggi formali/Automi a stati finiti.md",
-    "Excalidraw/Template CLF.md",
     "Excalidraw/Drawing 2024-09-20 16.32.45.excalidraw.md",
     "Excalidraw/Drawing 2024-09-20 17.44.13.excalidraw.md",
     "Terzo anno/Calcolabilità e linguaggi formali/Images",
-    "Excalidraw/Drawing 2024-09-20 16.31.11.excalidraw.md",
     "Secondo anno/Algoritmi e strutture dati/Template grafi/Template.excalidraw",
     "Excalidraw",
     "Terzo anno/Calcolabilità e linguaggi formali",
     "Terzo anno/Reti di calcolatori/Images",
     "Terzo anno/Reti di calcolatori",
     "Terzo anno/Reti di calcolatori/Images",
-    "Terzo anno/Sicurezza/Program analysis/Assembly x86-64.md",
-    "Terzo anno/Sicurezza/Program analysis/Analisi statica e dinamica.md",
     "Untitled.canvas"
   ]
 }

@@ -4,6 +4,7 @@ Possiamo definire un modello $M$ che prende in input un nuovo oggetto $x_i$ non 
 $$M(x_i)\rightarrow \hat y$$
 
 Un modello in questo campo può essere visto come una funzione che restituisce un output basandosi su una **conoscenza pregressa** acquisita da dati con lo stesso insieme di features.
+Definiamo **supervised learning** l'apprendimento da un dataset che mette a disposizione le label $y$ di ogni record.
 ## Classificazione
 Un task di **classificazione** consiste nell'assegnare una **label** appartenente ad un **insieme discreto** ad un oggetto passato in input.
 
@@ -31,7 +32,7 @@ Avendo le seguenti predizioni dei modelli $M_1$ e $M_2$ ed il risultato atteso $
 
 ---
 ## K-nearest neighbors
-I classificatori **nearest neighbors** sono definiti **lazy learners** in quanto non apprendono nulla durante la fase di training, ma si limitano a riempire una struttura dati per la fase di inferenza.
+I classificatori **nearest neighbors** sono definiti **lazy learners** in quanto non apprendono nulla durante la fase di training, ma si limitano solo ad eseguire una query su una base di dati (possibilmente indicizzata) durante la fase di inferenza.
 
 La funzione del modello $M(x_i)$ infatti si limita ad eseguire una query su dati storici ed esegue una predizione in base alla somiglianza del nuovo oggetto rispetto ai $K$ oggetti presenti nel dataset che più gli assomigliano.
 #### Quale K scegliere
@@ -48,4 +49,4 @@ Di seguito uno _scatter plot_ con _decision boundary_ avendo $4$ classi differen
 #### Normalizzazione delle features
 Le features vanno **normalizzate** (portandole ad un valore tra $0$ e $1$) altrimenti quelle con range più ampio andrebbero a "nascondere" le features con range numerici più bassi.
 
-Tuttavia <u>non va normalizzato l'intero dataset</u>, bensì si va a normalizzare _training set_ e _test set_ separatamente, altrimenti già dalla fase di training verrebbero rivelate informazioni del test set, rendendo poi il modello poco efficace in casi reali.
+Tuttavia <u>non va normalizzato l'intero dataset</u>, bensì si va a normalizzare _training set_ e _test set_ separatamente, altrimenti nella fase di training verrebbero rivelate informazioni del test set (**data leak**), rendendo poi il modello poco efficace in casi reali.
