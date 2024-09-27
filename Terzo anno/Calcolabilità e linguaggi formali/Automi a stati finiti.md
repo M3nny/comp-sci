@@ -1,5 +1,6 @@
 Un **Deterministic Finite Automata (DFA)** è un riconoscitore di stringhe, le stringhe da esso accettate formano un **linguaggio**.
 
+### Definizione DFA
 Un DFA $D$ è una quintupla $(Q,\Sigma, \delta, q_0, F)$ dove:
 - $Q$: è un insieme finito di stati
 - $\Sigma$: è un insieme finito di input, detto **alfabeto**
@@ -19,16 +20,17 @@ Il DFA sopra rappresentato è definito come:
 
 In questo caso il _linguaggio_ di $D$ è dato da:
 $$L(D)=\{w\in\{0,1\}^*|\text{ esiste almeno un 1 e dopo l'ultimo 1 è presente un numero pari di 0}\}$$
->$\{0,1\}^*$ indica tutte le stringhe (anche infinite) composte da $0$ e $1$, vedi [[Automi a stati finiti#Operazioni regolari|operatore star]].
+>$\{0,1\}^*$ indica tutte le stringhe (anche infinite) composte da $0$ e $1$, vedi [[Automi a stati finiti#Operazioni regolari|operatore star]] (a seguire).
 
 >[!Attention]
 >Non viene definito DFA una quintupla in cui non è definito uno stato iniziale e/o almeno uno stato accettante, inoltre ogni stato stato deve avere $|\Sigma|$ funzioni di transizione, ovvero una per ogni input.
 
-## Linguaggio
+---
+## Linguaggio di un DFA
 Sia $M=(Q,\Sigma, \delta, q_0, F)$, e sia $w=w_1, w_2,...,w_m$ una stringa tale che $\forall i\in[1,n]:w_i\in\Sigma$, diciamo che $M$ accetta $w$ sse esistono degli stati $r_0,...,r_n\in Q$ tali che:
-1. $r_0=q_0$, ovvero il primo stato è quello iniziale
-2. $r_n\in F$, ovvero l'ultimo stato è uno stato accettante
-3. $\forall i\in[0,n-1]:\delta(r_i,w_{i+1})=r_{i+1}$ 
+1. $r_0=q_0$ (il primo stato è quello iniziale)
+2. $r_n\in F$ (l'ultimo stato è uno stato accettante)
+3. $\forall i\in[0,n-1]:\delta(r_i,w_{i+1})=r_{i+1}$ (la funzione di transizione è rispettata)
 
 Il linguaggio riconosciuto da un DFA $M$ è indicato con $L(M)$, ed esso rappresenta l'insieme delle stringhe accettate da $M$.
 
@@ -57,15 +59,20 @@ Siano $A,B$ due linguaggi qualsiasi, definiamo le seguenti tre operazioni regola
 **Teorema**:
 La classe dei linguaggi regolari è chiusa rispetto alle operazioni regolari, ovvero se $A$ e $B$ sono regolari, allora $A\cup B$, $A\circ B$, $A^*$ sono tutti linguaggi regolari.
 
-Dimostrazione per _unione_:
+#### Chiusura rispetto l'unione
 Siano $A,B$ linguaggi regolari, allora esistono due DFA $M_1=(Q_1,\Sigma_1, \delta_1, q_1, F_1)$ e $M_2=(Q_2,\Sigma_2, \delta_2, q_2, F_2)$ tali che $L(M_1)=A$ e $L(M_2)=B$, costruiamo un nuovo DFA $M$ tale che $L(M)=A\cup B$.
 
 L'idea è quella di simulare $M_1$ e $M_2$ "in parallelo".
 Sia $M=(Q,\Sigma, \delta, q_0, F)$ il DFA definito come segue (ricordando che stiamo usando coppie):
-- Assumiamo che gli alfabeti siano uguali $\Sigma_1=\Sigma_2=\Sigma$, (funzionerebbe lo stesso anche se non lo fossero)
+- Assumiamo che gli alfabeti siano uguali $\Sigma_1=\Sigma_2=\Sigma$, (<u>funzionerebbe lo stesso anche se non lo fossero</u>)
 - $Q=Q_1\times Q_2=\{(q_1,q_2)|q_1\in Q_1 \land\ q_2\in Q_2\}$
 - $q_0=(q_1,q_2)$
 - $F=\{(r_1,r_2)\in Q|r_1\in F_1\lor r_2\in F_2\}$
 - $\delta((r_1,r_2), a)=(\delta_1(r_1, a), \delta_2(r_2, a))$
 	Dato che vengono eseguiti in parallelo, la funzione di transizione è equivalente alla funzione di transizione applicata su $M_1$ e $M_2$ in parallelo.
 
+---
+
+Come affermato precedentemente, l'ipotesi di avere lo stesso alfabeto non è limitante in quanto possiamo riconoscere caratteri aggiuntivi senza dover modificare il linguaggio.
+Consideriamo gli alfabeti $\Sigma=\{a,b\}$, e $\Sigma'=\{a,b,c\}$, possiamo creare uno **stato pozzo** per accogliere i nuovi caratteri senza modificare il linguaggio dell'automa:
+![[Stato pozzo.svg]]
