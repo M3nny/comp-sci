@@ -129,3 +129,37 @@ Di seguito le rappresentazioni geometriche per le norme pari a $1$:
 ![[Norme.png]]
 
 >Notare come solo in quattro punti il loro risultato combacia.
+
+---
+
+>[!Tip] Angolo tra vettori
+>Dati due vettori $u,v$, il loro **angolo interno** è dato da:
+>$$\varphi=||u||_2\cdot||v||_2\cdot\cos\varphi$$
+
+## Funzioni lineari e affini
+Data la funzione $f:\mathbb{R}^n\to\mathbb{R}^m$, si dice che $f(x)$ è **lineare** in $\mathbb{R}^n$ se soddisfa le seguenti proprietà:
+1. $f(x+y)=f(x)+f(y),\quad\forall x,y\in\mathbb{R}^n$
+2. $f(\lambda x)=\lambda f(x),\quad\forall x\in\mathbb{R}^n$
+
+Data la funzione $g:\mathbb{R}^n\to\mathbb{R}$, si dice che $g(x)$ è **affine** in $\mathbb{R}^n$ se esiste una funzione _lineare_ $f(x)\in\mathbb{R}^n$ ed una costante $c\in\mathbb{R}$ tali che:
+$$g(x)=f(x)+c$$
+>Anche se non è propriamente lineare, ha un andamento lineare.
+
+>[!Example]
+>La funzione $f(x)=2x-3$, non è lineare, bensì affine, infatti non rispetta entrambe le due proprietà:
+>$$f(x+y)=2(x+y)-3=2x+2y-3=f(x)+2y$$
+
+## Teorema del valor medio
+Prima di procedere ricordiamo alcune definizioni:
+- [[Cos'è una derivata#Derivata|Derivata]] $f'(\overline{x})$: rappresenta l'inclinazione della funzione in un suo punto specifico
+- [[Calcolo differenziale#Derivate parziali|Derivata parziale]] $\frac{\partial f(\overline{x})}{\partial x}$: indica l'inclinazione rispetto ad un punto ed asse specifico
+- [[Calcolo differenziale#Calcolo della derivata parziale|Gradiente]] $\nabla f(\overline{x})$: è composto dalle derivate prime , e "riassume" la direzione della funzione rispetto a tutti gli assi
+- [[Punti di massimo e minimo#Matrice Hessiana|Matrice Hessiana]] $\nabla^2 f(\overline{x})$: è composta dalle derivate seconde di una funzione in un punto specifico
+
+Possiamo vedere il **teorema del valor medio** come una funzione utilizzata per predire lo stato in un punto $y$ a partire dal punto $x$, con $x,y\in\mathbb{R}^n$:
+$$f(y)=f(x)+\nabla f(x)^T(y-x)+o(||y-x||)$$
+- $f(x)$ rappresenta lo "stato attuale" in $x$
+- $\nabla f(x)^T$ indica l'andamento di $f(x)$ fino al momento attuale
+- $(y-x)$ è usato per definire la geometria della differenza tra $x$ ed $y$
+- $o(||y-x||)$ può essere considerato come una stima dell'errore, se i due punti $x,y$ dovessero essere vicini l'errore sarebbe quasi nullo ([[Infiniti e infinitesimi#Funzioni infinitesime|o-piccolo]])
+

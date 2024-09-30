@@ -1,5 +1,5 @@
 ## Derivate parziali
-Estendiamo il concetto di [[Cos'è una derivata|derivata]] a funzioni di più variabili.
+Estendiamo il concetto di [[Cos'è una derivata#Derivata|derivata]] a funzioni di più variabili.
 Sia $f:A\subseteq\mathbb{R}^2\to\mathbb{R}$ con $A$ insieme aperto. Se il seguente limite esiste finito, allora esso definisce la **derivata parziale** di $f$ rispetto a $x$ calcolata nel punto $(x_0, y_0)$:
 $$\frac{\delta f}{\delta x}(x_0,y_0)=\lim_{h\to 0}\left(\frac{f(x_0+h,y_0)-f(x_0,y_0)}{h}\right)$$
 analogamente la **derivata parziale** rispetto a $y$ è:
