@@ -104,3 +104,15 @@ Data una stringa $w=abbabb$ non è possibile sapere dove inizia quale sottostrin
 L'idea è quella di sostituire lo stato iniziale con un altro (nuovo) stato accettante collegato allo stato iniziale originale tramite una $\epsilon$-transizione, in questo modo sarà possibile accettare anche la stringa vuota, inoltre colleghiamo gli stati accettanti originali allo stato iniziale tramite delle $\epsilon$-transizioni, in questo modo potremmo continuare ad accettare un'altra eventuale sottostringa.
 
 ![[Star NFA.png]]
+Sia $N_1$ l'NFA che riconosce $A_1$ definito come $N_1=\{Q_1,\Sigma,\delta_1,q_1,F_1\}$, costruiamo $N=\{Q,\Sigma,\delta,q_0,F\}$ per riconoscere $A_1^*$.
+1. $Q=\{q_0\}\cup Q_1$ (gli stati di $N$ sono gli stati di $N_1$ più un nuovo stato iniziale)
+2. Lo stato $q_0$ è il nuovo stato iniziale
+3. $F=\{q_0\}\cup F_1$ (gli stati accettanti sono i vecchi stati accettanti più il nuovo stato iniziale)
+4. Definiamo $\delta$ in modo che per ogni $q\in Q$ e ogni $a\in\Sigma_\epsilon$:
+$$\delta(q,a)=\begin{cases}
+\delta_1(q,a)&q\in Q_1\land q\notin F_1\\
+\delta_1(q,a)&q\in F_1\land a\neq\epsilon\\
+\delta_1(q,a)\cup\{q_1\}&q\in F_1\land a=\epsilon\\
+\{q_1\}&q=q_0\land a=\epsilon\\
+\emptyset&q=q_0\land a\neq\epsilon
+\end{cases}$$

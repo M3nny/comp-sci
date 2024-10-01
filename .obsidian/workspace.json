@@ -4,15 +4,19 @@
     "type": "split",
     "children": [
       {
-        "id": "e1f4c44cf4c96ec3",
+        "id": "6edb6ada927400e0",
         "type": "tabs",
         "children": [
           {
-            "id": "4bfb5de170961fab",
+            "id": "c96320c24b52a262",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {}
+              "type": "markdown",
+              "state": {
+                "file": "Terzo anno/Calcolabilità e linguaggi formali/Espressioni regolari.md",
+                "mode": "source",
+                "source": false
+              }
             }
           }
         ]
@@ -81,6 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "Terzo anno/Calcolabilità e linguaggi formali/Espressioni regolari.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -97,6 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "Terzo anno/Calcolabilità e linguaggi formali/Espressioni regolari.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -118,7 +124,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "Terzo anno/Calcolabilità e linguaggi formali/Espressioni regolari.md"
+              }
             }
           }
         ]
@@ -137,8 +145,22 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "4bfb5de170961fab",
+  "active": "c96320c24b52a262",
   "lastOpenFiles": [
+    "Excalidraw/Template CLF.md",
+    "Terzo anno/Calcolabilità e linguaggi formali/Espressioni regolari.md",
+    "Terzo anno/Calcolabilità e linguaggi formali/Images/Cancellazione stato per regex.svg",
+    "Terzo anno/Calcolabilità e linguaggi formali/Images/GNFA to regex.svg",
+    "Terzo anno/Calcolabilità e linguaggi formali/Images/GNFA to regex.png",
+    "Terzo anno/Calcolabilità e linguaggi formali/Images/GNFA to regex.png.crdownload",
+    "Secondo anno/Algoritmi e strutture dati/Mod. 1/Grafi/Tipologie.md",
+    "Secondo anno/Algoritmi e strutture dati/Mod. 1/Grafi/Connettività e aciclicità.md",
+    "Terzo anno/Calcolabilità e linguaggi formali/Images/GNFA regex.svg",
+    "Terzo anno/Calcolabilità e linguaggi formali/Automi a stati finiti non deterministici.md",
+    "Terzo anno/Calcolabilità e linguaggi formali/Images/GNFA regex.png",
+    "Terzo anno/Calcolabilità e linguaggi formali/Images/GNFA regex.png.crdownload",
+    "Terzo anno/Calcolabilità e linguaggi formali/Automi a stati finiti.md",
+    "Terzo anno/Calcolabilità e linguaggi formali/Images/Regex to NFA.svg",
     "Primo anno/Primo semestre/Calcolo 1/Infiniti e infinitesimi/Polinomio di Taylor.md",
     "Primo anno/Primo semestre/Calcolo 1/Infiniti e infinitesimi/Infiniti e infinitesimi.md",
     "Primo anno/Secondo semestre/Calcolo 2/Funzioni a più variabili reali/Punti di massimo e minimo.md",
@@ -148,24 +170,15 @@
     "Primo anno/Primo semestre/Calcolo 1/Derivate/Asintoti.md",
     "Primo anno/Secondo semestre/Calcolo 2/Equazioni differenziali/EDO del secondo ordine.md",
     "Primo anno/Secondo semestre/Calcolo 2/Equazioni differenziali/EDO del primo ordine.md",
-    "Terzo anno/Calcolabilità e linguaggi formali/Automi a stati finiti non deterministici.md",
     "Terzo anno/Calcolabilità e linguaggi formali/Images/Star NFA.png",
     "Terzo anno/Calcolabilità e linguaggi formali/Images/Star NFA.png.crdownload",
     "Terzo anno/Calcolabilità e linguaggi formali/Images/Concatenazione NFA.png",
     "Terzo anno/Calcolabilità e linguaggi formali/Images/Concatenazione NFA.png.crdownload",
-    "Terzo anno/Calcolabilità e linguaggi formali/Automi a stati finiti.md",
     "Terzo anno/Calcolabilità e linguaggi formali/Images/NFA to DFA.svg",
-    "Excalidraw/Template CLF.md",
     "Terzo anno/Calcolabilità e linguaggi formali/Images/NFA 1 terzultimo.png.crdownload",
     "Terzo anno/Calcolabilità e linguaggi formali/Images/DFA 1 terzultimo.png.crdownload",
     "Terzo anno/Calcolabilità e linguaggi formali/Images/DFA 1 terzultimo.png",
-    "Terzo anno/Calcolabilità e linguaggi formali/Images/NFA 1 terzultimo.png",
     "Primo anno/Primo semestre/Matematica discreta/Gli insiemi.md",
-    "Terzo anno/Calcolabilità e linguaggi formali/Images/Albero di computazione.svg",
-    "Terzo anno/Calcolabilità e linguaggi formali/Images/Albero di computazione.svg",
-    "Terzo anno/Calcolabilità e linguaggi formali/Images/Albero di computazione 1.svg",
-    "Terzo anno/Calcolabilità e linguaggi formali/Images/NFA.svg",
-    "Terzo anno/Calcolabilità e linguaggi formali/Images/Stato pozzo.svg",
     "Excalidraw/Drawing 2024-09-27 09.36.06.excalidraw.md",
     "Terzo anno/Data and web mining/Decision trees.md",
     "Excalidraw/Template DWM.md",
@@ -177,14 +190,8 @@
     "Terzo anno/Reti di calcolatori/Livello fisico.md",
     "Terzo anno/Data and web mining/Images",
     "Terzo anno/Data and web mining",
-    "Excalidraw/Template RO.md",
     "Terzo anno/Ricerca operativa/Images",
-    "Primo anno/Primo semestre/Algebra lineare/Riassunto.md",
-    "Primo anno/Primo semestre/Algebra lineare/Matrici.md",
-    "Primo anno/Primo semestre/Calcolo 1/Derivate/Algebra delle derivate.md",
     "Terzo anno/Calcolabilità e linguaggi formali/Images",
-    "Secondo anno/Algoritmi e strutture dati/Template grafi/Template.excalidraw",
-    "Excalidraw",
     "Untitled.canvas"
   ]
 }
