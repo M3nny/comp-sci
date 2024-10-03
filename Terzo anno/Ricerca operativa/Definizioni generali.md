@@ -149,6 +149,7 @@ $$g(x)=f(x)+c$$
 >La funzione $f(x)=2x-3$, non è lineare, bensì affine, infatti non rispetta entrambe le due proprietà:
 >$$f(x+y)=2(x+y)-3=2x+2y-3=f(x)+2y$$
 
+---
 ## Teorema del valor medio
 Prima di procedere ricordiamo alcune definizioni:
 - [[Cos'è una derivata#Derivata|Derivata]] $f'(\overline{x})$: rappresenta l'inclinazione della funzione in un suo punto specifico
@@ -162,4 +163,15 @@ $$f(y)=f(x)+\nabla f(x)^T(y-x)+o(||y-x||)$$
 - $\nabla f(x)^T$ indica l'andamento di $f(x)$ fino al momento attuale
 - $(y-x)$ è usato per definire la geometria della differenza tra $x$ ed $y$
 - $o(||y-x||)$ può essere considerato come una stima dell'errore, se i due punti $x,y$ dovessero essere vicini l'errore sarebbe quasi nullo ([[Infiniti e infinitesimi#Funzioni infinitesime|o-piccolo]])
+
+Un'**altra formulazione** del teorema è la seguente:
+$$f(y)=f(x)+\nabla f[x+\theta(y-x)]^T(y-x)\quad\theta\in[0,1]$$
+- $f(x)$ è lo "stato attuale" in $x$
+- $f[x+\theta(y-x)]^T$ è la stima del futuro stato lungo la congiungente tra $x$ ed $y$, dove _esiste almeno un_ $\theta$ compreso tra $0$ e $1$ per cui la formulazione è vera (in pratica abbiamo spostato l'incertezza da $o$ piccolo a $\theta$), $\theta$ tuttavia può essere anche essere al di fuori di quell'intervallo
+- $(y-x)$ è usato per definire la geometria della differenza tra $x$ ed $y$
+
+La rappresentazione geometrica del teorema del valor medio con $n=1$ è la seguente:
+![[Valor medio.svg]]
+Da notare come all'avvicinarsi di $y$ a $x$ $o(|y-x|)$ diventa sempre più piccolo fino a scomparire del tutto, infatti **per funzioni lineari** essendo che la retta tangente percorre tutta la funzione standogli accanto, **si potrà togliere la componente** $o(|y-x|)$ in quanto sarà sempre pari a $0$,
+ottenendo quindi: $f(y)=f(x)+\nabla f(x)^T(y-x)$.
 

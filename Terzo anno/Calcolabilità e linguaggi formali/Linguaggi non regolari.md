@@ -77,16 +77,3 @@ Quindi si va a verificare l'opposto del pumping lemma, ovvero:
 >>Notare come la stringa $s=0^p10^p1$ esibisce la non regolarità di $F$, a differenza di un'altra possibile stringa come $0^p0^p$ la quale non riesce a dar luogo a una contraddizione.
 >
 
-
-
-
-
-
-
-
-
-
-
-
-
-

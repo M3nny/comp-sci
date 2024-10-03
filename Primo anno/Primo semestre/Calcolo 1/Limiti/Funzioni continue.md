@@ -1,9 +1,9 @@
 Data la funzione $f: A\subseteq \mathbb{R} \to \mathbb{R}$
-- Se $x_0$ è di accumulazione per $A$ diremo che $f$ è **continua** in $x_0$ se $\lim\limits_{x\to x_0}f(x)=f(x_0)$
+- Se $x_0$ è di [[Elementi di topologia di R#Punti isolati e di accumulazione|accumulazione]] per $A$ diremo che $f$ è **continua** in $x_0$ se $\lim\limits_{x\to x_0}f(x)=f(x_0)$
 - Se $x_0$ è un punto isolato in $A$, diremo che $f$ è continua anche in $x_0$
 - Diremo che $f$ è continua in generale se è continua in ogni punto del dominio $A$.
 
-Un altro modo per verificare la continuità di una funzione è quello di verificare se esiste il limite sinistro e destro($\lim\limits_{x\to x_0^-}f(x)=\ell\ \in \mathbb{R}$  e $\lim\limits_{x\to x_0^+}f(x)=r \in \mathbb{R}$) allora $f$ è continua se e solo se $\ell = r = f(x_0)$.
+Un altro modo per verificare la continuità di una funzione è quello di verificare se esiste il limite sinistro e destro ($\lim\limits_{x\to x_0^-}f(x)=\ell\ \in \mathbb{R}$  e $\lim\limits_{x\to x_0^+}f(x)=r \in \mathbb{R}$) allora $f$ è continua se e solo se $\ell = r = f(x_0)$.
 
 >[!Example]
 >Se consideriamo la [[Funzioni elementari#Potenza con esponente intero negativo|funzione]] $y=\frac{1}{x}$ possiamo dire che è continua, perchè nel suo dominio $D=\mathbb{R} \setminus \{0\}$ rispetta la definizione di funzione continua.
