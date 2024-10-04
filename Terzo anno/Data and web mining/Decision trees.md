@@ -35,4 +35,72 @@ $\cal{D}$ indica il dataset attuale, $D_L$ e $D_R$ le partizioni di sinistra e d
 
 Una **foglia** viene creata quando il miglior _gain_ possibile è pari a $0$, oppure quando qualche altro criterio di stop viene soddisfatto (e.g. BestGain supera una certa soglia, si è raggiunta una certa profondità, ...).
 
-Un albero di decisione può sempre arrivare a **$100\%$ di accuracy** nella fase di training in quanto facendolo raggiungere la sua profondità massima si avrà che ogni foglia rappresenta un'istanza riuscendo così a predire perfettamente $\hat y$ di qualsiasi record, ciò però non significa che nella fase di testing avrà un'accuracy alta, infatti si avrà un **supporto debole** in quanto la predizione avverrà considerando un solo record, quello che si vuole è: avere **foglie che generalizzino** quanto possibile.
+Un albero di decisione può sempre arrivare a **$100\%$ di accuracy** nella fase di training in quanto facendolo raggiungere la sua profondità massima si avrà che ogni foglia rappresenta un'istanza riuscendo così a predire perfettamente $\hat y$ di qualsiasi record, ciò però non significa che nella fase di testing avrà un'accuracy alta, infatti si avrà un **supporto debole** in quanto la predizione avverrà considerando un solo record, quello che si vuole è avere **foglie che generalizzino** quanto possibile.
+
+---
+## Gain
+Nella classificazione rappresentiamo l'**errore** $E$ come una frazione delle istanze classificate in modo errato.
+
+Con un dataset $\cal D$, la miglior predizione è data da:
+$$\mu = \arg\min_\mu Error(\mathcal{D},\mu)=\arg\min_\mu\frac{1}{|\mathcal{D}|}\sum_{(x,y)\in\mathcal{D}}E(y,\mu)$$
+>Dove $E(y,\mu)$ è $0$ se $\mu=y$, mentre è $0$ altrimenti.
+
+Dato un predicato $f\leq t$, definiamo il **gain** di uno split come la <u>riduzione dell'errore rispetto alla non suddivisione del nodo</u>:
+$$Gain(f,t|{\cal D})=Error(\mathcal{D})-\left(\frac{|\mathcal{D}_L|}{|\mathcal{D}|}Error(\mathcal{D}_L) + \frac{|\mathcal{D}_R|}{|\mathcal{D}|}Error(\mathcal{D}_R)\right)$$
+
+## Impurità del nodo
+L'impurità del nodo è collegata all'errore, il quale può essere calcolato in vari modi.
+>D'ora in poi indichiamo con $Error({\cal D})$ l'errore della migliore predizione $\mu$ per il dataset $\cal D$.
+
+#### Classification error
+Nel caso di classificazione, la miglior predizione $\mu$ è la label più frequente in $\cal D$, inoltre se definiamo con $p_i$ la frequenza della label $l_i\in\cal D$, l'errore totale nel dataset è dato da:
+$$Error({\cal D})=1-\max_i p_i$$
+
+>[!Example]
+>Supponiamo di avere un dataset $|\mathcal{D}| = 800$, con $400$ istanze nella classe $0$ e altre $400$ nella classe $1$: $\mathcal{D}=(400,400)$.
+>-  $Error(\mathcal{D})=1-\frac{1}{2}=0.5$
+>- Assumere uno split $B=(f_2,t_2)$ che produce $\mathcal{D}_L=(200,400)$ e $\mathcal{D}_R=(200,000)$
+>- $Gain(B|\mathcal{D})=0.5-\frac{600}{800}\cdot(1-\frac{2}{3})-\frac{200}{800}\cdot(1-1)=0.25$
+>
+>Lo split $B$ è un buono split in quanto produce una foglia **pura** (i.e. un set di istanze con una predizione che non deve essere ulteriormente processata).
+
+#### Information gain (entropy)
+L'errore di un dataset può essere misurato come l'**entropia** (i.e. misura di casualità) nella distribuzione delle label:
+$$Error(\mathcal{D})=-\sum_i p_i\log_2(p_i)$$
+Il gain in questo caso viene indicato come $InfoGain$.
+
+>[!Example]
+>Supponiamo di avere un dataset $|\mathcal{D}| = 800$, con $400$ istanze nella classe $0$ e altre $400$ nella classe $1$: $\mathcal{D}=(400,400)$.
+>-  $Error(\mathcal{D})=-(\frac{1}{2}\log(\frac{1}{2})+\frac{1}{2}\log(\frac{1}{2}))=\log(2)=1$
+>- Assumere uno split $B=(f_2,t_2)$ che produce $\mathcal{D}_L=(200,400)$ e $\mathcal{D}_R=(200,000)$
+>- $InfoGain(B|\mathcal{D})=1-\left(\frac{600}{800}\cdot(-(\frac{1}{3}\log(\frac{1}{3})+\frac{2}{3}\log(\frac{2}{3})))+\frac{200}{800}\cdot(-(1\log(1)-0\log(0)))\right)\simeq 0.31$
+
+#### Gain ratio
+Per alberi di decisione k-ari l'$InfoGain$ favorisce split con partizioni più piccole, in quanto più propense ad essere pure, il $GainRatio$ normalizza l'information gain con $SplitInfo$:
+$$SplitInfo(\mathcal{D}_i)=-\sum_{i=1}^k\frac{|\mathcal{D}_i|}{\mathcal{D}}\log\left(\frac{|\mathcal{D}_i|}{\mathcal{D}}\right)$$
+$$Error(\mathcal{D})=GainRatio(\mathcal{D})=\frac{Info(\mathcal{D})}{SplitInfo(\mathcal{D})}$$
+
+#### Gini index
+**GINI** è una misura di dispersione statistica, l'errore in questo caso è misurato come:
+$$Error(\mathcal{D})=Gini(\mathcal{D})=1-\sum_i p_i^2$$
+
+>[!Example]
+>Supponiamo di avere un dataset $|\mathcal{D}| = 800$, con $400$ istanze nella classe $0$ e altre $400$ nella classe $1$: $\mathcal{D}=(400,400)$.
+>-  $Error(\mathcal{D})=1-\left((\frac{1}{2})^2+(\frac{1}{2})^2\right)$
+>- Assumere uno split $B=(f_2,t_2)$ che produce $\mathcal{D}_L=(200,400)$ e $\mathcal{D}_R=(200,000)$
+>- $Gain(B|\mathcal{D}) =  0.5 - \left(\frac{600}{800} \cdot ( 1 - (\frac{1}{3})^2 - (\frac{2}{3})^2) + \frac{200}{800} \cdot (1- (1)^2 - (0)^2)\right) \simeq 0.167$
+
+#### Mean Squared Error (MSE)
+Gli alberi decisionali possono essere utilizzati anche per task di **regressione**, l'errore e la predizione migliore però sono definiti diversamente, infatti la predizione migliore $\mu$ dovrebbe essere il valore medio delle label in $\cal D$:
+$$\mu=\arg\min MSE(\mu,\mathcal{D})\quad\implies\quad\mu=\frac{1}{|\mathcal{D}|}\sum_{(x,y)\in\mathcal{D}} y$$
+$$Error(\mathcal{D})=\frac{1}{|\mathcal{D}|}\sum_{(x,y)\in\mathcal{D}}(\mu-y)^2$$
+$$Gain(f,t|\mathcal{D}) = Error({\cal D}) - \frac{|{\cal D}_L|}{|{\cal D}|} Error({\cal D}_L) - \frac{|{\cal D}_R|}{|{\cal D}|} Error({\cal D}_R)$$
+
+## Iperparametri per decision tree
+Tra i vari [iperparametri degli alberi decisionali](https://scikit-learn.org/stable/modules/generated/sklearn.tree.DecisionTreeClassifier.html) troviamo anche la **profondità massima** che può raggiungere l'albero, impostare un valore alto classificherà bene i valori noti, tuttavia non sarà tanto efficace su dati mai visti.
+![[Decision tree max depth.png]]
+
+Una digressione va fatta per il **numero massimo di foglie** applicato all'algoritmo di Hunt, infatti usare questo iperparametro come criterio di stop non è una buona idea se applicato a tale algoritmo dato che potrebbe venir generato un albero sbilanciato a sinistra a causa della creazione di figli sinistri come prima operazione.
+
+Un algoritmo migliore (iterativo) potrebbe chiedersi se lo split migliore è quello di sinistra o quello di destra prima di creare un nuovo nodo.
+

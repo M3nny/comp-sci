@@ -4,28 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "54f0533f77f90aa0",
+        "id": "1905ca0853731ca0",
         "type": "tabs",
         "children": [
           {
-            "id": "27056396d9286297",
+            "id": "15be10b229b3d6ae",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Terzo anno/Reti di calcolatori/Livello datalink.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "734be069b841d4fc",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Terzo anno/Reti di calcolatori/Livello fisico.md",
+                "file": "Terzo anno/Data and web mining/Decision trees.md",
                 "mode": "source",
                 "source": false
               }
@@ -81,8 +69,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 350.5124969482422,
-    "collapsed": true
+    "width": 350.5124969482422
   },
   "right": {
     "id": "282a9548711da6a0",
@@ -98,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Terzo anno/Reti di calcolatori/Livello datalink.md",
+                "file": "Terzo anno/Data and web mining/Decision trees.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Terzo anno/Reti di calcolatori/Livello datalink.md",
+                "file": "Terzo anno/Data and web mining/Decision trees.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Terzo anno/Reti di calcolatori/Livello datalink.md"
+                "file": "Terzo anno/Data and web mining/Decision trees.md"
               }
             }
           }
@@ -158,11 +145,19 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "a1163d9af64d6878",
+  "active": "15be10b229b3d6ae",
   "lastOpenFiles": [
-    "Terzo anno/Reti di calcolatori/Images/Esercizio datalink.png",
+    "Terzo anno/Data and web mining/K-nearest neighbors.md",
+    "Terzo anno/Data and web mining/Decision trees.md",
+    "Terzo anno/Data and web mining/Images/Decision tree max depth.png",
+    "Terzo anno/Data and web mining/Images/Decision tree.svg",
+    "Terzo anno/Data and web mining/Images/Decision tree.svg",
+    "Terzo anno/Data and web mining/Images/Scatter plot decision tree.png",
+    "Terzo anno/Data and web mining/Images/KNN.png",
+    "Excalidraw/Template DWM.md",
     "Terzo anno/Reti di calcolatori/Livello fisico.md",
     "Terzo anno/Reti di calcolatori/Livello datalink.md",
+    "Terzo anno/Reti di calcolatori/Images/Esercizio datalink.png",
     "Terzo anno/Reti di calcolatori/Images/Throughput S-ALOHA.png",
     "Terzo anno/Reti di calcolatori/Images/S-ALOHA.png",
     "Terzo anno/Reti di calcolatori/Images/TDMA.png",
@@ -175,20 +170,14 @@
     "Primo anno/Primo semestre/Calcolo 1/Limiti/Funzioni continue.md",
     "Primo anno/Primo semestre/Calcolo 1/Limiti/Definizione di un limite.md",
     "Primo anno/Primo semestre/Calcolo 1/Derivate/Asintoti.md",
-    "Terzo anno/Ricerca operativa/Images/Valor medio.svg",
-    "Terzo anno/Ricerca operativa/Images/Valor medio.svg",
     "Excalidraw/Template RO.md",
     "Excalidraw/Template CLF.md",
     "Terzo anno/Calcolabilità e linguaggi formali/Linguaggi non regolari.md",
-    "Terzo anno/Calcolabilità e linguaggi formali/Images/Pumping lemma attraversamento.svg",
     "Terzo anno/Calcolabilità e linguaggi formali/Untitled",
     "Terzo anno/Calcolabilità e linguaggi formali/Linguaggi regolari/Automi a stati finiti.md",
     "Terzo anno/Calcolabilità e linguaggi formali/Linguaggi regolari/Automi a stati finiti non deterministici.md",
     "Terzo anno/Calcolabilità e linguaggi formali/Linguaggi regolari/Espressioni regolari.md",
     "Terzo anno/Calcolabilità e linguaggi formali/Linguaggi regolari",
-    "Terzo anno/Calcolabilità e linguaggi formali/Images/Cancellazione stato per regex.svg",
-    "Terzo anno/Calcolabilità e linguaggi formali/Images/GNFA to regex.svg",
-    "Terzo anno/Calcolabilità e linguaggi formali/Images/GNFA to regex.png",
     "Terzo anno/Calcolabilità e linguaggi formali/Images/GNFA to regex.png.crdownload",
     "Secondo anno/Algoritmi e strutture dati/Mod. 1/Grafi/Connettività e aciclicità.md",
     "Terzo anno/Calcolabilità e linguaggi formali/Images/GNFA regex.png.crdownload",
@@ -197,13 +186,10 @@
     "Primo anno/Secondo semestre/Calcolo 2/Funzioni a più variabili reali/Punti di massimo e minimo.md",
     "Primo anno/Secondo semestre/Calcolo 2/Funzioni a più variabili reali/Calcolo differenziale.md",
     "Primo anno/Secondo semestre/Calcolo 2/Curve parametriche/Funzioni vettoriali.md",
-    "Primo anno/Secondo semestre/Calcolo 2/Equazioni differenziali/EDO del secondo ordine.md",
-    "Primo anno/Secondo semestre/Calcolo 2/Equazioni differenziali/EDO del primo ordine.md",
     "Terzo anno/Calcolabilità e linguaggi formali/Images/Star NFA.png.crdownload",
     "Terzo anno/Calcolabilità e linguaggi formali/Images/Concatenazione NFA.png.crdownload",
     "Terzo anno/Calcolabilità e linguaggi formali/Images/NFA 1 terzultimo.png.crdownload",
     "Terzo anno/Calcolabilità e linguaggi formali/Images/DFA 1 terzultimo.png.crdownload",
-    "Primo anno/Primo semestre/Matematica discreta/Gli insiemi.md",
     "Terzo anno/Data and web mining/Images",
     "Terzo anno/Data and web mining",
     "Untitled.canvas"

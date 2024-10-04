@@ -1,3 +1,4 @@
+# Introduzione
 In questo corso lavoreremo con dati in forma tabellare, in particolare le righe definiscono un **oggetto**, mentre le colonne definiscono le sue **features**.
 
 Possiamo definire un modello $M$ che prende in input un nuovo oggetto $x_i$ non presente nel dataset iniziale e ritorna una predizione $\hat y$ come:
@@ -31,22 +32,22 @@ Avendo le seguenti predizioni dei modelli $M_1$ e $M_2$ ed il risultato atteso $
 | $\text{Accuracy: 0\%}$ | $\text{Accuracy: 0\%}$ |       |
 
 ---
-## K-nearest neighbors
+# K-nearest neighbors
 I classificatori **nearest neighbors** sono definiti **lazy learners** in quanto non apprendono nulla durante la fase di training, ma si limitano solo ad eseguire una query su una base di dati (possibilmente indicizzata) durante la fase di inferenza.
 
-La funzione del modello $M(x_i)$ infatti si limita ad eseguire una query su dati storici ed esegue una predizione in base alla somiglianza del nuovo oggetto rispetto ai $K$ oggetti presenti nel dataset che più gli assomigliano.
+La funzione del modello $M(x_i)$ infatti si limita ad eseguire una query su dati storici ed esegue una predizione in base alla somiglianza (e.g. [distanza euclidea](https://it.wikipedia.org/wiki/Distanza_euclidea)) del nuovo oggetto rispetto ai $K$ oggetti presenti nel dataset che più gli assomigliano.
 #### Quale K scegliere
 Solitamente è meglio scegliere un $K$ **dispari** in modo da non avere uguaglianze, tuttavia in caso di $K$ _pari_  e parità di vicini (e.g. $3$ blu $3$  verdi) si può procedere:
 - Casualmente
 - Considerando la classe con meno elementi globalmente (e.g. $90\%$ blu $10\%$ verdi), questo perchè sono rappresentato fortemente nei vicini in questione
 
-Con $K$ **grande** oltre ad essere pesante in termini di computazione verrebbe preferita la classe più numerosa (e.g. con $k=+\infty$ verrà sempre ritornata la classe più numerosa).
+Con $K$ **grande** oltre ad essere pesante in termini di computazione verrebbero preferite le classi con cardinalità maggiore (e.g. con $k=+\infty$ verrà sempre ritornata la classe più numerosa).
 
 Con $K$ **piccolo** verrebbero valutati pochi oggetti storici presenti nel dataset, in questo modo si è più soggetti a punti di _rumore_.
 
-Di seguito uno _scatter plot_ con _decision boundary_ avendo $4$ classi differenti e $K=10$:
+Di seguito uno _scatter plot_ con _decision boundary_ avente $4$ classi differenti e $K=10$:
 ![[KNN.png]]
 #### Normalizzazione delle features
-Le features vanno **normalizzate** (portandole ad un valore tra $0$ e $1$) altrimenti quelle con range più ampio andrebbero a "nascondere" le features con range numerici più bassi.
+Essendo che alcune metriche, come la distanza euclidea sono influenzate dalla scala di grandezza delle features, è necessario **normalizzare** le features tramite algoritmi appositi che fanno rientrare tutti i valori delle features in un range compreso tra $0$ e $1$ (e.g. [MinMaxScaler](https://scikit-learn.org/stable/modules/generated/sklearn.preprocessing.MinMaxScaler.html)).
 
 Tuttavia <u>non va normalizzato l'intero dataset</u>, bensì si va a normalizzare _training set_ e _test set_ separatamente, altrimenti nella fase di training verrebbero rivelate informazioni del test set (**data leak**), rendendo poi il modello poco efficace in casi reali.
