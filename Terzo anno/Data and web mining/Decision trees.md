@@ -96,7 +96,8 @@ $$\mu=\arg\min MSE(\mu,\mathcal{D})\quad\implies\quad\mu=\frac{1}{|\mathcal{D}|}
 $$Error(\mathcal{D})=\frac{1}{|\mathcal{D}|}\sum_{(x,y)\in\mathcal{D}}(\mu-y)^2$$
 $$Gain(f,t|\mathcal{D}) = Error({\cal D}) - \frac{|{\cal D}_L|}{|{\cal D}|} Error({\cal D}_L) - \frac{|{\cal D}_R|}{|{\cal D}|} Error({\cal D}_R)$$
 
-## Iperparametri per decision tree
+---
+### Iperparametri per decision tree
 Tra i vari [iperparametri degli alberi decisionali](https://scikit-learn.org/stable/modules/generated/sklearn.tree.DecisionTreeClassifier.html) troviamo anche la **profondità massima** che può raggiungere l'albero, impostare un valore alto classificherà bene i valori noti, tuttavia non sarà tanto efficace su dati mai visti.
 ![[Decision tree max depth.png]]
 
@@ -104,3 +105,37 @@ Una digressione va fatta per il **numero massimo di foglie** applicato all'algor
 
 Un algoritmo migliore (iterativo) potrebbe chiedersi se lo split migliore è quello di sinistra o quello di destra prima di creare un nuovo nodo.
 
+---
+## Overfitting
+L'**overfitting** di un modello può avvenire per varie ragioni, tra cui:
+1. **Bassa qualità dei dati**
+	- Presenza di "rumore" nel dataset
+	- Mancanza di campioni rappresentativi
+2. **Modello troppo complesso**
+	- Nel caso dei decision tree un modello complesso è dato da un albero _troppo_ profondo
+
+### Validation set
+Un modo per ridurre l'overfitting è quello di aggiungere un ulteriore divisione del dataset ed introdurre quindi un **validation set** per simulare ulteriori dati non visti.
+
+La misura di performance sul _validation set_ (i.e. **errore di generalizzazione**) può essere usata per selezionare un modello finale.
+
+Le proporzioni di split del dataset con il _validation set_ sono generalmente le seguenti:
+$$60/20/20\quad\text{train/validation/test}$$
+Il test set da una stima sull'accuratezza del modello, mentre il validation set viene usato per trovare gli iperparametri migliori del modello.
+Solitamente dopo aver trovato la combinazione migliore di iperparametri si riallena il modello utilizzando il training set intero, ovvero $\text{train+validation}$.
+
+### Pruning
+A parità di _errore di generalizzazione_ si preferisce il modello più semplice, introduciamo quindi due metodi di pruning:
+- **Pre-pruning**: criteri di stop anticipato (e.g. numero di foglie massimo)
+- **Post-pruning**: dopo aver fatto crescere un albero, si vanno a rimuovere dei sotto alberi con una foglia
+
+Il _post-pruning_ permette di prendere una decisione analizzando più nodi, infatti un sottoalbero viene sostituito con una foglia che rappresenta la moda/media delle predizioni in quel sottoalbero in base a classificazione/regressione, se l'errore di generalizzazione è minore o uguale a quello previsto precedentemente al pruning.
+
+L'errore di un modello $\cal M$ (i.e. decision tree nel nostro caso) è definito come:
+$$Error(\mathcal{D},\mathcal{M})=\frac{1}{|\mathcal{D}|}\sum_{(x,y)\in\mathcal{D}} E(y,\mathcal{M}(x))$$
+mentre l'**errore di generalizzazione** può essere stimato tramite:
+$$Error_{gen}(\mathcal{D}, \mathcal{M})=Error(\mathcal{D}, \mathcal{M})+\alpha\cdot Complexity(\mathcal{M})$$
+>$\alpha$ è un iperparametro scelto a priori utilizzato per aggiustare la complessità del modello.
+
+Un modo per misurare la complessità di un decision tree è il rapporto tra il numero di foglie e la dimensione del dataset $\cal D$:
+$$Complexity(\mathcal{M})=\frac{\#\text{leaves in }|\mathcal{M}|}{|\mathcal{D}|}$$

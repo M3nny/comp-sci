@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Terzo anno/Ricerca operativa/Definizioni generali.md",
+                "file": "Terzo anno/Data and web mining/Decision trees.md",
                 "mode": "source",
                 "source": false
               }
@@ -69,7 +69,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 350.5124969482422
+    "width": 350.5124969482422,
+    "collapsed": true
   },
   "right": {
     "id": "282a9548711da6a0",
@@ -85,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Terzo anno/Ricerca operativa/Definizioni generali.md",
+                "file": "Terzo anno/Data and web mining/Decision trees.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Terzo anno/Ricerca operativa/Definizioni generali.md",
+                "file": "Terzo anno/Data and web mining/Decision trees.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +126,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Terzo anno/Ricerca operativa/Definizioni generali.md"
+                "file": "Terzo anno/Data and web mining/Decision trees.md"
               }
             }
           }
@@ -147,8 +148,8 @@
   },
   "active": "df53a9ca592247c9",
   "lastOpenFiles": [
-    "Terzo anno/Ricerca operativa/Programmazione matematica.md",
     "Terzo anno/Ricerca operativa/Definizioni generali.md",
+    "Terzo anno/Ricerca operativa/Programmazione matematica.md",
     "Secondo anno/Algoritmi e strutture dati/Mod. 1/Cammini minimi/Introduzione.md",
     "Terzo anno/Reti di calcolatori/Livello rete.md",
     "Terzo anno/Reti di calcolatori/Images/Convergenza DV.png",
