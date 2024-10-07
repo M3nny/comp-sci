@@ -4,15 +4,19 @@
     "type": "split",
     "children": [
       {
-        "id": "29a44fcf1e24547b",
+        "id": "7bc6c64f5f0aa513",
         "type": "tabs",
         "children": [
           {
-            "id": "8666429bf44ef049",
+            "id": "df53a9ca592247c9",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {}
+              "type": "markdown",
+              "state": {
+                "file": "Terzo anno/Ricerca operativa/Definizioni generali.md",
+                "mode": "source",
+                "source": false
+              }
             }
           }
         ]
@@ -81,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Terzo anno/Reti di calcolatori/Livello rete.md",
+                "file": "Terzo anno/Ricerca operativa/Definizioni generali.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -98,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Terzo anno/Reti di calcolatori/Livello rete.md",
+                "file": "Terzo anno/Ricerca operativa/Definizioni generali.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -121,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Terzo anno/Reti di calcolatori/Livello rete.md"
+                "file": "Terzo anno/Ricerca operativa/Definizioni generali.md"
               }
             }
           }
@@ -141,8 +145,10 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "a1163d9af64d6878",
+  "active": "df53a9ca592247c9",
   "lastOpenFiles": [
+    "Terzo anno/Ricerca operativa/Programmazione matematica.md",
+    "Terzo anno/Ricerca operativa/Definizioni generali.md",
     "Secondo anno/Algoritmi e strutture dati/Mod. 1/Cammini minimi/Introduzione.md",
     "Terzo anno/Reti di calcolatori/Livello rete.md",
     "Terzo anno/Reti di calcolatori/Images/Convergenza DV.png",
@@ -156,13 +162,11 @@
     "Terzo anno/Reti di calcolatori/Images/Hot potato.png",
     "Terzo anno/Reti di calcolatori/Images/Eterogeneità di rete.png",
     "Terzo anno/Reti di calcolatori/Livello datalink.md",
-    "Terzo anno/Ricerca operativa/Programmazione matematica.md",
     "Terzo anno/Data and web mining/Decision trees.md",
     "Terzo anno/Data and web mining/K-nearest neighbors.md",
     "Excalidraw/Template DWM.md",
     "Terzo anno/Reti di calcolatori/Livello fisico.md",
     "Secondo anno/Algoritmi e strutture dati/Mod. 1/Grafi/Tipologie.md",
-    "Terzo anno/Ricerca operativa/Definizioni generali.md",
     "Primo anno/Secondo semestre/Calcolo 2/Funzioni a più variabili reali/Limiti e continuità.md",
     "Primo anno/Primo semestre/Calcolo 1/Insiemistica/Elementi di topologia di R.md",
     "Primo anno/Primo semestre/Calcolo 1/Limiti/Funzioni continue.md",

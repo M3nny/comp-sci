@@ -150,12 +150,22 @@ $$g(x)=f(x)+c$$
 >$$f(x+y)=2(x+y)-3=2x+2y-3=f(x)+2y$$
 
 ---
+## Derivate direzionali
+Considerando una funzione $f(x)\in C^1(\mathbb{R}^n)$, la **derivata direzionale** $D(f,d)$ lungo il **vettore direzione** $d\in\mathbb{R}^n$ è definita come:
+$$D(f,d)\stackrel{\Delta}{=}\lim_{h\to 0}\frac{f(x+hd)-f(x)}{h}=\nabla f(x)^Td$$
+
+Nel caso di normali derivate parziali rispetto agli assi:
+$$d=\begin{pmatrix}0\\1\\\vdots\\0\end{pmatrix}$$
+Dove l'$i$-esimo (unico) elemento con valore $1$ sarà l'asse in questione su cui calcolare il cambiamento della funzione, mentre per le derivate direzionali $d$ sarà **denso** in quanto sarà riempito da valori reali solitamente diversi da $0$.
+
+---
 ## Teorema del valor medio
 Prima di procedere ricordiamo alcune definizioni:
 - [[Cos'è una derivata#Derivata|Derivata]] $f'(\overline{x})$: rappresenta l'inclinazione della funzione in un suo punto specifico
 - [[Calcolo differenziale#Derivate parziali|Derivata parziale]] $\frac{\partial f(\overline{x})}{\partial x}$: indica l'inclinazione rispetto ad un punto ed asse specifico
 - [[Calcolo differenziale#Calcolo della derivata parziale|Gradiente]] $\nabla f(\overline{x})$: è composto dalle derivate prime , e "riassume" la direzione della funzione rispetto a tutti gli assi
 - [[Punti di massimo e minimo#Matrice Hessiana|Matrice Hessiana]] $\nabla^2 f(\overline{x})$: è composta dalle derivate seconde di una funzione in un punto specifico
+>Il nome deriva dal fatto che stiamo valutando il cambiamento nella congiungente tra $x$ ed $y$, e quindi in mezzo ai due punti.
 
 Possiamo vedere il **teorema del valor medio** come una funzione utilizzata per predire lo stato in un punto $y$ a partire dal punto $x$, con $x,y\in\mathbb{R}^n$:
 $$f(y)=f(x)+\nabla f(x)^T(y-x)+o(||y-x||)$$
@@ -175,3 +185,10 @@ La rappresentazione geometrica del teorema del valor medio con $n=1$ è la segue
 Da notare come all'avvicinarsi di $y$ a $x$ $o(|y-x|)$ diventa sempre più piccolo fino a scomparire del tutto, infatti **per funzioni lineari** essendo che la retta tangente percorre tutta la funzione standogli accanto, **si potrà togliere la componente** $o(|y-x|)$ in quanto sarà sempre pari a $0$,
 ottenendo quindi: $f(y)=f(x)+\nabla f(x)^T(y-x)$.
 
+### Teorema del valor medio (secondo ordine)
+Il teorema del valor medio di **secondo ordine** viene usato per valutare il **cambiamento del cambiamento** lungo la congiungente tra $x$ e $y$.
+
+Le due formulazioni le possiamo riscrivere usando anche le derivate seconde come:
+
+$$\text{1.}\quad f(y)=f(x)+\nabla f(x)^T(y-x)+\frac{1}{2}(y-x)^T\nabla^2 f(x)(y-x)+o(||y-x||)^2$$
+$$\text{2}\quad f(y)=f(x)+\nabla f(x)^T(y-x)+\frac{1}{2}(y-x)^T\nabla^2 f[x+\theta (y-x)](y-x)\quad \theta\in[0,1]$$
