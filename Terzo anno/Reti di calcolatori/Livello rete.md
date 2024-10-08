@@ -75,7 +75,7 @@ for i in interfaces:
 	send(v, i)
 ```
 
-Successivamente ogni router procederà come segue all'arrivo di un DV da parte di un vicino:
+Successivamente ogni router procederà come segue al **ricevimento** di un DV da parte di un vicino:
 ```python
 # V: vettore ricevuto
 # l: link attraverso il quale il vettore è ricevuto
@@ -111,4 +111,83 @@ I router ogni $N$ secondi **controllano i timestamp** delle route, e se qualcuna
 
 Dopo che il link $A-B$ si rompe, le destinazioni che utilizzano quel link per effettuare un camino minimo vengono poste a $\infty$:
 ![[Guasto DV.png]]
+
+---
+## Count to infinity and poison reverse
+Finora abbiamo considerato che tutti i pacchetti venissero consegnati senza problemi, assumiamo ora che il link $D-E$ si rompa, la rete ora è divisa in due, e $D$ è il primo ad accorgersene e quindi imposta il costo verso $B,C,E$ a $\infty$.
+
+Supponiamo però che $A$ invii il suo $DV$ a $D$ prima che quest'ultimo possa informare dell'accaduto:
+![[Count to infinity.png]]
+
+Ora $D$ sa che può raggiungere gli altri nodi tramite $A$, ma non può sapere che $A$ passava attraverso $D$ per raggiungere gli altri nodi, così facendo continueranno a "rimbalzarsi" i $DV$ tra loro e aumenteranno ad ogni invio il costo delle destinazioni di $1$ (costo unitario scelto precedentemente), questo problema è definito come **count to infinity**.
+>Può accadere in presenza di cicli (un link full-duplex è un ciclo) quando avviene un cambio della topologia della rete ed un pacchetto è perso.
+
+Una soluzione banale potrebbe essere un **triggered update**, ovvero $D$ manda il suo $DV$ appena rileva che il link non funziona, ciò non funziona perchè il problema potrebbe verificarsi ancora:
+- Per quanto veloce può essere comunque potrebbe ricevere un $DV$ da $A$ prima di riuscire ad inviare il suo $DV$
+- Il pacchetto contenente il $DV$ potrebbe essere perso
+
+Per evitare il problema di _count to infinity_ è possibile utilizzare un algoritmo chiamato **split horizon with poison reverse**, il quale modifica l'**invio** dei $DV$:
+```python
+# Ogni N secondi
+for interface in interfaces
+	v = Vector()
+	for d in R[]:
+		if R[d].link != interface:
+			v.add(Pair(d, R[d].cost))
+		else:
+			v.add(Pair(d, ∞))
+	send(v, interface)
+```
+
+In questo modo il mittente sta "avvelenando" la routing table del vicino dicendo che non possiede un cammino verso le destinazioni che dovrebbero essere raggiunte tramite esso.
+
+Immaginando che $A$ utilizzi tale algoritmo, allora $D$ al ricevimento del $DV=[0,\infty,\infty,\infty,\infty]$ non aggiornerà la sua routing table in quanto avrà un costo maggiore, al prossimo intervallo di tempo $D$ inoltrerà il $DV$ corretto ad $A$ così da correggere la sua routing table.
+
+Tuttavia il problema _count to infinity_ può ripresentarsi nel caso di un ciclo formato da $3$ o più router, un modo per evitarlo è **ignorare gli update** per un periodo di tempo dopo che una destinazione è stata impostata a $\infty$, così facendo ci si assicura che l'informazione del guasto raggiunga tutti i vicini senza preoccuparsi della perdita di pacchetti.
+>Renderà la <u>convergenza molto lenta</u>.
+
+---
+## Link-State routing
+Il **Link-State (LS) routing**, a differenza dei router basati su distance vector, il link-state routing consente ai router di <u>scambiarsi messaggi per capire l'intera topologia della rete</u>.
+
+Una volta imparata la topologia è possibile computare la routing table utilizzando l'[[Dijkstra|algoritmo di Dijkstra]].
+
+Ogni router ha un **indirizzo unico**, essi si scambiano messaggi $\text{HELLO}$ ogni $N$ secondi per capire quali sono i vicini, tale messaggio <u>contiene l'indirizzo del router</u>, ed un link è da **considerarsi guasto** se nessun messaggio $\text{HELLO}$ è stato ricevuto da un vicino per un periodo di $k\times N$ secondi (con $k$ costante).
+
+Una volta che un router è a conoscenza dei suoi vicini distribuirà la sua **topologia locale** agli altri router, ogni router quindi costruisce un **Link-State Packet (LSP)** contenente:
+- `LSP.Router`: indirizzo (univoco) del mittente
+- `LSP.age`: età o tempo rimanente di vita del LSP
+- `LSP.seq`: numero di sequenza (incrementale) del LSP
+- `LSP.Links[]`: il quale contiene i link locali con campi:
+	- `LSP.Links[i].Id`: indirizzo (univoco) del vicino
+	- `LSP.Links[i].cost`: costo del link
+
+I LSP devono essere **distribuiti in modo affidabile** prima di costruire una routing table, per farlo viene utilizzato un **algoritmo di flooding** per distribuire efficientemente i LSP ai router. 
+Ogni router che implementa tale algoritmo possiede un **Link-State DataBase (LSDB)** contenente l'ultimo LSP ricevuto da ogni router.
+
+Prima di inoltrare ai vicini un LSP viene controllato se esso è già presente nel LSDB utilizzando il numero di sequenza, nel caso non fosse presente il LSP viene inoltrato a tutti i vicini tranne al vicino mittente:
+```python
+# all'arrivo di un LSP al link l
+if newer(LSP, LSDB(LSP.Router)):
+	LSDB.add(LSP)
+	for i in links:
+		if i != l:
+			send(LSP, i)
+```
+
+![[LSP.png]]
+
+Dopo l'algoritmo di _flooding_:
+![[LSP flooding.png|700]]
+
+Nel caso di guasti al link dopo $k\times N$ secondi i router alle estremità del link rileveranno il guasto e aggiorneranno i link adiacenti, di conseguenza anche gli altri router tramite gli LSP aggiusteranno la topologia della rete.
+
+>[!Attention]
+>Se qualche messaggio viene perso la convergenza potrebbe non avvenire, è dunque necessario che l'algoritmo di flooding sia accompagnato da segnali di **ack** oppure che sia **periodico**.
+
+In conclusione:
+- LS routing converge più velocemente rispetto al DV routing
+- LS routing ha bisogno di più risorse computazionali rispetto al DV routing (e.g. ad ogni cambiamento di topologia tutti i router devono ricomputare Dijkstra, infattibile in quanto non scalabile)
+
+>Al livello di rete i pacchetti possono essere persi, corrotti, duplicati o ricevuti in disordine, per cui i livelli superiori devono tenerne conto.
 
