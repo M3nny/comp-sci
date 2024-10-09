@@ -4,19 +4,15 @@
     "type": "split",
     "children": [
       {
-        "id": "15938141ffc1da3b",
+        "id": "93c09c776c49962d",
         "type": "tabs",
         "children": [
           {
-            "id": "f9fa5c6bea6bb331",
+            "id": "3751cf4be47e9cb4",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Terzo anno/Reti di calcolatori/Livello rete.md",
-                "mode": "source",
-                "source": false
-              }
+              "type": "empty",
+              "state": {}
             }
           }
         ]
@@ -69,8 +65,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 350.5124969482422,
-    "collapsed": true
+    "width": 350.5124969482422
   },
   "right": {
     "id": "282a9548711da6a0",
@@ -86,7 +81,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Terzo anno/Reti di calcolatori/Livello rete.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +97,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Terzo anno/Reti di calcolatori/Livello rete.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,9 +118,7 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "Terzo anno/Reti di calcolatori/Livello rete.md"
-              }
+              "state": {}
             }
           }
         ]
@@ -146,10 +137,14 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "f9fa5c6bea6bb331",
+  "active": "3751cf4be47e9cb4",
   "lastOpenFiles": [
-    "Terzo anno/Reti di calcolatori/Livello datalink.md",
+    "Terzo anno/Calcolabilità e linguaggi formali/Linguaggi context-free.md",
+    "Terzo anno/Calcolabilità e linguaggi formali/Images/Parse tree.svg",
+    "Excalidraw/Template CLF.md",
+    "Excalidraw/Drawing 2024-10-09 19.00.47.excalidraw.md",
     "Terzo anno/Reti di calcolatori/Livello rete.md",
+    "Terzo anno/Reti di calcolatori/Livello datalink.md",
     "Pasted image 20241008222747.png",
     "Terzo anno/Reti di calcolatori/Images/LSP flooding.png",
     "Terzo anno/Reti di calcolatori/Images/LSP.png",
@@ -164,7 +159,6 @@
     "Secondo anno/Algoritmi e strutture dati/Mod. 1/Cammini minimi/Introduzione.md",
     "Terzo anno/Reti di calcolatori/Images/Convergenza DV.png",
     "Terzo anno/Reti di calcolatori/Images/Guasto DV.png",
-    "Terzo anno/Reti di calcolatori/Images/Guasto DV.png",
     "Terzo anno/Data and web mining/K-nearest neighbors.md",
     "Excalidraw/Template DWM.md",
     "Terzo anno/Reti di calcolatori/Livello fisico.md",
@@ -175,7 +169,6 @@
     "Primo anno/Primo semestre/Calcolo 1/Limiti/Definizione di un limite.md",
     "Primo anno/Primo semestre/Calcolo 1/Derivate/Asintoti.md",
     "Excalidraw/Template RO.md",
-    "Excalidraw/Template CLF.md",
     "Terzo anno/Calcolabilità e linguaggi formali/Linguaggi non regolari.md",
     "Terzo anno/Calcolabilità e linguaggi formali/Untitled",
     "Terzo anno/Calcolabilità e linguaggi formali/Linguaggi regolari/Automi a stati finiti.md",
@@ -186,8 +179,6 @@
     "Secondo anno/Algoritmi e strutture dati/Mod. 1/Grafi/Connettività e aciclicità.md",
     "Terzo anno/Calcolabilità e linguaggi formali/Images/GNFA regex.png.crdownload",
     "Primo anno/Primo semestre/Calcolo 1/Infiniti e infinitesimi/Polinomio di Taylor.md",
-    "Primo anno/Primo semestre/Calcolo 1/Infiniti e infinitesimi/Infiniti e infinitesimi.md",
-    "Primo anno/Secondo semestre/Calcolo 2/Funzioni a più variabili reali/Punti di massimo e minimo.md",
     "Terzo anno/Calcolabilità e linguaggi formali/Images/Star NFA.png.crdownload",
     "Terzo anno/Calcolabilità e linguaggi formali/Images/Concatenazione NFA.png.crdownload",
     "Terzo anno/Calcolabilità e linguaggi formali/Images/NFA 1 terzultimo.png.crdownload",
