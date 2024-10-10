@@ -4,15 +4,19 @@
     "type": "split",
     "children": [
       {
-        "id": "93c09c776c49962d",
+        "id": "b269852c3903d66b",
         "type": "tabs",
         "children": [
           {
-            "id": "3751cf4be47e9cb4",
+            "id": "c89c7de2bb6d2ec4",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {}
+              "type": "markdown",
+              "state": {
+                "file": "Terzo anno/Data and web mining/Regressione lineare.md",
+                "mode": "source",
+                "source": false
+              }
             }
           }
         ]
@@ -65,7 +69,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 350.5124969482422
+    "width": 350.5124969482422,
+    "collapsed": true
   },
   "right": {
     "id": "282a9548711da6a0",
@@ -81,6 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "Terzo anno/Data and web mining/Regressione lineare.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -97,6 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "Terzo anno/Data and web mining/Regressione lineare.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -118,7 +125,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "Terzo anno/Data and web mining/Regressione lineare.md"
+              }
             }
           }
         ]
@@ -137,8 +146,21 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "3751cf4be47e9cb4",
+  "active": "c89c7de2bb6d2ec4",
   "lastOpenFiles": [
+    "Terzo anno/Data and web mining/Images/Regressione lineare BTC 3.png",
+    "Terzo anno/Data and web mining/Images/Regressione lineare BTC 2.png",
+    "Terzo anno/Data and web mining/Images/Regressione lineare BTC.png",
+    "Terzo anno/Data and web mining/Images/Regressione lineare.png",
+    "Terzo anno/Data and web mining/Decision trees.md",
+    "Terzo anno/Data and web mining/Regressione lineare.md",
+    "Terzo anno/Data and web mining/K-nearest neighbors.md",
+    "Terzo anno/Ricerca operativa/Programmazione matematica.md",
+    "Excalidraw/Template RO.md",
+    "Terzo anno/Ricerca operativa/Problemi convessi.md",
+    "Terzo anno/Ricerca operativa/Images/Insiemi convessi.svg",
+    "Terzo anno/Ricerca operativa/Images/Massimi e minimi.svg",
+    "Terzo anno/Ricerca operativa/Definizioni generali.md",
     "Terzo anno/Calcolabilità e linguaggi formali/Linguaggi context-free.md",
     "Terzo anno/Calcolabilità e linguaggi formali/Images/Parse tree.svg",
     "Excalidraw/Template CLF.md",
@@ -149,17 +171,8 @@
     "Terzo anno/Reti di calcolatori/Images/LSP flooding.png",
     "Terzo anno/Reti di calcolatori/Images/LSP.png",
     "Terzo anno/Reti di calcolatori/Images/aaaaaa.png",
-    "Pasted image 20241008222424.png",
-    "Pasted image 20241008222413.png",
     "Terzo anno/Reti di calcolatori/Images/aaaaaa.png.crdownload",
-    "Terzo anno/Reti di calcolatori/Images/Count to infinity.png",
-    "Terzo anno/Data and web mining/Decision trees.md",
-    "Terzo anno/Ricerca operativa/Definizioni generali.md",
-    "Terzo anno/Ricerca operativa/Programmazione matematica.md",
     "Secondo anno/Algoritmi e strutture dati/Mod. 1/Cammini minimi/Introduzione.md",
-    "Terzo anno/Reti di calcolatori/Images/Convergenza DV.png",
-    "Terzo anno/Reti di calcolatori/Images/Guasto DV.png",
-    "Terzo anno/Data and web mining/K-nearest neighbors.md",
     "Excalidraw/Template DWM.md",
     "Terzo anno/Reti di calcolatori/Livello fisico.md",
     "Secondo anno/Algoritmi e strutture dati/Mod. 1/Grafi/Tipologie.md",
@@ -168,7 +181,6 @@
     "Primo anno/Primo semestre/Calcolo 1/Limiti/Funzioni continue.md",
     "Primo anno/Primo semestre/Calcolo 1/Limiti/Definizione di un limite.md",
     "Primo anno/Primo semestre/Calcolo 1/Derivate/Asintoti.md",
-    "Excalidraw/Template RO.md",
     "Terzo anno/Calcolabilità e linguaggi formali/Linguaggi non regolari.md",
     "Terzo anno/Calcolabilità e linguaggi formali/Untitled",
     "Terzo anno/Calcolabilità e linguaggi formali/Linguaggi regolari/Automi a stati finiti.md",
@@ -176,9 +188,7 @@
     "Terzo anno/Calcolabilità e linguaggi formali/Linguaggi regolari/Espressioni regolari.md",
     "Terzo anno/Calcolabilità e linguaggi formali/Linguaggi regolari",
     "Terzo anno/Calcolabilità e linguaggi formali/Images/GNFA to regex.png.crdownload",
-    "Secondo anno/Algoritmi e strutture dati/Mod. 1/Grafi/Connettività e aciclicità.md",
     "Terzo anno/Calcolabilità e linguaggi formali/Images/GNFA regex.png.crdownload",
-    "Primo anno/Primo semestre/Calcolo 1/Infiniti e infinitesimi/Polinomio di Taylor.md",
     "Terzo anno/Calcolabilità e linguaggi formali/Images/Star NFA.png.crdownload",
     "Terzo anno/Calcolabilità e linguaggi formali/Images/Concatenazione NFA.png.crdownload",
     "Terzo anno/Calcolabilità e linguaggi formali/Images/NFA 1 terzultimo.png.crdownload",

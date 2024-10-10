@@ -24,4 +24,20 @@ Nel caso $f(x^*) < f(x)$ si otterrebbe un **minimo locale stretto**, o nel caso 
 $x^*$ è **massimo locale** se:
 $$f(x^*)\geq f(x),\quad\forall x\in I(x^*,\rho)\cap C$$
 Nel caso $f(x^*) > f(x)$ si otterrebbe un **massimo locale stretto**, o nel caso valesse $\forall x\in C$ si avrebbe un **massimo globale**, se entrambe le precedenti affermazioni si verificassero, allora si otterrebbe un **massimo globale unico**.
+![[Massimi e minimi.svg]]
 
+---
+### Problema del knapsack
+Il problema del knapsack (zaino) è un esempio di **programmazione lineare**.
+
+Ci si pone il problema di riempiere uno zaino massimizzando l'utilità degli oggetti al suo interno e minimizzando il più possibile il volume interno occupato.
+- $u_i$: utilità di portare l'oggetto $i$-esimo nello zaino
+- $a_i$: volume dell'oggetto $i$-esimo
+- $b$: volume dello zaino
+- $x_i=\begin{cases}1&\text{se l'oggetto i-esimo è inserito nello zaino}\\0&\text{altrimenti}\end{cases}$
+
+Formuliamo un **problema di massimizzazione** dell'utilità complessiva:
+$$\max_x u_1x_1+...+u_nx_n$$
+poniamo i seguenti **vincoli** ($C$):
+$$a_1x_1+...+a_nx_n\leq b\quad\text{(vincolo lineare)}$$
+$$x_i\in\{0,1\},\forall i=1,...,n\quad\text{(vincolo di interezza - inserisco oppure no)}$$
