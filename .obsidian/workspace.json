@@ -18,6 +18,18 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "202172a18689a670",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Terzo anno/Ricerca operativa/Programmazione matematica.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
         ]
       }
@@ -69,8 +81,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 350.5124969482422,
-    "collapsed": true
+    "width": 350.5124969482422
   },
   "right": {
     "id": "282a9548711da6a0",
@@ -146,21 +157,24 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "c89c7de2bb6d2ec4",
+  "active": "a1163d9af64d6878",
   "lastOpenFiles": [
+    "Terzo anno/Data and web mining/Images/Kernel trick.png",
+    "Terzo anno/Data and web mining/Decision trees.md",
+    "Terzo anno/Data and web mining/K-nearest neighbors.md",
+    "Terzo anno/Data and web mining/Regressione lineare.md",
+    "Terzo anno/Ricerca operativa/Programmazione matematica.md",
+    "Terzo anno/Ricerca operativa/Definizioni generali.md",
+    "Terzo anno/Data and web mining/Images/SVM.png",
+    "Terzo anno/Data and web mining/Images/Regressione logistica.png",
     "Terzo anno/Data and web mining/Images/Regressione lineare BTC 3.png",
     "Terzo anno/Data and web mining/Images/Regressione lineare BTC 2.png",
     "Terzo anno/Data and web mining/Images/Regressione lineare BTC.png",
     "Terzo anno/Data and web mining/Images/Regressione lineare.png",
-    "Terzo anno/Data and web mining/Decision trees.md",
-    "Terzo anno/Data and web mining/Regressione lineare.md",
-    "Terzo anno/Data and web mining/K-nearest neighbors.md",
-    "Terzo anno/Ricerca operativa/Programmazione matematica.md",
     "Excalidraw/Template RO.md",
     "Terzo anno/Ricerca operativa/Problemi convessi.md",
     "Terzo anno/Ricerca operativa/Images/Insiemi convessi.svg",
     "Terzo anno/Ricerca operativa/Images/Massimi e minimi.svg",
-    "Terzo anno/Ricerca operativa/Definizioni generali.md",
     "Terzo anno/Calcolabilità e linguaggi formali/Linguaggi context-free.md",
     "Terzo anno/Calcolabilità e linguaggi formali/Images/Parse tree.svg",
     "Excalidraw/Template CLF.md",
@@ -168,9 +182,6 @@
     "Terzo anno/Reti di calcolatori/Livello rete.md",
     "Terzo anno/Reti di calcolatori/Livello datalink.md",
     "Pasted image 20241008222747.png",
-    "Terzo anno/Reti di calcolatori/Images/LSP flooding.png",
-    "Terzo anno/Reti di calcolatori/Images/LSP.png",
-    "Terzo anno/Reti di calcolatori/Images/aaaaaa.png",
     "Terzo anno/Reti di calcolatori/Images/aaaaaa.png.crdownload",
     "Secondo anno/Algoritmi e strutture dati/Mod. 1/Cammini minimi/Introduzione.md",
     "Excalidraw/Template DWM.md",
