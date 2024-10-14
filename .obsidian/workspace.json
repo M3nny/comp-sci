@@ -4,19 +4,15 @@
     "type": "split",
     "children": [
       {
-        "id": "93d75fde62ae51b8",
+        "id": "44ec82096e7c186d",
         "type": "tabs",
         "children": [
           {
-            "id": "821459e83e9b6b9b",
+            "id": "2d2226adbb567671",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Terzo anno/Reti di calcolatori/Livello applicativo.md",
-                "mode": "source",
-                "source": false
-              }
+              "type": "empty",
+              "state": {}
             }
           }
         ]
@@ -85,7 +81,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Terzo anno/Reti di calcolatori/Livello applicativo.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +97,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Terzo anno/Reti di calcolatori/Livello applicativo.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -124,9 +118,7 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "Terzo anno/Reti di calcolatori/Livello applicativo.md"
-              }
+              "state": {}
             }
           }
         ]
@@ -147,6 +139,9 @@
   },
   "active": "a1163d9af64d6878",
   "lastOpenFiles": [
+    "Terzo anno/Ricerca operativa/Problemi convessi.md",
+    "Excalidraw/Template RO.md",
+    "Terzo anno/Ricerca operativa/Images/Funzione convessa.svg",
     "Terzo anno/Reti di calcolatori/Livello applicativo.md",
     "Terzo anno/Reti di calcolatori/Livello di trasporto.md",
     "Terzo anno/Reti di calcolatori/Images/Sliding window swin rwin.png",
@@ -165,9 +160,6 @@
     "Terzo anno/Data and web mining/Images/Regressione lineare BTC 2.png",
     "Terzo anno/Data and web mining/Images/Regressione lineare BTC.png",
     "Terzo anno/Data and web mining/Images/Regressione lineare.png",
-    "Excalidraw/Template RO.md",
-    "Terzo anno/Ricerca operativa/Problemi convessi.md",
-    "Terzo anno/Ricerca operativa/Images/Insiemi convessi.svg",
     "Terzo anno/Calcolabilità e linguaggi formali/Linguaggi context-free.md",
     "Excalidraw/Template CLF.md",
     "Excalidraw/Drawing 2024-10-09 19.00.47.excalidraw.md",
@@ -184,7 +176,6 @@
     "Terzo anno/Calcolabilità e linguaggi formali/Linguaggi non regolari.md",
     "Terzo anno/Calcolabilità e linguaggi formali/Untitled",
     "Terzo anno/Calcolabilità e linguaggi formali/Linguaggi regolari/Automi a stati finiti.md",
-    "Terzo anno/Calcolabilità e linguaggi formali/Linguaggi regolari/Automi a stati finiti non deterministici.md",
     "Terzo anno/Calcolabilità e linguaggi formali/Linguaggi regolari",
     "Terzo anno/Calcolabilità e linguaggi formali/Images/GNFA to regex.png.crdownload",
     "Terzo anno/Calcolabilità e linguaggi formali/Images/GNFA regex.png.crdownload",
