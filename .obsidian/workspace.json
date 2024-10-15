@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "44ec82096e7c186d",
+        "id": "627f55329618742c",
         "type": "tabs",
         "children": [
           {
-            "id": "2d2226adbb567671",
+            "id": "1fb1a212c5df430c",
             "type": "leaf",
             "state": {
               "type": "empty",
@@ -137,8 +137,12 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "a1163d9af64d6878",
+  "active": "1fb1a212c5df430c",
   "lastOpenFiles": [
+    "Terzo anno/Calcolabilità e linguaggi formali/Linguaggi context-free.md",
+    "Terzo anno/Calcolabilità e linguaggi formali/Linguaggi regolari/Espressioni regolari.md",
+    "Terzo anno/Calcolabilità e linguaggi formali/Linguaggi regolari/Automi a stati finiti non deterministici.md",
+    "Primo anno/Secondo semestre/Architettura degli elaboratori mod. 2/Assembly/Funzioni e stack.md",
     "Terzo anno/Ricerca operativa/Problemi convessi.md",
     "Excalidraw/Template RO.md",
     "Terzo anno/Ricerca operativa/Images/Funzione convessa.svg",
@@ -160,7 +164,6 @@
     "Terzo anno/Data and web mining/Images/Regressione lineare BTC 2.png",
     "Terzo anno/Data and web mining/Images/Regressione lineare BTC.png",
     "Terzo anno/Data and web mining/Images/Regressione lineare.png",
-    "Terzo anno/Calcolabilità e linguaggi formali/Linguaggi context-free.md",
     "Excalidraw/Template CLF.md",
     "Excalidraw/Drawing 2024-10-09 19.00.47.excalidraw.md",
     "Terzo anno/Reti di calcolatori/Images/aaaaaa.png.crdownload",
@@ -173,9 +176,7 @@
     "Primo anno/Primo semestre/Calcolo 1/Limiti/Funzioni continue.md",
     "Primo anno/Primo semestre/Calcolo 1/Limiti/Definizione di un limite.md",
     "Primo anno/Primo semestre/Calcolo 1/Derivate/Asintoti.md",
-    "Terzo anno/Calcolabilità e linguaggi formali/Linguaggi non regolari.md",
     "Terzo anno/Calcolabilità e linguaggi formali/Untitled",
-    "Terzo anno/Calcolabilità e linguaggi formali/Linguaggi regolari/Automi a stati finiti.md",
     "Terzo anno/Calcolabilità e linguaggi formali/Linguaggi regolari",
     "Terzo anno/Calcolabilità e linguaggi formali/Images/GNFA to regex.png.crdownload",
     "Terzo anno/Calcolabilità e linguaggi formali/Images/GNFA regex.png.crdownload",

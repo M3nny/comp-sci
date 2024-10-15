@@ -76,4 +76,63 @@ Ad esempio: $E\to E+E|E\cdot E|a$ può generare $a+a\cdot a$, ma esistono vari p
 
 L'ambiguità è un problema poichè non si sa come interpretare la stringa, in un compilatore è preferibile la derivazione che produce $E\cdot E$ per secondo in modo da valutarlo per primo ricorsivamente: $E\Rightarrow E+E\Rightarrow a+E\Rightarrow a+E\cdot E\Rightarrow a+a\cdot a$.
 
+### Forma normale di Chomsky
+Una CFG è in forma normale di **Chomsky** sse ognuna delle sue produzioni è in uno dei seguenti formati:
+1. $A\to BC$, dove $B,C\neq S$
+2. $A\to a$
+3. $S\to \epsilon$
+
+Ad esempio la seguente CFG è in forma normale di Chomsky:
+	$S\to AB|\epsilon$
+	$A\to 0$
+	$B\to CD$
+	$C\to 1$
+	$d\to 1$
+
+**Teorema**: ogni CFG può essere riscritta in forma normale di Chomsky.
+**Dimostrazione**: definiamo un algoritmo che converte una CFG in un'altra CFG equivalente che soddisfa la forma normale di Chomsky.
+1. Generiamo un nuovo start symbol $S'$ ed aggiungiamo la produzione $S'\to S$, in questo modo tale trasformazione preserva il linguaggio e assicura per costruzione che lo start symbol non occorre a destra di una produzione.
+
+2. Eliminiamo le produzioni della forma $A\to\epsilon$ (con $A\neq S$). Per tutte le regole della forma $R\to uAv$ introduciamo una nuova regola $R\to uv$ (questo va fatto per tutte le occorrenze di $A$):
+
+$$R\to uAvAw\quad\text{diventa}\quad R\to uvAw|uAvw|uvw$$
+
+3. Eliminiamo le produzioni della forma $A\to B$ (dette _unitarie_). Per tutte le regole della forma $B\to u$, introduciamo una nuova regola $A\to u$.
+
+4. Sostituiamo ogni regola della forma $A\to u_1,u_2,...,u_k$ con $k\geq 3$ con nuove regole $A\to u_1A_1$, $A_1\to u_2A_2$, ..., $A_{k-2}\to u_{k-1}u_k$.
+
+>[!Attention]
+>L'ordine dei passaggi è importante.
+>Nel secondo e terzo punto bisogna tenere traccia delle produzioni eliminate, se si dovessero ripresentare non bisogna reinserirle, altrimenti verrebbe a crearsi un ciclo.
+
+>[!Example]
+>Sia data la seguente grammatica:
+>- $S\to ASA|aB$
+>- $A\to B|S$
+>- $B\to b|\epsilon$
+>
+>La sua conversione in forma normale di Chomsky è la seguente:
+>- $S\to AA_1|UB|a|SA|AS$
+>- $A\to b|AA_1|UB|a|SA|AS$
+>- $B\to b$
+>- $S'\to AA_1|UB|a|SA|AS$
+>- $A_1\to SA$
+>- $U\to a$
+
+---
+## Automi a pila
+Gli **automi a pila** o **PushDown Automata (PDA)** possono essere descritti informalmente come un [[Automi a stati finiti non deterministici#Definizione di NFA|NFA]] + Stack, ovvero legge l'input sequenzialmente come un NFA, ha uno stato interno che può cambiare, e ha a disposizione uno stack _infinito_ dove può leggere e scrivere.
+
+Consideriamo il linguaggio [[Linguaggi non regolari|non regolare]] $\{0^n1^n|n\geq 0\}$, il PDA ogni volta che leggerà uno $0$ eseguirà il push di uno $0$ sullo stack, mentre quando arriverà un $1$ cambierà stato e continuerà a fare pop finchè arrivano $1$, alla fine dell'input se lo stack è vuoto il linguaggio sarà riconosciuto.
+Può rifiutare in nel caso in cui l'input è finito e lo stack non è vuoto, quando arriva uno $0$ dopo un $1$.
+>NFA+Stack $\neq$ DFA+Stack anche se DFA e NFA sono convertibili tra loro.
+
+### Definizione di PDA
+Un PDA è una sestupla $(Q,\Sigma, \Gamma, \delta, q_0, F)$, dove:
+- $Q$ è un insieme finito di stati
+- $\Sigma$ è l'alfabeto
+- $\Gamma$ è l'alfabeto dello stack (si può leggere un carattere e eseguire il push di qualcosa di diverso)
+- $\delta:Q\times\Sigma_\epsilon\times\Gamma_\epsilon\to\mathscr{P}(Q\times\Gamma)$ è la funzione di transizione
+	dove $\Sigma_\epsilon=\Sigma\cup\{\epsilon\}$ e $\Gamma_\epsilon=\Gamma\cup\{\epsilon\}$.
+
 
