@@ -132,7 +132,43 @@ Un PDA è una sestupla $(Q,\Sigma, \Gamma, \delta, q_0, F)$, dove:
 - $Q$ è un insieme finito di stati
 - $\Sigma$ è l'alfabeto
 - $\Gamma$ è l'alfabeto dello stack (si può leggere un carattere e eseguire il push di qualcosa di diverso)
-- $\delta:Q\times\Sigma_\epsilon\times\Gamma_\epsilon\to\mathscr{P}(Q\times\Gamma)$ è la funzione di transizione
+- $\delta:Q\times\Sigma_\epsilon\times\Gamma_\epsilon\to\mathscr{P}(Q\times\Gamma_\epsilon)$ è la funzione di transizione
 	dove $\Sigma_\epsilon=\Sigma\cup\{\epsilon\}$ e $\Gamma_\epsilon=\Gamma\cup\{\epsilon\}$.
+- $q_0\in Q$ è lo stato iniziale
+- $F\subseteq Q$ è l'insieme degli stati accettanti
 
+Sia $M$ un PDA, diciamo che $M$ accetta la stringa $w$ sse $w=w_1w_2...w_m$ dove $\forall i\in[1,m]:w_i\in\Sigma_\epsilon$ ed esistono una sequenza di stati $r_0,r_1,...,r_m\in Q$ e una sequenza di stack $s_0,s_1,...,s_m\in\Gamma^*$ tali che valgono le seguenti condizioni:
+1. $r_0=q_0$ e $s_0=\epsilon$
+2. Per $i=0,...,m-1$ abbiamo $(r_{i+1},b)\in\delta(r_i,w_{i+1},a)$ dove $s_i=at$ e $s_{i+1}=bt$ per qualche $a,b\in\Gamma_\epsilon$ e $t\in\Gamma^*$
+3. $r_m\in F$
+
+>Il secondo punto dice che si è nello stato $r_i$, si legge $w_{i+1}$ e si va in $r_{i+1}$.
+>$a$ è la head dello stack, $b$ è il nuovo simbolo inserito nelle head, mentre $t$ indica il resto dello stack.
+>$a$ e $b$ possono essere caratteri da mettere nello stack, oppure $\epsilon$.
+
+Nel secondo punto possono avvenire i seguenti casi:
+- $a\neq\epsilon\quad b\neq\epsilon\implies\text{pop e push (assieme)}$ quindi uno swap di head
+- $a=\epsilon\quad b\neq\epsilon\implies\text{push}$ perchè $a=\epsilon$ quindi $s_i=t$
+- $a\neq\epsilon\quad b=\epsilon\implies\text{pop}$
+- $a=\epsilon\quad b=\epsilon\implies$ lo stack non viene alterato
+
+La **notazione grafica** di un PDA è la seguente:
+![[Notazione PDA.svg|300]]
+L'automa passa da $q_i$ a $q_j$ leggendo l'input $w$ quando $a$ è in cima allo stack;
+$b$ è la nuova cima dello stack.
+
+>[!Tip] Accettazione per stack vuoto
+>Molti PDA vogliono accettare solo quando lo stack è vuoto, ma ciò non è richiesto dalla definizione formale.
+
+Seguono alcuni esempi di PDA.
+>[!Example]
+>$$\{0^n1^n|n\geq 0\}$$
+>![[PDA 1.png|300]]
+>
+>---
+>
+>$$\{ww^R|w\in\{0,1\}\}\text{ dove }w^R\text{ è }w\text{ letta da destra a sinistra}$$
+>![[PDA 2.png|300]]
+>
+>È da notare come in entrambi gli esempi venga sfruttato il non determinismo, inoltre per capire quando lo stack è vuoto viene utilizzato il carattere $\$$ il quale viene pushato ad inizio computazione.
 

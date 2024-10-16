@@ -4,15 +4,19 @@
     "type": "split",
     "children": [
       {
-        "id": "627f55329618742c",
+        "id": "cdd8db5d49c94490",
         "type": "tabs",
         "children": [
           {
-            "id": "1fb1a212c5df430c",
+            "id": "8b715d45bd82e6b8",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {}
+              "type": "markdown",
+              "state": {
+                "file": "Terzo anno/Calcolabilità e linguaggi formali/Linguaggi context-free.md",
+                "mode": "source",
+                "source": false
+              }
             }
           }
         ]
@@ -81,6 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "Terzo anno/Calcolabilità e linguaggi formali/Linguaggi context-free.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -97,6 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "Terzo anno/Calcolabilità e linguaggi formali/Linguaggi context-free.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -118,7 +124,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "Terzo anno/Calcolabilità e linguaggi formali/Linguaggi context-free.md"
+              }
             }
           }
         ]
@@ -137,9 +145,21 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "1fb1a212c5df430c",
+  "active": "8b715d45bd82e6b8",
   "lastOpenFiles": [
+    "Terzo anno/Calcolabilità e linguaggi formali/Linguaggi non regolari.md",
+    "Terzo anno/Calcolabilità e linguaggi formali/Images/PDA 2.png",
     "Terzo anno/Calcolabilità e linguaggi formali/Linguaggi context-free.md",
+    "Terzo anno/Calcolabilità e linguaggi formali/Images/PDA 2.png",
+    "Pasted image 20241016201937.png",
+    "Pasted image 20241016201455.png",
+    "Terzo anno/Calcolabilità e linguaggi formali/Images/PDA 1.png",
+    "Terzo anno/Calcolabilità e linguaggi formali/Images/PDA 1.png.crdownload",
+    "Pasted image 20241016201154.png",
+    "Pasted image 20241016201013.png",
+    "Excalidraw/Template CLF.md",
+    "Terzo anno/Calcolabilità e linguaggi formali/Images/Notazione PDA.svg",
+    "Excalidraw/Template DWM.md",
     "Terzo anno/Calcolabilità e linguaggi formali/Linguaggi regolari/Espressioni regolari.md",
     "Terzo anno/Calcolabilità e linguaggi formali/Linguaggi regolari/Automi a stati finiti non deterministici.md",
     "Primo anno/Secondo semestre/Architettura degli elaboratori mod. 2/Assembly/Funzioni e stack.md",
@@ -151,31 +171,20 @@
     "Terzo anno/Reti di calcolatori/Images/Sliding window swin rwin.png",
     "Terzo anno/Reti di calcolatori/Livello datalink.md",
     "Terzo anno/Reti di calcolatori/Livello di rete.md",
-    "Terzo anno/Reti di calcolatori/Images/Three way handshake.png",
-    "Terzo anno/Data and web mining/Images/Kernel trick.png",
     "Terzo anno/Data and web mining/Decision trees.md",
     "Terzo anno/Data and web mining/K-nearest neighbors.md",
     "Terzo anno/Data and web mining/Regressione lineare.md",
     "Terzo anno/Ricerca operativa/Programmazione matematica.md",
     "Terzo anno/Ricerca operativa/Definizioni generali.md",
-    "Terzo anno/Data and web mining/Images/SVM.png",
-    "Terzo anno/Data and web mining/Images/Regressione logistica.png",
-    "Terzo anno/Data and web mining/Images/Regressione lineare BTC 3.png",
-    "Terzo anno/Data and web mining/Images/Regressione lineare BTC 2.png",
-    "Terzo anno/Data and web mining/Images/Regressione lineare BTC.png",
-    "Terzo anno/Data and web mining/Images/Regressione lineare.png",
-    "Excalidraw/Template CLF.md",
     "Excalidraw/Drawing 2024-10-09 19.00.47.excalidraw.md",
     "Terzo anno/Reti di calcolatori/Images/aaaaaa.png.crdownload",
     "Secondo anno/Algoritmi e strutture dati/Mod. 1/Cammini minimi/Introduzione.md",
-    "Excalidraw/Template DWM.md",
     "Terzo anno/Reti di calcolatori/Livello fisico.md",
     "Secondo anno/Algoritmi e strutture dati/Mod. 1/Grafi/Tipologie.md",
     "Primo anno/Secondo semestre/Calcolo 2/Funzioni a più variabili reali/Limiti e continuità.md",
     "Primo anno/Primo semestre/Calcolo 1/Insiemistica/Elementi di topologia di R.md",
     "Primo anno/Primo semestre/Calcolo 1/Limiti/Funzioni continue.md",
     "Primo anno/Primo semestre/Calcolo 1/Limiti/Definizione di un limite.md",
-    "Primo anno/Primo semestre/Calcolo 1/Derivate/Asintoti.md",
     "Terzo anno/Calcolabilità e linguaggi formali/Untitled",
     "Terzo anno/Calcolabilità e linguaggi formali/Linguaggi regolari",
     "Terzo anno/Calcolabilità e linguaggi formali/Images/GNFA to regex.png.crdownload",
@@ -184,7 +193,6 @@
     "Terzo anno/Calcolabilità e linguaggi formali/Images/Concatenazione NFA.png.crdownload",
     "Terzo anno/Calcolabilità e linguaggi formali/Images/NFA 1 terzultimo.png.crdownload",
     "Terzo anno/Calcolabilità e linguaggi formali/Images/DFA 1 terzultimo.png.crdownload",
-    "Terzo anno/Data and web mining/Images",
     "Untitled.canvas"
   ]
 }
