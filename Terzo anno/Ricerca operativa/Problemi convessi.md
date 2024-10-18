@@ -36,3 +36,54 @@ Nel caso la disuguaglianza precedente fosse stata di maggioranza ($\geq$), si sa
 
 >[!Tip] Convessità e concavità rispetto ad un insieme convesso
 >Le funzioni convesse/concave lo sono solo rispetto ad un insieme convesso, questo perchè l'unico modo per essere sicuri che $\forall\alpha\in[0,1]$ i punti del segmento siano dentro a $C$ è avere un insieme convesso.
+
+**Proposizione**
+Data la funzione $f:\mathbb{R}^n\to\mathbb{R}$, e l'insieme $C\subseteq\mathbb{R}^n$ convesso, se $f(x)$ è convessa su $C$ allora $-f(x)$ è concava su $C$.
+**Dimostrazione**
+Dalla convessità di $f(x)$ segue che:
+$$f[\alpha x+(1-\alpha)y]\leq \alpha f(x)+(1-\alpha)f(y),\quad\forall x,y\in C,\quad \forall\alpha\in[0,1]$$
+da cui moltiplicando per $-1$ si ottiene:
+$$-f[\alpha x+(1-\alpha)y]\geq \alpha[-f(x)]+(1-\alpha)[-f(y)],\quad x,y\in C,\quad\forall\alpha\in[0,1]$$
+
+Quindi se $x^*$ è una soluzione locale/globale di $\min {f(x)}_{x\in C}$ dove $f$ è convessa su $C$, allora analogamente $x^*$ è soluzione locale/globale di $\max -f(x)_{x\in C}$ dove $-f$ è concava su $C$.
+
+**Proposizione**
+Data la funzione $f:\mathbb{R}^n\to\mathbb{R}$ affine, segue che $f(x)$ è concava e convessa su $\mathbb{R}^n$.
+**Dimostrazione**
+Sia ha dalla definizione di [[Definizioni generali#Funzioni lineari e affini|funzione affine]] che $f(x)=f_L(x)+\overline{c}$, dove $f_L(x)$ è una funzione lineare, mentre $\overline{c}\in\mathbb{R}$, per cui prendendo una coppia qualsiasi di punti $x,y\in\mathbb{R}^n$ ed uno scalare $\alpha\in[0,1]$, si avrà:
+$$\begin{flalign}
+f[\alpha x+(1-\alpha)y]&= f_L[\alpha x+(1-\alpha)y]+\overline{c} = \alpha f_L(x)+(1-\alpha)f_L(y)+\overline{c}\\
+&=\alpha f_L(x)+(1-\alpha)f(y)+\alpha\overline{c}+(1-\alpha)\overline{c}\\
+&=\alpha[f_L(x)+\overline{c}]+(1-\alpha)[f_L(y)+\overline{c}]\\
+&=\alpha f(x)+(1-\alpha)f(y)
+\end{flalign}$$
+
+Pertanto l'operatore di uguale può essere sostituito con le condizioni $\leq$ e $\geq$, verificando che $f$ è al contempo convessa e concava su $\mathbb{R}^n$.
+
+### Insieme di livello
+Nei problemi di ottimizzazione si ha un problema del tipo $\min f(x)$, con dei vincoli $A:\begin{cases}g_1(x)\leq b_1\\\vdots\\g_m(x)\leq b_m\end{cases}$, l'insieme dei vincoli è un'**intersezione** in quanto devono convivere tutti assieme, se gli insiemi singolarmente sono convessi allora anche la loro intersezione $A$ sarà convessa.
+
+**Proposizione**
+Data la funzione $f(x)$ con $f:\mathbb{R}^n\to\mathbb{R}$, sia $f(x)$ convessa su $\mathbb{R}^n$, allora l'**insieme di livello** (eventualmente vuoto) $\mathcal{L}_\gamma$ definito come:
+$$\mathcal{L}_\gamma = \{x\in\mathbb{R}^n: f(x)\leq \gamma\}$$
+è **convesso** per ogni $\gamma\in\mathbb{R}$.
+
+Segue la rappresentazione grafica di un insieme di livello:
+![[Insieme di livello.svg|700]]
+>Nel caso $\gamma$ fosse un valore troppo basso, $\mathcal{L}_\gamma$ potrebbe essere vuoto.
+
+**Dimostrazione**
+Fissato $\gamma\in\mathbb{R}$ avremmo tre casi possibili:
+1. $\mathcal{L}_\gamma=\emptyset$, e quindi è convesso
+2. $|\mathcal{L}_\gamma|=1$, e quindi è un singleton, che per definizione è un insieme convesso
+3. $|\mathcal{L}_\gamma|=\infty$, questo perchè non potrà mai contenere solo due punti dato che operiamo su $\mathbb{R}$, e quindi conterrà tutti i punti del segmento $[y,z]$
+
+Nell'ultimo caso siano $y,z$ due punti distinti di $\mathcal{L}_\gamma$, si ha pertanto che $f(y)\leq \gamma$ e $f(z)\leq \gamma$, inoltre considerando un punto $w$ intermedio al segmento $[y,z]$ si ha:
+$$w=\alpha y+(1-\alpha)z\quad \alpha\in[0,1]$$
+
+
+Per la _convessità_ di $f(x)$ su $\mathbb{R}^n$ si ha:
+$$f(w)=f[\alpha y+(1-\alpha)z]\leq \alpha \underbrace{f(y)}_{\leq\gamma}+(1-\alpha)\underbrace{f(z)}_{\leq\gamma}\underbrace{\leq}_{\text{maggiorazione: }\alpha\in[0,1]} \alpha\gamma +(1-\alpha)\gamma = \gamma$$
+
+Si ha quindi che $w\in\mathcal{L}_\gamma$ per ogni $y,z\in\mathcal{L}_\gamma$, di conseguenza $\mathcal{L}_\gamma$ è convesso.
+
