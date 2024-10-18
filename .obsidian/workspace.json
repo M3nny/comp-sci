@@ -4,21 +4,17 @@
     "type": "split",
     "children": [
       {
-        "id": "b79c65cd2446018f",
+        "id": "6c977acb732088c9",
         "type": "tabs",
         "children": [
           {
-            "id": "aee9d5e817290c93",
+            "id": "caf52e4090faeeba",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Terzo anno/Data and web mining/Ensemble methods.md",
-                "mode": "source",
-                "source": false
-              },
+              "type": "empty",
+              "state": {},
               "icon": "lucide-file",
-              "title": "Ensemble methods"
+              "title": "New tab"
             }
           }
         ]
@@ -161,13 +157,18 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "a1163d9af64d6878",
+  "active": "caf52e4090faeeba",
   "lastOpenFiles": [
-    "Terzo anno/Data and web mining/Images/Overfitting vs underfitting.png",
+    "Secondo anno/Algoritmi e strutture dati/Mod. 1/Teoria della NP completezza.md",
+    "Terzo anno/Reti di calcolatori/Sicurezza/Introduzione.md",
+    "Terzo anno/Reti di calcolatori/Images/Model components.png",
     "Calcolo 1/Images",
     "Calcolo 1",
-    "Terzo anno/Data and web mining/Regressione lineare.md",
+    "Terzo anno/Reti di calcolatori/Sicurezza",
+    "Terzo anno/Reti di calcolatori/Livelli TCP",
     "Terzo anno/Data and web mining/Ensemble methods.md",
+    "Terzo anno/Data and web mining/Images/Overfitting vs underfitting.png",
+    "Terzo anno/Data and web mining/Regressione lineare.md",
     "Terzo anno/Data and web mining/Decision trees.md",
     "Terzo anno/Data and web mining/Images/K-fold validation.png",
     "Terzo anno/Ricerca operativa/Problemi convessi.md",
@@ -184,31 +185,26 @@
     "Terzo anno/Calcolabilità e linguaggi formali/Images/PDA 1.png",
     "Terzo anno/Calcolabilità e linguaggi formali/Images/PDA 1.png.crdownload",
     "Pasted image 20241016201154.png",
-    "Pasted image 20241016201013.png",
     "Excalidraw/Template CLF.md",
-    "Terzo anno/Calcolabilità e linguaggi formali/Images/Notazione PDA.svg",
     "Excalidraw/Template DWM.md",
     "Terzo anno/Calcolabilità e linguaggi formali/Linguaggi regolari/Espressioni regolari.md",
     "Terzo anno/Calcolabilità e linguaggi formali/Linguaggi regolari/Automi a stati finiti non deterministici.md",
     "Primo anno/Secondo semestre/Architettura degli elaboratori mod. 2/Assembly/Funzioni e stack.md",
-    "Terzo anno/Reti di calcolatori/Livello applicativo.md",
-    "Terzo anno/Reti di calcolatori/Livello di trasporto.md",
-    "Terzo anno/Reti di calcolatori/Livello datalink.md",
-    "Terzo anno/Reti di calcolatori/Livello di rete.md",
+    "Terzo anno/Reti di calcolatori/Livelli TCP/Livello applicativo.md",
+    "Terzo anno/Reti di calcolatori/Livelli TCP/Livello di trasporto.md",
+    "Terzo anno/Reti di calcolatori/Livelli TCP/Livello datalink.md",
+    "Terzo anno/Reti di calcolatori/Livelli TCP/Livello di rete.md",
     "Terzo anno/Data and web mining/K-nearest neighbors.md",
     "Excalidraw/Drawing 2024-10-09 19.00.47.excalidraw.md",
     "Terzo anno/Reti di calcolatori/Images/aaaaaa.png.crdownload",
     "Secondo anno/Algoritmi e strutture dati/Mod. 1/Cammini minimi/Introduzione.md",
-    "Terzo anno/Reti di calcolatori/Livello fisico.md",
+    "Terzo anno/Reti di calcolatori/Livelli TCP/Livello fisico.md",
     "Secondo anno/Algoritmi e strutture dati/Mod. 1/Grafi/Tipologie.md",
     "Primo anno/Secondo semestre/Calcolo 2/Funzioni a più variabili reali/Limiti e continuità.md",
-    "Primo anno/Primo semestre/Calcolo 1/Insiemistica/Elementi di topologia di R.md",
     "Terzo anno/Calcolabilità e linguaggi formali/Untitled",
     "Terzo anno/Calcolabilità e linguaggi formali/Linguaggi regolari",
     "Terzo anno/Calcolabilità e linguaggi formali/Images/GNFA to regex.png.crdownload",
     "Terzo anno/Calcolabilità e linguaggi formali/Images/GNFA regex.png.crdownload",
-    "Terzo anno/Calcolabilità e linguaggi formali/Images/Star NFA.png.crdownload",
-    "Terzo anno/Calcolabilità e linguaggi formali/Images/Concatenazione NFA.png.crdownload",
     "Untitled.canvas"
   ]
 }
