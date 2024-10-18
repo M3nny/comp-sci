@@ -74,3 +74,17 @@ Un'altra opzione di fronte a problemi non linearmente separabili è quella di ap
 >[!Attention]
 >Le support vector machines sono un buon modello, ma il problema diventa quasi **intrattabile** con dataset grandi a causa della loro scarsa scalabilità in termini di performance.
 
+---
+## K-fold cross validation
+Abbiamo visto precedentemente l'importanza del [[Decision trees#Validation set|validation set]] per capire gli iperparametri migliori di un modello, tuttavia alcune istanze particolari nel training o validation set potrebbero agevolare oppure rendere più difficile l'apprendimento, portando a risultati poco affidabili in entrambi i casi.
+
+Utilizziamo la **k-fold cross validation** per partizionare ulteriormente il dataset ed eseguire $k$ esperimenti (uno per partizione).
+![[K-fold validation.png]]
+
+>Bisogna sostituire il testing set (vedi immagine) con il validation set nel caso lo si usasse.
+
+L'accuracy infine è data dalla media delle performance dei validation set (vedi [cross_validate](https://scikit-learn.org/stable/modules/generated/sklearn.model_selection.cross_validate.html))
+
+In generale i risultati sono biased in base alla scelta del validation set, ciò si nota molto con dataset non bilanciati, esistono due modi per scegliere le istanze di un **fold**:
+- **Random**: prendendo $x$ istanze casuali
+- **Stratified**: vengono prese $x$ istanze preservando la frequenza delle varie classi
