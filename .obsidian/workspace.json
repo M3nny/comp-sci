@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "6c977acb732088c9",
+        "id": "3b78829c28a2429b",
         "type": "tabs",
         "children": [
           {
-            "id": "caf52e4090faeeba",
+            "id": "d777ffc933ec3dce",
             "type": "leaf",
             "state": {
               "type": "empty",
@@ -157,13 +157,17 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "caf52e4090faeeba",
+  "active": "d777ffc933ec3dce",
   "lastOpenFiles": [
-    "Secondo anno/Algoritmi e strutture dati/Mod. 1/Teoria della NP completezza.md",
-    "Terzo anno/Reti di calcolatori/Sicurezza/Introduzione.md",
-    "Terzo anno/Reti di calcolatori/Images/Model components.png",
+    "Terzo anno/Reti di calcolatori/Sicurezza/HMAC.md",
+    "Terzo anno/Reti di calcolatori/Images/Comunicazione con chiave simmetrica.png",
+    "Terzo anno/Reti di calcolatori/Images/Challenge HMAC.png",
     "Calcolo 1/Images",
     "Calcolo 1",
+    "Untitled.md",
+    "Terzo anno/Reti di calcolatori/Sicurezza/Introduzione.md",
+    "Secondo anno/Algoritmi e strutture dati/Mod. 1/Teoria della NP completezza.md",
+    "Terzo anno/Reti di calcolatori/Images/Model components.png",
     "Terzo anno/Reti di calcolatori/Sicurezza",
     "Terzo anno/Reti di calcolatori/Livelli TCP",
     "Terzo anno/Data and web mining/Ensemble methods.md",
@@ -182,9 +186,7 @@
     "Terzo anno/Calcolabilità e linguaggi formali/Images/PDA 2.png",
     "Pasted image 20241016201937.png",
     "Pasted image 20241016201455.png",
-    "Terzo anno/Calcolabilità e linguaggi formali/Images/PDA 1.png",
     "Terzo anno/Calcolabilità e linguaggi formali/Images/PDA 1.png.crdownload",
-    "Pasted image 20241016201154.png",
     "Excalidraw/Template CLF.md",
     "Excalidraw/Template DWM.md",
     "Terzo anno/Calcolabilità e linguaggi formali/Linguaggi regolari/Espressioni regolari.md",
@@ -198,9 +200,6 @@
     "Excalidraw/Drawing 2024-10-09 19.00.47.excalidraw.md",
     "Terzo anno/Reti di calcolatori/Images/aaaaaa.png.crdownload",
     "Secondo anno/Algoritmi e strutture dati/Mod. 1/Cammini minimi/Introduzione.md",
-    "Terzo anno/Reti di calcolatori/Livelli TCP/Livello fisico.md",
-    "Secondo anno/Algoritmi e strutture dati/Mod. 1/Grafi/Tipologie.md",
-    "Primo anno/Secondo semestre/Calcolo 2/Funzioni a più variabili reali/Limiti e continuità.md",
     "Terzo anno/Calcolabilità e linguaggi formali/Untitled",
     "Terzo anno/Calcolabilità e linguaggi formali/Linguaggi regolari",
     "Terzo anno/Calcolabilità e linguaggi formali/Images/GNFA to regex.png.crdownload",
