@@ -11,10 +11,14 @@
             "id": "d777ffc933ec3dce",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "Terzo anno/Ricerca operativa/Problemi convessi.md",
+                "mode": "source",
+                "source": false
+              },
               "icon": "lucide-file",
-              "title": "New tab"
+              "title": "Problemi convessi"
             }
           }
         ]
@@ -157,13 +161,17 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "d777ffc933ec3dce",
+  "active": "a1163d9af64d6878",
   "lastOpenFiles": [
+    "Terzo anno/Ricerca operativa/Images/Differenziabilità e funzioni convesse.png",
+    "Calcolo 1/Images",
+    "Calcolo 1",
+    "Excalidraw/Template RO.md",
+    "Terzo anno/Ricerca operativa/Images/Intorno nell'insieme convesso.svg",
+    "Terzo anno/Ricerca operativa/Problemi convessi.md",
     "Terzo anno/Reti di calcolatori/Sicurezza/HMAC.md",
     "Terzo anno/Reti di calcolatori/Images/Comunicazione con chiave simmetrica.png",
     "Terzo anno/Reti di calcolatori/Images/Challenge HMAC.png",
-    "Calcolo 1/Images",
-    "Calcolo 1",
     "Untitled.md",
     "Terzo anno/Reti di calcolatori/Sicurezza/Introduzione.md",
     "Secondo anno/Algoritmi e strutture dati/Mod. 1/Teoria della NP completezza.md",
@@ -175,8 +183,6 @@
     "Terzo anno/Data and web mining/Regressione lineare.md",
     "Terzo anno/Data and web mining/Decision trees.md",
     "Terzo anno/Data and web mining/Images/K-fold validation.png",
-    "Terzo anno/Ricerca operativa/Problemi convessi.md",
-    "Excalidraw/Template RO.md",
     "Terzo anno/Ricerca operativa/Images/Insieme di livello.svg",
     "Terzo anno/Ricerca operativa/Programmazione matematica.md",
     "Terzo anno/Ricerca operativa/Definizioni generali.md",
@@ -185,7 +191,6 @@
     "Terzo anno/Calcolabilità e linguaggi formali/Images/PDA 2.png",
     "Terzo anno/Calcolabilità e linguaggi formali/Images/PDA 2.png",
     "Pasted image 20241016201937.png",
-    "Pasted image 20241016201455.png",
     "Terzo anno/Calcolabilità e linguaggi formali/Images/PDA 1.png.crdownload",
     "Excalidraw/Template CLF.md",
     "Excalidraw/Template DWM.md",

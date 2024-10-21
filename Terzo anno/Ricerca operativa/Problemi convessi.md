@@ -87,3 +87,56 @@ $$f(w)=f[\alpha y+(1-\alpha)z]\leq \alpha \underbrace{f(y)}_{\leq\gamma}+(1-\alp
 
 Si ha quindi che $w\in\mathcal{L}_\gamma$ per ogni $y,z\in\mathcal{L}_\gamma$, di conseguenza $\mathcal{L}_\gamma$ è convesso.
 
+## Minimi locali anche globali in funzioni convesse
+**Proposizione 1**
+Data la funzione $f(x)$ con $f:\mathbb{R}^n\to\mathbb{R}$ e l'**insieme convesso** $C\subseteq\mathbb{R}^n$.
+Sia $f(x)$ **convessa** su $C$, allora ogni punto di **minimo locale** $x^*\in C$ per il problema $\min\limits_{x\in C} f(x)$ è anche un punto di **minimo globale**.
+
+Grazie a questo risultato, non dobbiamo più preoccuparci della soluzione fornita dal solutore, in quanto qualsiasi soluzione di qualsiasi solutore per questo problema sarà la soluzione migliore, nonchè un minimo globale.
+
+**Dimostrazione**
+Se $C=\emptyset$ non ammette soluzioni, se $|C|=1$ tale punto sarà la migliore soluzione, se invece $|C|=\infty$, sia $x^*$ un punto di minimo locale della $f(x)$ su $C$ e sia $y\in C$ un qualsiasi altro punto ammissibile:
+![[Intorno nell'insieme convesso.svg]]
+
+Introduciamo il segmento chiuso $[x^*, y]$ (contenuto in $C$ per via della convessità).
+Essendo $x^*$ un minimo locale, esisterà un intorno $I(x^*, \rho)$ con $\rho>0$ tale che:
+$$f(x^*)\leq f(x)\quad\forall x\in I(x^*,\rho)\cap [x^*,y]$$
+
+Poichè deve esistere un punto $w\in[x^*,y]$, dentro all'intorno $I(x^*,\rho)$, dove $w\neq x^*$ esisterà un valore $\alpha$ per cui $w$ possa essere scritto nel seguente modo:
+$$w=\alpha x^*+(1-\alpha)y\quad \alpha\in[0,1[$$
+
+per la concavità di $f(x)$ su $C$ si ha:
+$$f(x)=f[\alpha x^*+(1-\alpha)y]\leq \alpha f(x^*)+(1-\alpha)f(y)$$
+$$f(x^*)\leq \alpha f(x^*)+(1-\alpha)f(y)\quad\implies\quad (1-\alpha)f(x^*)\leq (1-\alpha)f(y)\quad\forall y\in C$$
+
+Essendo che $w\neq x^*$ e che quindi $\alpha\in[0,1[$, possiamo semplificare:
+$$\cancel{(1-\alpha)}f(x^*)\leq \cancel{(1-\alpha)}f(y)\quad\implies\quad f(x^*)\leq f(y)\quad \forall y\in C$$
+
+ovvero $x^*$ è anche un **minimo globale** di $f(x)$ su $C$.
+
+**Proposizione 2**
+Data la funzione $f(x)$ con $f:\mathbb{R}^n\to\mathbb{R}$, e l'insieme convesso $C\subseteq\mathbb{R}^n$, e sia $f(x)$ convessa su $C$, allora l'insieme delle soluzioni per il problema $\min\limits_{x\in C} f(x)$ formano un insieme convesso.
+
+**Dimostrazione**
+Se $C=\emptyset$ oppure $|C|=1$, allora per definizione è un insieme convesso, se invece $|C|=\infty$, siano $x^*$ e $y^*$ due punti di minimo locale della $f(x)$ su $C$, per la proposizione precedente saranno quindi anche minimi globali, pertanto dovrà risultare:
+$$f(x^*)=f(y^*)=f_\min$$
+
+ovvero $f(x^*)$ e $f(y^*)$ sono uguali, e identifichiamo tale valore (minimo globale) come $f_\min$.
+
+Prendiamo un punto $w$ appartenente al segmento $[x^*,y^*]$, esiste un $\alpha\in[0,1]$ tale che $w=\alpha x^*+(1-\alpha)y^*$, per cui dalla convessità di $f(x)$ otteniamo:
+$$\begin{flalign}
+f(w)&=f[\alpha x^*+(1-\alpha)y^*]\leq \alpha f(x^*)+(1-\alpha)f(y^*)\\
+&=\alpha f_\min +(1-\alpha) f_\min = f_\min
+\end{flalign}$$
+
+### Differenziabilità e funzioni convesse
+Dato l'insieme convesso non vuoto $C\subseteq\mathbb{R}^n$ e sia $f:\mathbb{R}^n\to\mathbb{R}$ con $f\in \mathcal{C}^1(\mathbb{R}^n)$, allora $f(x)$ è _convessa_ su $C$ sse $\forall x,y,\in C$ è soddisfatta una qualsiasi delle seguenti condizioni:
+1. $f(y)\geq f(x)+\nabla f(x)^T (y-x)$
+2. $[\nabla f(y) -\nabla f(x)]^T(y-x)\geq 0$ (riscrittura di $1.$)
+
+La rappresentazione geometrica è la seguente:
+![[Differenziabilità e funzioni convesse.png]]
+
+Nel caso $f\in \mathcal{C}^2(\mathbb{R}^n)$ ci si può avvalere anche della seguente condizione:
+3. $(y-x)^T \nabla^2 f(x)(y-x)\geq 0$
+
