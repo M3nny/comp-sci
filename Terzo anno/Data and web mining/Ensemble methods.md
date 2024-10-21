@@ -56,6 +56,9 @@ Se $x_j\in D$ è **erroneamente** classificata, allora il suo peso è aggiornato
 $$w_j=w_je^{\alpha i}$$
 Ciò diminuisce il peso delle istanze classificate correttamente e aumenta il peso delle istanze classificate erroneamente, così da includere nel sampling le istanze con pesi più alti per provare a correggere le predizioni.
 
+>[!Attention]
+>Il boosting è prone all'**overfitting** in quanto si concentra sulle istanze mal-classificate, includendo outliers e punti di rumore.
+
 L'algoritmo in pseudocodice è:
 ```
 Inizializza il peso w_j = 1/n per ogni istanza x_j
@@ -74,7 +77,7 @@ return E
 ```
 >Viene utilizzato $0.5$ immaginando di dover classificare $2$ classi diverse, quindi la probabilità di eseguire una predizione corretta è $0.5$.
 
-## Bias, varianza e rumore
+### Bias, varianza e rumore
 L'errore di un modello può essere decomposto in:
 - **Bias**: indica l'espressività del modello
 - **Varianza**: indica il cambiamento delle predizioni in base al training set scelto
@@ -88,3 +91,68 @@ $$Error(M)=Bias^2+Variance+Noise$$
 Più un modello è complesso (e quindi espressivo), più è a rischio di varianza, ma avrà un basso bias, al contrario i modelli poco espressivi come i _weak learners_ hanno una bassa varianza ma un alto bias.
 
 ![[Overfitting vs underfitting.png]]
+
+---
+## Random forest
+Abbiamo visto che gli [[Decision trees|alberi decisionali]] molte foglie sono proni all'overfitting in quanto sono "troppo" espressivi (basso bias) e le predizioni cambiano tanto in base al training set, quindi hanno **alta varianza**.
+
+Per diminuire la varianza possiamo usare l'algoritmo di **bagging**, tuttavia quest'ultimo è efficace quando i modelli sono indipendenti tra loro, in questo ci aiuta il **bootstrap sampling** per creare training set differenti, però alla fine i training set conterranno comunque istanze in comune risultando in modelli più o meno simili.
+
+Introduciamo il concetto di **random input selection** all'algoritmo di creazione di nodi nuovi per gli alberi decisionali per creare modelli altamente espressivi (alberi totalmente cresciuti) e differenti (poco correlati) tra loro.
+
+Al momento della creazione di un nodo non vengono posti dei vincoli su tutte le features, bensì solo in alcune scelte a caso:
+```
+for i = 1 to k:
+	prendi un bootstrap sample D_i dal dataset D
+	allena un albero completamente cresciuto M_i su D_i
+		in ogni split seleziona solo F << d features casuali
+
+RF = unione di tutti gli M_i alberi
+return RF
+```
+>$<<$ vuol dire "molto meno di".
+>Solitamente $F=\sqrt{d}$ oppure $F=\log_2(d)$.
+
+Come gli altri metodi di ensemble la predizione alla fine sarà data per votazione usando la moda o media in base a task di classificazione/regressione.
+
+>[!Tip] Performance delle random forest
+>Gli alberi possono essere costruiti in parallelo aumentando la performance, inoltre anche il singolo albero è costruito più velocemente in quanto non si vanno a considerare tutte le features ad ogni split.
+
+### Random forest per stimare la similarità
+Abbiamo visto come i [[K-nearest neighbors]] stimano la similarità tra istanze utilizzando le features opportunamente scalate, possiamo utilizzare anche le random forest come stima di similarità senza dover scalare le features basandoci sulle label delle varie istanze.
+
+Due istanze sono simili se seguono in percorso simile in un albero, si potrebbe quindi dire che sono simili se ricadono nella stessa foglia, per cui possiamo contare in quanti alberi della random forest le istanze in questione cadono nella stessa foglia.
+
+La **similarità** è quindi data dalla frazione di foglie uguali raggiunte dalle istanze in questione durante l'attraversamento dell'albero.
+>Esistono anche altre misure (e.g. potrebbero differenziarsi solo nell'ultimo split e sarebbero abbastanza simili comunque)
+
+Questo metodo per stimare la similarità può essere applicato a qualsiasi foresta, quindi anche a bagging e boosting, però le random forest sono preferite perchè:
+- È meglio del boosting perchè non pesa gli alberi
+- È meglio del bagging perchè i suoi alberi sono più diversi
+
+Vediamo di seguito la differenza tra distanza euclidea e distanza utilizzando la random forest:
+![[Random forest distance.png]]
+
+>$distance = 1-similarity$.
+
+Il precedente non è un decision boundary, bensì rappresenta la distanza dall'origine che è posta al centro, la random forest ha imparato che quello che sta nella sezione di sinistra è meno distante da quello che sta nella sezione di destra.
+
+### Random forest per trovare gli outliers
+È difficile dare una definizione precisa di outlier, possiamo però definirli come un punto distante dalla distribuzione del nostro fenomeno, ciò può accadere per diversi motivi.
+
+Utilizzando la similarità vista precedentemente possiamo formulare un **outlier score**:
+$$out(o_i)=\frac{1}{\sum\limits_{o_j\in D} RF\_sim(o_i,o_j)^2}$$
+
+Questa è un'operazione costosa in quanto per ogni istanza saranno necessarie $|D|^2$ computazioni di similarità.
+
+### Random forest per trovare valori mancanti
+Possiamo utilizzare la similarità anche per riempire i valori mancanti nel dataset.
+
+Consideriamo una istanza $o_i\in D$ dove la feature $f$ è mancante, possiamo procedere come segue:
+1. Rimpiazza i valori mancanti con la media delle altre istanze dove $f$ è presente, dove la media è pesata in base allo score di similarità di $(o_i,o_j)$
+
+$$o_i[f]=\frac{\sum\limits_\stackrel{a_j\in D}{a_j[f]\neq NaN} a_j[f]\cdot RF\_sim(o_i,o_j)}{\sum\limits_\stackrel{a_j\in D}{a_j[f]\neq NaN} RF\_sim(o_i,o_j)}$$
+
+2. Allena una nuova random forest sui dati modificati e computa nuovi score di similarità
+3. Ripeti finchè non ci sono più miglioramenti
+
