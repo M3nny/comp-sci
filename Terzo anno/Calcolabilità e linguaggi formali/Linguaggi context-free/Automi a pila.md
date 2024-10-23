@@ -121,4 +121,32 @@ Se $A_{pq}\Rightarrow^* x$, allora $x$ porta $P$ da $p$ con lo stack vuoto a $q$
 
 **Caso base**: in questo caso la derivazione deve essere di lunghezza pari a $1$, l'unica produzione applicabile che non contiene non-terminali nella parte destra è $A_{pp}\to\epsilon$, ovvero $A_{pp}\Rightarrow\epsilon$, abbiamo quindi che l'input $\epsilon$ porta $P$ da $p$ con lo stack vuoto a $p$ con lo stack vuoto.
 
-**Passo induttivo**: consideriamo derivazioni di lunghezza $>1$
+**Passo induttivo**: assumiamo vero l'enunciato per derivazioni di lunghezza massima $k\geq 1$, e lo dimostriamo per $k+1$ passi.
+La derivazione sarà fatta come $A_{pq}\Rightarrow\square\Rightarrow^* x$.
+Il $\square$ dipende dalla regola della grammatica che è stata applicata:
+1. $A_{pq}\Rightarrow A_{pr}A_{rq}\Rightarrow^* x$. In questo caso consideriamo le parti $y$ e $z$ di $x$ rispettivamente generate da $A_{pr}$ e $A_{rq}$, quindi $x=yz$. Poichè $A_{pr}\Rightarrow^* y$ in al più $k$ passi e $A_{rq}\Rightarrow^* z$ in al più $k$ passi, per ipotesi induttiva $y$ può portare $P$ da $p$ a $r$ e $z$ può portare $P$ da $r$ a $q$ con lo stack vuoto all'inizio e alla fine della computazione. Quindi $x$ può portare $P$ da $p$ con lo stack vuoto a $q$ con lo stack vuoto.
+2. $A_{pq}\Rightarrow\alpha A_{rs}b\Rightarrow^* x$. In questo caso consideriamo la parte $y$ di $x$ generata da $A_{rs}$, quindi $x=ayb$. Poichè $A_{rs}\Rightarrow^* y$ in $k$ passi, per ipotesi induttiva $P$ può andare da $r$ con lo stack vuoto a $s$ con lo stack vuoto. Dato che $A_{pq}\to \alpha A_{rs}b$ è una regola di $G$, si ha che $\delta(p,a,\epsilon)$ contiene $(r,u)$ e $\delta(s,b,u)$ contiene $(q,\epsilon)$ per qualche simbolo dello stack $u$. Quindi se $P$ inizia in $p$ con lo stack vuoto, dopo aver letto $a$ potrà andare nello stato $q$ ed eliminare $u$ dallo stack, quindi $x$ può portare $P$ da $p$ con lo stack vuoto a $q$ con lo stack vuoto.
+
+**Dimostrazione condizione critica ($\Leftarrow$)**
+Se $x$ porta $P$ da $p$ con stack vuoto a $q$ con stack vuoto, allora $A_{pq}\Rightarrow^* x$.
+Anche qui la dimostrazione avviene sul numero di passi della computazione.
+
+**Caso base**: $0$ passi di computazione, in questo caso $p$ con stack vuoto va in $p$ con stack vuoto processando $x=\epsilon$. Osserviamo che $A_{pp}\Rightarrow\epsilon$ attraverso $A_{pp}\to\epsilon$.
+
+**Passo induttivo**: assumiamo che la proprietà valga per le computazioni al più $k$ passi e la dimostro per $k+1$ passi distinguendo due casi:
+- La pila è vuota solo all'inizio ed alla fine:
+	1. All'inizio $P$ parte da $p$ con stack vuoto, esegue un push di $u$ e passa allo stato $r$ (assumiamo abbia processato $a$)
+	2. $P$ parte da $r$ con $u$ sullo stack ed arriva a $s$ con $u$ sullo stack (assumiamo che la stringa processata sia $y$)
+	3. $P$ parte da $s$ con $u$ sullo stack, fa la pop di $u$ e passa allo stato $q$ (assumiamo che il carattere processato sia $b$)
+
+Vogliamo dimostrare l'invarianza della proprietà per $k+1$ passi, dato che il punto $1$ ed il punto $3$ effettuano solo un passo, si ha che il punto $2$ effettua $k-1$ passi.
+La computazione eseguita al punto $2$ rispetta l'ipotesi induttiva ($A_{rs}\Rightarrow^* y$), quindi se l'input è la stringa $x=ayb$ dobbiamo poter definire da dove vengono generate le sue sottostringhe, dimostrando così come $y$ può essere derivata, mentre $a$ e $b$ sono derivabili per definizione della CFG:
+$$A_{pq}\Rightarrow aA_{rs}b\Rightarrow^* ayb=x$$
+
+- La pila si svuota in uno step intermedio, assumiamo $r$, allora $p$ computa come segue:
+	1. $P$ parte da $p$ con stack vuoto e va in $r$ con stack vuoto leggendo $y$
+	2. $P$ parte da $r$ con stack vuoto e va in $q$ con stack vuoto leggendo $z$
+
+Dal momento che la computazione è costituita da $k+1$ passi, ciascuno dei due punti sarà costituito al più da $k$ passi, per ipotesi induttiva: $A_{pr}\Rightarrow^* y$ e $A_{rq}\Rightarrow^* z$.
+Otteniamo quindi per definizione della CFG la seguente definizione:
+$$A_{pq}\Rightarrow A_{pr}A_{rq}\Rightarrow^* yz=x$$
