@@ -87,6 +87,17 @@ $$f(w)=f[\alpha y+(1-\alpha)z]\leq \alpha \underbrace{f(y)}_{\leq\gamma}+(1-\alp
 
 Si ha quindi che $w\in\mathcal{L}_\gamma$ per ogni $y,z\in\mathcal{L}_\gamma$, di conseguenza $\mathcal{L}_\gamma$ è convesso.
 
+### Somma di funzioni convesse
+Dato l'insieme convesso $C\subseteq\mathbb{R}^n$, siano $f_i(x)$, $i=1,...,m$ funzioni convesse su $C$, e siano dati i coefficienti $\lambda_i\geq 0$, allora la somma delle funzioni:
+$$f(x)=\sum_{i=1}^m\lambda_i f_i(x)$$
+è anch'essa convessa.
+**Dimostrazione**
+La dimostrazione è banalmente vera se $C=\emptyset$ oppure $|C|=1$, mentre se $|C|=\infty$, per ogni $x,y\in C$ e $\alpha\in[0,1]$, dalla convessità di $f_1(x),...,f_m(x)$ ed essendo $\lambda_i\geq 0$ con $i=1,...,m$ si avrà:
+$$\begin{flalign}
+f[\alpha x+(1-\alpha)y]&=\sum_{i=1}^m\lambda_i f_i[\alpha x+(1-\alpha)y]\leq \sum_{i=1}^m\lambda_i[\alpha f_i(x)+(1-\alpha) f_i(y)]\\
+&=\alpha\underbrace{\sum_{i=1}^m \lambda_i f_i(x)}_{f(x)}+(1-\alpha)\underbrace{\sum_{i=1}^m\lambda_i f_i(y)}_{f(y)}=\alpha f(x)+(1-\alpha)f(y)
+\end{flalign}$$
+
 ## Minimi locali anche globali in funzioni convesse
 **Proposizione 1**
 Data la funzione $f(x)$ con $f:\mathbb{R}^n\to\mathbb{R}$ e l'**insieme convesso** $C\subseteq\mathbb{R}^n$.
