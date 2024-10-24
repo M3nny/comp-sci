@@ -4,21 +4,17 @@
     "type": "split",
     "children": [
       {
-        "id": "47c77108e6a941f1",
+        "id": "f5f3e44df2059fc7",
         "type": "tabs",
         "children": [
           {
-            "id": "ddae89f17aa8b3fa",
+            "id": "d2f64786abf49783",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Terzo anno/Ricerca operativa/Problemi convessi.md",
-                "mode": "source",
-                "source": false
-              },
+              "type": "empty",
+              "state": {},
               "icon": "lucide-file",
-              "title": "Problemi convessi"
+              "title": "New tab"
             }
           }
         ]
@@ -77,8 +73,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 350.5124969482422,
-    "collapsed": true
+    "width": 350.5124969482422
   },
   "right": {
     "id": "282a9548711da6a0",
@@ -162,8 +157,10 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "ddae89f17aa8b3fa",
+  "active": "d2f64786abf49783",
   "lastOpenFiles": [
+    "Terzo anno/Data and web mining/Feature selection.md",
+    "Terzo anno/Ricerca operativa/Problemi convessi.md",
     "Terzo anno/Calcolabilità e linguaggi formali/Linguaggi context-free/Linguaggi non context-free.md",
     "Terzo anno/Calcolabilità e linguaggi formali/Linguaggi context-free/Automi a pila.md",
     "Terzo anno/Calcolabilità e linguaggi formali/Linguaggi regolari/Linguaggi non regolari.md",
@@ -181,7 +178,6 @@
     "Terzo anno/Data and web mining/Images/Random forest distance.png",
     "Calcolo 1/Images",
     "Calcolo 1",
-    "Terzo anno/Ricerca operativa/Problemi convessi.md",
     "Terzo anno/Ricerca operativa/Images/Differenziabilità e funzioni convesse.png",
     "Excalidraw/Template RO.md",
     "Terzo anno/Ricerca operativa/Images/Intorno nell'insieme convesso.svg",
@@ -205,7 +201,6 @@
     "Primo anno/Secondo semestre/Architettura degli elaboratori mod. 2/Assembly/Funzioni e stack.md",
     "Terzo anno/Reti di calcolatori/Livelli TCP/Livello applicativo.md",
     "Terzo anno/Reti di calcolatori/Livelli TCP/Livello di trasporto.md",
-    "Terzo anno/Reti di calcolatori/Livelli TCP/Livello datalink.md",
     "Terzo anno/Reti di calcolatori/Images/aaaaaa.png.crdownload",
     "Terzo anno/Calcolabilità e linguaggi formali/Linguaggi regolari",
     "Terzo anno/Calcolabilità e linguaggi formali/Images/GNFA to regex.png.crdownload",
