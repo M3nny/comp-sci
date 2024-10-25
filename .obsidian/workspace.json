@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "f5f3e44df2059fc7",
+        "id": "14151e603d7f39dd",
         "type": "tabs",
         "children": [
           {
-            "id": "d2f64786abf49783",
+            "id": "c9003b3d48be2fab",
             "type": "leaf",
             "state": {
               "type": "empty",
@@ -157,8 +157,18 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "d2f64786abf49783",
+  "active": "c9003b3d48be2fab",
   "lastOpenFiles": [
+    "Terzo anno/Reti di calcolatori/Sicurezza/PKI.md",
+    "Terzo anno/Reti di calcolatori/Images/Gerarchia let's encrypt.png",
+    "Terzo anno/Reti di calcolatori/Images/Trust chain.png",
+    "Terzo anno/Reti di calcolatori/Images/Certificate chain.png",
+    "Calcolo 1/Images/Pasted image 20241025111257.png",
+    "Calcolo 1/Images/Pasted image 20241025103658.png",
+    "Terzo anno/Reti di calcolatori/Sicurezza/Crittografia a chiave pubblica.md",
+    "Terzo anno/Reti di calcolatori/Images/Chiave asimmetrica.png",
+    "Calcolo 1/Images",
+    "Calcolo 1",
     "Terzo anno/Data and web mining/Feature selection.md",
     "Terzo anno/Ricerca operativa/Problemi convessi.md",
     "Terzo anno/Calcolabilità e linguaggi formali/Linguaggi context-free/Linguaggi non context-free.md",
@@ -175,19 +185,11 @@
     "Terzo anno/Calcolabilità e linguaggi formali/Linguaggi context-free/CFG.md",
     "Terzo anno/Calcolabilità e linguaggi formali/Linguaggi context-free",
     "Terzo anno/Calcolabilità e linguaggi formali/Linguaggi non regolari.md",
-    "Terzo anno/Data and web mining/Images/Random forest distance.png",
-    "Calcolo 1/Images",
-    "Calcolo 1",
-    "Terzo anno/Ricerca operativa/Images/Differenziabilità e funzioni convesse.png",
     "Excalidraw/Template RO.md",
-    "Terzo anno/Ricerca operativa/Images/Intorno nell'insieme convesso.svg",
     "Terzo anno/Reti di calcolatori/Sicurezza/HMAC.md",
-    "Terzo anno/Reti di calcolatori/Images/Comunicazione con chiave simmetrica.png",
-    "Terzo anno/Reti di calcolatori/Images/Challenge HMAC.png",
     "Untitled.md",
     "Terzo anno/Reti di calcolatori/Sicurezza/Introduzione.md",
     "Secondo anno/Algoritmi e strutture dati/Mod. 1/Teoria della NP completezza.md",
-    "Terzo anno/Reti di calcolatori/Images/Model components.png",
     "Terzo anno/Reti di calcolatori/Sicurezza",
     "Terzo anno/Reti di calcolatori/Livelli TCP",
     "Terzo anno/Data and web mining/Ensemble methods.md",
@@ -198,9 +200,6 @@
     "Terzo anno/Calcolabilità e linguaggi formali/Images/PDA 1.png.crdownload",
     "Excalidraw/Template DWM.md",
     "Terzo anno/Calcolabilità e linguaggi formali/Linguaggi regolari/Automi a stati finiti non deterministici.md",
-    "Primo anno/Secondo semestre/Architettura degli elaboratori mod. 2/Assembly/Funzioni e stack.md",
-    "Terzo anno/Reti di calcolatori/Livelli TCP/Livello applicativo.md",
-    "Terzo anno/Reti di calcolatori/Livelli TCP/Livello di trasporto.md",
     "Terzo anno/Reti di calcolatori/Images/aaaaaa.png.crdownload",
     "Terzo anno/Calcolabilità e linguaggi formali/Linguaggi regolari",
     "Terzo anno/Calcolabilità e linguaggi formali/Images/GNFA to regex.png.crdownload",
