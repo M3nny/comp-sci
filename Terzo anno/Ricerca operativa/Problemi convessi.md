@@ -117,7 +117,7 @@ Poichè deve esistere un punto $w\in[x^*,y]$, dentro all'intorno $I(x^*,\rho)$, 
 $$w=\alpha x^*+(1-\alpha)y\quad \alpha\in[0,1[$$
 
 per la concavità di $f(x)$ su $C$ si ha:
-$$f(x)=f[\alpha x^*+(1-\alpha)y]\leq \alpha f(x^*)+(1-\alpha)f(y)$$
+$$f(w)=f[\alpha x^*+(1-\alpha)y]\leq \alpha f(x^*)+(1-\alpha)f(y)$$
 $$f(x^*)\leq \alpha f(x^*)+(1-\alpha)f(y)\quad\implies\quad (1-\alpha)f(x^*)\leq (1-\alpha)f(y)\quad\forall y\in C$$
 
 Essendo che $w\neq x^*$ e che quindi $\alpha\in[0,1[$, possiamo semplificare:

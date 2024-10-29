@@ -87,7 +87,7 @@ Dato uno spazio vettoriale $V^n(K)$, il **prodotto scalare** (o interno) è una 
 $$V^n(K)\times V^n(K)\to \mathbb{R}$$
 
 Possiede le seguenti proprietà:
-1. $\forall v\in V^n(K),\quad<v,v>\geq 0,= 0 \iff v=w$
+1. $\forall v\in V^n(K),\quad<v,v>$ è $\geq 0$, mentre è pari a $0 \iff v=w$
 	
 	Il prodotto scalare di un vettore per se stesso è $\geq 0$, è uguale a $0$ sse il vettore rappresenta vettore nullo.
 	
@@ -107,7 +107,7 @@ Due vettori $u,v$ si dicono **ortogonali** ($u\bot v$) sse il prodotto scalare s
 Dato uno spazio vettoriale $V^n(K)$, la **norma** di un vettore può essere vista come la lunghezza del vettore stesso, essa è indicata come $||\bullet||_*$, ed è definita come:
 $$V^n(K)\to\mathbb{R}^+$$
 Possiede le seguenti proprietà:
-1. $\forall v\in V^n(K),\quad||v||_*\geq 0,=0\iff v=w$
+1. $\forall v\in V^n(K),\quad||v||_*\geq 0$, mentre è pari a $0\iff v=w$
 	
 	La norma è $\geq 0$, è uguale a $0$ sse il vettore rappresenta il vettore nullo.
 	

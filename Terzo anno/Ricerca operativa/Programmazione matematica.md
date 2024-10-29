@@ -41,3 +41,54 @@ $$\max_x u_1x_1+...+u_nx_n$$
 poniamo i seguenti **vincoli** ($C$):
 $$a_1x_1+...+a_nx_n\leq b\quad\text{(vincolo lineare)}$$
 $$x_i\in\{0,1\},\forall i=1,...,n\quad\text{(vincolo di interezza - inserisco oppure no)}$$
+
+---
+### Problema lineare
+Un’industria possiede $3$ **fabbriche** $F1, F2, F3$ e $2$ **magazzini** $M1, M2$.
+Nelle fabbriche durante il mese corrente si producono due tipi di prodotti $P1$ e $P2$, che vanno trasportati nei _magazzini_.
+Nella seguente tabella riassumiamo i **tempi unitari** (in ore/unità) ed i **costi unitari** (in euro/unità) di produzione di $P1$ e $P2$, in ciascuna fabbrica:
+![[Tabella problema lineare.png]]
+
+In ciascuna fabbrica, è possibile far lavorare gli impianti per un numero di ore massimo pari a $2200$ ore per $F1$, $930$ ore per $F2$ e $1600$ ore per $F3$. Infine i $2$ magazzini richiedono rispettivamente un numero minimo di unità di prodotto pari a:
+
+|       | $M1$   | $M2$   |
+| ----- | ------ | ------ |
+| $P_1$ | $1100$ | $1900$ |
+| $P_2$ | $1650$ | $1300$ |
+
+ed i **costi di trasporto** (euro/unità) dalle fabbriche ai magazzini, sono riassunti nella seguente tabella:
+
+|      | $F1$   | $F2$   | $F3$   |
+| ---- | ------ | ------ | ------ |
+| $M1$ | $0.90$ | $0.88$ | $1.03$ |
+| $M2$ | $0.99$ | $1.10$ | $0.85$ |
+
+Scegliamo le **variabili**:
+$x_{ijk}$ = numero dei prodotto $P_i$ nella fabbrica $F_j$ ed inviati al magazzino $M_k$.
+Abbiamo $i=1,2$, $j=1,2,3$, $k=1,2$, per cui $12$ variabili.
+
+La **funzione obiettivo** è definita come il valore minimo tra la somma dei costi produzione di ed i costi di trasporto:
+$$\min
+\left[\begin{flalign}
+&\left(7.2\sum_{k=1}^2x_{11k}+6.3\sum_{k=1}^2+x_{12k}+5.2\sum_{k=1}^2x_{13k}\right)+\\
+&\left(9.2\sum_{k=1}^2x_{21k}+7.3\sum_{k=1}^2x_{22k}+6.6\sum_{k=1}^2x_{23k}\right)+\\
+&\left(0.90\sum_{i=1}^2x_{i11}+0.88\sum_{i=1}^2x_{i21}+1.03\sum_{i=1}^2x_{i31}\right)+\\
+&\left(0.99\sum_{i=1}^2x_{i12}+1.10\sum_{i=1}^2x_{i22}+0.85\sum_{i=1}^2x_{i32}\right)
+\end{flalign}\right]$$
+
+Imponiamo poi i seguenti **vincoli** relativi ai _tempi di produzione_:
+$$\begin{flalign}
+0.72\sum_{k=1}^2x_{11k}+0.81\sum_{k=1}^2x_{21k}&\leq2200\\
+0.63\sum_{k=1}^2x_{12k}+0.68\sum_{k=1}^2x_{22k}&\leq930\\
+0.5\sum_{k=1}^2x_{13k}+0.67\sum_{k=1}^2x_{23k}&\leq1600\\
+\end{flalign}$$
+
+ed alle _richieste di unità di prodotto_:
+$$\begin{flalign}
+\sum_{j=1}^3x_{1j1}\geq1100\\
+\sum_{j=1}^3x_{2j1}\geq1650\\
+\sum_{j=1}^3x_{1j2}\geq1900\\
+\sum_{j=1}^3x_{2j2}\geq1300
+\end{flalign}$$
+
+$$\underbrace{x_{ijk}\geq 0}_\text{vincolo di non-negatività}\quad \underbrace{\forall i,j,k\text{ intere}}_\text{vincolo di interezza}$$
