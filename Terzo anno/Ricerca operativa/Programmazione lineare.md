@@ -18,6 +18,35 @@ $$f(\overline{x}+\alpha d)<f(\overline{x})\quad\forall\alpha\in]0,\overline{\alp
 >[!Tip] Interpretazione del significato di direzione
 >Considerando il caso di $f:\mathbb{R}\to\mathbb{R}$, la direzione, non è un vettore, bensì un numero (scalare), esso è dato dalla differenza di altri due numeri.
 
-Se la funzione appartiene alla classe $C^1(\mathbb{R}^n)$, allora si può constatare subito se una direzione $d$ è di discesa, in particolare se $0<||d||<\infty$ e $\nabla f(\overline{x})^Td\neq 0$, allora $d$ è di discesa sse:
-$$\nabla f(x)^Td<0$$
+Se $f\in C^1(\mathbb{R}^n)$, allora si può constatare subito se una direzione $d$ è di **discesa**, in particolare se $0<||d||<\infty$ ($d$ è limitata e non nulla) e $\nabla f(\overline{x})^Td\neq 0$ (i vettori non sono ortogonali), allora $d$ è di discesa per $f(x)$ in $\overline{x}$ sse:
+$$\nabla f(\overline{x})^Td<0$$
+
+La formulazione sta dicendo che se la derivata direzionale lungo $d$ è minore di $0$, allora la direzione è di discesa.
+
+>L'anti-gradiente, nonchè la migliore soluzione di discesa rappresenta una direzione di discesa sicura, essa è espressa come: $d=-\frac{\nabla f(\overline{x})}{||\nabla f(\overline{x})||_2}$.
+>Discorso analogo per la migliore soluzione di crescita, solamente cambiando il segno con $+$.
+
+**Dimostrazione**
+Dal [[Definizioni generali#Teorema del valor medio|teorema del valor medio]] per $\alpha\in]0,1]$ (maggiore di $0$ altrimenti si rimarrebbe sul punto $\overline{x}$) si ottiene:
+$$\begin{align}
+f(\overline{x}+\alpha d)&=f(\overline{x})+\nabla f(\overline{x})^T(\alpha d)+o(||\alpha d||)\\
+&= f(\overline{x})+\alpha\nabla f(\overline{x})^Td+o(||\alpha d||)\frac{||d||}{||d||}\\
+\frac{f(\overline{x}+\alpha d)-f(\overline{x})}{\alpha}&=\nabla f(\overline{x})^Td+\frac{o(||\alpha d||)}{\alpha ||d||}||d||
+\end{align}$$
+
+Dato che esiste almeno un limite nella somma del membro di destra, li posso calcolare separatamente, quindi applico il limite per $\alpha\to0^+$ in ambo i membri (con quello di destra diviso) ed ignoro il limite per $\nabla f(\overline{x})^Td$ in quanto non dipende da $\alpha$:
+$$\begin{align}
+\lim_{\alpha\to0^+}\frac{f(\overline{x}+\alpha d) -f(\overline{x})}{\alpha}&=\nabla f(\overline{x})^T d+\lim_{\alpha\to0^+}\frac{o(||\alpha d||)}{\alpha||d||}||d||\\
+&=\nabla f(\overline{x})^Td
+\end{align}$$
+
+Con questo abbiamo dimostrato che la derivata direzionale lungo $d$ nel punto $\overline{x}$ è data dalla formulazione precedente.
+Dobbiamo ancora dimostrare che $d$ è una direzione di discesa per $f$ sse $\nabla f(\overline{x})^Td<0$.
+
+($\Rightarrow$)
+Il numeratore del membro di sinistro ($f(\overline{x}+\alpha d) -f(\overline{x})$)rappresenta la definizione di direzione di discesa, essendo $\alpha$ positivo il rapporto sarà negativo, quindi secondo la catena di uguaglianze anche $\nabla f(\overline{x})^Td$ sarà minore di $0$.
+
+($\Leftarrow$)
+Dato che abbiamo delle uguaglianze, entrambi i membri dovranno essere minori di $0$, quindi se la derivata direzionale è minore di $0$, allora il numeratore denominatore del membro di sinistra avranno segno discorde per rendere il rapporto negativo.
+$\alpha$ è sempre positivo a causa del limite, quindi è il numeratore che dovrà essere negativo, ovvero dovrà valere $f(\overline{x}+\alpha d) <f(\overline{x})$, ovvero la definizione di direzione di discesa, dimostrando così che $d$ effettivamente è di discesa.
 
