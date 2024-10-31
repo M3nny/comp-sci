@@ -4,21 +4,17 @@
     "type": "split",
     "children": [
       {
-        "id": "f2c04ea515bedf15",
+        "id": "19d5a0b3560d9e9e",
         "type": "tabs",
         "children": [
           {
-            "id": "16d77ebc10d8ae66",
+            "id": "f9e5a94736c0ced5",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Terzo anno/Calcolabilità e linguaggi formali/Macchina di Turing.md",
-                "mode": "source",
-                "source": false
-              },
+              "type": "empty",
+              "state": {},
               "icon": "lucide-file",
-              "title": "Macchina di Turing"
+              "title": "New tab"
             }
           }
         ]
@@ -161,10 +157,14 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "16d77ebc10d8ae66",
+  "active": "f9e5a94736c0ced5",
   "lastOpenFiles": [
-    "Terzo anno/Calcolabilità e linguaggi formali/Images/PDA 1.png",
+    "Terzo anno/Data and web mining/Feature selection & engineering.md",
+    "Terzo anno/Data and web mining/Images/Confusion matrix.png",
+    "Calcolo 1/Images",
+    "Calcolo 1",
     "Terzo anno/Calcolabilità e linguaggi formali/Macchina di Turing.md",
+    "Terzo anno/Calcolabilità e linguaggi formali/Images/PDA 1.png",
     "Terzo anno/Calcolabilità e linguaggi formali/Images/MdT 1.png",
     "Calcolo 1/Images/Pasted image 20241030202223.png",
     "Excalidraw/Template CLF.md",
@@ -177,8 +177,6 @@
     "Primo anno/Primo semestre/Calcolo 1/Derivate/Algebra delle derivate.md",
     "Terzo anno/Ricerca operativa/Programmazione matematica.md",
     "Terzo anno/Ricerca operativa/Images/Tabella problema lineare.png",
-    "Calcolo 1/Images",
-    "Calcolo 1",
     "Terzo anno/Ricerca operativa/Problemi convessi.md",
     "Terzo anno/Ricerca operativa/Definizioni generali.md",
     "Terzo anno/Reti di calcolatori/Sicurezza/PKI.md",
@@ -186,10 +184,7 @@
     "Terzo anno/Reti di calcolatori/Images/Trust chain.png",
     "Terzo anno/Reti di calcolatori/Images/Certificate chain.png",
     "Calcolo 1/Images/Pasted image 20241025111257.png",
-    "Calcolo 1/Images/Pasted image 20241025103658.png",
     "Terzo anno/Reti di calcolatori/Sicurezza/Crittografia a chiave pubblica.md",
-    "Terzo anno/Reti di calcolatori/Images/Chiave asimmetrica.png",
-    "Terzo anno/Data and web mining/Feature selection.md",
     "Terzo anno/Calcolabilità e linguaggi formali/Linguaggi context-free/Linguaggi non context-free.md",
     "Terzo anno/Calcolabilità e linguaggi formali/Linguaggi context-free/Automi a pila.md",
     "Terzo anno/Calcolabilità e linguaggi formali/Linguaggi regolari/Linguaggi non regolari.md",
