@@ -58,6 +58,7 @@ $$C^0[a,b]=\{\sin(x),\cos(x),...\}$$
 
 Per indicare i **polinomi ad una variabile** con grado massimo $n$ usiamo la seguente notazione: $P_n(x)$.
 
+---
 ### Combinazioni lineari
 Una **combinazione lineare** dati $z_1,...,z_m\in\mathbb{R}^n$ e $a_1,...,a_m\in\mathbb{R}$ è definita come:
 $$z=a_1z_1+...+a_mz_m$$
@@ -91,7 +92,7 @@ Possiede le seguenti proprietà:
 	
 	Il prodotto scalare di un vettore per se stesso è $\geq 0$, è uguale a $0$ sse il vettore rappresenta vettore nullo.
 	
-2. $\forall u,v,z\in v^n(K),\quad<u+v,z>=<u,z>+<v,z>$
+2. $\forall u,v,z\in V^n(K),\quad<u+v,z>=<u,z>+<v,z>$
 	
 	Proprietà _distributiva_, l'operatore $+$ viene utilizzato sia per la somma tra vettori e sia per la somma tra scalari.
 	
@@ -103,6 +104,7 @@ $$\forall u,v\in\mathbb{R}^n,<u,v>=u_1v_1+...u_n v_n$$
 Due vettori $u,v$ si dicono **ortogonali** ($u\bot v$) sse il prodotto scalare standard $<u,v>$ è pari a $0$.
 >Due vettori ortogonali sono linearmente indipendenti, non è detto viceversa.
 
+---
 ### Norma
 Dato uno spazio vettoriale $V^n(K)$, la **norma** di un vettore può essere vista come la lunghezza del vettore stesso, essa è indicata come $||\bullet||_*$, ed è definita come:
 $$V^n(K)\to\mathbb{R}^+$$
@@ -130,12 +132,12 @@ Di seguito le rappresentazioni geometriche per le norme pari a $1$:
 
 >Notare come solo in quattro punti il loro risultato combacia.
 
----
 
 >[!Tip] Angolo tra vettori
 >Dati due vettori $u,v$, il loro **angolo interno** è dato da:
 >$$\varphi=||u||_2\cdot||v||_2\cdot\cos\varphi$$
 
+---
 ## Funzioni lineari e affini
 Data la funzione $f:\mathbb{R}^n\to\mathbb{R}^m$, si dice che $f(x)$ è **lineare** in $\mathbb{R}^n$ se soddisfa le seguenti proprietà:
 1. $f(x+y)=f(x)+f(y),\quad\forall x,y\in\mathbb{R}^n$
@@ -190,5 +192,5 @@ Il teorema del valor medio di **secondo ordine** viene usato per valutare il **c
 
 Le due formulazioni le possiamo riscrivere usando anche le derivate seconde come:
 
-$$\text{1.}\quad f(y)=f(x)+\nabla f(x)^T(y-x)+\frac{1}{2}(y-x)^T\nabla^2 f(x)(y-x)+o(||y-x||)^2$$
-$$\text{2}\quad f(y)=f(x)+\nabla f(x)^T(y-x)+\frac{1}{2}(y-x)^T\nabla^2 f[x+\theta (y-x)](y-x)\quad \theta\in[0,1]$$
+$$f(y)=f(x)+\nabla f(x)^T(y-x)+\frac{1}{2}(y-x)^T\nabla^2 f(x)(y-x)+o(||y-x||)^2$$
+$$f(y)=f(x)+\nabla f(x)^T(y-x)+\frac{1}{2}(y-x)^T\nabla^2 f[x+\theta (y-x)](y-x)\quad \theta\in[0,1]$$

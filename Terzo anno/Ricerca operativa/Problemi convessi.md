@@ -21,6 +21,7 @@ $$C=C_1\cap...\cap C_m$$
 >Notare che nell'ultimo passaggio non si è usato il valore assoluto (vedi [[Definizioni generali#Norma|norma]]), in quanto $\alpha\in[0,1]$.
 >Per qualsiasi punto abbiamo dimostrato che $w\in C$, $\forall\alpha\in[0,1]$.
 
+---
 ## Funzioni convesse
 Data la funzione $f:\mathbb{R}^n\to\mathbb{R}$, e l'insieme convesso $C\subseteq \mathbb{R}^n$, $f(x)$ si dice **convessa sull'insieme $C$**, se $\forall x,y\in C$ risulta verificata la seguente proprietà:
 $$f[\alpha x+(1-\alpha)y]\leq \alpha f(x)+(1-\alpha)f(y)\quad\forall\alpha\in[0,1]$$
@@ -60,6 +61,7 @@ f[\alpha x+(1-\alpha)y]&= f_L[\alpha x+(1-\alpha)y]+\overline{c} = \alpha f_L(x)
 
 Pertanto l'operatore di uguale può essere sostituito con le condizioni $\leq$ e $\geq$, verificando che $f$ è al contempo convessa e concava su $\mathbb{R}^n$.
 
+---
 ### Insieme di livello
 Nei problemi di ottimizzazione si ha un problema del tipo $\min f(x)$, con dei vincoli $A:\begin{cases}g_1(x)\leq b_1\\\vdots\\g_m(x)\leq b_m\end{cases}$, l'insieme dei vincoli è un'**intersezione** in quanto devono convivere tutti assieme, se gli insiemi singolarmente sono convessi allora anche la loro intersezione $A$ sarà convessa.
 
@@ -87,6 +89,12 @@ $$f(w)=f[\alpha y+(1-\alpha)z]\leq \alpha \underbrace{f(y)}_{\leq\gamma}+(1-\alp
 
 Si ha quindi che $w\in\mathcal{L}_\gamma$ per ogni $y,z\in\mathcal{L}_\gamma$, di conseguenza $\mathcal{L}_\gamma$ è convesso.
 
+---
+### Curva di livello
+Data la funzione $f(x)$ con $f:\mathbb{R}^n\to\mathbb{R}$ ed il parametro $\gamma\in\mathbb{R}$, ricordiamo che una [[Curve di livello e dominio#Curve di livello|curva di livello]] $c_\gamma$ di $f(x)$ rappresenta l'insieme (eventualmente vuoto)
+$$c_\gamma=\{x\in\mathbb{R}^n:f(x)=\gamma\}$$
+
+---
 ### Somma di funzioni convesse
 Dato l'insieme convesso $C\subseteq\mathbb{R}^n$, siano $f_i(x)$, $i=1,...,m$ funzioni convesse su $C$, e siano dati i coefficienti $\lambda_i\geq 0$, allora la somma delle funzioni:
 $$f(x)=\sum_{i=1}^m\lambda_i f_i(x)$$
@@ -98,6 +106,7 @@ f[\alpha x+(1-\alpha)y]&=\sum_{i=1}^m\lambda_i f_i[\alpha x+(1-\alpha)y]\leq \su
 &=\alpha\underbrace{\sum_{i=1}^m \lambda_i f_i(x)}_{f(x)}+(1-\alpha)\underbrace{\sum_{i=1}^m\lambda_i f_i(y)}_{f(y)}=\alpha f(x)+(1-\alpha)f(y)
 \end{flalign}$$
 
+---
 ## Minimi locali anche globali in funzioni convesse
 **Proposizione 1**
 Data la funzione $f(x)$ con $f:\mathbb{R}^n\to\mathbb{R}$ e l'**insieme convesso** $C\subseteq\mathbb{R}^n$.
@@ -114,9 +123,9 @@ Essendo $x^*$ un minimo locale, esisterà un intorno $I(x^*, \rho)$ con $\rho>0$
 $$f(x^*)\leq f(x)\quad\forall x\in I(x^*,\rho)\cap [x^*,y]$$
 
 Poichè deve esistere un punto $w\in[x^*,y]$, dentro all'intorno $I(x^*,\rho)$, dove $w\neq x^*$ esisterà un valore $\alpha$ per cui $w$ possa essere scritto nel seguente modo:
-$$w=\alpha x^*+(1-\alpha)y\quad \alpha\in[0,1[$$
+$$w=\alpha x^*+(1-\alpha)y\quad \alpha\in]0,1]$$
 
-per la concavità di $f(x)$ su $C$ si ha:
+per la convessità di $f(x)$ su $C$ si ha:
 $$f(w)=f[\alpha x^*+(1-\alpha)y]\leq \alpha f(x^*)+(1-\alpha)f(y)$$
 $$f(x^*)\leq \alpha f(x^*)+(1-\alpha)f(y)\quad\implies\quad (1-\alpha)f(x^*)\leq (1-\alpha)f(y)\quad\forall y\in C$$
 
@@ -140,6 +149,7 @@ f(w)&=f[\alpha x^*+(1-\alpha)y^*]\leq \alpha f(x^*)+(1-\alpha)f(y^*)\\
 &=\alpha f_\min +(1-\alpha) f_\min = f_\min
 \end{flalign}$$
 
+---
 ### Differenziabilità e funzioni convesse
 Dato l'insieme convesso non vuoto $C\subseteq\mathbb{R}^n$ e sia $f:\mathbb{R}^n\to\mathbb{R}$ con $f\in \mathcal{C}^1(\mathbb{R}^n)$, allora $f(x)$ è _convessa_ su $C$ sse $\forall x,y,\in C$ è soddisfatta una qualsiasi delle seguenti condizioni:
 1. $f(y)\geq f(x)+\nabla f(x)^T (y-x)$
