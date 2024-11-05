@@ -4,17 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "b811271211a42560",
+        "id": "c69c26aa92c1a69b",
         "type": "tabs",
         "children": [
           {
-            "id": "6e5db043acb055a4",
+            "id": "207eaadebd8387ab",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "Terzo anno/Calcolabilità e linguaggi formali/Macchina di Turing.md",
+                "mode": "source",
+                "source": false
+              },
               "icon": "lucide-file",
-              "title": "New tab"
+              "title": "Macchina di Turing"
             }
           }
         ]
@@ -73,7 +77,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 350.5124969482422
+    "width": 350.5124969482422,
+    "collapsed": true
   },
   "right": {
     "id": "282a9548711da6a0",
@@ -157,8 +162,20 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "a1163d9af64d6878",
+  "active": "207eaadebd8387ab",
   "lastOpenFiles": [
+    "Terzo anno/Calcolabilità e linguaggi formali/Images/Enumeratore.png",
+    "Calcolo 1/Images/Pasted image 20241105191255.png",
+    "Terzo anno/Ricerca operativa/Programmazione lineare.md",
+    "Terzo anno/Ricerca operativa/Problemi convessi.md",
+    "Terzo anno/Calcolabilità e linguaggi formali/Macchina di Turing.md",
+    "Terzo anno/Calcolabilità e linguaggi formali/Images/MdT - non deterministica.png",
+    "Terzo anno/Calcolabilità e linguaggi formali/Images/MdT - multinastro.png",
+    "Calcolo 1/Images",
+    "Calcolo 1",
+    "Terzo anno/Ricerca operativa/Riassunto.md",
+    "asdasdasd.canvas",
+    "Calcolo 1/Images/Pasted image 20241105114938.png",
     "Terzo anno/Data and web mining/Text processing.md",
     "Terzo anno/Data and web mining/Images/Sparse matrix TF-IDF.png",
     "Terzo anno/Data and web mining/Images/Sparse matrix bag of words.png",
@@ -166,23 +183,13 @@
     "Terzo anno/Data and web mining/Images/Sparse matrix set of words.png",
     "Terzo anno/Data and web mining/Images/Confusion matrix.png",
     "Calcolo 1/Images/Pasted image 20241104211257.png",
-    "Terzo anno/Data and web mining/Images/Sparse matrix set of words.png",
-    "Terzo anno/Data and web mining/Images/Sparse matrix set of words.png",
-    "Calcolo 1/Images/Pasted image 20241104203645.png",
-    "Calcolo 1/Images",
-    "Calcolo 1",
-    "Terzo anno/Ricerca operativa/Riassunto.md",
-    "Terzo anno/Ricerca operativa/Programmazione lineare.md",
-    "Terzo anno/Ricerca operativa/Problemi convessi.md",
     "Primo anno/Secondo semestre/Calcolo 2/Funzioni a più variabili reali/Curve di livello e dominio.md",
     "Terzo anno/Ricerca operativa/Programmazione matematica.md",
     "Terzo anno/Ricerca operativa/Definizioni generali.md",
     "Secondo anno/Basi di dati/Mod. 1/Linguaggi relazionali.md",
     "Primo anno/Primo semestre/Calcolo 1/Derivate/Algebra delle derivate.md",
     "Excalidraw/Template RO.md",
-    "Terzo anno/Ricerca operativa/Images/Direzioni ammissibili.svg",
     "Terzo anno/Data and web mining/Feature selection & engineering.md",
-    "Terzo anno/Calcolabilità e linguaggi formali/Macchina di Turing.md",
     "Excalidraw/Template CLF.md",
     "Terzo anno/Calcolabilità e linguaggi formali/Linguaggi regolari/Automi a stati finiti non deterministici.md",
     "Terzo anno/Calcolabilità e linguaggi formali/Linguaggi regolari/Automi a stati finiti.md",
@@ -203,7 +210,6 @@
     "Terzo anno/Calcolabilità e linguaggi formali/Images/PDA 1.png.crdownload",
     "Terzo anno/Reti di calcolatori/Images/aaaaaa.png.crdownload",
     "Terzo anno/Calcolabilità e linguaggi formali/Linguaggi regolari",
-    "Terzo anno/Calcolabilità e linguaggi formali/Images/GNFA to regex.png.crdownload",
-    "Untitled.canvas"
+    "Terzo anno/Calcolabilità e linguaggi formali/Images/GNFA to regex.png.crdownload"
   ]
 }
