@@ -9,6 +9,7 @@ Definiamo i seguenti **operatori**:
 - $+$ somma tra vettori
 - $\oplus$ somma tra scalari
 - $\cdot$ prodotto tra vettori
+- $\odot$ prodotto tra scalari
 - $\bullet$ prodotto tra vettore e scalare
 
 $$\begin{align}
@@ -20,7 +21,7 @@ $$\begin{align}
 &4.\quad (x+y)+z=x+(y+z)&\text{proprietà associativa}\\
 \hline
 &5.\quad \exists\sigma\in K:\sigma\bullet x=x&\text{elemento neutro}\\
-&6.\quad (a\cdot b)\bullet x=a\bullet(b\bullet x)&\text{proprietà associativa}\\
+&6.\quad (a\odot b)\bullet x=a\bullet(b\bullet x)&\text{proprietà associativa}\\
 &7.\quad (x+y)\bullet a=a\bullet x+a\bullet y&\text{proprietà distributiva}\\
 &8.\quad (a\oplus b)\bullet x=a\bullet x+b\bullet x&\text{proprietà distributiva}
 \end{align}$$
