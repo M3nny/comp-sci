@@ -74,4 +74,4 @@ Sappiamo che una funzione è convessa se rispetta la [[Problemi convessi#Differe
 $$f(y)\geq f(x^*)+\underbrace{\nabla f(x^*)^T(x-x^*)}_{\geq 0\text{ per ipotesi}}\quad\forall x,y\in C$$
 $$f(y)\geq f(x^*)$$
 
-Dimostrando così $x^*$ è un minimo locale, e anche globale dato che stiamo considerando una funzione convessa.
+Dimostrando così che $x^*$ è un minimo locale, e anche globale dato che stiamo considerando una funzione convessa.

@@ -1,25 +1,29 @@
 ## Spazi vettoriali
-Uno **spazio vettoriale** è un insieme $V^n(K)$ di elementi (vettori) con **campo** $K$ che soddisfano $8+1$ proprietà, in cui i simboli $+,\oplus, \cdot, \bullet$ rappresentano quattro operazioni binarie arbitrarie.
+Uno **spazio vettoriale** è un insieme $V^n(K)$ di elementi (vettori) con **campo** $K$ che soddisfano $8+1$ proprietà (la proprietà $0$ è intrinseca dei vettori).
 
-0. $\forall u,v\in V^n(K),\quad u+v\in V^n(K)$
-	**Chiusura** rispetto a l'operatore $+$, ovvero l'operatore applicato a due elementi dello stesso tipo ritorna un valore dello stesso tipo.
-	
-1. $\forall u,v,z\in V^n(K),\quad (u+v)+z = u+(v+z)$
-	Proprietà **associativa**.
-	
-2. $\exists w\in V^n(K): \forall v\in V^n(K),\quad w+v = v$
-	Elemento **neutro (o nullo)**.
-	
-3. $\forall v\in V^n(K),\quad\exists \overline{v}\in V^n(K): v+\overline{v}=w$
-	Elemento **opposto (o inverso)**.
-	
-4. $\forall u,v\in V^n(K),\quad u+v=v+u$
-	Proprietà **commutativa**.
-	
-5. $\forall a,b\in K, \forall v\in V^n(K), a \bullet v\in V^n(K),\quad (a\cdot b)\bullet v=a\bullet (b\bullet v)$
-6. $\exists\sigma\in K:\forall v\in V^n(K),\quad \sigma\bullet v = v$
-7. $\forall a,b\in K, \forall v\in V^n(K),\quad (a\oplus b)\bullet v=a\bullet v+b\bullet v$
-8. $\forall a\in K, \forall u,v\in V^n(K),\quad a\bullet (u+v)=a\bullet u + a\bullet v$
+Siano:
+- $x,y,z\in V^n(K)$ dei **vettori**
+- $a,b\in K$ degli **scalari**
+
+Definiamo i seguenti **operatori**:
+- $+$ somma tra vettori
+- $\oplus$ somma tra scalari
+- $\cdot$ prodotto tra vettori
+- $\bullet$ prodotto tra vettore e scalare
+
+$$\begin{align}
+&0.\quad x+y\in V^n(K)\qquad a\bullet x\in V^n(K)&\text{chiusura rispetto a somma e prodotto}\\
+\hline
+&1.\quad \exists w\in V^n(K):x+w=x&\text{elemento neutro}\\
+&2.\quad \exists\bar x\in V^n(K):x+\bar x=w&\text{elemento opposto}\\
+&3.\quad x+y=y+z&\text{proprietà commutativa}\\
+&4.\quad (x+y)+z=x+(y+z)&\text{proprietà associativa}\\
+\hline
+&5.\quad \exists\sigma\in K:\sigma\bullet x=x&\text{elemento neutro}\\
+&6.\quad (a\cdot b)\bullet x=a\bullet(b\bullet x)&\text{proprietà associativa}\\
+&7.\quad (x+y)\bullet a=a\bullet x+a\bullet y&\text{proprietà distributiva}\\
+&8.\quad (a\oplus b)\bullet x=a\bullet x+b\bullet x&\text{proprietà distributiva}
+\end{align}$$
 
 >[!Example]
 >**Dimostriamo come il prodotto tra due numeri negativi è positivo**.
