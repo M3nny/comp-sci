@@ -70,6 +70,7 @@ L'algoritmo per la selezione iniziale dei centroidi è il seguente:
 	4. Assegna ad ogni punto una probabilità proporzionale a $d(x)^2$
 	5. Seleziona un nuovo centroide casualmente secondo le probabilità assegnate nel punto precedente
 
+![[K-means++.png]]
 
 #### Elbow method
 L'errore SSE nell'approccio k-means decrementa all'aumentare di $k$, ma vorremmo tenere un numero piccolo di $k$ solitamente.
@@ -81,4 +82,51 @@ Una pratica comune è smettere di incrementare $k$ se il vantaggio marginale è 
 
 >[!Attention] K-means è un euristica
 >Dato $k$, trovare una partizione di $k$ cluster che ottimizza il criterio di partizionamento scelto è un problema [[Teoria della NP completezza#Classe NPC|NP-hard]], per cui si ricorre a delle euristiche come k-means, altrimenti per trovare un <b>ottimo <u>globale</u></b> bisognerebbe enumerare tutte le possibili partizioni, il che non è fattibile.
+
+---
+## Clustering gerarchico
+Una strategia può essere l'utilizzo di una **matrice di distanza/similarità**, immaginando di avere una matrice di distanza $D$, l'elemento $D[i,j]$ indica la distanza tra l'oggetto $i$ e l'oggetto $j$.
+>Questo metodo non richiede la conoscenza del numero di cluster in partenza.
+
+Il clustering gerarchico **agglomerativo** (HAC) utilizza un approccio [[Approccio dinamico#Top-down o Bottom-up?|bottom-up]], ovvero inizialmente ogni oggetto rappresenta un cluster, essi sono poi uniti finchè un singolo cluster non diventa la radice della gerarchia.
+
+>[!Tip] HAC algorithm
+>// _Initialize every single point as a cluster_
+>**for** $i=1\ldots |{\cal D}|$:
+>$\quad$ $C_i = \{o_i\}$
+>
+>// _Set of clusters_
+>$\cal C = \bigcup\limits_i \{C_i\}$ 
+>
+>// _Aggregation loop_
+>**while** $|{\cal C}|>1$:
+>$\quad$ // _Find closest cluster pair_
+>$\quad$ $C_i, C_j = \arg\min\limits_{C_x, C_y} D(C_x, C_y)$
+>$\quad$ // _Replace_ $C_i$ _and_ $C_j$ _with the merge of the two_
+>
+>$\quad$ $C_{new} = C_i\cup C_j$
+>$\quad$ ${\cal C} = (({\cal C} \setminus \{C_i\}) \setminus \{C_j\}) \cup \{C_{new}\}$
+
+Gli elementi iniziali in $D$ rappresentano la distanza tra l'oggetto $i$ e $j$, l'eliminazione è simulata nella matrice ponendo $+\infty$ gli elementi corrispondenti, mentre le istanze corrispondenti al cluster $C_i$ vengono sovrascritte con $C_{new}$.
+>Se la matrice è di **similarità** (non di distanza), essa sarà simmetrica, quindi è possibile utilizzare solo la metà dello spazio.
+
+Il clustering gerarchico **divisivo**, a differenza di quello _agglomerativo_, utilizza un approccio [[Approccio dinamico#Top-down o Bottom-up?|top-down]], ovvero inizialmente tutti gli oggetti fanno parte di un cluster il quale è ricorsivamente diviso in cluster più piccoli.
+
+### Linkage measures
+Di seguito sono elencate delle **misure di similarità** tra cluster tipiche:
+- **Single (distanza minima)**: $dist(C_i,C_j)=\min\limits_{x\in C_i,y\in C_j}dist(x,y)$
+	Potrebbe sovrastimare la similarità.
+
+- **Complete (distanza massima)**: $dist(C_i,C_j)=\max\limits_{x\in C_i,y\in C_j}dist(x,y)$
+	Potrebbe sottostimare la similarità.
+
+- **Average (distanza media)**: $dist(C_i,C_j)=\frac{1}{|C_i||C_j|}\sum\limits_{x\in C_i,y\in C_j}dist(x,y)$
+	È una via di mezzo tra le due misure precedenti.
+
+- **Centroid (distanza tra i centroidi)**: $dist(C_i,C_j)=dist(o_i,o_j)$
+	È molto veloce rispetto alle altre misure.
+
+- **Ward**: misura l'incremento della SSE rispetto ai centroidi quando vengono uniti due cluster
+![[Linkage measures.png|600]]
+
 

@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "9c2f173e2470c63a",
+        "id": "6b4eaea75035b9bb",
         "type": "tabs",
         "children": [
           {
-            "id": "cfe79c44272c7e2f",
+            "id": "3a3b35685e849ddb",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -77,8 +77,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 350.5124969482422,
-    "collapsed": true
+    "width": 350.5124969482422
   },
   "right": {
     "id": "282a9548711da6a0",
@@ -162,14 +161,16 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "cfe79c44272c7e2f",
+  "active": "a1163d9af64d6878",
   "lastOpenFiles": [
-    "Secondo anno/Algoritmi e strutture dati/Mod. 1/Teoria della NP completezza.md",
-    "Terzo anno/Data and web mining/Clustering.md",
-    "Terzo anno/Data and web mining/Images/Elbow method.png",
-    "Terzo anno/Data and web mining/Images/K-means.png",
+    "Terzo anno/Data and web mining/Images/Linkage measures.png",
     "Calcolo 1/Images",
     "Calcolo 1",
+    "Terzo anno/Data and web mining/Images/K-means++.png",
+    "Terzo anno/Data and web mining/Clustering.md",
+    "Secondo anno/Algoritmi e strutture dati/Mod. 1/Teoria della NP completezza.md",
+    "Terzo anno/Data and web mining/Images/Elbow method.png",
+    "Terzo anno/Data and web mining/Images/K-means.png",
     "Terzo anno/Ricerca operativa/Definizioni generali.md",
     "Primo anno/Secondo semestre/Calcolo 2/Funzioni a più variabili reali/Calcolo differenziale.md",
     "Terzo anno/Data and web mining/Text processing & naive Bayes.md",
@@ -188,7 +189,6 @@
     "Calcolo 1/Images/Pasted image 20241105114938.png",
     "Terzo anno/Data and web mining/Images/Sparse matrix TF-IDF.png",
     "Terzo anno/Data and web mining/Images/Sparse matrix bag of words.png",
-    "Terzo anno/Data and web mining/Images/Sparse.png",
     "Primo anno/Secondo semestre/Calcolo 2/Funzioni a più variabili reali/Curve di livello e dominio.md",
     "Terzo anno/Ricerca operativa/Programmazione matematica.md",
     "Secondo anno/Basi di dati/Mod. 1/Linguaggi relazionali.md",
@@ -203,7 +203,6 @@
     "Primo anno/Primo semestre/Calcolo 1/Derivate/Derivate delle funzioni elementari.md",
     "Terzo anno/Reti di calcolatori/Sicurezza/PKI.md",
     "Terzo anno/Reti di calcolatori/Sicurezza/Crittografia a chiave pubblica.md",
-    "Terzo anno/Calcolabilità e linguaggi formali/Linguaggi context-free/Linguaggi non context-free.md",
     "Terzo anno/Calcolabilità e linguaggi formali/Linguaggi context-free",
     "Terzo anno/Reti di calcolatori/Sicurezza",
     "Terzo anno/Reti di calcolatori/Livelli TCP",
