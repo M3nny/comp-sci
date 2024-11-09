@@ -4,21 +4,17 @@
     "type": "split",
     "children": [
       {
-        "id": "6b4eaea75035b9bb",
+        "id": "0fdaa9934458ae7e",
         "type": "tabs",
         "children": [
           {
-            "id": "3a3b35685e849ddb",
+            "id": "d6c43aaa1bfe76f7",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Terzo anno/Data and web mining/Clustering.md",
-                "mode": "source",
-                "source": false
-              },
+              "type": "empty",
+              "state": {},
               "icon": "lucide-file",
-              "title": "Clustering"
+              "title": "New tab"
             }
           }
         ]
@@ -161,13 +157,14 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "a1163d9af64d6878",
+  "active": "d6c43aaa1bfe76f7",
   "lastOpenFiles": [
+    "Terzo anno/Calcolabilità e linguaggi formali/Macchina di Turing.md",
+    "Terzo anno/Data and web mining/Clustering.md",
     "Terzo anno/Data and web mining/Images/Linkage measures.png",
     "Calcolo 1/Images",
     "Calcolo 1",
     "Terzo anno/Data and web mining/Images/K-means++.png",
-    "Terzo anno/Data and web mining/Clustering.md",
     "Secondo anno/Algoritmi e strutture dati/Mod. 1/Teoria della NP completezza.md",
     "Terzo anno/Data and web mining/Images/Elbow method.png",
     "Terzo anno/Data and web mining/Images/K-means.png",
@@ -182,13 +179,11 @@
     "Terzo anno/Ricerca operativa/Problemi convessi.md",
     "Terzo anno/Calcolabilità e linguaggi formali/Images/Enumeratore.png",
     "Calcolo 1/Images/Pasted image 20241105191255.png",
-    "Terzo anno/Calcolabilità e linguaggi formali/Macchina di Turing.md",
     "Terzo anno/Calcolabilità e linguaggi formali/Images/MdT - non deterministica.png",
     "Terzo anno/Calcolabilità e linguaggi formali/Images/MdT - multinastro.png",
     "asdasdasd.canvas",
     "Calcolo 1/Images/Pasted image 20241105114938.png",
     "Terzo anno/Data and web mining/Images/Sparse matrix TF-IDF.png",
-    "Terzo anno/Data and web mining/Images/Sparse matrix bag of words.png",
     "Primo anno/Secondo semestre/Calcolo 2/Funzioni a più variabili reali/Curve di livello e dominio.md",
     "Terzo anno/Ricerca operativa/Programmazione matematica.md",
     "Secondo anno/Basi di dati/Mod. 1/Linguaggi relazionali.md",

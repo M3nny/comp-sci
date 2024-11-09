@@ -33,14 +33,14 @@ Generalmente una configurazione ha forma $uqv$, dove $u,v\in\Gamma^*$ e $q\in Q$
 Una MdT computa passando da una configurazione a quella successiva secondo quanto definito da $\delta$, vediamo le **regole di computazione**:
 - Sia $M$ nella configurazione $uaq_ibv$, e sia $\delta(q_i,b)=(q_j,c,L)$, allora la prossima configurazione sarà $uq_jacv$
 - Sia $M$ nella configurazione $uaq_ibv$ e sia $\delta(q_i,b)=(q_j,c,R)$, allora la prossima configurazione sarà $uacq_jv$
-- Sia $m$ nella configurazione $q_ibv$ e sia $\delta(q_i,b)=(q_j,c,L)$, allora la prossima configurazione sarà $q_jcv$
+- Sia $M$ nella configurazione $q_ibv$ e sia $\delta(q_i,b)=(q_j,c,L)$, allora la prossima configurazione sarà $q_jcv$
 - Sia $M$ nella configurazione $q_ibv$ e sia $\delta(q_i,b)=(q_j,c,R)$, allora la prossima configurazione sarà $cq_jv$
 
 Una MdT **accetta un input** $w$ sse esistono della configurazioni $C_1,C_2,...,C_k$ tali che:
 - $C_1$ è la configurazione iniziale $q_0w$
 - $C_k$ è una configurazione accettante $u_{accept}v$ per qualche $u,v\in\Gamma^*$
-	(Le configurazioni accettanti possono essere più di una)
-- Per ogni $i$ $C_i$ passa in $C_{i+1}$ secondo le regole di computazione date
+	(Le configurazioni accettanti possono essere più di una).
+- Per ogni $i$, $C_i$ passa in $C_{i+1}$ secondo le regole di computazione date
 
 ### Linguaggio per una macchina di Turing
 Un linguaggio $A$ si dice **Turing riconoscibile** sse esiste una MdT $M$ tale che $L(M)=A$.
@@ -61,6 +61,7 @@ Un linguaggio $A$ si dice **decidibile** sse esiste un _decisore_ $M$ tale che $
 >Dopo aver sostituito i simboli con $\times$ a sx e dx di $\#$ si verifica se ci sono ancora simboli non marchiati con $\times$, in tal caso si rifiuta, altrimenti si accetta.
 >![[MdT 1.png]]
 >
+>>Le transizioni del tipo $a\to R/L$, sono da interpretare come $a\to a,R/L$. 
 >---
 >Creiamo una MdT per il seguente linguaggio:
 >$$\{0^{2^n}|n\geq 0\}$$
@@ -90,7 +91,7 @@ $$\delta:Q\times\Gamma^k\to Q\times\Gamma^k\times\{L,R,S\}^k$$
 
 **Esempio di conversione**
 1. Popoliamo il nastro con $\dot w_1...w_n\#\underbrace{\dot\sqcup\#...\#\dot\sqcup}_{k-1}\#$
-2. Simuliamo una mossa scorrendo tutto il nastro e segniamo nello stato i $k$ simboli marcati con $\cdot$, poi scorriamo di nuovo il nastro per aggiornare il suo contenuto secondo $\delta$
+2. Simuliamo una mossa scorrendo tutto il nastro e segniamo nello stato i $k$ simboli marcati con $\bullet$, poi scorriamo di nuovo il nastro per aggiornare il suo contenuto secondo $\delta$
 3. Se stiamo per scrivere su un $\#$ eseguiamo uno _shift_ a destra del contenuto del nastro e liberiamo una cella
 
 ### Variante MdT - Non deterministica
@@ -100,7 +101,7 @@ $$\delta:Q\times\Gamma\to\mathcal{P}(Q\times\Gamma\times\{L,R\}$$
 **Teorema**: per ogni MdT non deterministica, esiste una MdT deterministica equivalente.
 
 **Idea**: una computazione non-deterministica si può rappresentare come albero, dove ogni nodo ha come figli i passi successivi delle computazioni che genera.
-Lo scopo della dimostrazione è quello di poter simulare tramite MdT deterministica un cammino radice-foglia che rappresenta una computazione accettante, non possiamo però effettuare una ricerca in profondità (potremmo finire in una esecuzione che entra in loop infinito), per cui eseguiremo una ricerca in ampiezza.
+Lo scopo della dimostrazione è quello di poter simulare tramite una MdT deterministica un cammino radice-foglia che rappresenta una computazione accettante, non possiamo però effettuare una ricerca in profondità (potremmo finire in una esecuzione che entra in loop infinito), per cui eseguiremo una ricerca in ampiezza.
 
 Utilizziamo una MdT dotata di tre nastri per completare la dimostrazione.
 ![[MdT - non deterministica.png|650]]
@@ -109,13 +110,13 @@ Utilizziamo una MdT dotata di tre nastri per completare la dimostrazione.
 - **2° nastro**: su di esso avvengono le simulazioni delle esecuzioni, inizialmente sarà popolato con l'input originale
 - **3° nastro**: risolve il non determinismo, esso tiene traccia del cammino corrente (cioè l'esecuzione considerata attualmente) codificato tramite una stringa di interi, tale cammino prende il nome di **indirizzo**
 
-Dall'immagina capiamo che il percorso a sinistra è un ciclo infinito, per questo dobbiamo procedere in ampiezza, la macchina terminerà quando arriverà alla fine del cammino evidenziato in verde (assumiamo accettante).
+Dall'immagine capiamo che il percorso a sinistra è un ciclo infinito, per questo dobbiamo procedere in ampiezza, la macchina terminerà quando arriverà alla fine del cammino evidenziato in verde (assumiamo accettante).
 Possiamo codificare il cammino accettante come $121$ in quanto prendiamo inizialmente il primo figlio da sx, poi il secondo ed infine il primo.
 
 La macchina funzionerà come segue:
 1. Inizialmente mette sul nastro $1$ l'input $w$, assume che il 2° nastro sia vuoto ed inizializza il 3° nastro a $\epsilon$
 2. Copia il 1° nastro sul 2°
-3. Simula la MdT non deterministica sul 2° nastro usando il contenuto del 3ç nastro per risolvere il non-determinismo
+3. Simula la MdT non deterministica sul 2° nastro usando il contenuto del 3° nastro per risolvere il non-determinismo
 4. Se accetta termina con _accept_, altrimenti se rifiuta oppure il 3° nastro contiene un indirizzo invalido aggiorna il contenuto del 3° nastro con la prossima stringa e va al punto 2
 
 >La generazione degli indirizzi è ciò che determina la visita in ampiezza dell'albero.
@@ -135,7 +136,7 @@ Il suo **linguaggio** è l'insieme delle stringhe stampate.
 Assumiamo di avere una MdT $M$ tale che $L(M)=A$, costruiamo un enumeratore $E$ tale che $L(E)=A$.
 
 $E=\forall i\in[1,2,...]$
-1. Esegue $m$ per i passi di computazione su $s_1,...,s_i$
+1. Esegue $M$ per i passi di computazione su $s_1,...,s_i$
 2. Se esiste $s_j$ dove $M$ termina con _accept_, stampa $s_j$
 
 Il funzionamento dell'enumeratore è il seguente:
@@ -153,4 +154,36 @@ $M=$ su input $w$:
 1. Esegue $E$, quando esso genera una stringa $w'$, confronta $w$ con $w'$
 2. Se $w=w'$ accetta, altrimenti passa alla stringa successiva
 
+---
+## Tesi di Church-Turing
+La **tesi di Church-Turing** afferma che la nozione di **algoritmo** coincide con gli algoritmi implementabili tramite MdT.
+
+Disponiamo quindi di tre modi per descrivere una MdT:
+1. **Formale**: tramite una $7$-upla
+2. **Implementativo**: descrizione di come computa (e.g. scorri il nastro finchè...)
+3. **Ad alto livello**: si da una descrizione ad alto livello dell'algoritmo (e.g. per ogni elemento calcola...)
+
+### Decimo problema di Hilbert
+Il decimo problema di Hilbert è definito come il **problema delle radici intere di un polinomio**, esso si pone il quesito di definire un algoritmo che dato un polinomio (e.g. $x^2-y^2$) determina se ammette o meno una _radice intera_, ovvero una sostituzione delle sue variabili con dei valori interi che lo facciano valere $0$.
+>È dimostrabile che tale algoritmo non esiste.
+
+Riduciamo il problema ad un polinomio nella sola variabile $x$.
+Dobbiamo vedere se una MdT può creare un algoritmo per risolvere tale problema, il punto è che una MdT riconosce linguaggi, non risolve problemi.
+
+Nel nostro caso possiamo definire il seguente linguaggio:
+$$A=\{<p>|p\text{ è un polinomio in }x\text{ con radice intera}\}$$
+dove $<\cdot>$ è una **funzione** che trasforma i polinomi in una loro rappresentazione come stringa.
+
+Il nostro problema ammette soluzione algoritmica sse $A$ è _decidibile_ (riconoscibile da un decisore).
+Costruiamo quindi un decisore per $A$:
+$M$= su input $<p>$:
+1. Per tutti gli $x=0,1,-1,2,-2,3,-3,...$
+	- Calcola il valore $p(x)$
+	- Se $p(x)=0$ accetta
+
+$M$ in questo modo però _non è un decisore_ perchè potrebbe andare in loop quando non trova la soluzione, infatti $M$ dimostra che $A$ è Turing-riconoscibile, ma non se è decidibile.
+
+Se il primo punto dell'algoritmo fosse limitato per un certo intervallo, e se aggiungessimo un secondo punto per cui "se non hai trovato una radice intera, allora rifiuta" otterremmo un decisore.
+
+Si può dimostrare che la radice intera, se esiste è compresa tra $[-k\frac{c_\max}{c_1},+k\frac{c_\max}{c_1}]$, dove $k$ è il numero di termini, $c_\max$ è il coefficiente di massimo valore assoluto e $c_1$ è il coefficiente di grado massimo.
 
