@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "c7052c9f80dbc486",
+        "id": "dafc7cd4bd18e7ef",
         "type": "tabs",
         "children": [
           {
-            "id": "5f64edfeeadd0188",
+            "id": "2bdabb2a61862961",
             "type": "leaf",
             "state": {
               "type": "empty",
@@ -157,11 +157,12 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "5f64edfeeadd0188",
+  "active": "2bdabb2a61862961",
   "lastOpenFiles": [
+    "Terzo anno/Reti di calcolatori/Protocolli/DNS.md",
+    "Secondo anno/Algoritmi e strutture dati/Mod. 1/Grafi/Introduzione.md",
     "Terzo anno/Calcolabilità e linguaggi formali/Decidibilità.md",
     "Terzo anno/Calcolabilità e linguaggi formali/Macchina di Turing.md",
-    "Terzo anno/Reti di calcolatori/Protocolli/DNS.md",
     "Terzo anno/Reti di calcolatori/Livelli TCP/Livello di trasporto.md",
     "Terzo anno/Reti di calcolatori/Livelli TCP/Livello di rete.md",
     "Terzo anno/Reti di calcolatori/Protocolli",
@@ -198,7 +199,6 @@
     "Primo anno/Primo semestre/Calcolo 1/Derivate/Algebra delle derivate.md",
     "Terzo anno/Data and web mining/Feature selection & engineering.md",
     "Excalidraw/Template CLF.md",
-    "Terzo anno/Calcolabilità e linguaggi formali/Linguaggi regolari/Automi a stati finiti non deterministici.md",
     "Terzo anno/Calcolabilità e linguaggi formali/Linguaggi formali",
     "Terzo anno/Calcolabilità e linguaggi formali/Linguaggi context-free",
     "Terzo anno/Reti di calcolatori/Sicurezza",
