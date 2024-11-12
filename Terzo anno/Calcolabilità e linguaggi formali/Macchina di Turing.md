@@ -163,6 +163,41 @@ Disponiamo quindi di tre modi per descrivere una MdT:
 2. **Implementativo**: descrizione di come computa (e.g. scorri il nastro finchè...)
 3. **Ad alto livello**: si da una descrizione ad alto livello dell'algoritmo (e.g. per ogni elemento calcola...)
 
+---
+### Chiusura dei linguaggi Turing-riconoscibili
+**Unione**
+Se $A$ e $B$ sono T.r., allora $A\cup B$ è T.r., essendo $A$ e $B$ T.r., esistono delle MdT $M$ ed $N$ tali che $L(M)=A$ e $L(N)=B$.
+Costruiamo una MdT $M'$ non deterministica:
+$M'$ = su input $w$:
+1. Scegli non deterministicamente $M$ oppure $N$ su $w$
+2. Se $M$ oppure $N$ accetta, allora accetta
+
+**Intersezione**
+Se $A$ e $B$ sono T.r., allora $A\cap B$ è T.r., essendo $A$ e $B$ T.r., esistono delle MdT $M$ ed $N$ tali che $L(M)=A$ e $L(N)=B$.
+Costruiamo una MdT $M'$:
+$M'$ = su input $w$:
+1. Simula $M$ su $w$
+2. Se $M$ accetta, simula $N$ su $w$ e ritorna il suo output
+	- Altrimenti rifiuta
+
+**Concatenazione**
+Se $A$ e $B$ sono T.r., allora $A\circ B$ è T.r., essendo $A$ e $B$ T.r., esistono delle MdT $M$ ed $N$ tali che $L(M)=A$ e $L(N)=B$.
+Costruiamo una MdT $M'$ non deterministica:
+$M'$ = su input $w$:
+1. Separa $w$ in $w_1w_2$ non deterministicamente
+2. Simula $M$ su $w_1$, se accetta simula $N$ su $w_2$ e ritorna il suo output
+	- Altrimenti rifiuta
+
+**Star**
+Se $A$ è T.r., allora $A^*$ è T.r., essendo $A$ T.r., esiste una MdT $M$ tale che $L(M)=A$.
+Costruiamo una MdT $M'$ non deterministica:
+$M'$ = su input $w$:
+1. Separa $w$ in $w_1w_2$ non deterministicamente per qualche $n\leq|w|$
+2. Simula $M$ su $w_i$ per ogni $i\leq n$, se $M$ accetta tutti gli input, allora accetta, altrimenti rifiuta
+
+È dimostrabile inoltre che i **linguaggi decidibili** sono chiusi rispetto a: **unione**, **intersezione**, **concatenazione**, **star** e anche rispetto al **complemento** (a differenza dei linguaggi T.r.).
+
+---
 ### Decimo problema di Hilbert
 Il decimo problema di Hilbert è definito come il **problema delle radici intere di un polinomio**, esso si pone il quesito di definire un algoritmo che dato un polinomio (e.g. $x^2-y^2$) determina se ammette o meno una _radice intera_, ovvero una sostituzione delle sue variabili con dei valori interi che lo facciano valere $0$.
 >È dimostrabile che tale algoritmo non esiste.
@@ -186,4 +221,3 @@ $M$ in questo modo però _non è un decisore_ perchè potrebbe andare in loop qu
 Se il primo punto dell'algoritmo fosse limitato per un certo intervallo, e se aggiungessimo un secondo punto per cui "se non hai trovato una radice intera, allora rifiuta" otterremmo un decisore.
 
 Si può dimostrare che la radice intera, se esiste è compresa tra $[-k\frac{c_\max}{c_1},+k\frac{c_\max}{c_1}]$, dove $k$ è il numero di termini, $c_\max$ è il coefficiente di massimo valore assoluto e $c_1$ è il coefficiente di grado massimo.
-
