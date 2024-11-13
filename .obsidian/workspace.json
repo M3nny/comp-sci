@@ -4,17 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "dafc7cd4bd18e7ef",
+        "id": "8b46e699dbc23582",
         "type": "tabs",
         "children": [
           {
-            "id": "2bdabb2a61862961",
+            "id": "ed1fd4f94ae59081",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "Terzo anno/Reti di calcolatori/Protocolli/SMTP.md",
+                "mode": "source",
+                "source": false
+              },
               "icon": "lucide-file",
-              "title": "New tab"
+              "title": "SMTP"
             }
           }
         ]
@@ -157,14 +161,20 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "2bdabb2a61862961",
+  "active": "ed1fd4f94ae59081",
   "lastOpenFiles": [
+    "Terzo anno/Reti di calcolatori/Sicurezza/HMAC.md",
+    "Terzo anno/Reti di calcolatori/Protocolli/SMTP.md",
+    "Terzo anno/Reti di calcolatori/Livelli TCP/Livello applicativo.md",
+    "Terzo anno/Reti di calcolatori/Livelli TCP/Livello di trasporto.md",
+    "Terzo anno/Reti di calcolatori/Livelli TCP/Livello di rete.md",
+    "Terzo anno/Reti di calcolatori/Images/SMTP.png",
+    "Calcolo 1/Images",
+    "Calcolo 1",
     "Terzo anno/Reti di calcolatori/Protocolli/DNS.md",
     "Secondo anno/Algoritmi e strutture dati/Mod. 1/Grafi/Introduzione.md",
     "Terzo anno/Calcolabilità e linguaggi formali/Decidibilità.md",
     "Terzo anno/Calcolabilità e linguaggi formali/Macchina di Turing.md",
-    "Terzo anno/Reti di calcolatori/Livelli TCP/Livello di trasporto.md",
-    "Terzo anno/Reti di calcolatori/Livelli TCP/Livello di rete.md",
     "Terzo anno/Reti di calcolatori/Protocolli",
     "Terzo anno/Ricerca operativa/Programmazione lineare.md",
     "Terzo anno/Ricerca operativa/DIrezioni ottimali.md",
@@ -175,8 +185,6 @@
     "Terzo anno/Ricerca operativa/Problemi convessi.md",
     "Terzo anno/Data and web mining/Clustering.md",
     "Terzo anno/Data and web mining/Images/Linkage measures.png",
-    "Calcolo 1/Images",
-    "Calcolo 1",
     "Terzo anno/Data and web mining/Images/K-means++.png",
     "Secondo anno/Algoritmi e strutture dati/Mod. 1/Teoria della NP completezza.md",
     "Terzo anno/Data and web mining/Images/Elbow method.png",
@@ -193,12 +201,8 @@
     "Terzo anno/Calcolabilità e linguaggi formali/Images/MdT - non deterministica.png",
     "Terzo anno/Calcolabilità e linguaggi formali/Images/MdT - multinastro.png",
     "asdasdasd.canvas",
-    "Calcolo 1/Images/Pasted image 20241105114938.png",
     "Primo anno/Secondo semestre/Calcolo 2/Funzioni a più variabili reali/Curve di livello e dominio.md",
     "Secondo anno/Basi di dati/Mod. 1/Linguaggi relazionali.md",
-    "Primo anno/Primo semestre/Calcolo 1/Derivate/Algebra delle derivate.md",
-    "Terzo anno/Data and web mining/Feature selection & engineering.md",
-    "Excalidraw/Template CLF.md",
     "Terzo anno/Calcolabilità e linguaggi formali/Linguaggi formali",
     "Terzo anno/Calcolabilità e linguaggi formali/Linguaggi context-free",
     "Terzo anno/Reti di calcolatori/Sicurezza",
