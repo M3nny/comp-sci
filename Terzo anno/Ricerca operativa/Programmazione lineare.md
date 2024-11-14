@@ -52,3 +52,25 @@ Di seguito vediamo cosa può rappresentare un poliedro.
 $$P=\{x\in\mathbb{R}^n:0^Tx\geq 0\}\equiv\mathbb{R}^n$$
 - Una **retta** è un poliedro, lo stesso vale per un **segmento** in quanto può essere rappresentato come una retta intersecata con due semispazi
 
+### Gradiente della funzione obiettivo
+Dato il seguente problema di ottimizzazione:
+$$\begin{align} \min c^Tx\\Ax\geq b\end{align}$$
+Il gradiente $\nabla f(x)=c$ della funzione obiettivo è **ortogonale** alle [[Problemi convessi#Curva di livello|curve di livello]] di $f(x)$ ed è **orientato nel verso crescente** di $f(x)$.
+![[Poliedro curve di livello.svg|500]]
+
+**Dimostrazione**
+Le curve di livello di $f(x)$, rappresentanti un [[Rette e piani#Fasci di rette|fascio di rette improprio]], sono date dagli iperpiani $c^Tx=\gamma$, con $\gamma\in\mathbb{R}$.
+Consideriamo ora i due punti $\bar x,\bar y\in\mathbb{R}$ appartenenti $\gamma_1$:
+$$c^T\bar x=c^T\bar y=\gamma_1$$
+da cui otteniamo sottraendo:
+$$c^T\bar x-c^T\bar y=0\iff c^T(\bar x-\bar y)=0$$
+per cui il vettore $c$ è _ortogonale_ rispetto a $(\bar x-\bar y)$, in quanto il [[Definizioni generali#Prodotto scalare|prodotto scalare standard]] è nullo.
+
+Sia ora $\hat y$ un punto appartenente alla curva di livello $\gamma_3$, con $\gamma_3>\gamma_1$, consideriamo i seguenti iperpiani:
+$$c^T\bar x=\gamma_1\quad c^T\hat y=\gamma_3\quad \gamma_3>\gamma_1$$
+otteniamo sottraendo:
+$$c^T\hat y-c^T\bar x=\gamma_3-\gamma_1>0\iff c^T(\hat y-\bar x)>0$$
+l'[[Definizioni generali#Norma|angolo tra vettori]] sarà quindi definito come:
+$$\underbrace{||c||_2\cdot||\hat y-\bar x||_2}_{\text{sempre }>0}\cdot\underbrace{\cos(\varphi)}_{>0\text{ a causa di }c^T(\hat y-\bar x)>0}$$
+
+ovvero l'angolo $\varphi$ formato dal gradiente $c$ e dal vettore $\hat y-\bar x$ è minore di $90°$, per cui $c$ è <u>orientato nel verso crescente della funzione obiettivo</u>.

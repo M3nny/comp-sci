@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "46136e9a6e999956",
+        "id": "ef5f04653d0fcc29",
         "type": "tabs",
         "children": [
           {
-            "id": "70c8cd36cd9842fd",
+            "id": "f6666c175ed8fcc2",
             "type": "leaf",
             "state": {
               "type": "empty",
@@ -154,11 +154,18 @@
       "graph:Open graph view": false,
       "canvas:Create new canvas": true,
       "command-palette:Open command palette": true,
-      "obsidian-excalidraw-plugin:Create new drawing": false
+      "obsidian-excalidraw-plugin:Create new drawing": false,
+      "3d-graph:3D Graph": false
     }
   },
-  "active": "70c8cd36cd9842fd",
+  "active": "f6666c175ed8fcc2",
   "lastOpenFiles": [
+    "Terzo anno/Ricerca operativa/Definizioni generali.md",
+    "Terzo anno/Ricerca operativa/Programmazione lineare.md",
+    "Primo anno/Primo semestre/Algebra lineare/Rette e piani.md",
+    "Excalidraw/Template RO.md",
+    "Terzo anno/Ricerca operativa/Images/Poliedro curve di livello.svg",
+    "Terzo anno/Ricerca operativa/Problemi convessi.md",
     "Terzo anno/Calcolabilità e linguaggi formali/Indecidibilità.md",
     "Terzo anno/Calcolabilità e linguaggi formali/Decidibilità.md",
     "Primo anno/Primo semestre/Matematica discreta/La cardinalità.md",
@@ -182,22 +189,16 @@
     "Secondo anno/Algoritmi e strutture dati/Mod. 1/Grafi/Introduzione.md",
     "Terzo anno/Calcolabilità e linguaggi formali/Macchina di Turing.md",
     "Terzo anno/Reti di calcolatori/Protocolli",
-    "Terzo anno/Ricerca operativa/Programmazione lineare.md",
     "Terzo anno/Ricerca operativa/DIrezioni ottimali.md",
-    "Excalidraw/Template RO.md",
     "Terzo anno/Ricerca operativa/Images/Poliedri.svg",
     "Terzo anno/Ricerca operativa/Programmazione matematica.md",
-    "Terzo anno/Ricerca operativa/Problemi convessi.md",
     "Terzo anno/Data and web mining/Clustering.md",
     "Terzo anno/Data and web mining/Images/Linkage measures.png",
     "Terzo anno/Data and web mining/Images/K-means++.png",
     "Secondo anno/Algoritmi e strutture dati/Mod. 1/Teoria della NP completezza.md",
     "Terzo anno/Data and web mining/Images/Elbow method.png",
     "Terzo anno/Data and web mining/Images/K-means.png",
-    "Terzo anno/Ricerca operativa/Definizioni generali.md",
-    "Primo anno/Secondo semestre/Calcolo 2/Funzioni a più variabili reali/Calcolo differenziale.md",
     "Terzo anno/Calcolabilità e linguaggi formali/Images/Enumeratore.png",
-    "Calcolo 1/Images/Pasted image 20241105191255.png",
     "asdasdasd.canvas",
     "Terzo anno/Calcolabilità e linguaggi formali/Linguaggi formali",
     "Terzo anno/Calcolabilità e linguaggi formali/Linguaggi context-free",
