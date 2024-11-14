@@ -97,3 +97,15 @@ $M$ = su input $<G>$:
 	- Marca i non-terminali $A$ tali che esista una produzione nella forma $A\to w_1,...,w_n$ dove tutti i $w_i$ sono marcati
 3. Se ha marcato lo start-symbol $S$ rifiuta, altrimenti accetta
 
+### Decidibilità delle CFG
+Sia $A$ un linguaggio context-free, allora esiste una CFG $G$ tale che $L(G)=A$.
+
+Dimostriamo quindi che esiste un decisore $M$ tale che $L(M)=A$:
+$M$ = su input $w$:
+1. Simula il decisore per il problema $A_{CFG}$ su input $<G,w>$
+2. Ritorna il suo output
+
+La grammatica $G$ nel nostro caso è "hard-coded" nella macchina $M$, in quanto non viene fornita come input, siamo sicuri che esista una grammatica $G$ per definizione di linguaggio context-free, e questo è sufficiente per la dimostrazione.
+
+Con questa dimostrazione possiamo vedere i linguaggi nel seguente modo:
+![[Gerarchia linguaggi.svg]]

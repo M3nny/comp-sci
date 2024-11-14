@@ -4,21 +4,17 @@
     "type": "split",
     "children": [
       {
-        "id": "8b46e699dbc23582",
+        "id": "46136e9a6e999956",
         "type": "tabs",
         "children": [
           {
-            "id": "ed1fd4f94ae59081",
+            "id": "70c8cd36cd9842fd",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Terzo anno/Reti di calcolatori/Protocolli/SMTP.md",
-                "mode": "source",
-                "source": false
-              },
+              "type": "empty",
+              "state": {},
               "icon": "lucide-file",
-              "title": "SMTP"
+              "title": "New tab"
             }
           }
         ]
@@ -161,26 +157,35 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "ed1fd4f94ae59081",
+  "active": "70c8cd36cd9842fd",
   "lastOpenFiles": [
-    "Terzo anno/Reti di calcolatori/Sicurezza/HMAC.md",
+    "Terzo anno/Calcolabilità e linguaggi formali/Indecidibilità.md",
+    "Terzo anno/Calcolabilità e linguaggi formali/Decidibilità.md",
+    "Primo anno/Primo semestre/Matematica discreta/La cardinalità.md",
+    "Primo anno/Primo semestre/Calcolo 1/Insiemistica/Cardinalità e numerabilità.md",
+    "Primo anno/Primo semestre/Calcolo 1/Funzioni/Cos'è una funzione.md",
+    "Terzo anno/Calcolabilità e linguaggi formali/Images/Diagonalizzazione naturali a razionali.png",
+    "Calcolo 1/Images",
+    "Calcolo 1",
+    "Excalidraw/Template CLF.md",
+    "Terzo anno/Calcolabilità e linguaggi formali/Images/Gerarchia linguaggi.svg",
+    "Excalidraw/Drawing 2024-11-11 18.20.38.excalidraw.md",
+    "Secondo anno/Programmazione ad oggetti/Mod. 2/Oggetti in C++.md",
+    "Terzo anno/Data and web mining/Decision trees.md",
     "Terzo anno/Reti di calcolatori/Protocolli/SMTP.md",
+    "Terzo anno/Reti di calcolatori/Sicurezza/HMAC.md",
     "Terzo anno/Reti di calcolatori/Livelli TCP/Livello applicativo.md",
     "Terzo anno/Reti di calcolatori/Livelli TCP/Livello di trasporto.md",
     "Terzo anno/Reti di calcolatori/Livelli TCP/Livello di rete.md",
     "Terzo anno/Reti di calcolatori/Images/SMTP.png",
-    "Calcolo 1/Images",
-    "Calcolo 1",
     "Terzo anno/Reti di calcolatori/Protocolli/DNS.md",
     "Secondo anno/Algoritmi e strutture dati/Mod. 1/Grafi/Introduzione.md",
-    "Terzo anno/Calcolabilità e linguaggi formali/Decidibilità.md",
     "Terzo anno/Calcolabilità e linguaggi formali/Macchina di Turing.md",
     "Terzo anno/Reti di calcolatori/Protocolli",
     "Terzo anno/Ricerca operativa/Programmazione lineare.md",
     "Terzo anno/Ricerca operativa/DIrezioni ottimali.md",
     "Excalidraw/Template RO.md",
     "Terzo anno/Ricerca operativa/Images/Poliedri.svg",
-    "Excalidraw/Drawing 2024-11-11 18.20.38.excalidraw.md",
     "Terzo anno/Ricerca operativa/Programmazione matematica.md",
     "Terzo anno/Ricerca operativa/Problemi convessi.md",
     "Terzo anno/Data and web mining/Clustering.md",
@@ -191,18 +196,9 @@
     "Terzo anno/Data and web mining/Images/K-means.png",
     "Terzo anno/Ricerca operativa/Definizioni generali.md",
     "Primo anno/Secondo semestre/Calcolo 2/Funzioni a più variabili reali/Calcolo differenziale.md",
-    "Terzo anno/Data and web mining/Text processing & naive Bayes.md",
-    "Primo anno/Primo semestre/Architettura degli elaboratori mod. 1/1 - Rappresentazione dell'informazione/Numeri razionali.md",
-    "Secondo anno/Probabilità e statistica/Distribuzioni note/Distribuzioni continue.md",
-    "Secondo anno/Probabilità e statistica/Congiunte.md",
-    "Terzo anno/Ricerca operativa/Riassunto.md",
     "Terzo anno/Calcolabilità e linguaggi formali/Images/Enumeratore.png",
     "Calcolo 1/Images/Pasted image 20241105191255.png",
-    "Terzo anno/Calcolabilità e linguaggi formali/Images/MdT - non deterministica.png",
-    "Terzo anno/Calcolabilità e linguaggi formali/Images/MdT - multinastro.png",
     "asdasdasd.canvas",
-    "Primo anno/Secondo semestre/Calcolo 2/Funzioni a più variabili reali/Curve di livello e dominio.md",
-    "Secondo anno/Basi di dati/Mod. 1/Linguaggi relazionali.md",
     "Terzo anno/Calcolabilità e linguaggi formali/Linguaggi formali",
     "Terzo anno/Calcolabilità e linguaggi formali/Linguaggi context-free",
     "Terzo anno/Reti di calcolatori/Sicurezza",
