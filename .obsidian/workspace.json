@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "ef5f04653d0fcc29",
+        "id": "cc1d25dc71c0415f",
         "type": "tabs",
         "children": [
           {
-            "id": "f6666c175ed8fcc2",
+            "id": "021a834f839fac96",
             "type": "leaf",
             "state": {
               "type": "empty",
@@ -154,12 +154,16 @@
       "graph:Open graph view": false,
       "canvas:Create new canvas": true,
       "command-palette:Open command palette": true,
-      "obsidian-excalidraw-plugin:Create new drawing": false,
-      "3d-graph:3D Graph": false
+      "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "f6666c175ed8fcc2",
+  "active": "021a834f839fac96",
   "lastOpenFiles": [
+    "Terzo anno/Reti di calcolatori/Protocolli/Tecniche anti-spam.md",
+    "Terzo anno/Reti di calcolatori/Images/Anti-spam.png",
+    "Calcolo 1/Images",
+    "Calcolo 1",
+    "Terzo anno/Reti di calcolatori/Protocolli/SMTP.md",
     "Terzo anno/Ricerca operativa/Definizioni generali.md",
     "Terzo anno/Ricerca operativa/Programmazione lineare.md",
     "Primo anno/Primo semestre/Algebra lineare/Rette e piani.md",
@@ -172,14 +176,11 @@
     "Primo anno/Primo semestre/Calcolo 1/Insiemistica/Cardinalità e numerabilità.md",
     "Primo anno/Primo semestre/Calcolo 1/Funzioni/Cos'è una funzione.md",
     "Terzo anno/Calcolabilità e linguaggi formali/Images/Diagonalizzazione naturali a razionali.png",
-    "Calcolo 1/Images",
-    "Calcolo 1",
     "Excalidraw/Template CLF.md",
     "Terzo anno/Calcolabilità e linguaggi formali/Images/Gerarchia linguaggi.svg",
     "Excalidraw/Drawing 2024-11-11 18.20.38.excalidraw.md",
     "Secondo anno/Programmazione ad oggetti/Mod. 2/Oggetti in C++.md",
     "Terzo anno/Data and web mining/Decision trees.md",
-    "Terzo anno/Reti di calcolatori/Protocolli/SMTP.md",
     "Terzo anno/Reti di calcolatori/Sicurezza/HMAC.md",
     "Terzo anno/Reti di calcolatori/Livelli TCP/Livello applicativo.md",
     "Terzo anno/Reti di calcolatori/Livelli TCP/Livello di trasporto.md",
@@ -192,13 +193,10 @@
     "Terzo anno/Ricerca operativa/DIrezioni ottimali.md",
     "Terzo anno/Ricerca operativa/Images/Poliedri.svg",
     "Terzo anno/Ricerca operativa/Programmazione matematica.md",
-    "Terzo anno/Data and web mining/Clustering.md",
     "Terzo anno/Data and web mining/Images/Linkage measures.png",
     "Terzo anno/Data and web mining/Images/K-means++.png",
-    "Secondo anno/Algoritmi e strutture dati/Mod. 1/Teoria della NP completezza.md",
     "Terzo anno/Data and web mining/Images/Elbow method.png",
     "Terzo anno/Data and web mining/Images/K-means.png",
-    "Terzo anno/Calcolabilità e linguaggi formali/Images/Enumeratore.png",
     "asdasdasd.canvas",
     "Terzo anno/Calcolabilità e linguaggi formali/Linguaggi formali",
     "Terzo anno/Calcolabilità e linguaggi formali/Linguaggi context-free",
