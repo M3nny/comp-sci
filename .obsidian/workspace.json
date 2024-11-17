@@ -4,17 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "cc1d25dc71c0415f",
+        "id": "2a34cb025ba8a403",
         "type": "tabs",
         "children": [
           {
-            "id": "021a834f839fac96",
+            "id": "87b08e7f85e7402a",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "Terzo anno/Data and web mining/Clustering/Density based.md",
+                "mode": "source",
+                "source": false
+              },
               "icon": "lucide-file",
-              "title": "New tab"
+              "title": "Density based"
             }
           }
         ]
@@ -157,53 +161,54 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "021a834f839fac96",
+  "active": "87b08e7f85e7402a",
   "lastOpenFiles": [
-    "Terzo anno/Reti di calcolatori/Protocolli/Tecniche anti-spam.md",
-    "Terzo anno/Reti di calcolatori/Images/Anti-spam.png",
+    "Terzo anno/Data and web mining/Clustering/Gerarchico.md",
+    "Terzo anno/Data and web mining/Clustering/K-means.md",
+    "Terzo anno/Data and web mining/Text processing & naive Bayes.md",
+    "Terzo anno/Data and web mining/Ensemble methods.md",
+    "Terzo anno/Data and web mining/Regressione lineare.md",
+    "Terzo anno/Data and web mining/Decision trees.md",
+    "Terzo anno/Data and web mining/K-nearest neighbors.md",
+    "Terzo anno/Data and web mining/Clustering/Density based.md",
+    "Terzo anno/Data and web mining/Feature selection & engineering.md",
+    "Terzo anno/Data and web mining/Images/Clustering comparison.png",
+    "Terzo anno/Data and web mining/Images/Density-connected.png",
+    "Terzo anno/Data and web mining/Images/Density-reachable.png",
+    "Terzo anno/Data and web mining/Images/Core point.png",
+    "Terzo anno/Data and web mining/Images/ROC AUC.png",
+    "Calcolo 1/Images/Pasted image 20241117180935.png",
+    "Terzo anno/Data and web mining/Clustering.md",
+    "Terzo anno/Data and web mining/Clustering",
+    "Terzo anno/Data and web mining/Images/Dendrogramma.png",
+    "Terzo anno/Data and web mining/Images/Linkage measures.png",
+    "Terzo anno/Data and web mining/Images/Distance measures.png",
+    "Terzo anno/Data and web mining/Images/Clustering gerarchico agglomerativo.png",
     "Calcolo 1/Images",
     "Calcolo 1",
+    "Terzo anno/Reti di calcolatori/Protocolli/Tecniche anti-spam.md",
     "Terzo anno/Reti di calcolatori/Protocolli/SMTP.md",
     "Terzo anno/Ricerca operativa/Definizioni generali.md",
     "Terzo anno/Ricerca operativa/Programmazione lineare.md",
     "Primo anno/Primo semestre/Algebra lineare/Rette e piani.md",
     "Excalidraw/Template RO.md",
-    "Terzo anno/Ricerca operativa/Images/Poliedro curve di livello.svg",
     "Terzo anno/Ricerca operativa/Problemi convessi.md",
     "Terzo anno/Calcolabilità e linguaggi formali/Indecidibilità.md",
     "Terzo anno/Calcolabilità e linguaggi formali/Decidibilità.md",
     "Primo anno/Primo semestre/Matematica discreta/La cardinalità.md",
     "Primo anno/Primo semestre/Calcolo 1/Insiemistica/Cardinalità e numerabilità.md",
     "Primo anno/Primo semestre/Calcolo 1/Funzioni/Cos'è una funzione.md",
-    "Terzo anno/Calcolabilità e linguaggi formali/Images/Diagonalizzazione naturali a razionali.png",
     "Excalidraw/Template CLF.md",
-    "Terzo anno/Calcolabilità e linguaggi formali/Images/Gerarchia linguaggi.svg",
     "Excalidraw/Drawing 2024-11-11 18.20.38.excalidraw.md",
     "Secondo anno/Programmazione ad oggetti/Mod. 2/Oggetti in C++.md",
-    "Terzo anno/Data and web mining/Decision trees.md",
     "Terzo anno/Reti di calcolatori/Sicurezza/HMAC.md",
-    "Terzo anno/Reti di calcolatori/Livelli TCP/Livello applicativo.md",
-    "Terzo anno/Reti di calcolatori/Livelli TCP/Livello di trasporto.md",
-    "Terzo anno/Reti di calcolatori/Livelli TCP/Livello di rete.md",
-    "Terzo anno/Reti di calcolatori/Images/SMTP.png",
-    "Terzo anno/Reti di calcolatori/Protocolli/DNS.md",
-    "Secondo anno/Algoritmi e strutture dati/Mod. 1/Grafi/Introduzione.md",
-    "Terzo anno/Calcolabilità e linguaggi formali/Macchina di Turing.md",
     "Terzo anno/Reti di calcolatori/Protocolli",
-    "Terzo anno/Ricerca operativa/DIrezioni ottimali.md",
-    "Terzo anno/Ricerca operativa/Images/Poliedri.svg",
-    "Terzo anno/Ricerca operativa/Programmazione matematica.md",
-    "Terzo anno/Data and web mining/Images/Linkage measures.png",
-    "Terzo anno/Data and web mining/Images/K-means++.png",
-    "Terzo anno/Data and web mining/Images/Elbow method.png",
-    "Terzo anno/Data and web mining/Images/K-means.png",
     "asdasdasd.canvas",
     "Terzo anno/Calcolabilità e linguaggi formali/Linguaggi formali",
     "Terzo anno/Calcolabilità e linguaggi formali/Linguaggi context-free",
     "Terzo anno/Reti di calcolatori/Sicurezza",
     "Terzo anno/Reti di calcolatori/Livelli TCP",
     "Terzo anno/Calcolabilità e linguaggi formali/Images/PDA 1.png.crdownload",
-    "Terzo anno/Reti di calcolatori/Images/aaaaaa.png.crdownload",
-    "Terzo anno/Calcolabilità e linguaggi formali/Linguaggi regolari"
+    "Terzo anno/Reti di calcolatori/Images/aaaaaa.png.crdownload"
   ]
 }

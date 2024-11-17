@@ -6,7 +6,7 @@ Prendiamo in considerazione il seguente dataset:
 Un ottimo albero decisionale potrebbe essere il seguente:
 ![[Decision tree.svg]]
 
-È possibile avere più di due figli per nodo, tuttavia non se ne trae nessun vantaggio in quanto un albero con nodo più figli può comunque essere espresso tramite un albero binario.
+È possibile avere più di due figli per nodo, tuttavia non se ne trae nessun vantaggio in quanto un albero con più figli può comunque essere espresso tramite un albero binario.
 >Ogni predicato volendo può considerare multiple features.
 
 L'**algoritmo di Hunt** è un algoritmo [[Algoritmi greedy|greedy]] ricorsivo che viene usato per creare un albero decisionale prendendo in considerazione il miglior split (se è possibile eseguire uno split) e le condizioni di stop:
@@ -76,7 +76,7 @@ Il gain in questo caso viene indicato come $InfoGain$.
 >- $InfoGain(B|\mathcal{D})=1-\left(\frac{600}{800}\cdot(-(\frac{1}{3}\log(\frac{1}{3})+\frac{2}{3}\log(\frac{2}{3})))+\frac{200}{800}\cdot(-(1\log(1)-0\log(0)))\right)\simeq 0.31$
 
 #### Gain ratio
-Per alberi di decisione k-ari l'$InfoGain$ favorisce split con partizioni più piccole, in quanto più propense ad essere pure, il $GainRatio$ normalizza l'information gain con $SplitInfo$:
+Per alberi di decisione $k$-ari l'$InfoGain$ favorisce split con partizioni più piccole, in quanto più propense ad essere pure, il $GainRatio$ normalizza l'information gain con $SplitInfo$:
 $$SplitInfo(\mathcal{D}_i)=-\sum_{i=1}^k\frac{|\mathcal{D}_i|}{\mathcal{D}}\log\left(\frac{|\mathcal{D}_i|}{\mathcal{D}}\right)$$
 $$Error(\mathcal{D})=GainRatio(\mathcal{D})=\frac{Info(\mathcal{D})}{SplitInfo(\mathcal{D})}$$
 

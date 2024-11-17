@@ -145,6 +145,12 @@ Le **Receiver Operating Characteristic (ROC) curves**, di un modello mostrano il
 
 Solitamente si può tollerare un FPR più largo per ottenere un TPR più alto (i.e. una recall più alta).
 
-Ricordando che il classificatore binario solitamente utilizza un _threshold_ pari a $0.5$ per predire la classe, la ROC curve è un grafico del TPR e FPR a confronto, dove ogni punto corrisponde alla coppia $(FPR,TPR)$ per un threshold diverso.
+Ricordando che il classificatore binario solitamente utilizza un _threshold_ pari a $0.5$ per predire la classe, la _ROC curve_ è un grafico del TPR e FPR a confronto, dove ogni punto corrisponde alla coppia $(FPR,TPR)$ per un threshold diverso.
 >Con threshold pari a $1$, FPR va a $0$, mentre se è pari a $0$, TPR va a $1$.
 
+Il concetto di **Area Under the Curve (AUC)** è semplicemente l'area sottostante la ROC curve, ovvero un valore che misura la capacità del modello di distinguere tra le due classi.
+- $AUC=1$: perfetta separazione tra le classi
+- $AUC=0.5$: prestazioni casuali
+
+L'AUC può essere visto come la probabilità che il modello assegni un punteggi più alto ad un esempio positivo rispetto ad un negativo.
+![[ROC AUC.png]]

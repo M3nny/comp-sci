@@ -13,7 +13,7 @@ Prendiamo come esempio l'andamento del valore del BTC in base al giorno:
 BTC = [10923.63, 10679.14, 10621.66, 10804.00, ...]
 ```
 
-in questo caso il **train** e **test** set non saranno scelti in modo casuale, bensì verrà estratto un giorno che divide passato (training) e futuro (test).
+In questo caso il **train** e **test** set non saranno scelti in modo casuale, bensì verrà estratto un giorno che divide passato (training) e futuro (test).
 
 Tuttavia se il fenomeno che vogliamo modellare non è lineare, la regressione lineare non funzionerà bene.
 ![[Regressione lineare BTC.png|500]]
