@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "e85e1a2eae2a209e",
+        "id": "c192648834e7a135",
         "type": "tabs",
         "children": [
           {
-            "id": "07e3fb02a7acb8dc",
+            "id": "a8cdca9f691fdb5b",
             "type": "leaf",
             "state": {
               "type": "empty",
@@ -157,10 +157,16 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "07e3fb02a7acb8dc",
+  "active": "a8cdca9f691fdb5b",
   "lastOpenFiles": [
-    "Secondo anno/Probabilità e statistica/Probabilità elementare.md",
     "Terzo anno/Ricerca operativa/Programmazione lineare.md",
+    "Terzo anno/Data and web mining/Reti neurali/Introduzione.md",
+    "Terzo anno/Data and web mining/Images/Discesa del gradiente.png",
+    "Terzo anno/Data and web mining/Images/ANN learning process.png",
+    "Calcolo 1/Images",
+    "Calcolo 1",
+    "Terzo anno/Data and web mining/Reti neurali",
+    "Secondo anno/Probabilità e statistica/Probabilità elementare.md",
     "Secondo anno/Probabilità e statistica/Probabilità condizionata.md",
     "Secondo anno/Probabilità e statistica/Costanti caratteristiche.md",
     "Secondo anno/Probabilità e statistica/Congiunte.md",
@@ -185,26 +191,19 @@
     "Terzo anno/Data and web mining/Images/Density-reachable.png",
     "Terzo anno/Data and web mining/Images/Core point.png",
     "Terzo anno/Data and web mining/Images/ROC AUC.png",
-    "Calcolo 1/Images/Pasted image 20241117180935.png",
     "Terzo anno/Data and web mining/Clustering.md",
     "Terzo anno/Data and web mining/Clustering",
-    "Terzo anno/Data and web mining/Images/Dendrogramma.png",
-    "Calcolo 1/Images",
-    "Calcolo 1",
     "Terzo anno/Reti di calcolatori/Protocolli/Tecniche anti-spam.md",
     "Terzo anno/Reti di calcolatori/Protocolli/SMTP.md",
     "Primo anno/Primo semestre/Algebra lineare/Rette e piani.md",
     "Terzo anno/Calcolabilità e linguaggi formali/Indecidibilità.md",
     "Terzo anno/Calcolabilità e linguaggi formali/Decidibilità.md",
-    "Primo anno/Primo semestre/Matematica discreta/La cardinalità.md",
-    "Primo anno/Primo semestre/Calcolo 1/Insiemistica/Cardinalità e numerabilità.md",
     "Terzo anno/Reti di calcolatori/Protocolli",
     "asdasdasd.canvas",
     "Terzo anno/Calcolabilità e linguaggi formali/Linguaggi formali",
     "Terzo anno/Calcolabilità e linguaggi formali/Linguaggi context-free",
     "Terzo anno/Reti di calcolatori/Sicurezza",
     "Terzo anno/Reti di calcolatori/Livelli TCP",
-    "Terzo anno/Calcolabilità e linguaggi formali/Images/PDA 1.png.crdownload",
-    "Terzo anno/Reti di calcolatori/Images/aaaaaa.png.crdownload"
+    "Terzo anno/Calcolabilità e linguaggi formali/Images/PDA 1.png.crdownload"
   ]
 }
