@@ -137,10 +137,10 @@ Di seguito le rappresentazioni geometriche per le norme pari a $1$:
 
 >Notare come solo in quattro punti il loro risultato combacia.
 
-
->[!Tip] Angolo tra vettori
->Dati due vettori $u,v$, il loro **angolo interno** è dato da:
->$$\varphi=||u||_2\cdot||v||_2\cdot\cos\varphi$$
+#### Relazione tra norma e prodotto scalare
+Dati due vettori $u,v\in\mathbb{R}^n$, è possibile scrivere il loro prodotto scalare come:
+$$<u,v>=u^Tv=\sum_{i=1}^nu_iv_i=||u||_2||y||_2\cos(\widehat{uv})$$
+dove $\widehat{uv}$ rappresenta l'**angolo più piccolo (interno)** formato dai due vettori. 
 
 ---
 ## Funzioni lineari e affini
