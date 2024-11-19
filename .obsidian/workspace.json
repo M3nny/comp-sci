@@ -4,17 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "c192648834e7a135",
+        "id": "54a1df5305ff2c8c",
         "type": "tabs",
         "children": [
           {
-            "id": "a8cdca9f691fdb5b",
+            "id": "dd0b94463851f44f",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "Terzo anno/Calcolabilità e linguaggi formali/Indecidibilità.md",
+                "mode": "source",
+                "source": false
+              },
               "icon": "lucide-file",
-              "title": "New tab"
+              "title": "Indecidibilità"
             }
           }
         ]
@@ -73,7 +77,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 350.5124969482422
+    "width": 350.5124969482422,
+    "collapsed": true
   },
   "right": {
     "id": "282a9548711da6a0",
@@ -157,14 +162,17 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "a8cdca9f691fdb5b",
+  "active": "dd0b94463851f44f",
   "lastOpenFiles": [
+    "Terzo anno/Reti di calcolatori/Protocolli/WWW.md",
+    "Terzo anno/Reti di calcolatori/Images/Applicazione WWW.png",
+    "Terzo anno/Reti di calcolatori/Images/Applicazione WWW.png",
+    "Calcolo 1/Images",
+    "Calcolo 1",
     "Terzo anno/Ricerca operativa/Programmazione lineare.md",
     "Terzo anno/Data and web mining/Reti neurali/Introduzione.md",
     "Terzo anno/Data and web mining/Images/Discesa del gradiente.png",
     "Terzo anno/Data and web mining/Images/ANN learning process.png",
-    "Calcolo 1/Images",
-    "Calcolo 1",
     "Terzo anno/Data and web mining/Reti neurali",
     "Secondo anno/Probabilità e statistica/Probabilità elementare.md",
     "Secondo anno/Probabilità e statistica/Probabilità condizionata.md",
@@ -189,15 +197,12 @@
     "Terzo anno/Data and web mining/Images/Clustering comparison.png",
     "Terzo anno/Data and web mining/Images/Density-connected.png",
     "Terzo anno/Data and web mining/Images/Density-reachable.png",
-    "Terzo anno/Data and web mining/Images/Core point.png",
-    "Terzo anno/Data and web mining/Images/ROC AUC.png",
     "Terzo anno/Data and web mining/Clustering.md",
     "Terzo anno/Data and web mining/Clustering",
     "Terzo anno/Reti di calcolatori/Protocolli/Tecniche anti-spam.md",
     "Terzo anno/Reti di calcolatori/Protocolli/SMTP.md",
     "Primo anno/Primo semestre/Algebra lineare/Rette e piani.md",
     "Terzo anno/Calcolabilità e linguaggi formali/Indecidibilità.md",
-    "Terzo anno/Calcolabilità e linguaggi formali/Decidibilità.md",
     "Terzo anno/Reti di calcolatori/Protocolli",
     "asdasdasd.canvas",
     "Terzo anno/Calcolabilità e linguaggi formali/Linguaggi formali",

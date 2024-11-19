@@ -105,3 +105,29 @@ Per capire meglio come questo sia possibile mostriamo in forma matriciale l'esec
 
 Nella tabella è possibile inserire anche una entry per il decisore $D$, il quale sappiamo comportarsi in maniera opposta all'input fornito, tuttavia quando incontrerà il suo stesso encoding $<D>$ non si può definire l'output in quanto esso dovrebbe essere l'opposto di se stesso, risultando in un assurdo.
 
+### Linguaggi decidibili
+Un linguaggio $A$ è decidibile sse sia $A$, che $\bar A$ sono Turing-riconoscibili.
+
+**Dimostrazione ($\Rightarrow$)**
+Sia $A$ decidibile, allora $\bar A$ è decidibile in quanto la classe dei linguaggi decidibili è chiusa rispetto all'operazione di complemento, essendo la classe di linguaggi decidibili un sottoinsieme della classe dei linguaggi Turing-riconoscibili, essi saranno anche linguaggi Turing-riconoscibili.
+
+**Dimostrazione ($\Leftarrow$)**
+Siano $A$ e $\bar A$ Turing-riconoscibili, allora esistono delle MdT $M,N$ tali che $L(M)=A$ e $L(N)=\bar A$.
+
+Costruiamo un _decisore_ $O$ tale che $L(O)=A$, per farlo non possiamo simulare sequenzialmente $M,N$ (o viceversa) su $w$, in quanto potrebbero andare in loop.
+
+Utilizziamo quindi due nastri su cui vengono eseguiti alternando un passo d'esecuzione alla volta $M$ e $N$ su $w$, una delle due MdT dovrà obbligatoriamente accettare $w$.
+
+$O$ = su input $w$:
+1. Simula $M$ su $w$ per un passo di computazione sul primo nastro
+	- Se $M$ accetta, allora accetta
+	- Se $M$ rifiuta, allora rifiuta
+2. Simula $N$ su $w$ per un passo di computazione sul secondo nastro
+	- Se $N$ accetta, allora rifiuta
+	- Se $N$ rifiuta, allora accetta
+3. Ritorna al passo $1$
+
+**Corollario**: $\overline{A_{TM}}$ non è Turing-riconoscibile.
+Essendo $A_{TM}$ Turing-riconoscibile, vorrà dire che $\overline{A_{TM}}$ non è Turing-riconoscibile, se lo fosse, allora $A_{TM}$ sarebbe decidibile per il teorema appena visto, ma questo è assurdo.
+
+**La classe dei linguaggi Turing-riconoscibili non è chiusa rispetto al complemento.**
