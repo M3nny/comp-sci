@@ -11,10 +11,14 @@
             "id": "93b52032087bb5be",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "Terzo anno/Reti di calcolatori/Protocolli/TCP.md",
+                "mode": "source",
+                "source": false
+              },
               "icon": "lucide-file",
-              "title": "New tab"
+              "title": "TCP"
             }
           }
         ]
@@ -160,20 +164,24 @@
   },
   "active": "93b52032087bb5be",
   "lastOpenFiles": [
+    "Secondo anno/Sistemi operativi/Mod. 1/Casi di studio/Linux.md",
+    "Secondo anno/Sistemi operativi/Mod. 1/File systems.md",
     "Terzo anno/Reti di calcolatori/Livelli TCP/Livello datalink.md",
     "Terzo anno/Reti di calcolatori/Protocolli/TCP.md",
-    "Terzo anno/Reti di calcolatori/Livelli TCP/Livello di trasporto.md",
-    "Terzo anno/Reti di calcolatori/Images/FSM TCP connection.png",
-    "Terzo anno/Reti di calcolatori/Images/TCP connection set-up.png",
+    "Terzo anno/Reti di calcolatori/Images/TCP congestion.png",
     "Calcolo 1/Images",
     "Calcolo 1",
+    "Calcolo 1/Images/Pasted image 20241123111554.png",
+    "Terzo anno/Reti di calcolatori/Livelli TCP/Livello di trasporto.md",
+    "Terzo anno/Reti di calcolatori/Protocolli/HTTP.md",
+    "Terzo anno/Reti di calcolatori/Images/FSM TCP connection.png",
+    "Terzo anno/Reti di calcolatori/Images/TCP connection set-up.png",
     "Terzo anno/Calcolabilità e linguaggi formali/Indecidibilità.md",
     "Terzo anno/Calcolabilità e linguaggi formali/Riducibilità.md",
     "Terzo anno/Calcolabilità e linguaggi formali/Decidibilità.md",
     "Secondo anno/Algoritmi e strutture dati/Mod. 1/Teoria della NP completezza.md",
     "Secondo anno/Algoritmi e strutture dati/Mod. 1/Teorema master.md",
     "Secondo anno/Algoritmi e strutture dati/Mod. 1/Complessità di un algoritmo.md",
-    "Terzo anno/Reti di calcolatori/Protocolli/HTTP.md",
     "Terzo anno/Reti di calcolatori/Images/Applicazione web.png",
     "Terzo anno/Reti di calcolatori/Images/Applicazione web.png",
     "Terzo anno/Ricerca operativa/Programmazione lineare.md",
@@ -190,15 +198,11 @@
     "Terzo anno/Ricerca operativa/Images/Poliedri 3.svg",
     "Terzo anno/Ricerca operativa/Problemi convessi.md",
     "Terzo anno/Ricerca operativa/Images/Poliedri 2.svg",
-    "Terzo anno/Ricerca operativa/Images/Poliedri 2.svg",
     "Terzo anno/Ricerca operativa/DIrezioni ottimali.md",
     "Terzo anno/Data and web mining/Clustering/Gerarchico.md",
     "Terzo anno/Data and web mining/Clustering/K-means.md",
     "Terzo anno/Data and web mining/Text processing & naive Bayes.md",
     "Terzo anno/Data and web mining/Ensemble methods.md",
-    "Terzo anno/Data and web mining/Regressione lineare.md",
-    "Terzo anno/Data and web mining/Decision trees.md",
-    "Terzo anno/Data and web mining/Images/Clustering comparison.png",
     "Terzo anno/Data and web mining/Clustering",
     "Terzo anno/Reti di calcolatori/Protocolli",
     "asdasdasd.canvas",

@@ -163,4 +163,86 @@ Il [[Livello datalink#Go-back-n e Selective Repeat|go-back-n]] non funziona bene
 Ad esempio gli ACK potrebbero contenere i seguenti intervalli:
 $$[1100-1200],[1250-1500],[1800-1900]$$
 L'ACK conterrà anche l'acknowledgement number, diciamo essere $850$, questo è interpretato dal mittente come: il ricevitore ha ricevuto correttamente tutti i byte prima di $850$, e gli intervalli indicati.
-Spetta al mittente decidere cosa fare.
+>Spetta al mittente decidere cosa fare.
+
+---
+## TCP performance
+Nel protocollo [[Livello datalink#Go-back-n e Selective Repeat|go-back-n]] esistono due _window size_, quella del mittente ($swnd$) e quella del ricevitore ($rwnd$) i dati inoltrati saranno al massimo:
+$$window=\min(swnd,rwnd)$$
+- $rwnd$ è **ridotta** quando un segmento è inviato ma l'ACK deve ancora arrivare, questo perchè il mittente deve tenere nel buffer i dati non ancora riconosciuti
+- $swnd$ è **ridotta** quando il segmento è arrivato correttamente ma non è stato raccolto dall'applicazione
+
+Secondo l'**algoritmo di Nagle**, il mittente invierà tanti segmenti di dimensione MSS quanti $swnd$ consente (praticamente tutti assieme), diciamo che ciò accade nell'istante $t_0$.
+
+Assumiamo che entrambi i peer abbiano una capacità elevata e che tutti i segmenti arrivino a destinazione, allora essi arriveranno all'istante $t_0+\frac{RTT}{2}$.
+>$\frac{RTT}{2}$ è il tempo dell'andata di un segmento.
+
+Il ricevitore poi invierà un ACK cumulativo, e all'istante $t_0+RTT$ il mittente riceverà gli ACK, svuoterà il buffer e ricomincerà.
+
+Per cui ad ogni RTT al massimo $window$ dati sono inviati, il **massimo throughput** è dato da:
+$$\max throughput=\frac{window}{RTT}$$
+Questa formula è applicabile anche nel caso in cui la finestra venga ridotta, ad esempio se la finestra del ricevitore diminuisce perchè è lento, si avrà alla fine $window'<window$ con throughput $\frac{window'}{RTT}$.
+
+### Congestione della rete
+Assumiamo ora che ci sia una congestione nella rete, ciò non implica problemi di ricezione da parte del ricevitore, assumiamo quindi che riceva correttamente.
+
+Una congestione è rilevata dal mittente come una **perdita di pacchetti**, infatti l'ACK cumulativo non gli consentirà di svuotare tutto il _sending buffer_, tuttavia la _receiver window_ non sarà ridotta.
+
+Se un mittente ha sempre dati da inoltrare, potrebbe semplicemente inviare tutto il buffer di nuovo (contenente vecchi dati non riconosciuti e quelli nuovi).
+>Ignoriamo per questo esempio la strategia di _ritrasmissione veloce_.
+
+Per cui i dati inviati saranno sempre $\frac{window}{RTT}$ anche se i dati nuovi saranno mediamente $\frac{window}{2\cdot RTT}$ (a causa di metà buffer con dati vecchi non riconosciuti).
+In questo modo però il router continuerà ad essere **congestionato**, dobbiamo trovare un modo per rilevare la congestione del router e ridurre $swin$.
+
+Il problema della congestione nasce dal fatto che <u>il mittente dall'inizio della connessione invierà il massimo throughput possibile</u>, ovvero $\frac{window}{RTT}$, la dimensione della finestra dovrebbe essere inizialmente piccola e crescere nel tempo.
+
+#### Congestion window
+Introduciamo una **congestion window** $cwnd$ inizializzata ad un valore fisso:
+$$cwnd_0=10\cdot MSS$$
+>$cwnd_0$ indica il valore fisso di partenza.
+
+ad ogni istante la dimensione della finestra sarà data da:
+$$window=\min(swnd,rwnd,cwnd)$$
+introduciamo anche il parametro **slow-start threshold** $sstrash$, inizializzato a qualche valore piccolo.
+
+L'**algoritmo slow start** funziona come segue:
+- Ad ogni $RTT$ se tutti i segmenti vengono riconosciuti, $cwnd=2\cdot cwnd$
+- Se $cwnd>sstrash$, allora ad ogni $RTT$, $cwnd\mathrel{+}=MSS$
+
+Esistono due eventi che sono interpretati come congestione:
+- **Congestione mite**: $3$ ACK sono ricevuti con lo stesso numero di sequenza, viene provata una _ritrasmissione veloce_ la quale ha successo
+
+$$\begin{align}
+&cwnd'=cwnd\\
+&cwnd=sstrash\\
+&sstrash=\frac{cwnd'}{2}
+\end{align}$$
+
+- **Congestione grave**: la _ritrasmissione veloce_ va in timeout
+
+$$\begin{align}
+&cwnd'=cwnd\\
+&cwnd=cwnd_0\\
+&sstrash=\frac{cwnd'}{2}
+\end{align}$$
+![[TCP congestion.png]]
+
+---
+## Network sockets 
+Un **socket** è un'interfaccia standard tra le applicazioni ed il livello di trasporto, definita da POSIX.
+
+Le **famiglie** socket sono le seguenti:
+- `AF_INET`: per gli indirizzi IPv4
+- `AF_INET6`: per gli indirizzi IPv6
+- `AF_UNIX`: per i messaggi tra processi
+
+I **tipi** di socket sono i seguenti:
+- `SOCK_STREAM`: per usare il TCP
+- `SOCK_DGRAM`: per usare l'UDP
+
+La **creazione** di un socket (in C) avviene tramite la funzione:
+```c
+int socket(int family, int type, int protocol)
+```
+
+La funzione ritorna un numero non-negativo intero simile ad un [[Linux#File system|file descriptor]].
