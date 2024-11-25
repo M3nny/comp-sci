@@ -119,12 +119,64 @@ Notare come la presenza o meno di vertici non definisca il numero o presenza di 
 Sia $n$ il numero di variabili, $v\in P$ è un vertice del poliedro $P$ se:
 1. Esistono almeno $n$ **vincoli attivi** in $v$.
 
-Dato un vincolo del tipo $a^Tx\geq b$, esso viene definito come **vincolo attivo** se preso un punto $v$ vale $a^Tv=b$, ovvero devono esistere almeno $n$ iperpiani che si intersecano in tale punto.
+Dato un vincolo del tipo $a^Tx\geq b$, esso viene definito come **vincolo attivo** se è soddisfatto per l'uguaglianza $a^Tv=b$, dove $v$ è un punto.
 
 2. Esattamente $n$ vincoli attivi in $v$ sono [[Definizioni generali#Indipendenza lineare|linearmente indipendenti]].
 
-Questa non è una limitazione in quanto non possono esistere più di $n$ vincoli attivi linearmente indipendenti, se ne esistessero di più si dovrebbe utilizzare una dimensione aggiuntiva, andando fuori dalla definizione dello spazio vettoriale utilizzato.
+Questa condizione è necessaria per evitare che vincoli uguali vengano ripetuti per far valere il primo punto.
 
 - Se $m<n$ allora **non ci sono vertici**
 - Il **numero massimo di vertici** è dato dal [[Probabilità elementare#Combinazioni|coefficiente binomiale]] $\binom{m}{n}=\frac{m!}{n!(m-n)!}$
 
+>[!Attention] Numero massimo di vertici
+>Vengono considerati anche i punti generati dall'intersezione dei vincoli al di fuori del poliedro, tali punto non saranno vertici in quanto non interni al poliedro.
+
+![[Vincoli attivi.svg]]
+
+In questo caso la retta $r_1$ rappresenta un _vincolo attivo_ su $u$ e $v$, ma non su $w$, notare come esistano $n=2$ (siamo in $\mathbb{R}^2$) vincoli attivi linearmente indipendenti in $v$, esso infatti è un vertice.
+
+>[!Example]
+>Trovare i vertici del seguente poliedro (se esistono).
+>$$P:\begin{cases}
+>(\mathrm{I})~x_1\geq 0\\
+>(\mathrm{II})~x_2\geq 0\\
+>(\mathrm{III})~x_2+2x_1\geq 4
+>\end{cases}$$
+>Notiamo che il numero di variabili è $n=2$ ed il numero di vincoli è $m=3$, per cui al massimo possono esistere $\binom{3}{2}=3$ vertici.
+>
+>1. Consideriamo i vincoli $(\mathrm{I})-(\mathrm{II})$
+>$$\begin{cases}
+>x_1=0\\
+>x_2=0
+>\end{cases}$$
+>Il sistema sarà vero per i seguenti valori di $x_1$ e $x_2$, rappresentati nel vettore colonna $z=\binom{0}{0}$.
+>Notiamo inoltre che i vettori dei coefficienti $a_1=\binom{1}{0}$ e $a_2=\binom{0}{1}$ sono linearmente indipendenti.
+>>In questo caso è facile vederlo, ma altrimenti si procede verificando se $\det\begin{pmatrix}a_1&\vdots&...&\vdots&a_n\end{pmatrix}\neq 0$.
+>
+>Sostituiamo $z$ nelle altre disuguaglianze per verificare se i vincoli in questione formano un vertice.
+>Nella terza disuguaglianza otteniamo $0\geq 4$, per cui questo non potrà essere un vertice.
+>
+>2. Consideriamo i vincoli $(\mathrm{I})-(\mathrm{III})$
+>$$\begin{cases}
+>x_1=0\\
+>x_2+2x_1=4
+>\end{cases}\implies z=\begin{pmatrix}0\\4\end{pmatrix}$$
+>I vettori dei coefficienti sono linearmente indipendenti, e le disequazioni sono rispettate sostituendo $z$, per cui questo è un vertice.
+>
+>3. Consideriamo i vincoli $(\mathrm{II})-(\mathrm{III})$
+>$$\begin{cases}
+>x_2=0\\
+>x_2+2x_1=4
+>\end{cases}\implies z=\begin{pmatrix}2\\0\end{pmatrix}$$
+>I vettori dei coefficienti sono linearmente indipendenti, ma le disequazioni non sono rispettate sostituendo $z$, infatti nella terza otteniamo $2\geq 4$ per cui questo non è un vertice.
+
+## Teorema fondamentale della PL
+Una **retta è contenuta** all'interno di un poliedro se ogni punto della retta è interno al poliedro, un politopo infatti non potrà mai contenere una retta.
+>Anche poliedri non limitati potrebbero non contenere rette.
+
+Dato un problema di programmazione lineare, si supponga che il poliedro $P=\{x\in\mathbb{R}^n:Ax\geq b\}$ con $A\in\mathbb{R}^{m\times n}$ <u>non</u> contenga rette, allora sono possibili i seguenti tre scenari:
+1. $P=\emptyset$, il problema non ammette soluzioni
+2. $P$ è illimitato
+3. Esiste almeno una soluzione e questa si trova su uno dei vertici
+
+L'ipotesi per cui il poliedro non deve contenere rette è importante perchè assicura che $P$ contenga almeno un vertice.
