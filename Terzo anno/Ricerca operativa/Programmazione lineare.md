@@ -174,9 +174,47 @@ In questo caso la retta $r_1$ rappresenta un _vincolo attivo_ su $u$ e $v$, ma n
 Una **retta è contenuta** all'interno di un poliedro se ogni punto della retta è interno al poliedro, un politopo infatti non potrà mai contenere una retta.
 >Anche poliedri non limitati potrebbero non contenere rette.
 
-Dato un problema di programmazione lineare, si supponga che il poliedro $P=\{x\in\mathbb{R}^n:Ax\geq b\}$ con $A\in\mathbb{R}^{m\times n}$ <u>non</u> contenga rette, allora sono possibili i seguenti tre scenari:
+Dato un problema di programmazione lineare di _minimizzazione_, si supponga che il poliedro $P=\{x\in\mathbb{R}^n:Ax\geq b\}$ con $A\in\mathbb{R}^{m\times n}$ <u>non</u> contenga rette, allora potrà verificarsi _uno_ dei seguenti tre scenari:
 1. $P=\emptyset$, il problema non ammette soluzioni
-2. $P$ è illimitato
-3. Esiste almeno una soluzione e questa si trova su uno dei vertici
+2. La funzione $f(x)=c^Tx$ è illimitata _inferiormente_ (o superiormente se il problema è di massimizzazione) sul poliedro ammissibile $P$
+3. Esiste almeno una soluzione e questa si trova su uno dei vertici del poliedro ammissibile $P$
+>L'ipotesi per cui il poliedro non deve contenere rette è importante perchè assicura che $P$ contenga almeno un vertice, rendendo possibile il terzo punto.
 
-L'ipotesi per cui il poliedro non deve contenere rette è importante perchè assicura che $P$ contenga almeno un vertice.
+Per evitare di imporre l'ipotesi per cui il poliedro non debba contenere rette, trasformiamo i vincoli del seguente problema di minimizzazione:
+$$\min_{Ax\geq b}c^Tx\quad x\in\mathbb{R}^n\quad A\in\mathbb{R}^{m\times n}\quad b\in\mathbb{R}^m$$
+
+Sfruttando il fatto che possiamo trasformare una disuguaglianza di maggioranza in una uguaglianza sottraendo un numero positivo al membro di sinistra, ed essendo che ogni numero può essere espresso come la differenza tra due numeri interi, definiamo $x$ come segue:
+$$x=\begin{pmatrix}x_1\\\vdots\\x_n\end{pmatrix}=\begin{pmatrix}x_1^+\\\vdots\\x^+_n\end{pmatrix}-\begin{pmatrix}x_1^-\\\vdots\\x_n^-\end{pmatrix}$$
+ridefiniamo quindi i vincoli nel seguente modo:
+$$\begin{align}
+Ax\geq b&\leftrightsquigarrow
+\begin{cases}a_i^Tx\geq b_i\\i=1,...,m\end{cases}\leftrightsquigarrow
+\begin{cases}a_i^Tx-y_i=b_i\\y_i\geq0\\i=1,...,m\end{cases}\leftrightsquigarrow
+\begin{cases}a_i^T(x^+-x^-)-y_i=b_i\\y_i\geq0\\x^+,x^-\geq0\\i=1,...,m\end{cases}\\ &\leftrightsquigarrow
+\begin{cases}Ax^+-Ax^--I_my=b\\\begin{pmatrix}x^+\\x^-\\y\end{pmatrix}\geq0\end{cases}
+\end{align}$$
+
+dove l'utilizzo della [[Primo anno/Primo semestre/Algebra lineare/Matrici#Identità|matrice identità]] riassume la seguente scrittura:
+$$\begin{aligned}
+a_1^Tx+\\
+\vdots\\
+a_m^Tx+
+\end{aligned}
+\begin{pmatrix}y_1&&\\&\ddots&\\&&y_m\end{pmatrix}
+\begin{aligned}&=b_1\\&\vdots\\&=b_m\end{aligned}
+$$
+
+In questo modo abbiamo ottenuto più vincoli, infatti ora lavoriamo su uno spazio dimensionale più alto, ovvero:
+$$\tilde A=(A-A-I_m)\in\mathbb{R}^{m \times(2n+m)}\quad\tilde b=b\in\mathbb{R}^m$$
+la soluzione al problema sarà data da $x^*=(x^+)^*-(x^-)^*$. 
+
+Ora però il poliedro è definito soltanto tramite **valori positivi**, per cui esso sarà interamente compreso nel primo quadrante degli assi cartesiani, per cui è **impossibile che esso contenga una retta**.
+
+Con la forma finale ottenuta dalla matrice $\tilde A\in\mathbb{R}^{\tilde m\times\tilde n}$ ed il vettore $\tilde b\in\mathbb{R}^\tilde m$ con $\tilde m=m$ e $\tilde n=2n+m$, diremo che il poliedro $\tilde P=\{z\in\mathbb{R}^\tilde n:\tilde Az=\tilde b,z\geq 0\}$ è in **forma standard**.
+
+### Teorema fondamentale della PL (standard)
+Dato un problema di programmazione lineare con poliedro in forma standard, sono possibili solo i seguenti tre casi:
+1. $\tilde P=\emptyset$, il problema non ammette soluzioni
+2. La funzione $f(x)=\tilde c^Tx$ è illimitata _inferiormente_ (o superiormente se il problema è di massimizzazione) sul poliedro ammissibile $\tilde P$
+3. Esiste almeno una soluzione e questa si trova su uno dei vertici del poliedro ammissibile $\tilde P$
+

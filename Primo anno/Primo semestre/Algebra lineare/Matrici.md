@@ -49,7 +49,7 @@ $$\begin{bmatrix} 3&-2&4\\-2&6&2\\4&2&3 \end{bmatrix}$$
 ### Diagonale
 Se $a_{ij}=0$ per $i\neq j$:
 $$\begin{bmatrix} x&0&0\\0&x&0\\0&0&x\end{bmatrix}$$
-### Identica
+### Identità
 Se $a_{ii} = 1$ ed il resto è a $0$:
 $$\begin{bmatrix} 1&0&0\\0&1&0\\0&0&1\end{bmatrix}$$
 ### Triangolare (sup/inf):
