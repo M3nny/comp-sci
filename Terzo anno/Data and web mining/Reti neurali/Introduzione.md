@@ -27,7 +27,7 @@ L'obiettivo del training è quello di trovare i pesi adatti per ogni neurone in 
 Questa operazione è realizzata tramite la **discesa del gradiente**, la quale è una tecnica utilizzata per risolvere [[Problemi convessi|problemi convessi]].
 ![[Discesa del gradiente.png]]
 
-Sia $J$ la _funzione di perdita_, vogliamo trovare i pesi $w$ che minimizzano l'errore, il processo iterativo della discesa del gradiente è definito come segue:
+Sia $J$ la **funzione di perdita**, vogliamo trovare i pesi $w$ che minimizzano l'errore, il processo iterativo della discesa del gradiente è definito come segue:
 $$w_i^{t+1}=w_i^t-\eta\frac{\partial J}{\partial w_i^t}$$
 - $w_i^{t}$: valore del parametro $w_i$ alla iterazione $t$
 - $\eta$: fattore di scala il quale determina quanto grandi sono i passi effettuati lungo la direzione del gradiente, esso viene definito come **learning rate**
@@ -41,3 +41,8 @@ Se l'aggiornamento dei pesi è computato dopo aver misurato la perdita $J$ su un
 Un'_epoca_ consiste nel processare tutti i batch nel dataset, molteplici epoche vengono eseguite fino alla **convergenza** del modello.
 
 L'implementazione di questo processo è noto come **back-propagation**.
+
+Il **teorema di approssimazione universale** dice che una rete neurale con (anche) un singolo layer (nascosto) è in grado di approssimare qualsiasi funzione continua con un numero sufficiente di neuroni.
+
+La **standardizzazione** (media = $0$, deviazione standard = $1$) o **normalizzazione** nell'intervallo $[0,1]$ è altamente raccomandata, in questo modo l'ottimizzatore convergerà più rapidamente ad una soluzione ottimale.
+
