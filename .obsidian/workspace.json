@@ -4,21 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "109dce45dc7f60b5",
+        "id": "622a4001c38244f4",
         "type": "tabs",
         "children": [
           {
-            "id": "9879163eb50bec44",
+            "id": "c210eb3049a0bd93",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Terzo anno/Reti di calcolatori/Protocolli/TLS.md",
+                "file": "Terzo anno/Reti di calcolatori/Protocolli/IPv4.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "TLS"
+              "title": "IPv4"
             }
           }
         ]
@@ -161,14 +161,19 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "9879163eb50bec44",
+  "active": "c210eb3049a0bd93",
   "lastOpenFiles": [
-    "Terzo anno/Reti di calcolatori/Images/TLS handshake protocol.png",
-    "Terzo anno/Reti di calcolatori/Images/TLS record protocol.png",
+    "Terzo anno/Reti di calcolatori/Protocolli/TCP.md",
+    "Terzo anno/Reti di calcolatori/Protocolli/IPv4.md",
+    "Terzo anno/Reti di calcolatori/Images/LAN.png",
+    "Terzo anno/Reti di calcolatori/Images/Frammentazione pacchetti.png",
     "Calcolo 1/Images",
     "Calcolo 1",
-    "Terzo anno/Reti di calcolatori/Images/TLS layer.png",
+    "Terzo anno/Reti di calcolatori/Livelli TCP/Livello datalink.md",
     "Terzo anno/Reti di calcolatori/Protocolli/TLS.md",
+    "Terzo anno/Reti di calcolatori/Images/TLS handshake protocol.png",
+    "Terzo anno/Reti di calcolatori/Images/TLS record protocol.png",
+    "Terzo anno/Reti di calcolatori/Images/TLS layer.png",
     "Terzo anno/Data and web mining/Regressione lineare.md",
     "Terzo anno/Data and web mining/Reti neurali/Introduzione.md",
     "Terzo anno/Data and web mining/Reti neurali/Layers.md",
@@ -188,21 +193,15 @@
     "Excalidraw/Template RO.md",
     "Terzo anno/Ricerca operativa/Images/Vincoli attivi.svg",
     "Terzo anno/Ricerca operativa/Images/Vincolo attivo.svg",
-    "Terzo anno/Reti di calcolatori/Protocolli/TCP.md",
     "Secondo anno/Sistemi operativi/Mod. 1/Casi di studio/Linux.md",
     "Secondo anno/Sistemi operativi/Mod. 1/File systems.md",
-    "Terzo anno/Reti di calcolatori/Livelli TCP/Livello datalink.md",
     "Terzo anno/Reti di calcolatori/Images/TCP congestion.png",
-    "Calcolo 1/Images/Pasted image 20241123111554.png",
     "Terzo anno/Reti di calcolatori/Livelli TCP/Livello di trasporto.md",
     "Terzo anno/Reti di calcolatori/Protocolli/HTTP.md",
-    "Terzo anno/Reti di calcolatori/Images/FSM TCP connection.png",
-    "Terzo anno/Reti di calcolatori/Images/TCP connection set-up.png",
     "Secondo anno/Algoritmi e strutture dati/Mod. 1/Teoria della NP completezza.md",
     "Secondo anno/Algoritmi e strutture dati/Mod. 1/Teorema master.md",
     "Secondo anno/Algoritmi e strutture dati/Mod. 1/Complessità di un algoritmo.md",
     "Terzo anno/Data and web mining/Reti neurali",
-    "Secondo anno/Probabilità e statistica/Probabilità elementare.md",
     "Terzo anno/Data and web mining/Clustering",
     "Terzo anno/Reti di calcolatori/Protocolli",
     "asdasdasd.canvas",
