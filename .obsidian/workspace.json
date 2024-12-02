@@ -4,21 +4,17 @@
     "type": "split",
     "children": [
       {
-        "id": "622a4001c38244f4",
+        "id": "80ba2d912d79eae0",
         "type": "tabs",
         "children": [
           {
-            "id": "c210eb3049a0bd93",
+            "id": "010b774e30bc975b",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Terzo anno/Reti di calcolatori/Protocolli/IPv4.md",
-                "mode": "source",
-                "source": false
-              },
+              "type": "empty",
+              "state": {},
               "icon": "lucide-file",
-              "title": "IPv4"
+              "title": "New tab"
             }
           }
         ]
@@ -161,10 +157,15 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "c210eb3049a0bd93",
+  "active": "010b774e30bc975b",
   "lastOpenFiles": [
-    "Terzo anno/Reti di calcolatori/Protocolli/TCP.md",
+    "Terzo anno/Ricerca operativa/Problemi di costo fisso e vincoli disgiuntivi.md",
+    "Excalidraw/Template RO.md",
+    "Terzo anno/Ricerca operativa/Images/Costo fisso e variabile.svg",
+    "Excalidraw/Drawing 2024-12-02 17.40.08.excalidraw.md",
+    "Terzo anno/Ricerca operativa/Programmazione lineare.md",
     "Terzo anno/Reti di calcolatori/Protocolli/IPv4.md",
+    "Terzo anno/Reti di calcolatori/Protocolli/TCP.md",
     "Terzo anno/Reti di calcolatori/Images/LAN.png",
     "Terzo anno/Reti di calcolatori/Images/Frammentazione pacchetti.png",
     "Calcolo 1/Images",
@@ -181,7 +182,6 @@
     "Secondo anno/Algoritmi e strutture dati/Mod. 1/Grafi/Tipologie.md",
     "Terzo anno/Data and web mining/Feature selection & engineering.md",
     "Primo anno/Primo semestre/Algebra lineare/Matrici.md",
-    "Terzo anno/Ricerca operativa/Programmazione lineare.md",
     "Terzo anno/Calcolabilità e linguaggi formali/Riducibilità/Riduzione attraverso funzioni.md",
     "Terzo anno/Calcolabilità e linguaggi formali/Riducibilità/Introduzione.md",
     "Terzo anno/Calcolabilità e linguaggi formali/Riducibilità/Storie di computazione accettanti.md",
@@ -190,17 +190,13 @@
     "Excalidraw/Template CLF.md",
     "Terzo anno/Calcolabilità e linguaggi formali/Images/Funzione di riduzione.svg",
     "Terzo anno/Calcolabilità e linguaggi formali/Riducibilità",
-    "Excalidraw/Template RO.md",
     "Terzo anno/Ricerca operativa/Images/Vincoli attivi.svg",
     "Terzo anno/Ricerca operativa/Images/Vincolo attivo.svg",
     "Secondo anno/Sistemi operativi/Mod. 1/Casi di studio/Linux.md",
     "Secondo anno/Sistemi operativi/Mod. 1/File systems.md",
-    "Terzo anno/Reti di calcolatori/Images/TCP congestion.png",
     "Terzo anno/Reti di calcolatori/Livelli TCP/Livello di trasporto.md",
     "Terzo anno/Reti di calcolatori/Protocolli/HTTP.md",
     "Secondo anno/Algoritmi e strutture dati/Mod. 1/Teoria della NP completezza.md",
-    "Secondo anno/Algoritmi e strutture dati/Mod. 1/Teorema master.md",
-    "Secondo anno/Algoritmi e strutture dati/Mod. 1/Complessità di un algoritmo.md",
     "Terzo anno/Data and web mining/Reti neurali",
     "Terzo anno/Data and web mining/Clustering",
     "Terzo anno/Reti di calcolatori/Protocolli",
