@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "80ba2d912d79eae0",
+        "id": "8c6316dd6787ce42",
         "type": "tabs",
         "children": [
           {
-            "id": "010b774e30bc975b",
+            "id": "bf82aa1fdcc8db02",
             "type": "leaf",
             "state": {
               "type": "empty",
@@ -157,8 +157,17 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "010b774e30bc975b",
+  "active": "bf82aa1fdcc8db02",
   "lastOpenFiles": [
+    "Terzo anno/Data and web mining/Reti neurali/Filtri di convoluzione.md",
+    "Terzo anno/Data and web mining/Images/Conv1D.png",
+    "Terzo anno/Data and web mining/Images/MaxPooling2D.png",
+    "Terzo anno/Data and web mining/Images/Conv2D.png",
+    "Terzo anno/Data and web mining/Reti neurali/Layers.md",
+    "Terzo anno/Data and web mining/Images/Activation functions.png",
+    "Terzo anno/Data and web mining/Images/Activation functions.png.crdownload",
+    "Calcolo 1/Images",
+    "Calcolo 1",
     "Terzo anno/Ricerca operativa/Problemi di costo fisso e vincoli disgiuntivi.md",
     "Excalidraw/Template RO.md",
     "Terzo anno/Ricerca operativa/Images/Costo fisso e variabile.svg",
@@ -168,8 +177,6 @@
     "Terzo anno/Reti di calcolatori/Protocolli/TCP.md",
     "Terzo anno/Reti di calcolatori/Images/LAN.png",
     "Terzo anno/Reti di calcolatori/Images/Frammentazione pacchetti.png",
-    "Calcolo 1/Images",
-    "Calcolo 1",
     "Terzo anno/Reti di calcolatori/Livelli TCP/Livello datalink.md",
     "Terzo anno/Reti di calcolatori/Protocolli/TLS.md",
     "Terzo anno/Reti di calcolatori/Images/TLS handshake protocol.png",
@@ -177,8 +184,6 @@
     "Terzo anno/Reti di calcolatori/Images/TLS layer.png",
     "Terzo anno/Data and web mining/Regressione lineare.md",
     "Terzo anno/Data and web mining/Reti neurali/Introduzione.md",
-    "Terzo anno/Data and web mining/Reti neurali/Layers.md",
-    "Terzo anno/Data and web mining/Images/Sigmoid.png",
     "Secondo anno/Algoritmi e strutture dati/Mod. 1/Grafi/Tipologie.md",
     "Terzo anno/Data and web mining/Feature selection & engineering.md",
     "Primo anno/Primo semestre/Algebra lineare/Matrici.md",
@@ -188,22 +193,17 @@
     "Terzo anno/Calcolabilità e linguaggi formali/Decidibilità.md",
     "Terzo anno/Calcolabilità e linguaggi formali/Indecidibilità.md",
     "Excalidraw/Template CLF.md",
-    "Terzo anno/Calcolabilità e linguaggi formali/Images/Funzione di riduzione.svg",
     "Terzo anno/Calcolabilità e linguaggi formali/Riducibilità",
-    "Terzo anno/Ricerca operativa/Images/Vincoli attivi.svg",
-    "Terzo anno/Ricerca operativa/Images/Vincolo attivo.svg",
     "Secondo anno/Sistemi operativi/Mod. 1/Casi di studio/Linux.md",
     "Secondo anno/Sistemi operativi/Mod. 1/File systems.md",
     "Terzo anno/Reti di calcolatori/Livelli TCP/Livello di trasporto.md",
     "Terzo anno/Reti di calcolatori/Protocolli/HTTP.md",
-    "Secondo anno/Algoritmi e strutture dati/Mod. 1/Teoria della NP completezza.md",
     "Terzo anno/Data and web mining/Reti neurali",
     "Terzo anno/Data and web mining/Clustering",
     "Terzo anno/Reti di calcolatori/Protocolli",
     "asdasdasd.canvas",
     "Terzo anno/Calcolabilità e linguaggi formali/Linguaggi formali",
     "Terzo anno/Calcolabilità e linguaggi formali/Linguaggi context-free",
-    "Terzo anno/Reti di calcolatori/Sicurezza",
-    "Terzo anno/Reti di calcolatori/Livelli TCP"
+    "Terzo anno/Reti di calcolatori/Sicurezza"
   ]
 }

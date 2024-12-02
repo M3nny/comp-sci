@@ -1,5 +1,9 @@
 Le reti neurali possono essere costruite concatenando vari **layer** di neuroni, aumentare il numero di layer e neuroni aumenta la potenza della rete neurale.
->Solitamente uno basta.
+Differenziamo tre **categorie di layer**:
+- **Layer di input**: primo layer della rete
+- **Layer nascosto**: layer compreso tra l'_input layer_ e l'_output layer_, il numero di layer di una rete neurale è dato dal numero di layer nascosti, il numero dei suoi neuroni è arbitrario
+- **Output layer**: ultimo layer della rete
+
 
 La dimensione del **layer di input** dipende dalla dimensionalità dell'input (e.g. features in un dataframe), discorso analogo per il **layer di output** il quale dipenderà dalla dimensione dell'output (e.g. nella classificazione binaria avrà un layer composto da due neuroni).
 
@@ -18,11 +22,16 @@ Possiamo utilizzare la **sigmoide** per la **classificazione binaria**, per qual
 >Questa funzione "scarta" gli input molto grandi e molto piccoli.
 
 In task di classificazione si vuole ottenere un vettore di probabilità che possieda somma pari a $1$, ma essendo gli output dei neuroni in qualche modo _scorrelato_, questo non accade, per questo solitamente si pone come ultimo layer la funzione **softmax** definita come segue:
-$$\sigma(z_i)=\frac{e^{z_i}}{\sum\limits_{j=1}^Ke^{z_j}}\qquad z=(z_1,...,z_K)\in\mathbb{R}^K$$
+$$\text{softmax}=\sigma(z_i)=\frac{e^{z_i}}{\sum\limits_{j=1}^Ke^{z_j}}\qquad z=(z_1,...,z_K)\in\mathbb{R}^K$$
 A differenza della _sigmoide_ che agisce su ogni singolo neurone, la funzione _softmax_ agisce sul vettore risultante (ultimo layer) trasformando i valori in probabilità.
 >La sigmoide può essere usata come ultima funzione di attivazione nel caso di classificazione binaria.
 
 Nel caso di **task di regressione**, non è necessario porre una funzione di attivazione nell'ultimo layer.
+
+Una funzione di attivazione molto efficace e famosa è la **ReLU (Rectified Linear Unit)**, ed è definita come:
+$$ReLU(x)=x^+=\max(0,x)$$
+
+![[Activation functions.png|600]]
 
 ### Funzioni di perdita
 Le funzioni di perdita misurano l'errore tra la predizione e l'output atteso, esse dipendono dal task specifico.
