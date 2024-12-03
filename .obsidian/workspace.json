@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "8c6316dd6787ce42",
+        "id": "1ffe42af8880e5ba",
         "type": "tabs",
         "children": [
           {
-            "id": "bf82aa1fdcc8db02",
+            "id": "7deaa2ecfd07d336",
             "type": "leaf",
             "state": {
               "type": "empty",
@@ -157,8 +157,16 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "bf82aa1fdcc8db02",
+  "active": "7deaa2ecfd07d336",
   "lastOpenFiles": [
+    "Terzo anno/Calcolabilità e linguaggi formali/Riducibilità/Teorema di Rice.md",
+    "Terzo anno/Calcolabilità e linguaggi formali/Riducibilità/Turing riducibilità.md",
+    "Terzo anno/Calcolabilità e linguaggi formali/Riducibilità/Riduzione attraverso funzioni.md",
+    "Terzo anno/Calcolabilità e linguaggi formali/Indecidibilità.md",
+    "Terzo anno/Calcolabilità e linguaggi formali/Macchina di Turing.md",
+    "Terzo anno/Calcolabilità e linguaggi formali/Decidibilità.md",
+    "Terzo anno/Calcolabilità e linguaggi formali/Riducibilità/Introduzione.md",
+    "Terzo anno/Calcolabilità e linguaggi formali/Riducibilità/Storie di computazione accettanti.md",
     "Terzo anno/Data and web mining/Reti neurali/Filtri di convoluzione.md",
     "Terzo anno/Data and web mining/Images/Conv1D.png",
     "Terzo anno/Data and web mining/Images/MaxPooling2D.png",
@@ -187,17 +195,10 @@
     "Secondo anno/Algoritmi e strutture dati/Mod. 1/Grafi/Tipologie.md",
     "Terzo anno/Data and web mining/Feature selection & engineering.md",
     "Primo anno/Primo semestre/Algebra lineare/Matrici.md",
-    "Terzo anno/Calcolabilità e linguaggi formali/Riducibilità/Riduzione attraverso funzioni.md",
-    "Terzo anno/Calcolabilità e linguaggi formali/Riducibilità/Introduzione.md",
-    "Terzo anno/Calcolabilità e linguaggi formali/Riducibilità/Storie di computazione accettanti.md",
-    "Terzo anno/Calcolabilità e linguaggi formali/Decidibilità.md",
-    "Terzo anno/Calcolabilità e linguaggi formali/Indecidibilità.md",
     "Excalidraw/Template CLF.md",
     "Terzo anno/Calcolabilità e linguaggi formali/Riducibilità",
     "Secondo anno/Sistemi operativi/Mod. 1/Casi di studio/Linux.md",
     "Secondo anno/Sistemi operativi/Mod. 1/File systems.md",
-    "Terzo anno/Reti di calcolatori/Livelli TCP/Livello di trasporto.md",
-    "Terzo anno/Reti di calcolatori/Protocolli/HTTP.md",
     "Terzo anno/Data and web mining/Reti neurali",
     "Terzo anno/Data and web mining/Clustering",
     "Terzo anno/Reti di calcolatori/Protocolli",

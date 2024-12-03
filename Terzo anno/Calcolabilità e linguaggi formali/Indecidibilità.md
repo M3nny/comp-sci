@@ -69,7 +69,7 @@ Essendo i linguaggi _non numerabili_ e le MdT _numerabili_, abbiamo dimostrato c
 Determinare se una [[Macchina di Turing#Definizione di una macchina di Turing|macchina di Turing]] $M$ accetta una stringa $w$.
 $$A_{TM}=\{<M,w>|M\text{ è una MdT e }w\in L(M)\}$$
 
-Osserviamo che $A_{TM}$ è Turing riconoscibile, infatti possiamo costruire una MdT $N$ tale che $L(N)=A_{TM}$.
+Osserviamo che $A_{TM}$ **è Turing riconoscibile**, infatti possiamo costruire una MdT $N$ tale che $L(N)=A_{TM}$.
 $N$ = su input $<M,w>$:
 1. Simula $M$ su $w$
 2. Ritorna il suo output
@@ -106,6 +106,7 @@ Per capire meglio come questo sia possibile mostriamo in forma matriciale l'esec
 Nella tabella è possibile inserire anche una entry per il decisore $D$, il quale sappiamo comportarsi in maniera opposta all'input fornito, tuttavia quando incontrerà il suo stesso encoding $<D>$ non si può definire l'output in quanto esso dovrebbe essere l'opposto di se stesso, risultando in un assurdo.
 
 ### Linguaggi decidibili
+**Teorema**
 Un linguaggio $A$ è decidibile sse sia $A$, che $\bar A$ sono Turing-riconoscibili.
 
 **Dimostrazione ($\Rightarrow$)**
@@ -127,7 +128,6 @@ $O$ = su input $w$:
 	- Se $N$ rifiuta, allora accetta
 3. Ritorna al passo $1$
 
-**Corollario**: $\overline{A_{TM}}$ non è Turing-riconoscibile.
-Essendo $A_{TM}$ Turing-riconoscibile, vorrà dire che $\overline{A_{TM}}$ non è Turing-riconoscibile, se lo fosse, allora $A_{TM}$ sarebbe decidibile per il teorema appena visto, ma questo è assurdo.
-
-**La classe dei linguaggi Turing-riconoscibili non è chiusa rispetto al complemento.**
+**Corollario**: $\bar A_{TM}$ non è Turing-riconoscibile.
+Essendo $A_{TM}$ Turing-riconoscibile, vorrà dire che $\bar A_{TM}$ non è Turing-riconoscibile, se lo fosse, allora $A_{TM}$ sarebbe decidibile per il teorema appena visto, ma questo è assurdo.
+>La classe dei linguaggi Turing-riconoscibili non è chiusa rispetto al complemento.

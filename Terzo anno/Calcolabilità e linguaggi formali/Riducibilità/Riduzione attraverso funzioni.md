@@ -80,7 +80,7 @@ $$\begin{align}
 &<M,w>\notin A_{TM}\Rightarrow M\text{ non accetta }w\Rightarrow L(M')=\emptyset\Rightarrow<M'>\in E_{TM}\Rightarrow<M'>\notin\bar E_{TM}
 \end{align}$$
 
----
+### Turing-riconoscibilità
 **Teorema**
 Se $A\leq_mB$ e $B$ è [[Macchina di Turing#Linguaggio per una macchina di Turing|Turing-riconoscibile]], allora anche $A$ è Turing-riconoscibile.
 
@@ -93,7 +93,6 @@ $N$ = su input $w$:
 **Corollario**: se $A\leq_mB$ e $A$ _non_ è Turing-riconoscibile, allora $B$ _non_ è Turing-riconoscibile.
 >La riduzione attraverso funzioni ci permette di dimostrare che alcuni problemi non sono Turing-riconoscibili, cosa che non potevamo fare prima.
 
----
 #### Equity - Turing machine (non Turing-riconoscibile)
 Dimostriamo che $\bar A_{TM}\leq_mEQ_{TM}$, ovvero $A_{TM}\leq_m\overline{EQ}_{TM}$.
 
