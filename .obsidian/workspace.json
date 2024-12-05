@@ -4,21 +4,17 @@
     "type": "split",
     "children": [
       {
-        "id": "09a5825556050b54",
+        "id": "5525be31d41d64be",
         "type": "tabs",
         "children": [
           {
-            "id": "3fc9222808b7f8f7",
+            "id": "44f974f0fc6227a5",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Terzo anno/Ricerca operativa/Branch & Bound.md",
-                "mode": "source",
-                "source": false
-              },
+              "type": "empty",
+              "state": {},
               "icon": "lucide-file",
-              "title": "Branch & Bound"
+              "title": "New tab"
             }
           }
         ]
@@ -161,11 +157,22 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "3fc9222808b7f8f7",
+  "active": "44f974f0fc6227a5",
   "lastOpenFiles": [
+    "Terzo anno/Data and web mining/Reti neurali/Best practices.md",
+    "Terzo anno/Data and web mining/Images/NN dropout.png",
+    "Terzo anno/Data and web mining/Images/NN data augmentation.png",
+    "Terzo anno/Data and web mining/Images/NN overfitting.png",
+    "Calcolo 1/Images",
+    "Calcolo 1",
+    "Terzo anno/Data and web mining/Decision trees.md",
+    "Terzo anno/Data and web mining/Reti neurali/Layers.md",
+    "Excalidraw/Template DWM.md",
+    "Terzo anno/Data and web mining/Images/NN layer.svg",
+    "Terzo anno/Data and web mining/Reti neurali/Introduzione.md",
+    "Terzo anno/Ricerca operativa/Branch & Bound.md",
     "Excalidraw/Template RO.md",
     "Terzo anno/Ricerca operativa/Images/Poliedro con coordinate intere.svg",
-    "Terzo anno/Ricerca operativa/Branch & Bound.md",
     "Terzo anno/Ricerca operativa/Problemi di costo fisso e vincoli disgiuntivi.md",
     "Secondo anno/Algoritmi e strutture dati/Mod. 1/Teorema master.md",
     "Terzo anno/Calcolabilità e linguaggi formali/Riducibilità/Teorema di Rice.md",
@@ -180,27 +187,16 @@
     "Terzo anno/Data and web mining/Images/Conv1D.png",
     "Terzo anno/Data and web mining/Images/MaxPooling2D.png",
     "Terzo anno/Data and web mining/Images/Conv2D.png",
-    "Terzo anno/Data and web mining/Reti neurali/Layers.md",
     "Terzo anno/Data and web mining/Images/Activation functions.png",
     "Terzo anno/Data and web mining/Images/Activation functions.png.crdownload",
-    "Calcolo 1/Images",
-    "Calcolo 1",
     "Terzo anno/Ricerca operativa/Images/Costo fisso e variabile.svg",
     "Excalidraw/Drawing 2024-12-02 17.40.08.excalidraw.md",
     "Terzo anno/Ricerca operativa/Programmazione lineare.md",
     "Terzo anno/Reti di calcolatori/Protocolli/IPv4.md",
     "Terzo anno/Reti di calcolatori/Protocolli/TCP.md",
-    "Terzo anno/Reti di calcolatori/Images/LAN.png",
-    "Terzo anno/Reti di calcolatori/Images/Frammentazione pacchetti.png",
     "Terzo anno/Reti di calcolatori/Livelli TCP/Livello datalink.md",
     "Terzo anno/Reti di calcolatori/Protocolli/TLS.md",
-    "Terzo anno/Reti di calcolatori/Images/TLS handshake protocol.png",
-    "Terzo anno/Reti di calcolatori/Images/TLS record protocol.png",
     "Terzo anno/Data and web mining/Regressione lineare.md",
-    "Terzo anno/Data and web mining/Reti neurali/Introduzione.md",
-    "Secondo anno/Algoritmi e strutture dati/Mod. 1/Grafi/Tipologie.md",
-    "Terzo anno/Data and web mining/Feature selection & engineering.md",
-    "Primo anno/Primo semestre/Algebra lineare/Matrici.md",
     "Terzo anno/Calcolabilità e linguaggi formali/Riducibilità",
     "Terzo anno/Data and web mining/Reti neurali",
     "Terzo anno/Data and web mining/Clustering",

@@ -14,6 +14,10 @@ Esistono tre parametri principali nei **layer densi**, ovvero:
 2. Funzione di attivazione
 3. Dimensione dell'input
 
+![[NN layer.svg]]
+Il **numero di parametri** di un **layer denso** è dato da:
+$$\#\text{params}=\underbrace{(\#\text{inputs}\cdot\#\text{nodes})}_{\#\text{weights}}+\underbrace{\#\text{nodes}}_{\#\text{biases}}$$
+
 ### Funzioni di attivazione
 Le funzioni di attivazione **determinano l'output di ogni neurone**, è importante che esse siano non-lineari in modo da poter permettere l'apprendimento di funzioni complesse.
 ![[Sigmoid.png]]
