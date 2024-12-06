@@ -11,10 +11,14 @@
             "id": "44f974f0fc6227a5",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "Terzo anno/Reti di calcolatori/Protocolli/ICMP e IPv6.md",
+                "mode": "source",
+                "source": false
+              },
               "icon": "lucide-file",
-              "title": "New tab"
+              "title": "ICMP e IPv6"
             }
           }
         ]
@@ -73,7 +77,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 350.5124969482422
+    "width": 350.5124969482422,
+    "collapsed": true
   },
   "right": {
     "id": "282a9548711da6a0",
@@ -159,12 +164,14 @@
   },
   "active": "44f974f0fc6227a5",
   "lastOpenFiles": [
+    "Terzo anno/Reti di calcolatori/Images/Virtual Full Mesh.png",
+    "Calcolo 1/Images",
+    "Calcolo 1",
+    "Terzo anno/Reti di calcolatori/Protocolli/ICMP e IPv6.md",
     "Terzo anno/Data and web mining/Reti neurali/Best practices.md",
     "Terzo anno/Data and web mining/Images/NN dropout.png",
     "Terzo anno/Data and web mining/Images/NN data augmentation.png",
     "Terzo anno/Data and web mining/Images/NN overfitting.png",
-    "Calcolo 1/Images",
-    "Calcolo 1",
     "Terzo anno/Data and web mining/Decision trees.md",
     "Terzo anno/Data and web mining/Reti neurali/Layers.md",
     "Excalidraw/Template DWM.md",
@@ -196,7 +203,6 @@
     "Terzo anno/Reti di calcolatori/Protocolli/TCP.md",
     "Terzo anno/Reti di calcolatori/Livelli TCP/Livello datalink.md",
     "Terzo anno/Reti di calcolatori/Protocolli/TLS.md",
-    "Terzo anno/Data and web mining/Regressione lineare.md",
     "Terzo anno/Calcolabilità e linguaggi formali/Riducibilità",
     "Terzo anno/Data and web mining/Reti neurali",
     "Terzo anno/Data and web mining/Clustering",
