@@ -4,21 +4,17 @@
     "type": "split",
     "children": [
       {
-        "id": "1e7fc7da01e99cb7",
+        "id": "36b1ae9570d65b83",
         "type": "tabs",
         "children": [
           {
-            "id": "132cfeed0cd0acd3",
+            "id": "223eff2e2f5dfdff",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Terzo anno/Reti di calcolatori/Protocolli/BGP.md",
-                "mode": "source",
-                "source": false
-              },
+              "type": "empty",
+              "state": {},
               "icon": "lucide-file",
-              "title": "BGP"
+              "title": "New tab"
             }
           }
         ]
@@ -161,31 +157,32 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "132cfeed0cd0acd3",
+  "active": "a1163d9af64d6878",
   "lastOpenFiles": [
+    "Terzo anno/Reti di calcolatori/Protocolli/Ethernet.md",
+    "Terzo anno/Reti di calcolatori/Images/Switch loop.png",
+    "Terzo anno/Reti di calcolatori/Images/Hub vs switch.png",
+    "Calcolo 1/Images",
+    "Calcolo 1",
+    "Terzo anno/Reti di calcolatori/Images/Twisted pairs.png",
+    "Terzo anno/Reti di calcolatori/Sicurezza/HMAC.md",
+    "Terzo anno/Data and web mining/Reti neurali/Best practices.md",
+    "Terzo anno/Reti di calcolatori/Protocolli/BGP.md",
     "Terzo anno/Reti di calcolatori/Images/BGP anycast.png",
     "Terzo anno/Reti di calcolatori/Images/Path prepending.png",
     "Terzo anno/Reti di calcolatori/Images/FM.png",
-    "Terzo anno/Reti di calcolatori/Protocolli/BGP.md",
     "Calcolo 1/Images/Pasted image 20241207224524.png",
     "Terzo anno/Reti di calcolatori/Images/Small internet.png",
     "Terzo anno/Calcolabilità e linguaggi formali/Riducibilità/Teorema di Rice.md",
     "Terzo anno/Reti di calcolatori/Protocolli/ICMP e IPv6.md",
     "Terzo anno/Reti di calcolatori/Images/Virtual Full Mesh.png",
-    "Calcolo 1/Images",
-    "Calcolo 1",
-    "Terzo anno/Data and web mining/Reti neurali/Best practices.md",
     "Terzo anno/Data and web mining/Images/NN dropout.png",
-    "Terzo anno/Data and web mining/Images/NN data augmentation.png",
-    "Terzo anno/Data and web mining/Images/NN overfitting.png",
     "Terzo anno/Data and web mining/Decision trees.md",
     "Terzo anno/Data and web mining/Reti neurali/Layers.md",
     "Excalidraw/Template DWM.md",
-    "Terzo anno/Data and web mining/Images/NN layer.svg",
     "Terzo anno/Data and web mining/Reti neurali/Introduzione.md",
     "Terzo anno/Ricerca operativa/Branch & Bound.md",
     "Excalidraw/Template RO.md",
-    "Terzo anno/Ricerca operativa/Images/Poliedro con coordinate intere.svg",
     "Terzo anno/Ricerca operativa/Problemi di costo fisso e vincoli disgiuntivi.md",
     "Secondo anno/Algoritmi e strutture dati/Mod. 1/Teorema master.md",
     "Terzo anno/Calcolabilità e linguaggi formali/Riducibilità/Turing riducibilità.md",
@@ -200,8 +197,6 @@
     "Excalidraw/Drawing 2024-12-02 17.40.08.excalidraw.md",
     "Terzo anno/Ricerca operativa/Programmazione lineare.md",
     "Terzo anno/Reti di calcolatori/Protocolli/IPv4.md",
-    "Terzo anno/Reti di calcolatori/Protocolli/TCP.md",
-    "Terzo anno/Reti di calcolatori/Livelli TCP/Livello datalink.md",
     "Terzo anno/Calcolabilità e linguaggi formali/Riducibilità",
     "Terzo anno/Data and web mining/Reti neurali",
     "Terzo anno/Data and web mining/Clustering",
