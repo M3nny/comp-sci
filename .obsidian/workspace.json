@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "36b1ae9570d65b83",
+        "id": "a35ac0e8882c55dc",
         "type": "tabs",
         "children": [
           {
-            "id": "223eff2e2f5dfdff",
+            "id": "c6b73ddba64244d7",
             "type": "leaf",
             "state": {
               "type": "empty",
@@ -73,7 +73,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 350.5124969482422
+    "width": 350.5124969482422,
+    "collapsed": true
   },
   "right": {
     "id": "282a9548711da6a0",
@@ -157,26 +158,29 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "a1163d9af64d6878",
+  "active": "c6b73ddba64244d7",
   "lastOpenFiles": [
+    "Terzo anno/Reti di calcolatori/Protocolli/Wi-Fi.md",
+    "Untitled.md",
+    "Terzo anno/Reti di calcolatori/Images/CTS.png",
+    "Terzo anno/Reti di calcolatori/Images/3 transmitters collision.png",
+    "Terzo anno/Reti di calcolatori/Images/Collision.png",
+    "Terzo anno/Reti di calcolatori/Images/NAV.png",
     "Terzo anno/Reti di calcolatori/Protocolli/Ethernet.md",
-    "Terzo anno/Reti di calcolatori/Images/Switch loop.png",
-    "Terzo anno/Reti di calcolatori/Images/Hub vs switch.png",
+    "Calcolo 1/Images/Pasted image 20241211204253.png",
+    "Calcolo 1/Images/Pasted image 20241211204237.png",
+    "Terzo anno/Reti di calcolatori/Images/DIFS e SIFS.png",
     "Calcolo 1/Images",
     "Calcolo 1",
+    "Terzo anno/Reti di calcolatori/Livelli TCP/Livello datalink.md",
+    "Terzo anno/Reti di calcolatori/Images/Switch loop.png",
+    "Terzo anno/Reti di calcolatori/Images/Hub vs switch.png",
     "Terzo anno/Reti di calcolatori/Images/Twisted pairs.png",
     "Terzo anno/Reti di calcolatori/Sicurezza/HMAC.md",
     "Terzo anno/Data and web mining/Reti neurali/Best practices.md",
     "Terzo anno/Reti di calcolatori/Protocolli/BGP.md",
-    "Terzo anno/Reti di calcolatori/Images/BGP anycast.png",
-    "Terzo anno/Reti di calcolatori/Images/Path prepending.png",
-    "Terzo anno/Reti di calcolatori/Images/FM.png",
-    "Calcolo 1/Images/Pasted image 20241207224524.png",
-    "Terzo anno/Reti di calcolatori/Images/Small internet.png",
     "Terzo anno/Calcolabilità e linguaggi formali/Riducibilità/Teorema di Rice.md",
     "Terzo anno/Reti di calcolatori/Protocolli/ICMP e IPv6.md",
-    "Terzo anno/Reti di calcolatori/Images/Virtual Full Mesh.png",
-    "Terzo anno/Data and web mining/Images/NN dropout.png",
     "Terzo anno/Data and web mining/Decision trees.md",
     "Terzo anno/Data and web mining/Reti neurali/Layers.md",
     "Excalidraw/Template DWM.md",
@@ -195,8 +199,6 @@
     "Terzo anno/Data and web mining/Reti neurali/Filtri di convoluzione.md",
     "Terzo anno/Data and web mining/Images/Activation functions.png.crdownload",
     "Excalidraw/Drawing 2024-12-02 17.40.08.excalidraw.md",
-    "Terzo anno/Ricerca operativa/Programmazione lineare.md",
-    "Terzo anno/Reti di calcolatori/Protocolli/IPv4.md",
     "Terzo anno/Calcolabilità e linguaggi formali/Riducibilità",
     "Terzo anno/Data and web mining/Reti neurali",
     "Terzo anno/Data and web mining/Clustering",
