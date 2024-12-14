@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "a35ac0e8882c55dc",
+        "id": "0e027f4bcf5ec245",
         "type": "tabs",
         "children": [
           {
-            "id": "c6b73ddba64244d7",
+            "id": "0f6030a51d617e9a",
             "type": "leaf",
             "state": {
               "type": "empty",
@@ -73,8 +73,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 350.5124969482422,
-    "collapsed": true
+    "width": 350.5124969482422
   },
   "right": {
     "id": "282a9548711da6a0",
@@ -158,8 +157,15 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "c6b73ddba64244d7",
+  "active": "a1163d9af64d6878",
   "lastOpenFiles": [
+    "Terzo anno/Ricerca operativa/Programmazione matematica.md",
+    "Terzo anno/Ricerca operativa/Branch & Bound.md",
+    "Excalidraw/Template RO.md",
+    "Terzo anno/Ricerca operativa/Images/B&B.svg",
+    "Terzo anno/Data and web mining/Clustering/Gerarchico.md",
+    "Terzo anno/Data and web mining/Clustering/K-means.md",
+    "Terzo anno/Ricerca operativa/Programmazione lineare.md",
     "Terzo anno/Reti di calcolatori/Protocolli/Wi-Fi.md",
     "Untitled.md",
     "Terzo anno/Reti di calcolatori/Images/CTS.png",
@@ -175,7 +181,6 @@
     "Terzo anno/Reti di calcolatori/Livelli TCP/Livello datalink.md",
     "Terzo anno/Reti di calcolatori/Images/Switch loop.png",
     "Terzo anno/Reti di calcolatori/Images/Hub vs switch.png",
-    "Terzo anno/Reti di calcolatori/Images/Twisted pairs.png",
     "Terzo anno/Reti di calcolatori/Sicurezza/HMAC.md",
     "Terzo anno/Data and web mining/Reti neurali/Best practices.md",
     "Terzo anno/Reti di calcolatori/Protocolli/BGP.md",
@@ -185,8 +190,6 @@
     "Terzo anno/Data and web mining/Reti neurali/Layers.md",
     "Excalidraw/Template DWM.md",
     "Terzo anno/Data and web mining/Reti neurali/Introduzione.md",
-    "Terzo anno/Ricerca operativa/Branch & Bound.md",
-    "Excalidraw/Template RO.md",
     "Terzo anno/Ricerca operativa/Problemi di costo fisso e vincoli disgiuntivi.md",
     "Secondo anno/Algoritmi e strutture dati/Mod. 1/Teorema master.md",
     "Terzo anno/Calcolabilità e linguaggi formali/Riducibilità/Turing riducibilità.md",
@@ -194,11 +197,7 @@
     "Terzo anno/Calcolabilità e linguaggi formali/Indecidibilità.md",
     "Terzo anno/Calcolabilità e linguaggi formali/Macchina di Turing.md",
     "Terzo anno/Calcolabilità e linguaggi formali/Decidibilità.md",
-    "Terzo anno/Calcolabilità e linguaggi formali/Riducibilità/Introduzione.md",
-    "Terzo anno/Calcolabilità e linguaggi formali/Riducibilità/Storie di computazione accettanti.md",
-    "Terzo anno/Data and web mining/Reti neurali/Filtri di convoluzione.md",
     "Terzo anno/Data and web mining/Images/Activation functions.png.crdownload",
-    "Excalidraw/Drawing 2024-12-02 17.40.08.excalidraw.md",
     "Terzo anno/Calcolabilità e linguaggi formali/Riducibilità",
     "Terzo anno/Data and web mining/Reti neurali",
     "Terzo anno/Data and web mining/Clustering",
