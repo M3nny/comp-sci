@@ -16,12 +16,7 @@ Un **Linear Bounded Automata (LBA)** è una MdT con lunghezza del nastro pari al
 Il problema di determinare se un LBA accetta un certo input è decidibile.
 $$A_{LBA}=\{<M,w>|M\text{ è un LBA che accetta }w\}$$
 
-**Lemma**: sia $M$ un LBA con $q$ stati e $g$ simboli per il nastro, se un nastro ha lunghezza $n$, il numero massimo di configurazioni del LBA è pari a $qng^n$.
-
-Questo è vero in quanto:
-- Numero di stati: $q$
-- Numero di posizioni possibili della testina: $n$
-- Possibili contenuti del nastro: $g$ possibili caratteri in $n$ possibili celle ($g^n$)
+**Lemma**: sia $M$ un LBA con $q$ _stati_ e $g$ _simboli per il nastro_, se un nastro ha _lunghezza_ $n$, il numero massimo di configurazioni del LBA è pari a $qng^n$.
 >Il prodotto fornisce il numero di configurazioni massime.
 
 Costruiamo un decisore $D$ per $A_{LBA}$.
@@ -38,7 +33,7 @@ $$E_{LBA}=\{<M>|M\text{ è un LBA e }L(M)=\emptyset\}$$
 Per dimostrarlo costruiamo una riduzione da $A_{TM}$ a $E_{LBA}$ sfruttando la tecnica delle storie di computazioni accettanti.
 
 Assumiamo per assurdo che $E_{LBA}$ sia decidibile e che quindi esista un suo decisore $N$, costruiamo il decisore $S$ per $A_{TM}$.
-$S$ = su input $<M,w>$ ($M$ è una MdT):
+$S$ = su input $<M,w>$ ($M$ è una MdT normale):
 1. Costruisci un LBA $M'$ con la seguente caratteristica:
 $$L(M')=\begin{cases}
 \text{Non vuoto}&\text{se }M\text{ accetta }w\\

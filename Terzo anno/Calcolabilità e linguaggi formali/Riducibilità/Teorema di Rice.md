@@ -37,5 +37,28 @@ L(T)&\text{se }M\text{ accetta }w\\
 L(V_\emptyset) (\text{uguale a }\emptyset)&\text{altrimenti}
 \end{cases}$$
 
+### Condizioni necessarie
+Il teorema impone due condizioni necessarie per renderlo valido:
+- $P$ non deve essere banale
+- $P$ deve essere una proprietà del linguaggio
+
+Consideriamo $P=\emptyset$, esso predica su una proprietà del linguaggio, però può essere facilmente deciso da una MdT che rifiuta sempre.
+
+Considerando invece $P=\{<M>|M\text{ è una MdT con cinque stati}\}$, non è banale, infatti non tutte le MdT hanno cinque stati, però non sta predicando su una proprietà del linguaggio, per cui è facilmente decidibile, basta creare un decisore che conta il numero di stati.
+
+Per cui entrambe le condizioni sono necessarie per far valere il teorema di Rice.
+
+#### Utilizzo del teorema di Rice
+Consideriamo il seguente linguaggio:
+$$A=\{<M>|M \text{ è una MdT e } 1011\in L(M)\}$$
+- $A$ è un linguaggio formato da descrizioni di MdT
+- **Non è banale** perchè qualche MdT accetta la stringa $1011$, mentre altre no
+- L'appartenenza ad $A$ **dipende solo dal linguaggio** di $M$
+
+Per cui se due MdT riconoscono lo stesso linguaggio, allora entrambe riconosceranno $\Sigma^*$, oppure nessuna delle due lo riconoscerà, per cui il teorema di Rice implica che $A$ è **indecidibile**.
+
 >[!Tip] Implicazioni del teorema di Rice
->Con il teorema di Rice possiamo affermare che qualsiasi proprietà ragionevole non è decidibile da un programma, i software di testing infatti eseguono solo delle approssimazioni.
+>Con il teorema di Rice possiamo affermare che qualsiasi proprietà ragionevole non è decidibile da un programma, delle conseguenze pratiche di questo teorema sono:
+>- I software di testing eseguono solo delle approssimazioni
+>- Non è possibile stabilire la complessità di un algoritmo tramite un software
+

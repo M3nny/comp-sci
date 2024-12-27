@@ -9,7 +9,7 @@ $$\underbrace{(0\cup 1)}_\text{1.}\underbrace{\circ}_\text{2.}\underbrace{0^*}_\
 | $0,1,00,100,...$ | $01,101,...$         |
 
 Dato un alfabeto $\Sigma=\{a,b\}$, la notazione $\Sigma^*$ è definita come:
-$$\Sigma^*\stackrel{\Delta}{=}(a\cup b)^*$$
+$$\Sigma^*=(a\cup b)^*$$
 
 Sia $\Sigma$ un alfabeto, l'insieme delle regex definite su $\Sigma$ è definito come segue:
 1. Se $a\in\Sigma$, $a$ è una regex
@@ -58,6 +58,10 @@ Ad esempio convertiamo $(ab\cup a)^*$ in un NFA equivalente:
 ![[Regex to NFA.svg]]
 
 Per prima cosa abbiamo creato un NFA per riconoscere la stringa $ab$, poi un NFA per riconoscere la stringa $A$, li abbiamo uniti per scegliere quello opportuno ($\cup$) grazie allo stato <span style="color:blue">blu</span>, poi abbiamo aggiunto un ulteriore stato <span style="color:red">rosso</span> per rendere possibile l'operazione [[Automi a stati finiti non deterministici#Chiusura rispetto a star|star]].
+
+Di seguito un esempio un po' più complesso:
+$$a^+\cup(ab)^+$$
+![[Regex to NFA example.png]]
 
 ### Da GNFA a regex
 **Lemma**: se $A$ è regolare, allora esiste una regex $R$ tale che $L(R)=A$.

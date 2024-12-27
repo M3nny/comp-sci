@@ -67,7 +67,7 @@ Dimostriamo che $w\in L(G)$ sse $w=0^n\#1^n$ per qualche $n\geq 0$.
 
 - $(\Leftarrow)$ Sia $w=0^n\#1^n$ con $\geq 0$, dimostro che $w\in L(G)$, eseguiamo una induzione su $n$ distinguendo due casi:
 	1. Se $n=0$, $w=\#$ e $A\Rightarrow B\Rightarrow \#$
-	2. Se $n> 0$, $w=O^{m+1}\#1^{m+1}$ con $m\geq 0$, per ipotesi induttiva $A\Rightarrow^*0^m\# 1^m$ ma allora: $A\Rightarrow 0A1\Rightarrow^* 00^m\#1^m1$
+	2. Se $n> 0$, $w=0^{m+1}\#1^{m+1}$ con $m\geq 0$, per ipotesi induttiva $A\Rightarrow^*0^m\# 1^m$ ma allora: $A\Rightarrow 0A1\Rightarrow^* 00^m\#1^m1$
 
 ### Ambiguità
 Una CFG è ambigua sse esiste $w\in L(G)$ tale che $w$ possiede almeno due parse tree differenti.
@@ -76,6 +76,12 @@ Ad esempio: $E\to E+E|E\cdot E|a$ può generare $a+a\cdot a$, ma esistono vari p
 
 L'ambiguità è un problema poichè non si sa come interpretare la stringa, in un compilatore è preferibile la derivazione che produce $E\cdot E$ per secondo in modo da valutarlo per primo ricorsivamente: $E\Rightarrow E+E\Rightarrow a+E\Rightarrow a+E\cdot E\Rightarrow a+a\cdot a$.
 
+### Chiusura delle grammatiche context-free
+Consideriamo i due start symbol $S_1$ e $S_2$, per i linguaggi $L_1$ e $L_2$, vediamo come generare delle grammatiche per dimostrare la chiusura rispetto ai seguenti operatori:
+- **Unione**: $S\to S_1|S_2$
+- **Concatenazione**: $S\to S_1S_2$
+- **Star**: $S\to S_1S|\epsilon$
+
 ### Forma normale di Chomsky
 Una CFG è in forma normale di **Chomsky** sse ognuna delle sue produzioni è in uno dei seguenti formati:
 1. $A\to BC$, dove $B,C\neq S$
@@ -83,17 +89,17 @@ Una CFG è in forma normale di **Chomsky** sse ognuna delle sue produzioni è in
 3. $S\to \epsilon$
 
 Ad esempio la seguente CFG è in forma normale di Chomsky:
-	$S\to AB|\epsilon$
-	$A\to 0$
-	$B\to CD$
-	$C\to 1$
-	$d\to 1$
+$S\to AB|\epsilon$
+$A\to 0$
+$B\to CD$
+$C\to 1$
+$d\to 1$
 
 **Teorema**: ogni CFG può essere riscritta in forma normale di Chomsky.
 **Dimostrazione**: definiamo un algoritmo che converte una CFG in un'altra CFG equivalente che soddisfa la forma normale di Chomsky.
 1. Generiamo un nuovo start symbol $S'$ ed aggiungiamo la produzione $S'\to S$, in questo modo tale trasformazione preserva il linguaggio e assicura per costruzione che lo start symbol non occorre a destra di una produzione.
 
-2. Eliminiamo le produzioni della forma $A\to\epsilon$ (con $A\neq S$). Per tutte le regole della forma $R\to uAv$ introduciamo una nuova regola $R\to uv$ (questo va fatto per tutte le occorrenze di $A$):
+2. Eliminiamo le produzioni della forma $A\to\epsilon$ (con $A\neq S$), di seguito per tutte le regole che hanno $A$ nella parte destra introduciamo una nuova regola considerando $A$ cancellato, ripetendo per ogni $A$ a destra
 
 $$R\to uAvAw\quad\text{diventa}\quad R\to uvAw|uAvw|uvw$$
 
@@ -101,21 +107,47 @@ $$R\to uAvAw\quad\text{diventa}\quad R\to uvAw|uAvw|uvw$$
 
 4. Sostituiamo ogni regola della forma $A\to u_1,u_2,...,u_k$ con $k\geq 3$ con nuove regole $A\to u_1A_1$, $A_1\to u_2A_2$, ..., $A_{k-2}\to u_{k-1}u_k$.
 
+Alla fine la grammatica sarà composta da derivazioni da **1 terminale**, oppure **2 non terminali**.
+
 >[!Attention]
 >L'ordine dei passaggi è importante.
 >Nel secondo e terzo punto bisogna tenere traccia delle produzioni eliminate, se si dovessero ripresentare non bisogna reinserirle, altrimenti verrebbe a crearsi un ciclo.
 
 >[!Example]
 >Sia data la seguente grammatica:
+>$$\begin{align}
+>&S\to ASA|aB\\
+>&A\to B|S\\
+>&B\to b|\epsilon
+>\end{align}$$
+>---
+>**Creazione del nuovo starting symbol**
+>- $S'\to S$
 >- $S\to ASA|aB$
 >- $A\to B|S$
 >- $B\to b|\epsilon$
->
->La sua conversione in forma normale di Chomsky è la seguente:
->- $S\to AA_1|UB|a|SA|AS$
->- $A\to b|AA_1|UB|a|SA|AS$
+>---
+>**Rimozione delle $\epsilon$**
+>- $S'\to S$
+>- $S\to ASA|aB|a|SA|AS|S$
+>- $A\to B|S$
 >- $B\to b$
->- $S'\to AA_1|UB|a|SA|AS$
->- $A_1\to SA$
->- $U\to a$
+>---
+>**Rimozione delle produzioni unitarie**
+>- $S'\to ASA|aB|a|SA|AS$
+>- $S\to ASA|aB|a|SA|AS$
+>- $A\to b|ASA|aB|a|SA|AS$
+>- $B\to b$
+>---
+>**Rimozione delle produzioni con più di due non terminali, con "rinominazione" dei terminali extra e successiva "rinominazione" dei terminali nelle produzioni miste**
+>$$\begin{align}
+>&S'\to AA_1|UB|a|SA|AS\\
+>&S\to AA_1|UB|a|SA|AS\\
+>&A\to b|AA_1|UB|a|SA|AS\\
+>&B\to b\\
+>&A_1\to SA\\
+>&U\to a
+>\end{align}
 
+
+a

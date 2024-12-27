@@ -1,6 +1,6 @@
 Intuitivamente possiamo immaginare che la riduzione $\bar A_{TM}\leq_m A_{TM}$ sia possibile, infatti dato un decisore per un problema, la sua variante complementata si dovrebbe poter ottenere invertendone il risultato.
 
-Questa proprietà formalmente però non vale, infatti abbiamo visto che $A_{TM}$ [[Indecidibilità#Accettazione - macchina di Turing|è Turing-riconoscibile]], mentre il suo complemento $\bar A_{TM}$ [[Indecidibilità#Linguaggi decidibili|non lo è]], per cui dal [[Riduzione attraverso funzioni#Turing-riconoscibilità|corollario della Turing-riducibilità]], sappiamo che non è possibile eseguire quel tipo di riduzione tramite funzione.
+Questa proprietà formalmente però non vale, infatti abbiamo visto che $A_{TM}$ [[Indecidibilità#Accettazione - macchina di Turing|è Turing-riconoscibile]], mentre il suo complemento $\bar A_{TM}$ [[Indecidibilità#Linguaggi decidibili|non lo è]], per cui dal [[Riduzione attraverso funzioni#Turing-riconoscibilità|corollario della Turing-riconoscibilità]], sappiamo che non è possibile eseguire quel tipo di riduzione tramite funzione.
 
 Serve quindi introdurre un nuovo tipo di riducibilità più intuitiva.
 
@@ -33,6 +33,13 @@ $N$ = su input $x$:
 	- Esegui $M$ su $x_i$ per $i$ passi (per evitare di andare in loop)
 2. Se una di tali computazioni accetta, _accept_
 
+**Osservazione**: $\overline{EQ}_{TM}\leq_T A_{TM}$
+**Dimostrazione**: costruiamo una MdT $M$ con oracolo per $A_{TM}$ che decide $\overline{EQ}_{TM}$.
+$M$ = su input $<M_1,M_2>$:
+1. Sia $\Sigma^* = \{w_1,w_2,w_3,\dots\}$
+2. Per $i=1,2,3\dots$
+	- Usa l'oracolo per $A_{TM}$ per testare se $M_1$ e $M_2$ accettano $w_i$
+	- Se i risultati sono diversi, accetta
 ### Decidibilità con Turing-riduzione
 **Teorema**
 Se $A\leq_T B$ e $B$ è decidibile, allora $A$ è decidibile.

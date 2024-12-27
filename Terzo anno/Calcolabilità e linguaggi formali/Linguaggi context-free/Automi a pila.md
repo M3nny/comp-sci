@@ -1,7 +1,7 @@
 Gli **automi a pila** o **PushDown Automata (PDA)** possono essere descritti informalmente come un [[Automi a stati finiti non deterministici#Definizione di NFA|NFA]] + Stack, ovvero legge l'input sequenzialmente come un NFA, ha uno stato interno che può cambiare, e ha a disposizione uno stack _infinito_ dove può leggere e scrivere.
 
 Consideriamo il linguaggio [[Linguaggi non regolari|non regolare]] $\{0^n1^n|n\geq 0\}$, il PDA ogni volta che leggerà uno $0$ eseguirà il push di uno $0$ sullo stack, mentre quando arriverà un $1$ cambierà stato e continuerà a fare pop finchè arrivano $1$, alla fine dell'input se lo stack è vuoto il linguaggio sarà riconosciuto.
-Può rifiutare in nel caso in cui l'input è finito e lo stack non è vuoto, quando arriva uno $0$ dopo un $1$.
+Può rifiutare nel caso in cui l'input è finito e lo stack non è vuoto, quando arriva uno $0$ dopo un $1$.
 >NFA+Stack $\neq$ DFA+Stack anche se DFA e NFA sono convertibili tra loro.
 
 ### Definizione di PDA
@@ -9,7 +9,7 @@ Un PDA è una sestupla $(Q,\Sigma, \Gamma, \delta, q_0, F)$, dove:
 - $Q$ è un insieme finito di stati
 - $\Sigma$ è l'alfabeto
 - $\Gamma$ è l'alfabeto dello stack (si può leggere un carattere e eseguire il push di qualcosa di diverso)
-- $\delta:Q\times\Sigma_\epsilon\times\Gamma_\epsilon\to\mathscr{P}(Q\times\Gamma_\epsilon)$ è la funzione di transizione
+- $\delta:Q\times\Sigma_\epsilon\times\Gamma_\epsilon\to\mathcal{P}(Q\times\Gamma_\epsilon)$ è la funzione di transizione
 	dove $\Sigma_\epsilon=\Sigma\cup\{\epsilon\}$ e $\Gamma_\epsilon=\Gamma\cup\{\epsilon\}$.
 - $q_0\in Q$ è lo stato iniziale
 - $F\subseteq Q$ è l'insieme degli stati accettanti
@@ -20,7 +20,7 @@ Sia $M$ un PDA, diciamo che $M$ accetta la stringa $w$ sse $w=w_1w_2...w_m$ dove
 3. $r_m\in F$
 
 >Il secondo punto dice che si è nello stato $r_i$, si legge $w_{i+1}$ e si va in $r_{i+1}$.
->$a$ è la head dello stack, $b$ è il nuovo simbolo inserito nelle head, mentre $t$ indica il resto dello stack.
+>$a$ è la head dello stack, $b$ è il nuovo simbolo inserito nella head, mentre $t$ indica il resto dello stack.
 >$a$ e $b$ possono essere caratteri da mettere nello stack, oppure $\epsilon$.
 
 Nel secondo punto possono avvenire i seguenti casi:
@@ -76,12 +76,21 @@ $$S\Rightarrow AB\Rightarrow aB\Rightarrow abB\Rightarrow abb$$
 Costruiamo  il seguente PDA a partire da $G$:
 1. Metti sullo stack $\$$ e poi lo start symbol $S$
 2. Ripeti i seguenti passi fino a terminazione in base a cosa è presente sulla cima dello stack:
-	- C'è un _non terminale_ $A$, scegli non deterministicamente una produzione $A\to u_1,...,u_k$ e fai push di $u_k,...,u_1$ dopo aver fatto pop di $A$
-	- C'è un _terminale_ $a$, confrontalo con il prossimo carattere di input, se sono uguali fai pop, altrimenti rifiuta
+	- C'è un _non terminale_ $A$, scegli non deterministicamente una produzione $A\to u_1,...,u_k$ e fai `push` di $u_k,...,u_1$ dopo aver fatto `pop` di $A$
+	- C'è un _terminale_ $a$, confrontalo con il prossimo carattere di input, se sono uguali fai `pop`, altrimenti rifiuta
 	- C'è $\$$, passa allo stato di accettazione, ciò comporta accettazione se ho consumato tutto l'input
 
 La rappresentazione grafica del precedente algoritmo è la seguente:
 ![[CFG to PDA rappresentazione grafica.svg|500]]
+
+Di seguito un esempio pratico:
+$$\begin{align}
+&R\to XRX|S\\
+&S\to aTb|bTa\\
+&T\to XTX|X|\epsilon\\
+&X\to a|b
+\end{align}$$
+![[CFG to PDA example.png|400]]
 
 **Dimostrazione teorema ($\Leftarrow$)**
 Sia $A$ un linguaggio tale che esiste un PDA $P$ tale che $L(P)=A$, allora $A$ è context-free.
@@ -109,44 +118,11 @@ Definiamo quindi come start symbol della CFG il non-terminale $A_{q_0, q_{accept
 Per realizzare tale CFG le produzioni potranno avere tre possibili formati:
 1. $A_{pp}\to\epsilon$ per ogni stato $p$ del PDA
 2. $A_{pq}\to A_{pr}A_{rq}$ per ogni tripla di stati $p,q,r$ del PDA
-3. Se $(r,u)\in\delta(p,a,\epsilon)$ e $(q,\epsilon)\in\delta(s,b,u)$ allora produco $A_{pq}\to aA_{rs}b$
+3. $A_{pq}\to aA_{rs}b$
 
 >$p$ = stato di partenza, $q$ = stato di arrivo, $a$ = primo simbolo letto, $b$ = ultimo simbolo letto, $r$ = secondo stato, $s$ = penultimo stato, $u$ = primo simbolo che metto sullo stack e anche ultimo simbolo di cui si esegue il pop dallo stack.
 
 **Condizione critica**
 $A_{pq}\Rightarrow^* x$ se e solo se $P$ parte da $p$ con stack vuoto ed arriva in $q$ con stack vuoto processando $x$.
+>È dimostrabile per induzione sul numero di passi.
 
-**Dimostrazione condizione critica ($\Rightarrow$)**
-Se $A_{pq}\Rightarrow^* x$, allora $x$ porta $P$ da $p$ con lo stack vuoto a $q$ con lo stack vuoto.
-
-**Caso base**: in questo caso la derivazione deve essere di lunghezza pari a $1$, l'unica produzione applicabile che non contiene non-terminali nella parte destra è $A_{pp}\to\epsilon$, ovvero $A_{pp}\Rightarrow\epsilon$, abbiamo quindi che l'input $\epsilon$ porta $P$ da $p$ con lo stack vuoto a $p$ con lo stack vuoto.
-
-**Passo induttivo**: assumiamo vero l'enunciato per derivazioni di lunghezza massima $k\geq 1$, e lo dimostriamo per $k+1$ passi.
-La derivazione sarà fatta come $A_{pq}\Rightarrow\square\Rightarrow^* x$.
-Il $\square$ dipende dalla regola della grammatica che è stata applicata:
-1. $A_{pq}\Rightarrow A_{pr}A_{rq}\Rightarrow^* x$. In questo caso consideriamo le parti $y$ e $z$ di $x$ rispettivamente generate da $A_{pr}$ e $A_{rq}$, quindi $x=yz$. Poichè $A_{pr}\Rightarrow^* y$ in al più $k$ passi e $A_{rq}\Rightarrow^* z$ in al più $k$ passi, per ipotesi induttiva $y$ può portare $P$ da $p$ a $r$ e $z$ può portare $P$ da $r$ a $q$ con lo stack vuoto all'inizio e alla fine della computazione. Quindi $x$ può portare $P$ da $p$ con lo stack vuoto a $q$ con lo stack vuoto.
-2. $A_{pq}\Rightarrow\alpha A_{rs}b\Rightarrow^* x$. In questo caso consideriamo la parte $y$ di $x$ generata da $A_{rs}$, quindi $x=ayb$. Poichè $A_{rs}\Rightarrow^* y$ in $k$ passi, per ipotesi induttiva $P$ può andare da $r$ con lo stack vuoto a $s$ con lo stack vuoto. Dato che $A_{pq}\to \alpha A_{rs}b$ è una regola di $G$, si ha che $\delta(p,a,\epsilon)$ contiene $(r,u)$ e $\delta(s,b,u)$ contiene $(q,\epsilon)$ per qualche simbolo dello stack $u$. Quindi se $P$ inizia in $p$ con lo stack vuoto, dopo aver letto $a$ potrà andare nello stato $q$ ed eliminare $u$ dallo stack, quindi $x$ può portare $P$ da $p$ con lo stack vuoto a $q$ con lo stack vuoto.
-
-**Dimostrazione condizione critica ($\Leftarrow$)**
-Se $x$ porta $P$ da $p$ con stack vuoto a $q$ con stack vuoto, allora $A_{pq}\Rightarrow^* x$.
-Anche qui la dimostrazione avviene sul numero di passi della computazione.
-
-**Caso base**: $0$ passi di computazione, in questo caso $p$ con stack vuoto va in $p$ con stack vuoto processando $x=\epsilon$. Osserviamo che $A_{pp}\Rightarrow\epsilon$ attraverso $A_{pp}\to\epsilon$.
-
-**Passo induttivo**: assumiamo che la proprietà valga per le computazioni al più $k$ passi e la dimostro per $k+1$ passi distinguendo due casi:
-- La pila è vuota solo all'inizio ed alla fine:
-	1. All'inizio $P$ parte da $p$ con stack vuoto, esegue un push di $u$ e passa allo stato $r$ (assumiamo abbia processato $a$)
-	2. $P$ parte da $r$ con $u$ sullo stack ed arriva a $s$ con $u$ sullo stack (assumiamo che la stringa processata sia $y$)
-	3. $P$ parte da $s$ con $u$ sullo stack, fa la pop di $u$ e passa allo stato $q$ (assumiamo che il carattere processato sia $b$)
-
-Vogliamo dimostrare l'invarianza della proprietà per $k+1$ passi, dato che il punto $1$ ed il punto $3$ effettuano solo un passo, si ha che il punto $2$ effettua $k-1$ passi.
-La computazione eseguita al punto $2$ rispetta l'ipotesi induttiva ($A_{rs}\Rightarrow^* y$), quindi se l'input è la stringa $x=ayb$ dobbiamo poter definire da dove vengono generate le sue sottostringhe, dimostrando così come $y$ può essere derivata, mentre $a$ e $b$ sono derivabili per definizione della CFG:
-$$A_{pq}\Rightarrow aA_{rs}b\Rightarrow^* ayb=x$$
-
-- La pila si svuota in uno step intermedio, assumiamo $r$, allora $p$ computa come segue:
-	1. $P$ parte da $p$ con stack vuoto e va in $r$ con stack vuoto leggendo $y$
-	2. $P$ parte da $r$ con stack vuoto e va in $q$ con stack vuoto leggendo $z$
-
-Dal momento che la computazione è costituita da $k+1$ passi, ciascuno dei due punti sarà costituito al più da $k$ passi, per ipotesi induttiva: $A_{pr}\Rightarrow^* y$ e $A_{rq}\Rightarrow^* z$.
-Otteniamo quindi per definizione della CFG la seguente definizione:
-$$A_{pq}\Rightarrow A_{pr}A_{rq}\Rightarrow^* yz=x$$

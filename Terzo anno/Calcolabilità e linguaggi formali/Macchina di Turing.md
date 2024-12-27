@@ -56,7 +56,8 @@ Un linguaggio $A$ si dice **decidibile** sse esiste un _decisore_ $M$ tale che $
 >Creiamo una MdT per il linguaggio _non regolare_, e _non CFL_:
 >$$C=\{w\#w|w\in\{0,1\}^*\}$$
 >
->L'idea è quella di andare a fare il match dei simboli a sx e dx di $\#$, per prima cosa si sostituisce il primo simbolo in posizione $i$ con una $\times$, poi si controlla il simbolo a posizione $pos(\#)+i$, se combacia si marchia con una $\times$, altrimenti si rifiuta.
+>L'idea è quella di andare a fare il match dei simboli a sx e dx di $\#$.
+>Per prima cosa si sostituisce il primo simbolo in posizione $i$ con una $\times$, poi si controlla il simbolo a posizione $pos(\#)+i$, se combacia si marchia con una $\times$, altrimenti si rifiuta.
 >
 >Dopo aver sostituito i simboli con $\times$ a sx e dx di $\#$ si verifica se ci sono ancora simboli non marchiati con $\times$, in tal caso si rifiuta, altrimenti si accetta.
 >![[MdT 1.png]]
@@ -77,7 +78,7 @@ $$\delta:Q\times\Gamma\to Q\times\Gamma\times\{L,R,S\}$$
 
 La mossa $S$ sta per **Stay** e permette di mantenere la testina nella posizione in cui si trovava prima di processare il carattere corrente.
 
-Questa mossa può essere replicata da una normale MdT muovendosi prima a destra e poi a sinistra (evitiamo il caso limite di essere all'inizio del nastro).
+Questa mossa può essere replicata da una normale MdT muovendosi prima a destra e poi a sinistra (evitando così il caso limite di essere all'inizio del nastro).
 
 ### Variante MdT - Multinastro
 Immaginiamo di avere una macchina con $k$ nastri, il primo nastro sarà usato per contenere l'input, gli altri $k-1$ come <u>area di memorizzazione aggiuntiva</u>.
@@ -96,7 +97,7 @@ $$\delta:Q\times\Gamma^k\to Q\times\Gamma^k\times\{L,R,S\}^k$$
 
 ### Variante MdT - Non deterministica
 Similmente a quello visto con gli [[Automi a stati finiti non deterministici#Definizione di NFA|NFA]] modifichiamo la funzione di transizione per far uscire la MdT dai limiti del determinismo:
-$$\delta:Q\times\Gamma\to\mathcal{P}(Q\times\Gamma\times\{L,R\}$$
+$$\delta:Q\times\Gamma\to\mathcal{P}(Q\times\Gamma\times\{L,R\})$$
 
 **Teorema**: per ogni MdT non deterministica, esiste una MdT deterministica equivalente.
 
@@ -195,7 +196,7 @@ $M'$ = su input $w$:
 1. Separa $w$ in $w_1w_2$ non deterministicamente per qualche $n\leq|w|$
 2. Simula $M$ su $w_i$ per ogni $i\leq n$, se $M$ accetta tutti gli input, allora accetta, altrimenti rifiuta
 
-È dimostrabile inoltre che i **linguaggi decidibili** sono chiusi rispetto a: **unione**, **intersezione**, **concatenazione**, **star** e anche rispetto al **complemento** (a differenza dei linguaggi T.r.).
+È dimostrabile inoltre che i **linguaggi decidibili** sono chiusi rispetto a: **unione**, **intersezione**, **concatenazione**, **star** e anche rispetto al **complemento** (a differenza dei linguaggi Turing-riconoscibili).
 
 ---
 ### Decimo problema di Hilbert

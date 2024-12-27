@@ -1,4 +1,4 @@
-Prima di dimostrare l'esistenza di linguaggi non decidibili andiamo per passi per capire come funzione la tecnica di **diagonalizzazione di Cantor**.
+Prima di dimostrare l'esistenza di linguaggi non decidibili andiamo per passi a capire come funzione la tecnica di **diagonalizzazione di Cantor**.
 
 #### Funzioni biettive
 Sia $f:A\to B$ una funzione:

@@ -5,6 +5,13 @@ Intuitivamente diciamo che un linguaggio $A$ è **riducibile** a $B$ ($A\leq B$)
 - Se $A\leq B$ e $A$ è _indecidibile_, allora anche $B$ è _indecidibile_
 >Ad esempio eseguendo una riduzione da $A_{TM}$ a $B$ dimostriamo che anche $B$ è indecidibile.
 
+>[!Tip] Significato di riduzione
+>$$A\leq B:\quad \text" B \text{ è almeno tanto difficile quanto }A\text"$$
+>
+>Considerando una generica proprietà di un linguaggio:
+>- Se $B$ ha la proprietà, allora $A$ ha la proprietà
+>- Se $A$ non ha la proprietà, allora neanche $B$ ha la proprietà
+
 #### Problema della fermata
 Questo problema chiamato anche come **halting problem**, chiede di determinare se una MdT terminerà.
 $$HALT_{TM}=\{<M,w>|M\text{ è una MdT che termina su input }w\}$$
@@ -15,7 +22,7 @@ Assumiamo per assurdo che esista un decisore $N$ per $HALT_{TM}$, dimostriamo ch
 
 Costruiamo il decisore $S$ per $A_{TM}$.
 $S$ = su input $<M,w>$:
-1. Esegui il decisore per $HALT_{TM}$ ($N$) su $<M,w>$
+1. Esegui il decisore $N$ per $HALT_{TM}$ su $<M,w>$
 2. Se $N$ rifiuta ($M$ non termina), allora rifiuta ($M$ non potrebbe accettare $w$)
 3. Se $N$ accetta ($M$ termina), allora simula $M$ su $w$ e ritorna il suo output
 
@@ -67,7 +74,7 @@ La MdT $M'$ rifiuta sempre qualsiasi stringa diversa da $123$, in questo modo l'
 Il problema di determinare se il linguaggio di una MdT è regolare, è indecidibile.
 $$REG_{TM}=\{<M>|M\text{ è una MdT e }L(M)\text{ è regolare}\}$$
 
-Dimostriamo che $A_{TM}$ è riducibile a $REG_{TM}$, ciè dimostriamo che se avessimo un decisore $N$ per $REG_{TM}$, allora $A_{TM}$ sarebbe decidibile (assurdo).
+Dimostriamo che $A_{TM}$ è riducibile a $REG_{TM}$ ($A_{TM}\leq REG_{TM}$), cioè dimostriamo che se avessimo un decisore $N$ per $REG_{TM}$, allora $A_{TM}$ sarebbe decidibile (assurdo).
 
 Costruiamo un decisore $S$ per $A_{TM}$.
 $S$ = su input $<M,w>$:

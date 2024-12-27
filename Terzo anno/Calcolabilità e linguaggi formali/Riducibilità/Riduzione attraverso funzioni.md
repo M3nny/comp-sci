@@ -16,7 +16,7 @@ $N$ su input $w$:
 2. Esegui $M$ su input $f(w)$
 3. Ritorna il suo output
 $$\begin{align}
-&w\in A\implies f(w)\in B\implies M\text{ accetta}\implies N\text{accetta}\\
+&w\in A\implies f(w)\in B\implies M\text{ accetta}\implies N\text{ accetta}\\
 &w\notin A\implies f(w)\notin B\implies M\text{ rifiuta}\implies N\text{ rifiuta}
 \end{align}$$
 
@@ -61,6 +61,7 @@ $$\begin{align}
 
 #### Emptiness - Turing machine (con riduzione attraverso funzione)
 Dimostriamo che il problema [[Terzo anno/Calcolabilità e linguaggi formali/Riducibilità/Introduzione#Emptiness - Turing machine|emptiness]] per MdT è indecidibile tramite il problema di [[Indecidibilità#Accettazione - macchina di Turing|accettazione]] per MdT con una funzione, ovvero dimostriamo $A_{TM}\leq_mE_{TM}$, per semplicità dimostreremo $A_{TM}\leq_m\bar E_{TM}$ il che è equivalente.
+>È equivalente perchè se uno dei due linguaggio è decidibile, si potrebbe decidere il problema indecidibile invertendo l'output del decisore.
 
 Dobbiamo trovare una $f$ calcolabile tale che:
 $$<M,w>\in A_{TM}\iff \underbrace{f(<M,w>)}_{<M>}\in\bar E_{TM}$$
@@ -83,8 +84,9 @@ $$\begin{align}
 ### Turing-riconoscibilità
 **Teorema**
 Se $A\leq_mB$ e $B$ è [[Macchina di Turing#Linguaggio per una macchina di Turing|Turing-riconoscibile]], allora anche $A$ è Turing-riconoscibile.
+>Si dice che $A$ è **co-Turing-riconoscibile** se $\bar A$ è Turing-riconoscibile.
 
-**Dimostrazione** (uguale a quella fatta con i decisori ad inizio pagina): dato che $A\leq_mB$, allora esista una $f$ calcolabile tale che per ogni stringa $w$, $w\in A$ sse $f(w)\in B$, inoltre dato che $B$ è Turing-riconoscibile, esiste una MdT $M$ tale che $L(M)=B$.
+**Dimostrazione** (uguale a quella fatta con i decisori ad inizio pagina): dato che $A\leq_mB$, allora esiste una $f$ calcolabile tale che per ogni stringa $w$, $w\in A$ sse $f(w)\in B$, inoltre dato che $B$ è Turing-riconoscibile, esiste una MdT $M$ tale che $L(M)=B$.
 Costruiamo una MdT $N$ tale che $L(N)=A$:
 $N$ = su input $w$:
 1. Calcola $f(w)$

@@ -1,7 +1,7 @@
 Dimostrare che un linguaggio non è context-free è difficile in quanto bisogna dimostrare che esso non è generabile da alcuna CFG (oppure non riconoscibile da un PDA).
 
 ## Pumping lemma per linguaggi context-free
-Se $A$ è un linguaggio context-free, allora esiste un intero $p\geq 1$ (pumping length) tale che ogni stringa $w\in A$ con $|w|\geq p$ può essere suddivisa in cinque parti ($w=uvxyz$) tali che valgono le seguenti tre condizioni:
+Se $A$ è un linguaggio context-free, allora esiste un intero $p\geq 1$ (**pumping length**) tale che ogni stringa $w\in A$ con $|w|\geq p$ può essere suddivisa in cinque parti ($w=uvxyz$) tali che valgono le seguenti tre condizioni:
 1. $\forall i\geq 0$ $uv^ixy^iz\in A$
 2. $|vy|>0$
 3. $|vxy|\leq p$
@@ -15,7 +15,7 @@ Prendendo il più grande dei due parse tree radicati in $R$ e mettendolo al post
 >È possibile eseguire pumping up/down quante volte si vuole.
 
 **Dimostrazione**
-Se $A$ è context-free language (CFL), esiste una CFG $G$ tale che $L(G)=A$, definiamo $b$ come il numero massimo di simboli che occorrono a destra di una produzione di $G$.
+Se $A$ è un context-free language (CFL), esiste una CFG $G$ tale che $L(G)=A$, definiamo $b$ come il numero massimo di simboli che occorrono a destra di una produzione di $G$.
 >Assumiamo $b\geq 2$, altrimenti la CFG sostituirebbe i non terminali con un singolo carattere, rendendo impossibile generare infinite stringhe diverse.
 
 Ad esempio in $S\to acd|aS$ si ha $b=3$.
@@ -43,8 +43,10 @@ Procediamo a verificare le tre condizioni:
 >
 >Assumo per assurdo che $B$ sia context-free, allora deve valere il pumping lemma.
 >Sia $p$ la sua pumping length, consideriamo la stringa $s=a^pb^pc^p$, abbiamo che $s\in B$ e $|S|\geq p$, assumiamo inoltre che $s$ si possa suddividere come $s=uvxyz$ con $|vy|>0$ e $|vxy|\leq p$, possiamo ragionare per casi:
->1. $v$ contiene più di un tipo di carattere, oppure $y$ contiene più di un tipo di carattere ($a$, $b$ o $c$), in tal caso $uv^2xy^2z\notin B$ perchè l'ordine dei caratteri non è rispettato
+>1. $v$ o $y$ contengono più di un tipo di carattere, in questo caso $uv^ixy^iz\notin B$ perchè l'ordine dei caratteri non è rispettato
 >$$\underbrace{a}_u \underbrace{a}_v \underbrace{ab}_y \underbrace{bbccc}_z \Rightarrow \underbrace{a}_u \underbrace{aa}_{v^2} \underbrace{abab}_{y^2} \underbrace{bbcc}_z\quad(x=\epsilon)$$
 >
->2. Sia $v$ che $y$ contengono al massimo un tipo di carattere, per esempio $v$ contiene delle $a$ e $y$ contiene delle $b$. In generale c'è almeno un tipo di carattere che non occorre nè in $v$ nè in $y$, di conseguenza $uv^2xy^2z\notin B$ perchè tale carattere sarà sottorappresentato
+>2. Sia $v$ che $y$ contengono un solo tipo di carattere, per esempio $v$ contiene solo delle $a$ e $y$ contiene solo delle $b$, questo vuol dire che c'è almeno un tipo di carattere che non occorre nè in $v$ nè in $y$, di conseguenza $uv^ixy^iz\notin B$ perchè eseguendo il _pumping-up_ un carattere sarà sottorappresentato.
+
+
 

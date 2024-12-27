@@ -71,8 +71,12 @@ Sia $M=(Q,\Sigma, \delta, q_0, F)$ il DFA definito come segue (ricordando che st
 - $\delta((r_1,r_2), a)=(\delta_1(r_1, a), \delta_2(r_2, a))$
 	Dato che vengono eseguiti in parallelo, la funzione di transizione è equivalente alla funzione di transizione applicata su $M_1$ e $M_2$ in parallelo.
 
----
-
 Come affermato precedentemente, l'ipotesi di avere lo stesso alfabeto non è limitante in quanto possiamo riconoscere caratteri aggiuntivi senza dover modificare il linguaggio.
 Consideriamo gli alfabeti $\Sigma=\{a,b\}$, e $\Sigma'=\{a,b,c\}$, possiamo creare uno **stato pozzo** per accogliere i nuovi caratteri senza modificare il linguaggio dell'automa:
 ![[Stato pozzo.svg]]
+
+#### Chiusura rispetto al complemento
+Sia $A$ un linguaggio regolare, allora esiste un DFA $M$ tale che $L(M)=A$.
+Sia $M=(Q,\Sigma,\delta,q_0,F)$, costruiamo un uovo DFA $N=(Q,\Sigma, \delta,q_0,Q\setminus F)$, ovvero un DFA che accetta quando $M$ non accetta.
+In questo modo otteniamo $L(N)=\bar A$.
+

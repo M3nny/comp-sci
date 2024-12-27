@@ -56,7 +56,7 @@ $E(R)=\{q|q\text{ può essere raggiunto da qualche }r\in R\text{ con 0 o più }\
 	(stato iniziale + altri raggiungibili da esso tramite $\epsilon$-transizioni)
 - $F'=\{R\in Q'|\exists r\in R: r\in F\}$
 	(uno stato è accettante se all'interno del suo insieme di stati è presente uno stato accettante per $N$)
-- $\delta'(R,a)=\bigcup\limits_{r\in R}\exists(\delta(r,a))$
+- $\delta'(R,a)=\bigcup\limits_{r\in R}E(\delta(r,a))$
 	(Presi un insieme di stati $R$, ed in input $a$, ritorna gli stati raggiungibili attraverso $a$ a partire da ogni stato in $R$ considerando anche le $\epsilon$-transizioni)
 
 Di seguito la conversione di un NFA in un DFA:
