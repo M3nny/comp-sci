@@ -11,7 +11,8 @@ Un buon metodo di clustering produrrà dei cluster di alta qualità con le segue
 
 La qualità dipende dalla **misura di somiglianza** utilizzata e dalla sua abilità di scoprire pattern tra i dati.
 
-Misurare la qualità di un clustering è difficile in quanto le classi reali non sono conosciute e quindi non esiste un metodo di confronto per la bontà del clustering, inoltre misure di similarità potrebbero non essere sufficienti (e.g. [curse of dimensionality](https://en.wikipedia.org/wiki/Curse_of_dimensionality)).
+Misurare la qualità di un clustering è difficile in quanto le classi reali non sono conosciute e quindi non esiste un metodo di confronto per la bontà del clustering, inoltre misure di similarità potrebbero non essere sufficienti.
+>Vedi [curse of dimensionality](https://en.wikipedia.org/wiki/Curse_of_dimensionality).
 
 ### Considerazioni per cluster analysis
 Il **partizionamento** può essere a **singolo livello** oppure **gerarchico**, i cluster possono essere **esclusivi** se non ammettono intersezioni, **non-esclusivi** altrimenti.
@@ -38,8 +39,6 @@ Questo algoritmo vuole essere veloce, per cui come _misura di qualità_ utilizze
 Definiamo quindi il centro di un cluster e misuriamo le distanze rispetto ogni punto ed il corrispettivo centro:
 $$E=\sum_{i=1}^k\sum_{p\in C_i}||p-c_i||_2^2$$
 
->Il che risulta nella _norma-1_.
-
 Definiamo $E$ come **Sum of Squared Errors (SSE)**.
 
 In questo approccio assumiamo di sapere in partenza il numero corretto di cluster, ovvero $k$.
@@ -65,7 +64,7 @@ A differenza dell'algoritmo originale, **k-means++** aggiunge una strategia per 
 L'idea è che i centroidi devono essere ben separati e devono coprire bene i dati.
 L'algoritmo per la selezione iniziale dei centroidi è il seguente:
 1. Seleziona il primo centroide casualmente
-2. Ripeti per gli altri centroidi rimanenti
+2. Ripeti per gli altri centroidi rimanenti:
 	3. Per ogni punto $x$ computa la distanza $d(x)$ rispetto al centroide più vicino
 	4. Assegna ad ogni punto una probabilità proporzionale a $d(x)^2$
 	5. Seleziona un nuovo centroide casualmente secondo le probabilità assegnate nel punto precedente

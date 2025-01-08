@@ -63,7 +63,7 @@ Esistono vari ottimizzatori che adottano varie tecniche per minimizzare la funzi
 - **SGD (Stochastic Gradient Descent)**: aggiorna tutti i pesi in modo uniforme secondo la direzione opposta indicata dal gradiente
 - **RMSprop (Root Mean Square propagation)**: a differenza dell'SGD, mantiene un learning rate specifico per ogni parametro
 - **ADAM (Adaptive Moment Estimation)**: combina l'RMSprop con il concetto di [momentum](https://optimization.cbe.cornell.edu/index.php?title=Momentum) per arrivare alla convergenza più velocemente
->Eseguire il fine tuning degli ottimizzatori è l'ultimo passo da compiere.
+>Eseguire il fine-tuning degli ottimizzatori è l'ultimo passo da compiere.
 
 #### Recap
 

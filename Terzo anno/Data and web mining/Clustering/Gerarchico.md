@@ -53,7 +53,7 @@ Di seguito sono elencate delle **misure di similarità** tra cluster tipiche.
 **Algoritmo per single linkage**
 ```
 M = matrice delle distanze (N x N)
-V = lista di coppie (distanza - id colonna matrice)
+V = lista di coppie <distanza, id colonna matrice>
 for each i in M:
 	Trova la distanza minore in V
 	Aggiorna in M le distanze tra il nuovo cluster e gli altri

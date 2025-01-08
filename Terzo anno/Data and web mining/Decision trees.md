@@ -10,30 +10,33 @@ Un ottimo albero decisionale potrebbe essere il seguente:
 >Ogni predicato volendo può considerare multiple features.
 
 L'**algoritmo di Hunt** è un algoritmo [[Algoritmi greedy|greedy]] ricorsivo che viene usato per creare un albero decisionale prendendo in considerazione il miglior split (se è possibile eseguire uno split) e le condizioni di stop:
+```
+buildTree(D):
+	best_gain, best_split = None
+	
+	for each feature f:
+		for each threshold t:
+			gain = split_goodness(f, t) // f <= t
+			if gain >= best_gain:
+				best_gain = gain
+				best_split = (f, t)
+	
+	if best_gain = 0 or stop_criterion:
+		u = best_prediction(D)
+		return Leaf(u)
+	
+	f, t = best_split
+	D_L = buildTree(D: x_f <= t)
+	D_R = buildTree(D: x_f > t)
+	return Node(D_L, D_R) // radice
+```
 
->[!Tip] Hunt's algorithm
->**BuildTree**(${\cal D}$):
-$\quad$*BestSplit*, *BestGain* = *None*
-$\quad$**For each** feature $f$
-$\quad$ **For each** threshold $t$
-$\quad\quad$ *Gain* $\gets$ goodness of the split $(f \leq t)$
-$\quad\quad$ **If** Gain>=BestGain:
-$\quad\quad\quad$ *BestGain* $\gets$ *Gain*
-$\quad\quad\quad$ BestSplit* $\gets$ $(f \leq t)$
-**If** *BestGain*$=0$ or *other stopping criterion is met*:
-$\quad$ $\mu \gets$ the best prediction for ${\cal D}$
-$\quad$ **Return** $Leaf(\mu)$
-Let $f$ and $t$ be those of BestSplit = $(f \leq t)$
-${\cal D}_L \gets \{x \in {\cal D} ~|~ x_f\leq t\}$ *(Left Partition)*
-$L \gets$  **BuildTree**(${\cal D}_L$) *(Left Child)*
-${\cal D}_R \gets \{x \in {\cal D} ~|~ x_f > t\}$ *(Right Partition)*
-$R \gets$  **BuildTree**(${\cal D}_R$) *(Right Child)*
-**Return** $Node(L,R)$
+- **Goodness**: bontà della predizione con un certo split applicato
+- **Gain**: differenza della _goodness_ con e senza lo split attualmente ispezionato
 
-Per **goodness** si intende la bontà della predizione con quello split applicato, mentre **gain** si riferisce alla _differenza_ della goodness con e senza lo split attualmente ispezionato.
-$\cal{D}$ indica il dataset attuale, $D_L$ e $D_R$ le partizioni di sinistra e destra del dataset dopo lo split.
+`D` indica il dataset attuale, `D_L` e `D_R` le partizioni di sinistra e destra del dataset dopo lo split.
 
-Una **foglia** viene creata quando il miglior _gain_ possibile è pari a $0$, oppure quando qualche altro criterio di stop viene soddisfatto (e.g. BestGain supera una certa soglia, si è raggiunta una certa profondità, ...).
+Una **foglia** viene creata quando il _miglior gain_ possibile è pari a $0$, oppure quando qualche altro criterio di stop viene soddisfatto (e.g. BestGain supera una certa soglia, si è raggiunta una certa profondità, ...).
 
 Un albero di decisione può sempre arrivare a **$100\%$ di accuracy** nella fase di training in quanto facendolo raggiungere la sua profondità massima si avrà che ogni foglia rappresenta un'istanza riuscendo così a predire perfettamente $\hat y$ di qualsiasi record, ciò però non significa che nella fase di testing avrà un'accuracy alta, infatti si avrà un **supporto debole** in quanto la predizione avverrà considerando un solo record, quello che si vuole è avere **foglie che generalizzino** quanto possibile.
 
@@ -43,7 +46,7 @@ Nella classificazione rappresentiamo l'**errore** $E$ come una frazione delle is
 
 Con un dataset $\cal D$, la miglior predizione è data da:
 $$\mu = \arg\min_\mu Error(\mathcal{D},\mu)=\arg\min_\mu\frac{1}{|\mathcal{D}|}\sum_{(x,y)\in\mathcal{D}}E(y,\mu)$$
->Dove $E(y,\mu)$ è $0$ se $\mu=y$, mentre è $0$ altrimenti.
+>Dove $E(y,\mu)$ è $0$ se $\mu=y$, mentre è $1$ altrimenti.
 
 Dato un predicato $f\leq t$, definiamo il **gain** di uno split come la <u>riduzione dell'errore rispetto alla non suddivisione del nodo</u>:
 $$Gain(f,t|{\cal D})=Error(\mathcal{D})-\left(\frac{|\mathcal{D}_L|}{|\mathcal{D}|}Error(\mathcal{D}_L) + \frac{|\mathcal{D}_R|}{|\mathcal{D}|}Error(\mathcal{D}_R)\right)$$

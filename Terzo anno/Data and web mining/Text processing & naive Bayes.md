@@ -3,7 +3,7 @@ Durante l'**analisi del linguaggio naturale** spetta a noi scegliere le features
 ## Set of words
 Creiamo un insieme contenente tutte le parole presenti nel testo.
 
-Prima di eseguire questa operazione è utile **normalizzarlo** (e.g. porre tutti i caratteri in lowercase), in questo modo parole con lo stesso significato ma scritte in modo diverso verranno rappresentate solo una volta all'interno dell'insieme.
+Prima di eseguire questa operazione è utile **normalizzarlo** (e.g. porre tutti i caratteri in lowercase), in questo modo parole con lo stesso significato ma scritte in modo diverso vengano rappresentate solo una volta all'interno dell'insieme.
 
 L'**insieme delle features** è quindi formato dal **lexicon**, ogni parola sarà associata ad una feature binaria la quale indicherà la sua presenza o meno nel testo in questione.
 ```python
@@ -68,7 +68,7 @@ la predizione finale quindi (considerando il teorema di Bayes) è:
 $$\arg\max_{C_i}P(C_i|X)=\left(\prod_{j=1}^n P(x_j|C_i)\right)\frac{P(C_i)}{P(X)}$$
 
 In questo modo $P(x_j,C_i)$ può essere pre-computato dal dataset in due modi:
-- **Multinomial Naive Bayes**: se la feature $f_j$ è **categoriche**, allora $P(x_j|C_i)$ è il numero di istanze nel dataset di classe $C_i$ per cui la $j$-esima feature ha gli stessi valori di $X$, diviso per $|C_i|$, ovvero:
+- **Multinomial Naive Bayes**: se la feature $f_j$ è **categorica**, allora $P(x_j|C_i)$ è il numero di istanze nel dataset di classe $C_i$ per cui la $j$-esima feature ha gli stessi valori di $X$, diviso per $|C_i|$, ovvero:
 $$P(x_j|C_i)=\frac{\#\text{istanze di classe }C_i\text{ con }x_j=X}{|C_i|}$$
 
 - **Gaussian Naive Bayes**: se la feature $f_j$ è **numerica**, allora assumiamo che essa abbia una [[Distribuzioni continue#Normale (o gaussiana)|distribuzione gaussiana]], per cui dopo aver calcolato la media $\mu$ e la deviazione standard $\sigma$ limitate alle istanze di classe $C_i$ otteniamo:
@@ -77,7 +77,7 @@ $$P(x_j|C_i)=\frac{1}{\sigma\sqrt{2\pi}}e^{-\frac{1}{2}\left(\frac{x_j-\mu}{\sig
 I **classificatori bayesiani** sono classificatori statistici, predicono la probabilità di appartenenza ad una classe, essi <u>assumono che l'effetto del valore di un attributo di una data classe sia indipendente dai valori degli altri attributi</u>.
 
 ### Correzione di Laplace
-Nel caso in cui durante la produttoria sia abbia $P(x_j|C_i)=0$ il prodotto verrebbe completamente azzerato anche se i segnali provenienti dalle altre features erano forti.
+Nel caso in cui durante la produttoria si abbia $P(x_j|C_i)=0$ il prodotto verrebbe completamente azzerato anche se i segnali provenienti dalle altre features erano forti.
 
 La **correzione di Laplace** evita questo problema assumendo di osservare un'istanza aggiuntiva per ogni valore di feature:
 $$P(x_j|C_i)=\frac{N_{ij}+1}{N_i+v}$$

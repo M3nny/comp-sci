@@ -8,7 +8,7 @@ La sintassi `Conv2D(32, (3, 3))` (vedi [keras](https://keras.io/api/layers/convo
 Tutte le matrici risultanti saranno della stessa dimensione di quella originale.
 Per quanto riguarda i **bordi della matrice** dove il filtro non può essere applicato (altrimenti "uscirebbe" dalla matrice originale) vengono utilizzate delle tecniche di **padding**, oppure vengono direttamente ignorati i bordi.
 
-La convoluzioni ha delle proprietà importanti, tra cui:
+La convoluzione ha delle proprietà importanti, tra cui:
 - I filtri sono **invarianti alla traslazione**, quindi se un filtro genera un pixel con elevata _response_, lo troverà anche con l'immagine traslata
 - Le reti di convoluzione imparano **gerarchie spaziali di pattern**, possiamo immaginare che i layer più vicini all'output rappresentino pattern più complessi che sfruttano quelli imparati dai layer precedenti
 >Possiamo pensare ai filtri come a dei rilevatori di pattern.
@@ -46,6 +46,13 @@ model = Sequential([
 ```
 
 L'utilizzo dei layer densi alla fine, oltre ad essere necessari per utilizzare la funzione _softmax_, è importante in quanto essi sono connessi alla matrice risultante dai filtri di convoluzione ed i successivi max pooling, in questo modo avrà una "visuale" dell'immagine intera, in modo da rilevare dei pattern ed aggiornare i pesi in fase di backpropagation.
+
+![[Convolutional NN.png]]
+
+Il **numero di parametri** di un layer di convoluzione è dato da:
+$$\#params=(\text{\#canali in ingresso}\cdot\text{dimensione kernel + bias})\cdot\text{\# numero di filtri}$$
+
+In figura il primo layer ha $(1\cdot 25+1)\cdot 10=260$ parametri, mentre il secondo layer ha $(10\cdot 25+1)\cdot 20=5020$ parametri.
 
 #### Effetto funnel
 Quando una rete neurale possiede un'architettura con un numero decrescente di neuroni in ogni layer viene creato l'**effetto funnel (o imbuto)**, dove l'output del layer precedente deve essere **compresso** in un numero inferiore di nodi.

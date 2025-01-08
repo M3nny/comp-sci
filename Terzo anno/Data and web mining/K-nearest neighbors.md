@@ -6,6 +6,7 @@ $$M(x_i)\rightarrow \hat y$$
 
 Un modello in questo campo può essere visto come una funzione che restituisce un output basandosi su una **conoscenza pregressa** acquisita da dati con lo stesso insieme di features.
 Definiamo **supervised learning** l'apprendimento da un dataset che mette a disposizione le label $y$ di ogni record.
+
 ## Classificazione
 Un task di **classificazione** consiste nell'assegnare una **label** appartenente ad un **insieme discreto** ad un oggetto passato in input.
 
@@ -31,7 +32,6 @@ Avendo le seguenti predizioni dei modelli $M_1$ e $M_2$ ed il risultato atteso $
 | $99$                   | $90$                   | $100$ |
 | $\text{Accuracy: 0\%}$ | $\text{Accuracy: 0\%}$ |       |
 
----
 # K-nearest neighbors
 I classificatori **nearest neighbors** sono definiti **lazy learners** in quanto non apprendono nulla durante la fase di training, ma si limitano solo ad eseguire una query su una base di dati (possibilmente indicizzata) durante la fase di inferenza.
 
@@ -39,7 +39,7 @@ La funzione del modello $M(x_i)$ infatti si limita ad eseguire una query su dati
 #### Quale K scegliere
 Solitamente è meglio scegliere un $K$ **dispari** in modo da non avere uguaglianze, tuttavia in caso di $K$ _pari_  e parità di vicini (e.g. $3$ blu $3$  verdi) si può procedere:
 - Casualmente
-- Considerando la classe con meno elementi globalmente (e.g. $90\%$ blu $10\%$ verdi), questo perchè sono rappresentato fortemente nei vicini in questione
+- Considerando la classe con meno elementi globalmente (e.g. $90\%$ blu $10\%$ verdi), questo perchè è rappresentata fortemente nei vicini in questione
 
 Con $K$ **grande** oltre ad essere pesante in termini di computazione verrebbero preferite le classi con cardinalità maggiore (e.g. con $k=+\infty$ verrà sempre ritornata la classe più numerosa).
 
@@ -47,6 +47,7 @@ Con $K$ **piccolo** verrebbero valutati pochi oggetti storici presenti nel datas
 
 Di seguito uno _scatter plot_ con _decision boundary_ avente $4$ classi differenti e $K=10$:
 ![[KNN.png]]
+
 #### Normalizzazione delle features
 Essendo che alcune metriche, come la distanza euclidea sono influenzate dalla scala di grandezza delle features, è necessario **normalizzare** le features tramite algoritmi appositi che fanno rientrare tutti i valori delle features in un range compreso tra $0$ e $1$ (e.g. [MinMaxScaler](https://scikit-learn.org/stable/modules/generated/sklearn.preprocessing.MinMaxScaler.html)).
 

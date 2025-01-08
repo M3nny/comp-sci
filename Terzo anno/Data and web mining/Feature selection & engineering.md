@@ -3,11 +3,12 @@ Non sempre tutte le feature di un dataset sono utili, scartare feature irrilevan
 
 Un set di feature più piccolo <u>riduce il rischio di correlazione casuale</u>, e <u>riduce l'errore di generalizzazione</u> del modello.
 
-L'algoritmo che ci assicura di trovare la miglior combinazione di features è quello che prova tutte le combinazione, tuttavia per dataset di modeste dimensione è già impraticabile in quanto dovrà considerare $2^d$ sottoinsiemi, dove $d$ è il numero totale di features.
+L'algoritmo che ci assicura di trovare la miglior combinazione di features è quello che prova tutte le combinazioni, tuttavia per dataset di modeste dimensione è già impraticabile in quanto dovrà considerare $2^d$ sottoinsiemi, dove $d$ è il numero totale di features.
 Utilizziamo quindi tre approcci in particolare per selezionare le features rilevanti.
 
 ### Filter
 Questo approccio seleziona le feature ancora prima eseguire un modello qualsiasi, il metodo di **filtering** può essere completamente indipendente dal futuro modello, ad esempio si possono rimuovere le features con **bassa correlazione** rispetto alla label, oppure rimuovere features che sono altamente correlate tra loro (ridondanti).
+
 ### Wrapper
 In questo approccio le feature sono selezionate in base alla loro **contribuzione**, ovvero quanto migliora l'accuracy dell'algoritmo usando o meno la feature in questione.
 
@@ -50,13 +51,16 @@ Vediamo di seguito alcune strategie per affrontare problemi comuni nei dataset.
 - **Features categoriche k-arie**
 	Viene utilizzato il **one-hot-encoding (1HE)**, ovvero per ogni categoria viene creata una nuova colonna con valori binari per indicare se tale istanza appartiene a tale categoria.
 
+- **Label categorica k-aria**
+	Viene mappata in un numero.
+
 - **Features con valori unici**
 	Sono features che non apportano espressività al modello e dovrebbero essere eliminate.
 
 - **Valori mancanti**
 	I valori mancanti vengono sostituiti con la moda/media dei valori di tale feature, e viene aggiunta una nuova feature binaria che indica se tale valore è "vero" oppure è il risultato della moda/media (inizialmente mancava).
 
->Nota che la moda/media usata per sostituire i valori nel training set viene salvata, e sarà poi usata anche per sostituire i valori nel test set, altrimenti in un test set con una sola istanza non sarebbe possibile applicare moda/media a valori assenti.
+>Nota che la moda/media usata per sostituire i valori nel training set viene salvata, e sarà poi usata anche per sostituire i valori nel test set.
 
 ### One-hot encoding
 Con il 1HE, abbiamo detto che per ogni categoria viene creata una nuova colonna binaria per rappresentarla, ad esempio:
@@ -107,7 +111,6 @@ Per qualsiasi tipo di misura siamo interessati alla **media**, esistono due meto
 	Le classi con più istanze hanno un impatto più grande sulla misurazione finale.
 
 La **matrice di confusione** restituisce una tabella rappresentante l'accuratezza di classificazione per ogni classe.
-Le righe rappresentano i valori effettivi, mentre le colonne rappresentano i valori predetti.
 
 Da questo [dataset](http://archive.ics.uci.edu/dataset/102/thyroid+disease) utilizzando un decision tree, otteniamo la seguente _confusion matrix_:
 ![[Confusion matrix.png]]
@@ -125,18 +128,18 @@ Valutare la bontà di un modello di classificazione binaria è molto più sempli
 
 Il modello durante la fase di inferenza ritornerà due probabilità, ovvero una per la prima classe ed un'altra per la seconda, la predizione del modello sarà data secondo un **threshold**, solitamente se la probabilità di una classe è $>0.5$, allora si predice tale classe.
 
-|                  |              |                 | Predicted Label |
-| ---------------- | ------------ | --------------- | --------------- |
-|                  |              | **Negative**    | **Positive**    |
-| **Actual Label** | **Negative** | True Negatives  | False Positives |
-|                  | **Positive** | False Negatives | True Positives  |
+| Actual label \ Predicted label |                 |                 |
+| ------------------------------ | --------------- | --------------- |
+|                                | **Negative**    | **Positive**    |
+| **Negative**                   | True Negatives  | False Positives |
+| **Positive**                   | False Negatives | True Positives  |
 
 Alcune misure interessanti sono:
 $$\text{True Negative Rate}=\frac{\#\text{ True Negatives}}{\#\text{ Total Negatives}}$$
 Il $\text{True Negative Rate}$, detto anche **specificità**, è importante in casi in cui si vuole essere sicuri del risultato della predizione (e.g. frode/non frode).
 
 $$\text{True Positive Rate}=\frac{\#\text{ True Positives}}{\#\text{ Total Positives}}$$
-Il $\text{True Positive Rate}$ è la stessa cosa del **recall**.
+Il $\text{True Positive Rate}$ è la stessa cosa di [[#Misure di accuratezza|recall]].
 
 $$\text{False Positive Rate}=\frac{\#\text{ False Positives}}{\#\text{ Total Negatives}}$$
 

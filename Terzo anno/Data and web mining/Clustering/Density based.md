@@ -48,12 +48,11 @@ I punti definiti come **densamente-connessi formano i cluster**, gli altri vengo
 
 #### Recap sugli algoritmi di clustering
 
-|               | K-means                                                                                                       | Gerarchico                                                                | Density based                                                                                      |
-| ------------- | ------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------- |
-| **Vantaggi**  | - Veloce<br>                                                                                                  | - Fornisce differenti misure per configurazioni di clustering diverse<br> | - Gestisce i punti di rumore esplicitamente<br>- Gestisce cluster di dimensione e forma arbitraria |
-| **Svantaggi** | - Sensibile agli outliers<br>- Assume cluster globulari<br>- Funzione meglio con cluster di dimensioni simili | - Lento<br>- Sensibile agli outlier e punti di rumore                     | - È difficile trovare gli iperparametri corretti                                                   |
+|               | K-means                                                                                                            | Gerarchico                                                              | Density based                                                                                        |
+| ------------- | ------------------------------------------------------------------------------------------------------------------ | ----------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------- |
+| **Vantaggi**  | Veloce.<br>                                                                                                        | Fornisce differenti misure per configurazioni di clustering diverse<br> | Gestisce i punti di rumore esplicitamente.<br><br>Gestisce cluster di dimensione e forma arbitraria. |
+| **Svantaggi** | Sensibile agli outliers.<br><br>Assume cluster globulari.<br><br>Funziona meglio con cluster di dimensioni simili. | Lento.<br><br>Sensibile agli outlier e punti di rumore.                 | È difficile trovare gli iperparametri corretti.                                                      |
 
----
 ## Valutazione dei cluster
 La valutazione dei cluster ci consente di stabilire la bontà dei cluster generati.
 

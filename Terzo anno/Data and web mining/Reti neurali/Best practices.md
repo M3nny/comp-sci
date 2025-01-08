@@ -1,4 +1,4 @@
-Una buona norma per **evitare l'overfitting** in una rete neurale è controllare se il <u>numero di parametri sia minore del numero di istanze di traning</u>.
+Una buona norma per **evitare l'overfitting** in una rete neurale è controllare se il numero di parametri sia minore del numero di istanze di training, tuttavia questo limita l'espressività del modello, per cui vedremo di seguito delle tecniche per ridurre l'overfitting pur mantenendo un numero elevato di parametri.
 
 L'utilizzo del **validation set è obbligatorio** per controllare se una rete neurale è in overfitting.
 ![[NN overfitting.png]]

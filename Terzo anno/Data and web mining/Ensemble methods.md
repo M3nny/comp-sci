@@ -19,7 +19,8 @@ Per **combinare le predizioni** dei modelli si può procedere in due modi:
 L'algoritmo di **bagging**, utilizza la **bootstrap aggregation** per combinare le predizioni dei $k$ modelli allenati su un **bootstrap sample** di un certo dataset di training.
 
 Un **bootstrap sample** è creato utilizzando il **campionamento con sostituzione**, ovvero dopo aver scelto un'istanza da mettere nel campione, essa viene reinserita nel dataset (così da poter essere ripescata).
-In questo modo ci si aspetta di avere campioni più grandi diversi tra loro (con intersezioni non banali).
+In questo modo ci si aspetta di avere dataset diversi tra loro (con intersezioni comunque non banali).
+>La dimensione di ogni bootstrap sample è uguale alla dimensione del dataset originale.
 
 L'algoritmo in pseudocodice è:
 ```
@@ -31,7 +32,7 @@ for i = 1,..., k
 Successivamente la predizione per l'istanza $x$ è la combinazione di tutte le predizioni $M_i(x)$.
 
 ## Boosting
-A differenza del bagging il quale probabilmente avrà modelli simili a causa del modo in cui sono creati, il **boosting** utilizza un approccio sequenziale e si basa sul modello costruito precedentemente, in particolare tenendo conto delle istanze problematiche.
+A differenza del bagging il quale probabilmente avrà modelli simili a causa del modo in cui sono creati, il **boosting** (o **AdaBoost**) utilizza un approccio sequenziale e si basa sul modello costruito precedentemente, in particolare tenendo conto delle istanze problematiche.
 
 Come nel bagging viene eseguito il **bootstrap sampling**, però in questo caso le istanze hanno un **peso associato**, il quale indica la percentuale di modelli che hanno fatto una predizione sbagliata per l'istanza in questione, più alto è il peso più probabilità ci sono che nel prossimo sampling tale istanza venga selezionata.
 
@@ -49,11 +50,11 @@ la formula precedente è chiamata **log-odds** e mappa le probabilità di una pr
 La predizione finale dell'ensemble è data dalla classe con il voto di maggioranza pesato più grande.
 
 **Aggiornamento dei pesi**
-L'_error rate_ è usato per aggiornare i pesi di una istanza.
+L'_error rate_ è usato per aggiornare i pesi di una istanza nel dataset originale.
 Se $x_j\in D$ è **correttamente** classificata, allora il suo peso è aggiornato come:
 $$w_j=w_je^{-\alpha_i}$$
 Se $x_j\in D$ è **erroneamente** classificata, allora il suo peso è aggiornato come:
-$$w_j=w_je^{\alpha i}$$
+$$w_j=w_je^{\alpha_i}$$
 Ciò diminuisce il peso delle istanze classificate correttamente e aumenta il peso delle istanze classificate erroneamente, così da includere nel sampling le istanze con pesi più alti per provare a correggere le predizioni.
 
 >[!Attention]
@@ -66,10 +67,12 @@ E = ∅
 for i = 1 to k:
 	ottieni D_i campionando D in base ai pesi w_j
 	allena un modello M_i su D_i
-	computa error(M_i) > 0.5
+	computa l'errore di M_i
+	
 	if error(M_i) > 0.5:
 		reset pesi w_j=1/n
-		break
+		ri-esegui questo ciclo
+		
 	computa l'importanza del modello α_i
 	aggiorna i pesi delle istanze in D
 	aggiungi αM_i all'ensemble finale E
@@ -85,16 +88,14 @@ L'errore di un modello può essere decomposto in:
 
 Nella regressione con errore MSE, l'errore è dato proprio da:
 $$Error(M)=Bias^2+Variance+Noise$$
-
->Il bagging abbassa la varianza, mentre il boosting abbassa il bias.
+>Il **bagging abbassa la varianza**, mentre il **boosting abbassa il bias**.
 
 Più un modello è complesso (e quindi espressivo), più è a rischio di varianza, ma avrà un basso bias, al contrario i modelli poco espressivi come i _weak learners_ hanno una bassa varianza ma un alto bias.
-
-![[Overfitting vs underfitting.png]]
+![[Overfitting vs underfitting.png|500]]
 
 ---
 ## Random forest
-Abbiamo visto che gli [[Decision trees|alberi decisionali]] molte foglie sono proni all'overfitting in quanto sono "troppo" espressivi (basso bias) e le predizioni cambiano tanto in base al training set, quindi hanno **alta varianza**.
+Abbiamo visto che gli [[Decision trees|alberi decisionali]] con molte foglie sono proni all'overfitting in quanto sono "troppo" espressivi (basso bias) e le predizioni cambiano tanto in base al training set, quindi hanno **alta varianza**.
 
 Per diminuire la varianza possiamo usare l'algoritmo di **bagging**, tuttavia quest'ultimo è efficace quando i modelli sono indipendenti tra loro, in questo ci aiuta il **bootstrap sampling** per creare training set differenti, però alla fine i training set conterranno comunque istanze in comune risultando in modelli più o meno simili.
 
@@ -121,10 +122,10 @@ Come gli altri metodi di ensemble la predizione alla fine sarà data per votazio
 ### Random forest per stimare la similarità
 Abbiamo visto come i [[K-nearest neighbors]] stimano la similarità tra istanze utilizzando le features opportunamente scalate, possiamo utilizzare anche le random forest come stima di similarità senza dover scalare le features basandoci sulle label delle varie istanze.
 
-Due istanze sono simili se seguono in percorso simile in un albero, si potrebbe quindi dire che sono simili se ricadono nella stessa foglia, per cui possiamo contare in quanti alberi della random forest le istanze in questione cadono nella stessa foglia.
+Due istanze sono simili se seguono un percorso simile in un albero, si potrebbe quindi dire che sono simili se ricadono nella stessa foglia, per cui possiamo contare in quanti alberi della random forest le istanze in questione cadono nella stessa foglia.
 
 La **similarità** è quindi data dalla frazione di foglie uguali raggiunte dalle istanze in questione durante l'attraversamento dell'albero.
->Esistono anche altre misure (e.g. potrebbero differenziarsi solo nell'ultimo split e sarebbero abbastanza simili comunque)
+>Esistono anche altre misure, questo perchè potrebbero differenziarsi solo nell'ultimo split e sarebbero abbastanza simili comunque.
 
 Questo metodo per stimare la similarità può essere applicato a qualsiasi foresta, quindi anche a bagging e boosting, però le random forest sono preferite perchè:
 - È meglio del boosting perchè non pesa gli alberi
