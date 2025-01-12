@@ -32,25 +32,25 @@ Assumiamo per assurdo che $\mathbb{R}$ sia numerabile, allora dovrà esistere un
 Andiamo a costruire un numero reale che _non_ occorre nel codominio di $f$ (parte destra della tabella), arrivando ad un assurdo.
 Per farlo creiamo un numero il cui $i$-esimo decimale è diverso dal $i$-esimo decimale di $f(n)$, un possibile numero è formato come $0.5783 ...$, avendo quindi costruito un numero non presente nella tabella abbiamo dimostrato che $f$ non è suriettiva, quando dovrebbe esserlo in quanto funzione biettiva (per ipotesi assurda).
 
-## Linguaggi non Turing-riconoscibili
-Dimostriamo che **esistono dei linguaggi che non sono Turing-riconoscibili**, e che quindi di conseguenza esistono linguaggi non decidibili.
+## Linguaggi non decidibili
+Dimostriamo che **esistono dei linguaggi che non sono Turing-riconoscibili**, e che quindi **di conseguenza esistono linguaggi non decidibili**.
 
 - <u>Dimostriamo che l'insieme delle MdT è numerabile</u>, osserviamo infatti che l'insieme delle stringhe costruite su un qualsiasi alfabeto $\Sigma$ finito è numerabile, ad esempio con $\Sigma=\{0,1\}$ possiamo creare la seguente biezione:
 
-|    $1$     | $2$ | $3$ | $4$  | $5$  | $6$  | $7$  |  $8$  |
-| :--------: | :-: | :-: | :--: | :--: | :--: | :--: | :---: |
-| $\epsilon$ | $0$ | $1$ | $00$ | $01$ | $10$ | $11$ | $000$ |
+| $\mathbb{N}$ |    $1$     | $2$ | $3$ | $4$  | $5$  | $6$  | $7$  |  $8$  | $\dots$ |
+| :----------: | :--------: | :-: | :-: | :--: | :--: | :--: | :--: | :---: | ------- |
+|  $\Sigma^*$  | $\epsilon$ | $0$ | $1$ | $00$ | $01$ | $10$ | $11$ | $000$ | $\dots$ |
 
 Enumerando le stringhe per lunghezza crescente ci fornisce una biezione con $\mathbb{N}$, ed essendo qualsiasi MdT($Q,\Sigma,\Gamma,\delta,q_0,q_{accept},q_{reject}$) rappresentabile come stringa (in quanto l'informazione contenuta al suo interno è finita), possiamo dire che le MdT sono un sottinsieme delle stringhe e quindi sono numerabili.
 
-- <u>Dimostriamo che l'insieme dei linguaggi non è numerabile</u>, prendiamo come esempio $L=\{0,00,01\}$, come visto precedentemente le stringhe sono numerabili, creiamo una codifica in cui il valore è $1$ se la stringa è presente nel linguaggio:
+- <u>Dimostriamo che l'insieme dei linguaggi non è numerabile</u>, mostriamo che un linguaggio è rappresentabile come una stringa binaria infinita, prendiamo come esempio il linguaggio $L=\{0,00,01,\dots\}$ sull'alfabeto $\Sigma=\{0,1\}$, prendendo l'enumerazione delle stringhe costruite su $\Sigma^*$ possiamo rappresentare $L$ come una stringa binaria dove l'$i$-esimo bit è pari a $1$ se l'$i$-esimo elemento dell'enumerazione appartiene ad $L$
 
+| $\Sigma^*$                  | $\epsilon$ | $0$ | $1$ | $00$ | $01$ | $10$ | $11$ | $000$ | $\dots$ |
+| --------------------------- | ---------- | --- | --- | ---- | ---- | ---- | ---- | ----- | ------- |
+| $L$                         |            | 0   |     | 00   | 01   |      |      |       | $\dots$ |
+| **Codifica binaria di $L$** | $0$        | $1$ | $0$ | $1$  | $1$  | $0$  | $0$  | $0$   | $\dots$ |
 
-| Stringhe            | $\epsilon$ | $0$ | $1$ | $00$ | $01$ | $10$ | $11$ | $000$ |
-| ------------------- | ---------- | --- | --- | ---- | ---- | ---- | ---- | ----- |
-| **Codifica di $L$** | $0$        | $1$ | $0$ | $1$  | $1$  | $0$  | $0$  | $0$   |
-
-Osserviamo che l'insieme delle stringhe binarie infinite non è numerabile, anche in questo caso lo si può dimostrare per _diagonalizzazione_ costruendo una stringa binaria infinita che non compare nella seguente tabella:
+Osserviamo che l'insieme delle stringhe binarie infinite non è numerabile, per farlo assumiamo per assurdo che lo sia, allora deve esistere una biezione che possiamo raffigurare come segue:
 
 | $n$      | $f(n)$            |
 | -------- | ----------------- |
@@ -61,7 +61,7 @@ Osserviamo che l'insieme delle stringhe binarie infinite non è numerabile, anch
 | $5$      | $1110\boxed0 ...$ |
 | $\vdots$ | $...$             |
 
-Costruiamo un numero con forma $10011 ...$, che sappiamo per certo che non sarà presente nella tabella, dimostrando così che l'insieme delle stringhe binarie infinite non è numerabile.
+Costruiamo una stringa binaria con forma $10011 ...$, che sappiamo per certo che non sarà presente nella tabella, dimostrando così che l'insieme delle stringhe binarie infinite non è numerabile.
 
 Essendo i linguaggi _non numerabili_ e le MdT _numerabili_, abbiamo dimostrato che esistono più linguaggi che MdT, per cui <u>dovranno esistere linguaggi non decidibili</u>.
 

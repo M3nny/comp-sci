@@ -66,7 +66,7 @@ Di seguito la conversione di un NFA in un DFA:
 2. $\delta(1,a)=\emptyset$, $\delta(3,a)=\{1\}$, $\emptyset\cup\{1\}=\{1\}$ da cui $E(\{1\})=\{1,3\}$
 3. $\delta(1,b)=\{2\}$, $\delta(3,b)=\emptyset$, $\{2\}\cup\emptyset = \{2\}$ da cui $E(\{2\})=\{2\}$
 4. $...$
->Notare come il grafico risultante possiede $6$ stati, mentre il numero massimo di stati che potrebbe avere è $2^3$ ($\text{\#simboli}^\text{\#stati}$), questo è dovuto al fatto che sarebbero stati isolati, dunque l'algoritmo li ha ignorati.
+>Notare come il grafico risultante possiede $6$ stati, mentre il numero massimo di stati che potrebbe avere è $2^3$ ($\text{\#simboli}^\text{\#stati del DFA}$), questo è dovuto al fatto che sarebbero stati isolati, dunque l'algoritmo li ha ignorati.
 
 1. Ogni NFA è convertibile in un DFA equivalente
 2. Ogni DFA è convertibile in un NFA equivalente, ciò è banale in quanto un DFA è un sottoinsieme di un NFA, in altre parole un NFA che si comporta come un DFA

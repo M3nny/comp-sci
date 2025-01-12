@@ -70,7 +70,9 @@ Dimostriamo che $w\in L(G)$ sse $w=0^n\#1^n$ per qualche $n\geq 0$.
 	2. Se $n> 0$, $w=0^{m+1}\#1^{m+1}$ con $m\geq 0$, per ipotesi induttiva $A\Rightarrow^*0^m\# 1^m$ ma allora: $A\Rightarrow 0A1\Rightarrow^* 00^m\#1^m1$
 
 ### Ambiguità
-Una CFG è ambigua sse esiste $w\in L(G)$ tale che $w$ possiede almeno due parse tree differenti.
+Una CFG è ambigua sse esiste $w\in L(G)$ tale che $w$ possiede almeno due **parse tree differenti**, oppure **almeno due derivazioni a sinistra diverse**.
+
+Una **derivazione a sinistra** è detta tale se per ogni produzione il non-terminale sostituito è sempre quello più a sinistra.
 
 Ad esempio: $E\to E+E|E\cdot E|a$ può generare $a+a\cdot a$, ma esistono vari parse tree per questa stringa, infatti $E$ potrebbe produrre prima una somma oppure un prodotto.
 
@@ -147,7 +149,5 @@ Alla fine la grammatica sarà composta da derivazioni da **1 terminale**, oppure
 >&B\to b\\
 >&A_1\to SA\\
 >&U\to a
->\end{align}
+>\end{align}$$
 
-
-a

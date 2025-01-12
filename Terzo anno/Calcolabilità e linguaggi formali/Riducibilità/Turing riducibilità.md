@@ -17,8 +17,8 @@ $M$ = su input $w$:
 2. Inverti il suo output
 
 **Osservazione**: $E_{TM}\leq_T A_{TM}$
-**Dimostrazione**: costruiamo una MdT $M$ con oracolo per $A_{TM}$ che decide $E_{TM}$.
-$M$ = su input $w$:
+**Dimostrazione**: costruiamo una MdT $M'$ con oracolo per $A_{TM}$ che decide $E_{TM}$.
+$M'$ = su input $<M>$:
 1. Costruisci una nuova MdT $N$ con la seguente proprietà:
 $$L(N)=\begin{cases}
 \Sigma^*&\text{se }L(M)\neq\emptyset\\

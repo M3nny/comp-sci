@@ -196,7 +196,49 @@ $M'$ = su input $w$:
 1. Separa $w$ in $w_1w_2$ non deterministicamente per qualche $n\leq|w|$
 2. Simula $M$ su $w_i$ per ogni $i\leq n$, se $M$ accetta tutti gli input, allora accetta, altrimenti rifiuta
 
-È dimostrabile inoltre che i **linguaggi decidibili** sono chiusi rispetto a: **unione**, **intersezione**, **concatenazione**, **star** e anche rispetto al **complemento** (a differenza dei linguaggi Turing-riconoscibili).
+---
+### Chiusura dei linguaggi decidibili
+**Unione**
+Siano $A,B$ due linguaggi decidibili, allora $A\cup B$ è decidibile.
+Siano $M$ e $N$ i decisori per $A$ e $B$, costruiamo un nuovo decisore $M'$.
+$M'$ = su input $w$:
+1. Simula $M$ su $w$
+2. Se $M$ accetta, allora accetta
+3. Altrimenti simula $N$ su $w$ e ritorna il suo output
+
+**Intersezione**
+Siano $A,B$ due linguaggi decidibili, allora $A\cap B$ è decidibile.
+Siano $M$ e $N$ i decisori per $A$ e $B$, costruiamo un nuovo decisore $M'$.
+$M'$ = su input $w$:
+1. Simula $M$ su $w$
+2. Se $M$ accetta, simula $N$ su $w$ e ritorna il suo output
+3. Altrimenti rifiuta
+
+**Concatenazione**
+Siano $A,B$ due linguaggi decidibili, allora $A\circ B$ è decidibile.
+Siano $M$ e $N$ i decisori per $A$ e $B$, costruiamo un nuovo decisore $M'$.
+$M'$ = su input $w$:
+1. Per tutti i modi in cui $w$ può essere suddivisa in $w=w_1w_2$:
+	- Simula $M$ su $w_1$
+	- Simula $N$ su $w_2$
+	- Se entrambe le simulazioni accettano, allora accetta
+2. Se nessuna suddivisione ha portato all'accettazione, rifiuta
+
+**Star**
+Sia $A$ un linguaggio decidibile, allora $A^*$ è decidibile.
+Sia $M$ il decisore per $A$, costruiamo un nuovo decisore $M'$.
+$M'$ = su input $w$:
+1. Per tutti i modi in cui $w$ può essere suddivisa in $w=w_1,\dots,w_k$ con $k\leq |w|$
+	- Simula $M$ su tutte le suddivisioni
+	- Se tutte le simulazioni accettano, allora accetta
+2. Se nessuna suddivisione ha portato all'accettazione, rifiuta
+
+**Complemento**
+Sia $A$ un linguaggio decidibile, allora $\bar A$ è decidibile.
+Sia $M$ il decisore per $A$, costruiamo un nuovo decisore $M'$.
+$M'$ = su input $w$:
+1. Simula $M$ su $w$
+2. Ritorna l'output invertito
 
 ---
 ### Decimo problema di Hilbert
