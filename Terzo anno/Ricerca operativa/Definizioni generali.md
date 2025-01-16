@@ -95,7 +95,7 @@ $$V^n(K)\times V^n(K)\to \mathbb{R}$$
 Possiede le seguenti proprietà:
 1. $\forall v\in V^n(K),\quad<v,v>$ è $\geq 0$, mentre è pari a $0 \iff v=w$
 	
-	Il prodotto scalare di un vettore per se stesso è $\geq 0$, è uguale a $0$ sse il vettore rappresenta vettore nullo.
+	Il prodotto scalare di un vettore per se stesso è $\geq 0$, mentre è uguale a $0$ sse il vettore rappresenta vettore nullo.
 	
 2. $\forall u,v,z\in V^n(K),\quad<u+v,z>=<u,z>+<v,z>$
 	
@@ -122,7 +122,7 @@ Possiede le seguenti proprietà:
 	
 	La norma del prodotto di uno scalare per un vettore è uguale al valore assoluto dello scalare per la norma del vettore.
 	
-1. $\forall u,v\in V^n(K),\quad||u+v||_*\leq||u||_*+||v||_*$
+3. $\forall u,v\in V^n(K),\quad||u+v||_*\leq||u||_*+||v||_*$
 	La norma della somma di due vettori è minore della somma delle norme dei due vettori ([[Secondo anno/Algoritmi e strutture dati/Mod. 1/Cammini minimi/Introduzione#Disuguaglianza triangolare|disuguaglianza triangolare]])
 
 >[!Info]

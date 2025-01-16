@@ -3,6 +3,8 @@ $$\min\limits_{a_i^T\geq b_i} c^Tx$$
 
 Per risolvere [[Problemi convessi|problemi convessi]] complessi, è possibile approcciarli partendo da un intorno locale convesso, trovarne la soluzione ottima, e poi spostarsi verso tale direzione e considerare un altro sottoinsieme convesso, nello stesso modo trasformiamo i _problemi convessi_ in problemi lineari facili da trattare, in fine si tiene conto di tutte le soluzioni dei problemi lineari per trovare una soluzione ottima al problema originale.
 
+>Indicheremo con $n$ il **numero di variabili** e con $m$ il **numero di vincoli**.
+
 ### Semispazi e iperpiani
 Data la [[Definizioni generali#Funzioni lineari e affini|funzione lineare]] $f(x)=A^Tx$, con $A\in\mathbb{R}^n$, l'insieme di punti che soddisfa
 $$A^Tx\geq b\quad b\in\mathbb{R}$$
@@ -44,7 +46,7 @@ Semispazi e iperpiani sono **convessi**, per cui anche **un poliedro è convesso
 Possiamo scrivere un poliedro nella seguente forma:
 $$P=\{x\in\mathbb{R}^n:Ax\geq b\}$$
 
-Un **poliedro limitato** è definito come **politopo**.
+Un **poliedro limitato** viene detto **politopo**.
 
 Di seguito vediamo alcuni esempi di poliedri.
 ![[Poliedri.svg]]
@@ -74,7 +76,7 @@ per cui il vettore $c$ è _ortogonale_ rispetto a $(\bar x-\bar y)$, in quanto i
 **Dimostrazione (direzione crescente)**
 Siano ora $\bar x,\hat y\in\mathbb{R}^n$ due punti appartenenti rispettivamente alle curve di livello $\bar\gamma,\hat\gamma$, con $\hat\gamma>\bar\gamma$, possiamo scriverli come:
 $$c^T\bar x=\bar\gamma\quad c^T\hat y=\hat\gamma\quad \hat\gamma>\bar\gamma$$
-otteniamo sottraendo la seconda uguaglianza alla prima:
+otteniamo sottraendo dalla seconda uguaglianza la prima:
 $$c^T\hat y-c^T\bar x=\underbrace{\hat\gamma-\bar\gamma}_{>0}\implies c^T(\hat y-\bar x)>0$$
 Il prodotto scalare ottenuto può essere [[Definizioni generali#Relazione tra norma e prodotto scalare|riscritto]] come:
 $$\underbrace{||c||_2\cdot||\hat y-\bar x||_2}_{>0}\cdot\cos(\widehat{\bar x\hat y})>0$$
@@ -125,7 +127,7 @@ Dato un vincolo del tipo $a^Tx\geq b$, esso viene definito come **vincolo attivo
 
 Questa condizione è necessaria per evitare che vincoli uguali vengano ripetuti per far valere il primo punto.
 
-- Se $m<n$ allora **non ci sono vertici**
+- Se il numero di vincoli è minore del numero di variabili ($m<n$), allora **non ci sono vertici**
 - Il **numero massimo di vertici** è dato dal [[Probabilità elementare#Combinazioni|coefficiente binomiale]] $\binom{m}{n}=\frac{m!}{n!(m-n)!}$
 
 >[!Attention] Numero massimo di vertici
@@ -174,7 +176,7 @@ In questo caso la retta $r_1$ rappresenta un _vincolo attivo_ su $u$ e $v$, ma n
 Una **retta è contenuta** all'interno di un poliedro se ogni punto della retta è interno al poliedro, un politopo infatti non potrà mai contenere una retta.
 >Anche poliedri non limitati potrebbero non contenere rette.
 
-Dato un problema di programmazione lineare di _minimizzazione_, si supponga che il poliedro $P=\{x\in\mathbb{R}^n:Ax\geq b\}$ con $A\in\mathbb{R}^{m\times n}$ <u>non</u> contenga rette, allora potrà verificarsi _uno_ dei seguenti tre scenari:
+Dato un problema di programmazione lineare di _minimizzazione_, si supponga che il poliedro $P=\{x\in\mathbb{R}^n:Ax\geq b\}$ con $A\in\mathbb{R}^{m\times n}$ <u>non contenga rette</u>, allora potrà verificarsi _uno_ dei seguenti tre scenari:
 1. $P=\emptyset$, il problema non ammette soluzioni
 2. La funzione $f(x)=c^Tx$ è illimitata _inferiormente_ (o superiormente se il problema è di massimizzazione) sul poliedro ammissibile $P$
 3. Esiste almeno una soluzione e questa si trova su uno dei vertici del poliedro ammissibile $P$

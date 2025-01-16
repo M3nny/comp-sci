@@ -26,7 +26,6 @@ $$\begin{align}
 &y\in\{0,1\}
 \end{align}$$
 
-dove:
 - $y$ è una variabile scelta (dal solutore) tra $0$ o $1$
 - $M$ una costante molto maggiore di $x_\hat i$
 - Se $y=0$ allora non verrà pagato il costo fisso, allora per definizione dei vincoli anche $x_\hat i=0$
@@ -59,22 +58,20 @@ Il solutore in questo modo sceglierà quale è il vincolo da far valere per mini
 - Se $\alpha=1$, il vincolo $a_1^Tx\leq b_1+\alpha M$ non verrà soddisfatto
 - Se $\beta=1$, il vincolo $a_2^Tx\leq b_2+\beta M$ non verrà soddisfatto
 
-Notare come la somma $\alpha+\beta$ deve essere pari a $1$, per cui un singolo vincolo potrà essere soddisfatto, in quanto $\alpha,\beta\in\{0,1\}$.
+Notare come la somma $\alpha+\beta$ deve essere pari a $1$, per cui un singolo vincolo dovrà essere soddisfatto, in quanto $\alpha,\beta\in\{0,1\}$.
 
-Generalizziamo lo stesso problema ad un caso con $m$ vincoli, dove _solo uno_ verrà soddisfatto:
+Generalizziamo lo stesso problema ad un caso con $m$ vincoli, dove **solo uno** verrà soddisfatto:
 $$\begin{align}
 \min_{x,\alpha}&\space c^Tx\\
 &x\in\mathcal{A}\\
 &a_1^Tx\leq b_1+\alpha_1 M\quad M\gg 1\\
 &\vdots\\
 &a_m^Tx\leq b_m+\alpha_m M\\ 
-&a_1+\dots+a_m=m-1\\
-&\alpha_1,\dots,a_m\in\{0,1\}
+&\alpha_1+\dots+\alpha_m=m-1\\
+&\alpha_1,\dots,\alpha_m\in\{0,1\}
 \end{align}$$
 
 Di seguito altre varianti del problema:
-- **Solo $k$** vincoli soddisfatti: $a_1+\dots+a_m=m-k$
-- **Al massimo 1** vincolo soddisfatto: $a_1+\dots+a_m\geq m-1$
-- **Almeno 1** vincolo soddisfatto: $a_1+\dots+a_m\leq m-1$
-
-
+- **Solo $k$** vincoli soddisfatti: $\alpha_1+\dots+\alpha_m=m-k$
+- **Al massimo 1** vincolo soddisfatto: $\alpha_1+\dots+\alpha_m\geq m-1$
+- **Almeno 1** vincolo soddisfatto: $\alpha_1+\dots+\alpha_m\leq m-1$

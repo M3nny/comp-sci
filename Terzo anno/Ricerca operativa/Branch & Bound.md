@@ -1,4 +1,4 @@
-Il **B&B** è una tecnica iterativa utilizzata per la risoluzione di problemi di programmazione matematica con **variabili intere e non**.
+Il **B&B** è una tecnica iterativa utilizzata per la risoluzione di problemi di programmazione matematica con **variabili intere o miste**.
 L'idea è quella di utilizzare un approccio [[Teorema master#Divide et impera|divide et impera]] per trovare una stima della soluzione di ogni sottoproblema.
 
 Consideriamo il seguente problema di PLI:
@@ -30,7 +30,7 @@ Per calcolare una stima della soluzione di $(P_i)$ si deve calcolare un **bound*
 $$(PL_i):\min_{x\in Q_i} c^Tx$$
 
 La soluzione di $(PL_i)$ sarà dunque migliore o al massimo uguale a quella di $(P_i)$ in quanto vengono rimossi dei vincoli.
-L'algoritmo non usa direttamente le soluzione dei problemi $(PL_i)$, bensì le usa per suddividere lo spazio delle soluzioni per individuare una intera ottima.
+L'algoritmo non usa direttamente le soluzione dei problemi $(PL_i)$, bensì le usa per suddividere lo spazio delle soluzioni per individuarne una intera ottima.
 
 >[!Attention]
 >Il metodo del B&B non risolve mai problemi con variabili intere.
@@ -53,7 +53,7 @@ $$\mathcal{L}=\{(P_0)\}$$
 			
 			Sia $x_i^j$ la $j$-esima componente non intera del vettore soluzione $x_i$, identifichiamo i due sottoproblemi come:
 			$$(P_{i+1}):\begin{align}\min\space&c^Tx\\&x\in S_i\\&x^j\leq\lfloor x_i^j\rfloor\end{align}$$
-			$$(P_{i+2}):\begin{align}\min\space&c^Tx\\&x\in S_i\\&x^j\geq\lfloor x_i^j\rfloor+1\end{align}$$
+			$$(P_{i+2}):\begin{align}\min\space&c^Tx\\&x\in S_i\\&x^j\geq\lceil x_i^j\rceil\end{align}$$
 
 4. Se $\cal L$ risulta essere vuota, allora l'algoritmo termina identificando l'attuale $\tilde x$ come soluzione del problema di partenza, altrimenti si torna al punto $3$
 
@@ -63,13 +63,13 @@ $$\mathcal{L}=\{(P_0)\}$$
 
 Dato che la soluzione $x_i=\begin{pmatrix}2\\1.5\end{pmatrix}$ non ha tutte le componenti intere si cerca una soluzione aggiungendo i vincoli $x_i^2\leq 1$ e $x_i^2\geq 2$.
 
-### Problema del knapsack binario
+## Problema del knapsack binario
 Il problema del knapsack (zaino) è un esempio di **programmazione lineare**.
 
 Ci si pone il problema di riempiere uno zaino massimizzando l'utilità degli oggetti al suo interno e minimizzando il più possibile il volume interno occupato.
-- $c_i$: utilità di portare l'oggetto $i$-esimo nello zaino
-- $a_i$: volume dell'oggetto $i$-esimo
-- $b$: volume dello zaino
+- $c_i$: **utilità** di portare l'oggetto $i$-esimo nello zaino
+- $a_i$: **volume dell'oggetto** $i$-esimo
+- $b$: **volume dello zaino**
 - $x_i=\begin{cases}1&\text{se l'oggetto i-esimo è inserito nello zaino}\\0&\text{altrimenti}\end{cases}$
 
 Formuliamo un **problema di massimizzazione** dell'utilità complessiva:
@@ -96,10 +96,13 @@ Per ottenere la soluzione di quest'ultimo procediamo come segue:
 	- $x_i=0$ se $c_i\leq 0$ (non porto l'oggetto se non è utile)
 	- $x_i=1$ se $c_j>0$ (portiamo l'oggetto se è utile)
 
-3. Se $c_ia_i\neq 0$:
+3. Se $c_i\neq0$ oppure $a_i\neq 0$:
 	- Se $c_i<0$ e $a_i>0$: $x_i=0$ (l'oggetto occupa volume e non è utile)
 	- Se $c_i>0$ e $a_i<0$: $x_i=1$ (l'oggetto è utile e aumenta il volume)
 	- Se $c_i<0$ e $a_i<0$: $x_i=1-y_i$ con $y_i\in\{0,1\}$ (non è possibile determinare $x_i$ a priori, per cui aggiungiamo un vincolo disgiuntivo)
+	- Se $c_i > 0$ e $a_i>0$: non si può determinare $x_i$
+
+Per assegnare un valore alle variabili dove $c_1>0$ e $a_i>0$, si prosegue come segue.
 
 Ottenuto il nuovo problema di PLI dove abbiamo assegnato un valore a $n-m$ variabili ($m\leq n$), si ordinano le restanti $m$ variabili non assegnate in base al rapporto $\frac{c_i}{a_i}$ **non crescente**:
 $$\frac{c_i}{a_i}\geq\frac{c_2}{a_2}\geq\dots\frac{c_m}{a_m}$$
@@ -114,45 +117,80 @@ x_{h+1}=\frac{b-\sum\limits_{i=1}^h a_i}{a_{h+1}}\\
 x_i=0&i=h+2,...,m
 \end{cases}$$
 
-#### Esempio di knapsack binario
+### Esempio di knapsack binario
 $$(P_0):\begin{align}
-\max&\space 4x_1+2x_2+3x_3-5x_4-x_5+x_6\\
-&3x_1-3x_2+x_3+x_4-x_5\leq\frac{1}{2}\\
+\max&\space x_1+4x_2-x_3+2x_4+3x_5-x_6\\
+&2x_1-x_2-x_3+2x_4+x_5-x_6\leq 2.5\\
 &x\in\{0,1\}^6
 \end{align}$$
 
-$$(PL_0):\begin{align}
-\max&\space 4x_1+2x_2+3x_3-5x_4-x_5+x_6\\
-&3x_1-3x_2+x_3+x_4-x_5\leq\frac{1}{2}\\
-&0\leq x_i\leq1\quad i=1,...,6
-\end{align}$$
+Per ispezione visiva possiamo già assegnare i seguenti valori:
+- $x_2=1$
+- $x_3=1-y_3$
+- $x_6=1-y_6$
 
-Seguendo i passaggi $(\mathrm{I-III})$ otteniamo:
-$$\begin{aligned}
-\max&\space 4x_1+2\cdot1+3x_3-5\cdot0-(1-y_5)+1\\
-&3x_1-3\cdot1+x_3+1\cdot0-(1-y_5)\leq0.5\\
-&0\leq x_1,x_3,y_5\leq1
-\end{aligned}
-\implies
-\begin{aligned}
-\max&\space 4x_1+3x_3+y_5+2\\
-&3x_1+x_3+y_5\leq4.5\\
-&0\leq x_1,x_3,y_5\leq1
-\end{aligned}
-$$
-
-Secondo il passo $(\mathrm{IV})$ andiamo ora ad ordinare in modo non crescente i rapporti delle variabili rimanenti:
+Ottenendo il seguente problema:
 $$\begin{align}
-x_3&&x_1&&y_5\\
-\downarrow&&\downarrow&&\downarrow\\
-\frac{3}{1}&\qquad\geq&\frac{4}{3}&\qquad\geq&\frac{1}{1}
+\max&\space x_1+y_3+2x_4+3x_5+y_6+2\\
+&2x_1+y_3+2x_4+x_5+x_6\leq 5.5\\
+&x_1,x_4,x_5,y_3,y_6\in\{0,1\}
 \end{align}$$
 
-Otteniamo $h=2$ in quanto $\frac{3}{1}+\frac{4}{3}\simeq 4.3\leq4.5$, e $4.3+\frac{1}{1}>4.5$.
-Per cui il valore delle variabili rimanenti è dato da:
-- $x_3=1$
-- $x_1=1$
-- $y_5=\frac{4.5-(1+3)}{1}=0.5$
+La soluzione iniziale del problema si ottiene ponendo tutte le variabili a $0$ (tranne quelle a cui è già stato assegnato $1$), in questo caso la soluzione intera corrente è data da: $\hat x=(0,1,1,0,0,1)^T$, con $f(\hat x)=2$.
+>Notare che $x_3$ è stata posta a $1$ a causa di $x_3=1-y_3$, discorso analogo per $x_6$.
 
-Pertanto la soluzione finale del rilassamento $(PL_0)$ è data da:
-$$x_1=1;\quad x_2=1;\quad x_3=1;\quad x_4=0;\quad x_5=1-y_5=0.5;\quad x_6=1$$
+Ordiniamo i rapporti dei coefficienti:
+$$\begin{align}
+x_5&&y_3&&x_4&&y_6&&x_1\\
+\downarrow&&\downarrow&&\downarrow&&\downarrow&&\downarrow\\
+\frac{3}{1}&\qquad\geq&\frac{1}{1}&\qquad\geq&\frac{2}{2}&\qquad\geq&\frac{1}{1}&\qquad\geq&\frac{1}{2}
+\end{align}$$
+
+Ottenendo così il problema $(P_1)$:
+$$(P_1):\begin{align}
+\max&\space 3x_5+y_3+2x_4+y_6+x_1+2\\
+&x_5+y_3+2x_4+y_6+2x_1\leq 5.5\\
+&x_1,x_4,x_5,y_3,y_6\in\{0,1\}
+\end{align}$$
+$$\mathcal{L}=\{(P_1)\}$$
+
+Essendo $h=4$, risulta per la **soluzione rilassata** di $(P_1)$:
+$$x_5^{(1)}=1\quad y_3^{(1)}=1\quad x_4^{(1)}=1\quad y_6^{(1)}=1\quad x_1^{(1)}=\frac{5.5-(1+1+2+1)}{2}=0.25$$
+
+Ottenendo così:
+- $x^{(1)}=(0.25, 1, 0, 1, 1, 0)^T$
+- $f(x^{(1)})=0.25+4+0+2+3+0=9.25>f(\hat x)=2$
+
+La soluzione ottenuta è migliore della soluzione migliore intera corrente, tuttavia non è composta da soli valori interi, per cui chiudiamo il problema $(P_1)$, ed eseguiamo un branching dove, in $(P_2)$ $x_1=0$, mentre in $(P_3)$ $x_1=1$.
+
+$$(P_2):\begin{align}
+\max&\space 3x_5+y_3+2x_4+y_6+2\\
+&x_5+y_3+2x_4+y_6\leq 5.5\\
+&x_4,x_5,y_3,y_6\in\{0,1\}
+\end{align}$$
+
+$$(P_3):\begin{align}
+\max&\space 3x_5+y_3+2x_4+y_6+3\\
+&x_5+y_3+2x_4+y_6\leq 3.5\\
+&x_4,x_5,y_3,y_6\in\{0,1\}
+\end{align}$$
+$$\mathcal{L}=\{(P_2),(P_3)\}$$
+
+Estraiamo il problema $(P_2)$, notiamo che $h=4$, infatti possiamo porre tutte le variabili ad $1$ (tenendo conto di eventuali $x_i=1-y_i$), la **soluzione rilassata** di $(P_2)$ è data da:
+- $x^{(2)}=(0,1,0,1,1,0)^T$
+- $f(x^{(2)})=4+2+3=9>f(\hat x)=2$
+
+Essendo tutte le componenti di $x^{(2)}$ intere, ed essendo che la soluzione è migliore di quella intera attuale, possiamo utilizzare questa soluzione come soluzione intera ottimale attuale, per cui $\hat x=x^{(2)}$.
+
+Chiudiamo il problema $(P_2)$, inoltre non è necessario alcun branching dato che abbiamo trovato una soluzione intera migliore di quella precedente.
+
+Estraiamo ora il problema $(P_3)$, notiamo che $h=2$, in questo caso non possiamo porre tutte le componenti ad $1$, otterremo infatti la componente $h+1$ con un valore decimale.
+
+La **soluzione rilassata** di $(P_3)$ è data da:
+- $x^{(3)}=(1,1,0,0.75,1,1)^T$
+- $f(x^{(3)})=1+4+1.5+3-1=8.5<f(\hat x)=9$
+
+La soluzione non è migliore di quella intera attuale, per cui possiamo chiudere il problema.
+
+Essendo che la lista di problemi $\cal L$ è vuota, siamo giunti alla fine del problema di partenza, e abbiamo la seguente soluzione ottima:
+$$x^*=(0,1,0,1,1,0)^T\quad f(x^*)=9$$

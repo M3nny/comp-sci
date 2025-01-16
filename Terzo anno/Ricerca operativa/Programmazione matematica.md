@@ -47,8 +47,10 @@ ed i **costi di trasporto** (euro/unità) dalle fabbriche ai magazzini, sono ria
 | $M1$ | $0.90$ | $0.88$ | $1.03$ |
 | $M2$ | $0.99$ | $1.10$ | $0.85$ |
 
+Vogliamo **minimizzare** i costi di trasporto e di produzione dei prodotti $P1$ e $P2$.
+
 Scegliamo le **variabili**:
-$x_{ijk}$ = numero dei prodotto $P_i$ nella fabbrica $F_j$ ed inviati al magazzino $M_k$.
+$x_{ijk}$ = numero dei prodotti $P_i$ nella fabbrica $F_j$ ed inviati al magazzino $M_k$.
 Abbiamo $i=1,2$, $j=1,2,3$, $k=1,2$, per cui $12$ variabili.
 
 La **funzione obiettivo** è definita come il valore minimo tra la somma dei costi produzione di ed i costi di trasporto:
