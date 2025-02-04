@@ -3,7 +3,7 @@ Il [[Livello di rete|livello di rete]] non è affidabile in quanto si basa sui s
 - **Local Area Network (LAN)**: dove tutti i dispositivi sono connessi tra loro e sono identificati tramite indirizzo MAC
 
 ## IPv4
-Ogni host possiede almeno una **Network Interface Card (NIC)**, alla quale può essere assegnata un **indirizzo IP** rappresentante un numero a $32$ bit del tipo:
+Ogni host possiede almeno una **Network Interface Card (NIC)**, alla quale può essere assegnato un **indirizzo IP** rappresentante un numero a $32$ bit del tipo:
 $$1.2.3.4=00000001\space00000010\space00000011\space00000100$$
 
 Una rete è organizzata in **subnet** interconnesse dai router, le quali sono identificate da un gruppo di indirizzi nella forma $x.y.z.w/N$, dove $N$ viene usato per indicare il numero totale degli indirizzi presenti in tale subnet: $2^{32-N}$.
@@ -167,7 +167,7 @@ Di seguito alcuni mapping che rispettano la tabella di sopra:
 >- **Con la subnet $1.2.1.0/24$ è possibile assegnare l'indirizzo $1.2.1.255$?**
 >No, netid è $1.2.1$, per cui hostid sarà $255$ il quale corrisponde all'indirizzo di broadcast.
 >
->- **Con la subnet $1.2.0.0/24$ è possibile assegnare l'indirizzo $1.2.1.0$?**
+>- **Con la subnet $1.2.0.0/16$ è possibile assegnare l'indirizzo $1.2.1.0$?**
 >Si, netid è $1.2$ per cui hostid sarà $0.0$ il quale è valido.
 >
 >- **Con la subnet $1.2.1.0/24$ è possibile assegnare l'indirizzo $1.2.1.0$?**

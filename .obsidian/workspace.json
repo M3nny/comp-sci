@@ -4,17 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "e0d29b0b875e5e2b",
+        "id": "c7e5f8fa58b72121",
         "type": "tabs",
         "children": [
           {
-            "id": "697e7b088b9ada5a",
+            "id": "ea11293b20257ae7",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "Terzo anno/Reti di calcolatori/Esercizi.md",
+                "mode": "source",
+                "source": false
+              },
               "icon": "lucide-file",
-              "title": "New tab"
+              "title": "Esercizi"
             }
           }
         ]
@@ -36,7 +40,8 @@
             "state": {
               "type": "file-explorer",
               "state": {
-                "sortOrder": "byCreatedTimeReverse"
+                "sortOrder": "byCreatedTimeReverse",
+                "autoReveal": false
               },
               "icon": "lucide-folder-closed",
               "title": "Files"
@@ -89,7 +94,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Terzo anno/Ricerca operativa/Programmazione lineare.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -99,7 +103,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for Programmazione lineare"
+              "title": "Backlinks"
             }
           },
           {
@@ -157,48 +161,48 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "697e7b088b9ada5a",
+  "active": "ea11293b20257ae7",
   "lastOpenFiles": [
-    "Primo anno/Primo semestre/Algebra lineare/Matrici.md",
     "Terzo anno/Ricerca operativa/Riassunto.md",
-    "Terzo anno/Ricerca operativa/Branch & Bound.md",
-    "Terzo anno/Ricerca operativa/Problemi di costo fisso e vincoli disgiuntivi.md",
-    "Terzo anno/Ricerca operativa/Programmazione lineare.md",
-    "Terzo anno/Ricerca operativa/DIrezioni ottimali.md",
-    "Terzo anno/Calcolabilità e linguaggi formali/Riassunto.md",
-    "Terzo anno/Calcolabilità e linguaggi formali/Indecidibilità.md",
-    "Terzo anno/Calcolabilità e linguaggi formali/Linguaggi context-free/Context-free grammar.md",
-    "Esami 2024 CLF.md",
-    "Terzo anno/Calcolabilità e linguaggi formali/Riducibilità/Teorema di Rice.md",
-    "Terzo anno/Calcolabilità e linguaggi formali/Riducibilità/Turing riducibilità.md",
-    "Terzo anno/Calcolabilità e linguaggi formali/Riducibilità/Riduzione attraverso funzioni.md",
-    "Terzo anno/Calcolabilità e linguaggi formali/Riducibilità/Introduzione.md",
-    "Terzo anno/Calcolabilità e linguaggi formali/Riducibilità/Storie di computazione accettanti.md",
-    "Terzo anno/Calcolabilità e linguaggi formali/Decidibilità.md",
-    "Terzo anno/Calcolabilità e linguaggi formali/Macchina di Turing.md",
-    "Terzo anno/Calcolabilità e linguaggi formali/Linguaggi context-free/Automi a pila.md",
-    "Terzo anno/Calcolabilità e linguaggi formali/Linguaggi context-free/Linguaggi non context-free.md",
-    "Terzo anno/Calcolabilità e linguaggi formali/Linguaggi regolari/Linguaggi non regolari.md",
-    "Terzo anno/Calcolabilità e linguaggi formali/Linguaggi regolari/Espressioni regolari.md",
-    "Terzo anno/Calcolabilità e linguaggi formali/Linguaggi regolari/Automi a stati finiti non deterministici.md",
-    "Terzo anno/Calcolabilità e linguaggi formali/Linguaggi regolari/Automi a stati finiti.md",
-    "Secondo anno/Algoritmi e strutture dati/Mod. 1/Cammini minimi/Bellman-Ford.md",
-    "Secondo anno/Algoritmi e strutture dati/Mod. 1/Grafi/Matrici.md",
-    "Secondo anno/Algoritmi e strutture dati/Mod. 1/Grafi/Tipologie.md",
+    "Terzo anno/Reti di calcolatori/Esercizi.md",
     "Terzo anno/Data and web mining/Images/Decision tree exercise.png",
+    "Terzo anno/Data and web mining/Riassunto.md",
+    "Terzo anno/Data and web mining/Domande.md",
+    "Terzo anno/Reti di calcolatori/Domande esame passato.md",
+    "Terzo anno/Reti di calcolatori/Riassunto.md",
+    "Terzo anno/Reti di calcolatori/Protocolli/HTTP.md",
+    "Terzo anno/Reti di calcolatori/Domande.md",
+    "Terzo anno/Reti di calcolatori/Quiz.md",
+    "Terzo anno/Reti di calcolatori/Protocolli/Ethernet.md",
+    "Terzo anno/Reti di calcolatori/Protocolli/IPv4.md",
+    "Terzo anno/Reti di calcolatori/Livelli TCP/Livello di rete.md",
+    "Terzo anno/Reti di calcolatori/Livelli TCP/Livello datalink.md",
+    "Calcolo 1/Images/Pasted image 20250131174104.png",
+    "Calcolo 1/Images/Pasted image 20250131174026.png",
+    "Calcolo 1/Images/Pasted image 20250131173905.png",
+    "Calcolo 1/Images/Pasted image 20250131173825.png",
+    "Calcolo 1/Images/Pasted image 20250131173631.png",
+    "Calcolo 1/Images/Pasted image 20250131173520.png",
+    "Calcolo 1/Images/Pasted image 20250131173251.png",
+    "Calcolo 1/Images/Pasted image 20250131163342.png",
+    "Calcolo 1/Images/Pasted image 20250131153732.png",
     "Calcolo 1/Images",
     "Calcolo 1",
-    "Terzo anno/Data and web mining/Images/Nested K-fold validation.png",
-    "Terzo anno/Data and web mining/Images/Convolutional NN.png",
-    "Terzo anno/Calcolabilità e linguaggi formali/Images/CFG to PDA example.png",
+    "Terzo anno/Reti di calcolatori/Livelli TCP/Livello fisico.md",
+    "Terzo anno/Reti di calcolatori/Sicurezza/Introduzione.md",
+    "Terzo anno/Data and web mining/Reti neurali/Best practices.md",
+    "Terzo anno/Reti di calcolatori/Protocolli/Wi-Fi.md",
+    "Terzo anno/Reti di calcolatori/Protocolli/BGP.md",
+    "Terzo anno/Reti di calcolatori/Protocolli/ICMP e IPv6.md",
+    "Terzo anno/Reti di calcolatori/Protocolli/TLS.md",
+    "Terzo anno/Reti di calcolatori/Protocolli/TCP.md",
+    "Terzo anno/Reti di calcolatori/Protocolli/Tecniche anti-spam.md",
+    "Terzo anno/Reti di calcolatori/Protocolli/SMTP.md",
+    "Terzo anno/Reti di calcolatori/Protocolli/DNS.md",
+    "Terzo anno/Reti di calcolatori/Sicurezza/PKI.md",
+    "Terzo anno/Reti di calcolatori/Sicurezza/Crittografia a chiave pubblica.md",
     "Terzo anno/Calcolabilità e linguaggi formali/Images/CFG to PDA example.png.crdownload",
-    "Calcolo 1/Images/Pasted image 20241227165049.png",
-    "Terzo anno/Calcolabilità e linguaggi formali/Images/Regex to NFA example.png",
     "Terzo anno/Calcolabilità e linguaggi formali/Images/Regex to NFA example.png.crdownload",
-    "Terzo anno/Calcolabilità e linguaggi formali/Images/NFA to DFA.svg",
-    "Terzo anno/Calcolabilità e linguaggi formali/Images/NFA to DFA.svg",
-    "Calcolo 1/Images/Pasted image 20241227160647.png",
-    "Terzo anno/Ricerca operativa/Images/B&B.svg",
     "Terzo anno/Data and web mining/Images/Activation functions.png.crdownload",
     "Terzo anno/Calcolabilità e linguaggi formali/Riducibilità",
     "Terzo anno/Data and web mining/Reti neurali",

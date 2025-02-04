@@ -18,7 +18,7 @@ Per rendere disponibile su `example.com` una pagina web sarà necessario possede
 Il server DNS risponderà alle richieste fornendo l'indirizzo IP configurato.
 >Anche il server DNS dovrà disporre di un indirizzo IP pubblico, ma questo solitamente è offerto dal registrar.
 
-Il registrar dirà al TLD `.com` che un nuovo sottodominio `example` è stato aggiunto, ciò rendere il registrar l'autorità competente per tale dominio.
+Il registrar dirà al TLD `.com` che un nuovo sottodominio `example` è stato aggiunto, ciò rende il registrar l'autorità competente per tale dominio.
 
 #### Accesso ad un dominio
 Il browser conosce una lista di **root servers**, ovvero una decina di server sparsi per il mondo il quale indirizzo IP è noto dai browser.
@@ -28,8 +28,9 @@ I root server forniscono al browser gli indirizzi dei server DNS che sono respon
 #### Query ricorsive e iterative
 L'host che vuole accedere ad un dominio contatterà per primo un **DNS locale**, sarà esso a comunicare con gli altri server DNS finchè non otterrà l'indirizzo IP effettivo, questa tecnica è chiamata query **ricorsiva**.
 Nel caso in cui il DNS locale dovesse ritornare una **risposta parziale** all'host in questione si parlerebbe di query **iterativa**.
+>Nelle query iterative non si delega tutto ad un server DNS.
 
-I root server ed i server di autorità per `.com` non accettano query ricorsive, mentre il DNS locale accetta query ricorsive se interrogato dalla rete locale, ma non al di fuori di essa.
+I root server ed i server di autorità per `.com` non accettano query ricorsive, mentre il DNS locale accetta query ricorsive se interrogato dalla rete locale, ma non al di fuori di essa, questo per evitare problemi di sovraccarico.
 
 #### DNS caching
 Se si volesse interrogare il DNS locale chiedendo l'indirizzo per `www.example.com` ora esso possiederebbe la risposta in cache e potrebbe rispondere subito risparmiando tempo.
@@ -53,12 +54,12 @@ L'**header** contiene i seguenti campi:
 | **NSCOUNT**         | Numero di _Authority_ nel messaggio                                                                                                                                                                                               |
 | **ARCOUNT**         | Numero di _Additional_ (information) nel messaggio                                                                                                                                                                                |
 
-Gli ultimi quattro campi sono chiamati **Resource Records (RR)** e anch'essi possiedono un formato specifico:
+Gli ultimi quattro campi dell'header sono chiamati **Resource Records (RR)** e anch'essi possiedono un formato specifico:
 
 | Campo        | Descrizione                                                                                                             |
 | ------------ | ----------------------------------------------------------------------------------------------------------------------- |
 | **NAME**     | Il nome che è stato richiesto                                                                                           |
-| **TYPE**     | A: IPv4, AAAA: IPv6, NS: server autoritario                                                                             |
+| **TYPE**     | A (IPv4), AAAA (IPv6), NS (server autoritario)                                                                          |
 | **TTL**      | Indica il numero di volte che questa informazione può essere memorizzata prima di dover essere richiesta un'altra volta |
 | **RDLENGTH** | Lunghezza del campo _RDATA_                                                                                             |
 | **RDATA**    | L'informazione effettiva                                                                                                |
@@ -66,7 +67,7 @@ Gli ultimi quattro campi sono chiamati **Resource Records (RR)** e anch'essi pos
 >Questo tipo di protocolli sono difficili da modificare, per cui molto spesso possiedono dei bit non utilizzati destinati per usi futuri.
 
 ### Reverse DNS
-Quando si registra un dominio è possibile (non obbligatorio) aggiungere un **PTR** resource record in cui si va a specificare il dominio in una forma speciale ad esempio: `5.3.2.1.in-addr.arpa`.
+Quando si registra un dominio è possibile (non obbligatorio) aggiungere un **PTR resource record** in cui si va a specificare il dominio in una forma speciale ad esempio: `5.3.2.1.in-addr.arpa`.
 
 Il dominio `in-addr.arpa` è utilizzato per eseguire i **reverse lookup** i quali consentono di tradurre indirizzi IP in nomi di dominio.
 Se Alice volesse conoscere l'indirizzo di dominio associato a `1.2.3.5`, eseguirà una query DNS cercando `5.3.2.1.in-addr.arpa`, ciò fornirà una lista di domini associati a tale IP.

@@ -1,4 +1,4 @@
-Più basso è il livello ini cui stiamo operando, più sono le informazioni crittografate, ad alto livello è più facile sviluppare applicazioni, ma più informazioni sono trapelate.
+Più basso è il livello in cui stiamo operando, più sono le informazioni crittografate, ad alto livello è più facile sviluppare applicazioni, ma più informazioni possono essere trapelate.
 
 **Possiamo criptare l'header IP?**
 **No**, l'header IP è utilizzato per il routing, ed i router sono sconosciuti dagli attori nella comunicazione, tuttavia esistono delle **eccezioni**, tra cui:

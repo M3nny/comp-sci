@@ -88,7 +88,7 @@ La **larghezza di banda** rappresenta l'intervallo tra la frequenza più bassa e
 ---
 ## Teoremi fondamentali
 ### Teorema di Nyquist
-Se una comunicazione utilizza una larghezza di banda $B$ e $M$ livelli discreti (solitamente una potenza di $2$), allora la **capacità massima teorica** della trasmissione in _bit/s_ è:
+Se una comunicazione utilizza una **larghezza di banda** $B$ e $M$ **livelli discreti** (solitamente una potenza di $2$), allora la **capacità massima teorica** della trasmissione in _bit/s_ è:
 $$C=2B\log_2(M)$$
 
 >[!Example]
@@ -102,7 +102,7 @@ $$C=2B\log_2(M)$$
 >Dato che $M$ deve essere una potenza di $2$ lo impostiamo a $M=16$, per avere $300Mb/s$ bisogna poter fornire $320Mb/s$.
 
 ### Teorema di Shannon
-La capacità di un canale con larghezza di banda $B$ con un _gaussian white noise_ aggiunto è data da:
+La capacità di un canale con **larghezza di banda** $B$ con un _gaussian white noise_ aggiunto è data da:
 $$C=B\log_2\left(1+\frac{S}{N}\right)$$
 >Dove $\frac{S}{N}$ è il _Signal to Noise Ratio_.
 
@@ -112,7 +112,7 @@ Non importa quanto forte è il segnale, dipende sempre dal SNR, inoltre la capac
 Nyquist opera in un mondo ideale senza rumore dove il ricevitore è perfetto, quindi ogni segnale con potenza > 0 è ricevuto.
 
 Shannon è più stretto, dice che dato un certo SNR ed una certa $B$, non si può ottenere più di $C$ anche se Nyquist lo consente, praticamente non è possibile avere un numero arbitrario di livelli dato un certo SNR in quanto quest'ultimo determina il numero massimo di livelli.
->Notare come $B, S, N$ sono legati al collegamento, ma il trasmettitore può scegliere $M$, dovrà però valere $C_N\leq C_S$.
+>Notare come $B, S, N$ sono legati al collegamento, ma il trasmettitore può scegliere $M$, dovrà però valere $C_N\leq C_S$ (capacità di Nyquist $\leq$ capacità di Shannon).
 
 >[!Example]
 >Una ADSL può essere descritta da:

@@ -41,7 +41,7 @@ Esistono alcuni indirizzi IPv6 speciali:
 - `fc00::/7:`: **Unique Local Unicast**, questi sono come gli indirizzi privati IPv4, tuttavia non ce ne è più bisogno, in questo caso vengono usati per creare reti locali per testare il protocollo
 - `0:0:0:0:0:0:0:1:`: interfaccia di **loopback**
 - `ff::/8:`: indirizzo **multicast**
-- `fe80::/10`: **Link Local Unicast**
+- `fe80::/10:`: **Link Local Unicast**
 
 ### Header IPv6
 L'**header** IPv6 ha dei campi interessanti come:
@@ -83,9 +83,9 @@ Dopo un ammontare necessario di fallimenti, la MTU viene stabilita.
 
 ---
 ## Intradomain Routing
-Il **routing intradominio** viene utilizzato per gestire e suddividere reti grandi, un singolo dominio amministrativo dovrebbe avere un numero limitato di router che collegano le varie subnet (sull'ordine delle centinaia al massimo), il che rende la rete piccola abbasta per usare il [[Livello di rete#Link-State routing|link-state routing]] il quale può reaggire più velocemente ai fallimenti rispetto al protocollo di routing basato su [[Livello di rete#Distance vector routing|distance vector]].
+Il **routing intradominio** viene utilizzato per gestire e suddividere reti grandi, un singolo dominio amministrativo dovrebbe avere un numero limitato di router che collegano le varie subnet (sull'ordine delle centinaia al massimo), il che rende la rete piccola abbastanza per usare il [[Livello di rete#Link-State routing|link-state routing]] il quale può reagire più velocemente ai fallimenti rispetto al protocollo di routing basato su [[Livello di rete#Distance vector routing|distance vector]].
 
-Uno dei protocolli più usati è l'**Open Shortest Path FIrst (OSPF)**, il quale segue i principi del _link-state routing_ con un paio di modifiche.
+Uno dei protocolli più usati è l'**Open Shortest Path First (OSPF)**, il quale segue i principi del _link-state routing_ con un paio di modifiche.
 
 ### Aree OSPF
 Esistono due tipi di router per l'OSPF:

@@ -1,6 +1,6 @@
 Un  **Autonomous System (AS)** è una collezione di IP sotto il controllo di uno o più operatori che rispondono ad una singola entità amministrativa (e.g. ISP, governi), inoltre essi possiedono un numero identificativo fornito da IANA.
 
-Uno **Stub AS** è un AS finale, ovvero non provvede transito di pacchetti verso altri AS (e.g. università, organizzazioni), ciò non vieta che possa essere connesso ad uno (single-homed) o più (multi-home) AS.
+Uno **Stub AS** è un AS finale, ovvero non provvede transito di pacchetti verso altri AS (e.g. università, organizzazioni), ciò non vieta che possa essere connesso ad uno (single-homed) o più (multi-homed) AS.
 
 Un **transit AS** è un AS che connette molteplici AS consentendo ai pacchetti di passare attraverso esso.
 
@@ -53,7 +53,7 @@ Se per qualche motivo AS150 smetterà di utilizzare il prefisso $10.150.0.0/24$ 
 Nel caso il link da $A$ a $D$ si rompesse, $D$ ritirerà $10.150.0.0/24$ da $B,E,F$, tuttavia $D$ ha un path alternativo passando attraverso AS151, per cui annuncerà un nuovo path che passerà attraverso $11,151,150$.
 
 ### Dettagli del protocollo
-Nel grafo BGP **un peer è un vicino** indipendentemente dalla relazione commerciale in utilizzo.
+Nel grafo BGP, **un peer è un vicino** indipendentemente dalla relazione commerciale in utilizzo.
 
 BGP può inoltrare cinque tipi di messaggi:
 - **Apertura**: per stabilire connessioni BGP

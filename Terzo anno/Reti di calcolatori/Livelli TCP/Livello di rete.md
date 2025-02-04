@@ -22,10 +22,10 @@ Un router è diviso in due parti:
 - **Control Plane**: si prende cura di creare le forwarding table
 
 Un modo per gestire il _control plane_ è creando le forwarding table **manualmente**, tuttavia non è fattibile per reti grandi che possono anche cambiare.
-I router per gestire tale tabelle dovranno scambiarsi informazioni tra di loro, in una rete locale potrebbe esserci un **controller** il quale configura tutte le tabelle e le aggiusta quando qualcosa cambia, ma per internet bisogna utilizzare un approccio **distribuito**.
+I router per gestire tali tabelle dovranno scambiarsi informazioni tra di loro, in una rete locale potrebbe esserci un **controller** il quale configura tutte le tabelle e le aggiusta quando qualcosa cambia, ma per internet bisogna utilizzare un approccio **distribuito**.
 
 ### Indirizzamento e eterogeneità
-Abbiamo detto che le forwarding table contengono gli indirizzo di destinazione verso cui inoltrare i pacchetti, in uno **schema piatto** vengono memorizzati gli indirizzo dell'hardware, per quanto semplice da impostare le tabelle si ritroveranno ad avere miliardi di righe.
+Abbiamo detto che le forwarding table contengono gli indirizzo di destinazione verso cui inoltrare i pacchetti, in uno **schema piatto** vengono memorizzati gli indirizzi dell'hardware, per quanto semplice da impostare le tabelle si ritroveranno ad avere miliardi di righe.
 
 In uno **schema gerarchico** gli indirizzi sono raggruppati in blocchi, quindi non è necessario sapere l'indirizzo di tutti gli host, ma solo di alcuni blocchi, tuttavia quando un host cambia rete è necessario assegnargli automaticamente un nuovo indirizzo.
 
@@ -65,7 +65,7 @@ Un algoritmo di **distance vector routing** implementa l'algoritmo di [[Bellman-
 
 Assumiamo che ogni link abbia un **costo** il quale rappresenta una penalità per passare attraverso tale link, e ogni DV router inizializza la tabella di routing $R$ con una entry per il suo indirizzo con distanza $0$.
 
-Periodicamente il router **invierà** la proprio routing table (distance vector) ai suoi nodi vicini in un ordine qualsiasi:
+Periodicamente il router **invierà** la propria routing table (distance vector) ai suoi nodi vicini in un ordine qualsiasi:
 ```python
 # Ogni N secondi
 v = []
@@ -129,14 +129,14 @@ Una soluzione banale potrebbe essere un **triggered update**, ovvero $D$ manda i
 Per evitare il problema di _count to infinity_ è possibile utilizzare un algoritmo chiamato **split horizon with poison reverse**, il quale modifica l'**invio** dei $DV$:
 ```python
 # Ogni N secondi
-for interface in interfaces
-	v = Vector()
+for i in interfaces
+	v = []
 	for d in R[]:
-		if R[d].link != interface:
+		if R[d].link != i:
 			v.add(Pair(d, R[d].cost))
 		else:
 			v.add(Pair(d, ∞))
-	send(v, interface)
+	send(v, i)
 ```
 
 In questo modo il mittente sta "avvelenando" la routing table del vicino dicendo che non possiede un cammino verso le destinazioni che dovrebbero essere raggiunte tramite esso.
@@ -158,7 +158,7 @@ Una volta che un router è a conoscenza dei suoi vicini distribuirà la sua **to
 - `LSP.Router`: indirizzo (univoco) del mittente
 - `LSP.age`: età o tempo rimanente di vita del LSP
 - `LSP.seq`: numero di sequenza (incrementale) del LSP
-- `LSP.Links[]`: il quale contiene i link locali con campi:
+- `LSP.Links[]`: contiene i link locali con campi:
 	- `LSP.Links[i].Id`: indirizzo (univoco) del vicino
 	- `LSP.Links[i].cost`: costo del link
 

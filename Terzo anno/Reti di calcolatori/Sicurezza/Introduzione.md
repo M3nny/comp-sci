@@ -56,7 +56,7 @@ Il **Trusted third party** è un'entità di cui _Alice_ e _Bob_ si fidano, inolt
 >C'è sempre un **trade-off** nell'aumentare la sicurezza, ovvero rendere il sistema meno usabile, per questo è importante identificare i servizi critici e da che attacchi proteggerli.
 
 ## Crittografia
-Un **algoritmo crittografico** è una sequenza di operazioni matematica applicate ad un messaggio.
+Un **algoritmo crittografico** è una sequenza di operazioni matematiche applicate ad un messaggio.
 >Alcuni protocolli combinano **funzioni crittografiche** per fornire sicurezza ai servizi.
 
 ### Funzioni hash

@@ -29,16 +29,16 @@ Il formato delle e-mail è rilevante in maggior parte solo agli estremi delle co
 
 SMTP è un protocollo basato sul testo **connection-oriented (TCP)** con numero di porta predefinito **25**.
 
-I **client invia comandi** composti da righe di caratteri ASCII terminati da `CRLF`, mentre il server **risponde con un codice** di errore/successo.
+I **client invia comandi** composti da righe di caratteri ASCII terminati da `CLRF`, mentre il server **risponde con un codice** di errore/successo.
 
-I comandi del client più usati sono:
+I **comandi del client** più usati sono:
 - `EHLO`: usato per iniziare una comunicazione
 - `MAIL FROM`: mittente
 - `RCPT TO`: destinatario
 - `DATA`: inizio del messaggio
 - `QUIT`: fine del messaggio
 
-I codici del server sono composti da tre cifre ed un commento:
+I **codici del server** sono composti da tre cifre ed un commento:
 - `2XX`: esito positivo
 - `3XX`: esito positivo ma è stato richiesto più input
 - `4XX`: esito negativo, ma il problema è temporaneo, riprova più tardi

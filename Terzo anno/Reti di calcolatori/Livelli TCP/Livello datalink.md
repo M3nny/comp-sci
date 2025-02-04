@@ -14,15 +14,15 @@ La **Service Data Unit (SDU)** in questo livello è chiamata **frame**, e rappre
 
 Abbiamo visto che i dispositivi si scambiano [[Livello fisico#Modulazione|segnali modulati]] e in certi casi il segnale portante è sempre attivo, per cui non si può semplicemente smettere di mandare segnali.
 
-Dobbiamo quindi <u>codificare l'inizio e la fine di un frame</u>, per esempio possiamo usare la sequenza $111111$ per marchiare inizio e fine del frame, tuttavia il mittente deve assicurarsi che nella sua trasmissione tale sequenza non si presenti mai, altrimenti terminerebbe precocemente il frame.
+Dobbiamo quindi <u>codificare l'inizio e la fine di un frame</u>, per esempio possiamo usare la sequenza $01111110$ per marchiare inizio e fine del frame, tuttavia il mittente deve assicurarsi che nella sua trasmissione tale sequenza non si presenti mai, altrimenti terminerebbe precocemente il frame.
 
-Introduciamo il **bit stuffing**, ovvero l'inserimento di bit $0$ dopo ogni sequenza di $5$ bit posti a $1$, in questo modo si evita di terminare precocemente il frame.
+Introduciamo il **bit stuffing**, ovvero l'inserimento di bit $0$ dopo ogni sequenza di $5$ bit posti a $1$ (a causa del marker composto da sei $1$), in questo modo si evita di terminare precocemente il frame.
 Il ricevitore dopo aver ricevuto il marker iniziale rimuove i bit $0$ extra inseriti dal mittente dopo ogni sequenza di $5$ bit posti a $1$, finchè non riceve il vero marker finale che determina la fine del frame.
 
-| Frame originale | Frame trasmesso                                     |
-| --------------- | --------------------------------------------------- |
-| $0111110$       | $01111110\space011111\space0\space01111110$         |
-| $01111110$      | $01111110\space011111\space0\space10\space01111110$ |
+| Frame originale | Frame trasmesso                                                  |
+| --------------- | ---------------------------------------------------------------- |
+| $0111110$       | $01111110\space011111\space\boldsymbol{0}\space0\space01111110$  |
+| $01111110$      | $01111110\space011111\space\boldsymbol{0}\space10\space01111110$ |
 
 Ciò porta a **overhead di protocollo**, ovvero dati extra che devono essere trasmessi per rendere la comunicazione possibile, tale overhead riduce il bit-rate disponibile dato dalle formule di Nyquist e Shannon.
 
@@ -97,7 +97,7 @@ Aggiungiamo all'header un **numero di sequenza** per distinguere i frame, l'impl
 Se ci aspettiamo un ack dopo ogni frame il _bottleneck_ sarà causato dal **Round Trip Time (RTT)**, ovvero il tempo di andata e ritorno dell'informazione, infatti più lungo è il link, più tempo ci vorrà per raggiungere l'altro host, questa è un'altra forma di **overhead di protocollo**.
 
 ### Go-back-n e Selective Repeat
-Introduciamo il **pipelining**, ovvero l'invio di frame in _batch_, dobbiamo comunque evitare l'overflow di frame e l'affidabilità, risolviamo questi problemi tramite una **sliding window**; gli host si accorderanno su una dimensione $n$ della _sliding window_ da utilizzare, poi il mittente manderà $n$ frame e aspetterà l'ack del primo frame inoltrato, allora sposterà la finestra di una posizione.
+Introduciamo il **pipelining**, ovvero l'invio di frame in _batch_, dobbiamo comunque evitare l'overflow di frame e assicurare l'affidabilità, risolviamo questi problemi tramite una **sliding window**; gli host si accorderanno su una dimensione $n$ della _sliding window_ da utilizzare, poi il mittente manderà $n$ frame e aspetterà l'ack del primo frame inoltrato, allora sposterà la finestra di una posizione.
 
 Lo spazio per l'header è finito, per cui per non occupare tanto spazio utilizziamo una sliding window che utilizza l'operazione di modulo per ricominciare da capo, segue un esempio con sliding window di grandezza $\text{maxseq} = 3$:
 ![[Sliding window.png]]
@@ -119,7 +119,7 @@ Lo spazio nell'header per la sequenza solitamente è pari a $2^n$, immaginiamo d
 
 Per evitare questo problema occorre usare una sliding window di dimensione massima $2^n-1$, ovvero `buffer.length() - 1`.
 
-Go-back-n è facile da implementare in quanto necessità solo di due variabili da parte del ricevitore: `lastack` il quale indica l'ultimo numero di sequenza che è stato ricevuto, `next` per indicare il prossimo numero di sequenza previsto; il mittente invece usa tre variabili: `size(buffer)` che indica il numero di frame nel buffer, `seq` rappresenta l'ultimo numero di sequenza inoltrato, `unack` indica il numero di sequenza del primo frame non acknowledged ed un _timer_.
+Go-back-n è facile da implementare in quanto necessità solo di due variabili da parte del ricevitore: `lastAck` il quale indica l'ultimo numero di sequenza che è stato ricevuto, `next` per indicare il prossimo numero di sequenza previsto; il mittente invece usa tre variabili: `size(buffer)` che indica il numero di frame nel buffer, `seq` rappresenta l'ultimo numero di sequenza inoltrato, `unack` indica il numero di sequenza del primo frame non acknowledged ed un _timer_.
 
 Le <u>performance di questo schema calano velocemente</u> con molte perdite di pacchetti per due ragioni: il <u>ricevitore non accetta frame che non rispettano la sequenza</u>, il <u>mittente ritrasmette tutti i frame unacknowledged</u>.
 
@@ -172,7 +172,7 @@ Una rete ad **albero** estende il concetto della _rete a stella_, infatti al pos
 Quando una comunicazione deve attraversare molteplici link viene chiamata **multi-hop**, in questo tipo di comunicazione il **bottleneck** risiede nel link con meno capacità nel cammino.
 ![[Bottleneck.png]]
 
-Se $H1$ e $H2$ comunicano con $H4$ contemporaneamente il loro bit-rate sarà limitato a $500Mb/s$ per condividono lo stesso link.
+Se $H1$ e $H2$ comunicano con $H4$ contemporaneamente il loro bit-rate sarà limitato a $500Mb/s$ perchè condividono lo stesso link.
 >In una rete gerarchica (e.g. ad _albero_) la capacità del link deve aumentare con l'avvicinarsi alla radice.
 
 ## Media access
@@ -209,7 +209,7 @@ In questo sistema i terminali cercano di trasmettere e se avviene una collisione
 
 La differenza con il _TDMA_ è che ogni terminale può trasmettere in qualsiasi slot.
 
-Quando viene ricevuto una SDU dal layer superiore si aspetta il prossimo slot e poi si trasmette, indichiamo con $q_a$ la probabilità che un terminale abbia qualcosa da trasmettere, se un altro terminale vuole trasmettere nello stesso slot entrano entrambi nello stato **backlogged**, ritrasmetteranno nei prossimo slot con probabilità $q_b>q_a$, un terminale ritorna nel suo stato normale una volta che ha trasmesso con successo, se un terminale riceve un nuovo frame da inviare mentre è _backlogged_ lo scarta.
+Quando viene ricevuto una SDU dal layer superiore si aspetta il prossimo slot e poi si trasmette, indichiamo con $q_a$ la probabilità che un terminale abbia qualcosa da trasmettere, se un altro terminale vuole trasmettere nello stesso slot entrano entrambi nello stato **backlogged**, ritrasmetteranno nel prossimo slot con probabilità $q_b>q_a$, un terminale ritorna nel suo stato normale una volta che ha trasmesso con successo, se un terminale riceve un nuovo frame da inviare mentre è _backlogged_ lo scarta.
 >$q_a$ dipende dal traffico in entrata, mentre $q_b$ è un parametro della rete.
 
 ![[S-ALOHA.png]]

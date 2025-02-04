@@ -52,7 +52,6 @@ La **risposta HTTP** mandata dal server contiene anch'essa tre parti:
 - Una **status line**, che indica se la richiesta ha avuto successo o meno
 - Un **header** che contiene informazioni aggiuntive riguardanti la risposta
 - Un documento **MIME**
-
 >Una linea vuota è usata per segnare la fine dell'header.
 
 I **metodi HTTP** più usati sono:
@@ -72,10 +71,10 @@ Gli **status code HTTP** possono essere interpretati come:
 - `4xx`: errore del client
 - `5xx`: errore del server
 
-Inizialmente poteva essere impiegata una sola connessione TCP, per richiesta HTTP, oggi però una pagina web può comprendere varie parti, ognuna delle quali necessità una richiesta HTTP, è stato aggiunto il campo `Keep-Alive` all'header in modo da poter eseguire più di una richiesta in una sola connessione.
+Inizialmente poteva essere impiegata una sola connessione TCP per richiesta HTTP, oggi però una pagina web può comprendere varie parti, ognuna delle quali necessità una richiesta HTTP, è stato aggiunto il campo `Keep-Alive` all'header in modo da poter eseguire più di una richiesta in una sola connessione.
 
 #### Stateless
-È importante sapere che ogni richiesta HTTP è scorrelata dalle precedente, ovvero **stateless**, infatti il protocollo non mantiene alcuno stato tra le richieste, ciò però è diverso da dire che il software in esecuzione nel server non mantenga uno stato, infatti lo fa.
+È importante sapere che ogni richiesta HTTP è scorrelata dalle precedenti, ovvero **stateless**, infatti il protocollo non mantiene alcuno stato tra le richieste, ciò però è diverso da dire che il software in esecuzione nel server non mantenga uno stato, infatti lo fa.
 
 Il modo più semplice per mantenere uno stato è attraverso i **cookie**, essi sono un'informazione generata dal server ed inoltrata al client, il quale dovrà poi allegare i cookie impostati da tale server ad ogni richiesta verso esso.
 I cookie possono essere gestiti tra client e server tramite gli header `Set-cookie` e `Cookie`.
@@ -100,10 +99,10 @@ Questo ha due benefici:
 Il proxy è configurato dall'amministratore e può essere acceduto dai terminali nella rete locale, esso rappresenta un vero e proprio MiTM, quindi deve essere maneggiato con cautela.
 
 Introduciamo due nuovi header:
-- `Cache-Control`: usata dal server per notificare che una pagina non può essere memorizzata (`no-store`), può essere memorizzata per un periodo di tempo (`max-age=10`), oppure può essere memorizzata per un tempo indefinito
+- `Cache-Control`: usata dal server per notificare che una pagina non può essere memorizzata (`no-store`), oppure può essere memorizzata per un periodo di tempo (`max-age=10`), oppure può essere memorizzata per un tempo indefinito
 - `If-Modified-Since`: se un client invia una richiesta con questo header, la pagina è ritornata dal server solo se è stata modificata, altrimenti si usa la cache
 
-Un **reverse proxy** è un proxy locato in prossimità del server al posto che del client, in questo modo può **nascondere** il server reale, limitarne il suo uso di CPU e limitare il numero di query ai database.
+Un **reverse proxy** è un proxy locato in prossimità del server al posto che dal client, in questo modo può **nascondere** il server reale, limitarne il suo uso di CPU e limitare il numero di query ai database.
 
 ### HTTP 2.0
 Da questa versione, il protocollo **non è più testuale**, ora le richieste e risposte sono codificate in formato binario, questo perchè i protocolli testuali sono veloci da capire e debuggare, ma sono lenti, infatti il testo può essere compresso molto volendo.
@@ -111,7 +110,7 @@ Da questa versione, il protocollo **non è più testuale**, ora le richieste e r
 Il contenuto della pagina è diviso in **frame**, i quali possono essere inoltrati parallelamente dal server al client, in questo modo non c'è più una sequenza precisa di richieste da fare da parte del client.
 >Il server inoltrerà le pagine piccole prima di quelle grandi.
 
-Con **Head-of-Line (HoL)** blocking ci si riferisce ad una situazione in cui dei task piccoli sono rallentati da task grandi.
+Con **Head-of-Line blocking** ci si riferisce ad una situazione in cui dei task piccoli sono rallentati da task grandi.
 
 - Da **HTML 2.0** è il server a decidere quali elementi renderizzare per primi, in questo modo può dare la priorità ai testi al posto di grandi immagini
 - Da **HTTP 2.0** il server è autorizzato ad inoltrare contenuto al client ancora prima che esso lo richieda, in questo modo il server può risparmiare tempo se sa che un contenuto dovrà essere richiesto in un futuro prossimo

@@ -12,7 +12,7 @@ Alice e Bob <u>hanno bisogno di un canale sicuro</u> in cui accordarsi sulla chi
 >L'HMAC fornisce integrità e autenticazione, ma non confidenzialità, il messaggio è ancora in plaintext con l'hash allegato.
 
 ### CRAM-MD5
-Il protocollo **CRAM-MD5** viene usato per autenticare due utenti basandosi sulla conoscenza di una password ed su un accordo di una funzione hash.
+Il protocollo **CRAM-MD5** viene usato per autenticare due utenti basandosi sulla conoscenza di una password e su un accordo di una funzione hash.
 ![[Challenge HMAC.png|400]]
 
 Viene indicata con $C$ la **challenge**, solitamente viene composta come: $$C=\text{<timestamp@domain>}$$

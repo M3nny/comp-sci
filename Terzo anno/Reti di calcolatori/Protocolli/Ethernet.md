@@ -12,7 +12,7 @@ Il servizio ethernet moderno assicura una stabilità buona riguardo alla consegn
 ## MAC
 Un **indirizzo MAC identifica una NIC** al livello data link, esso è composto da $48$ bit:
 - $23+1$ bit: un bit che identifica se il **tipo** è _unicast_ o _broadcast_ seguito dall'**identificativo dell'organizzazione (OUI)** che ha prodotto la NIC
-- $24$ bit: per un'**identificato unico all'interno del produttore** della NIC
+- $24$ bit: per un'**identificatore unico all'interno del produttore** della NIC
 
 L'indirizzo MAC complessivo è **unico** e ha la seguente forma:
 $$\text{f8:75:a4:6a:97:33}$$
@@ -35,13 +35,11 @@ Alcune note sull'header:
 
 Ethernet è usato sopratutto con il protocollo IP, ma non necessariamente è l'unico protocollo con cui funziona, infatti un layer MAC deve includere un campo che specifichi il protocollo superiore.
 
-Inizialmente esisteva il campo **EtherType** (al posto della lunghezza) che specificava il protocollo superiore, i frame infatti erano separati da un tempo di attesa al posto di specificare una lunghezza.
+Inizialmente esisteva il campo **EtherType** (al posto della lunghezza) che **specificava il protocollo superiore**, i frame infatti erano separati da un tempo di attesa al posto di specificare una lunghezza.
 
-Per questo il livello datalink venne diviso in due nel modello **ISO/OSI**:
-- **MAC (Media Access Control) layer**: specificava _EtherType_
-- **LLC (Logical Link Control) layer**: specificava la lunghezza
+Successivamente EtherType venne sostituito dal campo che specifica la **lunghezza**, per cui si perse la possibilità di specificare il protocollo di livello superiore, per questo venne introdotto il **Logical Link Control (LLC)** layer che specifica il protocollo di livello superiore, dividendo così il livello datalink in MAC e LLC.
 
-Successivamente LLC divenne meno utile in quanto EtherType ospitava anche la lunghezza del frame, infatti ora ci riferiamo al livello datalink come come MAC, inoltre il campo ha preso il nome di _lunghezza_.
+Al giorno d'oggi però usiamo i $16$ bit del campo `length` per specificare anche EtherType, rendendo inutile il livello LLC.
 
 ### Switch
 Un singolo link può essere esteso per creare una rete tramite degli **switch** che collegano terminali tra loro.
@@ -52,7 +50,7 @@ Gli **hub** inizialmente avevo lo scopo degli switch, tuttavia sono stati rimpia
 Uno **switch** indirizza il traffico di una porta ad un'altra porta specifica, per farlo però <u>deve imparare su quale porta un certo frame deve essere inviato</u> per raggiungere la destinazione.
 
 #### Backward learning
-Nel caso semplice in cui nella rete sia presente solo uno swtich collegato a molteplici terminali, si utilizza l'algoritmo di **backward learning** per imparare verso dove indirizzare il traffico.
+Nel caso semplice in cui nella rete sia presente solo uno switch collegato a molteplici terminali, si utilizza l'algoritmo di **backward learning** per imparare verso dove indirizzare il traffico.
 
 ```python
 # Arrivo del frame F sulla porta P a tempo T
@@ -63,6 +61,8 @@ src = F.SourceAddress
 dst = F.DestinationAddress
 
 # Aggiorna Table
+Table[src] = (P, T)
+
 if isUnicast(dst):
 	if dst in Table:
 		ForwardFrame(F, Table[dst][0])
@@ -70,7 +70,7 @@ if isUnicast(dst):
 
 # Multicast, broadcast o destinazione sconosciuta
 for o in Ports:
-	if o!= P:
+	if o != P:
 		ForwardFrame(F, o)
 ```
 
@@ -105,7 +105,7 @@ Il frame contiene varie informazioni, tra cui: $<Root_{id}, Cost, Sender_{id}, p
 - Il costo del path alla root (distanza pesata sulla capacità del link)
 - L'ID del nodo che ha generato il BPDU
 - Il numero della porta verso la quale il BPDU è stato inoltrato
->I BPDU soon inoltrati ad un indirizzo multicast, ed inizialmente ogni switch utilizza il proprio ID come root, ed imposta il costo a $0$.
+>I BPDU sono inoltrati ad un indirizzo multicast, ed inizialmente ogni switch utilizza il proprio ID come root, ed imposta il costo a $0$.
 
 I BPDU possono essere comparati in modo lessicografico secondo l'ordine usato nella loro definizione, quindi se $Root_{id}<Root_{id}'$, allora $BPDU<BPDU'$.
 
@@ -136,7 +136,7 @@ Se il proprio BPDU è più piccolo del BPDU ricevuto dalla porta $q$:
 >I BPDU vengono inoltrati solo ai figli.
 
 Questo processo viene sempre ripetuto, con lo switch di root che computa il suo BPDU e lo inoltra sulle porte _designated_.
-Essendo che tutti i BPDU ricevuto possiedono un'**età**, se essa dovesse superare una certa soglia, lo switch capisce che la topologia è cambiata e che c'è un malfunzionamento, per cui l'algoritmo comincia da capo cercando una nuova root.
+Essendo che tutti i BPDU ricevuti possiedono un'**età**, se essa dovesse superare una certa soglia, lo switch capisce che la topologia è cambiata e che c'è un malfunzionamento, per cui l'algoritmo comincia da capo cercando una nuova root.
 
 ---
 ## ARP

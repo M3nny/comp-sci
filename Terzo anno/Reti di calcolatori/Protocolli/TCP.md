@@ -24,9 +24,9 @@ Le applicazioni che sfruttano questo protocollo non hanno bisogno di mantenere u
 Il **Transmission Control Protocol (TCP)** fornisce un servizio di trasporto **affidabile** e **connection-oriented** al di sopra del livello di rete.
 
 L'**header** è formato come segue:
-- $16$ bit per _porta sorgente_ e di _destinazione_
-- $32$ bit per _numero di sequenza_ e _numero di ack_
-- $4$ bit per _data offset_ indica la _dimensione dell'header_
+- $16$ bit per **porta sorgente** e di **destinazione**
+- $32$ bit per **numero di sequenza** e **numero di ack**
+- $4$ bit per **data offset** indica la dimensione dell'header
 
 Al suo interno troviamo varie **flag**, tra cui:
 - `SYN`: usata durante lo stabilimento della connessione
@@ -37,7 +37,7 @@ Al suo interno troviamo varie **flag**, tra cui:
 - `checksum`: eseguita su tutto il segmento e alcuni campi dell'indirizzo IP
 
 #### PSH e Urgent Pointer
-Una applicazione ricevete [[Livello di trasporto#Trasporto dati affidabile|possiede un buffer]], i dati ricevuti per cui potrebbe non essere inoltrati subito all'applicazione, in alcuni casi questo approccio è **dannoso**.
+Una applicazione ricevente [[Livello di trasporto#Trasporto dati affidabile|possiede un buffer]], i dati ricevuti quindi potrebbero non essere inoltrati subito all'applicazione, in alcuni casi questo approccio è **dannoso**.
 
 Un segmento in entrata con flag `PSH` impostata farà svuotare immediatamente il buffer e manderà tutti i dati all'applicazione (rispettando i numeri di sequenza).
 
@@ -52,7 +52,7 @@ Il TCP consente anche la <u>comunicazione tra host dello stesso tipo</u> (e.g. 2
 ![[FSM TCP connection.png]]
 
 Un campo importante è il **Maximum Segment Size (MSS)**, esso rappresenta il segmento di dimensione massima che un host può ricevere.
-Solitamente viene impostato della dimensione del più grande data frame ricevibile, in modo da evitare la frammentazione.
+Solitamente viene impostato della dimensione del più grande frame ricevibile, in modo da evitare la frammentazione.
 
 Per ogni connessione in atto, il TCP mantiene un **Transmission Control Block (TCB)**, il quale è un insieme di informazioni necessario per mantenere lo stato della connessione.
 
@@ -94,7 +94,7 @@ Durante la fase di **invio**, il TCP:
 - Controlla che il _sending buffer_ non contenga più dati di quelli dichiarati in `rcv.wnd`
 - Controlla che si siano al massimo MSS byte piazzati nel payload del segmento
 - Il numero di sequenza di questo segmento è impostato a `snd.nxt` e poi la variabile `snd.nxt` è incrementata
-- Il numero di acknowledgement è impostato a `rcv.nxt` e i campo _window_ del segmento è calcolato in base allo spazio libero rimanente nel _receiving buffer_
+- Il numero di acknowledgement è impostato a `rcv.nxt` ed il campo _window_ del segmento è calcolato in base allo spazio libero rimanente nel _receiving buffer_
 - I dati una volta inviati rimangono memorizzati in caso serva ritrasmetterli
 
 Quando un segmento **arriva**, se la flag ACK è attiva:
@@ -129,7 +129,7 @@ Questo algoritmo rende più probabile che segmenti grandi siano inoltrati, infat
 >Questo algoritmo non funzionerebbe bene nel caso di applicazioni real-time.
 
 #### Window scale
-Essendo che l'header TCP non può essere esteso, la dimensione della finestra non può essere aumentato, venne poi introdotta una nuova estensione del protocollo in cui viene specificato un **Window Scale Option**, questo campo è scambiato soltanto nei pacchetti `SYN` e `SYN-ACK` e contiene un numero $0\leq S\leq 14$.
+Essendo che l'header TCP non può essere esteso, la dimensione della finestra non può essere aumentata, venne poi introdotta una nuova estensione del protocollo in cui viene specificato un **Window Scale Option**, questo campo è scambiato soltanto nei pacchetti `SYN` e `SYN-ACK` e contiene un numero $0\leq S\leq 14$.
 
 La dimensione della finestra viene shiftata di $S$ bits, ovvero si avrà: $\text{rcv.wnd}\cdot2^S$.
 
@@ -148,13 +148,13 @@ Abbiamo visto che i numeri di sequenza non devono ricominciare da capo prima del
 Assumiamo ora di essere a conoscenza del RTT, utilizziamo l'**algoritmo di Von Jacobson** per ottenere una **media mobile esponenziale** della sequenza di valori RTT.
 >Se il ricevitore è congestionato, non può gestire molti pacchetti, per cui il mittente dovrà rallentare.
 
-Il mittente potrebbe ricevere degli ACK con ordine diverso dal previsto, ad esempio potrebbe ricevere `seq=Y<X` quando aveva inoltrato `seq=X`, concluderà che il segmento è stato perso e dovrà ritrasmetterlo. tuttavia potrebbe essere che semplicemente l'altro ACK sta per arrivare.
+Il mittente potrebbe ricevere degli ACK con ordine diverso dal previsto, ad esempio potrebbe ricevere `seq=Y<X` quando aveva inoltrato `seq=X`, concluderà che il segmento è stato perso e dovrà ritrasmetterlo, tuttavia potrebbe essere che semplicemente l'altro ACK sta per arrivare.
 
 La **ritrasmissione veloce** prevede che la ritrasmissione prima della scadenza del timer possa avvenire dopo aver ricevuto tre copie dello stesso ACK.
 Quindi anche se il RTO non è scaduto, ma il mittente riceve tre copie dello stesso ACK, probabilmente il pacchetto è stato perso e dovrà ritrasmetterlo.
 
 #### Delayed ACKs
-La maggior parte delle volta la comunicazione è mono-direzionale, ovvero il ricevitore manderà in maggior parte solamente degli ACK, la strategia di **delayed ACKs** consente di mandare un ACK dopo un certo intervallo, e non uno per ogni segmento, in modo da riconoscere più segmenti alla volta.
+La maggior parte delle volte la comunicazione è mono-direzionale, ovvero il ricevitore manderà in maggior parte solamente degli ACK, la strategia di **delayed ACKs** consente di mandare un ACK dopo un certo intervallo, e non uno per ogni segmento, in modo da riconoscere più segmenti alla volta.
 >Non funziona bene con l'_algoritmo di Nagle_.
 
 #### Selective ACKs

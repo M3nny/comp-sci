@@ -39,9 +39,9 @@ Un ISN è sufficiente per ricostruire lo stream di segmenti dal client al server
 ## Trasporto dati affidabile
 Una volta ottenuti i numeri di sequenza è possibile utilizzare [[Livello datalink#Gestione degli errori|checksum]], [[Livello datalink#Go-back-n e Selective Repeat|go-back-n e selective repeat]] per aumentare l'affidabilità, tuttavia ci sono alcune differenze nel livello di trasporto.
 
-Il livello di trasporto riceve uno **stream di byte**, ed l numero di sequenza si riferisce alla posizione del byte nello stream, ciò significa che il ricevitore dovrà avere un **buffer** (anche con go-back-n), questo perchè <u>non si conosce in anticipo la quantità di dati che arriveranno</u> (i.e. non c'è una dimensione fissa come per i frame).
+Il livello di trasporto riceve uno **stream di byte**, ed il numero di sequenza si riferisce alla posizione del byte nello stream, ciò significa che il ricevitore dovrà avere un **buffer** (anche con go-back-n), questo perchè <u>non si conosce in anticipo la quantità di dati che arriveranno</u> (i.e. non c'è una dimensione fissa come per i frame).
 
-La chiamata `Data.ind()` non è più bloccante, il ricevitore può ricevere dati mentre l'applicazione li processa, tuttavia essa potrebbe essere lenta, quando questo succede il buffer è sovracaricato di dati, e dato che la chiamata non è bloccante gli ack verranno inoltrato subito, bisogna quindi cercare un modo per comunicare al mittente di rallentare senza però bloccare gli ack in uscita.
+La chiamata `Data.ind()` non è più bloccante, il ricevitore può ricevere dati mentre l'applicazione li processa, tuttavia essa potrebbe essere lenta, quando questo succede il buffer è sovracaricato di dati, e dato che la chiamata non è bloccante gli ack verranno inoltrati subito, bisogna quindi cercare un modo per comunicare al mittente di rallentare senza però bloccare gli ack in uscita.
 
 Il livello di trasporto consente di eseguire il _piggybacking_ della grandezza della **sliding window** all'interno degli ack, in pratica il mittente contiene due variabili: $swin$ per indicare la dimensione della **sending window**, e $rwin$ per indicare la dimensione della **receiving window**.
 >Il numero di segmenti unacknowledged non può essere più grande di $\min(swin,rwin)$.
@@ -50,7 +50,7 @@ Il livello di trasporto consente di eseguire il _piggybacking_ della grandezza d
 
 Le finestre possono pure avere dimensione pari a $0$ nel caso il ricevitore sia completamente sovraccarico, allora in questo caso il mittente si ferma e aspetta un ack.
 
-È necessario monitorare il parametro $capacity\cdot delay$, infatti quando i pacchetti viaggiano in una rete locale si avrà una alta capacità ed un basso delay, ciò non accade però su internet.
+Con connessioni ad alta capacità i numeri di sequenza possono ricominciare prima dell’MSL, per cui è necessario monitorare il parametro $capacity\cdot delay$, infatti quando i pacchetti viaggiano in una rete locale si avrà una alta capacità ed un basso delay, ciò non accade però su internet.
 
 ### Connection release
 Una volta che il traffico è stato inviato bisogna **chiudere la connessione** rendendolo noto ad entrambe le entità comunicanti:

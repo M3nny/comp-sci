@@ -8,7 +8,7 @@ Le versioni più comuni del WI-Fi utilizzano:
 - **Bitrate** da $11-6700$ Mbps
 - **Portata** attorno ai $50$ metri all'interno, mentre $300$ metri all'esterno
 
-Il Wi-Fi normalmente opera su **frequenze senza licenza**, ovvero le **bande ISM (Industrial, Scientific and Medial)**.
+Il Wi-Fi normalmente opera su **frequenze senza licenza**, ovvero le **bande ISM (Industrial, Scientific and Medical)**.
 
 Le bande ISM utilizzate sono principalmente due:
 - $2.4 - 2.4835$ (conosciuta come banda a $2.4 GHz$)
@@ -16,7 +16,7 @@ Le bande ISM utilizzate sono principalmente due:
 
 Le bande ISM _non sono_ solo usate dal Wi-Fi, soffrono quindi dall'interferenza di altri dispositivi, per questo motivo e altri motivi di sicurezza, la <u>potenza di trasmissione massima è limitata per legge</u>.
 
-La banda usata dal Wi-Fi è divisa in **canali**, ovvero sotto-bande che possono operare quasi indipendentemente, per $2.4 GHz$ abbiamo $11$ canali, mentre per la $4GHz$ ne abbiamo $19$.
+La banda usata dal Wi-Fi è divisa in **canali**, ovvero sotto-bande che possono operare quasi indipendentemente, per $2.4 GHz$ abbiamo $11$ canali, mentre per la $5GHz$ ne abbiamo $19$.
 >I canali reali potrebbero essere di più tuttavia quelli usabili dipendono dal paese e dalle leggi.
 
 Lo standard $802.11b/g$ prevedeva soltanto $3$ **canali completamente separati**, ciò permetteva di avere $3$ reti separate senza interferenze, nel caso ce ne fossero state di più, allora si causavano dei disturbi a vicenda.
@@ -32,7 +32,7 @@ Esistono tre **tipi di frame** nello standard 802.11:
 Un **Basic Service Set (BSS)** è l'unita più piccola in grado di creare una rete Wi-Fi, noi ci concentriamo sul modello **"infrastrutturato"** che è il più comune.
 Questo modello è composto da un AP e qualche stazione connessa, le stazioni non comunicano tra loro rendendo l'AP il **centro stella**.
 
-Un BSS è **identificato da un BSSID** il qualche è un numero da $48$ bit costruito utilizzando l'indirizzo MAC dell'AP.
+Un BSS è **identificato da un BSSID** il quale è un numero da $48$ bit costruito utilizzando l'indirizzo MAC dell'AP.
 
 Ogni AP può scegliere un **SSID (Service Set ID)**, il quale è un nome _"leggibile"_ per il BSS, configurabile dall'amministratore.
 
@@ -112,7 +112,7 @@ Se il canale diventa occupato durante il _backoff_, il timer si ferma e ricominc
 <u>Le collisioni possono ancora verificarsi</u> nel caso la differenza tra i timer casuali sia più piccola del tempo di trasmissione.
 Incrementare il range di tempo casuale da aspettare diminuisce questa probabilità, tuttavia in una rete con molti terminali questa aumenta comunque.
 
-Ad ogni fallimento il mittente sceglierà un **finestra di numeri casuali** possibili **più grande**.
+Ad ogni fallimento il mittente sceglierà una **finestra di numeri casuali** possibili **più grande**.
 Sia $[0,CW]$ l'intervallo di numeri casuali, $CW$ è aggiornato come segue ad ogni trasmissione fallita.
 $$\begin{align}
 CW_1&=CW_\min\\
@@ -122,7 +122,7 @@ CW_i&<CW_\max
 >$CW_\min$ e $CW_\max$ sono parametri di sistema.
 
 In questo modo al tentativo $i$, $CW_i=2^i\cdot CW$, per cui la probabilità che due timer casuali siano uguali diminuisce, questo è detto **binary exponential backoff**, e quando una trasmissione ha successo viene resettato ($CW=CW_\min$).
->Dopo un numero massimo di collisioni il mittente lascia il frame.
+>Dopo un numero massimo di collisioni il mittente scarta il frame.
 
 >[!Attention]
 >Questo metodo diminuisce le collisioni ma spreca risorse.

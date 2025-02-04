@@ -1,4 +1,4 @@
-Una **chiave** è rappresentata da un file contenente una **stringa casuale**, durante la generazione di una chiave non è possibile decidere il suo contenuto, per questo ragione il file contiene alcuni **meta-dati** che comprendono: nome, email e altre informazioni.
+Una **chiave** è rappresentata da un file contenente una **stringa casuale**, durante la generazione di una chiave non è possibile decidere il suo contenuto, per questa ragione il file contiene alcuni **meta-dati** che comprendono: nome, email e altre informazioni.
 
 Tuttavia questo ancora <u>non garantisce che la chiave sia stata creata da chi dice di averla creata</u>.
 
@@ -18,8 +18,8 @@ Se Alice e Bob si fidano di Carl ciò vuol dire due cose:
 
 Carl può fare da intermediario e dire a Bob che la chiave pubblica di Alice appartiene effettivamente a lei.
 1. Alice e Carl si trovano per scambiarsi le _fingerprint_ lo stesso per Bob e Carl
-2. Carl cripta sia la chiave pubblica di Alice assieme al suo nome con la sua chiave privata
-3. Tutte le persone che hanno la chiave privata di Carl possono decriptare tale firma digitale e vedere che la chiave pubblica di Alice appartiene ad una persona che si chiama Alice
+2. Carl cripta la chiave pubblica di Alice assieme al suo nome con la sua chiave privata
+3. Tutte le persone che hanno la chiave pubblica di Carl possono decriptare tale firma digitale e vedere che la chiave pubblica di Alice appartiene ad una persona che si chiama Alice
 4. Se si fidano di Carl anche loro si fideranno dell'autenticità di Alice
 
 In questo modo possono formarsi delle **catene di fiducia**:

@@ -6,16 +6,16 @@ Con la **crittografia a chiave pubblica** Alice e Bob possono comunicare in modo
 Al momento non esiste alcun algoritmo polinomiale in grado fattorizzare grandi numeri, questo vuol dire che se $m=p\cdot q$ dove $p,q$ sono **numeri primi**, e $m$ è formato da $l$ cifre, non esiste alcun algoritmo in grado di recuperare $p$ e $q$ in al più $l^k$ operazioni per qualche $k$.
 
 **Intrattabilità del logaritmo discreto**.
-Al momento non esiste alcun algoritmo polinomiale in grado di trovare un logaritmo discreto di un numero, ciò significa che dato $g,n$ e $g^a\mod_n$ non esiste alcun algoritmo polinomiale in grado di invertire l'esponenziazione per trovare $a$.
+Al momento non esiste alcun algoritmo polinomiale in grado di trovare un logaritmo discreto di un numero, ciò significa che dati $g,n,m$ interi e $g^a\mod_n=m$ non esiste alcun algoritmo polinomiale in grado di invertire l'esponenziazione per trovare $a$.
 
 ## Diffie-Hellman
 Il protocollo Diffie-Hellman (DH) consente ad Alice e Bob di negoziare un chiave simmetrica segreta senza condividere informazioni segrete, esso è basato sulla difficoltà di calcolare un logaritmo discreto.
 
 1. Alice sceglie un numero primo $n$, un numero casuale $a$, una [radice primitiva modulo n](https://en.wikipedia.org/wiki/Primitive_root_modulo_n) $g$
 2. Bob genera un numero casuale $b$ ($a$ è $b$ sono segreti e non verranno mai inviati da Alice o Bob)
-3. Alice manda $m,g,n$ a Bob
+3. Alice manda $m=g^a\mod_n,g,n$ a Bob
 4. Bob manda $r=g^b\mod_n$ ad Alice
-5. La chiave generata è $K=g^{ab}\mod p$
+5. La chiave generata è $K=g^{ab}\mod_n$
 
 Se Eve intercettasse il traffico potrebbe venire a conoscenza di $m,g,n,r$, ma data l'intrattabilità del logaritmo discreto non potrà ottenere $a$ o $b$.
 
@@ -96,5 +96,5 @@ Quindi il server che decripta il traffico ha bisogno di più risorse del client 
 Normalmente quindi si evita di criptare/decriptare dati con RSA, lo si usa solo per comunicare una chiave condivisa la quale utilizzerò poi l'[[HMAC]].
 
 **Firma degli hash**
-Sempre per motivi di performance, quando si vuole firmare un documento grande, si firma solo il suo has per fare prima.
+Sempre per motivi di performance, quando si vuole firmare un documento grande, si firma solo il suo hash per fare prima.
 

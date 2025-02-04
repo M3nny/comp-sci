@@ -7,7 +7,7 @@ Uno spammer generalmente controlla un numero importante di _computer zombie_., i
 
 Se **lo spammer è un MUA**, è facile da rilevare dal suo MSA, questo perchè esso si connetterà, si autenticherà e manderà un grande numero di e-mail.
 
-Se **lo spammer è un MTA**, allora è più difficile distinguere il buon traffico da quello cattivo, in quanto è normale che un MTA inoltri molte mail, per questo infatti i buoni MTA utilizzano varie tecniche per rilevare i MTA cattivi per poi rifiutare/aggiungere ritardo/limitare le loro e-mail.
+Se **lo spammer è un MTA**, allora è più difficile distinguere il buon traffico da quello cattivo, in quanto è normale che un MTA inoltri molte mail, per questo infatti i buoni MTA utilizzano varie tecniche per rilevare i MTA cattivi per poi rifiutare/ritardare/limitare le loro e-mail.
 
 Ci concentriamo ora sulle tecniche che riducono lo spam semplicemente basandosi sui protocolli di rete.
 
@@ -35,9 +35,9 @@ Gli spammer potrebbero noleggiare un grande set di IP e cambiarli contemporaneam
 ### Strict RFC compliance
 Un server SMTP che si comporta bene aderisce allo standard SMTP, mentre uno spammer tende a non rispettare la parte di standard che potrebbe rallentare la sua attività.
 #### Graylisting
-Quando un MTA riceve un errore del tipo `4xx` dovrebbe riprova dopo un po' di tempo, cosa che gli spammer non faranno in quanto rallenterebbe la loro attività.
+Quando un MTA riceve un errore del tipo `4xx` dovrebbe riprovare dopo un po' di tempo, cosa che gli spammer non faranno in quanto rallenterebbe la loro attività.
 
-Il server MTA che utilizza il **graylisting** tiene una lista di IP conosciuti, quando una nuova connessione non presente nella lista è in entrata il server risponderà con un errore `4xx` e aggiungerà l'IP nella **whitelist**.
+Il server MTA che utilizza il **graylisting** tiene una lista di IP conosciuti, quando una nuova connessione non presente nella lista è in entrata, il server risponderà con un errore `4xx` e aggiungerà l'IP nella **whitelist**.
 - Il client lecito riproverà più tardi
 - Lo spammer non riproverà
 
@@ -50,7 +50,7 @@ Per gli MTA molto usati (e.g. google) questo non è un problema, ma ad esempio i
 
 ### Sender Policy Framework (SPF)
 - `HELO`: identifica un dominio di un MTA, ovvero il server SMTP che fa da client
-- `MAIL FROM`: non è necessariamente il mittente della mail. è il posto a cui mandare gli errori
+- `MAIL FROM`: non è necessariamente il mittente della mail, è il posto a cui mandare gli errori
 - `FROM`: mittente
 
 Un singolo client può legittimamente mandare mail utilizzando `FROM` con diversi domini.
@@ -69,7 +69,7 @@ Supponiamo che esista il sottodominio `computer-networks.dais.unive.it`, un atta
 
 Una _entry SPF_ (testuale) è associata al dominio dell'organizzazione che specifica quali sono gli indirizzi IP che possono inviare e-mail.
 
-Le entry testuali non hanno un formato, tuttavia solitamente sono formate come segue: `unive.it. 86400 IN TXT “v=spf1 ip4:17.18.7.120 -all”`.
+Le entry testuali non hanno un formato, tuttavia solitamente (per convenzione) sono formate come segue: `unive.it. 86400 IN TXT “v=spf1 ip4:17.18.7.120 -all”`.
 - Il protocollo ha versione $1$
 - Un solo indirizzo IP può inviare e-mail
 - Tutti gli altri sono proibiti
@@ -97,7 +97,7 @@ Esso richiede ad un MSA di possedere una coppia di chiavi (pubblica/privata) che
 
 Quando un MUA contatta un MSA, esso di identifica, questo è l'unico momento in cui la mail può essere _certificata_, in quanto il prossimo MTA non sarà in grado di fornire un meccanismo di autenticazione.
 
-Quando si usa DKIM, il MSA selezionerà alcune campi dalla mail e creerà una firma digitale, la firma digitale è applicata all'hash della mail e allegata all'header della mail.
+Quando si usa DKIM, il MSA selezionerà alcuni campi dalla mail e creerà una firma digitale, la firma digitale è applicata all'hash della mail e allegata all'header della mail.
 Il prossimo MTA che riceve la mail sarà in grado di verificare la firma (assumendo che conosca la chiave pubblica di chi firma).
 
 Un **header DKIM** è formato come segue:
