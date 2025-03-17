@@ -11,10 +11,14 @@
             "id": "11c3089af106b065",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "Terzo anno/Amministrazione di sistema/NAS e SAN.md",
+                "mode": "source",
+                "source": false
+              },
               "icon": "lucide-file",
-              "title": "New tab"
+              "title": "NAS e SAN"
             }
           }
         ]
@@ -74,7 +78,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 350.5124969482422
+    "width": 350.5124969482422,
+    "collapsed": true
   },
   "right": {
     "id": "282a9548711da6a0",
@@ -159,6 +164,7 @@
   },
   "active": "11c3089af106b065",
   "lastOpenFiles": [
+    "Terzo anno/Amministrazione di sistema/NAS e SAN.md",
     "Terzo anno/Amministrazione di sistema/Networking.md",
     "Terzo anno/Reti di calcolatori/Protocolli/IPv4.md",
     "Terzo anno/Reti di calcolatori/Livelli TCP/Livello di trasporto.md",
@@ -198,7 +204,6 @@
     "Terzo anno/Calcolabilità e linguaggi formali/Riducibilità/Teorema di Rice.md",
     "Terzo anno/Calcolabilità e linguaggi formali/Riducibilità/Turing riducibilità.md",
     "Terzo anno/Calcolabilità e linguaggi formali/Riducibilità/Riduzione attraverso funzioni.md",
-    "Terzo anno/Calcolabilità e linguaggi formali/Riducibilità/Storie di computazione accettanti.md",
     "Calcolo 1/Images/Pasted image 20250131174104.zip",
     "Terzo anno/Calcolabilità e linguaggi formali/Images/CFG to PDA example.png.crdownload",
     "Terzo anno/Calcolabilità e linguaggi formali/Images/Regex to NFA example.png.crdownload",
