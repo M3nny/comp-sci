@@ -5,18 +5,159 @@
   "showAttachments": true,
   "hideUnresolved": true,
   "showOrphans": true,
-  "collapse-color-groups": false,
-  "colorGroups": [],
+  "collapse-color-groups": true,
+  "colorGroups": [
+    {
+      "query": "path:\"Primo anno/Primo semestre/Calcolo 1\"  ",
+      "color": {
+        "a": 1,
+        "rgb": 14048348
+      }
+    },
+    {
+      "query": "path: \"Primo anno/Secondo semestre/Calcolo 2\"  ",
+      "color": {
+        "a": 1,
+        "rgb": 14069084
+      }
+    },
+    {
+      "query": "path:\"Primo anno/Primo semestre/Algebra lineare\"  ",
+      "color": {
+        "a": 1,
+        "rgb": 11392604
+      }
+    },
+    {
+      "query": "path: \"Primo anno/Primo semestre/Architettura degli elaboratori mod. 1\"  ",
+      "color": {
+        "a": 1,
+        "rgb": 6084188
+      }
+    },
+    {
+      "query": "path:\"Primo anno/Secondo semestre/Architettura degli elaboratori mod. 2\"  ",
+      "color": {
+        "a": 1,
+        "rgb": 6084269
+      }
+    },
+    {
+      "query": "path: \"Primo anno/Primo semestre/Introduzione alla programmazione 1\"  ",
+      "color": {
+        "a": 1,
+        "rgb": 6073814
+      }
+    },
+    {
+      "query": "path:\"Primo anno/Primo semestre/Matematica discreta\"  ",
+      "color": {
+        "a": 1,
+        "rgb": 6053078
+      }
+    },
+    {
+      "query": "path: \"Primo anno/Secondo semestre/Programmazione e laboratorio\"  ",
+      "color": {
+        "a": 1,
+        "rgb": 11361494
+      }
+    },
+    {
+      "query": "path:\"Secondo anno/Algoritmi e strutture dati\"  ",
+      "color": {
+        "a": 1,
+        "rgb": 14048429
+      }
+    },
+    {
+      "query": "path:\"Secondo anno/Basi di dati\"  ",
+      "color": {
+        "a": 1,
+        "rgb": 14048348
+      }
+    },
+    {
+      "query": "path:\"Secondo anno/Interazione uomo macchina\"  ",
+      "color": {
+        "a": 1,
+        "rgb": 14069084
+      }
+    },
+    {
+      "query": "path:\"Secondo anno/Probabilità e statistica\"  ",
+      "color": {
+        "a": 1,
+        "rgb": 11392604
+      }
+    },
+    {
+      "query": "path:\"Secondo anno/Programmazione ad oggetti\"  ",
+      "color": {
+        "a": 1,
+        "rgb": 6084188
+      }
+    },
+    {
+      "query": "path:\"Secondo anno/Sistemi operativi\"  ",
+      "color": {
+        "a": 1,
+        "rgb": 6084269
+      }
+    },
+    {
+      "query": "path:\"Terzo anno/Amministrazione di sistema\"  ",
+      "color": {
+        "a": 1,
+        "rgb": 6073814
+      }
+    },
+    {
+      "query": "path:\"Terzo anno/Calcolabilità e linguaggi formali\"  ",
+      "color": {
+        "a": 1,
+        "rgb": 6053078
+      }
+    },
+    {
+      "query": "path:\"Terzo anno/Data and web mining\"  ",
+      "color": {
+        "a": 1,
+        "rgb": 6053078
+      }
+    },
+    {
+      "query": "path:\"Terzo anno/Reti di calcolatori\"  ",
+      "color": {
+        "a": 1,
+        "rgb": 6053037
+      }
+    },
+    {
+      "query": "path:\"Terzo anno/Ricerca operativa\"  ",
+      "color": {
+        "a": 1,
+        "rgb": 6052956
+      }
+    },
+    {
+      "query": "path:\"Terzo anno/Sicurezza\"  ",
+      "color": {
+        "a": 1,
+        "rgb": 6052956
+      }
+    }
+  ],
   "collapse-display": false,
-  "showArrow": true,
-  "textFadeMultiplier": 2.9,
-  "nodeSizeMultiplier": 2.4886301369863,
-  "lineSizeMultiplier": 2.4886301369863,
+  "showArrow": false,
+  "textFadeMultiplier": 2,
+  "nodeSizeMultiplier": 0.985068493150685,
+  "lineSizeMultiplier": 0.985068493150685,
   "collapse-forces": false,
-  "centerStrength": 0.381017612524462,
-  "repelStrength": 20,
-  "linkStrength": 1,
-  "linkDistance": 300,
-  "scale": 0.03590926640144957,
+  "centerStrength": 0.5,
+  "repelStrength": 12.0039138943249,
+  "linkStrength": 0.900782778864971,
+  "linkDistance": 30,
+  "scale": 0.08898926297407742,
   "close": true
 }
