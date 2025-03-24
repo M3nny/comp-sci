@@ -78,8 +78,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 350.5124969482422,
-    "collapsed": true
+    "width": 350.5124969482422
   },
   "right": {
     "id": "282a9548711da6a0",
@@ -164,6 +163,7 @@
   },
   "active": "11c3089af106b065",
   "lastOpenFiles": [
+    "Terzo anno/Amministrazione di sistema/Virtualizzazione.md",
     "Terzo anno/Amministrazione di sistema/NAS e SAN.md",
     "Terzo anno/Amministrazione di sistema/Networking.md",
     "Terzo anno/Reti di calcolatori/Protocolli/IPv4.md",
@@ -203,7 +203,6 @@
     "Terzo anno/Calcolabilità e linguaggi formali/Riducibilità/Introduzione.md",
     "Terzo anno/Calcolabilità e linguaggi formali/Riducibilità/Teorema di Rice.md",
     "Terzo anno/Calcolabilità e linguaggi formali/Riducibilità/Turing riducibilità.md",
-    "Terzo anno/Calcolabilità e linguaggi formali/Riducibilità/Riduzione attraverso funzioni.md",
     "Calcolo 1/Images/Pasted image 20250131174104.zip",
     "Terzo anno/Calcolabilità e linguaggi formali/Images/CFG to PDA example.png.crdownload",
     "Terzo anno/Calcolabilità e linguaggi formali/Images/Regex to NFA example.png.crdownload",
