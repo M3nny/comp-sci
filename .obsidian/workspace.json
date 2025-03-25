@@ -4,21 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "7a6dc55162827357",
+        "id": "f90db7f9823e343b",
         "type": "tabs",
         "children": [
           {
-            "id": "6a24ba9e2119856e",
+            "id": "327bd0ada1451834",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Terzo anno/Amministrazione di sistema/Filesystems.md",
+                "file": "Terzo anno/Amministrazione di sistema/Partizionamento.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Filesystems"
+              "title": "Partizionamento"
             }
           }
         ]
@@ -78,8 +78,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 350.5124969482422,
-    "collapsed": true
+    "width": 350.5124969482422
   },
   "right": {
     "id": "282a9548711da6a0",
@@ -162,8 +161,12 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "6a24ba9e2119856e",
+  "active": "a1163d9af64d6878",
   "lastOpenFiles": [
+    "Terzo anno/Amministrazione di sistema/Images/LVM.png",
+    "Calcolo 1/Images",
+    "Calcolo 1",
+    "Terzo anno/Amministrazione di sistema/Partizionamento.md",
     "Terzo anno/Amministrazione di sistema/Filesystems.md",
     "Terzo anno/Amministrazione di sistema/Cloud.md",
     "Terzo anno/Amministrazione di sistema/NAS e SAN.md",
@@ -180,8 +183,6 @@
     "Terzo anno/Amministrazione di sistema/Sala server.md",
     "Terzo anno/Amministrazione di sistema/Images/Rack.png",
     "Calcolo 1/Images/Pasted image 20250311173500.png",
-    "Calcolo 1/Images",
-    "Calcolo 1",
     "Terzo anno/Reti di calcolatori/Quiz.md",
     "Terzo anno/Reti di calcolatori/Domande.md",
     "Terzo anno/Reti di calcolatori/Esercizi.md",
@@ -202,8 +203,6 @@
     "Terzo anno/Untitled.md",
     "Terzo anno/Amministrazione di sistema",
     "Terzo anno/Calcolabilità e linguaggi formali/Decidibilità.md",
-    "Terzo anno/Calcolabilità e linguaggi formali/Macchina di Turing.md",
-    "Terzo anno/Calcolabilità e linguaggi formali/Riducibilità/Introduzione.md",
     "Calcolo 1/Images/Pasted image 20250131174104.zip",
     "Terzo anno/Calcolabilità e linguaggi formali/Images/CFG to PDA example.png.crdownload",
     "Terzo anno/Calcolabilità e linguaggi formali/Images/Regex to NFA example.png.crdownload",
