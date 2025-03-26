@@ -123,3 +123,6 @@ Per evitare di effettuare il login ogni volta sul host remoto si utilizza una **
 Lasciare una **passphrase vuota** è sicuramente più comodo in quanto non verrà più richiesta alcuna password o passphrase, però il furto della chiave sarebbe un grande problema.
 
 Con **ssh-agent** tuttavia si può mantenere la chiave sbloccata per la sessione corrente.
+
+Una volta collegati all'host remoto si dovrà **memorizzare la propria chiave pubblica** all'interno delle chiavi autorizzate, questo può essere fatto manualmente oppure attraverso il comando `ssh-copy-id`.
+

@@ -4,21 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "f90db7f9823e343b",
+        "id": "3801dce0662d3b65",
         "type": "tabs",
         "children": [
           {
-            "id": "327bd0ada1451834",
+            "id": "6bd3c056ea098c02",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Terzo anno/Amministrazione di sistema/Partizionamento.md",
+                "file": "Terzo anno/Amministrazione di sistema/Gestione di utenti e processi.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Partizionamento"
+              "title": "Gestione di utenti e processi"
             }
           }
         ]
@@ -163,10 +163,13 @@
   },
   "active": "a1163d9af64d6878",
   "lastOpenFiles": [
+    "Terzo anno/Sicurezza/System and network security/Unix access control.md",
+    "Terzo anno/Amministrazione di sistema/Gestione di utenti e processi.md",
+    "Secondo anno/Sistemi operativi/Mod. 1/File systems.md",
+    "Terzo anno/Amministrazione di sistema/Partizionamento.md",
     "Terzo anno/Amministrazione di sistema/Images/LVM.png",
     "Calcolo 1/Images",
     "Calcolo 1",
-    "Terzo anno/Amministrazione di sistema/Partizionamento.md",
     "Terzo anno/Amministrazione di sistema/Filesystems.md",
     "Terzo anno/Amministrazione di sistema/Cloud.md",
     "Terzo anno/Amministrazione di sistema/NAS e SAN.md",
@@ -194,15 +197,12 @@
     "Terzo anno/Amministrazione di sistema/Images/RAID 6.png",
     "Terzo anno/Amministrazione di sistema/Images/RAID 5.png",
     "Terzo anno/Amministrazione di sistema/Images/RAID 3.png",
-    "Terzo anno/Amministrazione di sistema/Images/RAID 1.png",
     "Terzo anno/Amministrazione di sistema/Images",
     "Primo anno/Primo semestre/Architettura degli elaboratori mod. 1/6 - CPU/CPU singolo ciclo.md",
     "Primo anno/Primo semestre/Architettura degli elaboratori mod. 1/6 - CPU/CPU multiciclo.md",
     "Primo anno/Secondo semestre/Architettura degli elaboratori mod. 2/CPU con pipeline/Introduzione.md",
     "Primo anno/Secondo semestre/Architettura degli elaboratori mod. 2/Cache/Tipologie di memoria.md",
-    "Terzo anno/Untitled.md",
     "Terzo anno/Amministrazione di sistema",
-    "Terzo anno/Calcolabilità e linguaggi formali/Decidibilità.md",
     "Calcolo 1/Images/Pasted image 20250131174104.zip",
     "Terzo anno/Calcolabilità e linguaggi formali/Images/CFG to PDA example.png.crdownload",
     "Terzo anno/Calcolabilità e linguaggi formali/Images/Regex to NFA example.png.crdownload",
