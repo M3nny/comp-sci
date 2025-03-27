@@ -4,21 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "58af7338c46cc5f0",
+        "id": "a7a6cf1d0c712783",
         "type": "tabs",
         "children": [
           {
-            "id": "16112b95786dfde1",
+            "id": "dcd68d559a7e3a0d",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Terzo anno/Amministrazione di sistema/Servizi di rete.md",
+                "file": "Terzo anno/Amministrazione di sistema/Autenticazione.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Servizi di rete"
+              "title": "Autenticazione"
             }
           }
         ]
@@ -162,10 +162,13 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "16112b95786dfde1",
+  "active": "dcd68d559a7e3a0d",
   "lastOpenFiles": [
-    "Terzo anno/Reti di calcolatori/Protocolli/DNS.md",
+    "Terzo anno/Amministrazione di sistema/Images/Kerberos.png",
+    "Terzo anno/Amministrazione di sistema/Images/DIT.png",
+    "Terzo anno/Amministrazione di sistema/Autenticazione.md",
     "Terzo anno/Amministrazione di sistema/Servizi di rete.md",
+    "Terzo anno/Reti di calcolatori/Protocolli/DNS.md",
     "Terzo anno/Amministrazione di sistema/Images/RAID 1.png",
     "Terzo anno/Amministrazione di sistema/Images/Cron.png",
     "Calcolo 1/Images",
@@ -195,13 +198,10 @@
     "Calcolo 1/Images/Pasted image 20250311173500.png",
     "Terzo anno/Reti di calcolatori/Quiz.md",
     "Terzo anno/Reti di calcolatori/Domande.md",
-    "Terzo anno/Reti di calcolatori/Esercizi.md",
-    "Terzo anno/Reti di calcolatori/Riassunto.md",
     "Terzo anno/Amministrazione di sistema/Images/RAID 0.png",
     "Terzo anno/Amministrazione di sistema/Images/RAID 0.png",
     "Terzo anno/Amministrazione di sistema/Images/RAID 1+0.png",
     "Calcolo 1/Images/Pasted image 20250311120537.png",
-    "Terzo anno/Amministrazione di sistema/Images/RAID 6.png",
     "Terzo anno/Amministrazione di sistema/Images",
     "Terzo anno/Amministrazione di sistema",
     "Calcolo 1/Images/Pasted image 20250131174104.zip",
