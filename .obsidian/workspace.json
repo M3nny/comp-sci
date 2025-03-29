@@ -4,21 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "a7a6cf1d0c712783",
+        "id": "c0430b13e2215e28",
         "type": "tabs",
         "children": [
           {
-            "id": "dcd68d559a7e3a0d",
+            "id": "6a0bdd3a2d6d5c50",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Terzo anno/Amministrazione di sistema/Autenticazione.md",
+                "file": "Terzo anno/Amministrazione di sistema/Posta elettronica.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Autenticazione"
+              "title": "Posta elettronica"
             }
           }
         ]
@@ -78,8 +78,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 350.5124969482422,
-    "collapsed": true
+    "width": 350.5124969482422
   },
   "right": {
     "id": "282a9548711da6a0",
@@ -162,17 +161,22 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "dcd68d559a7e3a0d",
+  "active": "6a0bdd3a2d6d5c50",
   "lastOpenFiles": [
+    "spamhaus.org.md",
+    "Terzo anno/Amministrazione di sistema/Posta elettronica.md",
+    "Terzo anno/Reti di calcolatori/Protocolli/SMTP.md",
+    "Terzo anno/Reti di calcolatori/Protocolli/TLS.md",
+    "Terzo anno/Amministrazione di sistema/Images/Flusso di posta.png",
+    "Calcolo 1/Images",
+    "Calcolo 1",
+    "Terzo anno/Amministrazione di sistema/Autenticazione.md",
     "Terzo anno/Amministrazione di sistema/Images/Kerberos.png",
     "Terzo anno/Amministrazione di sistema/Images/DIT.png",
-    "Terzo anno/Amministrazione di sistema/Autenticazione.md",
     "Terzo anno/Amministrazione di sistema/Servizi di rete.md",
     "Terzo anno/Reti di calcolatori/Protocolli/DNS.md",
     "Terzo anno/Amministrazione di sistema/Images/RAID 1.png",
     "Terzo anno/Amministrazione di sistema/Images/Cron.png",
-    "Calcolo 1/Images",
-    "Calcolo 1",
     "Terzo anno/Reti di calcolatori/Protocolli/TCP.md",
     "Terzo anno/Amministrazione di sistema/Shell.md",
     "Terzo anno/Amministrazione di sistema/Gestione di utenti e processi.md",
@@ -193,15 +197,10 @@
     "Terzo anno/Ricerca operativa/DIrezioni ottimali.md",
     "Terzo anno/Amministrazione di sistema/Introduzione.md",
     "Terzo anno/Amministrazione di sistema/Hardware e raid.md",
-    "Terzo anno/Amministrazione di sistema/Sala server.md",
     "Terzo anno/Amministrazione di sistema/Images/Rack.png",
     "Calcolo 1/Images/Pasted image 20250311173500.png",
-    "Terzo anno/Reti di calcolatori/Quiz.md",
-    "Terzo anno/Reti di calcolatori/Domande.md",
     "Terzo anno/Amministrazione di sistema/Images/RAID 0.png",
     "Terzo anno/Amministrazione di sistema/Images/RAID 0.png",
-    "Terzo anno/Amministrazione di sistema/Images/RAID 1+0.png",
-    "Calcolo 1/Images/Pasted image 20250311120537.png",
     "Terzo anno/Amministrazione di sistema/Images",
     "Terzo anno/Amministrazione di sistema",
     "Calcolo 1/Images/Pasted image 20250131174104.zip",
