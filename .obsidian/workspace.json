@@ -78,8 +78,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 350.5124969482422,
-    "collapsed": true
+    "width": 350.5124969482422
   },
   "right": {
     "id": "282a9548711da6a0",
@@ -164,11 +163,12 @@
   },
   "active": "71adfd75e4538990",
   "lastOpenFiles": [
-    "Terzo anno/Amministrazione di sistema/Web/IIS.md",
+    "Terzo anno/Reti di calcolatori/Protocolli/HTTP.md",
     "Terzo anno/Amministrazione di sistema/Web/Nginx.md",
+    "Terzo anno/Amministrazione di sistema/Web/Web server.md",
+    "Terzo anno/Amministrazione di sistema/Web/IIS.md",
     "Terzo anno/Amministrazione di sistema/Web",
     "Terzo anno/Amministrazione di sistema/Autenticazione.md",
-    "Terzo anno/Amministrazione di sistema/Web/Web server.md",
     "Terzo anno/Amministrazione di sistema/Images/Apache core.png",
     "Calcolo 1/Images",
     "Calcolo 1",
@@ -199,7 +199,6 @@
     "Terzo anno/Amministrazione di sistema/Virtualizzazione.md",
     "Terzo anno/Amministrazione di sistema/Networking.md",
     "Terzo anno/Reti di calcolatori/Protocolli/IPv4.md",
-    "Terzo anno/Reti di calcolatori/Livelli TCP/Livello di trasporto.md",
     "Terzo anno/Amministrazione di sistema/Images/Rack.png",
     "Calcolo 1/Images/Pasted image 20250311173500.png",
     "Terzo anno/Amministrazione di sistema/Images/RAID 0.png",
