@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Terzo anno/Amministrazione di sistema/Database server.md",
+                "file": "Terzo anno/Amministrazione di sistema/Print server.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Database server"
+              "title": "Print server"
             }
           }
         ]
@@ -78,7 +78,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 350.5124969482422
+    "width": 350.5124969482422,
+    "collapsed": true
   },
   "right": {
     "id": "282a9548711da6a0",
@@ -161,9 +162,10 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "a1163d9af64d6878",
+  "active": "d9e2db272e125706",
   "lastOpenFiles": [
     "Terzo anno/Amministrazione di sistema/Database server.md",
+    "Terzo anno/Amministrazione di sistema/Print server.md",
     "Terzo anno/Reti di calcolatori/Protocolli/HTTP.md",
     "Terzo anno/Amministrazione di sistema/Web/Nginx.md",
     "Terzo anno/Amministrazione di sistema/Web/Web server.md",
@@ -198,7 +200,6 @@
     "Terzo anno/Amministrazione di sistema/Filesystems.md",
     "Terzo anno/Amministrazione di sistema/NAS e SAN.md",
     "Terzo anno/Amministrazione di sistema/Virtualizzazione.md",
-    "Terzo anno/Amministrazione di sistema/Networking.md",
     "Terzo anno/Amministrazione di sistema/Images/Rack.png",
     "Calcolo 1/Images/Pasted image 20250311173500.png",
     "Terzo anno/Amministrazione di sistema/Images/RAID 0.png",
