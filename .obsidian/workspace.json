@@ -4,21 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "b68bf4039a3b5ae5",
+        "id": "6f1cd001d214d5cc",
         "type": "tabs",
         "children": [
           {
-            "id": "71adfd75e4538990",
+            "id": "d9e2db272e125706",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Terzo anno/Amministrazione di sistema/Web/Nginx.md",
+                "file": "Terzo anno/Amministrazione di sistema/Database server.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Nginx"
+              "title": "Database server"
             }
           }
         ]
@@ -161,8 +161,9 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "71adfd75e4538990",
+  "active": "a1163d9af64d6878",
   "lastOpenFiles": [
+    "Terzo anno/Amministrazione di sistema/Database server.md",
     "Terzo anno/Reti di calcolatori/Protocolli/HTTP.md",
     "Terzo anno/Amministrazione di sistema/Web/Nginx.md",
     "Terzo anno/Amministrazione di sistema/Web/Web server.md",
@@ -198,7 +199,6 @@
     "Terzo anno/Amministrazione di sistema/NAS e SAN.md",
     "Terzo anno/Amministrazione di sistema/Virtualizzazione.md",
     "Terzo anno/Amministrazione di sistema/Networking.md",
-    "Terzo anno/Reti di calcolatori/Protocolli/IPv4.md",
     "Terzo anno/Amministrazione di sistema/Images/Rack.png",
     "Calcolo 1/Images/Pasted image 20250311173500.png",
     "Terzo anno/Amministrazione di sistema/Images/RAID 0.png",
