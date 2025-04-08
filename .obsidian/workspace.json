@@ -4,21 +4,17 @@
     "type": "split",
     "children": [
       {
-        "id": "6f1cd001d214d5cc",
+        "id": "68355814fffbaddf",
         "type": "tabs",
         "children": [
           {
-            "id": "d9e2db272e125706",
+            "id": "b99d9aa6dd85e569",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Terzo anno/Amministrazione di sistema/Print server.md",
-                "mode": "source",
-                "source": false
-              },
+              "type": "empty",
+              "state": {},
               "icon": "lucide-file",
-              "title": "Print server"
+              "title": "New tab"
             }
           }
         ]
@@ -78,8 +74,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 350.5124969482422,
-    "collapsed": true
+    "width": 350.5124969482422
   },
   "right": {
     "id": "282a9548711da6a0",
@@ -162,10 +157,14 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "d9e2db272e125706",
+  "active": "b99d9aa6dd85e569",
   "lastOpenFiles": [
-    "Terzo anno/Amministrazione di sistema/Database server.md",
+    "Terzo anno/Amministrazione di sistema/Firewall.md",
+    "Terzo anno/Reti di calcolatori/Protocolli/IPv4.md",
+    "Terzo anno/Sicurezza/System and network security/Firewalls - netfilter.md",
+    "Terzo anno/Reti di calcolatori/Sicurezza/HMAC.md",
     "Terzo anno/Amministrazione di sistema/Print server.md",
+    "Terzo anno/Amministrazione di sistema/Database server.md",
     "Terzo anno/Reti di calcolatori/Protocolli/HTTP.md",
     "Terzo anno/Amministrazione di sistema/Web/Nginx.md",
     "Terzo anno/Amministrazione di sistema/Web/Web server.md",
@@ -195,11 +194,7 @@
     "Terzo anno/Amministrazione di sistema/Gestione di utenti e processi.md",
     "Terzo anno/Sicurezza/System and network security/Unix access control.md",
     "Secondo anno/Sistemi operativi/Mod. 1/File systems.md",
-    "Terzo anno/Amministrazione di sistema/Partizionamento.md",
     "Terzo anno/Amministrazione di sistema/Images/LVM.png",
-    "Terzo anno/Amministrazione di sistema/Filesystems.md",
-    "Terzo anno/Amministrazione di sistema/NAS e SAN.md",
-    "Terzo anno/Amministrazione di sistema/Virtualizzazione.md",
     "Terzo anno/Amministrazione di sistema/Images/Rack.png",
     "Calcolo 1/Images/Pasted image 20250311173500.png",
     "Terzo anno/Amministrazione di sistema/Images/RAID 0.png",
