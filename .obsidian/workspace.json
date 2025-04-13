@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "68355814fffbaddf",
+        "id": "1749761c2f06f25e",
         "type": "tabs",
         "children": [
           {
-            "id": "b99d9aa6dd85e569",
+            "id": "5a23e361b1cf00ec",
             "type": "leaf",
             "state": {
               "type": "empty",
@@ -74,7 +74,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 350.5124969482422
+    "width": 350.5124969482422,
+    "collapsed": true
   },
   "right": {
     "id": "282a9548711da6a0",
@@ -157,8 +158,10 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "b99d9aa6dd85e569",
+  "active": "5a23e361b1cf00ec",
   "lastOpenFiles": [
+    "Terzo anno/Amministrazione di sistema/Docker.md",
+    "Secondo anno/Basi di dati/Mod. 2/NoSQL.md",
     "Terzo anno/Amministrazione di sistema/Firewall.md",
     "Terzo anno/Reti di calcolatori/Protocolli/IPv4.md",
     "Terzo anno/Sicurezza/System and network security/Firewalls - netfilter.md",
@@ -192,8 +195,6 @@
     "Terzo anno/Amministrazione di sistema/Images/Cron.png",
     "Terzo anno/Reti di calcolatori/Protocolli/TCP.md",
     "Terzo anno/Amministrazione di sistema/Gestione di utenti e processi.md",
-    "Terzo anno/Sicurezza/System and network security/Unix access control.md",
-    "Secondo anno/Sistemi operativi/Mod. 1/File systems.md",
     "Terzo anno/Amministrazione di sistema/Images/LVM.png",
     "Terzo anno/Amministrazione di sistema/Images/Rack.png",
     "Calcolo 1/Images/Pasted image 20250311173500.png",
