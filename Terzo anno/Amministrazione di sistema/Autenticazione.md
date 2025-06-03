@@ -3,7 +3,7 @@ Per **autenticazione** si intende identificare un utente, mentre per **autorizza
 I sistemi Unix utilizzavano il contenuto del file `/etc/passwd` per entrambi gli scopi, ora le password (criptate) sono salvate in `/etc/shadow`, il quale non è pubblicamente leggibile.
 >La lista dei gruppi del sistema e dei relativi GID è contenuta in `/etc/group`.
 
-Ciò comporta una scarsa elasticità, ad ogni modifica dello standard dei file, era necessario modificare anche i programmi che li gestivano.
+Ciò comporta una scarsa elasticità, ad ogni modifica dello standard dei file era necessario modificare anche i programmi che li gestivano.
 
 Per ovviare a questa situazione sono nati sistemi che tramite **componenti modulari** aggiungono meccanismi di autenticazione e gestione di informazioni sugli utenti senza modificare i programmi che ne fanno uso:
 - **NSS (Name Service Switch)**: per la gestione delle informazioni sugli utenti

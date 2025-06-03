@@ -20,7 +20,7 @@ Comprende **da due a otto fili di rame** intrecciati, la categoria del cavo ne d
 #### Fibra
 Costituito da **decine o centinaia fibre di vetro (o materiale plastico)** che trasmettono impulsi di luce.
 
-Un sistema di trasmissione su fibra consiste in una **sorgente luminosa** la quale converte segnali elettrici in impulsi, la fibra e di un ricevitore che converte segnali luminosi in segnali elettrici.
+Un sistema di trasmissione su fibra consiste in una **sorgente luminosa** la quale converte segnali elettrici in impulsi, e di un ricevitore che converte segnali luminosi in segnali elettrici.
 
 #### Wi-Fi
 Viene utilizzato un **access point** collegato fisicamente alla rete via cavo che comunica con gli utenti attraverso segnali radio, i computer degli utenti devono essere dotati di una **scheda di rete**.
@@ -88,5 +88,5 @@ Alcuni indirizzi non possono essere assegnati per l'identificazione di un host i
 - **Loopback**: `127.0.0.1`
 
 ### IPv6
-Gli indirizzi IPv4 sono ancora utilizzati grazie al [[IPv4#Network Address Translation (NAT)|NAT]], altrimenti non ce ne sarebbero abbastanza per coprire tutti i dispositivi, tenere una tabella di NAT rallenta i router, questo è un problema che risolverebbe [[ICMP e IPv6#IPv6|IPv6]] in quanto non sarebbe necessario creare sotto-reti in quanto gli indirizzi disponibili sarebbero ordini di grandezza superiori.
+Gli indirizzi IPv4 sono ancora utilizzati grazie al [[IPv4#Network Address Translation (NAT)|NAT]], altrimenti non ce ne sarebbero abbastanza per coprire tutti i dispositivi, tenere una tabella di NAT rallenta i router, questo è un problema che risolverebbe [[ICMP e IPv6#IPv6|IPv6]] in quanto non sarebbe necessario creare sotto-reti dato che gli indirizzi disponibili sarebbero ordini di grandezza superiori.
 

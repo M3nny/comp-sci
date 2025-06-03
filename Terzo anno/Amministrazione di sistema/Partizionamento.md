@@ -56,7 +56,7 @@ Su **Linux** fino a pochi anni fa l'area di swap doveva essere più grande della
 Su **Windows** lo swap è gestito da `pagefile.sys`, ed i dump di memoria solitamente si trovano in `C:\Windows\System32`.
 
 ### LVM
-**Logical Volume Manager (LVM)** è un software per facilitare la gestione dello storage, l'idea di base è quella di tratta i dischi come risorse flessibili all'interno di un pool unificato detto **volume group**, ciò consente di ridimensionare lo spazio su disco dinamicamente creando dei **volumi logici**.
+**Logical Volume Manager (LVM)** è un software per facilitare la gestione dello storage, l'idea di base è quella di trattare i dischi come risorse flessibili all'interno di un pool unificato detto **volume group**, ciò consente di ridimensionare lo spazio su disco dinamicamente creando dei **volumi logici**.
 
 Se si ha bisogno di più spazio per una applicazione o servizio è possibile ridimensionare un volume logico al volo senza smontare il file system o interrompere il servizio.
 >È usato su server, database e NAS per gestire lo storage.
@@ -66,7 +66,7 @@ Se si ha bisogno di più spazio per una applicazione o servizio è possibile rid
 - **Volume Groups (VG)**: è un insieme di PV, un VG può essere visto come un grande disco virtuale composto da dischi fisici
 - **Logical Volumes (LV)**: vengono usati come partizioni dei dischi virtuali (VG)
 
-Oltre alla flessibilità, LVM consente di creare **snapshot** dei volumi, **migrare** i dati da un disco fisico ad un altro senza interruzioni, e in generale offre un **gestione centralizzata** dello storage.
+Oltre alla flessibilità, LVM consente di creare **snapshot** dei volumi, **migrare** i dati da un disco fisico ad un altro senza interruzioni, e in generale offre una **gestione centralizzata** dello storage.
 
 **Comandi**:
 ```bash
@@ -99,9 +99,9 @@ pvmove /dev/sdc2 /dev/sdb1
 >Supponendo di disporre di uno **storage da 10 TB** e **512 gb di RAM**, come partizionereste il sistema Linux con autenticazione centralizzata ed export delle Home? Per comodità si immagini di dover gestire **50 utenti**, si stima che ogni utente possa occupare al massimo **100gb di spazio**. Considerare **swap=0,25 ram, swap=0,5 ram , swap=0,75 ram**. Calcolare la swap anche con il metodo classico. **Quanti utenti può ospitare il sistema?**
 >
 >Possibile soluzione:
->- `swap` (metodo classico): $512GB\cdot 1.5$
->- `swap` ($0.5$): $512GB\cdot 0.25$
->- `/home`: $50\cdot 100GB+10\%$
+>- `swap` (metodo classico): $512GB\cdot 1.5 = 768GB$
+>- `swap` ($0.5$): $512GB\cdot 0.25=128GB$
+>- `/home`: $50\cdot 100GB+10\%=5.5TB$
 >- `/`: $500GB$
 >- `/var`: $1TB$
 >- `/var/log`: $500GB$

@@ -198,8 +198,8 @@ $IPTABLES -A FORWARD -m state --state RELATED,ESTABLISHED -j ACCEPT
 >
 >**Data la politica `iptables -P INPUT -j DROP`, realizzare delle regole iptables che permettano l’accesso a http e https per un web server**
 >```bash
->iptables - A input -p tcp --dport 80 -j ACCEPT
->iptables - A input -p tcp --dport 443 -j ACCEPT
+>iptables -A input -p tcp --dport 80 -j ACCEPT
+>iptables -A input -p tcp --dport 443 -j ACCEPT
 >```
 >---
 >**Supporre di essere amministratore di un firewall la cui politica di default sulla catena di FORWARD è: `iptables -P FORWARD DROP`.**

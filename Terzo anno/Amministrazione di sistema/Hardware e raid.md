@@ -5,7 +5,7 @@ Le **memorie centrali** contengono un numero limitato di informazioni e si divid
 - **ROM**: contiene dati in sola lettura, tra cui il BIOS
 - **Cache**: mantiene i dati che verranno usati a breve dalla CPU oppure quelli che sono stati usati da poco
 
-Le **memorie di massa** hanno lo scopo di **conservare i programmi in modo permanente**, esse possono essere interne se presenti dentro al case, esterne altrimenti, esse si presentano in vari formati, tra cui: floppy disk, hard disk e SSD.
+Le **memorie di massa** hanno lo scopo di **conservare i programmi in modo permanente**, esse possono essere interne se presenti dentro al case, esterne altrimenti, inoltre si presentano in vari formati, tra cui: floppy disk, hard disk e SSD.
 
 A differenza di un PC, <u>in un server sono ridondati più componenti possibili</u> (e.g. più alimentatori), questo per garantire la massima **resilienza** in caso di guasti.
 
@@ -33,7 +33,7 @@ Un **RAID** rappresenta un'astrazione che, dato un gruppo di **dischi di solito 
 
 Risolve problemi specifici con un occhio al costo:
 - **Capacità**: è possibile sommare la capacità di vari dischi
-- **Sicurezza**: permette di avere dischi ridondati (**MIrroring**) o **controlli di parità** sui dati
+- **Sicurezza**: permette di avere dischi ridondati (**Mirroring**) o **controlli di parità** sui dati
 - **Velocità**: aumenta le performance distribuendo i dati sui vari dischi (**Stripping**) permettendo l'accesso parallelo ai dati in lettura
 
 Un RAID può essere di tipo:

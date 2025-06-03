@@ -48,7 +48,6 @@ Basato su File Allocation Table (FAT), rende facile la creazione di driver.
 **NTFS**
 Sviluppato da microsoft, si basa sulla Master File (allocation) Table, ed è journaled.
 
-
 **exFAT o FAT64**
 Versione estesa di FAT, pensato per memorie flash, permette di memorizzare più file (anche più grandi) rispetto a FAT, inoltre possiede il controllo degli accessi e ha prestazioni migliori.
 

@@ -1,4 +1,4 @@
-il **World Wide Web** è utilizzato per scambiare documenti ipertestuali multimediali sfruttando una grande WAN.
+Il **World Wide Web** è utilizzato per scambiare documenti ipertestuali multimediali sfruttando una grande WAN.
 
 La prima versione del protocollo [[HTTP]] consentiva ad un client di richiedere <u>una singola risorsa al server durante una sessione</u> (connessione).
 

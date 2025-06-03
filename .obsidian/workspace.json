@@ -4,17 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "1749761c2f06f25e",
+        "id": "af525214d5b29c80",
         "type": "tabs",
         "children": [
           {
-            "id": "5a23e361b1cf00ec",
+            "id": "f6ec0ccb1a2a09cf",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "Terzo anno/Amministrazione di sistema/Posta elettronica.md",
+                "mode": "source",
+                "source": false
+              },
               "icon": "lucide-file",
-              "title": "New tab"
+              "title": "Posta elettronica"
             }
           }
         ]
@@ -49,7 +53,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "path:\"Terzo anno/Amministrazione di sistema\"  dns",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -74,8 +78,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 350.5124969482422,
-    "collapsed": true
+    "width": 350.5124969482422
   },
   "right": {
     "id": "282a9548711da6a0",
@@ -158,47 +161,47 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "5a23e361b1cf00ec",
+  "active": "f6ec0ccb1a2a09cf",
   "lastOpenFiles": [
-    "Terzo anno/Amministrazione di sistema/Docker.md",
-    "Secondo anno/Basi di dati/Mod. 2/NoSQL.md",
-    "Terzo anno/Amministrazione di sistema/Firewall.md",
-    "Terzo anno/Reti di calcolatori/Protocolli/IPv4.md",
-    "Terzo anno/Sicurezza/System and network security/Firewalls - netfilter.md",
-    "Terzo anno/Reti di calcolatori/Sicurezza/HMAC.md",
-    "Terzo anno/Amministrazione di sistema/Print server.md",
-    "Terzo anno/Amministrazione di sistema/Database server.md",
-    "Terzo anno/Reti di calcolatori/Protocolli/HTTP.md",
-    "Terzo anno/Amministrazione di sistema/Web/Nginx.md",
+    "Terzo anno/Amministrazione di sistema/Autenticazione.md",
+    "Terzo anno/Amministrazione di sistema/Servizi di rete.md",
+    "Terzo anno/Amministrazione di sistema/Shell.md",
+    "Terzo anno/Amministrazione di sistema/Gestione di utenti e processi.md",
+    "Terzo anno/Amministrazione di sistema/Partizionamento.md",
+    "Terzo anno/Amministrazione di sistema/Filesystems.md",
+    "Terzo anno/Amministrazione di sistema/Cloud.md",
+    "Terzo anno/Amministrazione di sistema/Virtualizzazione.md",
+    "Terzo anno/Amministrazione di sistema/NAS e SAN.md",
+    "Terzo anno/Amministrazione di sistema/Networking.md",
+    "Terzo anno/Amministrazione di sistema/Sala server.md",
+    "Terzo anno/Amministrazione di sistema/Hardware e raid.md",
+    "Terzo anno/Amministrazione di sistema/Introduzione.md",
+    "Terzo anno/DOMANDE.md",
+    "SAMBA PROGETTO.md",
     "Terzo anno/Amministrazione di sistema/Web/Web server.md",
     "Terzo anno/Amministrazione di sistema/Web/IIS.md",
-    "Terzo anno/Amministrazione di sistema/Web",
-    "Terzo anno/Amministrazione di sistema/Autenticazione.md",
-    "Terzo anno/Amministrazione di sistema/Images/Apache core.png",
+    "Terzo anno/Amministrazione di sistema/Posta elettronica.md",
+    "Terzo anno/Amministrazione di sistema/Web/Nginx.md",
+    "Terzo anno/Amministrazione di sistema/Docker.md",
+    "Terzo anno/Amministrazione di sistema/Database server.md",
+    "Terzo anno/Amministrazione di sistema/Filesystems distribuiti.md",
+    "Terzo anno/Amministrazione di sistema/Backup.md",
+    "Terzo anno/Amministrazione di sistema/Firewall.md",
+    "Terzo anno/Reti di calcolatori/Protocolli/Ethernet.md",
+    "Calcolo 1/Images/Pasted image 20250522122239.png",
+    "Calcolo 1/Images/Pasted image 20250522120450.png",
     "Calcolo 1/Images",
     "Calcolo 1",
-    "Terzo anno/Amministrazione di sistema/Cloud.md",
-    "Terzo anno/Amministrazione di sistema/Backup.md",
-    "Terzo anno/Amministrazione di sistema/Filesystems distribuiti.md",
-    "Untitled.md",
-    "Terzo anno/Amministrazione di sistema/Shell.md",
-    "Terzo anno/Amministrazione di sistema/Posta elettronica.md",
-    "spamhaus.org.md",
-    "Terzo anno/Reti di calcolatori/Protocolli/SMTP.md",
-    "Terzo anno/Reti di calcolatori/Protocolli/TLS.md",
+    "Terzo anno/Amministrazione di sistema/Print server.md",
+    "Calcolo 1/Images/Pasted Image 20250428212703_101.jpg",
+    "Terzo anno/Amministrazione di sistema/Web",
+    "Terzo anno/Amministrazione di sistema/Images/Apache core.png",
     "Terzo anno/Amministrazione di sistema/Images/Flusso di posta.png",
     "Terzo anno/Amministrazione di sistema/Images/Kerberos.png",
     "Terzo anno/Amministrazione di sistema/Images/DIT.png",
-    "Terzo anno/Amministrazione di sistema/Servizi di rete.md",
-    "Terzo anno/Reti di calcolatori/Protocolli/DNS.md",
     "Terzo anno/Amministrazione di sistema/Images/RAID 1.png",
     "Terzo anno/Amministrazione di sistema/Images/Cron.png",
-    "Terzo anno/Reti di calcolatori/Protocolli/TCP.md",
-    "Terzo anno/Amministrazione di sistema/Gestione di utenti e processi.md",
     "Terzo anno/Amministrazione di sistema/Images/LVM.png",
-    "Terzo anno/Amministrazione di sistema/Images/Rack.png",
-    "Calcolo 1/Images/Pasted image 20250311173500.png",
-    "Terzo anno/Amministrazione di sistema/Images/RAID 0.png",
     "Terzo anno/Amministrazione di sistema/Images",
     "Terzo anno/Amministrazione di sistema",
     "Calcolo 1/Images/Pasted image 20250131174104.zip",
