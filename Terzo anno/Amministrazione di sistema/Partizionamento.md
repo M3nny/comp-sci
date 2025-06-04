@@ -108,7 +108,7 @@ pvmove /dev/sdc2 /dev/sdb1
 >- `/usr`: $1.5TB$
 >
 >Considerando $100GB$ ad utente e considerando $swap=\frac{ram}{2}$:
->$$NumUtenti=\frac{\text{storage-ram}}{\text{spazio per utente}}=\frac{10TB-256GB}{100GB}\simeq 100\text{ utenti}$$ 
+>$$NumUtenti=\frac{\text{storage-swap}}{\text{spazio per utente}}=\frac{10TB-256GB}{100GB}\simeq 100\text{ utenti}$$ 
 
 ### Protocollo SSH
 Il protocollo **Secure SHell (SSH)** permette di stabilire una sessione remota cifrata da riga di comando con un altro host.
@@ -118,7 +118,7 @@ ssh utente@example.com
 
 È anche possibile spedire e ricevere file da un sistema remoto con il comando `scp`, oppure tramite `sftp`.
 
-Per evitare di effettuare il login ogni volta sul host remoto si utilizza una **coppia di chiavi** (pubblica e privata) per autenticarsi, e per sbloccare le chiavi viene richiesta una **passphrase**, il che è comoda in quanto verrebbe usata la stessa per ogni host a cui ci vogliamo collegare al posto di inserire la password di ogni host remoto.
+Per evitare di effettuare il login ogni volta su un host remoto si utilizza una **coppia di chiavi** (pubblica e privata) per autenticarsi, e per sbloccare le chiavi viene richiesta una **passphrase**, il che è comoda in quanto verrebbe usata la stessa per ogni host a cui ci vogliamo collegare al posto di inserire la password di ogni host remoto.
 
 Lasciare una **passphrase vuota** è sicuramente più comodo in quanto non verrà più richiesta alcuna password o passphrase, però il furto della chiave sarebbe un grande problema.
 

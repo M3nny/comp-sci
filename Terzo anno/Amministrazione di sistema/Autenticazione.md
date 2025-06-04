@@ -12,7 +12,7 @@ Per ovviare a questa situazione sono nati sistemi che tramite **componenti modul
 ### NSS
 NSS fornisce i dati dei system database (tra cui `passwd`e `group`), le fonti dati possono essere molto variegate (e.g. mysql).
 
-Dei **moduli** di terze parti si occupano di tradurre richieste e risposte da/a database affinchè possano esser effettuate sulla fonte prescelta, come ad esempio una directory LDAP o un database SQL. 
+Dei **moduli** di terze parti si occupano di tradurre richieste e risposte da/a database affinchè possano essere effettuate sulla fonte prescelta, come ad esempio una directory LDAP o un database SQL. 
 
 Il file di configurazione è `/etc/nsswitch.conf`:
 ```

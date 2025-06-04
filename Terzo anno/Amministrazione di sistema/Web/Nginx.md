@@ -34,7 +34,7 @@ erver {
 ```
 
 ### Reverse proxy
-Un [[HTTP#Server proxy|reverse proxy]] è un server web che si intrapone tra client e server effettivo, esso reindizzerà la richiesta del client al server effettivo (fungendo da client) e poi la risposta del server farà il percorso inverso.
+Un [[HTTP#Server proxy|reverse proxy]] è un server web che si intrapone tra client e server effettivo, esso reindirizzerà la richiesta del client al server effettivo (fungendo da client) e poi la risposta del server farà il percorso inverso.
 ```
 # richiesta
 client -> reverse proxy -> server
