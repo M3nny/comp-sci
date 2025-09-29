@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Magistrale/Advanced data management/Introduction.md",
+                "file": "Magistrale/Foundations of artificial intelligence/Introduction.md",
                 "mode": "source",
                 "source": false
               },
@@ -53,7 +53,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "b alberi",
+                "query": "reti neurali",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -162,11 +162,16 @@
       "obsidian-excalidraw-plugin:New drawing": false
     }
   },
-  "active": "a1163d9af64d6878",
+  "active": "0d1350fd2c61da81",
   "lastOpenFiles": [
+    "Triennale/Terzo anno/Data and web mining/Reti neurali/Introduzione.md",
+    "Magistrale/Foundations of artificial intelligence/Introduction.md",
+    "Triennale/Terzo anno/Data and web mining/Reti neurali/Layers.md",
+    "Triennale/Terzo anno/Data and web mining/Regressione lineare.md",
+    "Magistrale/Advanced data management/Introduction.md",
+    "Magistrale/Foundations of artificial intelligence",
     "Triennale/Secondo anno/Algoritmi e strutture dati/Mod. 2/Alberi/Alberi binari di ricerca.md",
     "Triennale/Secondo anno/Basi di dati/Mod. 2/Amministrazione/Indici e viste materializzate.md",
-    "Magistrale/Advanced data management/Introduction.md",
     "Triennale/Secondo anno/Basi di dati/Mod. 1/Introduzione.md",
     "dbms.md",
     "Magistrale/Advanced data management",
@@ -194,14 +199,9 @@
     "Triennale/Terzo anno/Amministrazione di sistema/Docker.md",
     "Triennale/Terzo anno/Amministrazione di sistema/Firewall.md",
     "Triennale/Terzo anno/Amministrazione di sistema/Print server.md",
-    "Triennale/Terzo anno/Amministrazione di sistema/Database server.md",
-    "Triennale/Terzo anno/Amministrazione di sistema/Backup.md",
-    "Triennale/Terzo anno/Amministrazione di sistema/Filesystems distribuiti.md",
-    "Triennale/Terzo anno/Amministrazione di sistema/Autenticazione.md",
     "Calcolo 1/Images/Pasted image 20250522122239.png",
     "Calcolo 1/Images/Pasted image 20250522120450.png",
     "Calcolo 1/Images",
-    "Calcolo 1",
     "Calcolo 1/Images/Pasted Image 20250428212703_101.jpg",
     "Triennale/Terzo anno/Amministrazione di sistema/Images/Apache core.png",
     "Triennale/Terzo anno/Amministrazione di sistema/Images/Flusso di posta.png",
