@@ -4,67 +4,38 @@
     "type": "split",
     "children": [
       {
-        "id": "20791fcd87322e49",
+        "id": "7da65fffa345089a",
         "type": "tabs",
         "children": [
           {
-            "id": "02f82b9d77dd8f8f",
+            "id": "c5efd202c4f84c09",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Triennale/Secondo anno/Algoritmi e strutture dati/Mod. 2/Alberi/Visite.md",
+                "file": "Magistrale/Advanced data management/00 - Introduction.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Visite"
+              "title": "00 - Introduction"
             }
           },
           {
-            "id": "5659896e0f033087",
+            "id": "6ec3011988628df9",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Magistrale/Foundations of artificial intelligence/01 - Blind search.md",
+                "file": "Triennale/Secondo anno/Basi di dati/Mod. 1/Introduzione.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "01 - Blind search"
-            }
-          },
-          {
-            "id": "fc5e4f0b3c343382",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Triennale/Secondo anno/Algoritmi e strutture dati/Mod. 2/Alberi/Visite.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Visite"
-            }
-          },
-          {
-            "id": "1a1d40379c0486bc",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Triennale/Secondo anno/Algoritmi e strutture dati/Mod. 2/Alberi/Cos'è un albero.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Cos'è un albero"
+              "title": "Introduzione"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -96,7 +67,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "\"albero completo\"",
+                "query": "acid",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -121,8 +92,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 350.5124969482422,
-    "collapsed": true
+    "width": 350.5124969482422
   },
   "right": {
     "id": "282a9548711da6a0",
@@ -206,15 +176,19 @@
       "obsidian-excalidraw-plugin:New drawing": false
     }
   },
-  "active": "5659896e0f033087",
+  "active": "c5efd202c4f84c09",
   "lastOpenFiles": [
+    "Triennale/Secondo anno/Basi di dati/Mod. 1/Introduzione.md",
+    "Magistrale/Advanced data management/00 - Introduction.md",
+    "Triennale/Secondo anno/Basi di dati/Mod. 1/Linguaggi relazionali.md",
+    "Nuovo Text Document.txt",
+    "Triennale/Secondo anno/Algoritmi e strutture dati/Mod. 2/Alberi/Cos'è un albero.md",
     "Triennale/Secondo anno/Algoritmi e strutture dati/Mod. 2/Alberi/Visite.md",
     "Magistrale/Foundations of artificial intelligence/01 - Blind search.md",
     "Magistrale/Foundations of artificial intelligence/Images",
     "Magistrale/Foundations of artificial intelligence/Images/Average nodes to explore BFS.png",
     "Calcolo 1/Images",
     "Calcolo 1",
-    "Triennale/Secondo anno/Algoritmi e strutture dati/Mod. 2/Alberi/Cos'è un albero.md",
     "Untitled.base",
     "Triennale/Secondo anno/Algoritmi e strutture dati/Mod. 2/Alberi/Alberi binari di ricerca.md",
     "Triennale/Secondo anno/Algoritmi e strutture dati/Mod. 1/Alberi/Minimum Spanning Tree.md",
@@ -226,10 +200,8 @@
     "Triennale/Terzo anno/Data and web mining/Reti neurali/Introduzione.md",
     "Triennale/Terzo anno/Data and web mining/Reti neurali/Layers.md",
     "Triennale/Terzo anno/Data and web mining/Regressione lineare.md",
-    "Magistrale/Advanced data management/00 - Introduction.md",
     "Magistrale/Foundations of artificial intelligence",
     "Triennale/Secondo anno/Basi di dati/Mod. 2/Amministrazione/Indici e viste materializzate.md",
-    "Triennale/Secondo anno/Basi di dati/Mod. 1/Introduzione.md",
     "dbms.md",
     "Magistrale/Advanced data management",
     "Triennale/Primo anno/Secondo semestre/Architettura degli elaboratori mod. 2/ARM ISA/Istruzioni logico-aritmetiche.md",
@@ -240,7 +212,6 @@
     "Master",
     "Triennale",
     "Excalidraw/Drawing 2025-09-21 12.37.01.excalidraw.md",
-    "Untitled 1.base",
     "Triennale/Terzo anno/Sicurezza/Web security/Client/Web security.md",
     "Triennale/Terzo anno/Sicurezza/Program analysis/Analisi statica e dinamica.md",
     "Triennale/Terzo anno/Amministrazione di sistema/Web/Nginx.md",
