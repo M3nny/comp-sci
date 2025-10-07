@@ -4,21 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "b996bb02065ae61f",
+        "id": "2ad7ca0404ffb9c1",
         "type": "tabs",
         "children": [
           {
-            "id": "4d99e58c42013b5c",
+            "id": "113c83f9aa39141c",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Magistrale/Foundations of artificial intelligence/02 - Heuristic search.md",
+                "file": "Magistrale/Foundations of machine learning/00 - Information and inference.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "02 - Heuristic search"
+              "title": "00 - Information and inference"
             }
           }
         ]
@@ -162,10 +162,25 @@
       "obsidian-excalidraw-plugin:New drawing": false
     }
   },
-  "active": "4d99e58c42013b5c",
+  "active": "a1163d9af64d6878",
   "lastOpenFiles": [
-    "Magistrale/Foundations of artificial intelligence/01 - Blind search.md",
+    "Triennale/Secondo anno/Probabilità e statistica/Probabilità condizionata.md",
+    "Magistrale/Foundations of machine learning/00 - Information and inference.md",
+    "Triennale/Secondo anno/Probabilità e statistica/Congiunte.md",
+    "Triennale/Secondo anno/Probabilità e statistica/Costanti caratteristiche.md",
+    "Triennale/Secondo anno/Probabilità e statistica/Formulario.md",
+    "Triennale/Secondo anno/Probabilità e statistica/Probabilità elementare.md",
+    "Triennale/Secondo anno/Probabilità e statistica/Variabili casuali.md",
+    "Magistrale/Foundations of machine learning/Images",
+    "Magistrale/Foundations of machine learning/Images/Communication system.png",
+    "Calcolo 1/Images",
+    "Calcolo 1",
+    "Triennale/Terzo anno/Ricerca operativa/Definizioni generali.md",
+    "Magistrale/Foundations of machine learning",
+    "Magistrale/Calculus and optimization/00 - Introduction.md",
     "Magistrale/Foundations of artificial intelligence/02 - Heuristic search.md",
+    "Magistrale/Calculus and optimization",
+    "Magistrale/Foundations of artificial intelligence/01 - Blind search.md",
     "Triennale/Secondo anno/Algoritmi e strutture dati/Mod. 1/Grafi/Connettività e aciclicità.md",
     "Triennale/Terzo anno/Ricerca operativa/Branch & Bound.md",
     "Triennale/Secondo anno/Algoritmi e strutture dati/Mod. 1/Cammini minimi/Introduzione.md",
@@ -183,27 +198,13 @@
     "Triennale/Secondo anno/Algoritmi e strutture dati/Mod. 2/Alberi/Visite.md",
     "Magistrale/Foundations of artificial intelligence/Images",
     "Magistrale/Foundations of artificial intelligence/Images/Average nodes to explore BFS.png",
-    "Calcolo 1/Images",
-    "Calcolo 1",
     "Untitled.base",
     "Triennale/Secondo anno/Algoritmi e strutture dati/Mod. 2/Alberi/Alberi binari di ricerca.md",
     "Triennale/Secondo anno/Algoritmi e strutture dati/Mod. 1/Alberi/Minimum Spanning Tree.md",
     "Triennale/Secondo anno/Algoritmi e strutture dati/Mod. 1/Alberi/Generic-MST.md",
     "Triennale/Secondo anno/Algoritmi e strutture dati/Mod. 1/Alberi/Kruskal.md",
     "Triennale/Secondo anno/Algoritmi e strutture dati/Mod. 1/Grafi/Matrici.md",
-    "Triennale/Terzo anno/Data and web mining/Reti neurali/Introduzione.md",
-    "Triennale/Terzo anno/Data and web mining/Reti neurali/Layers.md",
-    "Triennale/Terzo anno/Data and web mining/Regressione lineare.md",
     "Magistrale/Foundations of artificial intelligence",
-    "Triennale/Secondo anno/Basi di dati/Mod. 2/Amministrazione/Indici e viste materializzate.md",
-    "dbms.md",
-    "Magistrale/Advanced data management",
-    "Triennale/Primo anno/Secondo semestre/Architettura degli elaboratori mod. 2/ARM ISA/Istruzioni logico-aritmetiche.md",
-    "Triennale/Primo anno/Secondo semestre/Architettura degli elaboratori mod. 2/ARM ISA/Branches.md",
-    "Master/sd.md",
-    "Magistrale",
-    "Untitled.md",
-    "Master",
     "Calcolo 1/Images/Pasted image 20250522122239.png",
     "Calcolo 1/Images/Pasted image 20250522120450.png",
     "Calcolo 1/Images/Pasted Image 20250428212703_101.jpg",
