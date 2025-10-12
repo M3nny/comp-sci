@@ -52,3 +52,12 @@ For the reasons listed above, new database models emerged in order to handle dat
 This "new" movement does not strictly adhere to the ACID properties, but can cope with **schema evolution** or handle **schemaless** data, and can also support data distribution across servers by design.
 >See [[NoSQL|NoSQL databases]].
 
+Instead of ACID properties, nosql databases, follow the **BaSE** properties:
+- **Ba (Badically Available)**: the system guarantees availability, by always responding to requests even if some nodes are down or out of sync
+- **S (Soft state)**: the system's state can change over time, even without input, because data is replicated across nodes
+- **E (Eventually consistent)**: given enough time without updates, all nodes will converge to the same consistent state
+
+>[!Tip] ACID vs BaSE
+>- **ACID** = Always correct, even if slow
+>- **BASE** = Always available, even if temporarily inconsistent
+

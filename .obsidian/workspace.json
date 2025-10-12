@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Magistrale/Foundations of machine learning/00 - Information and inference.md",
+                "file": "Magistrale/Advanced data management/01 - Key value and document stores.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "00 - Information and inference"
+              "title": "01 - Key value and document stores"
             }
           }
         ]
@@ -40,7 +40,7 @@
             "state": {
               "type": "file-explorer",
               "state": {
-                "sortOrder": "byCreatedTimeReverse",
+                "sortOrder": "alphabetical",
                 "autoReveal": false
               },
               "icon": "lucide-folder-closed",
@@ -164,8 +164,16 @@
   },
   "active": "a1163d9af64d6878",
   "lastOpenFiles": [
-    "Triennale/Secondo anno/Probabilità e statistica/Probabilità condizionata.md",
+    "Magistrale/Advanced data management/Images/Optimized MapReduce.png",
+    "Magistrale/Advanced data management/Images",
+    "Magistrale/Advanced data management/Images/MapReduce.png",
+    "Calcolo 1/Images",
+    "Calcolo 1",
+    "Magistrale/Advanced data management/02 - MongoDB.md",
+    "Magistrale/Advanced data management/01 - Key value and document stores.md",
+    "Magistrale/Advanced data management/00 - Introduction.md",
     "Magistrale/Foundations of machine learning/00 - Information and inference.md",
+    "Triennale/Secondo anno/Probabilità e statistica/Probabilità condizionata.md",
     "Triennale/Secondo anno/Probabilità e statistica/Congiunte.md",
     "Triennale/Secondo anno/Probabilità e statistica/Costanti caratteristiche.md",
     "Triennale/Secondo anno/Probabilità e statistica/Formulario.md",
@@ -173,8 +181,6 @@
     "Triennale/Secondo anno/Probabilità e statistica/Variabili casuali.md",
     "Magistrale/Foundations of machine learning/Images",
     "Magistrale/Foundations of machine learning/Images/Communication system.png",
-    "Calcolo 1/Images",
-    "Calcolo 1",
     "Triennale/Terzo anno/Ricerca operativa/Definizioni generali.md",
     "Magistrale/Foundations of machine learning",
     "Magistrale/Calculus and optimization/00 - Introduction.md",
@@ -191,7 +197,6 @@
     "Excalidraw",
     "Triennale/Secondo anno/Basi di dati/Mod. 1/Introduzione.md",
     "Magistrale/Foundations of artificial intelligence/00 - Introduction.md",
-    "Magistrale/Advanced data management/00 - Introduction.md",
     "Triennale/Secondo anno/Basi di dati/Mod. 1/Linguaggi relazionali.md",
     "Nuovo Text Document.txt",
     "Triennale/Secondo anno/Algoritmi e strutture dati/Mod. 2/Alberi/Cos'è un albero.md",
@@ -201,15 +206,10 @@
     "Untitled.base",
     "Triennale/Secondo anno/Algoritmi e strutture dati/Mod. 2/Alberi/Alberi binari di ricerca.md",
     "Triennale/Secondo anno/Algoritmi e strutture dati/Mod. 1/Alberi/Minimum Spanning Tree.md",
-    "Triennale/Secondo anno/Algoritmi e strutture dati/Mod. 1/Alberi/Generic-MST.md",
-    "Triennale/Secondo anno/Algoritmi e strutture dati/Mod. 1/Alberi/Kruskal.md",
-    "Triennale/Secondo anno/Algoritmi e strutture dati/Mod. 1/Grafi/Matrici.md",
-    "Magistrale/Foundations of artificial intelligence",
     "Calcolo 1/Images/Pasted image 20250522122239.png",
     "Calcolo 1/Images/Pasted image 20250522120450.png",
     "Calcolo 1/Images/Pasted Image 20250428212703_101.jpg",
     "Triennale/Terzo anno/Amministrazione di sistema/Images/Apache core.png",
-    "Triennale/Terzo anno/Amministrazione di sistema/Images/Flusso di posta.png",
     "asdasdasd.canvas"
   ]
 }
