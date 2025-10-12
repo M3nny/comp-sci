@@ -4,21 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "2ad7ca0404ffb9c1",
+        "id": "a1f7c4fbaf52ee39",
         "type": "tabs",
         "children": [
           {
-            "id": "113c83f9aa39141c",
+            "id": "8ddbd949e1820531",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Magistrale/Advanced data management/01 - Key value and document stores.md",
+                "file": "Magistrale/Foundations of artificial intelligence/03 - Adversarial search.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "01 - Key value and document stores"
+              "title": "03 - Adversarial search"
             }
           }
         ]
@@ -162,15 +162,19 @@
       "obsidian-excalidraw-plugin:New drawing": false
     }
   },
-  "active": "a1163d9af64d6878",
+  "active": "8ddbd949e1820531",
   "lastOpenFiles": [
+    "Magistrale/Foundations of artificial intelligence/Images/Alpha-beta pruning.png",
+    "Magistrale/Foundations of artificial intelligence/03 - Adversarial search.md",
+    "Calcolo 1/Images/Pasted image 20251012200207.png",
+    "Magistrale/Foundations of artificial intelligence/Images/Minimax.png",
+    "Magistrale/Advanced data management/01 - Key value and document stores.md",
     "Magistrale/Advanced data management/Images/Optimized MapReduce.png",
     "Magistrale/Advanced data management/Images",
     "Magistrale/Advanced data management/Images/MapReduce.png",
     "Calcolo 1/Images",
     "Calcolo 1",
     "Magistrale/Advanced data management/02 - MongoDB.md",
-    "Magistrale/Advanced data management/01 - Key value and document stores.md",
     "Magistrale/Advanced data management/00 - Introduction.md",
     "Magistrale/Foundations of machine learning/00 - Information and inference.md",
     "Triennale/Secondo anno/Probabilità e statistica/Probabilità condizionata.md",
@@ -205,11 +209,6 @@
     "Magistrale/Foundations of artificial intelligence/Images/Average nodes to explore BFS.png",
     "Untitled.base",
     "Triennale/Secondo anno/Algoritmi e strutture dati/Mod. 2/Alberi/Alberi binari di ricerca.md",
-    "Triennale/Secondo anno/Algoritmi e strutture dati/Mod. 1/Alberi/Minimum Spanning Tree.md",
-    "Calcolo 1/Images/Pasted image 20250522122239.png",
-    "Calcolo 1/Images/Pasted image 20250522120450.png",
-    "Calcolo 1/Images/Pasted Image 20250428212703_101.jpg",
-    "Triennale/Terzo anno/Amministrazione di sistema/Images/Apache core.png",
     "asdasdasd.canvas"
   ]
 }
