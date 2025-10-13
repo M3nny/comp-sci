@@ -3,7 +3,7 @@
   "spellcheckLanguages": null,
   "fileSortOrder": "byModifiedTimeReverse",
   "promptDelete": false,
-  "attachmentFolderPath": "Calcolo 1/Images",
+  "attachmentFolderPath": "./Images",
   "vimMode": false,
   "alwaysUpdateLinks": true,
   "showUnsupportedFiles": false,

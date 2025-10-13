@@ -131,5 +131,5 @@ $$L(C)=\sum_{x\in\mathscr{X}}p(x)l(x)$$
 >- $P(X=3)=\frac{1}{8}$, codeword $C(3)=110$
 >- $P(X=4)=\frac{1}{8}$, codeword $C(4)=111$
 >$$L(C)=\frac{1}{2}\cdot1+ \frac{1}{4}\cdot2+ \frac{1}{8}\cdot3+ \frac{1}{8}\cdot3=1.75$$
->Note that $H(X)=1.75=L(C)$, therefore the code is optimal because $H(X)$ indicates the theoretical minimum average number of symbols needed per source symbol.
+>Note that $H(X)=1.75=L(C)$, therefore the code is optimal since $H(X)$ indicates the theoretical minimum average number of symbols needed per source symbol (seen later).
 
