@@ -4,39 +4,24 @@
     "type": "split",
     "children": [
       {
-        "id": "a1f7c4fbaf52ee39",
+        "id": "ac8786829bd9ff0d",
         "type": "tabs",
         "children": [
           {
-            "id": "8ddbd949e1820531",
+            "id": "851beeb2425d9c5a",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Magistrale/Foundations of artificial intelligence/05 - Constraint satisfaction.md",
+                "file": "Magistrale/Advanced data management/02 - MongoDB.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "05 - Constraint satisfaction"
-            }
-          },
-          {
-            "id": "f441624f55cd301c",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Magistrale/Foundations of artificial intelligence/05 - Constraint satisfaction.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "05 - Constraint satisfaction"
+              "title": "02 - MongoDB"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -177,8 +162,10 @@
       "obsidian-excalidraw-plugin:New drawing": false
     }
   },
-  "active": "a1163d9af64d6878",
+  "active": "851beeb2425d9c5a",
   "lastOpenFiles": [
+    "Magistrale/Advanced data management/01 - Key value and document stores.md",
+    "Magistrale/Advanced data management/02 - MongoDB.md",
     "Magistrale/Foundations of artificial intelligence/Images/Backtracking.png",
     "Excalidraw/Drawing 2025-10-14 16.22.07.excalidraw.md",
     "Magistrale/Foundations of artificial intelligence/Images/Arc consistent but no solutions.svg",
@@ -206,10 +193,7 @@
     "Magistrale/Foundations of artificial intelligence/00 - Introduction.md",
     "Magistrale/Foundations of artificial intelligence/Images/Alpha-beta pruning.png",
     "Calcolo 1/Images/Pasted image 20251012200207.png",
-    "Magistrale/Foundations of artificial intelligence/Images/Minimax.png",
-    "Magistrale/Advanced data management/01 - Key value and document stores.md",
     "Magistrale/Advanced data management/Images",
-    "Magistrale/Advanced data management/02 - MongoDB.md",
     "Magistrale/Advanced data management/00 - Introduction.md",
     "Triennale/Secondo anno/Probabilità e statistica/Probabilità condizionata.md",
     "Triennale/Secondo anno/Probabilità e statistica/Congiunte.md",

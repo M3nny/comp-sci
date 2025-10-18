@@ -31,7 +31,7 @@ Below are some basic [mongoose](https://www.mongodb.com/docs/drivers/node/curren
 **Delete**
 - `db.collection.remove(<query>, {...document})`: removes the documents that match the query
 
-#### Example case
+##### Example case
 We want to store locations, users, manage users logins into these locations and be able to check-in users in the locations.
 
 A location may be structured as:
@@ -84,7 +84,7 @@ db.locations.update(
 ```
 
 We can model users as:
-```json
+```ts
 user1 = {
 	name: "nosh"
 	email: "nosh@10gen.com",
@@ -103,3 +103,117 @@ checkin_array = db.users.findOne(
 db.location.find({_id:{$in: checkin_array}}) 
 ```
 
+---
+### Aggregation pipelines
+An **aggregation pipeline** in MongoDB is a series of operations to analyze data within a collection, we can think of it as the equivalent for the `join` and `goup by` operator in SQL, but more flexible.
+
+Common aggregation stages are:
+- **Match**: filters documents (like `where` in SQL)
+- **Project**: selects specific fields or computes new ones
+- **Group**: groups documents and performs aggregation (i.e. `sum`, `avg`)
+- **Lookup**: performs joins with another collection
+- **Unwind**: deconstructs arrays into individual documents
+```ts
+db.orders.aggregate([
+	{$match: { status: "A" }},
+	{$group: { _id: "$cust_id", total: { $sum: "$amount" }}}
+])
+```
+
+#### Window aggregation
+In **window aggregates** we can perform calculation over a sliding range of documents.
+
+Let's consider the following example:
+```ts
+db.cakeSales.aggregate([
+    {
+        $setWindowFields: {
+            partitionBy: "$state",
+            sortBy: { orderDate: 1 },
+    		output: {
+                cumulativeQuantityForState: {
+    			  $sum: "$quantity",
+    			  window: { documents: ["unbounded", "current"] }
+    			}
+            }
+        }
+	}
+])
+```
+- `$setWindowFields`: adds a new computed field based on window functions
+- `$partitionBy`: splits data into groups by state
+- `sortBy`: within each state, documents are sorted chronologically by `orderDate`
+- `output`: defines the new field that we are creating, inside that we are summing the quantity field, and the window starts from the first document, and goes up to the current document that we are processing
+
+Visually the operation is computed as it follows:
+```json
+// Input data
+[
+	{ state: "CA", orderDate: ISODate("2023-01-01"), quantity: 5 },
+	{ state: "CA", orderDate: ISODate("2023-01-02"), quantity: 7 },
+	{ state: "CA", orderDate: ISODate("2023-01-03"), quantity: 3 },
+	{ state: "NY", orderDate: ISODate("2023-01-01"), quantity: 10 },
+	{ state: "NY", orderDate: ISODate("2023-01-03"), quantity: 2 }
+]
+
+// Processed data
+[
+	{ state: "CA", orderDate: "2023-01-01", quantity: 5, cumulativeQuantityForState: 5 },
+	{ state: "CA", orderDate: "2023-01-02", quantity: 7, cumulativeQuantityForState: 12 },
+	{ state: "CA", orderDate: "2023-01-03", quantity: 3, cumulativeQuantityForState: 15 },
+	{ state: "NY", orderDate: "2023-01-01", quantity: 10, cumulativeQuantityForState: 10 },
+	{ state: "NY", orderDate: "2023-01-03", quantity: 2, cumulativeQuantityForState: 12 }
+]
+```
+
+#### Bucket aggregation
+Unlike the window aggregation, which computes values based on a sliding window, in a **bucket aggregate** we can specify the boundaries of the aggregated computation.
+
+We can briefly say that bucket aggregates have _static ranges_, whilst window aggregates have a _dynamic range_.
+
+```ts
+db.people.aggregate([
+	{
+		$bucket: {
+			groupBy: "$age", // field to bucket
+			boundaries: [0, 18, 30, 50, 100], // bucket edges
+			default: "Unknown", // bucket for out-of-range ages
+			output: {
+				count: { $sum: 1 }, // count how many docs in each bucket
+				names: { $push: "$name" } // collect names in each bucket
+			}
+		}
+	}
+])
+```
+
+We can apply this query to the following data:
+```json
+// Input data
+[
+	{ name: "Alice", age: 17 },
+	{ name: "Bob", age: 22 },
+	{ name: "Charlie", age: 35 },
+	{ name: "Diana", age: 42 },
+	{ name: "Eve", age: 68 },
+	{ name: "Frank", age: 75 }
+]
+
+// Output data
+[
+	{ _id: 0,  count: 1, names: ["Alice"] },
+	{ _id: 18, count: 1, names: ["Bob"] },
+	{ _id: 30, count: 2, names: ["Charlie", "Diana"] },
+	{ _id: 50, count: 2, names: ["Eve", "Frank"] }
+]
+```
+
+---
+### Sharding
+In a normal database, when the requests exceed the database read capacity, it is possible to make replicas of the same database in order to scale horizontally.
+
+With **sharded deployment** it is possible to split a large dataset across multiple servers, called **shards**, in this way the data can be processed in parallel.
+
+In MongoDB it is possible to specify a **shard key**, which is a field that determines how MongoDB splits data (i.e. split by the field "region").
+
+This approach is transparent to the applications and allows to better balance incoming traffic.
