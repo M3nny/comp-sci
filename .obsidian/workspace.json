@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Magistrale/Advanced data management/DBMS internals/04 - Permanent buffers.md",
+                "file": "Magistrale/Foundations of artificial intelligence/06 - Local search.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "04 - Permanent buffers"
+              "title": "06 - Local search"
             }
           }
         ]
@@ -162,10 +162,21 @@
       "obsidian-excalidraw-plugin:New drawing": false
     }
   },
-  "active": "a1163d9af64d6878",
+  "active": "851beeb2425d9c5a",
   "lastOpenFiles": [
-    "Magistrale/Advanced data management/NoSQL databases/03 - Column stores.md",
+    "Triennale/Terzo anno/Ricerca operativa/Programmazione lineare.md",
+    "Magistrale/Foundations of artificial intelligence/06 - Local search.md",
+    "Triennale/Terzo anno/Ricerca operativa/Programmazione matematica.md",
+    "Triennale/Terzo anno/Ricerca operativa/Definizioni generali.md",
+    "Triennale/Primo anno/Secondo semestre/Calcolo 2/Funzioni a più variabili reali/Punti di massimo e minimo.md",
+    "Triennale/Terzo anno/Ricerca operativa/Branch & Bound.md",
+    "Magistrale/Foundations of artificial intelligence/Images/Mutation.png",
+    "Magistrale/Foundations of artificial intelligence/Images/Crossover.png",
+    "Magistrale/Foundations of artificial intelligence/Images/Crossover.png",
+    "Magistrale/Foundations of artificial intelligence/Images/Pasted image 20251019102033.png",
+    "Magistrale/Foundations of artificial intelligence/05 - Constraint satisfaction.md",
     "Magistrale/Advanced data management/DBMS internals/04 - Permanent buffers.md",
+    "Magistrale/Advanced data management/NoSQL databases/03 - Column stores.md",
     "Triennale/Secondo anno/Sistemi operativi/Mod. 1/Dischi.md",
     "Triennale/Terzo anno/Data and web mining/Feature selection & engineering.md",
     "Magistrale/Advanced data management/Images/Sort-merge.png",
@@ -176,7 +187,6 @@
     "Magistrale/Advanced data management/Images/Frame reference encoding.png",
     "Magistrale/Advanced data management/Images/Dictionary encoding.png",
     "Magistrale/Advanced data management/Images/Bit vector encoding.png",
-    "Magistrale/Advanced data management/Images/Run-length encoding.png",
     "Triennale/Secondo anno/Basi di dati/Mod. 2/Amministrazione/Indici e viste materializzate.md",
     "Triennale/Secondo anno/Sistemi operativi/Mod. 1/Casi di studio/Linux.md",
     "Triennale/Primo anno/Primo semestre/Architettura degli elaboratori mod. 1/4 - Memoria e circuiti sequenziali/Elementi di memoria.md",
@@ -186,15 +196,10 @@
     "Magistrale/Advanced data management/NoSQL databases/02 - MongoDB.md",
     "Magistrale/Advanced data management/NoSQL databases",
     "Magistrale/Advanced data management/NoSQL databases/01 - Key value and document stores.md",
-    "Magistrale/Foundations of artificial intelligence/Images/Backtracking.png",
     "Excalidraw/Drawing 2025-10-14 16.22.07.excalidraw.md",
-    "Magistrale/Foundations of artificial intelligence/Images/Arc consistent but no solutions.svg",
-    "Magistrale/Foundations of artificial intelligence/05 - Constraint satisfaction.md",
-    "Magistrale/Foundations of artificial intelligence/Images/Constraint satisfaction.svg",
     "Excalidraw",
     "Triennale/Secondo anno/Algoritmi e strutture dati/Mod. 1/Teoria della NP completezza.md",
     "Magistrale/Calculus and optimization/00 - Introduction.md",
-    "Triennale/Terzo anno/Ricerca operativa/Definizioni generali.md",
     "Magistrale/Foundations of machine learning/00 - Information and inference.md",
     "Magistrale/Calculus and optimization",
     "Triennale/Terzo anno/Calcolabilità e linguaggi formali/Linguaggi regolari/Espressioni regolari.md",
@@ -202,10 +207,6 @@
     "Calcolo 1/Images",
     "Calcolo 1",
     "Magistrale/Foundations of artificial intelligence/02 - Heuristic search.md",
-    "Triennale/Terzo anno/Ricerca operativa/Problemi convessi.md",
-    "Magistrale/Foundations of artificial intelligence/03 - Adversarial search.md",
-    "Magistrale/Foundations of artificial intelligence/01 - Blind search.md",
-    "Magistrale/Foundations of artificial intelligence/00 - Introduction.md",
     "Magistrale/Advanced data management/Images",
     "Magistrale/Foundations of machine learning/Images",
     "Magistrale/Foundations of machine learning",
