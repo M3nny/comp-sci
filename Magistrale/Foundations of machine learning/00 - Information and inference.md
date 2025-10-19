@@ -120,7 +120,6 @@ $$C:\mathscr{X}\to\mathscr{D}^*$$
 where $\mathscr{D}^*$ is the set of strings of symbols from a $d$-ary alphabet, where $|\mathscr{D}|=d$.
 >See the [[Espressioni regolari|regular expression]] for $\mathscr{D}^*$.
 
-
 $C(x)$ denotes the **codeword** associated to $x$ and $l(x)$ is its length.
 The **average length** $L(C)$ of a code $C$ is defined as:
 $$L(C)=\sum_{x\in\mathscr{X}}p(x)l(x)$$
@@ -132,4 +131,74 @@ $$L(C)=\sum_{x\in\mathscr{X}}p(x)l(x)$$
 >- $P(X=4)=\frac{1}{8}$, codeword $C(4)=111$
 >$$L(C)=\frac{1}{2}\cdot1+ \frac{1}{4}\cdot2+ \frac{1}{8}\cdot3+ \frac{1}{8}\cdot3=1.75$$
 >Note that $H(X)=1.75=L(C)$, therefore the code is optimal since $H(X)$ indicates the theoretical minimum average number of symbols needed per source symbol (seen later).
+
+**Classes of codes**
+- **Nonsingular**: all codewords are distinct, the term might be misleading, but it means that we can revert the mapping since each symbol has a unique codeword (i.e. injective function)
+- **Uniquely decodable**: any encoded string must have a unique decoding, this means that it is not possible to interpret a sequence of codewords as a wrong symbol
+- **Instantaneous**: no codeword is a prefix of any other codeword, this means that without looking ahead of the sequence, we can instantly identify the symbol
+
+|  X  | Singular | Nonsingular, but not uniquely decodable | Uniquely decodable, but no instantaneous | Instantaneous |
+| :-: | :------: | :-------------------------------------: | :--------------------------------------: | :-----------: |
+|  1  |    0     |                    0                    |                    10                    |       0       |
+|  2  |    0     |                   010                   |                    00                    |      10       |
+|  3  |    0     |                   01                    |                    11                    |      110      |
+|  4  |    0     |                   10                    |                   110                    |      111      |
+
+**Theorem**
+Let $C$ be an instantaneous D-ary code for a random variable $X$ with range $\mathscr{X}$ and probability distribution $p(x)$, then:
+$$L(C)\geq H_D(X)$$
+
+In words, this means that the average length of any instantaneous code cannot be smaller than the entropy, but it can be equal to the entropy if $p(x)=D^{-l(x)}$ for all $x\in\mathscr{X}$, this would mean that the probability distribution of $X$ is **D-adic** (i.e. each of the probability is equal to $D^{-n}$ for some $n$).
+
+>[!Info] D-adic distributions
+>In the previous example, the distribution was D-adic, since each probability can be expressed as an exact power of $D$ (which was $2$), namely $2^{-1}, 2^{-2}, 2^{-3}, 2^{-3}$.
+
+### Huffman coding
+Huffman coding is a lossless data compression algorithm used to minimize the average number of bits required to represent symbols in a message.
+
+More frequent symbols get shorter codes.
+It works as follows:
+1. Take the two least probable symbols in the alphabet, these two symbols will be given the longest codewords, which will have equal length, and differ only in the last digit
+2. Combine these two symbols into a single symbol, and repeat
+![[Huffman coding.png|500]]
+
+**Optimality of Huffman codes**:
+- Huffman codes are optimal and instantaneous
+- If $C_{Huffman}$ is a Huffman D-ary code for a random variable $X$, then
+$$H_D(X)\leq L(C_{Huffman})<H_D(X)+1$$
+>If the distribution is not D-adic, we know that $H_D(X)< L(C_{Huffman})$.
+
+This express how close are the Huffman codes to the theoretical lower boundary.
+
+It is also important to highlight that as we increase the number of consecutive symbols, we get better and better codes, and Shannon's **source coding theorem** predicts that the expected codeword length ($L(C)$), will converge to the entropy of $X$ as we add more consecutive symbols to the Huffman encoding.
+
+---
+## Reliable communication through unreliable channels
+A channel $\mathscr{C}$ is defined as a triplet:
+$$\mathscr{C}=(\mathscr{X},p(y|x),\mathscr{Y})$$
+Where:
+- $\mathscr{X}$ is the input alphabet
+- $\mathscr{Y}$ is the output alphabet
+- $p(y|x)$ is the forward probability distribution (i.e. how the channel may distort the input)
+
+The **capacity** of the channel $\mathscr{C}$ is defined as:
+$$C=\max_{p(x)}I(X;Y)$$
+>$\max_{p(x)}$ means we are choosing the best possible probability distribution of the input $X$ to maximize mutual information.
+
+with:
+$$0\leq C\leq\min\{\log|\mathscr{X}|,\log|\mathscr{Y}|\}$$
+>$C=0$ when $X$ and $Y$ are independent.
+
+>[!Tip] Shannon's max bandwidth theorem
+>Note that if we consider a _Gaussian noise channel_, we get the [[Livello fisico#Teorema di Shannon|Shannon's theorem]].
+
+A method to reduce errors in a channel is to use the repetition of symbols, for example we can map each symbols to 3 repetition of itself, so if the we receive $010$ we can decode it as $0$ anyway, the problem arises when the majority of bits are altered, but the probability of errors is reduced if we add more repetitions.
+
+But the transmission rate also reduces if we add more symbols.
+
+**Shannon's noisy channel coding theorem**
+If we pick a transmission rate $R<C$, there exists a sequence of codes such that the probability of error goes to zero as the code length goes to infinity.
+Conversely, if $R>C$, the probability of error cannot go to zero.
+
+In other words, the channel capacity $C$ is the maximum rate at which you can send information **reliably**.
 

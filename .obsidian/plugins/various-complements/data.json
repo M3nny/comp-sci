@@ -14,7 +14,9 @@
   "complementAutomatically": true,
   "delayMilliSeconds": 0,
   "disableSuggestionsDuringImeOn": false,
-  "insertAfterCompletion": false,
+  "disableSuggestionsInMathBlock": false,
+  "disableSuggestionsInCodeBlock": false,
+  "insertSpaceAfterCompletion": false,
   "firstCharactersDisableSuggestions": ":/^",
   "patternsToSuppressTrigger": [
     "^~~~.*",
@@ -34,6 +36,8 @@
         "hideHotkeyGuide": false
       }
     ],
+    "select with custom alias": [],
+    "select with query alias": [],
     "up": [
       {
         "modifiers": [],
@@ -63,11 +67,14 @@
   "enableCurrentFileComplement": true,
   "currentFileMinNumberOfCharacters": 1,
   "onlyComplementEnglishOnCurrentFileComplement": false,
+  "excludeCurrentFileWordPatterns": [],
   "enableCurrentVaultComplement": false,
   "currentVaultMinNumberOfCharacters": 0,
   "includeCurrentVaultPathPrefixPatterns": "",
   "excludeCurrentVaultPathPrefixPatterns": "",
+  "excludeCurrentVaultPathGlobPatterns": [],
   "includeCurrentVaultOnlyFilesUnderCurrentDirectory": false,
+  "excludeCurrentVaultWordPatterns": [],
   "enableCustomDictionaryComplement": false,
   "customDictionaryPaths": "https://raw.githubusercontent.com/first20hours/google-10000-english/master/google-10000-english-no-swears.txt",
   "columnDelimiter": "Tab",
@@ -79,6 +86,9 @@
   "enableInternalLinkComplement": false,
   "suggestInternalLinkWithAlias": false,
   "excludeInternalLinkPathPrefixPatterns": "",
+  "excludeInternalLinkPathGlobPatterns": [],
+  "excludeSelfInternalLink": false,
+  "excludeExistingInActiveFileInternalLinks": false,
   "updateInternalLinksOnSave": true,
   "insertAliasTransformedFromDisplayedInternalLink": {
     "enabled": false,
@@ -86,9 +96,14 @@
     "after": ""
   },
   "frontMatterKeyForExclusionInternalLink": "",
+  "tagsForExclusionInternalLink": [],
   "enableFrontMatterComplement": false,
   "frontMatterComplementMatchStrategy": "inherit",
   "insertCommaAfterFrontMatterCompletion": false,
+  "currentFileMinNumberOfCharactersForTrigger": 0,
+  "currentVaultMinNumberOfCharactersForTrigger": 0,
+  "customDictionaryMinNumberOfCharactersForTrigger": 0,
+  "internalLinkMinNumberOfCharactersForTrigger": 0,
   "intelligentSuggestionPrioritization": {
     "enabled": true,
     "historyFilePath": "",
@@ -97,6 +112,7 @@
   },
   "disableOnMobile": false,
   "showLogAboutPerformanceInConsole": false,
+  "insertAfterCompletion": false,
   "selectionHistoryTree": {},
   "useCommonPrefixCompletionOfSuggestion": false,
   "selectSuggestionKeys": "Tab",
