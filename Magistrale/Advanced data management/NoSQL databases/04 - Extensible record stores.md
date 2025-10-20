@@ -45,3 +45,4 @@ If we want to check the membership of an input, we just hash with the predefined
 >This approach saves a lot of space, since we only store a binary array.
 
 
+A popular column store database is [Apache Cassandra](https://cassandra.apache.org).
