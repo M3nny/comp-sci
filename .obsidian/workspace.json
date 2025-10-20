@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Magistrale/Foundations of machine learning/00 - Information and inference.md",
+                "file": "Magistrale/Advanced data management/NoSQL databases/04 - Extensible record stores.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "00 - Information and inference"
+              "title": "04 - Extensible record stores"
             }
           }
         ]
@@ -162,10 +162,14 @@
       "obsidian-excalidraw-plugin:New drawing": false
     }
   },
-  "active": "92c4c482e40806d7",
+  "active": "a1163d9af64d6878",
   "lastOpenFiles": [
-    "Triennale/Terzo anno/Reti di calcolatori/Livelli TCP/Livello fisico.md",
+    "Triennale/Secondo anno/Algoritmi e strutture dati/Mod. 2/Tabelle hash/Tabelle ad indirizzamento diretto.md",
+    "Triennale/Terzo anno/Reti di calcolatori/Sicurezza/Introduzione.md",
+    "Magistrale/Advanced data management/NoSQL databases/04 - Extensible record stores.md",
+    "Magistrale/Advanced data management/Images/Column family.png",
     "Magistrale/Foundations of machine learning/00 - Information and inference.md",
+    "Triennale/Terzo anno/Reti di calcolatori/Livelli TCP/Livello fisico.md",
     "Triennale/Terzo anno/Data and web mining/Reti neurali/Layers.md",
     "Magistrale/Foundations of machine learning/Images/Huffman coding.png",
     "Magistrale/Foundations of artificial intelligence/06 - Local search.md",
@@ -179,7 +183,7 @@
     "Magistrale/Foundations of artificial intelligence/Images/Crossover.png",
     "Magistrale/Foundations of artificial intelligence/Images/Pasted image 20251019102033.png",
     "Magistrale/Foundations of artificial intelligence/05 - Constraint satisfaction.md",
-    "Magistrale/Advanced data management/DBMS internals/04 - Permanent buffers.md",
+    "Magistrale/Advanced data management/DBMS internals/01 - Permanent buffers.md",
     "Magistrale/Advanced data management/NoSQL databases/03 - Column stores.md",
     "Triennale/Secondo anno/Sistemi operativi/Mod. 1/Dischi.md",
     "Triennale/Terzo anno/Data and web mining/Feature selection & engineering.md",
@@ -189,7 +193,6 @@
     "Magistrale/Advanced data management/Images/RDBMS architecture.png",
     "Magistrale/Advanced data management/Images/Differential encoding.png",
     "Magistrale/Advanced data management/Images/Frame reference encoding.png",
-    "Magistrale/Advanced data management/Images/Dictionary encoding.png",
     "Triennale/Secondo anno/Basi di dati/Mod. 2/Amministrazione/Indici e viste materializzate.md",
     "Triennale/Secondo anno/Sistemi operativi/Mod. 1/Casi di studio/Linux.md",
     "Triennale/Primo anno/Primo semestre/Architettura degli elaboratori mod. 1/4 - Memoria e circuiti sequenziali/Elementi di memoria.md",
@@ -201,10 +204,7 @@
     "Magistrale/Advanced data management/NoSQL databases/01 - Key value and document stores.md",
     "Excalidraw/Drawing 2025-10-14 16.22.07.excalidraw.md",
     "Excalidraw",
-    "Triennale/Secondo anno/Algoritmi e strutture dati/Mod. 1/Teoria della NP completezza.md",
-    "Magistrale/Calculus and optimization/00 - Introduction.md",
     "Magistrale/Calculus and optimization",
-    "Triennale/Terzo anno/Calcolabilità e linguaggi formali/Linguaggi regolari/Espressioni regolari.md",
     "Calcolo 1/Images",
     "Calcolo 1",
     "Magistrale/Advanced data management/Images",
