@@ -4,17 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "2fe248db1387bc36",
+        "id": "a28dd283d41ec648",
         "type": "tabs",
         "children": [
           {
-            "id": "e19156e11e21bbf4",
+            "id": "fa7483493bbb11c9",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "Magistrale/Foundations of artificial intelligence/07 - Knowledge representation.md",
+                "mode": "source",
+                "source": false
+              },
               "icon": "lucide-file",
-              "title": "New tab"
+              "title": "07 - Knowledge representation"
             }
           }
         ]
@@ -158,16 +162,18 @@
       "obsidian-excalidraw-plugin:New drawing": false
     }
   },
-  "active": "e19156e11e21bbf4",
+  "active": "fa7483493bbb11c9",
   "lastOpenFiles": [
+    "Magistrale/Calculus and optimization/01 - Convexity.md",
+    "Magistrale/Foundations of artificial intelligence/07 - Knowledge representation.md",
+    "Magistrale/Foundations of machine learning/01 - Neural networks.md",
+    "Magistrale/Foundations of artificial intelligence/06 - Local search.md",
     "Magistrale/Advanced data management/NoSQL databases/06 - Neo4j.md",
     "Triennale/Secondo anno/Basi di dati/Mod. 2/NoSQL.md",
     "Magistrale/Advanced data management/Images/Neo4j graph.png",
-    "Magistrale/Foundations of machine learning/01 - Neural networks.md",
     "Magistrale/Foundations of machine learning/Images/Perceptron training with no bias.gif",
     "Triennale/Primo anno/Primo semestre/Calcolo 1/Funzioni/Funzioni elementari.md",
     "Magistrale/Foundations of machine learning/Images/Perceptron.png",
-    "Magistrale/Calculus and optimization/01 - Convexity.md",
     "Triennale/Terzo anno/Ricerca operativa/Problemi convessi.md",
     "Triennale/Terzo anno/Ricerca operativa/Programmazione matematica.md",
     "Triennale/Terzo anno/Ricerca operativa/Programmazione lineare.md",
@@ -193,7 +199,6 @@
     "Triennale/Terzo anno/Reti di calcolatori/Livelli TCP/Livello fisico.md",
     "Triennale/Terzo anno/Data and web mining/Reti neurali/Layers.md",
     "Magistrale/Foundations of machine learning/Images/Huffman coding.png",
-    "Magistrale/Foundations of artificial intelligence/06 - Local search.md",
     "Magistrale/Foundations of artificial intelligence/Images/Mutation.png",
     "Magistrale/Foundations of artificial intelligence/Images/Crossover.png",
     "Magistrale/Advanced data management/DBMS internals/Images",
