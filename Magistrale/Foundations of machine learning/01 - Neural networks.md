@@ -17,7 +17,7 @@ The **synaptic efficacy** is the amount of current that enters in the next neuro
 Synapses can **excite** in order to favor the generation of action potential in the post-synaptic neuron, or **inhibit** in order to hinder the generation of action potential.
 
 ### The McCulloch and Pitts Model
-The McCulloch and Pitts (MP) neuron is modeled as a binary threshold unit, it "fires" if the **net input** $\sum\limits_{j}w_jI_j$ reaches (or exceeds) the threshold (bias) $T$:
+The McCulloch and Pitts (MP) neuron is modeled as a binary threshold unit, it "fires" if the **net input** $\sum\limits_{j}w_jI_j$ reaches (or exceeds) the **threshold** (bias) $T$:
 $$y=g\left(\sum_j w_jI_j-T\right)$$
 If the neuron is firing, then its output $y$ is $1$, otherwise it is $0$.:
 $$g(x)=\begin{cases}
@@ -30,3 +30,40 @@ Weights $w_{ij}$ represent the strength of the synapse between neuron $j$ and ne
 
 By properly combining MP neurons it is possible to simulate the behavior of any boolean circuit, follows _not_, _and_, _or_:
 ![[MP neuron logic gates.png|500]]
+
+The idea behind ml-related tasks is that the objects that are received as inputs can be represented as **points** in a **geometric space**.
+
+In a **classification task**, the inputs are the features values, while the outputs are the class labels.
+
+We can get rid of the _threshold_ (bias) associated with each neuron, by treating it like a weight with a clamped input (e.g. $1$), in doing so it can be adaptively adjusted during training.
+$$w_1x_1+w_2x_2+b\stackrel{\text{becomes}}{\Longrightarrow}w_0(1)+w_1x_1+w_2x_2$$
+
+### The Perceptron
+The perceptron is a network consisting of one layer of M&P neurons connected in a feedforward way, that can classify things into two parts.
+![[Perceptron.png|500]]
+
+**Variables and parameters**:
+- $x(n)$ = $(m+1)\times 1$ input vector
+- $w(n)$ = $(m+1)\times 1$ weight vector
+- $b$ = bias
+- $y(n)$ = actual output
+- $d(n)$ = desired output
+- $\eta$ = learning-rate
+
+**Algorithm**:
+1. Set the weight vector to $0$
+2. For each time step $n$:
+	2. Present the algorithm with an input vector and the corresponding desired class label
+	3. Compute the actual response with the [[Funzioni elementari#Funzione segno|signum function]] $y(n)=\text{sgn}[w^T(n)x(n)]$
+	4. Update the weight vector: $w(n+1)=w(n)+\eta[d(n)-y(n)]x(n)$
+	5. Increment time step $n$
+
+![[Perceptron training with no bias.gif|300]]
+
+It has been shown that perceptrons can only solve **linearly separable** problems (i.e. the decision regions can be separated by a hyperplane).
+
+**Rosenblatt's Perceptron Convergence Theorem**
+If the training set is linearly separable, the perceptron learning algorithm always converges to a consistent hypothesis after a finite number of epochs, for any $\eta>0$.
+
+If it is not linearly separable, after a certain number of epochs the weights start socillating.
+
