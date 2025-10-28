@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Magistrale/Foundations of artificial intelligence/07 - Knowledge representation.md",
+                "file": "Magistrale/Foundations of machine learning/01 - Neural networks.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "07 - Knowledge representation"
+              "title": "01 - Neural networks"
             }
           }
         ]
@@ -164,9 +164,13 @@
   },
   "active": "fa7483493bbb11c9",
   "lastOpenFiles": [
-    "Magistrale/Calculus and optimization/01 - Convexity.md",
-    "Magistrale/Foundations of artificial intelligence/07 - Knowledge representation.md",
+    "Magistrale/Foundations of machine learning/Images/Pasted image 20251028181223.png",
     "Magistrale/Foundations of machine learning/01 - Neural networks.md",
+    "Triennale/Terzo anno/Data and web mining/Regressione lineare.md",
+    "Triennale/Terzo anno/Data and web mining/Reti neurali/Layers.md",
+    "Triennale/Terzo anno/Data and web mining/Decision trees.md",
+    "Magistrale/Foundations of artificial intelligence/07 - Knowledge representation.md",
+    "Magistrale/Calculus and optimization/01 - Convexity.md",
     "Magistrale/Foundations of artificial intelligence/06 - Local search.md",
     "Magistrale/Advanced data management/NoSQL databases/06 - Neo4j.md",
     "Triennale/Secondo anno/Basi di dati/Mod. 2/NoSQL.md",
@@ -193,14 +197,9 @@
     "Magistrale/Advanced data management/NoSQL databases/01 - Key value and document stores.md",
     "Magistrale/Advanced data management/NoSQL databases/04 - Extensible record stores.md",
     "Magistrale/Advanced data management/NoSQL databases/03 - Column stores.md",
-    "Triennale/Secondo anno/Algoritmi e strutture dati/Mod. 2/Tabelle hash/Tabelle ad indirizzamento diretto.md",
-    "Triennale/Terzo anno/Reti di calcolatori/Sicurezza/Introduzione.md",
     "Magistrale/Advanced data management/Images/Column family.png",
-    "Triennale/Terzo anno/Reti di calcolatori/Livelli TCP/Livello fisico.md",
-    "Triennale/Terzo anno/Data and web mining/Reti neurali/Layers.md",
     "Magistrale/Foundations of machine learning/Images/Huffman coding.png",
     "Magistrale/Foundations of artificial intelligence/Images/Mutation.png",
-    "Magistrale/Foundations of artificial intelligence/Images/Crossover.png",
     "Magistrale/Advanced data management/DBMS internals/Images",
     "Magistrale/Advanced data management/DBMS internals",
     "Magistrale/Advanced data management/NoSQL databases",

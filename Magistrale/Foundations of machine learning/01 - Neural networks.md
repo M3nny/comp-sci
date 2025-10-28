@@ -65,5 +65,27 @@ It has been shown that perceptrons can only solve **linearly separable** problem
 **Rosenblatt's Perceptron Convergence Theorem**
 If the training set is linearly separable, the perceptron learning algorithm always converges to a consistent hypothesis after a finite number of epochs, for any $\eta>0$.
 
-If it is not linearly separable, after a certain number of epochs the weights start socillating.
+If it is not linearly separable, after a certain number of epochs the weights start oscillating.
+
+### Multi-layer feedforward networks
+People already knew at the time that by adding hidden layers we could train more complex networks, the point is that there wasn't such an algorithm for training these kind of models.
+
+In a feedforward neural networks there are no cycles, and in order to learn the right weights for the task we use the **backpropagation** method that uses the **gradient descent**.
+
+We may use different **activation functions** in order to say how much a neuron is "active" and contributes to the weighted sum.
+
+### Supervised learning
+Supervised learning algorithms require the presence of a "teacher" who provides the right answers to the input questions.
+
+This means that we need a **training set** of the form:
+$$\mathscr{L}=\{(x^1,y^1),...,(x^N,y^N)\}$$
+- $x^\mu$: is the input vector
+- $y^\mu$ is the desired output vector
+>$\mu=1,...,N$
+
+The training phase consists of determining a configuration of weights $w$ so that the network's output is as close as possible to the desired output, for all the samples in the training set.
+
+This corresponds to minimizing a **loss function** such as the mean squared error (MSE):
+$$MSE(w)=\frac{1}{2}\sum_\mu||y^\mu-O^\mu(w)||^2$$
+- $O^\mu(w)$: the output vector for the $\mu$-th input sample, as a function of the current network weights $w$
 
