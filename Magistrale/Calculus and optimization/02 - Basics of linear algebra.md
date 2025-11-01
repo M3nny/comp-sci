@@ -14,7 +14,7 @@ $$X=(x_1,...,x_n)^T\qquad Y=(y_1,...,y_n)^T$$
 
 We can rewrite the previous linear function as:
 $$y=f(x)\iff Y=AX$$
-which states the strong relation between linear functions and matrices.
+which states the <u>strong relation between linear functions and matrices</u>.
 
 Now, there could be different basis in the same vectorial space, thinking about $\mathbb{R}^2$ we can imagine each point described by a vector, that represents the horizontal movement respect to the origin and the vertical movement to reach the defined point.
 
@@ -28,7 +28,7 @@ Let $C=\{c_1,c_2,c_3\}$ be the **new basis**:
 $$e_1=\begin{pmatrix}1\\1\\0\end{pmatrix},e_2=\begin{pmatrix}0\\1\\1\end{pmatrix},e_3=\begin{pmatrix}1\\0\\1\end{pmatrix}$$
 The **change-of-basis matrix** is defined as:
 $$P_{C\to B}=\begin{pmatrix}1&0&1\\1&1&0\\0&1&1\end{pmatrix}$$
-This basis converts coordinates <u>from the new basis to the old basis</u>:
+This matrix converts coordinates <u>from the new basis to the old basis</u>:
 $$[x]_B=P_{C\to B}[x]_C$$
 
 But if we compute its [[Triennale/Primo anno/Primo semestre/Algebra lineare/Matrici#Matrici inverse|inverse]], we can go <u>from the old basis to the new basis</u>:
@@ -46,3 +46,10 @@ that is, the sum of dimensions of the vector spaces $R[A]$ and $N[A]$ is constan
 
 The intuition is that every direction in the domain either contributes to the range (i.e. produces a nonzero output), or gets zeroed (i.e. belongs to the null space).
 
+As stated in the equation above, we identify the dimension of the range with the term **rank**, and it measures the number of _linearly independent vectors_ in a matrix.
+>See [[Triennale/Primo anno/Primo semestre/Algebra lineare/Matrici#Rango della matrice|how to calculate the rank]].
+
+>[!Tip] Value of nullity given the rank
+>Since the rank is a value between $0$ and $\min(i,j)$, where $i$ and $j$ are the number of rows and columns, we can retrieve the value of the nullity as $\min(i,j)-rank$.
+
+Note that is also possible to find the rank by using the [Gaussian elimination](https://en.wikipedia.org/wiki/Gaussian_elimination), in order to find the number of rows/columns that are not set to $0$, while the number of zeroed rows/columns represents the value of nullity.

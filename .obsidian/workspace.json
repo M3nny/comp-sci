@@ -13,12 +13,26 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Magistrale/Calculus and optimization/02 - Basics of linear algebra.md",
+                "file": "Magistrale/Calculus and optimization/03 - Eigenpairs.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "02 - Basics of linear algebra"
+              "title": "03 - Eigenpairs"
+            }
+          },
+          {
+            "id": "13e5a4b2b6d3002a",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Triennale/Primo anno/Primo semestre/Algebra lineare/Matrici.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Matrici"
             }
           }
         ]
@@ -74,11 +88,13 @@
               "title": "Bookmarks"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
-    "width": 350.5124969482422
+    "width": 350.5124969482422,
+    "collapsed": true
   },
   "right": {
     "id": "282a9548711da6a0",
@@ -164,38 +180,38 @@
   },
   "active": "fa7483493bbb11c9",
   "lastOpenFiles": [
-    "Triennale/Primo anno/Primo semestre/Algebra lineare/Trasformazioni lineari.md",
-    "Magistrale/Calculus and optimization/02 - Basics of linear algebra.md",
-    "Triennale/Primo anno/Primo semestre/Algebra lineare/Spazi vettoriali.md",
     "Triennale/Primo anno/Primo semestre/Algebra lineare/Matrici.md",
+    "Magistrale/Calculus and optimization/03 - Eigenpairs.md",
+    "Triennale/Primo anno/Primo semestre/Algebra lineare/Spazi vettoriali.md",
+    "Triennale/Primo anno/Primo semestre/Algebra lineare/Sistemi lineari.md",
+    "Triennale/Primo anno/Primo semestre/Algebra lineare/Sistema di generatori.md",
+    "Triennale/Primo anno/Primo semestre/Algebra lineare/Trasformazioni lineari.md",
+    "Triennale/Primo anno/Primo semestre/Algebra lineare/Vettori.md",
+    "Magistrale/Calculus and optimization/02 - Basics of linear algebra.md",
+    "Magistrale/Foundations of machine learning/01 - Neural networks.md",
+    "Magistrale/Foundations of machine learning/00 - Information and inference.md",
+    "Magistrale/Foundations of artificial intelligence/00 - Introduction.md",
+    "Magistrale/Foundations of artificial intelligence/01 - Blind search.md",
+    "Magistrale/Foundations of artificial intelligence/02 - Heuristic search.md",
+    "Magistrale/Foundations of artificial intelligence/03 - Adversarial search.md",
+    "Magistrale/Foundations of artificial intelligence/05 - Constraint satisfaction.md",
+    "Magistrale/Foundations of artificial intelligence/07 - Knowledge representation.md",
     "Triennale/Primo anno/Primo semestre/Algebra lineare/Riassunto.md",
     "Triennale/Primo anno/Primo semestre/Algebra lineare/Rette e piani.md",
     "Triennale/Primo anno/Primo semestre/Algebra lineare/Numeri Complessi.md",
-    "Triennale/Primo anno/Primo semestre/Algebra lineare/Vettori.md",
     "Magistrale/Calculus and optimization/00 - Introduction.md",
     "Magistrale/Calculus and optimization/01 - Convexity.md",
-    "Magistrale/Foundations of machine learning/01 - Neural networks.md",
     "Magistrale/Foundations of machine learning/Images/Pasted image 20251028181223.png",
     "Triennale/Terzo anno/Data and web mining/Regressione lineare.md",
     "Triennale/Terzo anno/Data and web mining/Reti neurali/Layers.md",
     "Triennale/Terzo anno/Data and web mining/Decision trees.md",
-    "Magistrale/Foundations of artificial intelligence/07 - Knowledge representation.md",
     "Magistrale/Foundations of artificial intelligence/06 - Local search.md",
     "Magistrale/Advanced data management/NoSQL databases/06 - Neo4j.md",
-    "Triennale/Secondo anno/Basi di dati/Mod. 2/NoSQL.md",
     "Magistrale/Advanced data management/Images/Neo4j graph.png",
     "Magistrale/Foundations of machine learning/Images/Perceptron training with no bias.gif",
-    "Triennale/Primo anno/Primo semestre/Calcolo 1/Funzioni/Funzioni elementari.md",
     "Magistrale/Foundations of machine learning/Images/Perceptron.png",
-    "Triennale/Terzo anno/Ricerca operativa/Problemi convessi.md",
-    "Triennale/Terzo anno/Ricerca operativa/Programmazione matematica.md",
-    "Triennale/Terzo anno/Ricerca operativa/Programmazione lineare.md",
-    "Triennale/Primo anno/Secondo semestre/Calcolo 2/Funzioni a più variabili reali/Curve di livello e dominio.md",
-    "Magistrale/Foundations of machine learning/00 - Information and inference.md",
     "Magistrale/Foundations of machine learning/Images/MP neuron logic gates.png",
     "Magistrale/Foundations of machine learning/Images/MP neuron.png",
-    "Triennale/Terzo anno/Ricerca operativa/Definizioni generali.md",
-    "Magistrale/Advanced data management/NoSQL databases/05 - Graph databases.md",
     "Magistrale/Advanced data management/Images/Graph properties.svg",
     "Excalidraw",
     "Magistrale/Advanced data management/Images/Column family.png",
