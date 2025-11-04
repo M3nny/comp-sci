@@ -57,3 +57,80 @@ we say that $v$ is an eigenvector of $A$ and $\lambda$ and eigenvalue of $A$.
 >which has the $n=3$ solutions:
 >$$\begin{cases}\lambda_1=1\\\lambda_2=-1\\\lambda_3=3\end{cases}$$
 
+In the previous example we used the following equation:
+$$\det(A-\lambda I)=0$$
+this is defined as the **secular (or characteristic)** equation associated to the matrix $A$, the values $\lambda$ that solve it, are the _eigenvalues_ of the matrix $A$.
+
+**Proposition**
+Let be given the matrix $A\in\mathbb{R}^{n\times n}$, then the next properties hold:
+- If $(\lambda, v)$ is an eigenpair of $A$, then $(\lambda^k,v)$ is an eigenpair of $A^k$, for any integer $k\geq 1$
+	When $k=1$ then $A^1v=\lambda^1v$, being $(\lambda,v)$ an eigenpair of $A$, and assuming that for any positive integer $k$ it is:
+	$$A^{k-1}v=\lambda^{k-1}v,\quad v\neq 0$$
+	we prove the result for index $k$, and indeed we have:
+	$$A^kv=A(A^{k-1}v)=A(\lambda^{k-1}v)=\lambda^{k-1}Av=\lambda^kv$$
+	
+- If $A$ is _nonsingular_ ($\det\neq0$) and $(\lambda,v)$ is an eigenpair of $A$, then $(\lambda^{-1},v)$ is an eigenpair of $A^{-1}$, for any integer $k\geq 1$
+	We have that $Av=\lambda v$, and since $A$ is nonsingular, <u>it does not admit any zero eigenvalue</u>, hence $\lambda\neq0$ and multiplying (on the left) the expression $Av=\lambda v$ by $A^{-1}$ we obtain:
+	$$\cancel{A^{-1}}\cancel Av=\lambda A^{-1}v\implies v=\lambda A^{-1}\implies\frac{1}{\lambda}v=A^{-1}v$$
+
+### Multiplicity
+Let $A\in\mathbb{R}^{n\times n}$ and let $\lambda$ be an eigenvalue of $A$, we define the **algebraic multiplicity** of $\lambda$ $am(\lambda)$ and the **geometric multiplicity** of $\lambda$ $gm(\lambda)$ according to the following:
+- $am(\lambda)$ is the multiplicity of $\lambda$ as a root of the secular equation
+- $gm(\lambda)$ is the [[02 - Basics of linear algebra#Rank-nullity theorem|nullity]] of the matrix $A-\lambda I$
+
+### Diagonal matrix
+Given the square matrix $A\in\mathbb{R}^{n\times n}$, we say that $A$ is **diagonalizable (or generalizable)** in $\mathbb{R}$ if there exists a nonsingular matrix $C\in\mathbb{R}^{n\times n}$, s.t. the matrix $C^{-1}AC$ has all real entries and is diagonal.
+
+The matrix $A$ is diagonalizable iff:
+1. $A$ has only real eigenvalues
+2. $am(\lambda)=gm(\lambda)$ for any eigenvalue $\lambda$ of $A$
+
+>[!Tip] Eigenvalues and determinant
+>- The product of eigenvalues is equal to the determinant of the matrix
+>- The [[Triennale/Primo anno/Primo semestre/Algebra lineare/Matrici#Traccia|trace of a matrix]] is equal to the sum of the eigenvalues
+
+If the square matrix $A\in\mathbb{R}^{n\times n}$ is **symmetric** (i.e. $A=A^T$), then:
+1. All its eigenvalues are real
+2. $A$ is diagonalizable
+3. $\exists n$ eigenvectors s.t. $V=(\frac{v_1}{||v_1||_2}\vdots\dotsi\vdots\frac{v_n}{||v_n||_2})$ is nonsingular
+4. $V^{-1}=V^T$
+
+>[!Tip] Block diagonal matrix and Binet's theorem
+>It is possible to easily calculate the determinant of matrices in the following form:
+>$$A=\begin{pmatrix}A_1&0&0\\0&A_2&0\\0&0&A_3\end{pmatrix}$$
+>where $A_1$ are square matrices.
+>
+>Its determinant can be computed as follows:
+>$$\det(A)=\prod_{i=1}^n \det(A_i)$$
+>
+>For example:
+>$$
+>A =
+>\begin{bmatrix}
+>1 & 2 & 0 \\
+>2 & 1 & 0 \\
+>0 & 0 & -4
+>\end{bmatrix}
+>=
+>\begin{bmatrix}
+>\begin{array}{cc|c}
+>1 & 2 & 0 \\
+>2 & 1 & 0 \\ \hline
+>0 & 0 & -4
+>\end{array}
+>\end{bmatrix}
+>=
+>\begin{bmatrix}
+>B & 0 \\
+>0 & C
+>\end{bmatrix},
+>\quad
+>B =
+>\begin{bmatrix}
+>1 & 2 \\
+>2 & 1
+>\end{bmatrix}, \;
+>C = [-4]
+>$$
+>$$\det(A)=\det(B)\det(C)=-3(-4)=12$$
+

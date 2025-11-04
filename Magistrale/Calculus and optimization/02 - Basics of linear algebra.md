@@ -46,7 +46,7 @@ that is, the sum of dimensions of the vector spaces $R[A]$ and $N[A]$ is constan
 
 The intuition is that every direction in the domain either contributes to the range (i.e. produces a nonzero output), or gets zeroed (i.e. belongs to the null space).
 
-As stated in the equation above, we identify the dimension of the range with the term **rank**, and it measures the number of _linearly independent vectors_ in a matrix.
+As stated in the equation above, we identify the dimension of the range with the term **rank**, and it measures the number of _linearly independent vectors_ in a matrix, while the dimension of its null space is defined as **nullity**.
 >See [[Triennale/Primo anno/Primo semestre/Algebra lineare/Matrici#Rango della matrice|how to calculate the rank]].
 
 >[!Tip] Value of nullity given the rank
