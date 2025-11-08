@@ -134,3 +134,8 @@ If the square matrix $A\in\mathbb{R}^{n\times n}$ is **symmetric** (i.e. $A=A^T$
 >$$
 >$$\det(A)=\det(B)\det(C)=-3(-4)=12$$
 
+### Symmetric matrices
+Let the square matrix $A$ be **symmetric**, and consider its real eigenvalues:
+- If every eigenvalue is _positive_, then $A$ is a _positive definite_ ($A\succ 0$) matrix
+- If the eigenvalues are all _nonnegative_, then $A$ is a _positive semi-definite_ ($A\succeq 0$) matrix
+- If the eigenvalues have an unspecified sign, then $A$ is an _indefinite_ matrix
