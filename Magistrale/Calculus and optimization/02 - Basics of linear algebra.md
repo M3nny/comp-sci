@@ -35,6 +35,10 @@ But if we compute its [[Triennale/Primo anno/Primo semestre/Algebra lineare/Matr
 $$P_{B\to C}=\frac{1}{2}\begin{pmatrix}1&1&-1\\-1&1&1\\1&-1&1\end{pmatrix}$$
 For example if we have the vector $[x]_B=(2,1,3)^T$ in the old (standard) basis, we can convert it to the new basis in this way:
 $$[x]_C=P_{B\to C}[x]_B=\frac{1}{2}\begin{pmatrix}1&1&-1\\-1&1&1\\1&-1&1\end{pmatrix}\begin{pmatrix}2\\1\\3\end{pmatrix}=\begin{pmatrix}0\\1\\2\end{pmatrix}$$
+
+>[!Tip] When a matrix is a change of basis?
+>A matrix represents a change of basis when it is invertible, and for this to hold the matrix has to be nonsingular (i.e. $\det\neq0$).
+
 #### Rank-nullity theorem
 Given the matrix $A\in\mathbb{R}^{m\times n}$ we say that:
 - $R[A]$ is the **range** of $A$, that is the set of all possible linear combinations of the columns of $A$, it can be expressed as: $R[A]=\{y\in\mathbb{R}^m:\exists x\in\mathbb{R}^n s.t. y=Ax\}$

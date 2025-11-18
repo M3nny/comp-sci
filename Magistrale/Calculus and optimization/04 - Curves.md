@@ -12,7 +12,7 @@ Unlike normal functions like $f(x)=x$, which cannot overlap with themselves, in 
 so in $\mathbb{R}^2$ we can describe a circle using a _vector function_ composed by two functions, that is:
 $$x(t)=\begin{pmatrix}\cos(t)\\\sin(t)\end{pmatrix}\in\mathbb{R}^2$$
 
-**Proposition**
+#### Regular curves
 Given the curve $x(t)$ of $\mathbb{R}^n$, for any $t\in[a,b]\subseteq\mathbb{R}$, we say that the curve $x(t)$ is **regular**, that is, smoothly traced without breaks or overlapping points, if it satisfies the following conditions:
 1. $x_i(t)\in C^1([a,b])$, for any $i=1,...,n$, and for any $t\in[a,b]$
 	The curve is differentiable, so it is smooth with no jumps.
@@ -34,5 +34,16 @@ $$\pi:[x_1-x_1(t)]\cdot x_1'(t)+\dotsi+[x_n-x_n(t)]\cdot x_n'(t)$$
 it represents an $n-1$ dimensional flat surface that is perpendicular to some direction, here that direction is the tangent vector $x'(t)$.
 ![[Tangent and hyperplane to a curve.png|400]]
 >The image is in $\mathbb{R}^3$, but represented in 2D for simplicity.
+
+
+### Curvilinear abscissa
+The **curvilinear abscissa** can be seen as the actual distance walked along a curved path, not the straight-line distance.
+
+Given the curve $C$ in $\mathbb{R}^n$, defined by $\{x_i(t)\}$, with $t\in[a,b]$, let $C$ admit the tangent line at $x(t)$, for any $t\in[a,b]$.
+Let $t_0\in[a,b]$, then, we define the **curvilinear abscissa** $s(t)$, for any $t\in[a,b]$ as:
+$$s(t)=\pm\int_{t_0}^t\sqrt{[x_1'(t)]^2+\dotsi+[x_n'(t)^2]}dt\quad t\in[a,b]$$
+The integral sums up all the infinitesimal distances, thus giving us the _distance traveled_.
+
+The sign convention can be interpreted as $+$ if we walk _forward_, $-$ if we walk _backward_.
 
 

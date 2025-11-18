@@ -16,7 +16,7 @@ An **endomorphism** is a _homomorphism_ where the domain and codomain are the sa
 
 And **automorphism** is an _endomorphism_ that is also **bijective** (injective and onto).
 
-### Eigenvectors and eigenvalues
+## Eigenvectors and eigenvalues
 Let the linear function $f:V^n(K)\to V^n(K)$ be an endomorphism, then in case:
 $$f(v)=\lambda v,\quad\lambda\in K,\quad v\neq 0_V$$
 we say that:
@@ -36,7 +36,7 @@ we say that $v$ is an eigenvector of $A$ and $\lambda$ and eigenvalue of $A$.
 >[!Example]
 >Find the eigenvectors and eigenvalues of the matrix.
 >$$A=\begin{pmatrix}3&6\\1&2\end{pmatrix}$$
->We have to computer the pairs $(\lambda_i,v_i)$ s.t. $Av_i=\lambda_iv_i$ with $v_i\neq0$ and being $v_i=(v_{i1}\space v_{i2})^T$.
+>We have to compute the pairs $(\lambda_i,v_i)$ s.t. $Av_i=\lambda_iv_i$ with $v_i\neq0$ and being $v_i=(v_{i1}\space v_{i2})^T$.
 >
 >$$\begin{pmatrix}3&6\\1&2\end{pmatrix}\begin{pmatrix}v_{i1}\\v_{i2}\end{pmatrix}=\lambda_i\begin{pmatrix}v_{i1}\\v_{i2}\end{pmatrix}$$
 >which yields:
@@ -78,22 +78,22 @@ Let $A\in\mathbb{R}^{n\times n}$ and let $\lambda$ be an eigenvalue of $A$, we d
 - $am(\lambda)$ is the multiplicity of $\lambda$ as a root of the secular equation
 - $gm(\lambda)$ is the [[02 - Basics of linear algebra#Rank-nullity theorem|nullity]] of the matrix $A-\lambda I$
 
-### Diagonal matrix
+Note that it is always true that:
+$$1\leq gm(\lambda)\leq am(\lambda)$$
+
+## Diagonal matrices
 Given the square matrix $A\in\mathbb{R}^{n\times n}$, we say that $A$ is **diagonalizable (or generalizable)** in $\mathbb{R}$ if there exists a nonsingular matrix $C\in\mathbb{R}^{n\times n}$, s.t. the matrix $C^{-1}AC$ has all real entries and is diagonal.
 
-The matrix $A$ is diagonalizable iff:
+The matrix $A$ is diagonalizable in $\mathbb{R}$ iff:
 1. $A$ has only real eigenvalues
-2. $am(\lambda)=gm(\lambda)$ for any eigenvalue $\lambda$ of $A$
+2. $am(\lambda)=gm(\lambda)$ for every eigenvalue $\lambda$ of $A$
+
+Generally it is digonalizable (not strictly on $\mathbb{R}$) if the second point holds.
 
 >[!Tip] Eigenvalues and determinant
 >- The product of eigenvalues is equal to the determinant of the matrix
 >- The [[Triennale/Primo anno/Primo semestre/Algebra lineare/Matrici#Traccia|trace of a matrix]] is equal to the sum of the eigenvalues
 
-If the square matrix $A\in\mathbb{R}^{n\times n}$ is **symmetric** (i.e. $A=A^T$), then:
-1. All its eigenvalues are real
-2. $A$ is diagonalizable
-3. $\exists n$ eigenvectors s.t. $V=(\frac{v_1}{||v_1||_2}\vdots\dotsi\vdots\frac{v_n}{||v_n||_2})$ is nonsingular
-4. $V^{-1}=V^T$
 
 >[!Tip] Block diagonal matrix and Binet's theorem
 >It is possible to easily calculate the determinant of matrices in the following form:
@@ -134,8 +134,59 @@ If the square matrix $A\in\mathbb{R}^{n\times n}$ is **symmetric** (i.e. $A=A^T$
 >$$
 >$$\det(A)=\det(B)\det(C)=-3(-4)=12$$
 
+Once a matrix is in its diagonalized form, it is possible to **compute its powers** easily, in fact:
+$$A^{n}=PD^nP^{-1}$$
+where $D^n$ is just the eigenvalues raised to the $n$-th power on the diagonal.
+
 ### Symmetric matrices
-Let the square matrix $A$ be **symmetric**, and consider its real eigenvalues:
+If the square matrix $A\in\mathbb{R}^{n\times n}$ is **symmetric** (i.e. $A=A^T$), then:
+- All its eigenvalues are real
+- $A$ is diagonalizable with $C^{-1}AC$, where $C=(\frac{v_1}{||v_1||_2}\vdots\dotsi\vdots\frac{v_n}{||v_n||_2})$
+- Its eigenvectors are orthogonal
+- $V^{-1}=V^T$
+
+Considering the real eigenvalues of a symmetric matrix:
 - If every eigenvalue is _positive_, then $A$ is a _positive definite_ ($A\succ 0$) matrix
 - If the eigenvalues are all _nonnegative_, then $A$ is a _positive semi-definite_ ($A\succeq 0$) matrix
 - If the eigenvalues have an unspecified sign, then $A$ is an _indefinite_ matrix
+
+>[!Example] Diagonal matrix representation
+>We'll now show how to represent a diagonalized matrix using as a reference a symmetric matrix in order to also show its easier diagonalization procedure.
+>$$A=\begin{pmatrix}2&1\\1&2\end{pmatrix}$$
+>It is possible to represent a diagonalized matrix as:
+>$$A=PDP^{-1}$$
+>Where:
+>- $P$: matrix of eigenvectors
+>- $D$: diagonal matrix of eigenvalues
+>
+> We find the eigenvalues with:
+> $$\det\begin{pmatrix}2-\lambda&1\\1&2-\lambda\end{pmatrix}=(2-\lambda)^2-1=0$$
+> $$\lambda_1=3\quad\lambda_2=1$$
+> 
+> We find the eigenvectors:
+> $$v_1=\begin{pmatrix}1\\1\end{pmatrix}\quad v_2=\begin{pmatrix}1\\-1\end{pmatrix}$$
+> Now we can form $P$, $D$ and $P^{-1}$:
+>$$P=\begin{pmatrix}1&1\\1&-1\end{pmatrix}\quad
+>D=\begin{pmatrix}3&0\\0&1\end{pmatrix}\quad
+>$$
+>---
+>**General approach**
+>Now we compute $P^{-1}$:
+>$$\det(P)=-2\quad P^{-1}=\frac{1}{-2}\begin{pmatrix}-1&-1\\-1&1\end{pmatrix}=\begin{pmatrix}1/2&1/2\\1/2&-1/2\end{pmatrix}$$
+>Now we have all the elements to represent $A$ in its diagonalized form, in order to show that this is correct, we compute $D$, starting by computing $AP$:
+>$$AP=\begin{pmatrix}2&1\\1&2\end{pmatrix}\begin{pmatrix}1&1\\1&-1\end{pmatrix}\quad=\begin{pmatrix}3&1\\3&-1\end{pmatrix}$$
+>And finally we can retrieve $D$ from the diagonalized form showing that the calculations were correct:
+>$$D=P^{-1}AP=\begin{pmatrix}1/2&1/2\\1/2&-1/2\end{pmatrix}\begin{pmatrix}3&1\\3&-1\end{pmatrix}=\begin{pmatrix}3&0\\0&1\end{pmatrix}$$
+>
+>---
+>**Symmetric matrix approach**
+>Since $A$ is symmetric, its eigenvectors are orthogonal, by normalizing them with $\frac{v}{||v||_2}$ we can get an orthonormal set of eigenvectors, this mean that $P$ becomes an orthogonal matrix where $P^{-1}=P^T$, this is useful because it allows to skip the computation of $P^{-1}$, in fact we can represent the diagonalized matrix as:
+>$$A=PDP^T$$
+>
+>Let's compute the normalized vectors:
+>$$u_1=\frac{v_1}{||v_1||_2}=\frac{1}{\sqrt2}\begin{pmatrix}1\\1\end{pmatrix}\quad u_2=\frac{v_2}{||v_2||_2}=\frac{1}{\sqrt2}\begin{pmatrix}1\\-11\end{pmatrix}$$
+>$$P=(u_1\space u_2)=\begin{pmatrix}1/\sqrt2&1/\sqrt2\\1/\sqrt2&-1/\sqrt2\end{pmatrix}$$
+>Now we can demonstrate that the steps were correct by retrieving $D$ (we omit the computation of $P^T A$ to keep it short)
+>$$D=P^TAP=\begin{pmatrix}3/\sqrt2&3/\sqrt2\\1/\sqrt2&-1/\sqrt2\end{pmatrix}\begin{pmatrix}1/\sqrt2&1/\sqrt2\\1/\sqrt2&-1/\sqrt2\end{pmatrix}=\begin{pmatrix}3&0\\0&1\end{pmatrix}$$
+
+

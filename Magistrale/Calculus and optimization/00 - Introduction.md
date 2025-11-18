@@ -47,7 +47,8 @@ It has the following properties:
 3. $\forall u,v\in V^n(K),\quad<u,v>=<v,u>$
 
 The **standard inner product** is defined as:
-$$\forall u,v\in\mathbb{R}^n,<u,v>=u_1v_1+...u_n v_n$$
+$$\forall u,v\in\mathbb{R}^n,<u,v>=u_1v_1+...u_n v_n=\sum_{i=1}^n u_iv_i=u^Tv$$
+
 If its result is equal to $0$, then $u,v$ are **orthogonal** ($u\bot v$).
 >Two orthogonal vectors are linearly independent, but the reverse is not necessarily true.
 
@@ -80,6 +81,16 @@ $$g(x)=f(x)+\overline c$$
 ### Directional derivatives
 Considering a function $f(x)\in C^1(\mathbb{R}^n)$, the **directional derivative** $D(f,d)$, along the **directional vector** $d\in\mathbb{R}^n$ is defined as:
 $$D(f,d)\stackrel{\Delta}{=}\lim_{h\to 0}\frac{f(x+hd)-f(x)}{h}=\nabla f(x)^Td$$
+
+Let be given the function $f(x)$, with $f:\mathbb{R}^n\to\mathbb{R}$ and $f(x)$ continuously differentiable in $\mathbb{R}^n$. Let $\overline x\in\mathbb{R}^n$, then $d=\frac{\nabla f(\overline x)}{||\nabla f(\overline x)||_2}$ represents the direction with unit euclidean norm which maximizes the Taylor expansion $f(\overline x)+\nabla f(\overline x)^Td$ of $f(x)$ at $\overline x$, truncated at first order.
+
+Equivalently, the direction:
+$$d=\frac{\nabla f(\overline x)}{||\nabla f(\overline x)||_2}$$
+is a solution to the problem:
+$$\max\limits_{||d||_2=1}\{f(\overline x)+\nabla f(\overline x)^T d\}$$
+
+That direction is the **anti-gradient** which is the best direction to maximize the function.
+>The best direction to minimize the function is given by its opposite ($-d$).
 
 ---
 ### Mean value theorem

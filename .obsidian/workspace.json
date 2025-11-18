@@ -8,20 +8,49 @@
         "type": "tabs",
         "children": [
           {
-            "id": "b3db80ffdea6bc9e",
+            "id": "113d94b2ac95d54d",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Magistrale/Calculus and optimization/04 - Curves.md",
+                "file": "Magistrale/Calculus and optimization/03 - Eigenpairs.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "04 - Curves"
+              "title": "03 - Eigenpairs"
+            }
+          },
+          {
+            "id": "476988f20854ed09",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Magistrale/Calculus and optimization/03 - Eigenpairs.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "03 - Eigenpairs"
+            }
+          },
+          {
+            "id": "63ca630720b9bd11",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Magistrale/Calculus and optimization/00 - Introduction.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "00 - Introduction"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -53,7 +82,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "caratteristi",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -162,46 +191,46 @@
       "obsidian-excalidraw-plugin:New drawing": false
     }
   },
-  "active": "b3db80ffdea6bc9e",
+  "active": "476988f20854ed09",
   "lastOpenFiles": [
+    "Magistrale/Calculus and optimization/Tips.md",
+    "Magistrale/Calculus and optimization/03 - Eigenpairs.md",
+    "Magistrale/Calculus and optimization/04 - Curves.md",
+    "Magistrale/Calculus and optimization/00 - Introduction.md",
+    "Magistrale/Calculus and optimization/05 - Chain rules.md",
+    "Magistrale/Calculus and optimization/02 - Basics of linear algebra.md",
+    "Triennale/Primo anno/Secondo semestre/Calcolo 2/Equazioni differenziali/EDO del secondo ordine.md",
+    "Triennale/Primo anno/Primo semestre/Algebra lineare/Matrici.md",
+    "Triennale/Primo anno/Primo semestre/Matematica discreta/Le sommatorie.md",
+    "Magistrale/Calculus and optimization/01 - Convexity.md",
+    "Triennale/Terzo anno/Ricerca operativa/Definizioni generali.md",
+    "Triennale/Terzo anno/Ricerca operativa/DIrezioni ottimali.md",
+    "Triennale/Terzo anno/Ricerca operativa/Programmazione matematica.md",
+    "Triennale/Terzo anno/Ricerca operativa/Programmazione lineare.md",
+    "Triennale/Terzo anno/Ricerca operativa/Problemi di costo fisso e vincoli disgiuntivi.md",
+    "Triennale/Terzo anno/Ricerca operativa/Problemi convessi.md",
+    "Triennale/Primo anno/Secondo semestre/Calcolo 2/Riassunto.md",
+    "Triennale/Primo anno/Secondo semestre/Calcolo 2/Integrali doppi/Cambio di variabili.md",
+    "Triennale/Primo anno/Secondo semestre/Calcolo 2/Funzioni a più variabili reali/Punti di massimo e minimo.md",
+    "Triennale/Primo anno/Primo semestre/Algebra lineare/Spazi vettoriali.md",
+    "Triennale/Terzo anno/Amministrazione di sistema/Servizi di rete.md",
+    "Magistrale/Foundations of artificial intelligence/06 - Local search.md",
+    "Magistrale/Foundations of artificial intelligence/05 - Constraint satisfaction.md",
     "Magistrale/Calculus and optimization/Images/Tangent and hyperplane to a curve.png",
     "Magistrale/Calculus and optimization/Images",
     "Magistrale/Calculus and optimization/Nuova cartella",
-    "Magistrale/Calculus and optimization/03 - Eigenpairs.md",
-    "Magistrale/Calculus and optimization/04 - Curves.md",
     "Magistrale/Foundations of machine learning/01 - Neural networks.md",
     "Triennale/Primo anno/Primo semestre/Calcolo 1/Derivate/Algebra delle derivate.md",
     "Magistrale/Foundations of machine learning/Images/Momentum.png",
     "Magistrale/Foundations of machine learning/Images/Input to hidden weight update.png",
     "Magistrale/Foundations of machine learning/Images/Hidden to output weight update.png",
     "Magistrale/Foundations of machine learning/00 - Information and inference.md",
-    "Triennale/Terzo anno/Ricerca operativa/Programmazione lineare.md",
-    "Triennale/Terzo anno/Ricerca operativa/DIrezioni ottimali.md",
-    "Triennale/Terzo anno/Ricerca operativa/Problemi convessi.md",
     "Magistrale/Foundations of machine learning/Images/Neural network notation.png",
-    "Magistrale/Calculus and optimization/02 - Basics of linear algebra.md",
-    "Magistrale/Advanced data management/NoSQL databases/07 - Distributed databases.md",
-    "Magistrale/Advanced data management/NoSQL databases/03 - Column stores.md",
-    "Magistrale/Advanced data management/NoSQL databases/04 - Extensible record stores.md",
-    "Magistrale/Advanced data management/NoSQL databases/06 - Neo4j.md",
-    "Magistrale/Advanced data management/NoSQL databases/05 - Graph databases.md",
     "Magistrale/Advanced data management/Images/Lost update.png",
     "Magistrale/Advanced data management/Images/Siblings & reconciliation.png",
     "Magistrale/Advanced data management/Images/Union semantics.png",
     "Magistrale/Advanced data management/Images/Paxos algorithm.png",
     "Magistrale/Advanced data management/Images/2-phase commit.png",
-    "Magistrale/Foundations of artificial intelligence/05 - Constraint satisfaction.md",
-    "Magistrale/Foundations of artificial intelligence/03 - Adversarial search.md",
-    "Magistrale/Foundations of artificial intelligence/02 - Heuristic search.md",
-    "Magistrale/Foundations of artificial intelligence/06 - Local search.md",
-    "Triennale/Primo anno/Primo semestre/Algebra lineare/Matrici.md",
-    "Triennale/Primo anno/Primo semestre/Algebra lineare/Spazi vettoriali.md",
-    "Triennale/Primo anno/Primo semestre/Algebra lineare/Sistemi lineari.md",
-    "Triennale/Primo anno/Primo semestre/Algebra lineare/Sistema di generatori.md",
-    "Triennale/Primo anno/Primo semestre/Algebra lineare/Trasformazioni lineari.md",
-    "Triennale/Primo anno/Primo semestre/Algebra lineare/Vettori.md",
-    "Magistrale/Foundations of artificial intelligence/00 - Introduction.md",
-    "Magistrale/Foundations of machine learning/Images/Pasted image 20251028181223.png",
     "Excalidraw",
     "Magistrale/Advanced data management/DBMS internals/Images",
     "Magistrale/Advanced data management/DBMS internals",
