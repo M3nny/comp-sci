@@ -4,53 +4,38 @@
     "type": "split",
     "children": [
       {
-        "id": "d8dfb77e5e0b62eb",
+        "id": "d86a7ead3c2d0b3d",
         "type": "tabs",
         "children": [
           {
-            "id": "113d94b2ac95d54d",
+            "id": "074b75cc99ab667e",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Magistrale/Calculus and optimization/03 - Eigenpairs.md",
+                "file": "Magistrale/Foundations of machine learning/01 - Neural networks.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "03 - Eigenpairs"
+              "title": "01 - Neural networks"
             }
           },
           {
-            "id": "476988f20854ed09",
+            "id": "8661d662f766c6ef",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Magistrale/Calculus and optimization/03 - Eigenpairs.md",
+                "file": "Triennale/Terzo anno/Data and web mining/Feature selection & engineering.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "03 - Eigenpairs"
-            }
-          },
-          {
-            "id": "63ca630720b9bd11",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Magistrale/Calculus and optimization/00 - Introduction.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "00 - Introduction"
+              "title": "Feature selection & engineering"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -82,7 +67,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "caratteristi",
+                "query": "one-hot",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -191,46 +176,46 @@
       "obsidian-excalidraw-plugin:New drawing": false
     }
   },
-  "active": "476988f20854ed09",
+  "active": "074b75cc99ab667e",
   "lastOpenFiles": [
-    "Magistrale/Calculus and optimization/Tips.md",
-    "Magistrale/Calculus and optimization/03 - Eigenpairs.md",
-    "Magistrale/Calculus and optimization/04 - Curves.md",
-    "Magistrale/Calculus and optimization/00 - Introduction.md",
+    "Magistrale/Foundations of machine learning/Images/Cross validation.png",
+    "Magistrale/Foundations of machine learning/Images/NETtalk.png",
+    "Triennale/Terzo anno/Data and web mining/Feature selection & engineering.md",
+    "Magistrale/Foundations of machine learning/01 - Neural networks.md",
     "Magistrale/Calculus and optimization/05 - Chain rules.md",
-    "Magistrale/Calculus and optimization/02 - Basics of linear algebra.md",
-    "Triennale/Primo anno/Secondo semestre/Calcolo 2/Equazioni differenziali/EDO del secondo ordine.md",
+    "Magistrale/Advanced data management/NoSQL databases/07 - Distributed databases.md",
+    "Magistrale/Advanced data management/DBMS internals/01 - Permanent buffers.md",
+    "Magistrale/Calculus and optimization/04 - Curves.md",
+    "Magistrale/Calculus and optimization/Tips.md",
     "Triennale/Primo anno/Primo semestre/Algebra lineare/Matrici.md",
-    "Triennale/Primo anno/Primo semestre/Matematica discreta/Le sommatorie.md",
-    "Magistrale/Calculus and optimization/01 - Convexity.md",
     "Triennale/Terzo anno/Ricerca operativa/Definizioni generali.md",
-    "Triennale/Terzo anno/Ricerca operativa/DIrezioni ottimali.md",
-    "Triennale/Terzo anno/Ricerca operativa/Programmazione matematica.md",
-    "Triennale/Terzo anno/Ricerca operativa/Programmazione lineare.md",
-    "Triennale/Terzo anno/Ricerca operativa/Problemi di costo fisso e vincoli disgiuntivi.md",
-    "Triennale/Terzo anno/Ricerca operativa/Problemi convessi.md",
-    "Triennale/Primo anno/Secondo semestre/Calcolo 2/Riassunto.md",
-    "Triennale/Primo anno/Secondo semestre/Calcolo 2/Integrali doppi/Cambio di variabili.md",
-    "Triennale/Primo anno/Secondo semestre/Calcolo 2/Funzioni a più variabili reali/Punti di massimo e minimo.md",
+    "Triennale/Terzo anno/Ricerca operativa/Branch & Bound.md",
+    "Magistrale/Calculus and optimization/00 - Introduction.md",
+    "Triennale/Primo anno/Primo semestre/Algebra lineare/Sistemi lineari.md",
+    "Triennale/Primo anno/Primo semestre/Algebra lineare/Vettori.md",
+    "Triennale/Primo anno/Primo semestre/Algebra lineare/Trasformazioni lineari.md",
+    "Triennale/Primo anno/Primo semestre/Algebra lineare/Riassunto.md",
+    "Triennale/Primo anno/Primo semestre/Algebra lineare/Grafi.md",
     "Triennale/Primo anno/Primo semestre/Algebra lineare/Spazi vettoriali.md",
-    "Triennale/Terzo anno/Amministrazione di sistema/Servizi di rete.md",
-    "Magistrale/Foundations of artificial intelligence/06 - Local search.md",
-    "Magistrale/Foundations of artificial intelligence/05 - Constraint satisfaction.md",
+    "Triennale/Primo anno/Primo semestre/Algebra lineare/Sistema di generatori.md",
+    "Magistrale/Calculus and optimization/03 - Eigenpairs.md",
+    "Magistrale/Calculus and optimization/02 - Basics of linear algebra.md",
+    "Triennale/Terzo anno/Ricerca operativa/DIrezioni ottimali.md",
+    "Triennale/Terzo anno/Ricerca operativa/Problemi convessi.md",
+    "Triennale/Terzo anno/Ricerca operativa/Programmazione lineare.md",
+    "Triennale/Primo anno/Secondo semestre/Calcolo 2/Equazioni differenziali/EDO del secondo ordine.md",
+    "Triennale/Primo anno/Primo semestre/Matematica discreta/Le sommatorie.md",
     "Magistrale/Calculus and optimization/Images/Tangent and hyperplane to a curve.png",
     "Magistrale/Calculus and optimization/Images",
     "Magistrale/Calculus and optimization/Nuova cartella",
-    "Magistrale/Foundations of machine learning/01 - Neural networks.md",
-    "Triennale/Primo anno/Primo semestre/Calcolo 1/Derivate/Algebra delle derivate.md",
     "Magistrale/Foundations of machine learning/Images/Momentum.png",
     "Magistrale/Foundations of machine learning/Images/Input to hidden weight update.png",
     "Magistrale/Foundations of machine learning/Images/Hidden to output weight update.png",
-    "Magistrale/Foundations of machine learning/00 - Information and inference.md",
     "Magistrale/Foundations of machine learning/Images/Neural network notation.png",
     "Magistrale/Advanced data management/Images/Lost update.png",
     "Magistrale/Advanced data management/Images/Siblings & reconciliation.png",
     "Magistrale/Advanced data management/Images/Union semantics.png",
     "Magistrale/Advanced data management/Images/Paxos algorithm.png",
-    "Magistrale/Advanced data management/Images/2-phase commit.png",
     "Excalidraw",
     "Magistrale/Advanced data management/DBMS internals/Images",
     "Magistrale/Advanced data management/DBMS internals",

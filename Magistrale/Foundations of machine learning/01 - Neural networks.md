@@ -193,3 +193,89 @@ in words: the weight update at time $t$ is given by the current gradient multipl
 
 Adding this **memory of past direction** helps to reduce oscillations and accelerating in consistent directions.
 
+>[!Attention] Weight initialization
+>**Back-prop cannot avoid local minima**, for this reason, the choice of initial weights is important.
+>
+>A known method for initializing weights is the **LeCunn initialization**, which sets each weight to:
+>$$w_{ij}=\frac{1}{\sqrt{\text{fan-in}}}=\frac{1}{\sqrt{k_i}}$$
+>>Fan-in is the number of input units.
+
+---
+### NETtalk
+One of the first applications of the back propagation was a neural network which accepted as input $7$ characters from the english alphabet which were [[Feature selection & engineering#One-hot encoding|one-hot encoded]], and its output was the _phoneme code_ (i.e. the pronunciation of the character) that was in the middle in those $7$ characters (i.e. the fourth).
+![[NETtalk.png|400]]
+
+- **Input layer**: $7\times29$ inputs (with one-hot encoding) considering some special characters like white space or commas
+- **1 hidden layer**: $80$ units
+- **Output layer**: units which encode each english phonemes
+
+The training set set was extremely small (1024 words) and it learned from examples without linguistic knowledge.
+
+---
+## Model complexity
+Machine learning as a whole is a **curve fitting** problem in a high dimensional space.
+
+We don't want to pick a model that is too simple for the complexity of the problem involved (e.g. a straight line for a curve that is not straight), but neither a model that is overly complex, because in this case we may have an **interpolation** of the curve (i.e. exact curve fit), and hence we'll get an **overfitted model** that does not **generalize** well enough on unseen samples.
+
+We can pick the model based on its error:
+- **True error**: probability that the model will missclassify an instance drawn at random according to the target probability distribution
+- **Sample error**: number of correct samples compared to their expected value
+
+In reality we cannot use the first method since the true error is unknown (and will remain so forever), hence we don't have the target probability distribution.
+
+in the real world we dont have access to the real probability distrubtion fo the problem, hence we use the sample error
+
+### Cross validation
+In order to have a reliable accuracy of the model we can split the initial dataset in:
+- **Training set**: used to find the best model parameters
+- **Validation set**: used to find the best model hyper-parameters
+- **Test set**: used to test the final model and avoid overfitting the validation set
+
+**Cross-validation** consists in splitting the model in $n$ folds, and performing many iteration until every combination of dataset splits is tried (according to the dimension of the fold)
+![[Cross validation.png|500]]
+
+Theoretically using **leave-one-out** is the best approach for the fold size, but we cannot use it in most real cases, since it will be computationally expensive and will cause a slow iteration process.
+
+A useful method to avoid overfitting is called **early stopping** and it consists in stopping the training algorithm when the accuracy on the validation set becomes too low compared to the training set where it _tends_ to $100\%$.
+
+### Pruning and growing a model
+There are two principal methods to start building a model:
+- **Pruning**: initially an overcomplex model is used, and then it gets simplified along the way
+- **Growing**: in this case we begin with an oversimplified model and the we add more parameters to it
+
+Usually we start with the pruning approach since it is faster, due to the fact that the back propagation has more degrees of freedom in order to find a minimum. 
+
+It is possible to implement an **iterative pruning algorithm** by removing a neuron from a layer at each iteration while preserving the inputs and outputs of the neural network.
+
+This method can be done by retraining the whole model every time, or by imposing the condition that the net input of the neurons in that layer must be equal before and after removing the node, in this way we balance the missing neuron.
+
+In other words, we want to find a delta to add to the weight for each neuron, such that it compensates for the removed neuron:
+$$\underbrace{\sum_{j=1}^{n_h}w_{ij}y_i^\mu}_{Before}=\underbrace{\sum_{j=1\land j\neq h}^{n_h}(w_{ij}+\delta_{ij})y_j^\mu}_{After}\stackrel{Compact}{\Longrightarrow}Y_h\delta=b_h$$
+>$b$ is the contribution of the neuron being removed.
+
+But there might not be a vector $\delta$ that satisfies the equation, since the contribution of the neuron $h$ might not lie in the _linear span_ of the other neurons.
+
+In fact we use this approximation in order to change other neurons' weights to mimic the deleted neuron effect:
+$$\min_\delta||Y_h\delta-b_h||$$
+The algorithm is:
+1. Start with an over-sized trained network
+2. Until $Perf(pruned)-Perf(original)<\epsilon$:
+	- Find the hidden unit $h$ for which $||b||$ is minimum
+	- Solve the corresponding system
+	- Remove unit $h$
+3. Reject the last reduced network
+
+### Feature selection
+Feature selection consists in the **removal of irrelevant and redundant information** in order to improve the generalization, and the extraction of key features.
+
+The **optimal brain surgeon (OBS)** method, consists in eliminating a weight (i.e. setting it to zero) while minimizing the increase in error:
+1. Train a reasonably large neural network to minimum error
+2. Compute the hessian matrix of the weights, it captures how sensitive the network error is, to changes in each weight, then compute its inverse $H^{-1}$
+3. Find the best weight to delete
+	- For each weight $q$ calculate what happens to the error if it gets deleted by using $L=\frac{w_q^2}{2[H^{-1}]_{qq}}$
+	- Compare this error increase to the acceptable error threshold $E$
+	- If $L<<E$, delete that weight and go to step 4
+	- If $L$ is close to $R$ go to step 5
+4. Update all the other weights to compensate the weight deletion and go to step 2
+5. Stop the algorithm, we deleted as many weights as possible without hurting performance too much
+
