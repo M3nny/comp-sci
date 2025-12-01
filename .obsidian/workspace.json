@@ -13,26 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Magistrale/Foundations of machine learning/01 - Neural networks.md",
+                "file": "Magistrale/Foundations of machine learning/02 - Statistical learning theory.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "01 - Neural networks"
-            }
-          },
-          {
-            "id": "8661d662f766c6ef",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Triennale/Terzo anno/Data and web mining/Feature selection & engineering.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Feature selection & engineering"
+              "title": "02 - Statistical learning theory"
             }
           }
         ]
@@ -67,7 +53,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "one-hot",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -178,10 +164,25 @@
   },
   "active": "074b75cc99ab667e",
   "lastOpenFiles": [
+    "Magistrale/Foundations of machine learning/Images/Bias variance dilemma.png",
+    "Triennale/Terzo anno/Data and web mining/Ensemble methods.md",
+    "Magistrale/Foundations of machine learning/02 - Statistical learning theory.md",
+    "Triennale/Terzo anno/Data and web mining/Decision trees.md",
+    "Triennale/Terzo anno/Data and web mining/Clustering/K-means.md",
+    "Triennale/Terzo anno/Data and web mining/Clustering/Gerarchico.md",
+    "Triennale/Terzo anno/Data and web mining/Clustering/Density based.md",
+    "Triennale/Terzo anno/Data and web mining/Reti neurali/Layers.md",
+    "Triennale/Terzo anno/Data and web mining/Reti neurali/Introduzione.md",
+    "Triennale/Terzo anno/Data and web mining/Reti neurali/Filtri di convoluzione.md",
+    "Triennale/Terzo anno/Data and web mining/Reti neurali/Best practices.md",
+    "Triennale/Terzo anno/Data and web mining/K-nearest neighbors.md",
+    "Triennale/Terzo anno/Data and web mining/Regressione lineare.md",
+    "Triennale/Terzo anno/Data and web mining/Feature selection & engineering.md",
+    "Triennale/Terzo anno/Data and web mining/Text processing & naive Bayes.md",
+    "Magistrale/Foundations of machine learning/Images/Estimation and approximation error in ERM.png",
+    "Magistrale/Foundations of machine learning/01 - Neural networks.md",
     "Magistrale/Foundations of machine learning/Images/Cross validation.png",
     "Magistrale/Foundations of machine learning/Images/NETtalk.png",
-    "Triennale/Terzo anno/Data and web mining/Feature selection & engineering.md",
-    "Magistrale/Foundations of machine learning/01 - Neural networks.md",
     "Magistrale/Calculus and optimization/05 - Chain rules.md",
     "Magistrale/Advanced data management/NoSQL databases/07 - Distributed databases.md",
     "Magistrale/Advanced data management/DBMS internals/01 - Permanent buffers.md",
@@ -192,19 +193,6 @@
     "Triennale/Terzo anno/Ricerca operativa/Branch & Bound.md",
     "Magistrale/Calculus and optimization/00 - Introduction.md",
     "Triennale/Primo anno/Primo semestre/Algebra lineare/Sistemi lineari.md",
-    "Triennale/Primo anno/Primo semestre/Algebra lineare/Vettori.md",
-    "Triennale/Primo anno/Primo semestre/Algebra lineare/Trasformazioni lineari.md",
-    "Triennale/Primo anno/Primo semestre/Algebra lineare/Riassunto.md",
-    "Triennale/Primo anno/Primo semestre/Algebra lineare/Grafi.md",
-    "Triennale/Primo anno/Primo semestre/Algebra lineare/Spazi vettoriali.md",
-    "Triennale/Primo anno/Primo semestre/Algebra lineare/Sistema di generatori.md",
-    "Magistrale/Calculus and optimization/03 - Eigenpairs.md",
-    "Magistrale/Calculus and optimization/02 - Basics of linear algebra.md",
-    "Triennale/Terzo anno/Ricerca operativa/DIrezioni ottimali.md",
-    "Triennale/Terzo anno/Ricerca operativa/Problemi convessi.md",
-    "Triennale/Terzo anno/Ricerca operativa/Programmazione lineare.md",
-    "Triennale/Primo anno/Secondo semestre/Calcolo 2/Equazioni differenziali/EDO del secondo ordine.md",
-    "Triennale/Primo anno/Primo semestre/Matematica discreta/Le sommatorie.md",
     "Magistrale/Calculus and optimization/Images/Tangent and hyperplane to a curve.png",
     "Magistrale/Calculus and optimization/Images",
     "Magistrale/Calculus and optimization/Nuova cartella",
@@ -214,8 +202,6 @@
     "Magistrale/Foundations of machine learning/Images/Neural network notation.png",
     "Magistrale/Advanced data management/Images/Lost update.png",
     "Magistrale/Advanced data management/Images/Siblings & reconciliation.png",
-    "Magistrale/Advanced data management/Images/Union semantics.png",
-    "Magistrale/Advanced data management/Images/Paxos algorithm.png",
     "Excalidraw",
     "Magistrale/Advanced data management/DBMS internals/Images",
     "Magistrale/Advanced data management/DBMS internals",
