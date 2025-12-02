@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Magistrale/Advanced data management/DBMS internals/02 - Static organizations.md",
+                "file": "Magistrale/Advanced data management/DBMS internals/03 - Dynamic organizations.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "02 - Static organizations"
+              "title": "03 - Dynamic organizations"
             }
           }
         ]
@@ -164,8 +164,8 @@
   },
   "active": "8405fc000e830372",
   "lastOpenFiles": [
-    "Magistrale/Advanced data management/DBMS internals/Untitled.md",
     "Magistrale/Advanced data management/DBMS internals/02 - Static organizations.md",
+    "Magistrale/Advanced data management/DBMS internals/03 - Dynamic organizations.md",
     "Triennale/Secondo anno/Algoritmi e strutture dati/Mod. 2/Tabelle hash/Concatenamento.md",
     "Triennale/Secondo anno/Algoritmi e strutture dati/Mod. 2/Tabelle hash/Tabelle ad indirizzamento diretto.md",
     "Triennale/Secondo anno/Algoritmi e strutture dati/Mod. 2/Tabelle hash/Indirizzamento aperto.md",
