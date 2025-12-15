@@ -57,8 +57,8 @@ A fundamental result of SLT is that the set of rules in $\mathcal F$ cannot be t
 Ideally we want to make $R(f_n)-R(F_{Bayes})$ as small as possible, as $n\to\infty$, hence denoting by $f_\mathcal F$ the best classifier in $\mathcal F$, the difference can be decomposed as:
 $$R(f_n)-R(f_{Bayes})=\underbrace{(R(f_n)-R(f_\mathcal{F}))}_{\text{Estimation error}}+\underbrace{(R(f_\mathcal{F})-R(f_{Bayes}))}_{\text{Approximation error}}$$
 Which is in words: when using ERM, our classifier $f_n$ may be worse than the optimal Bayes classifier $f_{Bayes}$, hence the total gap in performance can be split in two sources of error:
-- **Estimation error**: caused by finite data, even if $\mathcal F$ contains a perfect classifier, we may not find it because we only see $n$ samples, but as $n\to\infty$, this term should go to $0$
-- **Approximation error**: caused by limitations of the model class $\mathcal F$, in practice if $\mathcal F$ cannot represent the Bayes solution because the models are too simple (e.g. linear model for non-linear problem), this term is always positive
+- **Estimation error (variance)**: caused by finite data, even if $\mathcal F$ contains a perfect classifier, we may not find it because we only see $n$ samples, but as $n\to\infty$, this term should go to $0$
+- **Approximation error (bias)**: caused by limitations of the model class $\mathcal F$, in practice if $\mathcal F$ cannot represent the Bayes solution because the models are too simple (e.g. linear model for non-linear problem), this term is always positive
 ![[Estimation and approximation error in ERM.png|400]]
 
 #### Bias-variance trade-off
@@ -73,3 +73,27 @@ A set of instances from the input space is said to be **shattered** by a functio
 
 The **Vapnik–Chervonenkis (VC) dimension** of a function class $\mathcal F$, denoted $VC(\mathcal F)$, is the largest number of points that $\mathcal F$ can shatter.
 In practice: the higher the VC dimension, the more expressive (richer) the class.
+
+For every $f\in\mathcal F$ with probability at least $1-\delta$, we have this **fundamental result**:
+$$R(f)\leq \underbrace{R_{emp}(f)}_{\text{Emprirical risk}}+\underbrace{\sqrt\frac{h(\log(2n/h)+1)-\log(\delta/4)}{n}}_{\text{VC confidence}}$$
+where $h=VC(\mathcal F)$ and $n$ is the sample size.
+
+This results:
+- **Justifies the ERM**, since $R(f)\simeq R_{emp}(f)$ when the VC term is small, hence minimizing the empirical risk also approximately minimizes the true risk
+- **Explains overfitting**: if $\mathcal F$ is too rich (i.e. large $h$), the empirical risk can be small, but the true risk may still be high
+- **Formalizes the bias-variance trade-off**: the approximation error goes down with richer $\mathcal F$ and the estimation error goes up with richer $\mathcal F$
+
+The inequality in other words says that the **generalization error**, is given by **training error + complexity penalty**.
+
+#### Structural risk minimization
+ERM takes only care of the estimation error (variance), but is not concerned with the approximation error (bias).
+
+The optimal model is found by striking a balance between the empirical risk and the capacity of the function class $F$ (e.g. the VC dimension).
+
+The basic idea of **Structural Risk Minimization (SRM)**:
+1. Construct a nested structure for family of function classes $\mathcal F_1\subset \mathcal F_2\subset...$ with non-decreasing VC dimensions: $VC(\mathcal F_1)\leq VC(\mathcal F_2)$
+2. For each class $\mathcal F_i$ find the solution $f_i$ that minimizes the empirical risk
+3. Choose the function class $F_i$ and the solution $f_i$ that minimizes the risk bound (i.e. empirical risk + VC confidence)
+
+In practice this method suggest to train models of different complexities, evaluate a trade-off between fit and complexity and choose the complexity that generalizes best.
+
