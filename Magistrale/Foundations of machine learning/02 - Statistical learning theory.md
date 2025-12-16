@@ -97,3 +97,8 @@ The basic idea of **Structural Risk Minimization (SRM)**:
 
 In practice this method suggest to train models of different complexities, evaluate a trade-off between fit and complexity and choose the complexity that generalizes best.
 
+>[!Important] Rethinking generalization
+>Nowadays large and complex models seem to contradict the statistical learning theory, this is because, even if very complex, they still generalize well.
+>As for to today we don't understand this phenomenon.
+
+

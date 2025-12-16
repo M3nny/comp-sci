@@ -4,21 +4,35 @@
     "type": "split",
     "children": [
       {
-        "id": "6f6c39f9bd43a8f3",
+        "id": "897b510ca43ea972",
         "type": "tabs",
         "children": [
           {
-            "id": "9850be344573be8b",
+            "id": "c66439e3f8a1b3bc",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Magistrale/Foundations of machine learning/02 - Statistical learning theory.md",
+                "file": "Magistrale/Foundations of machine learning/03 - Support vector machines.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "02 - Statistical learning theory"
+              "title": "03 - Support vector machines"
+            }
+          },
+          {
+            "id": "c3a1aa24cf73138e",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Triennale/Terzo anno/Data and web mining/Regressione lineare.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Regressione lineare"
             }
           }
         ]
@@ -162,8 +176,16 @@
       "obsidian-excalidraw-plugin:New drawing": false
     }
   },
-  "active": "9850be344573be8b",
+  "active": "a1163d9af64d6878",
   "lastOpenFiles": [
+    "Magistrale/Foundations of machine learning/Images/Polar mapping.png",
+    "Magistrale/Foundations of machine learning/Images/Soft margins.png",
+    "Magistrale/Advanced data management/DBMS internals/04 - Multidimensional data organizations.md",
+    "Magistrale/Foundations of machine learning/03 - Support vector machines.md",
+    "Magistrale/Foundations of machine learning/Images/Margin.png",
+    "Magistrale/Foundations of machine learning/Images/SVM.png",
+    "Triennale/Terzo anno/Data and web mining/Regressione lineare.md",
+    "Magistrale/Foundations of machine learning/02 - Statistical learning theory.md",
     "Triennale/Terzo anno/Data and web mining/Decision trees.md",
     "Triennale/Terzo anno/Data and web mining/Ensemble methods.md",
     "Triennale/Terzo anno/Data and web mining/Clustering/K-means.md",
@@ -171,9 +193,6 @@
     "Triennale/Terzo anno/Data and web mining/Reti neurali/Best practices.md",
     "Magistrale/Foundations of machine learning/01 - Neural networks.md",
     "Triennale/Terzo anno/Data and web mining/K-nearest neighbors.md",
-    "Triennale/Terzo anno/Data and web mining/Regressione lineare.md",
-    "Magistrale/Foundations of machine learning/02 - Statistical learning theory.md",
-    "Magistrale/Advanced data management/DBMS internals/04 - Multidimensional data organizations.md",
     "Magistrale/Advanced data management/DBMS internals/03 - Dynamic organizations.md",
     "Magistrale/Advanced data management/Images/R-star tree.png",
     "Magistrale/Advanced data management/Images/Octree.png",
@@ -193,12 +212,8 @@
     "Triennale/Terzo anno/Data and web mining/Clustering/Gerarchico.md",
     "Triennale/Terzo anno/Data and web mining/Clustering/Density based.md",
     "Triennale/Terzo anno/Data and web mining/Text processing & naive Bayes.md",
-    "Magistrale/Foundations of machine learning/Images/Estimation and approximation error in ERM.png",
-    "Magistrale/Foundations of machine learning/Images/Cross validation.png",
-    "Magistrale/Foundations of machine learning/Images/NETtalk.png",
     "Magistrale/Calculus and optimization/05 - Chain rules.md",
     "Magistrale/Advanced data management/NoSQL databases/07 - Distributed databases.md",
-    "Magistrale/Advanced data management/DBMS internals/01 - Permanent buffers.md",
     "Magistrale/Calculus and optimization/Images",
     "Magistrale/Calculus and optimization/Nuova cartella",
     "Excalidraw",
