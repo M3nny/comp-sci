@@ -4,35 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "897b510ca43ea972",
+        "id": "7e7f3be516a81c1b",
         "type": "tabs",
         "children": [
           {
-            "id": "c66439e3f8a1b3bc",
+            "id": "3b2ab14fae583ac9",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Magistrale/Foundations of machine learning/03 - Support vector machines.md",
+                "file": "Magistrale/Calculus and optimization/06 - Implicit function theorem.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "03 - Support vector machines"
-            }
-          },
-          {
-            "id": "c3a1aa24cf73138e",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Triennale/Terzo anno/Data and web mining/Regressione lineare.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Regressione lineare"
+              "title": "06 - Implicit function theorem"
             }
           }
         ]
@@ -176,29 +162,32 @@
       "obsidian-excalidraw-plugin:New drawing": false
     }
   },
-  "active": "a1163d9af64d6878",
+  "active": "3b2ab14fae583ac9",
   "lastOpenFiles": [
+    "Magistrale/Calculus and optimization/05 - Chain rules.md",
+    "Magistrale/Calculus and optimization/06 - Implicit function theorem.md",
+    "Magistrale/Foundations of machine learning/01 - Neural networks.md",
+    "Magistrale/Foundations of machine learning/03 - Support vector machines.md",
+    "Magistrale/Calculus and optimization/Images/Pasted image 20251220164958.png",
+    "Magistrale/Calculus and optimization/Images/Implicit function theorem.png",
+    "Triennale/Terzo anno/Data and web mining/Regressione lineare.md",
     "Magistrale/Foundations of machine learning/Images/Polar mapping.png",
     "Magistrale/Foundations of machine learning/Images/Soft margins.png",
     "Magistrale/Advanced data management/DBMS internals/04 - Multidimensional data organizations.md",
-    "Magistrale/Foundations of machine learning/03 - Support vector machines.md",
     "Magistrale/Foundations of machine learning/Images/Margin.png",
     "Magistrale/Foundations of machine learning/Images/SVM.png",
-    "Triennale/Terzo anno/Data and web mining/Regressione lineare.md",
     "Magistrale/Foundations of machine learning/02 - Statistical learning theory.md",
     "Triennale/Terzo anno/Data and web mining/Decision trees.md",
     "Triennale/Terzo anno/Data and web mining/Ensemble methods.md",
     "Triennale/Terzo anno/Data and web mining/Clustering/K-means.md",
     "Triennale/Terzo anno/Data and web mining/Reti neurali/Filtri di convoluzione.md",
     "Triennale/Terzo anno/Data and web mining/Reti neurali/Best practices.md",
-    "Magistrale/Foundations of machine learning/01 - Neural networks.md",
     "Triennale/Terzo anno/Data and web mining/K-nearest neighbors.md",
     "Magistrale/Advanced data management/DBMS internals/03 - Dynamic organizations.md",
     "Magistrale/Advanced data management/Images/R-star tree.png",
     "Magistrale/Advanced data management/Images/Octree.png",
     "Magistrale/Advanced data management/Images/Quadtree.png",
     "Magistrale/Advanced data management/Images/Space partitioning.png",
-    "Magistrale/Advanced data management/Images/Peano curve.png",
     "Triennale/Terzo anno/Data and web mining/Reti neurali/Layers.md",
     "Triennale/Terzo anno/Data and web mining/Reti neurali/Introduzione.md",
     "Triennale/Terzo anno/Data and web mining/Feature selection & engineering.md",
@@ -207,13 +196,9 @@
     "Triennale/Secondo anno/Algoritmi e strutture dati/Mod. 2/Tabelle hash/Tabelle ad indirizzamento diretto.md",
     "Triennale/Secondo anno/Algoritmi e strutture dati/Mod. 2/Tabelle hash/Indirizzamento aperto.md",
     "Triennale/Secondo anno/Algoritmi e strutture dati/Mod. 2/Tabelle hash/Funzioni hash.md",
-    "Magistrale/Advanced data management/Images/Static organization.png",
-    "Magistrale/Foundations of machine learning/Images/Bias variance dilemma.png",
     "Triennale/Terzo anno/Data and web mining/Clustering/Gerarchico.md",
     "Triennale/Terzo anno/Data and web mining/Clustering/Density based.md",
     "Triennale/Terzo anno/Data and web mining/Text processing & naive Bayes.md",
-    "Magistrale/Calculus and optimization/05 - Chain rules.md",
-    "Magistrale/Advanced data management/NoSQL databases/07 - Distributed databases.md",
     "Magistrale/Calculus and optimization/Images",
     "Magistrale/Calculus and optimization/Nuova cartella",
     "Excalidraw",
