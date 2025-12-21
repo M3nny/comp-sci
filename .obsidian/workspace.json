@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Magistrale/Calculus and optimization/07 - Optimality conditions.md",
+                "file": "Magistrale/Advanced data management/DBMS internals/05 - Access methods.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "07 - Optimality conditions"
+              "title": "05 - Access methods"
             }
           }
         ]
@@ -164,8 +164,20 @@
   },
   "active": "3b2ab14fae583ac9",
   "lastOpenFiles": [
-    "Triennale/Terzo anno/Ricerca operativa/DIrezioni ottimali.md",
+    "Magistrale/Advanced data management/Images/Execution plan.png",
+    "Magistrale/Advanced data management/DBMS internals/02 - Static organizations.md",
+    "Magistrale/Advanced data management/DBMS internals/04 - Multidimensional data organizations.md",
+    "Magistrale/Advanced data management/DBMS internals/03 - Dynamic organizations.md",
+    "Magistrale/Advanced data management/DBMS internals/05 - Access methods.md",
+    "Magistrale/Advanced data management/DBMS internals/01 - Permanent buffers.md",
+    "Magistrale/Advanced data management/NoSQL databases/07 - Distributed databases.md",
+    "Magistrale/Advanced data management/NoSQL databases/06 - Neo4j.md",
+    "Magistrale/Advanced data management/NoSQL databases/05 - Graph databases.md",
+    "Magistrale/Advanced data management/NoSQL databases/04 - Extensible record stores.md",
+    "Magistrale/Advanced data management/NoSQL databases/03 - Column stores.md",
+    "Magistrale/Advanced data management/NoSQL databases/00 - Introduction.md",
     "Magistrale/Calculus and optimization/07 - Optimality conditions.md",
+    "Triennale/Terzo anno/Ricerca operativa/DIrezioni ottimali.md",
     "Magistrale/Calculus and optimization/01 - Convexity.md",
     "Triennale/Terzo anno/Ricerca operativa/Problemi convessi.md",
     "Magistrale/Calculus and optimization/06 - Implicit function theorem.md",
@@ -177,7 +189,6 @@
     "Triennale/Terzo anno/Data and web mining/Regressione lineare.md",
     "Magistrale/Foundations of machine learning/Images/Polar mapping.png",
     "Magistrale/Foundations of machine learning/Images/Soft margins.png",
-    "Magistrale/Advanced data management/DBMS internals/04 - Multidimensional data organizations.md",
     "Magistrale/Foundations of machine learning/Images/Margin.png",
     "Magistrale/Foundations of machine learning/Images/SVM.png",
     "Magistrale/Foundations of machine learning/02 - Statistical learning theory.md",
@@ -185,21 +196,10 @@
     "Triennale/Terzo anno/Data and web mining/Ensemble methods.md",
     "Triennale/Terzo anno/Data and web mining/Clustering/K-means.md",
     "Triennale/Terzo anno/Data and web mining/Reti neurali/Filtri di convoluzione.md",
-    "Triennale/Terzo anno/Data and web mining/Reti neurali/Best practices.md",
-    "Triennale/Terzo anno/Data and web mining/K-nearest neighbors.md",
-    "Magistrale/Advanced data management/DBMS internals/03 - Dynamic organizations.md",
     "Magistrale/Advanced data management/Images/R-star tree.png",
     "Magistrale/Advanced data management/Images/Octree.png",
     "Magistrale/Advanced data management/Images/Quadtree.png",
     "Magistrale/Advanced data management/Images/Space partitioning.png",
-    "Triennale/Terzo anno/Data and web mining/Reti neurali/Layers.md",
-    "Triennale/Terzo anno/Data and web mining/Reti neurali/Introduzione.md",
-    "Triennale/Terzo anno/Data and web mining/Feature selection & engineering.md",
-    "Magistrale/Advanced data management/DBMS internals/02 - Static organizations.md",
-    "Triennale/Secondo anno/Algoritmi e strutture dati/Mod. 2/Tabelle hash/Concatenamento.md",
-    "Triennale/Secondo anno/Algoritmi e strutture dati/Mod. 2/Tabelle hash/Tabelle ad indirizzamento diretto.md",
-    "Triennale/Secondo anno/Algoritmi e strutture dati/Mod. 2/Tabelle hash/Indirizzamento aperto.md",
-    "Triennale/Secondo anno/Algoritmi e strutture dati/Mod. 2/Tabelle hash/Funzioni hash.md",
     "Magistrale/Calculus and optimization/Images",
     "Magistrale/Calculus and optimization/Nuova cartella",
     "Excalidraw",
