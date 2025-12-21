@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Magistrale/Calculus and optimization/06 - Implicit function theorem.md",
+                "file": "Magistrale/Calculus and optimization/07 - Optimality conditions.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "06 - Implicit function theorem"
+              "title": "07 - Optimality conditions"
             }
           }
         ]
@@ -164,8 +164,12 @@
   },
   "active": "3b2ab14fae583ac9",
   "lastOpenFiles": [
-    "Magistrale/Calculus and optimization/05 - Chain rules.md",
+    "Triennale/Terzo anno/Ricerca operativa/DIrezioni ottimali.md",
+    "Magistrale/Calculus and optimization/07 - Optimality conditions.md",
+    "Magistrale/Calculus and optimization/01 - Convexity.md",
+    "Triennale/Terzo anno/Ricerca operativa/Problemi convessi.md",
     "Magistrale/Calculus and optimization/06 - Implicit function theorem.md",
+    "Magistrale/Calculus and optimization/05 - Chain rules.md",
     "Magistrale/Foundations of machine learning/01 - Neural networks.md",
     "Magistrale/Foundations of machine learning/03 - Support vector machines.md",
     "Magistrale/Calculus and optimization/Images/Pasted image 20251220164958.png",
@@ -196,9 +200,6 @@
     "Triennale/Secondo anno/Algoritmi e strutture dati/Mod. 2/Tabelle hash/Tabelle ad indirizzamento diretto.md",
     "Triennale/Secondo anno/Algoritmi e strutture dati/Mod. 2/Tabelle hash/Indirizzamento aperto.md",
     "Triennale/Secondo anno/Algoritmi e strutture dati/Mod. 2/Tabelle hash/Funzioni hash.md",
-    "Triennale/Terzo anno/Data and web mining/Clustering/Gerarchico.md",
-    "Triennale/Terzo anno/Data and web mining/Clustering/Density based.md",
-    "Triennale/Terzo anno/Data and web mining/Text processing & naive Bayes.md",
     "Magistrale/Calculus and optimization/Images",
     "Magistrale/Calculus and optimization/Nuova cartella",
     "Excalidraw",
