@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Magistrale/Advanced data management/DBMS internals/07 - Transaction management.md",
+                "file": "Magistrale/Advanced data management/DBMS internals/08 - PostgreSQL internals.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "07 - Transaction management"
+              "title": "08 - PostgreSQL internals"
             }
           }
         ]
@@ -78,8 +78,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 350.5124969482422,
-    "collapsed": true
+    "width": 350.5124969482422
   },
   "right": {
     "id": "282a9548711da6a0",
@@ -165,19 +164,20 @@
   },
   "active": "8c95dd760708e214",
   "lastOpenFiles": [
+    "Magistrale/Advanced data management/DBMS internals/06 - Physical operators.md",
+    "Magistrale/Advanced data management/DBMS internals/08 - PostgreSQL internals.md",
+    "Magistrale/Advanced data management/DBMS internals/05 - Access methods.md",
+    "Magistrale/Advanced data management/DBMS internals/01 - Permanent buffers.md",
+    "Magistrale/Advanced data management/DBMS internals/07 - Transaction management.md",
     "Magistrale/Advanced data management/Images/Serialization graph.png",
     "Magistrale/Advanced data management/Images/Recovery.png",
-    "Magistrale/Advanced data management/DBMS internals/07 - Transaction management.md",
     "Magistrale/Advanced data management/DBMS internals/Images",
-    "Magistrale/Advanced data management/DBMS internals/01 - Permanent buffers.md",
     "Magistrale/Advanced data management/Images/Lifecycle of a transaction.png",
-    "Magistrale/Advanced data management/DBMS internals/06 - Physical operators.md",
     "Magistrale/Foundations of artificial intelligence/05 - Constraint satisfaction.md",
     "Magistrale/Foundations of artificial intelligence/06 - Local search.md",
     "Magistrale/Advanced data management/Images/Query transformation.png",
     "Triennale/Secondo anno/Basi di dati/Mod. 1/Linguaggi relazionali.md",
     "Magistrale/Advanced data management/Images/Operators tree.png",
-    "Magistrale/Advanced data management/DBMS internals/05 - Access methods.md",
     "Magistrale/Advanced data management/Images/Execution plan.png",
     "Magistrale/Advanced data management/DBMS internals/02 - Static organizations.md",
     "Magistrale/Advanced data management/DBMS internals/04 - Multidimensional data organizations.md",
@@ -201,7 +201,6 @@
     "Triennale/Terzo anno/Data and web mining/Regressione lineare.md",
     "Magistrale/Foundations of machine learning/Images/Polar mapping.png",
     "Magistrale/Foundations of machine learning/Images/Soft margins.png",
-    "Magistrale/Foundations of machine learning/Images/Margin.png",
     "Magistrale/Calculus and optimization/Images",
     "Magistrale/Calculus and optimization/Nuova cartella",
     "Excalidraw",
