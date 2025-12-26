@@ -4,21 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "7e7f3be516a81c1b",
+        "id": "c58e787fc3f7691a",
         "type": "tabs",
         "children": [
           {
-            "id": "3b2ab14fae583ac9",
+            "id": "8c95dd760708e214",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Magistrale/Advanced data management/DBMS internals/06 - Physical operators.md",
+                "file": "Magistrale/Advanced data management/DBMS internals/07 - Transaction management.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "06 - Physical operators"
+              "title": "07 - Transaction management"
             }
           }
         ]
@@ -78,7 +78,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 350.5124969482422
+    "width": 350.5124969482422,
+    "collapsed": true
   },
   "right": {
     "id": "282a9548711da6a0",
@@ -162,11 +163,17 @@
       "obsidian-excalidraw-plugin:New drawing": false
     }
   },
-  "active": "3b2ab14fae583ac9",
+  "active": "8c95dd760708e214",
   "lastOpenFiles": [
+    "Magistrale/Advanced data management/Images/Serialization graph.png",
+    "Magistrale/Advanced data management/Images/Recovery.png",
+    "Magistrale/Advanced data management/DBMS internals/07 - Transaction management.md",
+    "Magistrale/Advanced data management/DBMS internals/Images",
+    "Magistrale/Advanced data management/DBMS internals/01 - Permanent buffers.md",
+    "Magistrale/Advanced data management/Images/Lifecycle of a transaction.png",
+    "Magistrale/Advanced data management/DBMS internals/06 - Physical operators.md",
     "Magistrale/Foundations of artificial intelligence/05 - Constraint satisfaction.md",
     "Magistrale/Foundations of artificial intelligence/06 - Local search.md",
-    "Magistrale/Advanced data management/DBMS internals/06 - Physical operators.md",
     "Magistrale/Advanced data management/Images/Query transformation.png",
     "Triennale/Secondo anno/Basi di dati/Mod. 1/Linguaggi relazionali.md",
     "Magistrale/Advanced data management/Images/Operators tree.png",
@@ -175,7 +182,6 @@
     "Magistrale/Advanced data management/DBMS internals/02 - Static organizations.md",
     "Magistrale/Advanced data management/DBMS internals/04 - Multidimensional data organizations.md",
     "Magistrale/Advanced data management/DBMS internals/03 - Dynamic organizations.md",
-    "Magistrale/Advanced data management/DBMS internals/01 - Permanent buffers.md",
     "Magistrale/Advanced data management/NoSQL databases/07 - Distributed databases.md",
     "Magistrale/Advanced data management/NoSQL databases/06 - Neo4j.md",
     "Magistrale/Advanced data management/NoSQL databases/05 - Graph databases.md",
@@ -196,14 +202,9 @@
     "Magistrale/Foundations of machine learning/Images/Polar mapping.png",
     "Magistrale/Foundations of machine learning/Images/Soft margins.png",
     "Magistrale/Foundations of machine learning/Images/Margin.png",
-    "Magistrale/Foundations of machine learning/Images/SVM.png",
-    "Magistrale/Foundations of machine learning/02 - Statistical learning theory.md",
-    "Triennale/Terzo anno/Data and web mining/Decision trees.md",
-    "Magistrale/Advanced data management/Images/R-star tree.png",
     "Magistrale/Calculus and optimization/Images",
     "Magistrale/Calculus and optimization/Nuova cartella",
     "Excalidraw",
-    "Magistrale/Advanced data management/DBMS internals/Images",
     "Magistrale/Advanced data management/DBMS internals",
     "Magistrale/Advanced data management/NoSQL databases",
     "Magistrale/Calculus and optimization",
