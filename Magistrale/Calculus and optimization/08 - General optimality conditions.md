@@ -36,7 +36,7 @@ Let $x^*$ be a local minimum of $f(x)$ on the set $X$, then there exists a vecto
 $$\begin{align}
 \lambda_0^*\nabla f(x^*)+\sum_{j=1}^p\lambda_j^*\nabla h_j(x^*)+\sum_{i=1}^m\mu_i^*\nabla g_i(x^*)=0\quad(1)\\
 h_j(x^*)=0,\quad j=1,...,p\quad(2)\\
-g_i(x^*)\leq 0,\quad j=1,...,m\quad(3)\\
+g_i(x^*)\leq 0,\quad i=1,...,m\quad(3)\\
 \mu_i^*g_i(x^*)=0,\quad i=1,..., m\quad(4)\\
 (\lambda_0^*,\lambda^*,\mu^*)\neq 0\quad(5)\\
 (\lambda_0^*,\mu^*)\geq 0\quad(6)
@@ -63,7 +63,7 @@ To ensure $\lambda_0^*\neq 0$ we can impose additional requirements, called **co
 3. **Linearity (or affinity) of Equality constraints and Concavity of Inequality constraints (LECI)**
 	It is equal to say that for any $\alpha\in[0,1]$ and for any $x,y\in X$:
 	- $h_j(x)=c_j^Tx\quad c_j\in\mathbb R^n\quad \forall j=1,...,p$
-	- $g_i[\alpha x+91-\alpha)y]\geq\alpha g_i(x)+(1-\alpha)g_i(y)\quad\forall i\in I(x^*)$
+	- $g_i[\alpha x+(1-\alpha)y]\geq\alpha g_i(x)+(1-\alpha)g_i(y)\quad\forall i\in I(x^*)$
 	
 	This essentially says the feasible region is convex.
 
@@ -71,3 +71,27 @@ To ensure $\lambda_0^*\neq 0$ we can impose additional requirements, called **co
 >The Fritz-John conditions alone are **necessary but not sufficient** because they allow $\lambda_0^*=0$.
 >By imposing constraint qualifications, we ensure $\lambda_0^*\neq0$.
 
+### Karush-Kuhn-Tucker optimality conditions
+Given the general optimization problem $(\spadesuit)$, let $f:\mathbb R^n\to \mathbb R$, $h:\mathbb R^n\to\mathbb R^p$ and $g:\mathbb R^n\to\mathbb R^m$, with $f(x)$, $h(x)$ and $g(x)$ continuously differentiable in an open set containing $X$.
+Let $x^*$ be a local minimum of $f(x)$ on $X$. If **any** of the above _constraint qualification conditions_ is satisfied at $x^*$, then there exists a vector $(\lambda^*,\mu^*)\in\mathbb R^p\times\mathbb R^m$ such that:
+$$\begin{align}
+(\diamondsuit)\\
+\nabla f(x^*)+\sum_{j=1}^p\lambda_j^*\nabla h_j(x^*)+\sum_{i=1}^m\mu_i^*\nabla g_i(x^*)=0\quad(1)\\
+h_j(x^*)=0,\quad j=1,...,p\quad(2)\\
+g_i(x^*)\leq 0,\quad i=1,...,m\quad(3)\\
+\mu_i^*g_i(x^*)=0,\quad i=1,..., m\quad(4)\\
+\mu^*\geq0\quad(5)
+\end{align}$$
+
+Compared to the Fritz-John optimality conditions, now the constraint qualification ensures $\lambda_o^*\neq0$, now the gradient of the objective function definitively appears in the conditions.
+
+In particular, if LICQ is satisfied at $x^*$, then there exists a **unique vector** of generalized Lagrange multipliers $(\lambda^*,\mu^*)\in\mathbb R^p\times\mathbb R^m$ satisfying the above conditions.
+The vector $(x^*,\lambda^*,\mu^*)$ is a so called **Karush-Kuhn-Tucker point**.
+
+Now we discuss a proposition that gives **sufficient optimality conditions**, that means, if these conditions hold, we can guarantee that $x^*$ is a local (and global) minimum.
+
+Given the general optimization problem $(\spadesuit)$, let $f:\mathbb R^n\to \mathbb R$, $h:\mathbb R^n\to\mathbb R^p$ and $g:\mathbb R^n\to\mathbb R^m$, with $f(x)$, $h(x)$ and $g(x)$ continuously differentiable in an open set containing $X$.
+Let $f(x)$ be _convex_ on $X$, $g_i(x)$ be _convex_ on $X$, $i=1,...,m$ and let $h_j(x)$ be _linear (affine)_ $j=1,...,p$. If there exists vectors $\lambda^*\in\mathbb R^p$ and $\mu^*\in\mathbb R^m$ such that the conditions $(\diamondsuit)$ at $x^*$ hold.
+
+Then $x^*$ is a local (and global) minimum of $(\spadesuit)$.
+In particular, if $f(x)$ is also _strictly convex_ on $X$, then $x^*$ is the unique local (global) minimum of $(\spadesuit)$.
