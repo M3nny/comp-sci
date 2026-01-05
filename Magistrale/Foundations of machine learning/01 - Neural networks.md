@@ -128,7 +128,15 @@ $$E=\frac{1}{2}\sum_\mu\sum_i(y_i^\mu-O_i^\mu)^2$$
 **Updating hidden-to-output weights**
 
 ![[Hidden to output weight update.png|300]]
-$$\Delta W_{ij}=\eta\sum_\mu\delta_i^\mu V_j^\mu\qquad \delta_i^\mu=(y_i^\mu-O_i^\mu)g'(h_i^\mu)$$
+$$\begin{align}
+\Delta W_{ij}&=-\eta\frac{\partial E}{\partial W_{ij}}\\
+&=-\eta\frac{\partial}{\partial W_{ij}}\left[\frac{1}{2}\sum_\mu\sum_k(y_k^\mu-O_k^\mu)^2\right]\\
+&=\eta\sum_\mu\sum_k(y_k^\mu-O_k^\mu)\frac{\partial O_k^\mu}{\partial W_{ij}}\\
+&=\eta\sum_\mu(y_i^\mu-O_i^\mu)\frac{\partial O_i^\mu}{\partial W_{ij}}\\
+&=\eta\sum_\mu(y_i^\mu-O_i^\mu)g'(h_i^\mu)V_j^\mu\\
+&=\eta\sum_\mu\delta_i^\mu V_j^\mu\qquad\delta_i^\mu=(y_i^\mu-O_i^\mu)g'(h_i^\mu)
+\end{align}$$
+
 - $(y_i^\mu-O_i^\mu)$ is the difference between target and predicted value
 - $g'(h_i^\mu)$ is the derivative of the activation function, which tells us how much the neuron's output changes with its input (it can be seen as a scaling factor)
 - $V_j^\mu$ indicates how active was the hidden neuron, those who are more active have more responsibility on the predicted value
@@ -139,7 +147,17 @@ In this case the neurons have direct access to the error information, so the err
 
 **Updating input-to-hidden weights**
 ![[Input to hidden weight update.png|300]]
-$$\Delta w_{jk}=\eta\sum_\mu\hat\delta_j^\mu x_k^\mu\qquad \hat\delta_i^\mu=g'(h_j^\mu)\sum_i\delta_i^\mu W_{ij}$$
+$$\begin{align}
+\Delta w_{jk}&=-\eta\frac{\partial E}{\partial w_{jk}}\\
+&=-\eta\frac{\partial}{\partial w_{jk}}\left[\frac{1}{2}\sum_\mu\sum_i(y_i^\mu-O_i^\mu)^2\right]\\
+&=\eta\sum_\mu\sum_i(y_i^\mu-O_i^\mu)\frac{\partial O_i^\mu}{\partial w_{jk}}\\
+&=\eta\sum_\mu\sum_i(y_i^\mu-O_i^\mu)g'(h_i^\mu)\frac{\partial h_i^\mu}{\partial w_{jk}}\\
+&=\eta\sum_\mu\sum_i(y_i^\mu-O_i^\mu)g'(h_i^\mu)W_{ij}\frac{\partial V_j^\mu}{\partial w_{jk}}\\
+&=\eta\sum_\mu\sum_i(y_i^\mu-O_i^\mu)g'(h_i^\mu)W_{ij}g'(h_j^\mu)\frac{\partial h_j^\mu}{\partial w_{jk}}\\
+&=\eta\sum_\mu\sum_i(y_i^\mu-O_i^\mu)g'(h_i^\mu)W_{ij}g'(h_j^\mu)x_k^\mu\\
+&=\eta\sum_\mu\sum_i\delta_i^\mu W_{ij}g'(h_j^\mu)x_k^\mu\\
+&=\eta\sum_\mu\hat\delta_j^\mu x_k^\mu\qquad\hat\delta_j^\mu=g'(h_j^\mu)\sum_i\delta_i^\mu W_{ij}
+\end{align}$$
 
 Since hidden neurons don't directly see the target output, we have to backpropagate the error from the output layer.
 
@@ -223,7 +241,7 @@ We can pick the model based on its error:
 
 In reality we cannot use the first method since the true error is unknown (and will remain so forever), hence we don't have the target probability distribution.
 
-in the real world we dont have access to the real probability distrubtion fo the problem, hence we use the sample error
+In the real world we dont have access to the real probability distribution for the problem, hence we use the sample error
 
 ### Cross validation
 In order to have a reliable accuracy of the model we can split the initial dataset in:
@@ -275,7 +293,7 @@ The **optimal brain surgeon (OBS)** method, consists in eliminating a weight (i.
 	- For each weight $q$ calculate what happens to the error if it gets deleted by using $L=\frac{w_q^2}{2[H^{-1}]_{qq}}$
 	- Compare this error increase to the acceptable error threshold $E$
 	- If $L<<E$, delete that weight and go to step 4
-	- If $L$ is close to $R$ go to step 5
+	- Otherwise go to step 5
 4. Update all the other weights to compensate the weight deletion and go to step 2
-5. Stop the algorithm, we deleted as many weights as possible without hurting performance too much
+5. Stop the algorithm, we deleted as many weights as possible without hurting performance too much (at this point it may be desirable to retrain the network)
 

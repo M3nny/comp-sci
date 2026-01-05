@@ -23,7 +23,7 @@ $$I(E)=\log\frac{1}{P(E)}=-\log P(E)$$
 We don't necessarily have to know how the information source works, we can just understand its [[Distribuzioni continue|probabilistic distribution]], for this reason we identify the source as a  (discrete) [[Variabili casuali|random variable]] $X$, with probability distribution $P(x)$.
 
 The **entropy** of $X$ is defined as the _average information produced by a source_:
-$$H(X)=\mathbb{E}[I(X)]=\sum_{x\in\mathscr{X}}p(x) I(x)-\sum_{x\in\mathscr{X}}p(x)\log p(x)$$
+$$H(X)=\mathbb{E}[I(X)]=\sum_{x\in\mathscr{X}}p(x) I(x)=-\sum_{x\in\mathscr{X}}p(x)\log p(x)$$
 where $\mathscr{X}$ is the symbols **alphabet** of the source.
 >If we want to emphasize the logarithm base $b$, we can write $H_b(x)$.
 >The measurement unit for base $2$ is called _bit_.
@@ -78,7 +78,7 @@ The **Kullback-Leiber (KL) divergence (i.e. relative entropy)** between $p$ and 
 $$D(p||q)=\sum_{i=1}^np_i\log\frac{p_i}{q_i}$$
 It measures how different two probabilities distributions are, in particular, how much information is lost when we use $q$ to approximate $p$, for this reason it is used as a **statistical distance**.
 
-While it measures how different two distributions are, and thus is distance, **it is not a metric** and does not satisfy [[Triennale/Secondo anno/Algoritmi e strutture dati/Mod. 1/Cammini minimi/Introduzione#Disuguaglianza triangolare|triangular inequality]].
+While it measures how different two distributions are, and thus it is a distance, **it is not a metric** and does not satisfy [[Triennale/Secondo anno/Algoritmi e strutture dati/Mod. 1/Cammini minimi/Introduzione#Disuguaglianza triangolare|triangular inequality]].
 
 Its key properties are:
 - **Non-negativity (Gibbs' inequality)**: $D(p||q)\geq 0$ and $D(p||q)=0\iff p=q$
@@ -159,7 +159,8 @@ Huffman coding is a lossless data compression algorithm used to minimize the ave
 More frequent symbols get shorter codes.
 It works as follows:
 1. Take the two least probable symbols in the alphabet, these two symbols will be given the longest codewords, which will have equal length, and differ only in the last digit
-2. Combine these two symbols into a single symbol, and repeat
+2. Combine these two symbols into a single symbol, and repeat until we have a single symbol
+3. Propagate the bits backward, splitting at each merge
 ![[Huffman coding.png|500]]
 
 **Optimality of Huffman codes**:
@@ -170,7 +171,7 @@ $$H_D(X)\leq L(C_{Huffman})<H_D(X)+1$$
 
 This express how close are the Huffman codes to the theoretical lower boundary.
 
-It is also important to highlight that as we increase the number of consecutive symbols, we get better and better codes, and Shannon's **source coding theorem** predicts that the expected codeword length ($L(C)$), will converge to the entropy of $X$ as we add more consecutive symbols to the Huffman encoding.
+It is also important to highlight that as we increase the number of inputs, we get better and better codes, and Shannon's **source coding theorem** predicts that the expected codeword length ($L(C)$), will converge to the entropy of $X$ as we add more input symbols to the Huffman encoding.
 
 ---
 ## Reliable communication through unreliable channels
