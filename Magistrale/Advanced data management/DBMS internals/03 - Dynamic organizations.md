@@ -49,7 +49,7 @@ Moreover we use a **split pointer** $p$ which cycles linearly the buckets, in th
 The hashing logic is:
 1. Hash the key $k$ and retrieve result $r$
 2. $r<p$? No -> use the $r$-th bucket, Yes -> hash using $h'(k)$
-3. Overflow? (i.e. the bucket contains for items than its capacity)
+3. Overflow? (i.e. the bucket contains more items than its capacity)
 	- Yes -> Add a bucket, re-hash every key in the bucket pointed by $p$ and move $p$ forward by one bucket
 
 Let's say that the capacity of each bucket is $2$, they can exceed it temporarily.
@@ -155,7 +155,7 @@ We can further differentiate them in:
 - **Dense**: if the index contains a reference to each specific record in the table (e.g. index on primary key)
 - **Sparse**: if the index contains a reference to a block of records (e.g. index to an hypothetical age column)
 
-**Inverted indexes** are a special kind of index that maps data to the records, this is particularly useful for text searches, for example we could have the following table:
+**Inverted indexes** are a special kind of index that maps data to the records IDs, this is particularly useful for text searches, for example we could have the following table:
 
 | DocID | Content             |
 | ----- | ------------------- |

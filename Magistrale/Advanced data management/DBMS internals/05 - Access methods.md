@@ -115,7 +115,7 @@ indexCity.i_close();
 ```
 
 ### Execution plan
-Consideri the following query.
+Considering the following query.
 ```sql
 SELECT PkEmp, EName
 FROM EMployee, Department

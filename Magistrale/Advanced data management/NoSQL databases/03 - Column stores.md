@@ -1,4 +1,4 @@
-On a **row store** relational database, data rows are stored consecutively, whilst on a **column store** data _columns_ are store consecutively.
+On a **row store** relational database, data rows are stored consecutively, whilst on a **column store** data _columns_ are stored consecutively.
 
 | ID  | Nome  |
 | --- | ----- |
@@ -46,5 +46,5 @@ Columns may contain lots of repetitions of values, for this reason we can compre
 - Handle exceptions that are outside the offset range
 ![[Differential encoding.png|400]]
 
-A popular data format is the [Apache parquet](https://parquet.apache.org/) format, which implements **column stripping** in order to transform nested data into columns.
+A popular data format is the [Apache Parquet](https://parquet.apache.org/) format, which implements **column stripping** in order to transform nested data into columns.
 

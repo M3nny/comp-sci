@@ -22,7 +22,7 @@ Other than the things mentioned above, we may also want to consider the _buffer 
 ### Relational model
 We already saw in the past that a database is a set of table names (i.e. **relation symbol**), where table headers determines the column names (i.e. **attribute names**) and their domain of values.
 
-We recall that it is a good practice to [[Forme normali|normalize]] a relation database, this will enforce a good distribution of attributes among the tables, and will get rid of the following **anomalies**:
+We recall that it is a good practice to [[Forme normali|normalize]] a relational database, this will enforce a good distribution of attributes among the tables, and will get rid of the following **anomalies**:
 - **Insertion anomaly**: we need every attribute value when inserting a new record, but some may sill be unknown
 - **Deletion anomaly**: when deleting a record, we may lose information that was needed in the database
 - **Update anomaly**: when data is stored redundantly, values have to be changed in more than one record
@@ -53,7 +53,7 @@ This "new" movement does not strictly adhere to the ACID properties, but can cop
 >See [[NoSQL|NoSQL databases]].
 
 Instead of ACID properties, nosql databases, follow the **BaSE** properties:
-- **Ba (Badically Available)**: the system guarantees availability, by always responding to requests even if some nodes are down or out of sync
+- **Ba (Basically Available)**: the system guarantees availability, by always responding to requests even if some nodes are down or out of sync
 - **S (Soft state)**: the system's state can change over time, even without input, because data is replicated across nodes
 - **E (Eventually consistent)**: given enough time without updates, all nodes will converge to the same consistent state
 

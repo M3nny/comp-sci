@@ -93,7 +93,7 @@ foreach r in O_E do
 
 The **order of loops** matters as outer relation is more convenient the one with the longest tuples.
 
-- $PageNestedLoop(O_E, O_I, \psi_j)$: same thing as the nested loop with the difference that we access alle the results in page before moving to the next one
+- $PageNestedLoop(O_E, O_I, \psi_j)$: same thing as the nested loop with the difference that we access all the results in page before moving to the next one
 ```
 foreach page p_r of O_E fo
 	foreach page p_s of O_I do
@@ -133,7 +133,6 @@ In general _selection and projection are pushed below join_ if possible, and pro
 The `distinct` clause if possible is deleted, since it requires sorting, which is costly.
 For this reason we use functional dependencies theory to discover if an interesting functional dependency can be inferred into the result of a query, in order to prove that the query result is already unique.
 
-
 Same thing with the `group by` clause, it can be deleted if there is only a single group, since the DBMS can prove that all rows belong to a single group, hence that clause is not useful, since it would require sorting.
 
 All the different kinds of subqueries (e.g. `ANY, ALL, IN`) can be transformed into `EXISTS` and `NOT EXISTS` clauses, furthermore, the latter clauses can be eliminated with the introduction of `JOIN`.
@@ -155,6 +154,5 @@ In the case of single relation queries, the problem is quite simple, but the rea
 
 Basically, this is an optimization problem, where we want to minimize the cost of the execution plan.
 >PostgreSQL for example uses [[06 - Local search#Genetic algorithms|genetic algorithms]].
-
 
 Heuristics are used because we don't want to spend more time optimizing the query than executing it directly without optimizations.
