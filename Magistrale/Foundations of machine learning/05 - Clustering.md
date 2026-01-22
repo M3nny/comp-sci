@@ -76,8 +76,6 @@ Partitions are built using the **2-way Ncut**:
 	- Choose a splitting point (e.g. median)
 	- Nodes above the splitting point go to $A$, below go to $B$
 
-
-
 #### More than two clusters
 
 **Recursive two-way cuts**
@@ -101,3 +99,8 @@ Each eigenvector encodes partitioning information at different scales, together 
 We can choose $k$ such that eigenvalues $\lambda_1,...,\lambda_k$ are very small, but $\lambda_{k+1}$ is relatively large.
 
 This works because small eigenvalues indicate well-separated clusters, and a large gap, called **eigengap** between $\lambda_k$ and $\lambda_{k+1}$ suggests that $k$ is the natural number of clusters, and adding more does not reveal meaningful structure.
+
+### Dominant-set clustering
+The core idea of this clustering method is to find clusters that are **internally cohesive** and **externally separated**.
+
+Instead of forcing everything into $k$ partitions, it discovers natural cohesive groups while handling noise, overlaps and asymmetry.
