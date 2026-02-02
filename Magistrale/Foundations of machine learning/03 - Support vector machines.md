@@ -1,4 +1,4 @@
-clSupport vector machines are part of the so called **kernel methods**.
+Support vector machines are part of the so called **kernel methods**.
 Their job is to find a **margin** which maximizes the boundary from one class cluster to another.
 The class instances which determine the margin are called **support vectors**, all other points can move freely since the solutions only depends on the SVs.
 ![[Magistrale/Foundations of machine learning/Images/SVM.png|400]]
@@ -28,7 +28,7 @@ $$\text{Margin}=\frac{|w^Tx_++b+1|}{||w||}=\frac{1+1}{||w||}=\frac{2}{||w||}$$
 
 ### Learning SVMs
 Learning the SVM can be formulated as an optimization problem:
-$$\max_w\frac{2}{||w||}\text{ subject to }w^Tx_i+b\begin{matrix}\geq1\text{ if }y_i=1\\\leq-1\text{ if }y_i=-1\end{matrix}$$
+$$\max_w\frac{2}{||w||}\text{ subject to }w^Tx_i+b\begin{cases}\geq1\text{ if }y_i=1\\\leq-1\text{ if }y_i=-1\end{cases}$$
 where $y_i$ is the label of the sample.
 
 This is a [[01 - Convexity#Convex functions|convex]] quadratic optimization problem subject to linear constraints, this ensures that there is a **unique minimum**.
@@ -99,7 +99,7 @@ Now, it is true that the dual problem has **many more variables** than the prima
 - Variables of the primal: based on number of input features
 - Variables of the dual: based on number of training samples
 
-But the fact is that the solution that we're gonna get from the dual, is **sparse** which means that the vast majority of variables is going to be $0$.
+But the fact is that the solution that we're gonna get from the dual, is **sparse** which means that the vast majority of the variables is going to be $0$.
 
 >[!Tip] SVMs and the VC dimension
 >A **theorem** from **Vapnik** tells us that the idea of maximizing the margin is equivalent to the notion of minimizing the [[02 - Statistical learning theory#The VC dimension|VC dimension]] of our SVM.
@@ -118,8 +118,8 @@ A slack variable is associated with each sample in the training set and that mea
 ![[Soft margins.png|500]]
 
 The modified problem with slack variables introduced as a **penalty** can be defined as:
-$$\min\frac{1}{2}||w||^2+\underbrace{C\sum_{i=1}^N\xi_i}_{\text{Penalty}}$$
-$$\text{Subject to}\quad y_i(w^Tx_i+b)\geq1-\xi\quad\xi_i\geq0,i=1,...,N$$
+$$\min_{w,\xi}\frac{1}{2}||w||^2+\underbrace{C\sum_{i=1}^N\xi_i}_{\text{Penalty}}$$
+$$\text{Subject to}\quad y_i(w^Tx_i+b)\geq1-\xi_i\quad\xi_i\geq0,i=1,...,N$$
 
 $C$ is an _hyperparameter_:
 - Small $C$: allows constraints to be easily ignored (large margin)
@@ -157,7 +157,7 @@ Some popular kernels are:
 So far we discussed binary classification problems, but in the case of multiple classes we should use another approach.
 
 Say for example that we have the classes: cat, dog, bird.
-We could train a **one-vs-the-rest classifier** which practically speaking is $K-1$ binary classifiers in one, for each one of the we ask ourselves: is it class $A$ or not?
+We could train a **one-vs-the-rest classifier** which practically speaking is $K-1$ binary classifiers in one, for each one of the classifier we ask ourselves: is it class $A$ or not?
 In the example stated above we would have:
 - Cat or not?
 - Dog or not?

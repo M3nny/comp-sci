@@ -52,7 +52,7 @@ In the preprocessing phase various filters may be applied based on the task of t
 **Learned features** are proved to be far more effective than the traditional computer vision hand-crafted features.
 
 #### Convolutional neural networks architecture
-Instead of having **fully-connected** layers, connecting every input to every output, it is preferable to use **locally-connected** layers with small receptive fields in order to reduce the number of trainable parameters.
+Instead of having **fully-connected** layers, connecting every input to every output, it is preferable to use **locally-connected** layers with small _receptive fields_ in order to reduce the number of trainable parameters.
 
 So, instead of learning a separate set of weights for every pixel location (as in fully-connected layers), a CNN learns one filter (as seen in the previous paragraph) and slides it across the image, this is called **weight sharing**.
 

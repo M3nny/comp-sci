@@ -13,25 +13,25 @@ In SLT there are the following assumptions:
 
 In order to estimate how good a function $f$ is when used as a classifier, we use a **loss function** which measures the cost of miss-classifying an instance.
 The simplest loss is the **0-1 loss**:
-$$\ell(X,Y,F(X))=\begin{cases}1&\text{if }f(x)\neq Y\\0&\text{otherwise}\end{cases}$$
+$$\ell(X,Y,f(X))=\begin{cases}1&\text{if }f(X)\neq Y\\0&\text{otherwise}\end{cases}$$
 The **risk** of a function is defined as the average loss, and the best classifier is the one with the smallest risk $R(f)$:
-$$R(f):=\mathbb E(\ell((X,Y,f(X)))$$
+$$R(f):=\mathbb E(\ell(X,Y,f(X)))$$
 
 ### The classification problem
 The "best", but also impractical classifier is the **Bayes classifier**:
 $$f_{Bayes}(x):=\begin{cases}1&\text{if }P(Y=1|X=x)\geq0.5\\-1&\text{otherwise}\end{cases}$$
 
-In practice, it is impossible to compute it, since $P$ unknown to the learner.
+In practice, it is impossible to compute it, since $P$ is unknown to the learner.
 
 We recall that the **Bayes' theorem** is defined as:
 $$P(h|e)=\frac{P(e|h)P(h)}{P(e)}$$
 
-But, not only it is impossible to compute the Bayes error, but also the risk of a function $f$ cannot be computed without knowing $P$.
+Not only it is impossible to compute the Bayes error, but also the risk of a function $f$ cannot be computed without knowing $P$.
 
 ### Nearest neighbor
 Thomas Cover and Peter Hart showed that:
 $$R(f_{Bayes})\leq R_\infty\leq 2R(f_{Bayes})$$
-Where $R_\infty$ denotes the expected error rate of NN when the sample size tends to infinity.
+Where $R_\infty$ denotes the expected error rate of nearest-neighbor when the sample size tends to infinity.
 
 #### Kernel rules
 Instead of fixing the number of neighbors to classify a new point $x$, we might consider fixing a distance $h$ and taking a majority vote among the labels that fall within that distance.

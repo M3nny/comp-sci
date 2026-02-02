@@ -70,11 +70,11 @@ $$\begin{align}
 H(X,Y)&=H(X)+H(Y|X)\\
 &=H(Y)+H(X|Y)
 \end{align}$$
-### The Kullback-Leiber divergence
+### The Kullback-Leibler divergence
 Let $p$ and $q$ be two (discrete) probability distributions.
 We can imagine them as two points belonging to the [standard simplex](https://en.wikipedia.org/wiki/Simplex) defined as:
 $$\Delta=\left\{x\in\mathbb{R}^n:\sum_{i=1}^nx_i=1,x_i\geq0\right\}$$
-The **Kullback-Leiber (KL) divergence (i.e. relative entropy)** between $p$ and $q$ is defined as:
+The **Kullback-Leibler (KL) divergence (i.e. relative entropy)** between $p$ and $q$ is defined as:
 $$D(p||q)=\sum_{i=1}^np_i\log\frac{p_i}{q_i}$$
 It measures how different two probabilities distributions are, in particular, how much information is lost when we use $q$ to approximate $p$, for this reason it is used as a **statistical distance**.
 
