@@ -26,7 +26,7 @@ The implicit function theorem, also known as the Dini's theorem, states that giv
 $$\frac{\partial f(\overline x,\overline y)}{\partial y}\neq0$$
 Then, there exists a neighborhood $I(\overline x,\overline y)\subseteq A$ where the implicit function $y=y(x)$ is defined and satisfies:
 1. $\overline y=y(\overline x)$ (the function passes through our point)
-2. The first derivative $y'(x)$ of $y=y(x)$ is given , in any open subset of $I(\overline x,\overline y)$, by:
+2. The first derivative $y'(x)$ of $y=y(x)$ is given, in any open subset of $I(\overline x,\overline y)$, by:
 $$y'(x)=-\frac{\frac{\partial f(x,y(x))}{\partial x}}{\frac{\partial f(x,y(x))}{\partial y}},\quad\forall(x,y)\in \mathring{I}(\overline x,\overline y)$$
 
 **Proof (simplified)**

@@ -115,7 +115,7 @@ $$f(y)=f(x)+\nabla f(x)^T(y-x)+\frac{1}{2}(y-x)^T\nabla^2 f[x+\theta (y-x)](y-x)
 ### Minima/maxima - local/global
 From the [[Funzioni continue#Teoremi fondamentali sulle funzioni continue|Weierstrass theorem]]:
 given the function $f(x)$ with $f:\mathbb{R}^n\to\mathbb{R}^n$, let $f(x)$ continuous over the set $A\subset\mathbb{R}^n$, which is closed and limited (i.e. compact), then $f(x)$ admits a global minima and maxima on $A$.
->A function might  admit a minima and maxima even if the theorem is violated, but we are sure they exists if the theorem is valid.
+>A function might admit a minima and maxima even if the theorem is violated, but we are sure they exists if the theorem is valid.
 
 
 Given the set $C\subseteq\mathbb{R}^n$ and the function $f:\mathbb{R}^n\to\mathbb{R}$, let $x^*\in C$ and $I(x^*,\rho)\stackrel{\Delta}{=}\{x\in\mathbb{R}^n, ||x-x^*||_* \leq \rho\}$.
