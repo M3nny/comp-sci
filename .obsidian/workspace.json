@@ -11,10 +11,14 @@
             "id": "3873f2acae19a3db",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "Magistrale/Information retrieval and web search/01 - Boolean model.md",
+                "mode": "source",
+                "source": false
+              },
               "icon": "lucide-file",
-              "title": "New tab"
+              "title": "01 - Boolean model"
             }
           }
         ]
@@ -40,7 +44,7 @@
                 "autoReveal": false
               },
               "icon": "lucide-folder-closed",
-              "title": "Files"
+              "title": "Esplora risorse"
             }
           },
           {
@@ -150,16 +154,30 @@
   },
   "left-ribbon": {
     "hiddenItems": {
-      "bases:Create new base": false,
-      "switcher:Open quick switcher": true,
-      "graph:Open graph view": false,
-      "canvas:Create new canvas": true,
-      "command-palette:Open command palette": true,
+      "switcher:Apri selezione rapida": false,
+      "graph:Apri vista grafo": false,
+      "canvas:Crea nuova lavagna": false,
+      "command-palette:Apri riquadro comandi": false,
+      "bases:Crea nuova Base": false,
       "obsidian-excalidraw-plugin:New drawing": false
     }
   },
   "active": "3873f2acae19a3db",
   "lastOpenFiles": [
+    "Magistrale/Information retrieval and web search/Images/Pasted image 20260307172941.png",
+    "Magistrale/Information retrieval and web search/Images/AND query optimization.png",
+    "Magistrale/Information retrieval and web search/Images/Pointer skipping.png",
+    "Magistrale/Information retrieval and web search/Images/Merge in retrieval query.png",
+    "Magistrale/Information retrieval and web search/00 - Introduction.md",
+    "Magistrale/Information retrieval and web search/01 - Boolean model.md",
+    "Excalidraw/Drawing 2026-03-07 16.46.12.excalidraw.md",
+    "Excalidraw",
+    "Senza nome.canvas",
+    "Magistrale/Information retrieval and web search/Images/Pasted image 20260307164532.png",
+    "Magistrale/Information retrieval and web search/Images/Classic search model.png",
+    "Magistrale/Information retrieval and web search/Images/Term-document incidence matrix.png",
+    "Magistrale/Information retrieval and web search/Images",
+    "Magistrale/Information retrieval and web search",
     "Magistrale/Advanced data management/Summary.md",
     "Magistrale/Calculus and optimization/06 - Implicit function theorem.md",
     "Magistrale/Calculus and optimization/Summary.md",
@@ -184,27 +202,15 @@
     "Triennale/Terzo anno/Data and web mining/Clustering/Density based.md",
     "Triennale/Terzo anno/Data and web mining/Clustering/K-means.md",
     "Triennale/Terzo anno/Data and web mining/Clustering/Gerarchico.md",
-    "Triennale/Secondo anno/Algoritmi e strutture dati/Mod. 1/Alberi/Minimum Spanning Tree.md",
-    "Triennale/Secondo anno/Algoritmi e strutture dati/Mod. 1/Alberi/Generic-MST.md",
-    "Magistrale/Advanced data management/DBMS internals/05 - Access methods.md",
     "Magistrale/Calculus and optimization/Images/Armijo rule.png",
     "Magistrale/Calculus and optimization/Images/Newton's method.png",
-    "Magistrale/Calculus and optimization/Images/Pasted image 20260103125843.png",
-    "Magistrale/Calculus and optimization/Images/Steepest descent.png",
-    "Magistrale/Foundations of machine learning/Images/Adversarial example.png",
-    "Magistrale/Foundations of machine learning/Images/BPTT.png",
-    "Magistrale/Foundations of machine learning/Images/Recurrent neural networks.png",
-    "Magistrale/Foundations of machine learning/Images/Recurrent neural networks.png",
     "Magistrale/Advanced data management/DBMS internals/Images",
     "Magistrale/Calculus and optimization/Images",
     "Magistrale/Calculus and optimization/Nuova cartella",
-    "Excalidraw",
     "Magistrale/Advanced data management/DBMS internals",
     "Magistrale/Advanced data management/NoSQL databases",
     "Magistrale/Calculus and optimization",
     "Calcolo 1/Images",
-    "Calcolo 1",
-    "Magistrale/Advanced data management/Images",
     "asdasdasd.canvas"
   ]
 }
