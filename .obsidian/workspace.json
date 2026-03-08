@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Magistrale/Information retrieval and web search/01 - Boolean model.md",
+                "file": "Magistrale/Algorithms for massive data/01 - Suffix trie.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "01 - Boolean model"
+              "title": "01 - Suffix trie"
             }
           }
         ]
@@ -164,12 +164,22 @@
   },
   "active": "3873f2acae19a3db",
   "lastOpenFiles": [
+    "Magistrale/Algorithms for massive data/Images/Pasted image 20260308211438.png",
+    "Magistrale/Algorithms for massive data/Images/Suffix array.png",
+    "Magistrale/Algorithms for massive data/Images/Suffix tree.png",
+    "Magistrale/Algorithms for massive data/Images/Suffix trie.png",
+    "Magistrale/Algorithms for massive data/Images",
+    "Magistrale/Algorithms for massive data/00 - Introduction.md",
+    "Magistrale/Algorithms for massive data/01 - Suffix trie.md",
+    "Triennale/Secondo anno/Probabilità e statistica/Probabilità elementare.md",
+    "Magistrale/Information retrieval and web search/01 - Boolean model.md",
+    "Magistrale/Algorithms for massive data",
+    "Magistrale/Senza nome.canvas",
     "Magistrale/Information retrieval and web search/Images/Pasted image 20260307172941.png",
     "Magistrale/Information retrieval and web search/Images/AND query optimization.png",
     "Magistrale/Information retrieval and web search/Images/Pointer skipping.png",
     "Magistrale/Information retrieval and web search/Images/Merge in retrieval query.png",
     "Magistrale/Information retrieval and web search/00 - Introduction.md",
-    "Magistrale/Information retrieval and web search/01 - Boolean model.md",
     "Excalidraw/Drawing 2026-03-07 16.46.12.excalidraw.md",
     "Excalidraw",
     "Senza nome.canvas",
@@ -183,7 +193,6 @@
     "Magistrale/Calculus and optimization/Summary.md",
     "Magistrale/Calculus and optimization/00 - Introduction.md",
     "Magistrale/Calculus and optimization/Summary old.md",
-    "Magistrale/Calculus and optimization/Images/Pasted image 20260226172350.png",
     "Magistrale/Calculus and optimization/08 - General optimality conditions.md",
     "Magistrale/Calculus and optimization/09 - Optimization methods for unconstrained optimization.md",
     "Magistrale/Calculus and optimization/03 - Eigenpairs.md",
@@ -192,25 +201,17 @@
     "Triennale/Primo anno/Primo semestre/Algebra lineare/Matrici.md",
     "Magistrale/Calculus and optimization/04 - Curves.md",
     "Magistrale/Calculus and optimization/07 - Convex optimality conditions.md",
-    "Magistrale/Calculus and optimization/Images/Pasted image 20260210114949.png",
     "Magistrale/Foundations of machine learning/02 - Statistical learning theory.md",
     "Magistrale/Foundations of machine learning/Summary.md",
     "Magistrale/Foundations of machine learning/03 - Support vector machines.md",
     "Magistrale/Foundations of machine learning/05 - Clustering.md",
     "Magistrale/Foundations of machine learning/00 - Information and inference.md",
     "Magistrale/Foundations of machine learning/06 - Machine learning security.md",
-    "Triennale/Terzo anno/Data and web mining/Clustering/Density based.md",
-    "Triennale/Terzo anno/Data and web mining/Clustering/K-means.md",
-    "Triennale/Terzo anno/Data and web mining/Clustering/Gerarchico.md",
-    "Magistrale/Calculus and optimization/Images/Armijo rule.png",
-    "Magistrale/Calculus and optimization/Images/Newton's method.png",
     "Magistrale/Advanced data management/DBMS internals/Images",
     "Magistrale/Calculus and optimization/Images",
     "Magistrale/Calculus and optimization/Nuova cartella",
     "Magistrale/Advanced data management/DBMS internals",
     "Magistrale/Advanced data management/NoSQL databases",
-    "Magistrale/Calculus and optimization",
-    "Calcolo 1/Images",
     "asdasdasd.canvas"
   ]
 }
