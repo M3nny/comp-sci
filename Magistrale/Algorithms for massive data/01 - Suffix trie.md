@@ -46,6 +46,8 @@ It occupies $n\log n+n\log|\sum|$ bits total, and has the following performance:
 - $extract(i\ell)$: $O(\ell)$
 
 The suffix array **occupies way less space** than the other two approaches, **but it's slower**.
+It still occupies an order of magnitude more than the text itself if we consider the human genome, which is an _incompressible_ text over alphabet of size $4$.
+>On compressible texts, this gap is worse. 
 
 |    Structure     |     Space      |    Count     |      Locate      |
 | :--------------: | :------------: | :----------: | :--------------: |
