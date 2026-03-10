@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Magistrale/Learning with massive data/01 - PageRank.md",
+                "file": "Magistrale/Information retrieval and web search/02 - Document ingestion.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "01 - PageRank"
+              "title": "02 - Document ingestion"
             }
           }
         ]
@@ -162,10 +162,11 @@
       "obsidian-excalidraw-plugin:New drawing": false
     }
   },
-  "active": "a1163d9af64d6878",
+  "active": "db17d2610c479e04",
   "lastOpenFiles": [
-    "Magistrale/Information retrieval and web search/01 - Boolean model.md",
     "Magistrale/Learning with massive data/01 - PageRank.md",
+    "Magistrale/Information retrieval and web search/02 - Document ingestion.md",
+    "Magistrale/Information retrieval and web search/01 - Boolean model.md",
     "Magistrale/Learning with massive data",
     "Magistrale/Algorithms for massive data/02 - Basics of information theory.md",
     "Magistrale/Foundations of machine learning/00 - Information and inference.md",
@@ -207,7 +208,6 @@
     "Magistrale/Foundations of machine learning/02 - Statistical learning theory.md",
     "Magistrale/Foundations of machine learning/Summary.md",
     "Magistrale/Foundations of machine learning/03 - Support vector machines.md",
-    "Magistrale/Foundations of machine learning/05 - Clustering.md",
     "Magistrale/Advanced data management/DBMS internals/Images",
     "Magistrale/Calculus and optimization/Images",
     "Magistrale/Calculus and optimization/Nuova cartella",
