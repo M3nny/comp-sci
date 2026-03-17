@@ -4,21 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "c9fb190cbaa87768",
+        "id": "a7d755c63014f00e",
         "type": "tabs",
         "children": [
           {
-            "id": "f377631b40f1ed68",
+            "id": "2488fa487fda1426",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Magistrale/Learning with massive data/02 - Recommender systems.md",
+                "file": "Magistrale/Information retrieval and web search/03 - Dictionaries and tolerant retrieval.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "02 - Recommender systems"
+              "title": "03 - Dictionaries and tolerant retrieval"
             }
           }
         ]
@@ -78,8 +78,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 313,
-    "collapsed": true
+    "width": 313
   },
   "right": {
     "id": "282a9548711da6a0",
@@ -163,20 +162,31 @@
       "obsidian-excalidraw-plugin:New drawing": false
     }
   },
-  "active": "f377631b40f1ed68",
+  "active": "2488fa487fda1426",
   "lastOpenFiles": [
+    "Magistrale/Information retrieval and web search/Images/Pasted image 20260317171744.png",
+    "Magistrale/Information retrieval and web search/Images/Bigrams overlap.png",
+    "Magistrale/Information retrieval and web search/Images/Bigrams.png",
+    "Magistrale/Information retrieval and web search/Images/Permuterm.png",
+    "Magistrale/Information retrieval and web search/Images/B-tree elements.png.~tmp",
+    "Magistrale/Information retrieval and web search/02 - Document ingestion.md",
+    "Magistrale/Information retrieval and web search/03 - Dictionaries and tolerant retrieval.md",
+    "Magistrale/Information retrieval and web search/Images/B-tree elements.png",
+    "Magistrale/Information retrieval and web search/Images/B-tree.png",
+    "Magistrale/Advanced data management/DBMS internals/03 - Dynamic organizations.md",
+    "Magistrale/Information retrieval and web search/Images/Binary tree.png",
+    "Magistrale/Algorithms for massive data/01 - Suffix trie.md",
+    "Magistrale/Advanced data management/DBMS internals/02 - Static organizations.md",
+    "Magistrale/Information retrieval and web search/01 - Boolean model.md",
+    "Magistrale/Learning with massive data/02 - Recommender systems.md",
     "Triennale/Terzo anno/Ricerca operativa/Definizioni generali.md",
     "Magistrale/Calculus and optimization/00 - Introduction.md",
-    "Magistrale/Learning with massive data/02 - Recommender systems.md",
-    "Magistrale/Information retrieval and web search/01 - Boolean model.md",
-    "Magistrale/Information retrieval and web search/02 - Document ingestion.md",
     "Magistrale/Algorithms for massive data/03 - Zero-order bitvectors.md",
     "Magistrale/Learning with massive data/01 - PageRank.md",
     "Magistrale/Learning with massive data",
     "Magistrale/Algorithms for massive data/02 - Basics of information theory.md",
     "Magistrale/Foundations of machine learning/00 - Information and inference.md",
     "Magistrale/Algorithms for massive data/00 - Introduction.md",
-    "Magistrale/Algorithms for massive data/01 - Suffix trie.md",
     "Magistrale/Algorithms for massive data/Images/Pasted image 20260308211438.png",
     "Magistrale/Algorithms for massive data/Images/Suffix array.png",
     "Magistrale/Algorithms for massive data/Images/Suffix tree.png",
@@ -185,16 +195,10 @@
     "Triennale/Secondo anno/Probabilità e statistica/Probabilità elementare.md",
     "Magistrale/Algorithms for massive data",
     "Magistrale/Senza nome.canvas",
-    "Magistrale/Information retrieval and web search/Images/Pasted image 20260307172941.png",
-    "Magistrale/Information retrieval and web search/Images/AND query optimization.png",
-    "Magistrale/Information retrieval and web search/Images/Pointer skipping.png",
-    "Magistrale/Information retrieval and web search/Images/Merge in retrieval query.png",
     "Magistrale/Information retrieval and web search/00 - Introduction.md",
     "Excalidraw/Drawing 2026-03-07 16.46.12.excalidraw.md",
     "Excalidraw",
     "Senza nome.canvas",
-    "Magistrale/Information retrieval and web search/Images/Pasted image 20260307164532.png",
-    "Magistrale/Information retrieval and web search/Images/Classic search model.png",
     "Magistrale/Information retrieval and web search/Images",
     "Magistrale/Information retrieval and web search",
     "Magistrale/Advanced data management/Summary.md",
@@ -205,14 +209,9 @@
     "Magistrale/Calculus and optimization/09 - Optimization methods for unconstrained optimization.md",
     "Magistrale/Calculus and optimization/03 - Eigenpairs.md",
     "Magistrale/Calculus and optimization/02 - Basics of linear algebra.md",
-    "Magistrale/Calculus and optimization/01 - Convexity.md",
-    "Triennale/Primo anno/Primo semestre/Algebra lineare/Matrici.md",
-    "Magistrale/Calculus and optimization/04 - Curves.md",
-    "Magistrale/Calculus and optimization/07 - Convex optimality conditions.md",
     "Magistrale/Advanced data management/DBMS internals/Images",
     "Magistrale/Calculus and optimization/Images",
     "Magistrale/Calculus and optimization/Nuova cartella",
-    "Magistrale/Advanced data management/DBMS internals",
     "asdasdasd.canvas"
   ]
 }
