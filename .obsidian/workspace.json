@@ -4,21 +4,17 @@
     "type": "split",
     "children": [
       {
-        "id": "a7d755c63014f00e",
+        "id": "e229bbafecdda800",
         "type": "tabs",
         "children": [
           {
-            "id": "2488fa487fda1426",
+            "id": "0be14b81f9e7f68a",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Magistrale/Information retrieval and web search/04 - Index construction.md",
-                "mode": "source",
-                "source": false
-              },
+              "type": "empty",
+              "state": {},
               "icon": "lucide-file",
-              "title": "04 - Index construction"
+              "title": "Nuova scheda"
             }
           }
         ]
@@ -162,11 +158,20 @@
       "obsidian-excalidraw-plugin:New drawing": false
     }
   },
-  "active": "2488fa487fda1426",
+  "active": "0be14b81f9e7f68a",
   "lastOpenFiles": [
+    "Magistrale/Algorithms for massive data/04 - Elias-Fano data structure.md",
+    "Triennale/Secondo anno/Algoritmi e strutture dati/Mod. 2/Dizionari.md",
+    "Triennale/Secondo anno/Algoritmi e strutture dati/Mod. 2/Code di priorità.md",
+    "Triennale/Secondo anno/Algoritmi e strutture dati/Mod. 2/Strutture dati.md",
+    "Triennale/Secondo anno/Algoritmi e strutture dati/Mod. 1/Complessità di un algoritmo.md",
+    "Magistrale/Algorithms for massive data/03 - Zero-order bitvectors.md",
+    "Magistrale/Algorithms for massive data/02 - Basics of information theory.md",
+    "Magistrale/Algorithms for massive data/01 - Suffix trie.md",
+    "Magistrale/Algorithms for massive data/00 - Introduction.md",
+    "Magistrale/Information retrieval and web search/04 - Index construction.md",
     "Magistrale/Information retrieval and web search/01 - Boolean model.md",
     "Magistrale/Information retrieval and web search/02 - Document ingestion.md",
-    "Magistrale/Information retrieval and web search/04 - Index construction.md",
     "Magistrale/Information retrieval and web search/Images/Term-based partitioning.png",
     "Magistrale/Information retrieval and web search/Images/Document-based partitioning.png",
     "Magistrale/Information retrieval and web search/Images/MapReduce.png",
@@ -181,17 +186,13 @@
     "Magistrale/Information retrieval and web search/Images/B-tree elements.png",
     "Magistrale/Information retrieval and web search/Images/B-tree.png",
     "Magistrale/Advanced data management/DBMS internals/03 - Dynamic organizations.md",
-    "Magistrale/Algorithms for massive data/01 - Suffix trie.md",
     "Magistrale/Advanced data management/DBMS internals/02 - Static organizations.md",
     "Magistrale/Learning with massive data/02 - Recommender systems.md",
     "Triennale/Terzo anno/Ricerca operativa/Definizioni generali.md",
     "Magistrale/Calculus and optimization/00 - Introduction.md",
-    "Magistrale/Algorithms for massive data/03 - Zero-order bitvectors.md",
     "Magistrale/Learning with massive data/01 - PageRank.md",
     "Magistrale/Learning with massive data",
-    "Magistrale/Algorithms for massive data/02 - Basics of information theory.md",
     "Magistrale/Foundations of machine learning/00 - Information and inference.md",
-    "Magistrale/Algorithms for massive data/00 - Introduction.md",
     "Magistrale/Algorithms for massive data/Images",
     "Triennale/Secondo anno/Probabilità e statistica/Probabilità elementare.md",
     "Magistrale/Algorithms for massive data",
@@ -204,10 +205,6 @@
     "Magistrale/Information retrieval and web search",
     "Magistrale/Advanced data management/Summary.md",
     "Magistrale/Calculus and optimization/06 - Implicit function theorem.md",
-    "Magistrale/Calculus and optimization/Summary.md",
-    "Magistrale/Calculus and optimization/Summary old.md",
-    "Magistrale/Calculus and optimization/08 - General optimality conditions.md",
-    "Magistrale/Calculus and optimization/09 - Optimization methods for unconstrained optimization.md",
     "Magistrale/Advanced data management/DBMS internals/Images",
     "Magistrale/Calculus and optimization/Images",
     "Magistrale/Calculus and optimization/Nuova cartella",

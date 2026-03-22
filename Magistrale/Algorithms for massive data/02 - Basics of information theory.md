@@ -1,6 +1,6 @@
 Let's consider a string of length $n$ over the alphabet $\{A,C,G,T\}$ containing one occurrence of $A,C,G$ and with the remaining letters being equal to $T$.
 
-The IT lower bound for encoding such string would be:$\log\binom{n}{3}\cdot3!=O(\log n)$ bits, because we only need to encode where those $3$ rare characters are placed among the $T$'s, but the [[01 - Suffix trie#The suffix array|suffix array]] still takes $n\log n$ bits, which is still an exponential gap between the compressed text and the SA.
+The **IT lower bound** for encoding such string would be:$\log\binom{n}{3}\cdot3!=O(\log n)$ bits, because we only need to encode where those $3$ rare characters are placed among the $T$'s, but the [[01 - Suffix trie#The suffix array|suffix array]] still takes $n\log n$ bits, which is still an exponential gap between the compressed text and the SA.
 
 ### Worst case entropy
 The IT lower bound has a formal name.
