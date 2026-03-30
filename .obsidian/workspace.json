@@ -4,21 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "00a84a52dcdb35f2",
+        "id": "08dbf8b4e25d422b",
         "type": "tabs",
         "children": [
           {
-            "id": "fdc7d51171de0061",
+            "id": "9e7486662ca3f778",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Magistrale/Information retrieval and web search/05 - Index compression.md",
+                "file": "Magistrale/Algorithms for massive data/05 - Compressed suffix array.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "05 - Index compression"
+              "title": "05 - Compressed suffix array"
             }
           }
         ]
@@ -162,11 +162,17 @@
       "obsidian-excalidraw-plugin:New drawing": false
     }
   },
-  "active": "fdc7d51171de0061",
+  "active": "9e7486662ca3f778",
   "lastOpenFiles": [
+    "Magistrale/Algorithms for massive data/03 - Zero-order bitvectors.md",
+    "Magistrale/Algorithms for massive data/05 - Compressed suffix array.md",
+    "Magistrale/Algorithms for massive data/04 - Elias-Fano data structure.md",
+    "Magistrale/Algorithms for massive data/00 - Introduction.md",
+    "Magistrale/Algorithms for massive data/02 - Basics of information theory.md",
+    "Magistrale/Algorithms for massive data/01 - Suffix trie.md",
+    "Magistrale/Information retrieval and web search/05 - Index compression.md",
     "Magistrale/Information retrieval and web search/Images/Pasted image 20260329175808.png",
     "Magistrale/Information retrieval and web search/Images/Pasted image 20260330083651.png",
-    "Magistrale/Information retrieval and web search/05 - Index compression.md",
     "Magistrale/Information retrieval and web search/Images/Blocking.png",
     "Magistrale/Information retrieval and web search/Images/Long tail.png",
     "Magistrale/Information retrieval and web search/Images/Zipf's law.png",
@@ -178,18 +184,12 @@
     "Triennale/Terzo anno/Data and web mining/Clustering/K-means.md",
     "Triennale/Secondo anno/Algoritmi e strutture dati/Mod. 1/Teoria della NP completezza.md",
     "Triennale/Terzo anno/Data and web mining/Clustering/Density based.md",
-    "Magistrale/Algorithms for massive data/01 - Suffix trie.md",
-    "Magistrale/Algorithms for massive data/00 - Introduction.md",
-    "Magistrale/Algorithms for massive data/05 - Compressed suffix array.md",
-    "Magistrale/Algorithms for massive data/02 - Basics of information theory.md",
     "Triennale/Secondo anno/Algoritmi e strutture dati/Mod. 1/Grafi/Introduzione.md",
     "Triennale/Secondo anno/Algoritmi e strutture dati/Mod. 1/Grafi/Connettività e aciclicità.md",
-    "Magistrale/Algorithms for massive data/04 - Elias-Fano data structure.md",
     "Triennale/Secondo anno/Algoritmi e strutture dati/Mod. 2/Dizionari.md",
     "Triennale/Secondo anno/Algoritmi e strutture dati/Mod. 2/Code di priorità.md",
     "Triennale/Secondo anno/Algoritmi e strutture dati/Mod. 2/Strutture dati.md",
     "Triennale/Secondo anno/Algoritmi e strutture dati/Mod. 1/Complessità di un algoritmo.md",
-    "Magistrale/Algorithms for massive data/03 - Zero-order bitvectors.md",
     "Magistrale/Information retrieval and web search/01 - Boolean model.md",
     "Magistrale/Information retrieval and web search/02 - Document ingestion.md",
     "Magistrale/Information retrieval and web search/Images/Term-based partitioning.png",

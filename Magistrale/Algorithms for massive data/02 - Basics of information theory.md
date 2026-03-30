@@ -1,6 +1,6 @@
 Let's consider a string of length $n$ over the alphabet $\{A,C,G,T\}$ containing one occurrence of $A,C,G$ and with the remaining letters being equal to $T$.
 
-The **IT lower bound** for encoding such string would be:$\log\binom{n}{3}\cdot3!=O(\log n)$ bits, because we only need to encode where those $3$ rare characters are placed among the $T$'s, but the [[01 - Suffix trie#The suffix array|suffix array]] still takes $n\log n$ bits, which is still an exponential gap between the compressed text and the SA.
+The **IT lower bound** for encoding such string would be: $\log\binom{n}{3}\cdot3!=O(\log n)$ bits, because we only need to encode where those $3$ rare characters are placed among the $T$'s, but the [[01 - Suffix trie#The suffix array|suffix array]] still takes $n\log n$ bits, which is still an exponential gap between the compressed text and the SA.
 
 ### Worst case entropy
 The IT lower bound has a formal name.
@@ -21,10 +21,11 @@ As an example we can take **bitvectors**, in particular the set of all length-$n
 For a string $S$ of length $n$, let $n_c$ be the number of occurrences of character $c$, then:
 $$H_0(S)=\sum_{c\in\Sigma}\frac{n_c}{n}\log_2\frac{n}{n_c}$$
 
-This is the definition of [[00 - Information and inference#Entropy|entropy]] applied to strings with finite length (and after applying the logarithms rule to remove the '-').
+This is the definition of [[00 - Information and inference#Entropy|entropy]] applied to strings with finite length (and after applying the logarithms rule to expand the '-' sign from the original formula).
 It gives the **average bits per character** needed if we assign each character a code based on how often it appears.
 
-Let's consider the set $\mathcal S(n_1,...,n_\sigma)\subseteq[\sigma]^n$ of strings of length $n$ over alphabet $[\sigma]$ such that each $s\in\mathcal S$ contains $n_c$ occurrences of each character $c\in[\sigma]$.
+Let's consider the set: $\mathcal S(n_1,...,n_\sigma)\subseteq[\sigma]^n$, that is.
+In other words: the set of all possible strings of length $n$ that can be made using an alphabet of size $\sigma$, within that, we focus on the subset of all strings that contain exactly $n_i$  copies of the $i$-th.
 
 For example $12122132\in\mathcal S(3,4,1)$: we have $\binom{n}{n_1}$ combinations for placing character $1$, then $\binom{n-n_1}{n_2}$ combinations for placing character $2$, then $\binom{n-n_1-n_2}{n_3}$ combinations for placing character $3$,..., hence we get:
 $$\begin{align}
@@ -36,7 +37,7 @@ $$\begin{align}
 
 This is called **multinomial coefficient**, and by applying Stirling's approximation of the factorial, one can prove that:
 $$\mathscr H_{wc}(\mathcal S(n_1,...,n_\sigma))=nH_0-O(\sigma\log n)$$
-showing that worst-case entropy and zero-order empirical entropy are **essentially identical**.
+showing that **worst-case entropy and zero-order empirical entropy are essentially identical**.
 
 Since $\mathscr H_{wc}(\mathcal S(n_1,...,n_\sigma))\approx nH_0$ and we know that $\mathscr H_{wc}(\mathcal S(n_1,...,n_\sigma))$ is a hard lower bound for encoding strings with character frequencies $n_1,...,n_\sigma$, then $H_0$ (bits) is a lower bound for encoding each character of those strings, **on average**.
 
@@ -46,7 +47,7 @@ Since $\mathscr H_{wc}(\mathcal S(n_1,...,n_\sigma))\approx nH_0$ and we know th
 >- Encode rare characters using many bits
 >- For decodability, no code must be prefix of another code (prefix-free codes)
 
-As an example let's take $S=abracadabra$, $n=11$, $\sigma=5$, if we pack every character in $\lceil\log\sigma\rceil=3$ bits, then $S$ is packed in $n\lceil\log\sigma\rceil=33$ bits, the _empirical entropy_ is equal to $nH_0\approx 22.4$ bits, and by suing a prefix-free code, such as:
+As an example let's take $S=abracadabra$, $n=11$, $\sigma=5$, if we pack every character in $\lceil\log\sigma\rceil=3$ bits, then $S$ is packed in $n\lceil\log\sigma\rceil=33$ bits, and has an entropy $H_0\approx2.037$ (average number of bits per character), then its _empirical entropy_ is equal to $nH_0\approx 22.4$ bits, and by using a prefix-free code, such as:
 $$a\to1,b\to010,r\to011,c\to000,d\to001$$
 then the encoding takes only $23$ bits, which is very close to the optimum.
 >This is literally how [[00 - Information and inference#Huffman coding|Huffman codes]] work.
@@ -54,8 +55,11 @@ then the encoding takes only $23$ bits, which is very close to the optimum.
 ### Higher-order empirical entropy
 $H_0$ only looks at raw characters frequencies, but natural language has much more structure, for example the character that precedes "ompile" is almost certainly 'c', and we can **exploit** this **context**.
 
-Let $S\in\Sigma^n$, choose $k\leq n$ and let $w\in\Sigma^k$.
-We define $S_w$ as the **concatenation of all characters preceding occurrences** of $w$ in $S$, from the leftmost to rightmost occurrence (circular: $S[1]$ is preceded by $S[n]$).
+Let pick a string $S\in\Sigma^n$, choose $k\leq n$ and define the substring $w\in\Sigma^k$.
+We define $S_w$ as the **concatenation of all characters preceding occurrences** of $w$ in $S$, from the leftmost to rightmost occurrence ($S[0]$ is preceded by $S[n]$).
+
+The idea now is to group characters by their $k$-character context (the $k$ character that follow them), for each context $w$ we collect all character that precede an occurrence of $w$ into a "bucket" $S_w$ and apply $H_0$ inside each bucket.
+>$S_w$ will likely have very low $H_0$ since those characters have the same context.
 
 >[!Example]
 >Let $S=aababbabab$ and $k=2$, these represent sequences of characters that appear immediately before each occurrence of $w$ in $S$.
@@ -63,26 +67,28 @@ We define $S_w$ as the **concatenation of all characters preceding occurrences**
 >- $S_{bb}=a$
 >- $S_{aa}=b$
 >- $S_{ba}=abaa$
-
-The idea now is to group characters by their $k$-character context (the $k$ character that follow them), for each context $w$ we collect all character that precede an occurrence of $w$ into a "bucket" $S_w$ and apply $H_0$ inside each bucket.
->$S_w$ will likely have very low $H_0$ since those characters have the same context.
+>
+>$H_0(S_{ab})$ will be very low because the bucket is predictable, since $b$ appears many times before the pattern $ab$.
+>
 
 Let $S\in\Sigma^n$ and $k\leq n$, then the **k-th order empirical entropy** of $S$ is:
 $$H_k(S)=\sum_{w\in\Sigma^k}\frac{|S_w|}{n}H_0(S_w)$$
+By multiplying the entropy of the bucket by its "share" of the string, the formula gives us the **average bits per character** needed to encode the entire string $S$ using $k$-length contexts.
 
-The goal of an **entropy compressor** is to achieve $nH_k+o(n\log\sigma)$ bits.
+The **goal of an entropy compressor** is to achieve $nH_k+o(n\log\sigma)$ bits.
 $$\log_2\sigma\geq H_0\geq H_1\geq H_2\geq ...$$
 >The entropy decreases as we use more context.
 
 >[!Tip] Extra: $k$ upper bound.
->We cannot use $k=n$ because the compressor has to also store the model itself (all the context statistics) which costs $\sigma^k bits$, and for $k\geq\log_\sigma(n)$ this overhead dominates and we lose the benefit, hence $k$ must stay below $\log_\sigma(n)$.
+>One could think that since as we increase $k$ we reduce entropy, why don't we just use $k=n$?
+>We cannot use $k=n$ because the compressor has to also store the model itself (all the context statistics) which costs $\sigma^k$ bits, and for $k\geq\log_\sigma(n)$ this overhead dominates and we lose the benefit, hence $k$ must stay below $\log_\sigma(n)$.
 
 ### Beyond entropy
 Entropy is not always a good measure of compressibility, the theoretical perfect measure is the **Kolmogorov complexity** $\kappa(S)$, which is the length of the shortest program that generates $S$, but $\kappa(S)$ is **uncomputable**, so in other words, no algorithm can calculate it in general, which means no compressor can ever be truly optimal.
 
 Another crucial thing to keep in mind is that worst-case entropy applies to the **worst-case** in a set of objects, **not individually** on every object in that set.
 
->[!Example]
+>[!Attention]
 >Consider the set $X_n$ of all strings of length $n$ containing $n/2$ characters equal to 'a' and $n/2$ characters equal to 'b', then:
 >$$\mathscr H_{wc}(X_n)=\log\binom{n}{n/2}\approx n$$
 >This means that any compressor that compresses strings of $X_n$ must use $n$ bits for _at least one_ of those strings.

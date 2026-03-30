@@ -21,4 +21,4 @@ To **losslessly encode** objects from a universe $U$, we need at least $\log_2(|
 ### Measuring space
 In a typical algorithms course, space is measured in **words**, but since one word is equal to $\Theta(\log n)$ bits, $O(n)$ words actually means $\Theta (n\log n)$ _bits_.
 
-Since this course is about compression, it measures space in _bits_ to be precise and avoid hiding constants behind big-O.
+Since this course is about compression, we measure space in _bits_ to be precise and avoid hiding constants behind big-O notation.

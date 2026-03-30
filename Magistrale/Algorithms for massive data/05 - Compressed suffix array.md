@@ -1,7 +1,7 @@
 We are going to put together previously seen compressed data structures in order to obtain a new data structure which stores both the text and its index in $nH_0+O(n)$ bits, which is basically the compressed size of the text, while still supporting fast queries.
 
 ### Suffix array summary
-Let's recall how the [[01 - Suffix trie#The suffix array|suffix array]] works, suing $S=BANANA\$$ as an example.
+Let's recall how the [[01 - Suffix trie#The suffix array|suffix array]] works, using $S=BANANA\$$ as an example.
 $$
 \begin{array}{rc ccccccc}
 i & = & \color{gray}{1} & \color{gray}{2} & \color{gray}{3} & \color{gray}{4} & \color{gray}{5} & \color{gray}{6} & \color{gray}{7} \\
@@ -26,11 +26,11 @@ The SA stores the starting positions of all suffixes in sorted _lexicographical 
 
 Suppose that we have a **black-box** that allows us to extract the $i$-th suffix without looking up the text, such that $SA[3]$ returns immediately $ANA\$$, let's build it as follows:
 
-Build a string $F$ that contains the _first character of every suffix_, in sorted order, in our example: $F=\$AAABNN$
+Build a string $F$ that contains the **first character of every suffix**, in sorted order, in our example: $F=\$AAABNN$
 
-For sure $n\log\sigma$ bits are sufficient ($\sigma$ is the length of the alphabet), we can do better, that is mark in a RRR bitvector $FO$ the _first occurrence of every character_.
+For sure $n\log\sigma$ bits are sufficient ($\sigma$ is the length of the alphabet), we can do better, that is, mark in a RRR bitvector $FO$ the **first occurrence of every character**, this means that it is equal to $1$ if it is the first time seeing a character in correspondence of $F$.
 
-Then store just _one occurrence of every character_ in a vector $\Sigma$ of size $\sigma$.
+Then store just **one occurrence of every character** in a vector $\Sigma$ of size $\sigma$.
 $$\begin{array}{rc ccccccc}
 i & = & 1 & 2 & 3 & 4 & 5 & 6 & 7 \\
 \hline
@@ -80,7 +80,7 @@ within the range of SA entries that share the same first character (e.g. all suf
 This is because if two suffixes both start with 'A', they are sorted by their remaining characters.
 Applying $\psi$ moves to the next position, and those next positions must also be sorted in the same relative order.
 
-So $\psi$ can be split into $\sigma$ **sorted sub-arrays**, one per character, and each one fo them can be compressed with [[04 - Elias-Fano data structure|Elias-Fano]].
+So $\psi$ can be split into $\sigma$ **sorted sub-arrays**, one per character, and each one of them can be compressed with [[04 - Elias-Fano data structure|Elias-Fano]].
 
 >[!Example]
 >Considering the previous example, we have that:
@@ -99,13 +99,13 @@ $$\begin{aligned}
 ### Searching on the compressed $\psi$
 To compute $\psi[i]$ in $O(1)$:
 - **Identify Character:** use $FO.rank_1​(i)$ to find which block $i$ falls into. The character $c$ is determined by the symbol at that rank in the alphabet $\Sigma$.
-- **Calculate Offset:** find the start of that character's block using $j=FO.select_1​(FO.rank_1(i))$. The relative offset within $ψ_c$ is $i−j+1$.
+- **Calculate Offset:** find the start of that character's block using $j=FO.select_1​(FO.rank_1(i))$. The relative offset within $\psi_c$ is $\text{local\_index}=i−j+1$.
 - **Access:** retrieve the value from the specific compressed Elias-Fano array: $\psi_c[\text{local\_index}]$.
 
 All three steps are $O(1)$, so $\psi[i]$ is computed in $O(1)$ total, and this is what enables binary search to work character by character in $O(m\log n)$ time.
 
 #### Count query
-With compressed $\psi$ and $F$, binary search on the SA range of a pattern $P$ works as before: each binary search step extracts the next character of the $i$-th  suffix using $F$ and $\psi$, then compares it with $P$.
+With compressed $\psi$ and $F$, **binary search** on the SA range of a pattern $P$ works as before: each binary search step extracts the next character of the $i$-th  suffix using $F$ and $\psi$, then compares it with $P$.
 
 $O(m)$ characters extracted per binary search step, $O(\log n)$ steps, then the total is $O(m\log n)$, which is the same as the plain SA, but now in compressed space.
 

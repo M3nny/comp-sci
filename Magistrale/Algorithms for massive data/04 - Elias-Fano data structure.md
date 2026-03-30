@@ -5,14 +5,14 @@ The **Elias-Fano (EF)** data structure achieves:
 - **Access**: $O(1)$
 - **Membership, predecessor and successor**: $O(\log m)$
 
-Compared to [[03 - Zero-order bitvectors#Zero-order compressed bitvectors|RRR]], the EF data structure uses $O(m)$ extra bits instead of $o(n)$, which makes it better for **sparse or dense sets** where $o(n)$ would dominate.
-The trade-off is slower queries ($O(\log m)$ instead of $O(1)$).
+Compared to [[03 - Zero-order bitvectors#Zero-order compressed bitvectors|RRR]], the EF data structure uses $O(m)$ extra bits instead of $o(n)$, which makes it **better for sparse or dense sets** where $o(n)$ would dominate.
+The trade-off is **slower queries** ($O(\log m)$ instead of $O(1)$).
 
 ### The core idea
 Each integer in $S$ can be written in binary using $\log n$ bits.
 The idea is to **split every integer** in two parts:
-- A _prefix_ of $\log m$ bits
-- A _suffix_ of $\log(n/m)$ bits
+- A _prefix_ of $\log n$ bits
+- A _suffix_ of $\log(n)-\log(m)=\log(n/m)$ bits
 
 Let's for example consider$S=\{0,5,8,12,14,17,20,31\}$, that has $n=32$ and $m=8$:
 - $\log n=5$
@@ -35,11 +35,11 @@ $$
 
 The **prefixes**, being the top bits of a sorted list, are **non-decreasing**, and that structure can be exploited for compression.
 
-The **suffixes** are stored [[03 - Zero-order bitvectors#Bit-packing|bit-packed]] in a plain array, this takes exactly $m\log(n/m)$ bits of space, and access to the $i$-th suffix is $O(1)$ as we've seen.
+The **suffixes** are stored [[03 - Zero-order bitvectors#Bit-packing|bit-packed]] in a plain array, and considering that there are $m$ elements and each suffix occupies $\log(n/m)$ bits, this takes exactly $m\log(n/m)$ bits of space, and access to the $i$-th suffix is $O(1)$ as we've seen.
 
 The **prefixes** are non-decreasing numbers in $[0,m)$, instead of storing them directly, the idea is to:
 
-1. Compute the differences between consecutive prefixes
+1. Compute the **differences** between consecutive prefixes
 2. Encode each difference in **unary**, that is, write as many $0$s as the represented decimal number, followed by a $1$
 $$
 \begin{array}{c|c|c}
@@ -75,9 +75,9 @@ x \in S & \text{prefix of } (x)_2 & EF_2 = \text{difference } \delta_i \text{ in
 \end{array}
 $$
 
-There are $m$ **ones** (one per integer in $S$) and the number of **zeros** equals the sum of all differences, which equals the largest prefix (that is $\leq m-1$).
+There are $m$ **ones** (one per integer in $S$) and **the number of zeros equals the sum of all differences**, which **also equals to the largest prefix** (that is $\leq m-1$).
 
-Hence, $EF_2$ has at most $2m$ bits, so $RRR(EF_2)\leq2m+o(m)$ bits.
+Hence, $EF_2$ occupies $o(2m)$ bits, so $RRR(EF_2)\leq2m+o(m)$ bits.
 
 We conclude that the Elias-Fano data structure uses in total at most:
 $$m\log(n/m)+2m+o(m)=\log\binom{n}{m}+O(m)$$
@@ -85,14 +85,14 @@ $$m\log(n/m)+2m+o(m)=\log\binom{n}{m}+O(m)$$
 
 ### Queries
 **Access** involves retrieving the $i$-th integer:
-1. Since $EF_1$ is fixed length, just jump to position $i$ directly, the 5th suffix is $10$ ($O(1)$)
+1. Since $EF_1$ is fixed length, just jump to position $i$ directly, the $4$th suffix (0-indexed) is $10$
 2. Get the prefix from $EF_2$, which is given by the number of $0$s before the $i$-th $1$ in $EF_2$, that is:
-$$\text{prefix}=EF_2.rank_0(EF_2.select_1(i))=3$$
+$$\text{prefix}=EF_2.rank_0(EF_2.select_1(4))=3$$
 and since both $rank$ and $select$ are $O(1)$ on RRR, this operation is $O(1)$ overall
 
 3. Concatenate prefix + suffix: $011+10=01110=14$
 
-Since all $m$ integers can be accessed in $O(1)$ and are stored in sorted order, we can use [[Dizionari#Search|binary search]] over them in $O(\log m)$ steps.
+Since all $m$ integers can be accessed in $O(1)$ and are stored in sorted order, we can use [[Dizionari#Search|binary search]] over them in $O(\log m)$ steps in order to compute the membership, predecessor and successor queries.
 
 >[!Tip] Elias-Fano in practice
 >The Elias-Fano data structure is one of the most successful "theoretical-to practical" stories in the field of compressed data structures.
