@@ -18,7 +18,7 @@ This algorithm applies sorting with fewer disk seeks, with an out-of-core techni
 
 The algorithm can be thought as:
 1. **Read** a block of documents, and in the meantime emit the triple(s) `(termID, docID, freq)`
-2. **Sort** that block** in memory** using [[Quick sort|quicksort]]
+2. **Sort** that block **in memory** using [[Quick sort|quicksort]]
 3. **Write** the sorted block (called "run") to disk
 4. **Repeat** until all documents are processed
 5. **Merge** all sorted runs into one final index
