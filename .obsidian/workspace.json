@@ -13,6 +13,20 @@
             "state": {
               "type": "markdown",
               "state": {
+                "file": "Magistrale/Algorithms for massive data/07 - Burrows-Wheeler transform.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "07 - Burrows-Wheeler transform"
+            }
+          },
+          {
+            "id": "046311b0f31064b8",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
                 "file": "Magistrale/Algorithms for massive data/06 - Wavelet trees.md",
                 "mode": "source",
                 "source": false
@@ -178,24 +192,24 @@
   },
   "active": "9e7486662ca3f778",
   "lastOpenFiles": [
-    "Magistrale/Algorithms for massive data/03 - Zero-order bitvectors.md",
     "Magistrale/Algorithms for massive data/06 - Wavelet trees.md",
     "Magistrale/Algorithms for massive data/07 - Burrows-Wheeler transform.md",
+    "Magistrale/Algorithms for massive data/Images/BWT of a string.png",
+    "Magistrale/Algorithms for massive data/Images/BWT-SA.png",
+    "Magistrale/Algorithms for massive data/Images/BWT column.png",
+    "Magistrale/Algorithms for massive data/05 - Compressed suffix array.md",
+    "Magistrale/Algorithms for massive data/01 - Suffix trie.md",
+    "Magistrale/Algorithms for massive data/Images/BWT sort.png",
+    "Magistrale/Algorithms for massive data/Images/BWT rotate.png",
+    "Magistrale/Algorithms for massive data/03 - Zero-order bitvectors.md",
     "Magistrale/Algorithms for massive data/Images/WT concatenation of strings.png",
     "Magistrale/Algorithms for massive data/Images/WT rank.png",
     "Magistrale/Algorithms for massive data/Images/Pasted image 20260331005537.png",
     "Magistrale/Algorithms for massive data/Images/WT access.png",
     "Magistrale/Algorithms for massive data/Images/WT inductive step.png",
-    "Magistrale/Algorithms for massive data/Images/WT zero-order compression.png",
-    "Magistrale/Algorithms for massive data/Images/WT split.png",
-    "Magistrale/Algorithms for massive data/Images/WT build root.png",
-    "Magistrale/Algorithms for massive data/Images/WT encode alphabet.png",
-    "Magistrale/Algorithms for massive data/Images/WT stack encodings.png",
-    "Magistrale/Algorithms for massive data/05 - Compressed suffix array.md",
     "Magistrale/Algorithms for massive data/04 - Elias-Fano data structure.md",
     "Magistrale/Algorithms for massive data/00 - Introduction.md",
     "Magistrale/Algorithms for massive data/02 - Basics of information theory.md",
-    "Magistrale/Algorithms for massive data/01 - Suffix trie.md",
     "Magistrale/Information retrieval and web search/05 - Index compression.md",
     "Magistrale/Information retrieval and web search/04 - Index construction.md",
     "Magistrale/Learning with massive data/03 - Clustering.md",
@@ -215,7 +229,6 @@
     "Magistrale/Information retrieval and web search/03 - Dictionaries and tolerant retrieval.md",
     "Magistrale/Information retrieval and web search/Images/B-tree elements.png.~tmp",
     "Magistrale/Advanced data management/DBMS internals/03 - Dynamic organizations.md",
-    "Magistrale/Advanced data management/DBMS internals/02 - Static organizations.md",
     "Magistrale/Learning with massive data",
     "Magistrale/Algorithms for massive data/Images",
     "Magistrale/Algorithms for massive data",
