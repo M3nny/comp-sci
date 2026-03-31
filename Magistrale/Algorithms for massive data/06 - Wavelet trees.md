@@ -110,6 +110,14 @@ For example let's compute $rank_C(13)$ recalling that $C=011$:
 - $rank_1(3)=2$
 ![[WT rank.png|500]]
 
+The **select** query is done with recursion, the result is accumulated on the unwinding process from leaf to root.
+For example, with $select_C(2)$ with $C=010$:
+1. Follow $C$'s bits from the root and reach $C$'s leaf and unwind
+2. At level 3 we have $j=2$ trivially, we pass it up
+3. At level 2 (`101`) the bit of $C$ is `1` lets call it $b$, hence we do $select_b(j)=select_1(2)=3$ hence $j=3$ and we pass it up
+4. At level 1 (`01010010`) we proceed with $select_1(3)=7$
+5. At the root (`10010001100011`) we conclude that $select_0(7)=11$, which is what we wanted to know, that is, the secondo position in which $C$ appears
+
 ### Final result
 We've seen that any string $S\in\Sigma^n$ can be stored in $nH_0+o(n\log n)+O(\sigma\log n)$ bits, and that RSA queries take $O(\log \sigma)$ time.
 >If $\sigma=O(1)$, then the space simplifies to $nH_0+o(n)$ and queries are solved in $O(1)$.
