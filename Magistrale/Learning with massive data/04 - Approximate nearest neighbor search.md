@@ -97,8 +97,24 @@ We use the PQ code ids $i^1,...,i^M$ to look up the distances in the matrix $A$,
 
 It's called _asymmetric_ because the query is left as a full vector while only the database points are quantized, this gives better accuracy than quantizing both sides.
 
+### Hierarchical K-means
+Before seeing how PQ quantization is used in current algorithms, we introduce **hierarchical k-means (HKM)** which builds a tree of cluster representatives.
+
+**Indexing**:
+At the root, we run K-means on the entire dataset with branching factor $k$, getting $k$ centroids and $k$ clusters, then for each cluster, run K-means again on just that subset, getting another $k$ centroids.
+
+This procedure is repeated untile the cluster is small enough or we've reached a maximum depth.
+
+We then store the raw vectors on a leaf node, whilst internal nodes only store centroids used for routing to the correct leaf.
+
+**Search**:
+Given a query $q$, we do a _greedy top-down descent_:
+1. At the root, compute the distance from $q$ to all $k$ centroids, pick the nearest one and follow that branch
+2. Repeat at each internal node until a leaf is found
+3. At the leaf, do an exhaustive scan of all vectors stored there and return the nearest one
+
 ### Inverted file index with ADC
-ADC still scans the entire dataset, which is too slow at scale, the **inverted file index with ADC (IVFADC)** introduce as **divide-and-conquer** layer on top.
+Taking now into consideration the asymmetric distance, ADC still scans the entire dataset, which is too slow at scale, the **inverted file index with ADC (IVFADC)** introduce as **divide-and-conquer** layer on top.
 
 **Indexing**:
 - _Partition_ the dataset $\mathcal X$ into $J$ buckets $\mathcal X_1,...,\mathcal X_J$ and let $\mu_j\in\mathbb R^D$ be the representative vector of the $j$-th bucket (centroid)
@@ -141,11 +157,13 @@ $$l=\left\lfloor\frac{-\ln(\text{uniform}(0,1))}{\ln M}\right\rfloor$$
 
 **Search** is done with a greedy search from $L_\max$ down to layer $1$, then at layer $0$, _beam search_ is used, which will then return the one or $k$ nearest neighbors inside $W$.
 
-|                      |                  IVFPQ                   |        HNSW         |
-| :------------------: | :--------------------------------------: | :-----------------: |
-|      **Memory**      |              More efficient              | Higher memory usage |
-| **Index build time** |                  Faster                  |       Slower        |
-|     **Accuracy**     |                   Good                   |       Better        |
-|   **Query speed**    | Fast, great with batches (GPU optimized) |  Faster per query   |
-| **Dynamic updates**  |                  Harder                  |   Better support    |
+|                       |                                                     HKM                                                     |                  IVFPQ                   |                 HNSW                 |
+| :-------------------: | :---------------------------------------------------------------------------------------------------------: | :--------------------------------------: | :----------------------------------: |
+|      **Memory**       |                                                    High                                                     |              More efficient              |               Highest                |
+| **Index build time**  |                                                   Medium                                                    |                  Faster                  |                Slower                |
+|     **Accuracy**      |                                                    Poor                                                     |                   Good                   |                Better                |
+|    **Query speed**    |                               Generally fast, but slower if leaves are large                                | Fast, great with batches (GPU optimized) |           Faster per query           |
+|  **Dynamic updates**  |                                            Tree must be rebuilt                                             |                  Harder                  |            Better support            |
+|  **Main advantage**   |                                             Simple to implement                                             | Memory efficiency and GPU batch support  |      Best recall/speed tradeoff      |
+| **Main disadvantage** | Greedy descent has no backtracking, a wrong branch compounds at every level, increasing error as we descend |   Quantization error degrades accuracy   | High memory usage and no GPU support |
 
