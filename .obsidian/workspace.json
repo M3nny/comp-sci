@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Magistrale/Algorithms for massive data/09 - Concentration bounds.md",
+                "file": "Magistrale/Learning with massive data/06 - Ranking.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "09 - Concentration bounds"
+              "title": "06 - Ranking"
             }
           }
         ]
@@ -162,15 +162,22 @@
       "obsidian-excalidraw-plugin:New drawing": false
     }
   },
-  "active": "a1163d9af64d6878",
+  "active": "509ecb26fdf03c75",
   "lastOpenFiles": [
+    "Triennale/Terzo anno/Data and web mining/Ensemble methods.md",
+    "Magistrale/Learning with massive data/06 - Ranking.md",
+    "Triennale/Terzo anno/Data and web mining/Regressione lineare.md",
+    "Magistrale/Learning with massive data/Images/Proxy loss.png",
+    "Magistrale/Learning with massive data/Images/DCG.png",
+    "Magistrale/Learning with massive data/Images/Kendall correlation applied to ranking.png",
+    "Magistrale/Learning with massive data/Images/Ideal ranking.png",
+    "Magistrale/Algorithms for massive data/09 - Concentration bounds.md",
     "Magistrale/Algorithms for massive data/Images/MM-trick.png",
     "Triennale/Secondo anno/Probabilità e statistica/Congiunte.md",
     "Triennale/Secondo anno/Probabilità e statistica/Probabilità elementare.md",
     "Triennale/Secondo anno/Probabilità e statistica/Formulario.md",
     "Triennale/Secondo anno/Probabilità e statistica/Variabili casuali.md",
     "Triennale/Secondo anno/Probabilità e statistica/Introduzione.md",
-    "Magistrale/Algorithms for massive data/09 - Concentration bounds.md",
     "Magistrale/Learning with massive data/05 - Gradient descent.md",
     "Magistrale/Learning with massive data/Images/Gradient descent.png",
     "Magistrale/Foundations of machine learning/03 - Support vector machines.md",
@@ -190,16 +197,9 @@
     "Magistrale/Algorithms for massive data/08 - FM-index.md",
     "Magistrale/Algorithms for massive data/04 - Elias-Fano data structure.md",
     "Magistrale/Algorithms for massive data/05 - Compressed suffix array.md",
-    "Magistrale/Algorithms for massive data/Images/FM backward search.png",
     "Magistrale/Algorithms for massive data/07 - Burrows-Wheeler transform.md",
-    "Magistrale/Learning with massive data/Images/HNSW.png",
     "Magistrale/Algorithms for massive data/06 - Wavelet trees.md",
-    "Magistrale/Algorithms for massive data/Images/BWT of a string.png",
-    "Magistrale/Algorithms for massive data/Images/BWT-SA.png",
-    "Magistrale/Algorithms for massive data/Images/BWT column.png",
     "Magistrale/Algorithms for massive data/00 - Introduction.md",
-    "Magistrale/Information retrieval and web search/04 - Index construction.md",
-    "Magistrale/Learning with massive data/03 - Clustering.md",
     "Magistrale/Learning with massive data/Images",
     "Magistrale/Information retrieval and web search/Images/B-tree elements.png.~tmp",
     "Magistrale/Learning with massive data",
