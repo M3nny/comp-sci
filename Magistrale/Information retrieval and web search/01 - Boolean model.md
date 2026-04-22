@@ -6,7 +6,6 @@ How good are the retrieved docs?
 - **Precision**: fraction of retrieved docs that are _relevant_ to the user's information need
 - **Recall**: fraction of _all relevant_ docs in collection that are retrieved
 
-
 ## Boolean retrieval model
 We ask ourselves: "which plays of Shakespeare contain the following words?"
 $$\text{Brutus}\land\text{Caesar}\land\neg\text{Calpurnia}$$
@@ -53,7 +52,7 @@ Then multiple term entries in a single document are merged and we add the docume
 
 |      _**Term**_      | ambitious | be  | brutus | capitol | caesar |
 | :------------------: | :-------: | :-: | :----: | :-----: | :----: |
-|      _**Freq**_      |     1     |  1  |   2    |    1    |   2    |
+|      _**Freq**_      |     1     |  1  |   2    |    1    |   3    |
 | _**Postings lists**_ |     2     |  2  | 1 -> 2 |    1    | 1 -> 2 |
 
 ### Query processing
@@ -89,7 +88,7 @@ def intersect(p1, p2):
 
 The implementation of `nextGEQ`, most of the times uses **pointer skipping**.
 ![[Pointer skipping.png|500]]
-Suppose that we've stepped through the lists until we process $8$ on each list, we match it and advance on both lists, then since $11$ is the smallest, we advance the second pointer, but since the _skip successor_ of $11$ on the lower list is $31$, which is still lower than $41$, we can skip ahead pas the block $\{17,21,31\}$.
+Suppose that we've stepped through the lists until we process $8$ on each list, we match it and advance on both lists, then since $11$ is the smallest, we advance the second pointer, but since the _skip successor_ of $11$ on the lower list is $31$, which is still lower than $41$, we can skip ahead past the block $\{17,21,31\}$.
 
 A simple **heuristic** used to decide how to distribute skip pointers is, for postings of length $L$, use $\sqrt L$ evenly-spaced skip pointers.
 Skip lists can be _combined with compression of blocks_ of the lists, in order to avoid decompressing skipped sub-blocks.
@@ -102,7 +101,7 @@ When computing an **OR query**, we cannot use these optimizations since we have 
 With AND queries is it possible to process them in order of **increasing frequency**.
 ![[AND query optimization.png|500]]
 
-Even with OR queries we can use this type of optimization, since know that the max size output of and OR query between two disjoint sets is given by the sum of their frequency.
+Even with OR queries we can use this type of optimization, since we know that the max size output of an OR query between two disjoint sets is given by the sum of their frequency.
 
 ### Strengths and weaknesses
 **Boolean retrieval fails** for natural language, since it is way more complex, but it excels in things like library catalogs.
@@ -116,7 +115,7 @@ Even with OR queries we can use this type of optimization, since know that the m
 ### Positional indexes
 We want to be able to answer queries such as "Stanford university" as a **phrase**, thus the sentence "I went to university at Stanford" should not be a match.
 
-One fix would be to <u>index every consecutive pair of words</u>, but i would bloat the dictionary massively other than returning **false positives**.
+One fix would be to <u>index every consecutive pair of words</u>, but it would bloat the dictionary massively other than returning **false positives**.
 
 >[!Example]
 >"Stanford University is in Palo Alto. This is not the only university. Palo Alto also hosts Palo Alto University."
@@ -130,7 +129,7 @@ One fix would be to <u>index every consecutive pair of words</u>, but i would bl
 >
 >And since all three biwords are found, the document is returned as a match even if the full phrase does not appear.
 
-A real solution would be to use **positional indexes** which also sore the where in the document each word appears, now we can verify that words appear adjacent or within $k$ words of each other (_proximity queries_), despite being 2-4 times larger than a basic index.
+A real solution would be to use **positional indexes** which also show where in the document each word appears, now we can verify that words appear adjacent or within $k$ words of each other (_proximity queries_), despite being 2-4 times larger than a basic index.
 
 For extremely common phrases like "Barack Obama", it's wasteful to merge positional lists every time, a **combined strategy** caches those as biwords while using positional indexes for everything else.
 

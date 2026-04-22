@@ -15,6 +15,7 @@ In this case nodes can have more than two children, and since a range of child n
 B-trees were originally invented for storing data on disks, but nowadays they are also used as an in-memory data structure, since main memory is way slower than current processors, and thus **effective cache exploitation** is crucial.
 
 In a B-tree of order $m$, each internal node has at most $m$ children, if a node has $n\leq m$ children, it contains $n-1$ keys.
+
 We can choose $m$ so that the pointers to the $m$ children plus the $m-1$ elements **fill out a cache line at the highest level** of the memory hierarchy.
 >Each **leaf node** stores at most $m$ elements, but it can even be a multiple of $m$.
 
@@ -125,14 +126,14 @@ Given two strings $S_1$ and $S_2$, the **edit distance** is defined as the minim
 
 The edit distance is usually found by a [[Approccio dinamico|dynamic programming]] algorithm, and the time to compute the edit distance between two strings is $O(|S_1|\times|S_2|)$, where $|S_i|$ denotes the length of a string.
 
-Defining $D(i,j)$ as the edit distance between the first $i$ characters of string $X$ and the first characters of string $Y$, the idea is:
+Defining $D(i,j)$ as the edit distance between the first $i$ characters of string $X$ and the first $j$ characters of string $Y$, the idea is:
 - Compute $D(i,j)$ for small $i,j$
 - Compute larger $D(i,j)$ based on previously computed smaller values
 - Eventually, compute $D(i,j)$ $\forall i\in (0<i<n)$ and $j\in(0<j<m)$ and return $D(n,m)$
 
 $$D(i,j)=\min\begin{cases}D(i-1,j)+1\\D(i,j-1)+1\\D(i-1,j-1)+\begin{cases}2&\text{if }X[i]\neq Y[j]\\0&\text{if }X[i]=Y[j]\end{cases}\end{cases}$$
 
-We can compute a **weighted edit distance**, by weighting certain operations, for example `m` is more likely to be my-typed as `n` than as `q` in the qwerty keyboard, therefore replacing `m` by `n` is a _smaller edit distance_ than by `q`.
+We can compute a **weighted edit distance**, by weighting certain operations, for example `m` is more likely to be miss-typed as `n` than as `q` in the qwerty keyboard, therefore replacing `m` by `n` is a _smaller edit distance_ than by `q`.
 >This may be formulated as a probability model.
 
 Given a misspelled word, we enumerate all correct words up to a present distance (**distance-based range query**):
@@ -140,7 +141,7 @@ Given a misspelled word, we enumerate all correct words up to a present distance
 - Alternatively, run with the top-1 most likely correction
 
 We **can't compute every edit distance** to every dictionary term, hence a few options are:
-- _Restrict the search dictionary_ to terms beginning with the asme letter as the query string
+- _Restrict the search dictionary_ to terms beginning with the same letter as the query string
 - _Generate everything up to a small edit distance_ ($k=1,2,...$) and then intersect these candidates with terms in the index lexicon and keep those that actually exist (i.e. are full complete words)
 - _Use the n-gram overlap_; correct and misspelled terms likely share many n-grams
 
@@ -154,7 +155,7 @@ When dealing with the latest option, **n-gram overlap** we can set a _threshold_
 >The overlap is equal to $3$, and if this is bigger than the threshold, then we can infer that december may be the misspelled term of november.
 
 We can use the **Jaccard coefficient** to measure the set overlap, it is defined as:
-$$J=|X\cap Y|\setminus|X\cup Y|$$
+$$J=|X\cap Y|/|X\cup Y|$$
 Equals $1$ when $X$ and $Y$ have the same elements, and $0$ when they are disjoint.
 >In the previous example we may have had set the threshold set to $J=3/9=0.3$.
 

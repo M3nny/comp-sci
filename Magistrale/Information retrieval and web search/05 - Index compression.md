@@ -1,7 +1,7 @@
 In this chapter we focus on how to compress the index in order to **increase speed of data transfer** from disk to memory.
 >Note that read and decompress is faster than read uncompressed data.
 
-We can already differentiate between between **lossless compression** in which all information is preserved, and **lossy compression** in which we discard some information (e.g. stemming).
+We can already differentiate between **lossless compression** in which all information is preserved, and **lossy compression** in which we discard some information (e.g. stemming).
 
 We cannot assume an upper bound on the term vocabulary, this is because we will discover that the vocabulary keeps growing with the collection size (e.g. unicode keeps adding symbols).
 
@@ -9,7 +9,7 @@ We cannot assume an upper bound on the term vocabulary, this is because we will 
 ### Heaps' law
 **Heaps' law** tells us how vocabulary grows with collection size:
 $$M=kT^b$$
-where $M$ is the vocabulary size,  and $T$ is the number of tokens in the collection (i.e. collection size).
+where $M$ is the vocabulary size, and $T$ is the number of tokens in the collection (i.e. collection size).
 >Typical values are $30\leq k\leq100$ and $b\approx0.5$.
 
 It shows us that vocabulary **grows roughly as the square root of collection size**, meaning it never stops growing, it just slows down.
@@ -24,7 +24,14 @@ Spelling errors **increase growth rate**, whilst stemming and case folding **red
 >Assume that the search engine indexes a total of $20,000,000,000$ ($2 \cdot 10^{10}$) pages, containing $200$ tokens on average: $T = 200(2\cdot10^{10}) = 4 \cdot 10^{12} = (2\cdot10^6)^2$
 >
 >What is the size of the vocabulary of the indexed collection as predicted by the Heaps’ law, by considering $b\approx0.5$?
->$$M=6\cdot 10^7$$
+>
+>First we plug in one of the two initial observations (same thing), say $3000$ terms at $10,000$ tokens:
+>$$3000=k\cdot 10000^{0.5}=k\cdot100\implies k=30$$
+>
+>Now we apply Heaps' law to the full collection where $T=4\cdot 10^{12}$:
+>$$\begin{align}M&=30\cdot(4\cdot10^{12})^{0.5}\\&=6\cdot 10^7\end{align}$$
+
+
 
 ### Zipf's law
 **Zipf's law** describes term frequency distribution. thus impacting the size of the positional postings lists.
@@ -120,9 +127,9 @@ A gamma code uses **bit-level** codes to represent each gap $G$ as:
 The **gamma code** is the concatenation of _length_ and _offset_ (e.g. $13\to 1110\space101$).
 >They are uniquely prefix-decodable.
 
-The offset is encoded in $\lfloor\log_2 G\rfloor$ bits ($1$ less than the number of bits to represent $G$), and the length of the length is $\lfloor\log_2 G\rfloor+1$ bits (including the ending $0$), hence $G$ **is encoded using $2\lfloor\log_2 G\rfloor+1$ bits**.
+The offset is encoded in $\lfloor\log_2 G\rfloor$ bits ($1$ less than the number of bits to represent $G$), and the space taken by the length is $\lfloor\log_2 G\rfloor+1$ bits (including the ending $0$), hence $G$ **is encoded using $2\lfloor\log_2 G\rfloor+1$ bits**.
 
-**We cannot just store the binary translation** of the gaps, otherwise the would not be "prefix-free", for example $10$ ($2$) is also the start of $100$ ($4$).
+**We cannot just store the binary translation** of the gaps, otherwise they would not be "prefix-free", for example $10$ ($2$) is also the start of $100$ ($4$).
 Gamma codes fix this by adding a self-delimiting structure (the unary length prefix).
 
 Since the length of the offset is produced with inefficient unary code, we can use instead **delta codes** which express the length of the gamma code as another gamma code:
@@ -159,6 +166,6 @@ $$H(P)=\sum_ip_i\log\frac{1}{p_i}$$
 
 The gamma codes are optimal w.r.t. $H(P)$ when the integers to be compressed conform to the following probability distribution:
 $$Pr(n)=\frac{1}{2n^2}$$
-This follows a ind of **power-law**, and it is skewed towards small values (a few large numbers).
+This follows a kind of **power-law**, and it is skewed towards small values (a few large numbers).
 >We remember that the power-law is defined as $Pr(n)\approx kn^{-\alpha}$.
 

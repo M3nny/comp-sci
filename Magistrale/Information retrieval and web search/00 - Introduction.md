@@ -20,7 +20,7 @@ The anatomy of a **Search Engine Result Page (SERP)** consists of:
 - Ads
 
 ### Generative AI and IR
-Large Language Models (LLMs) are trained through **self-supervised learning** on a huge text corpora  to model the _probability distribution of a language_.
+Large Language Models (LLMs) are trained through **self-supervised learning** on a huge text corpora to model the _probability distribution of a language_.
 
 They generate responses token-by-token based on learned statistical patterns:
 $$P(w_t|w_1,...,w_{t-1})$$
@@ -44,6 +44,5 @@ Big data challenges are defined by the **4V's model**:
 IR systems have two main goals:
 - **Effectiveness**: ML methods in order to enhance ranking
 - **Efficiency**: pipelining and superscalar processor, parallel computing
-
 
 And these two goals combined, determine also the _revenue_ of the search engine.

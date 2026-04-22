@@ -17,7 +17,7 @@ Tokenization is the process of splitting text into individual units, called **to
 - "San Francisco": a biword or two separate words?
 - Numbers like "3/20/9" contain spaces or slashes that shouldn't be treated as separators
 
-And language makes it harder, for example Japanese has no spaces between words, so the system must figure out word boundaries from context.
+Language makes it harder, for example Japanese has no spaces between words, so the system must figure out word boundaries from context.
 
 ### Terms
 A **term** is what actually gets stored in the index, it's a token after **normalization**.
@@ -29,7 +29,7 @@ A **term** is what actually gets stored in the index, it's a token after **norma
 These mappings create **equivalence classes**, which are groups of tokens that all map to the same index term.
 It is **crucial to normalize both** the indexed documents and the queries in exactly the same way.
 
-One could think that removing the **commonest words** is a right move, but various queries need them (e.g. "flight to Venice), furthermore, good compression techniques use very little space for including them in the system.
+One could think that removing the **commonest words** is a right move, but various queries need them (e.g. "flight to Venice"), furthermore, good compression techniques use very little space for including them in the system.
 
 We can handle **synonyms** by using _equivalence-class_ to index them under the same word, or we could use them to expand queries, for example, if a query contains "automobile", look under "car" as well.
 

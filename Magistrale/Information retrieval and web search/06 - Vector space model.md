@@ -8,7 +8,7 @@ In **ranked retrieval** the system reorders the top documents in the collection 
 In this case having a big number of documents returned is not an issue since we just **return the top-k results**, but for this we need a way of assigning a score to a query-document pair.
 
 A commonly used **measure of overlap** of two sets is the **Jaccard coefficient**:
-$$jaccard(A,B)=|A\cap B|\setminus|A\cup B|$$
+$$jaccard(A,B)=|A\cap B|/|A\cup B|$$
 where $jaccard(A,A)=1$ and $jaccard(A,B)=0$ if $A\cap B=0$.
 
 Now, since this is a measure of overlap between sets, it does not take into consideration the **term frequency**, which is also useful, since:
@@ -38,7 +38,7 @@ A little bit of notation before going forward:
 We want to use $tf_{t,d}$, but we don't want a document with $10$ occurrences of the term to be $10\times$ more relevant, **relevance should not increase linearly with term frequency**.
 
 We introduce then the **log-frequency weight** and the **score** for a document-query pair, which is the sum over terms $t$ in both $q$ and $d$:
-$$w_{t,d}=\begin{cases}1+\log_{10}tf_{t,d}&\text{if }tf_{t,d}>0\\0&\text{otherwise}\end{cases}$$
+$$w_{t,d}=\begin{cases}1+\log tf_{t,d}&\text{if }tf_{t,d}>0\\0&\text{otherwise}\end{cases}$$
 $$Score_{qd}=\sum_{t\in q\cap d}(1+\log tf_{t,d})$$
 >The score is $0$ for document $d$ if none of the query terms $q$ is present in $d$.
 

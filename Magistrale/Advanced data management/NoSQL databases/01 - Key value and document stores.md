@@ -13,7 +13,7 @@ MapReduce is designed to process massive amounts of data across many servers, it
 - **Group** all intermediate values by key
 - Iterate over groups and **reduce** values of each group
 
-![[MapReduce.png|600]]
+![[Magistrale/Advanced data management/Images/MapReduce.png|600]]
 
 **Optimizations** that can be made to this approach are:
 - Compute the **map and reduce in parallel**
