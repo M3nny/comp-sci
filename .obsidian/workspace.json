@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Magistrale/Algorithms for massive data/10 - Hashing.md",
+                "file": "Magistrale/Algorithms for massive data/11 - Bloom filters.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "10 - Hashing"
+              "title": "11 - Bloom filters"
             }
           }
         ]
@@ -164,12 +164,15 @@
   },
   "active": "86cd05a0258804cb",
   "lastOpenFiles": [
+    "Magistrale/Algorithms for massive data/Images/Bloom filter insertion.png",
+    "Magistrale/Algorithms for massive data/Images/Partitioned bloom filter.png",
+    "Magistrale/Algorithms for massive data/10 - Hashing.md",
+    "Magistrale/Algorithms for massive data/11 - Bloom filters.md",
     "Magistrale/Algorithms for massive data/05 - Compressed suffix array.md",
     "Magistrale/Algorithms for massive data/06 - Wavelet trees.md",
     "Magistrale/Algorithms for massive data/07 - Burrows-Wheeler transform.md",
     "Magistrale/Algorithms for massive data/08 - FM-index.md",
     "Magistrale/Algorithms for massive data/09 - Concentration bounds.md",
-    "Magistrale/Algorithms for massive data/10 - Hashing.md",
     "Magistrale/Information retrieval and web search/07 - Scoring and result assembly.md",
     "Magistrale/Information retrieval and web search/Images/Search system.png",
     "Magistrale/Information retrieval and web search/Images/Pivoting example 2.png",
@@ -196,11 +199,8 @@
     "Magistrale/Learning with massive data/Images/DCG.png",
     "Magistrale/Learning with massive data/Images/Kendall correlation applied to ranking.png",
     "Magistrale/Learning with massive data/Images/Ideal ranking.png",
-    "Magistrale/Algorithms for massive data/Images/MM-trick.png",
     "Triennale/Secondo anno/Probabilità e statistica/Congiunte.md",
     "Triennale/Secondo anno/Probabilità e statistica/Probabilità elementare.md",
-    "Triennale/Secondo anno/Probabilità e statistica/Formulario.md",
-    "Triennale/Secondo anno/Probabilità e statistica/Variabili casuali.md",
     "Magistrale/Learning with massive data/Images",
     "Magistrale/Information retrieval and web search/Images/B-tree elements.png.~tmp",
     "Magistrale/Learning with massive data",
