@@ -4,21 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "f9486e687ebd28a6",
+        "id": "a5afa54ec9bb3694",
         "type": "tabs",
         "children": [
           {
-            "id": "de1520724e72e118",
+            "id": "a9582540acd4285c",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Magistrale/Learning with massive data/07 - MapReduce.md",
+                "file": "Magistrale/Information retrieval and web search/07 - Scoring and result assembly.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "07 - MapReduce"
+              "title": "07 - Scoring and result assembly"
             }
           }
         ]
@@ -164,6 +164,13 @@
   },
   "active": "a1163d9af64d6878",
   "lastOpenFiles": [
+    "Magistrale/Information retrieval and web search/Images/Search system.png",
+    "Magistrale/Information retrieval and web search/Images/Pivoting example 2.png",
+    "Magistrale/Information retrieval and web search/Images/Pivoting example 1.png",
+    "Triennale/Secondo anno/Algoritmi e strutture dati/Mod. 2/Ordinamento/Heap sort.md",
+    "Magistrale/Information retrieval and web search/07 - Scoring and result assembly.md",
+    "Triennale/Secondo anno/Algoritmi e strutture dati/Mod. 2/Code di priorità.md",
+    "Magistrale/Information retrieval and web search/Images/TAAT.png",
     "Magistrale/Learning with massive data/Images/MapReduce.png",
     "Magistrale/Learning with massive data/06 - Ranking.md",
     "Magistrale/Learning with massive data/07 - MapReduce.md",
@@ -194,13 +201,6 @@
     "Magistrale/Learning with massive data/Images/Gradient descent.png",
     "Magistrale/Foundations of machine learning/03 - Support vector machines.md",
     "Excalidraw/Drawing 2026-04-11 13.38.19.excalidraw.md",
-    "Magistrale/Information retrieval and web search/Images/Cosine with normalized length.png",
-    "Magistrale/Information retrieval and web search/Images/Cosine with normalized length.png",
-    "Magistrale/Information retrieval and web search/Images/Euclidean distance vs angle.png",
-    "Magistrale/Information retrieval and web search/Images/Idf.png",
-    "Magistrale/Learning with massive data/04 - Approximate nearest neighbor search.md",
-    "Magistrale/Learning with massive data/02 - Recommender systems.md",
-    "Magistrale/Algorithms for massive data/03 - Zero-order bitvectors.md",
     "Magistrale/Learning with massive data/Images",
     "Magistrale/Information retrieval and web search/Images/B-tree elements.png.~tmp",
     "Magistrale/Learning with massive data",
