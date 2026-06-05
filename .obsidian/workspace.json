@@ -13,12 +13,26 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Magistrale/Algorithms for massive data/05 - Streaming/20 - Second order frequency moments.md",
+                "file": "Magistrale/Algorithms for massive data/05 - Streaming/21 - Sketches for relational algebra.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "20 - Second order frequency moments"
+              "title": "21 - Sketches for relational algebra"
+            }
+          },
+          {
+            "id": "d309514759024b8e",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Triennale/Secondo anno/Basi di dati/Mod. 1/Linguaggi relazionali.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Linguaggi relazionali"
             }
           }
         ]
@@ -164,8 +178,11 @@
   },
   "active": "bac73dc3fcda3b2d",
   "lastOpenFiles": [
-    "Magistrale/Algorithms for massive data/Images/Dimensionality reduction to R.png",
     "Magistrale/Algorithms for massive data/05 - Streaming/20 - Second order frequency moments.md",
+    "Magistrale/Algorithms for massive data/05 - Streaming/21 - Sketches for relational algebra.md",
+    "Triennale/Secondo anno/Basi di dati/Mod. 1/Linguaggi relazionali.md",
+    "Magistrale/Algorithms for massive data/05 - Streaming/Senza nome",
+    "Magistrale/Algorithms for massive data/Images/Dimensionality reduction to R.png",
     "Magistrale/Algorithms for massive data/Images/Dimensionality reduction.png",
     "Magistrale/Information retrieval and web search/00 - Introduction.md",
     "Magistrale/Information retrieval and web search/Summary.md",
@@ -198,7 +215,6 @@
     "Magistrale/Foundations of machine learning/01 - Neural networks.md",
     "Triennale/Terzo anno/Data and web mining/Text processing & naive Bayes.md",
     "Magistrale/Information retrieval and web search/Images/Multi-head attention.png",
-    "Magistrale/Information retrieval and web search/11 - Learning to rank.md",
     "Magistrale/Algorithms for massive data/05 - Streaming/Images",
     "Magistrale/Algorithms for massive data/05 - Streaming",
     "Magistrale/Algorithms for massive data/04 - Sketching",
@@ -208,7 +224,6 @@
     "Nuovo Text Document.txt",
     "Magistrale/Learning with massive data/Images",
     "Magistrale/Information retrieval and web search/Images/B-tree elements.png.~tmp",
-    "Magistrale/Learning with massive data",
     "Magistrale/Senza nome.canvas",
     "Senza nome.canvas",
     "asdasdasd.canvas"
