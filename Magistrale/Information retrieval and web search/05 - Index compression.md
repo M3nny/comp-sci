@@ -119,7 +119,7 @@ Since for a gap value $G$, we want to use close to the fewest bytes needed to ho
 >>There are also other methods used for alignment, not only byte-alignment as we've seen here.
 >>For example we could also use word-alignment.
 
-#### Gamma codes
+#### Gamma and delta codes
 A gamma code uses **bit-level** codes to represent each gap $G$ as:
 - **Offset**: $G$ in binary with the leading $1$ removed (e.g. $13\to1101\to101$)
 - **Length**: the length of the offset, encoded in _unary_, which is $n$ ones followed by a zero (e.g. for $13$ the length is $1110$)
@@ -158,6 +158,94 @@ The space occupied by delta codes is: $2\cdot\lfloor\log \lfloor\log G\rfloor\rf
 | 500,000 |     19      |    3     |   24    |      37       |    VB    |
 
 For larger gaps VB wins because gamma's unary length component grows linearly, while VB adds a whole new byte every $7$ bits.
+
+### Golomb-Rice codes
+Golomb-Rice codes are **not parameter free**, they requires choosing a modulus $M=2^j$.
+To encode an integer $n>0$, split it into:
+$$q(n) = \left\lfloor\frac{n-1}{M}\right\rfloor, \quad r(n) = (n-1) \bmod M$$
+To **encode** $n$ (the gap in our case), encode $q(n)$ in unary followed by $r(n)$ as a binary number on $j$ bits.
+To **decode** $n$: $q(n)\cdot M+r(n)+1$.
+
+>[!Example]
+>Let $M=2^7=128$ and $n=345_{10}=101011001_2$.
+>
+>**Encoding**:
+>- $q(345)=(345-1)/2^7=2=\underbrace{110}_\text{Unary}$
+>- $r(345)=(345-1)\mod2^7=88$
+>- $q,r=110\space1011000$
+>  
+>**Decoding**:
+>- $n=2*2^7+88+1=10*2^7+1011000+1=100000000+1011000+1=101011001$
+
+The parameter $j$ is chosen in such a way that $2^j$ is close to the mean gap value, minimizing the unary part (which dominates cost), the quotient $q$ can also be encoded with gamma/delta encoding (giving logarithmic rather than linear growth).
+
+### PForDelta
+Patched Frame-of-Reference with Delta encoding (PForDelta) encodes an entire block of $N$ integers at once rather than one at a time.
+
+Assume most gaps in a block fall withing a range $[base,base+2^k-2]$, then subtract $base$ from each, so all "norma" values fit in $k$ bits: $[0,2^k-1]$.
+
+The string composed by all $1$ defined by $2^k-1$ is **reserved as an escape symbol** marking exceptions.
+These **exceptions** (gaps outside the interval) are stored in a _separate array_ using a full$w$-bit representation and merged back during decoding.
+
+>[!Example]
+>Gaps: $[3,4,7,21,9,12,2,17]$, $base=2$, $k=4$.
+>- Interval: $[base,base+2^k-2]=[2,16]$
+>- Special escape symbol: $2^k-1=1111_2=15_{10}$
+><br>
+>- Subtract base: $[1,2,5,19,7,10,0,15]$
+>
+>Values $19$ and $15$ (original $21$ and $17$) fall outside $[0,14]$, hence they are replaced by the escape symbol $1111_2$.
+>
+>Compressed: $[1,2,5,*,7,10,0,*]$ and exceptions $[21,7]$ are stored separately.
+>Resulting bit stream:
+>$$0001\space0010\space0101\space1111\space0111\space1010\space0000\space1111$$
+
+PForDelta stores blocks of $N$ consecutive integers in a multi-word, thus word-aligned blocks of memory, enabling fast decoding with SIMD instructions.
+
+### Binary interpolative coding
+This encoding method works directly on **strictly monotone sequences** (docID lists) without delta-encoding gaps.
+
+The idea is to recursively split the sequence, encoding only the middle element at each step, since we always know the minimum and maximum possible value of the midpoint (from the surrounding elements and how many elements remain), we only need to **encode its position** within a shrinking range, using $\lfloor\log_2(range\_size)\rfloor+1$ bits.
+
+Midpoints are written to the bitstream in _pre-order_ (root, left, right) of the implicit recursion tree, not left-to-right.
+
+>[!Example]
+>Given the following sequence of docIDs: $[3, 5, 8, 12, 15, 18, 21]$:
+>- Root midpoint: $12$ stored first
+>- Left half: $[3,5,8]$, with midpoint $5$, stored next
+>- $[3]$: midpoint $3$, $[8]$: midpoint $8$
+>- Right half: $[15,18,21]$: midpoint $18$, then $15,21$
+>
+>Bitstream order:
+>$$[12, 5, 3, 8, 18, 15, 21]$$
+
+At each recursive step we know:
+- `low`, `hi`: the global bounds of the current subarray
+- `l`, `m`, `r`: left/middle/right index
+
+The midpoint value can't be anything in `[low, hi]`, it's further constrained by how many elements must fit on each side, so we compute a tighter range:
+$$actual\_low=low+(m-l)$$
+$$actual\_hi=hi-(r-m)$$
+Then encode the displacement from `actual_low`:
+$$n=value-actual\_low$$
+using $\lfloor\log_2(actual\_hi-actual\_low\rfloor+1$ bits.
+
+>[!Example]
+>For $L=[2,9,12,14,19,21,31,32,33]$, encoding the midpoint $L[5]=19$:
+>- $low=2$, $hi=33$, $l=1$, $m=5$, $r=9$
+>- $actual\_low=2+(5-1)=6$
+>- $actual\_hi=33-(9-5)=29$
+>
+>The range is $[6,29]$, so $19$ can be one of $24$ values.
+>- Displacement: $n=19-6=13$
+>- Bits needed: $\lfloor\log_2 23\rfloor+1=5$ bits
+
+If $actual\_low=actual\_hi$, the value is **fully determined**, hence no bits are needed and recursion stops.
+This happens when the subarray is consecutive, for example $[2,3,4,5,6,7,8,9,10]$:
+- $actual\_low=2+4=6$, $actual\_hi=10-4=6$
+- The midpoint must be $6\to0$ bits encoded.
+
+This shows why interpolative coding is ideal for clustered docID lists.
 
 ### References to information theory
 Shannon showed that the **minimum expected message length** we can achieve with any binary prefix-free code is between $H(P)$ and $H(P)+1$, where $H(P)$ is the entropy:
