@@ -92,7 +92,7 @@ The **goal of NLP** can be reframed as three processes:
 - _Generation_: representation -> language
 - _Acquisition_: learning the representations/algorithms from data
 
-![[levels of linguistic representation.png|400]]
+![[Levels of linguistic representation.png|400]]
 Deeper levels are harder and more **context-dependent**.
 
 **NLP is hard** since there are _complex mappings between levels_, representation choice depends on application, noisy input, representations are theoretical constructs (not directly observable), and pervasive _ambiguity at every level_ (which we resolve easily via context, but computers struggle with).
