@@ -1,7 +1,7 @@
 Programs called **crawlers**, **spiders** or **harvesters** navigate the web automatically by _following hyperlinks_, fetching and storing content as they go.
 The web can be seen as a directed graph where **pages are nodes** and **hyperlinks are edges**.
 
-The simplest crawling algorithm works starts with a few known **seed URLs**, then it  fetches and parses those pages, extracts any links they contain, and adds those links to a **queue**, this is then repeated with the URLs in the queue.
+The simplest crawling algorithm starts with a few known **seed URLs**, then it  fetches and parses those pages, extracts any links they contain, and adds those links to a **queue**, this is then repeated with the URLs in the queue.
 
 The **URL frontier** is the _name for this queue_ of discovered but not yet fetched URLs. The **unseen web** is everything that hasn't been reached yet.
 
@@ -70,7 +70,7 @@ When a **node dies**, its **URLs are redistributed**.
 There are three **communication strategies** between nodes:
 - **Firewall mode**: each node only crawls its own partition and never sends links to other nodes, this is simple and with low overhead, but some pages may never be discovered if the only link to them crosses partition boundaries
 - **Crossover mode**: like firewall mode, but nodes follow links even if they fall into another node's partition, leading to duplicate crawling (the same page gets fetched by multiple nodes)
-- **Exchange mode**: nodes forward links to whichever node owns that partition, this ensures full coverage but adds communication overhead, and raises a coordination challenge for the distributed document fingerprint store (since content deduplication must now work across nodes
+- **Exchange mode**: nodes forward links to whichever node owns that partition, this ensures full coverage but adds communication overhead, and raises a coordination challenge for the distributed document fingerprint store (since content deduplication must now work across nodes)
 
 ### The URL frontier
 The frontier has two competing goals:

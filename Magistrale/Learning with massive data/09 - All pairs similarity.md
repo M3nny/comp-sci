@@ -1,4 +1,4 @@
-Given the friendship directed graph $G$ of a social network, we want to fin all the pairs of users $(u,v)$ such that $v$ is a friend of a friend of $u$, that is, there exists an $x$ such that $u\to x\to v$ for some user $x$.
+Given the friendship directed graph $G$ of a social network, we want to find all the pairs of users $(u,v)$ such that $v$ is a friend of a friend of $u$, that is, there exists an $x$ such that $u\to x\to v$ for some user $x$.
 
 The intuition is to label $u\to x$ and $x\to v$ with the key $x$ so that they reach the same reduce, that is, one reduce per central node.
 ```python
@@ -17,12 +17,12 @@ def reduce(x, edges): # list of edges that insist on x
 A document is a vector $d$ of $N$ distinct words in the corpus (lexicon), where documents have ids$\in[1,N_{docs}]$.
 $d[i]$ stores the frequency of the term $i$ in document $d$, then $d$ is normalized by dividing it by its $L_2$ norm.
 
-We use cosine similarity tom measure similarity between vectors:
+We use cosine similarity to measure similarity between vectors:
 $$s(a,b)=\sum_{i=1}^Na[i]\cdot b[i]$$
 The problem is **finding all pairs such that their similarity $s$ is at least $\tau$**.
 
 The key observation is that documents with similarity $s>0$ share at least one term.
-The idea is then to attach a key $t$ to a document $d$ for each of its terms $<t_1,d>,<t_2,d>,...$ then if two documents have the same key $t$ it would mean that they at least one term in common and we can compute their similarity.
+The idea is then to attach a key $t$ to a document $d$ for each of its terms $<t_1,d>,<t_2,d>,...$ then if two documents have the same key $t$ it would mean that they have at least one term in common and we can compute their similarity.
 ```python
 def map (doc_id, document):
 	for each term t in document:

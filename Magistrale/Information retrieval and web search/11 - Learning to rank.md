@@ -39,7 +39,7 @@ Another important feature may be the **minimum query window size** which is the 
 **Pointwise**
 Each document is scored independently, it is essentially a _regression or classification problem_ ("how relevant is this document?").
 
-It ignores the ranking structure, it doesn't or care where in the result list a document will land.
+It ignores the ranking structure, it doesn't care where in the result list a document will land.
 
 **Pairwise**
 Instead of absolute scores, the model learns _relative preferences_ ("document $A$ is better than document $B$ for query $q$").
@@ -56,7 +56,7 @@ This is the most principled approach but also the hardest, because [[08 - Evalua
 ### BM25F
 **BM25** is a classic BOW **ranking function** with two free parameters ($b, k$)
 
-**BM25F** extends it to handle **multi-field documents** (e.g. web page that has: a title, URL, body text, ...), where each field deserves different weight.
+**BM25F** extends it to handle **multi-field documents** (e.g. web page that has: a title, URL, body text, ...), where each field deserves a different weight.
 $$\text{BM25F}(d,q)=\sum_t\text{IDF}_t\tau(F_t)\quad F_t+\sum_s\frac{w_s\cdot f_{t,s}}{1-b_s+b_s\cdot l_s/L_s}$$
 - $w_s$: weight of field $s$
 - $f_{t,s}$: frequency of term $t$ in field $s$

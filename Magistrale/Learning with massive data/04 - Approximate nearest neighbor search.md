@@ -8,7 +8,7 @@ Now, **comparing the query to every item** one by one has a time complexity of $
 
 ### Approximate nearest neighbor
 Instead of finding the exact nearest neighbor, we relax the requirement, that is: find a vector $\hat x$ whose **distance to the query is at most $(1+\epsilon)$ times the true minimum distance**, for some small $\epsilon>0$.
-$$||y-\hat x||_2^2\leq(1+\epsilon)\cdot||y-x_n||_2^2$$
+$$||y-\hat x||_2^2\leq(1+\epsilon)\cdot||y-x_{n*}||_2^2$$
 The idea is to use a **compact, approximate representation of the data**.
 >Notice that we do not compute the true minimum distance during inference, it is just a theoretical guarantee that has to be respected for the algorithm to work.
 

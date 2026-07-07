@@ -19,7 +19,7 @@ The **client** talks to the master node first, then it goes to talk directly wit
 ### MapReduce programming model
 The idea is to let the user define only two functions, that is `map` and `reduce`, where keys and values are user defined, and can be anything, the system will handle parallelism, failures and data movement by itself.
 
-`map(key, value) -> list(key2, value2)`
+`map(key, value) -> list(tuple(key2, value2))`
 Takes one piece of input and emits intermediate key-value pairs, there is one map function call for each key-value pair in the input.
 
 `reduce(key2, list(values)) -> list(key3, value3)`

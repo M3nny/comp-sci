@@ -10,7 +10,7 @@ Process one query term completely before moving to the next, we accumulate parti
 **Document-At-A-Time (DAAT)**
 Process all query terms simultaneously, computing each document's full score before moving to the next document.
 
-TAAT needs more memory since we keep accumulators for all documents that match nay term, whilst DAAT uses less memory (we can discard low-scoring documents early) and is much more efficient when we need to operate on boolean semantics.
+TAAT needs more memory since we keep accumulators for all documents that match any term, whilst DAAT uses less memory (we can discard low-scoring documents early) and is much more efficient when we need to operate on boolean semantics.
 >Modern search engines mostly use DAAT.
 
 ### Fast scoring
@@ -49,10 +49,10 @@ and maintain a **threshold** $\tau$ which indicates the minimum score currently 
 
 The **pivoting mechanism**:
 1. Sort query terms' current "fingers" (pointers) by their document ID
-2. Accumulate upper bounds left to right untile the cumulative sum exceeds $\tau$
+2. Accumulate upper bounds left to right until the cumulative sum exceeds $\tau$
 3. The document at that point is the _pivot_ (the first candidate worth investigating)
 4. All documents before the pivot are _hopeless_ and skipped using `nextGEQ()`
-5. If the pivot documemt actually appears in all relevant posting lists, compute its real score, otherwise advance fingers and pivot again
+5. If the pivot document actually appears in all relevant posting lists, compute its real score, otherwise advance fingers and pivot again
 
 >[!Example]
 >For the query "catcher in the rye" with threshold $6.8$, document $273$ (which only contains "catcher", $UB = 2.3$) is immediately hopeless and skipped.
@@ -112,7 +112,7 @@ Examples of $g(d)$ may be:
 
 The combined score becomes:
 $$\text{net-score}(q,d)=g(d)+\cos(q,d)$$
-A key trick is to remap document IDs so that documents are **sorted by $g(d)$** ine very posting list (highest $g(d)$ = lowest ID).
+A key trick is to remap document IDs so that documents are **sorted by $g(d)$** in every posting list (highest $g(d)$ = lowest ID).
 This means traversing any posting list naturally encounters the most authoritative documents first, enabling **early termination**, this enables to stop early in time-constrained applications and still return high-quality results.
 
 ### Champion lists with $g(d)$, high/low lists and tiered indexes

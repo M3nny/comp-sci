@@ -20,7 +20,7 @@ The challenge is that if we have many documents and many queries, fully judging 
 ### Getting relevance judgments
 **Crowdsourcing** is an alternative to hiring expert assessors, it could provide useful signal, but the variance in judgments is very high since different workers often disagree on whether something is relevant.
 
-**Test queries** must be chosen carefully sine random terms from the document collection don't make good queries, the best approach is to **sample from real query logs**.
+**Test queries** must be chosen carefully since random terms from the document collection don't make good queries, the best approach is to **sample from real query logs**.
 
 ### The standard evaluation infrastructure
 **TREC (Text REtrieval Conference)** is the primary institution for building and maintaining IR evaluation benchmarks, its main goals are:
@@ -133,7 +133,7 @@ For this reason we can use **relative comparisons**, so if a user clicks result 
 #### Kendall Tau correlation
 Given a set of pairwise preferences $P$ (ground truth), we can compare two rankings $A$ and $B$ by counting agreements and disagreements with $P$:
 $$\tau=\frac{X-Y}{X+Y}$$
-where we mark with $x$ the agreements and with $Y$ the disagreements, and $\tau$ ranges from $-1$ for perfect disagreement to $+1$ for perfect agreement.
+where we mark with $X$ the agreements and with $Y$ the disagreements, and $\tau$ ranges from $-1$ for perfect disagreement to $+1$ for perfect agreement.
 
 #### Interleaved A/B testing
 Rather than showing users entirely different systems, we can **interleave** two rankings into a single result list and see which ranking's documents get more clicks:

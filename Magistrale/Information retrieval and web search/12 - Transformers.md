@@ -240,7 +240,7 @@ The are many strategies for the latter approach:
 - **Graph-based** (e.g. [[04 - Approximate nearest neighbor search#Hierarchical navigable small worlds|HNSW]]): build a multi-layer graph where each node is a document vector and edges connect nearby ones, long-range edges are also added to create "small world" properties (short paths between any two nodes), search starts at the top (coarsest) layer and descends greedily to find the nearest neighbors at the bottom layer, with the number of nodes per layer decreasing exponentially
 
 ### Learned sparse retrieval
-It is possible to combine the efficiency of [[01 - Boolean model#Inverted index|inverted indexs]] and the effectiveness of neural models.
+It is possible to combine the efficiency of [[01 - Boolean model#Inverted index|inverted indexes]] and the effectiveness of neural models.
 
 The idea is to use neural networks to produce **sparse representations** (vectors that are mostly zero) so they can still be indexed in an inverted index, but the term weights are learned rather than hand-crafted.
 

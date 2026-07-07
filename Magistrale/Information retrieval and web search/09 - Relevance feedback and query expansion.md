@@ -67,7 +67,7 @@ Instead of learning from user feedback, the system [[02 - Document ingestion#Ter
 There are various **sources for related terms**, between them, we have the following.
 
 **Query logs**
-- _User session analysis_: is users who searched for a word end up searching for another one, that's a signal that the two are related (frequent sequential patterns)
+- _User session analysis_: if users who searched for a word end up searching for another one, that's a signal that the two are related (frequent sequential patterns)
 - _Co-clicks_: if users searching for a word $v$ and users searching for $w$ both frequently click the same url, those queries are likely related (frequent co-occurring click pattern)
 
 **Manual thesauri**

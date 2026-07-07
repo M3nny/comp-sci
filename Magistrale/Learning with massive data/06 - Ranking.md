@@ -7,7 +7,7 @@ In this type of problem we are dealing with a _dataset_, _representation functio
 ### Labeling
 When dealing with **labeling** there are two approaches:
 - **Explicit labels**: human annotators rate document-query pairs, which is expensive, but clean, the problem arises when a new ranking function returns documents that are not yet annotated or the human annotators have to deal with private documents
-- **Implicit labels**: the system observes what users actually click on, which cheap bu noisy, the big problem here is _position bias_ for which users click on the first result simply because it's at the top, not because it's the best one, which poisons the training data
+- **Implicit labels**: the system observes what users actually click on, which cheap but noisy, the big problem here is _position bias_ for which users click on the first result simply because it's at the top, not because it's the best one, which poisons the training data
 
 In order to **represent a document** mathematically, we assume that there is a function $\phi$ that takes an object and returns a vector in $\mathbb R^n$ as its representation (e.g. TF-IDF for texts).
 With the document we may include several signals, such as: PageRank, number of clicks, time spent on page.
