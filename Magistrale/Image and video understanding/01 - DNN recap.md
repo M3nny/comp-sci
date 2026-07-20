@@ -13,7 +13,7 @@ $$\hat y=g(w_0+X^TW)$$
 
 ![[Activation functions.png|400]]
 
-![[Magistrale/Deep learning for natural language processing/Images/Perceptron.png|400]]
+![[Magistrale/Image and video understanding/Images/Perceptron.png|400]]
 
 ### Artificial neural networks
 Stacking perceptron into layers gives a **single-layer neural network**, where every hidden unit connects to every input and every output unit (dense layer).
@@ -71,6 +71,7 @@ Full-batch gradient descent is computationally expensive, there are two alternat
 **Regularization** is defined as a set of strategies to reduce the generalization gap while keeping training error low (i.e. constraining the optimization to discourage overly complex models)
 
 Commonly used techniques include:
+- **Data augmentation**: artificially expand the training set by applying label-preserving transformations (e.g. blur, grayscale, rotations)
 - **Dropout**: during training, randomly zero out some activations (typically $\sim50\%$ of a layer), preventing the network from over-relying on any single neuron, forcing redundant, more robust representations
 - **Early Stopping**: stop training once validation/test loss starts increasing while training loss keeps decreasing, this point is where the model transitions from underfitting to overfitting on unseen data
 
