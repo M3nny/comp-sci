@@ -42,7 +42,7 @@ $$w_1x_1+w_2x_2+b\stackrel{\text{becomes}}{\Longrightarrow}w_0(1)+w_1x_1+w_2x_2$
 ---
 ### The Perceptron
 The perceptron is a network consisting of one layer of M&P neurons connected in a feedforward way, that can classify things into two parts.
-![[Perceptron.png|500]]
+![[Magistrale/Foundations of machine learning/Images/Perceptron.png|500]]
 
 **Variables and parameters**:
 - $x(n)$ = $(m+1)\times 1$ input vector
