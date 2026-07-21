@@ -8,61 +8,49 @@
         "type": "tabs",
         "children": [
           {
-            "id": "f68e2b28d1781243",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Magistrale/Deep learning for natural language processing/00 - Introduction.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "00 - Introduction"
-            }
-          },
-          {
-            "id": "4c5f41b13be8ebc4",
-            "type": "leaf",
-            "state": {
-              "type": "image",
-              "state": {
-                "file": "Magistrale/Image and video understanding/Images/Perceptron.png"
-              },
-              "icon": "lucide-image",
-              "title": "Perceptron"
-            }
-          },
-          {
             "id": "6968c86234190d9a",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Magistrale/Image and video understanding/02 - CNN recap.md",
+                "file": "Magistrale/Image and video understanding/03 - Sequential models.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "02 - CNN recap"
+              "title": "03 - Sequential models"
             }
           },
           {
-            "id": "e66f9f19f24f2787",
+            "id": "9efa551d0441274e",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Magistrale/Image and video understanding/01 - DNN recap.md",
+                "file": "Magistrale/Image and video understanding/03 - Sequential models.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "01 - DNN recap"
+              "title": "03 - Sequential models"
+            }
+          },
+          {
+            "id": "696b41581416c8e4",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Magistrale/Image and video understanding/03 - Sequential models.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "03 - Sequential models"
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -203,31 +191,36 @@
       "obsidian-excalidraw-plugin:New drawing": false
     }
   },
-  "active": "a1163d9af64d6878",
+  "active": "9efa551d0441274e",
   "lastOpenFiles": [
-    "Magistrale/Image and video understanding/Images/CNN pass.png",
-    "Magistrale/Image and video understanding/Images/image-Photoroom.png",
-    "Magistrale/Image and video understanding/01 - DNN recap.md",
+    "Magistrale/Image and video understanding/Images/Attention mechanism.png",
+    "Magistrale/Image and video understanding/Images/image-Photoroom(12).png",
+    "Magistrale/Image and video understanding/Images/Encoder-decoder additive attention.png",
+    "Magistrale/Image and video understanding/Images/image-Photoroom(11).png",
+    "Magistrale/Image and video understanding/Images/Seq2seq.png",
+    "Magistrale/Image and video understanding/Images/image-Photoroom(10).png",
+    "Magistrale/Image and video understanding/Images/LSTM cell.svg",
+    "Excalidraw/Drawing 2026-07-21 11.35.27.excalidraw.md",
+    "Magistrale/Image and video understanding/Images/LSTM cell.png",
+    "Excalidraw/Drawing 2026-07-21 11.44.41.excalidraw.md",
+    "Excalidraw/Drawing 2026-04-11 13.38.19.excalidraw.md",
+    "Excalidraw/Drawing 2026-03-07 16.46.12.excalidraw.md",
+    "Magistrale/Image and video understanding/03 - Sequential models.md",
+    "Magistrale/Image and video understanding/Images/image-Photoroom(9).png",
+    "Magistrale/Image and video understanding/Images/RNN cell.png",
+    "Magistrale/Image and video understanding/Images/image-Photoroom(8).png",
     "Magistrale/Deep learning for natural language processing/00 - Introduction.md",
-    "Magistrale/Image and video understanding/Images/DNN.png",
-    "Magistrale/Image and video understanding/Images/NN in and out.png",
-    "Magistrale/Image and video understanding/Images/Perceptron.png",
     "Magistrale/Image and video understanding/02 - CNN recap.md",
-    "Magistrale/Image and video understanding/Images/CNN usage.png",
+    "Magistrale/Image and video understanding/01 - DNN recap.md",
     "Magistrale/Image and video understanding/Images",
     "Magistrale/Image and video understanding/00 - Introduction.md",
     "Magistrale/Image and video understanding",
     "Magistrale/Information retrieval and web search/Summary.md",
     "Magistrale/Foundations of machine learning/01 - Neural networks.md",
     "Magistrale/Foundations of machine learning/04 - Deep learning.md",
-    "Magistrale/Deep learning for natural language processing/Images/image-Photoroom(7).png",
-    "Magistrale/Image and video understanding/Images/Computational graph.png",
-    "Magistrale/Deep learning for natural language processing/Images/image-Photoroom(6).png",
     "Triennale/Terzo anno/Data and web mining/Reti neurali/Layers.md",
     "Triennale/Terzo anno/Data and web mining/Reti neurali/Introduzione.md",
     "Magistrale/Foundations of machine learning/02 - Statistical learning theory.md",
-    "Magistrale/Deep learning for natural language processing/Images/image-Photoroom(5).png",
-    "Magistrale/Image and video understanding/Images/MLP.png",
     "Magistrale/Information retrieval and web search/11 - Learning to rank.md",
     "Magistrale/Deep learning for natural language processing/Images",
     "Magistrale/Deep learning for natural language processing/Nuova cartella",
@@ -244,11 +237,6 @@
     "Magistrale/Information retrieval and web search/08 - Evaluation metrics.md",
     "Magistrale/Information retrieval and web search/09 - Relevance feedback and query expansion.md",
     "Senza nome.base",
-    "Magistrale/Information retrieval and web search/06 - Vector space model.md",
-    "Magistrale/Learning with massive data/11 - Vertex centric paradigm.md",
-    "Magistrale/Learning with massive data/10 - Association rules.md",
-    "Magistrale/Learning with massive data/08 - Spark.md",
-    "Magistrale/Learning with massive data/07 - MapReduce.md",
     "Magistrale/Algorithms for massive data/05 - Streaming/Senza nome",
     "Magistrale/Algorithms for massive data/05 - Streaming/Images",
     "Magistrale/Algorithms for massive data/05 - Streaming",
