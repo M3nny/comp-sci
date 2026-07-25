@@ -4,35 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "9e236426f3609081",
+        "id": "0f2302e8b12a90a5",
         "type": "tabs",
         "children": [
           {
-            "id": "9efa551d0441274e",
+            "id": "928d11402865f52f",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Magistrale/Image and video understanding/04 - Transformers.md",
+                "file": "Magistrale/Image and video understanding/05 - Vision transformers.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "04 - Transformers"
-            }
-          },
-          {
-            "id": "b6e6b2033b3a5170",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Magistrale/Image and video understanding/03 - Sequential models.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "03 - Sequential models"
+              "title": "05 - Vision transformers"
             }
           }
         ]
@@ -176,21 +162,23 @@
       "obsidian-excalidraw-plugin:New drawing": false
     }
   },
-  "active": "9efa551d0441274e",
+  "active": "a1163d9af64d6878",
   "lastOpenFiles": [
-    "Magistrale/Image and video understanding/Images/Detailed transformer decoder.png",
-    "Magistrale/Image and video understanding/Images/Detailed transformer decoder (2).png",
-    "Magistrale/Image and video understanding/Images/Screenshot 2026-07-25 120157_cleanup-Photoroom.png",
-    "Magistrale/Image and video understanding/Images/image-Photoroom(8)_cleanup.png",
-    "Magistrale/Image and video understanding/Images/Detailed transformer encoder.png",
-    "Magistrale/Image and video understanding/Images/image-Photoroom(7).png",
-    "Magistrale/Image and video understanding/Images/Multi-head attention summary.png",
-    "Magistrale/Image and video understanding/Images/image-Photoroom(6).png",
-    "Magistrale/Image and video understanding/Images/Multi-head attention.png",
-    "Magistrale/Image and video understanding/Images/image-Photoroom(5).png",
-    "Magistrale/Image and video understanding/Images/FFN applied to self-attention block.png",
-    "Magistrale/Image and video understanding/03 - Sequential models.md",
+    "Magistrale/Image and video understanding/Images/Vision transformer.png",
+    "Magistrale/Image and video understanding/Images/Vision transformer.svg",
+    "Excalidraw/Drawing 2026-07-25 13.54.28.excalidraw.md",
+    "Magistrale/Image and video understanding/05 - Vision transformers.md",
+    "Magistrale/Information retrieval and web search/12 - Transformers.md",
+    "Magistrale/Image and video understanding/Images/Screenshot 2026-07-25 134744_cleanup-Photoroom.png",
+    "Magistrale/Image and video understanding/Images/Transformer on pixels.png",
+    "Magistrale/Image and video understanding/Images/image-Photoroom(11).png",
+    "Magistrale/Image and video understanding/Images/Local attention.png",
+    "Magistrale/Image and video understanding/Images/image-Photoroom(10).png",
+    "Magistrale/Image and video understanding/Images/Self-attention in CNN.png",
+    "Magistrale/Image and video understanding/Images/image-Photoroom(9).png",
     "Magistrale/Image and video understanding/04 - Transformers.md",
+    "Magistrale/Image and video understanding/03 - Sequential models.md",
+    "Magistrale/Image and video understanding/Images/Detailed transformer decoder.png",
     "Excalidraw/Drawing 2026-07-21 11.35.27.excalidraw.md",
     "Excalidraw/Drawing 2026-07-21 11.44.41.excalidraw.md",
     "Excalidraw/Drawing 2026-04-11 13.38.19.excalidraw.md",
@@ -218,9 +206,6 @@
     "Magistrale/Learning with massive data/03 - Clustering.md",
     "Magistrale/Learning with massive data/02 - Recommender systems.md",
     "Magistrale/Information retrieval and web search/05 - Index compression.md",
-    "Magistrale/Learning with massive data/09 - All pairs similarity.md",
-    "Magistrale/Learning with massive data/06 - Ranking.md",
-    "Magistrale/Information retrieval and web search/08 - Evaluation metrics.md",
     "Senza nome.base",
     "Magistrale/Algorithms for massive data/05 - Streaming/Senza nome",
     "Magistrale/Algorithms for massive data/05 - Streaming/Images",
