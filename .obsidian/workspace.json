@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Magistrale/Image and video understanding/05 - Vision transformers.md",
+                "file": "Magistrale/Image and video understanding/06 - Graph neural networks.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "05 - Vision transformers"
+              "title": "06 - Graph neural networks"
             }
           }
         ]
@@ -162,23 +162,26 @@
       "obsidian-excalidraw-plugin:New drawing": false
     }
   },
-  "active": "a1163d9af64d6878",
+  "active": "928d11402865f52f",
   "lastOpenFiles": [
-    "Magistrale/Image and video understanding/Images/Vision transformer.png",
-    "Magistrale/Image and video understanding/Images/Vision transformer.svg",
-    "Excalidraw/Drawing 2026-07-25 13.54.28.excalidraw.md",
+    "Magistrale/Image and video understanding/Images/Neural message passing.png",
+    "Magistrale/Image and video understanding/Images/Screenshot 2026-07-26 122225_cleanup-Photoroom.png",
+    "Magistrale/Image and video understanding/Images/Multi-head GAT.png",
+    "Magistrale/Image and video understanding/Images/image-Photoroom(3).png",
+    "Magistrale/Image and video understanding/Images/Attentional GNN.png",
+    "Magistrale/Image and video understanding/Images/image-Photoroom(2).png",
+    "Magistrale/Image and video understanding/Images/GNN node classification.png",
+    "Magistrale/Image and video understanding/Images/image-Photoroom(1).png",
+    "Magistrale/Image and video understanding/Images/GNN layer flavors.png",
+    "Magistrale/Image and video understanding/Images/Screenshot 2026-07-26 111705_cleanup-Photoroom.png",
+    "Magistrale/Image and video understanding/Images/GNN tasks.png",
+    "Magistrale/Foundations of machine learning/05 - Clustering.md",
+    "Magistrale/Image and video understanding/06 - Graph neural networks.md",
     "Magistrale/Image and video understanding/05 - Vision transformers.md",
+    "Excalidraw/Drawing 2026-07-25 13.54.28.excalidraw.md",
     "Magistrale/Information retrieval and web search/12 - Transformers.md",
-    "Magistrale/Image and video understanding/Images/Screenshot 2026-07-25 134744_cleanup-Photoroom.png",
-    "Magistrale/Image and video understanding/Images/Transformer on pixels.png",
-    "Magistrale/Image and video understanding/Images/image-Photoroom(11).png",
-    "Magistrale/Image and video understanding/Images/Local attention.png",
-    "Magistrale/Image and video understanding/Images/image-Photoroom(10).png",
-    "Magistrale/Image and video understanding/Images/Self-attention in CNN.png",
-    "Magistrale/Image and video understanding/Images/image-Photoroom(9).png",
     "Magistrale/Image and video understanding/04 - Transformers.md",
     "Magistrale/Image and video understanding/03 - Sequential models.md",
-    "Magistrale/Image and video understanding/Images/Detailed transformer decoder.png",
     "Excalidraw/Drawing 2026-07-21 11.35.27.excalidraw.md",
     "Excalidraw/Drawing 2026-07-21 11.44.41.excalidraw.md",
     "Excalidraw/Drawing 2026-04-11 13.38.19.excalidraw.md",
@@ -204,8 +207,6 @@
     "Magistrale/Learning with massive data/Summary.md",
     "Triennale/Terzo anno/Data and web mining/Clustering/K-means.md",
     "Magistrale/Learning with massive data/03 - Clustering.md",
-    "Magistrale/Learning with massive data/02 - Recommender systems.md",
-    "Magistrale/Information retrieval and web search/05 - Index compression.md",
     "Senza nome.base",
     "Magistrale/Algorithms for massive data/05 - Streaming/Senza nome",
     "Magistrale/Algorithms for massive data/05 - Streaming/Images",
