@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Magistrale/Image and video understanding/06 - Graph neural networks.md",
+                "file": "Magistrale/Image and video understanding/07 - Image classification.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "06 - Graph neural networks"
+              "title": "07 - Image classification"
             }
           }
         ]
@@ -164,19 +164,20 @@
   },
   "active": "928d11402865f52f",
   "lastOpenFiles": [
-    "Magistrale/Image and video understanding/Images/Neural message passing.png",
-    "Magistrale/Image and video understanding/Images/Screenshot 2026-07-26 122225_cleanup-Photoroom.png",
-    "Magistrale/Image and video understanding/Images/Multi-head GAT.png",
-    "Magistrale/Image and video understanding/Images/image-Photoroom(3).png",
-    "Magistrale/Image and video understanding/Images/Attentional GNN.png",
-    "Magistrale/Image and video understanding/Images/image-Photoroom(2).png",
-    "Magistrale/Image and video understanding/Images/GNN node classification.png",
-    "Magistrale/Image and video understanding/Images/image-Photoroom(1).png",
-    "Magistrale/Image and video understanding/Images/GNN layer flavors.png",
-    "Magistrale/Image and video understanding/Images/Screenshot 2026-07-26 111705_cleanup-Photoroom.png",
-    "Magistrale/Image and video understanding/Images/GNN tasks.png",
-    "Magistrale/Foundations of machine learning/05 - Clustering.md",
+    "Magistrale/Image and video understanding/Images/Transfer learning.png",
+    "Magistrale/Image and video understanding/Images/image-Photoroom(13).png",
+    "Magistrale/Image and video understanding/Images/Bottleneck residual block.png",
+    "Magistrale/Image and video understanding/Images/image-Photoroom(12).png",
+    "Magistrale/Image and video understanding/Images/Residual block.png",
+    "Magistrale/Image and video understanding/Images/image-Photoroom(11).png",
+    "Magistrale/Image and video understanding/Images/GoogLeNet.png",
+    "Magistrale/Image and video understanding/Images/image-Photoroom(10).png",
+    "Magistrale/Image and video understanding/Images/Pasted image 20260726195026.png",
+    "Magistrale/Image and video understanding/Images/Fixed inception module.png",
+    "Magistrale/Image and video understanding/Images/Fixed inceptio.png",
     "Magistrale/Image and video understanding/06 - Graph neural networks.md",
+    "Magistrale/Image and video understanding/07 - Image classification.md",
+    "Magistrale/Foundations of machine learning/05 - Clustering.md",
     "Magistrale/Image and video understanding/05 - Vision transformers.md",
     "Excalidraw/Drawing 2026-07-25 13.54.28.excalidraw.md",
     "Magistrale/Information retrieval and web search/12 - Transformers.md",
@@ -206,7 +207,6 @@
     "Magistrale/Learning with massive data/Map.canvas",
     "Magistrale/Learning with massive data/Summary.md",
     "Triennale/Terzo anno/Data and web mining/Clustering/K-means.md",
-    "Magistrale/Learning with massive data/03 - Clustering.md",
     "Senza nome.base",
     "Magistrale/Algorithms for massive data/05 - Streaming/Senza nome",
     "Magistrale/Algorithms for massive data/05 - Streaming/Images",
