@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Magistrale/Image and video understanding/08 - Semantic segmentation.md",
+                "file": "Magistrale/Image and video understanding/09 - Object detection.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "08 - Semantic segmentation"
+              "title": "09 - Object detection"
             }
           }
         ]
@@ -162,24 +162,28 @@
       "obsidian-excalidraw-plugin:New drawing": false
     }
   },
-  "active": "928d11402865f52f",
+  "active": "a1163d9af64d6878",
   "lastOpenFiles": [
-    "Magistrale/Image and video understanding/Images/Symmetric encoder-decoder.png",
-    "Magistrale/Image and video understanding/Images/canvas.png",
-    "Magistrale/Image and video understanding/Images/SegNet.png",
-    "Magistrale/Image and video understanding/Images/image-Photoroom(9).png",
-    "Magistrale/Image and video understanding/Images/Fully-conv network.png",
-    "Magistrale/Image and video understanding/Images/image-Photoroom(8).png",
-    "Magistrale/Image and video understanding/Images/Transposed 1D convolution.png",
-    "Magistrale/Image and video understanding/Images/image-Photoroom(7).png",
-    "Magistrale/Image and video understanding/Images/Learnable upsampling.png",
-    "Magistrale/Image and video understanding/Images/image-Photoroom(6).png",
-    "Magistrale/Image and video understanding/Images/Learnable downsampling.png",
+    "Magistrale/Image and video understanding/Images/Precision-recall curve.png",
+    "Magistrale/Image and video understanding/Images/image-Photoroom(5).png",
+    "Excalidraw/Drawing 2026-07-27 18.32.00.excalidraw.md",
+    "Magistrale/Information retrieval and web search/08 - Evaluation metrics.md",
+    "Magistrale/Image and video understanding/09 - Object detection.md",
+    "Magistrale/Image and video understanding/Images/DETR.png",
+    "Magistrale/Image and video understanding/Images/image-Photoroom(4).png",
+    "Magistrale/Image and video understanding/Images/YOLO pipeline.svg",
+    "Excalidraw/Images/Pasted Image 20260727183205_229.png",
+    "Excalidraw/Images/Pasted Image 20260727183406_491.png",
+    "Excalidraw/Images/Pasted Image 20260727183254_965.png",
+    "Excalidraw/Images/Pasted Image 20260727183232_361.png",
+    "Excalidraw/Images/Pasted Image 20260727183211_693.png",
+    "Excalidraw/Images",
+    "Magistrale/Image and video understanding/Images/Faster R-CNN.png",
+    "Magistrale/Image and video understanding/08 - Semantic segmentation.md",
     "Magistrale/Image and video understanding/Images/Download/IVU - 03 - Semantic Segmentation.pdf",
     "Magistrale/Image and video understanding/Images/Download/desktop.ini",
     "Magistrale/Image and video understanding/Images/Download",
     "Magistrale/Image and video understanding/07 - Image classification.md",
-    "Magistrale/Image and video understanding/08 - Semantic segmentation.md",
     "Magistrale/Image and video understanding/06 - Graph neural networks.md",
     "Magistrale/Foundations of machine learning/05 - Clustering.md",
     "Magistrale/Image and video understanding/05 - Vision transformers.md",
@@ -202,16 +206,12 @@
     "Magistrale/Foundations of machine learning/04 - Deep learning.md",
     "Triennale/Terzo anno/Data and web mining/Reti neurali/Layers.md",
     "Triennale/Terzo anno/Data and web mining/Reti neurali/Introduzione.md",
-    "Magistrale/Foundations of machine learning/02 - Statistical learning theory.md",
-    "Magistrale/Information retrieval and web search/11 - Learning to rank.md",
     "Magistrale/Deep learning for natural language processing/Images",
     "Magistrale/Deep learning for natural language processing/Nuova cartella",
     "Magistrale/Deep learning for natural language processing",
     "Magistrale/Information retrieval and web search/Map.canvas",
     "Magistrale/Learning with massive data/Map.canvas",
-    "Magistrale/Learning with massive data/Summary.md",
     "Senza nome.base",
-    "Magistrale/Algorithms for massive data/05 - Streaming/Senza nome",
     "Magistrale/Senza nome.canvas",
     "Senza nome.canvas",
     "asdasdasd.canvas"
