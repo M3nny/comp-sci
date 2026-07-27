@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Magistrale/Image and video understanding/07 - Image classification.md",
+                "file": "Magistrale/Image and video understanding/08 - Semantic segmentation.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "07 - Image classification"
+              "title": "08 - Semantic segmentation"
             }
           }
         ]
@@ -164,19 +164,23 @@
   },
   "active": "928d11402865f52f",
   "lastOpenFiles": [
-    "Magistrale/Image and video understanding/Images/Transfer learning.png",
-    "Magistrale/Image and video understanding/Images/image-Photoroom(13).png",
-    "Magistrale/Image and video understanding/Images/Bottleneck residual block.png",
-    "Magistrale/Image and video understanding/Images/image-Photoroom(12).png",
-    "Magistrale/Image and video understanding/Images/Residual block.png",
-    "Magistrale/Image and video understanding/Images/image-Photoroom(11).png",
-    "Magistrale/Image and video understanding/Images/GoogLeNet.png",
-    "Magistrale/Image and video understanding/Images/image-Photoroom(10).png",
-    "Magistrale/Image and video understanding/Images/Pasted image 20260726195026.png",
-    "Magistrale/Image and video understanding/Images/Fixed inception module.png",
-    "Magistrale/Image and video understanding/Images/Fixed inceptio.png",
-    "Magistrale/Image and video understanding/06 - Graph neural networks.md",
+    "Magistrale/Image and video understanding/Images/Symmetric encoder-decoder.png",
+    "Magistrale/Image and video understanding/Images/canvas.png",
+    "Magistrale/Image and video understanding/Images/SegNet.png",
+    "Magistrale/Image and video understanding/Images/image-Photoroom(9).png",
+    "Magistrale/Image and video understanding/Images/Fully-conv network.png",
+    "Magistrale/Image and video understanding/Images/image-Photoroom(8).png",
+    "Magistrale/Image and video understanding/Images/Transposed 1D convolution.png",
+    "Magistrale/Image and video understanding/Images/image-Photoroom(7).png",
+    "Magistrale/Image and video understanding/Images/Learnable upsampling.png",
+    "Magistrale/Image and video understanding/Images/image-Photoroom(6).png",
+    "Magistrale/Image and video understanding/Images/Learnable downsampling.png",
+    "Magistrale/Image and video understanding/Images/Download/IVU - 03 - Semantic Segmentation.pdf",
+    "Magistrale/Image and video understanding/Images/Download/desktop.ini",
+    "Magistrale/Image and video understanding/Images/Download",
     "Magistrale/Image and video understanding/07 - Image classification.md",
+    "Magistrale/Image and video understanding/08 - Semantic segmentation.md",
+    "Magistrale/Image and video understanding/06 - Graph neural networks.md",
     "Magistrale/Foundations of machine learning/05 - Clustering.md",
     "Magistrale/Image and video understanding/05 - Vision transformers.md",
     "Excalidraw/Drawing 2026-07-25 13.54.28.excalidraw.md",
@@ -206,12 +210,8 @@
     "Magistrale/Information retrieval and web search/Map.canvas",
     "Magistrale/Learning with massive data/Map.canvas",
     "Magistrale/Learning with massive data/Summary.md",
-    "Triennale/Terzo anno/Data and web mining/Clustering/K-means.md",
     "Senza nome.base",
     "Magistrale/Algorithms for massive data/05 - Streaming/Senza nome",
-    "Magistrale/Algorithms for massive data/05 - Streaming/Images",
-    "Magistrale/Algorithms for massive data/05 - Streaming",
-    "Magistrale/Algorithms for massive data/04 - Sketching",
     "Magistrale/Senza nome.canvas",
     "Senza nome.canvas",
     "asdasdasd.canvas"
