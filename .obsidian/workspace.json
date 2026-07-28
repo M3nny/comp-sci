@@ -13,12 +13,40 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Magistrale/Image and video understanding/09 - Vision and language.md",
+                "file": "Magistrale/Image and video understanding/10 - Video classification.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "09 - Vision and language"
+              "title": "10 - Video classification"
+            }
+          },
+          {
+            "id": "2a52e497485614ca",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Magistrale/Learning with massive data/06 - Ranking.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "06 - Ranking"
+            }
+          },
+          {
+            "id": "f8496fc7d75031fe",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Magistrale/Image and video understanding/09 - Object detection.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "09 - Object detection"
             }
           }
         ]
@@ -162,25 +190,29 @@
       "obsidian-excalidraw-plugin:New drawing": false
     }
   },
-  "active": "928d11402865f52f",
+  "active": "a1163d9af64d6878",
   "lastOpenFiles": [
-    "Magistrale/Image and video understanding/Images/CLIP zero-shot classification.png",
-    "Magistrale/Image and video understanding/Images/image-Photoroom(2).png",
-    "Magistrale/Image and video understanding/Images/CLIP.png",
-    "Magistrale/Image and video understanding/Images/image-Photoroom(1).png",
-    "Magistrale/Image and video understanding/Images/Transformers for image captioning.png",
-    "Magistrale/Image and video understanding/Images/Screenshot 2026-07-28 101536_cleanup-Photoroom.png",
-    "Magistrale/Image and video understanding/Images/Soft-hard attention.png",
-    "Magistrale/Image and video understanding/Images/image-Photoroom.png",
-    "Magistrale/Image and video understanding/Images/CNN+RNN+Attention for image captioning.png",
-    "Magistrale/Image and video understanding/Images/Screenshot 2026-07-28 100458_cleanup.png",
-    "Magistrale/Image and video understanding/Images/CNN+RNN for image captioning.png",
+    "Magistrale/Image and video understanding/Images/Bottom-up pose.png",
+    "Magistrale/Image and video understanding/Images/Top-down pose.png",
+    "Magistrale/Image and video understanding/Images/Top-down pose.png",
+    "Magistrale/Image and video understanding/Images/canvas.png",
+    "Magistrale/Image and video understanding/Images/DeepPose.png",
+    "Magistrale/Image and video understanding/Images/image-Photoroom(12).png",
+    "Magistrale/Learning with massive data/06 - Ranking.md",
+    "Magistrale/Image and video understanding/10 - Video classification.md",
+    "Magistrale/Image and video understanding/Images/DPM.png",
+    "Magistrale/Image and video understanding/Images/image-Photoroom(11).png",
     "Magistrale/Image and video understanding/09 - Object detection.md",
+    "Magistrale/Image and video understanding/00 - Introduction.md",
+    "Magistrale/Image and video understanding/Images/Point model.png",
+    "Magistrale/Image and video understanding/Images/image-Photoroom(10).png",
+    "Magistrale/Image and video understanding/Images/Inflated 2D network.svg",
+    "Magistrale/Image and video understanding/08 - Semantic segmentation.md",
     "Magistrale/Image and video understanding/09 - Vision and language.md",
+    "Excalidraw/Drawing 2026-07-28 16.57.20.excalidraw.md",
     "Excalidraw/Drawing 2026-07-27 18.32.00.excalidraw.md",
     "Magistrale/Information retrieval and web search/08 - Evaluation metrics.md",
     "Excalidraw/Images",
-    "Magistrale/Image and video understanding/08 - Semantic segmentation.md",
     "Magistrale/Image and video understanding/Images/Download/IVU - 03 - Semantic Segmentation.pdf",
     "Magistrale/Image and video understanding/Images/Download/desktop.ini",
     "Magistrale/Image and video understanding/Images/Download",
@@ -200,12 +232,8 @@
     "Magistrale/Image and video understanding/02 - CNN recap.md",
     "Magistrale/Image and video understanding/01 - DNN recap.md",
     "Magistrale/Image and video understanding/Images",
-    "Magistrale/Image and video understanding/00 - Introduction.md",
     "Magistrale/Image and video understanding",
     "Magistrale/Information retrieval and web search/Summary.md",
-    "Magistrale/Foundations of machine learning/01 - Neural networks.md",
-    "Magistrale/Foundations of machine learning/04 - Deep learning.md",
-    "Triennale/Terzo anno/Data and web mining/Reti neurali/Layers.md",
     "Magistrale/Deep learning for natural language processing/Images",
     "Magistrale/Deep learning for natural language processing/Nuova cartella",
     "Magistrale/Deep learning for natural language processing",
