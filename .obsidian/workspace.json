@@ -13,40 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Magistrale/Image and video understanding/10 - Video classification.md",
+                "file": "Magistrale/Image and video understanding/11 - Multi object tracking.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "10 - Video classification"
-            }
-          },
-          {
-            "id": "2a52e497485614ca",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Magistrale/Learning with massive data/06 - Ranking.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "06 - Ranking"
-            }
-          },
-          {
-            "id": "f8496fc7d75031fe",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Magistrale/Image and video understanding/09 - Object detection.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "09 - Object detection"
+              "title": "11 - Multi object tracking"
             }
           }
         ]
@@ -190,23 +162,24 @@
       "obsidian-excalidraw-plugin:New drawing": false
     }
   },
-  "active": "a1163d9af64d6878",
+  "active": "928d11402865f52f",
   "lastOpenFiles": [
-    "Magistrale/Image and video understanding/Images/Bottom-up pose.png",
-    "Magistrale/Image and video understanding/Images/Top-down pose.png",
-    "Magistrale/Image and video understanding/Images/Top-down pose.png",
-    "Magistrale/Image and video understanding/Images/canvas.png",
-    "Magistrale/Image and video understanding/Images/DeepPose.png",
-    "Magistrale/Image and video understanding/Images/image-Photoroom(12).png",
-    "Magistrale/Learning with massive data/06 - Ranking.md",
+    "Magistrale/Image and video understanding/Images/Sushi2.png",
+    "Magistrale/Image and video understanding/Images/image-Photoroom(9).png",
+    "Magistrale/Image and video understanding/Images/Sushi1.png",
+    "Magistrale/Image and video understanding/Images/image-Photoroom(8).png",
+    "Magistrale/Image and video understanding/Images/MOT with MPN.png",
+    "Magistrale/Image and video understanding/Images/image-Photoroom(7).png",
+    "Magistrale/Image and video understanding/Images/MOT two update rules.png",
+    "Magistrale/Image and video understanding/Images/image-Photoroom(6).png",
+    "Magistrale/Image and video understanding/Images/Graph learning.png",
+    "Magistrale/Image and video understanding/Images/image-Photoroom(5).png",
+    "Magistrale/Image and video understanding/Images/Triplet loss.png",
     "Magistrale/Image and video understanding/10 - Video classification.md",
-    "Magistrale/Image and video understanding/Images/DPM.png",
-    "Magistrale/Image and video understanding/Images/image-Photoroom(11).png",
+    "Magistrale/Image and video understanding/11 - Multi object tracking.md",
     "Magistrale/Image and video understanding/09 - Object detection.md",
+    "Magistrale/Learning with massive data/06 - Ranking.md",
     "Magistrale/Image and video understanding/00 - Introduction.md",
-    "Magistrale/Image and video understanding/Images/Point model.png",
-    "Magistrale/Image and video understanding/Images/image-Photoroom(10).png",
-    "Magistrale/Image and video understanding/Images/Inflated 2D network.svg",
     "Magistrale/Image and video understanding/08 - Semantic segmentation.md",
     "Magistrale/Image and video understanding/09 - Vision and language.md",
     "Excalidraw/Drawing 2026-07-28 16.57.20.excalidraw.md",
@@ -233,7 +206,6 @@
     "Magistrale/Image and video understanding/01 - DNN recap.md",
     "Magistrale/Image and video understanding/Images",
     "Magistrale/Image and video understanding",
-    "Magistrale/Information retrieval and web search/Summary.md",
     "Magistrale/Deep learning for natural language processing/Images",
     "Magistrale/Deep learning for natural language processing/Nuova cartella",
     "Magistrale/Deep learning for natural language processing",
