@@ -1,18 +1,34 @@
-img {
-        display: block !important;
-        margin-left: auto !important;
-        margin-right: auto !important;
-}
-    
- .markdown-source-view.mod-cm6 .cm-content > * {
-        margin: auto auto !important;
+/* Center images (Reading view) */
+.markdown-rendered .image-embed {
+    display: flex;
+    justify-content: center;
 }
 
-div.mermaid {
-  text-align: center;
+.markdown-rendered .image-embed img {
+    display: block;
 }
 
-.markdown-preview-view table {
-    margin-left: auto;
-    margin-right: auto;
+/* Center images (Dynamic preview) */
+.markdown-source-view.mod-cm6 .internal-embed.image-embed {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.markdown-source-view.mod-cm6 .internal-embed.image-embed .image-wrapper {
+    display: inline-flex;
+}
+
+.markdown-source-view.mod-cm6 .internal-embed.image-embed img {
+    display: block;
+}
+
+/* Center Mermaid diagrams */
+.markdown-rendered .mermaid {
+    text-align: center;
+}
+
+/* Center tables */
+.markdown-rendered table {
+    margin-inline: auto;
 }
