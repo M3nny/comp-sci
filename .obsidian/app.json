@@ -16,5 +16,7 @@
     "downscalePercent": 45
   },
   "readableLineLength": true,
-  "strictLineBreaks": false
+  "strictLineBreaks": false,
+  "smartIndentList": true,
+  "rightToLeft": false
 }

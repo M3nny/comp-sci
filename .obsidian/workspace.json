@@ -4,21 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "0f2302e8b12a90a5",
+        "id": "b04d16921115bfd6",
         "type": "tabs",
         "children": [
           {
-            "id": "928d11402865f52f",
+            "id": "2ad270589109df80",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Magistrale/Image and video understanding/11 - Multi object tracking.md",
+                "file": "Magistrale/Image and video understanding/12 - Generative AI.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "11 - Multi object tracking"
+              "title": "12 - Generative AI"
             }
           }
         ]
@@ -41,10 +41,12 @@
               "type": "file-explorer",
               "state": {
                 "sortOrder": "alphabetical",
-                "autoReveal": false
+                "autoReveal": false,
+                "showSearch": false,
+                "searchQuery": ""
               },
               "icon": "lucide-folder-closed",
-              "title": "Esplora risorse"
+              "title": "Esplora file"
             }
           },
           {
@@ -154,7 +156,7 @@
   },
   "left-ribbon": {
     "hiddenItems": {
-      "switcher:Apri selezione rapida": false,
+      "switcher:Apri selettore rapido": false,
       "graph:Apri vista grafo": false,
       "canvas:Crea nuova lavagna": false,
       "command-palette:Apri riquadro comandi": false,
@@ -162,21 +164,23 @@
       "obsidian-excalidraw-plugin:New drawing": false
     }
   },
-  "active": "928d11402865f52f",
+  "active": "2ad270589109df80",
   "lastOpenFiles": [
-    "Magistrale/Image and video understanding/Images/Sushi2.png",
+    "Magistrale/Image and video understanding/Images/Diffusion condition using a LLM.png",
     "Magistrale/Image and video understanding/Images/image-Photoroom(9).png",
-    "Magistrale/Image and video understanding/Images/Sushi1.png",
+    "Magistrale/Image and video understanding/Images/Diffusion text label as conditioning.png",
     "Magistrale/Image and video understanding/Images/image-Photoroom(8).png",
-    "Magistrale/Image and video understanding/Images/MOT with MPN.png",
+    "Magistrale/Image and video understanding/Images/Diffusion back to cat manifold.png",
     "Magistrale/Image and video understanding/Images/image-Photoroom(7).png",
-    "Magistrale/Image and video understanding/Images/MOT two update rules.png",
+    "Magistrale/Image and video understanding/Images/Diffusion inpainting.png",
+    "Magistrale/Image and video understanding/Images/GAN discriminator.png",
     "Magistrale/Image and video understanding/Images/image-Photoroom(6).png",
-    "Magistrale/Image and video understanding/Images/Graph learning.png",
+    "Magistrale/Image and video understanding/Images/VAE training.png",
     "Magistrale/Image and video understanding/Images/image-Photoroom(5).png",
-    "Magistrale/Image and video understanding/Images/Triplet loss.png",
-    "Magistrale/Image and video understanding/10 - Video classification.md",
+    "Triennale/Secondo anno/Probabilità e statistica/Distribuzioni note/Distribuzioni continue.md",
+    "Magistrale/Image and video understanding/12 - Generative AI.md",
     "Magistrale/Image and video understanding/11 - Multi object tracking.md",
+    "Magistrale/Image and video understanding/10 - Video classification.md",
     "Magistrale/Image and video understanding/09 - Object detection.md",
     "Magistrale/Learning with massive data/06 - Ranking.md",
     "Magistrale/Image and video understanding/00 - Introduction.md",
@@ -202,8 +206,6 @@
     "Excalidraw/Drawing 2026-04-11 13.38.19.excalidraw.md",
     "Excalidraw/Drawing 2026-03-07 16.46.12.excalidraw.md",
     "Magistrale/Deep learning for natural language processing/00 - Introduction.md",
-    "Magistrale/Image and video understanding/02 - CNN recap.md",
-    "Magistrale/Image and video understanding/01 - DNN recap.md",
     "Magistrale/Image and video understanding/Images",
     "Magistrale/Image and video understanding",
     "Magistrale/Deep learning for natural language processing/Images",
