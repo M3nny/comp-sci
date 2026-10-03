@@ -13,6 +13,34 @@
             "state": {
               "type": "markdown",
               "state": {
+                "file": "Magistrale/Secondo anno/Statistical inference and learning/02 - Point and interval estimation.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "02 - Point and interval estimation"
+            }
+          },
+          {
+            "id": "ed50713c3a525e2a",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Triennale/Secondo anno/Probabilità e statistica/Distribuzioni note/Distribuzioni continue.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Distribuzioni continue"
+            }
+          },
+          {
+            "id": "0880f99a496287c5",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
                 "file": "Magistrale/Secondo anno/Statistical inference and learning/01 - Random variables.md",
                 "mode": "source",
                 "source": false
@@ -166,8 +194,18 @@
   },
   "active": "fb68532bb7bef8ca",
   "lastOpenFiles": [
-    "Triennale/Secondo anno/Probabilità e statistica/Probabilità condizionata.md",
+    "Triennale/Secondo anno/Probabilità e statistica/Distribuzioni note/Distribuzioni continue.md",
+    "Magistrale/Secondo anno/Statistical inference and learning/02 - Point and interval estimation.md",
+    "Magistrale/Secondo anno/Statistical inference and learning/Images/Gaussian log-likelihood for latency variability.png",
+    "Magistrale/Secondo anno/Statistical inference and learning/Images/Gaussian log-likelihood for mean latency.png",
+    "Magistrale/Secondo anno/Statistical inference and learning/Images/Binomial log-likelihood.png",
     "Magistrale/Secondo anno/Statistical inference and learning/01 - Random variables.md",
+    "Magistrale/Secondo anno/Statistical inference and learning/Images/Sampling distribution.png",
+    "Magistrale/Secondo anno/Statistical inference and learning/Images/Log-likelihood.png",
+    "Magistrale/Secondo anno/Statistical inference and learning/Images/First sample histogram.png",
+    "Magistrale/Secondo anno/Statistical inference and learning/Images/ECDF.png",
+    "Magistrale/Secondo anno/Statistical inference and learning/Images",
+    "Triennale/Secondo anno/Probabilità e statistica/Probabilità condizionata.md",
     "Magistrale/Secondo anno/Statistical inference and learning",
     "Magistrale/Secondo anno",
     "Magistrale/Primo anno",
@@ -193,25 +231,15 @@
     "Triennale/Secondo anno/Algoritmi e strutture dati/Mod. 1/Teorema master.md",
     "Triennale/Secondo anno/Algoritmi e strutture dati/Mod. 1/Fibonacci.md",
     "Triennale/Secondo anno/Algoritmi e strutture dati/Mod. 1/Classi asintotiche.md",
-    "Triennale/Secondo anno/Algoritmi e strutture dati/Mod. 1/Algoritmi greedy.md",
-    "Triennale/Secondo anno/Algoritmi e strutture dati/Mod. 1/Grafi/Tipologie.md",
     "Magistrale/Algorithms for massive data/Images/Pasted image 20260822204507.png",
     "Magistrale/Secondo anno/Image and video understanding/Images/Diffusion condition using a LLM.png",
     "Magistrale/Image and video understanding/Images/image-Photoroom(9).png",
-    "Magistrale/Secondo anno/Image and video understanding/Images/Diffusion text label as conditioning.png",
-    "Magistrale/Image and video understanding/Images/image-Photoroom(8).png",
-    "Magistrale/Secondo anno/Image and video understanding/Images/Diffusion back to cat manifold.png",
-    "Magistrale/Image and video understanding/Images/image-Photoroom(7).png",
-    "Magistrale/Secondo anno/Image and video understanding/Images/Diffusion inpainting.png",
-    "Magistrale/Secondo anno/Image and video understanding/Images/GAN discriminator.png",
-    "Magistrale/Image and video understanding/Images/image-Photoroom(6).png",
     "Excalidraw/Images",
     "Magistrale/Image and video understanding/Images/Download/IVU - 03 - Semantic Segmentation.pdf",
     "Magistrale/Image and video understanding/Images/Download/desktop.ini",
     "Magistrale/Image and video understanding/Images/Download",
     "Magistrale/Secondo anno/Image and video understanding/Images",
     "Magistrale/Secondo anno/Image and video understanding",
-    "Magistrale/Secondo anno/Deep learning for natural language processing/Images",
     "Magistrale/Primo anno/Information retrieval and web search/Map.canvas",
     "Magistrale/Primo anno/Learning with massive data/Map.canvas",
     "Magistrale/Senza nome.canvas",
