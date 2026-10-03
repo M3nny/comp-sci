@@ -59,7 +59,7 @@ new_stream_element(x):
 	z += h(x)
 	
 
-estimate_second_order_moment(y):
+estimate_second_order_moment:
 	return z^2
 ```
 
@@ -154,7 +154,7 @@ each row gives one independent ToW estimate (scaled by $1/\sqrt s$), and $||Mx||
 
 To **boost the success probability** to $1-\delta$, there are two approaches:
 - _Median trick_: run $O(\log(1/\delta))$ independent instances and take the median, the downside is that the result is no longer a linear map (medians aren't linear)
-- _More rows_:; multiply the number of rows by $\Theta(\log(1/\delta))$, this works by concentration bounds and preserves linearity
+- _More rows_: multiply the number of rows by $\Theta(\log(1/\delta))$, this works by concentration bounds and preserves linearity
 
 ### Achlioptas transform
 The full theorem of dimensionality reduction, combining $\epsilon$ and $\delta$.

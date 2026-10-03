@@ -45,7 +45,7 @@ In this chapter we'll see how to estimate the results of aggregations like this 
 ### Estimating join sizes
 Estimating the size of a join is crucial to a DBMS since it will select the appropriate optimization path based on the join size.
 
-For an **equal join**, its size is given by counting every value $x$ that appears in both tables join column, in practice (frequency in R) $\times$ (frequency in $P$):
+For an **equal join**, its size is given by counting every value $x$ that appears in both tables join column, in practice (frequency in $R$) $\times$ (frequency in $P$):
 $$\text{join size}=\sum_{x\in R.course\_code,y\in P.course\_code, x=y}f_{x,R}f_{y,P}$$
 where $f_{x,R}$ is the number of times value $x$ appears in the `course_code` column of $R$.
 

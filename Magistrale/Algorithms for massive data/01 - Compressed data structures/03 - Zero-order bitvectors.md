@@ -188,7 +188,7 @@ $$B=010\space101\space001\space110\space000\space011\space111$$
 | $\mathscr B_{3,2}\to$ 2 | 011 | 101 | 110 |
 | $\mathscr B_{3,3}\to$ 3 | 111 |     |     
 
-1. **Encode offsets using variable length bits**: here we use $2$ bits for offsets of $C_1$ and $C_2$ since they will contain at most $3$ blocks, hence the number of the offset has to be represent with at least $2$ bits, but we can encode offsets of $C_0$ and $C_3$ using $0$ bits since at most one block will appear in this class
+1. **Encode offsets using variable length bits**: here we use $2$ bits for offsets of $C_1$ and $C_2$ since they will contain at most $3$ blocks, hence the number of the offset has to be represented with at least $2$ bits, but we can encode offsets of $C_0$ and $C_3$ using $0$ bits since at most one block will appear in this class
 2. **Find the staring position of each macroblock**: the first macroblock always start at $1$, then for the following ones we have to sum the number of bits used to encode the offsets of the blocks, the second macroblock starts at $7$ because both $O_1,O_2,O_3$ used $2$ bits for their encoding, hence we sum the previous starting position and get $1+6=7$
 3. **Write relative starting position of offset inside the macroblock**: instead of only writing the initial position of the macroblock, for each block we write their relative starting position, always considering the number of bits they used.
 
@@ -203,7 +203,7 @@ Now let's **access**, for example $B[18]$:
 1. **Coordinates**: _block index_ is equal to $\lfloor i/b\rfloor=\lfloor 18/3\rfloor=6$, then we identify the _bit within the block_, which is $i\mod b=18\mod 3=0$
 2. **Reconstruct the block**: block $6$ is located in macroblock $3$ (since each macroblock has $3$ blocks), we see that the macroblock starts at bit $11$, then we access the block $0$, which tells us that it starts at the first bit of the macroblock (relative position is $1$), this gives us the address: `absolute position + relative position - 1 = 11+1-1=11`
 3. **Retrieve and decode**: we look at $C_6=3$, and now know that the block belongs to _class_ $3$, then we go to the $11$th bit of the _encoded offset string_ and since $\binom{b}{C_i}=\binom{3}{3}=1$ we know that there is only one arrangement of bits in class $3$, hence we don't need any bit to represent the _offset_, which in this case is $0$ (otherwise if it appeared $2$ arrangements, we would have had to read $2$ bits starting from the absolute index $11$ then translate it in decimal, and that would have been the offset)
-4. **Reconstruct**: now we lookup the precomputed table $T$, using the value of the class and the offset: $T[3][0]=111$, then we look at the relative bit position found in the first step, which is $0$, hence $B[18]=0$
+4. **Reconstruct**: now we lookup the precomputed table $T$, using the value of the class and the offset: $T[3][0]=111$, then we look at the relative bit position found in the first step, which is $0$, hence $B[18]=1$
 
 
 ### Supporting rank in constant-time
@@ -223,8 +223,8 @@ Let's **compute** $Rank_1(16)$:
 1. **Coordinates**: _block index_ is $16/3=5$ and the _bit within the block_ is $16\mod 3=1$
 2. **Lookup macroblock rank**: $B_5$ is in the second macroblock, and the absolute rank before it is $4$, then we lookup the relative rank for $B_5$, which is $2$, then we check for the _encoded offset_ `absolute position + relative position - 1 = 7 + 3 - 1 = 9`
 3. **Retrieve and decode the offset**: we look at $C_5=2$, then we go to the $9$th bit in the encoded offset string, and since $\binom{3}{2}=3$, we need $\lceil\log_2(3)\rceil=2$ bits to represent the offset, hence we read $2$ bits starting from the $9$th bit, which gives us $00$ which translates in decimal to the _offset_ $0$
-4. **Lookup in block rank**: instead of reconstructing the full block bits, lookup in the precomputed 3D table for $R[Class=2][Offset=0][Pos=1]=1$
-5. **Final summation**: the final answer is given by summing the macroblock rank, block rank and inner block rank, that is: $4+2+1=7$ 
+4. **Lookup in block rank**: instead of reconstructing the full block bits, lookup in the precomputed 3D table for $R[Class=2][Offset=0][Pos=1]=0$
+5. **Final summation**: the final answer is given by summing the macroblock rank, block rank and inner block rank, that is: $4+2+0=6$ 
 
 ### Compressing multiple bitvectors
 A final observation is that, the **compression is local**, each block is encoded independently of all others.

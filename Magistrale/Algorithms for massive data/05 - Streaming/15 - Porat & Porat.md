@@ -22,7 +22,7 @@ The **naive solution** takes $O(n)$ space, we just keep a sliding window of the 
 ### Polynomial hashing
 Recall [[10 - Hashing#Polynomial hashing|polynomial hashing]], which is used to **fingerprint** a string $A$ of length $n$ into a single number using:
 $$\kappa_{q,z}=\left(\sum_{i=1}^nA[i]\cdot z^{n-1}\mod q\right)$$
-This compresses the entire pattern into one integer, using $O(1)$ space, and to checker whether the pattern matches the last $n$ text characters, we just compare $\kappa(y)$ with $\kappa(x_{i-n+1},...,x_i)$.
+This compresses the entire pattern into one integer, using $O(1)$ space, and to check whether the pattern matches the last $n$ text characters, we just compare $\kappa(y)$ with $\kappa(x_{i-n+1},...,x_i)$.
 ![[Polynomial hashing pattern matching.png|500]]
 But, there's a problem: to **update** the sliding window hash when a new character $x_{i+1}$ arrives, we need to drop the oldest character $x_{i-n+1}$ from the hash, the formula to do so is:
 $$\kappa(x_{i-n+2},...,x_{i+1})=\kappa(x_{i-n+1},...,x_i)\cdot z-x_{i-n+1}\cdot z^n+x_{i+1}\mod q$$

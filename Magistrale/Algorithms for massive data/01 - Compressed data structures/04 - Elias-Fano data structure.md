@@ -14,7 +14,7 @@ The idea is to **split every integer** in two parts:
 - A _prefix_ of $\log n$ bits
 - A _suffix_ of $\log(n)-\log(m)=\log(n/m)$ bits
 
-Let's for example consider$S=\{0,5,8,12,14,17,20,31\}$, that has $n=32$ and $m=8$:
+Let's for example consider $S=\{0,5,8,12,14,17,20,31\}$, that has $n=32$ and $m=8$:
 - $\log n=5$
 - $\log(n/m)=2$
 

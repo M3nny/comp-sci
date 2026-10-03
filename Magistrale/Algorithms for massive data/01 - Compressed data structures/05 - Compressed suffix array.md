@@ -70,7 +70,7 @@ F[3] & F[\psi[3]=6] & F[\psi[6]=2] & F[\psi[2]=1] \\
 \downarrow & \downarrow & \downarrow & \downarrow \\
 \mathrm{A} & \mathrm{N} & \mathrm{A} & \$
 \end{array}$$
-So by repeatedly applying $\psi$ and reading  from $F$, we can extract any suffix one character at a time in $O(1)$ per character, without needing the original text or SA.
+So by repeatedly applying $\psi$ and reading from $F$, we can extract any suffix one character at a time in $O(1)$ per character, without needing the original text or SA.
 >But then $count$ queries will take $O(m\log n)$ time, like with the SA.
 
 ### Compressing $\psi$
@@ -136,4 +136,4 @@ Binary search is $O(m\log n)$, then each of the $occ$ occurrences costs $O(\log 
 #### Extract query
 Extract queries use the same sampling trick, but with the inverse $SA^{-1}$ sampled instead of SA.
 
-Given a text position $i$, we an apply $\psi$ at most $\log n$ times to reach a sample, then read $\ell$ characters using $\psi$, which costs $O(\log n+\ell)$.
+Given a text position $i$, we can apply $\psi$ at most $\log n$ times to reach a sample, then read $\ell$ characters using $\psi$, which costs $O(\log n+\ell)$.

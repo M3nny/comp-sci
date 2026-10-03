@@ -131,7 +131,7 @@ This avoids inflating cells unnecessarily, and in practice it reduces the error,
 ### Range queries
 So far we asked ourselves "how many times does value $y$ appear?", now the question becomes "how many stream elements fall in the range $[i,j]$?".
 
-The idea is to build $\log_2n+1$ separate count-min sketches, one for each "level" fo a hierarchy of **dyadic intervals**, which are intervals whose length is a power of $2$, aligned to that power, they form a natural hierarchy like a segment three or a binary tree over $[n]$.
+The idea is to build $\log_2n+1$ separate count-min sketches, one for each "level" for a hierarchy of **dyadic intervals**, which are intervals whose length is a power of $2$, aligned to that power, they form a natural hierarchy like a segment three or a binary tree over $[n]$.
 
 For $n=16$, we build $5$ CMS structures, and each element $x$ in the stream is inserted into all $\log n+1$ CMS structures.
 

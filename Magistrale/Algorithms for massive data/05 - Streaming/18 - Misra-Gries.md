@@ -5,18 +5,18 @@ MG maintains a **hash table** with at most $s$ entries, where each entry maps an
 **Insert**
 ```
 insert(x):
-	if x in MS:
-		MS[x]++
+	if x in MG:
+		MG[x]++
 	else:
-		MS.add({(x ,1)})
+		MG.add({(x ,1)})
 	
-	if (|MS} = s):
-		for y in MS:
-			MS[y]--
+	if (|MG|} = s):
+		for y in MG:
+			MG[y]--
 		
-	for y in MS:
-		if MS[y] = 0:
-			MS.delete({(y, 0)})
+	for y in MG:
+		if MG[y] = 0:
+			MG.delete({(y, 0)})
 ```
 In words it is:
 1. If $x$ is already in the table, increment its count by $1$, if $x$ is new, add it with count $1$
@@ -24,7 +24,7 @@ In words it is:
 
 ```
 estimate_frequency(x):
-	if x in MS:
+	if x in MG:
 		retun MG[x]
 	else:
 		return 0

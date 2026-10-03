@@ -1,5 +1,5 @@
 The **Hamming distance** between two strings of the same length is the number of positions where they differ:
-$$HD(A,b)=\sum_{i=1}^n(A[i]\neq B[i])$$
+$$HD(A,B)=\sum_{i=1}^n(A[i]\neq B[i])$$
 This chapter's goal is to compute $HD(A,B)$ exactly w.h.p., provided that $HD(A,B)\leq k$ for some fixed parameter $k$.
 
 Note that the **normalized HD** $\frac{HD(A,B)}{n}\in[0,1]$, whilst $HD(A,B)$ is an integer.
@@ -89,7 +89,7 @@ We have to use this sketch on a stream, where pattern arrives first, then text c
 
 The **idea** is that when a new text character $x_j$ arrives, the sub-streams $x_{i,d}$ are updated, but only one character in each sub-stream changes, so instead of rerunning everything:
 1. **Copy the stream** $|P|=\log n$ times (one copy per prime $d$)
-2. **Sub-divide each copy**: for prim $d$, split the copy further into $d$ sub-streams $x_{i,d}$ (one per residue class), each character goes to exactly one sub-stream per copy
+2. **Sub-divide each copy**: for prime $d$, split the copy further into $d$ sub-streams $x_{i,d}$ (one per residue class), each character goes to exactly one sub-stream per copy
 3. **Run P&P on each sub-stream pair** (text sub-stream vs pattern sub-stream): there are at most $d$ P&P instances per prime $d$
 ![[Approximate pattern matching 1.png|600]]
 The character $\text b$ arrives:
@@ -125,7 +125,7 @@ The product of all mismatch-pair distances is:
 $$\prod_{i=1}^tz_i\leq n^{k^2}$$
 This product has at most $\log_2(n^{k^2})=k^2\log n$ distinct prime divisors.
 
-The **solution** is to extend $P$ to include all primes up to the $(k^2\log n)$-th prime, but also restrict to primes $\geq k$ (so that $d\geq k$ ensures each mismatch foes to a separate bucket), formally we have:
+The **solution** is to extend $P$ to include all primes up to the $(k^2\log n)$-th prime, but also restrict to primes $\geq k$ (so that $d\geq k$ ensures each mismatch goes to a separate bucket), formally we have:
 $$P=\{2,3,5,7,...,(k^2\log n)\text{-th prime}\}\cap\{k,...,n\}$$
 For at least one $d\in P$, no mismatch pair has its distance divisible by $d$, so all mismatches land in separate subsequences.
 The count of mismatching sub-stream pairs equals $HD$ exactly.
@@ -147,7 +147,7 @@ Unlike Hamming distance, the two strings can have **different lengths**, and mis
 >$$ED(saturday, sunday) = 3$$
 >Delete `a` and `t` from "saturday", and substitute `r` -> `n`.
 
-The idea is to **reduce the edit distance to Hamming distance** by suing a randomized synchronization trick.
+The idea is to **reduce the edit distance to Hamming distance** by using a randomized synchronization trick.
 
 Sketch for $ED(A)$:
 ```
@@ -170,7 +170,7 @@ If there's an insertion or deletion (an "edit") between $A$ and $B$, the random 
 >[!Example]
 >Take $A=saturday$ and $B=sunday$ ($ED=3$).
 >
->The process runs in parallel on $A$ and $B$, when both are tat the same character (like '$s$'), the same input to $h$ fives the same output, they advance or stay together.
+>The process runs in parallel on $A$ and $B$, when both are at the same character (like '$s$'), the same input to $h$ gives the same output, they advance or stay together.
 >When they diverge (like $A$ is at '$a$' and $B$ is at '$u$' after the first '$s$'), the inputs $h$ differ, so outputs are independent, each with probability $1/2$.
 >
 >A "lucky event" occurs when $A$ advances $(h=true)$ while $B$ stays ($h=false$), or viceversa, this effectively skips over a deletion/insertion, re-synchronizing $A'$ and $B'$, each such event has probability $1/2\times1/2=1/4$.

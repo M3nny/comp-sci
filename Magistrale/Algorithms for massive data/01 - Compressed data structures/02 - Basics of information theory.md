@@ -24,8 +24,7 @@ $$H_0(S)=\sum_{c\in\Sigma}\frac{n_c}{n}\log_2\frac{n}{n_c}$$
 This is the definition of [[00 - Information and inference#Entropy|entropy]] applied to strings with finite length (and after applying the logarithms rule to expand the '-' sign from the original formula).
 It gives the **average bits per character** needed if we assign each character a code based on how often it appears.
 
-Let's consider the set: $\mathcal S(n_1,...,n_\sigma)\subseteq[\sigma]^n$, that is.
-In other words: the set of all possible strings of length $n$ that can be made using an alphabet of size $\sigma$, within that, we focus on the subset of all strings that contain exactly $n_i$  copies of the $i$-th.
+Let's consider the set: $\mathcal S(n_1,...,n_\sigma)\subseteq[\sigma]^n$, which is the set of all possible strings of length $n$ that can be made using an alphabet of size $\sigma$, within that, we focus on the subset of all strings that contain exactly $n_i$  copies of the $i$-th.
 
 For example $12122132\in\mathcal S(3,4,1)$: we have $\binom{n}{n_1}$ combinations for placing character $1$, then $\binom{n-n_1}{n_2}$ combinations for placing character $2$, then $\binom{n-n_1-n_2}{n_3}$ combinations for placing character $3$,..., hence we get:
 $$\begin{align}

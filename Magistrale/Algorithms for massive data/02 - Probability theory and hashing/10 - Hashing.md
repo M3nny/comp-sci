@@ -128,8 +128,8 @@ Intuitively, the string's characters are treated as coefficients of a polynomial
 >$$k = 104\cdot4^4 + 101\cdot4^3 + 108\cdot4^2 + 108·4 + 111 \mod 7 = 2$$
 
 **Remarkable compositional properties**: these make polynomial hashing extremely useful in practice:
-- **Append a character**: $k(x\cdot c) = k(x) \cdot z + c \mod q$, we can extend the hash by one character without re-hashing from scratch
-- **Concatenate two strings**: $k(x\cdot y) = k(x) \cdot z^|y| + k(y) \mod q$, we can combine two hashes using only their lengths and hash values, not the original strings
+- **Append a character**: $k_{q,z}(x\cdot c) = k_{q,z}(x) \cdot z + c \mod q$, we can extend the hash by one character without re-hashing from scratch
+- **Concatenate two strings**: $k_{q,z}(x\cdot y) = k_{q,z}(x) \cdot z^{|y|} + k_{q,z}(y) \mod q$, we can combine two hashes using only their lengths and hash values, not the original strings
 
 This means we can _manipulate and compare strings using only their hashes_, enabling huge savings in time and space.
 
