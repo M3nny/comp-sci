@@ -11,10 +11,14 @@
             "id": "fb68532bb7bef8ca",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "Magistrale/Secondo anno/Statistical inference and learning/01 - Random variables.md",
+                "mode": "source",
+                "source": false
+              },
               "icon": "lucide-file",
-              "title": "Nuova scheda"
+              "title": "01 - Random variables"
             }
           }
         ]
@@ -160,9 +164,11 @@
       "obsidian-excalidraw-plugin:New drawing": false
     }
   },
-  "active": "a1163d9af64d6878",
+  "active": "fb68532bb7bef8ca",
   "lastOpenFiles": [
-    "Magistrale/Secondo anno/Senza nome",
+    "Triennale/Secondo anno/Probabilità e statistica/Probabilità condizionata.md",
+    "Magistrale/Secondo anno/Statistical inference and learning/01 - Random variables.md",
+    "Magistrale/Secondo anno/Statistical inference and learning",
     "Magistrale/Secondo anno",
     "Magistrale/Primo anno",
     "Magistrale/Primo anno/Algorithms for massive data/03 - Randomized filters/11 - Bloom filters.md",
@@ -189,7 +195,6 @@
     "Triennale/Secondo anno/Algoritmi e strutture dati/Mod. 1/Classi asintotiche.md",
     "Triennale/Secondo anno/Algoritmi e strutture dati/Mod. 1/Algoritmi greedy.md",
     "Triennale/Secondo anno/Algoritmi e strutture dati/Mod. 1/Grafi/Tipologie.md",
-    "Triennale/Secondo anno/Algoritmi e strutture dati/Mod. 1/Grafi/Matrici.md",
     "Magistrale/Algorithms for massive data/Images/Pasted image 20260822204507.png",
     "Magistrale/Secondo anno/Image and video understanding/Images/Diffusion condition using a LLM.png",
     "Magistrale/Image and video understanding/Images/image-Photoroom(9).png",
@@ -207,7 +212,6 @@
     "Magistrale/Secondo anno/Image and video understanding/Images",
     "Magistrale/Secondo anno/Image and video understanding",
     "Magistrale/Secondo anno/Deep learning for natural language processing/Images",
-    "Magistrale/Deep learning for natural language processing/Nuova cartella",
     "Magistrale/Primo anno/Information retrieval and web search/Map.canvas",
     "Magistrale/Primo anno/Learning with massive data/Map.canvas",
     "Magistrale/Senza nome.canvas",
