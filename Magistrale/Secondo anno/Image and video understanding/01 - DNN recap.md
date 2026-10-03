@@ -13,7 +13,7 @@ $$\hat y=g(w_0+X^TW)$$
 
 ![[Activation functions.png|400]]
 
-![[Magistrale/Image and video understanding/Images/Perceptron.png|400]]
+![[Magistrale/Secondo anno/Image and video understanding/Images/Perceptron.png|400]]
 
 ### Artificial neural networks
 Stacking perceptron into layers gives a **single-layer neural network**, where every hidden unit connects to every input and every output unit (dense layer).

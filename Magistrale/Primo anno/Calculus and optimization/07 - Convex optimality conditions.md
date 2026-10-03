@@ -8,7 +8,7 @@ $$f(\overline x+\alpha d)<f(\overline x),\quad\forall\alpha\in(0,\overline\alpha
 In other words: the direction $d$ is a descent direction for $f$ at $\overline x$ if in a small enough neighborhood of $\overline x$, along the direction $d$, the function $f(x)$ is _strictly decreasing_.
 
 **Proof**
-From the [[Magistrale/Calculus and optimization/00 - Introduction#Mean value theorem|mean value theorem]] , for $\alpha\in(0,1]$ (greater than $0$ otherwise we are still on the point $\overline x$) we get:
+From the [[Magistrale/Primo anno/Calculus and optimization/00 - Introduction#Mean value theorem|mean value theorem]] , for $\alpha\in(0,1]$ (greater than $0$ otherwise we are still on the point $\overline x$) we get:
 $$\begin{align}
 f(\overline{x}+\alpha d)&=f(\overline{x})+\nabla f(\overline{x})^T(\alpha d)+o(||\alpha d||)\\
 &= f(\overline{x})+\alpha\nabla f(\overline{x})^Td+o(||\alpha d||)\frac{||d||}{||d||}\\

@@ -107,7 +107,7 @@ $$\text{output}_\ell=softmax(XQ_\ell K_\ell^TX^T)XV_\ell$$
 and all head outputs are concatenated and mixed with a final matrix $Y\in\mathbb R^{d\times d}$:
 $$\text{output}=[\text{output}_1;...;\text{output}_h]Y$$
 This costs about the **same total compute** as single-head attention over the full dimension, the heads just split $d$ into smaller chunks rather than adding extra work.
-![[Magistrale/Image and video understanding/Images/Multi-head attention.png|500]]
+![[Magistrale/Secondo anno/Image and video understanding/Images/Multi-head attention.png|500]]
 
 4. _Scaled dot-product attention_: a refinement to stabilize training, since as dimensionality $d$ grows, raw dot products $q^Tk$ tend to get large in magnitude, which pushes softmax inputs into a regime with very small gradients
 

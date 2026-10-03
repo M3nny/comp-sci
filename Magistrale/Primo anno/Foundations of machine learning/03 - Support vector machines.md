@@ -1,7 +1,7 @@
 Support vector machines are part of the so called **kernel methods**.
 Their job is to find a **margin** which maximizes the boundary from one class cluster to another.
 The class instances which determine the margin are called **support vectors**, all other points can move freely since the solutions only depends on the SVs.
-![[Magistrale/Foundations of machine learning/Images/SVM.png|400]]
+![[Magistrale/Primo anno/Foundations of machine learning/Images/SVM.png|400]]
 
 Every hyperplane can be represented as:
 $$f(x)=w^Tx+b$$

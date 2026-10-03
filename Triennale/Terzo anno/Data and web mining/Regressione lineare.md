@@ -53,7 +53,7 @@ In un problema linearmente separabile (come quello rappresentato) esistono infin
 
 ## Support Vector Machine (SVM)
 La SVM è una tecnica di **classificazione** che come obiettivo ha **massimizzare la generalizzazione** del modello di classificazione.
-![[SVM.png|400]]
+![[Triennale/Terzo anno/Data and web mining/Images/SVM.png|400]]
 
 Chiamiamo **margine** la distanza tra istanze di classi opposte più vicine tra loro lungo la direzione perpendicolare al decision boundary selezionato.
 Le istanze che determinano il margine sono chiamate **support vectors**.

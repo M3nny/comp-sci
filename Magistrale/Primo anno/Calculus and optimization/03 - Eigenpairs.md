@@ -10,7 +10,7 @@ Considering $f:V\to W$, it is a homomorphism if:
 - $f(x+y)=f(x)+f(y)$
 - $f(c\cdot x)=c\cdot f(x)$, $c\in\mathbb{R}$
 
-By the definition of [[Magistrale/Calculus and optimization/00 - Introduction#Linear and affine functions|linear functions]], we can state that every linear function is an homomorphism.
+By the definition of [[Magistrale/Primo anno/Calculus and optimization/00 - Introduction#Linear and affine functions|linear functions]], we can state that every linear function is an homomorphism.
 
 An **endomorphism** is a _homomorphism_ where the domain and codomain are the same space, for example the linear function $f:V\to V$.
 

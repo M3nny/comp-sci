@@ -51,7 +51,7 @@ Assuming that $f\in C^1(\mathbb R^n)$ and starting from the point $x\in\mathbb R
 $$x_\alpha=x-\alpha\nabla f(x),\quad\alpha\geq0$$
 In words: the point $x_\alpha$ is taken by moving from the point $x\in\mathbb R^n$ along the direction $-\nabla f(x)$ with a steplength $\alpha\geq 0$.
 
-By the [[Magistrale/Calculus and optimization/00 - Introduction#Mean value theorem|mean value theorem]] at $x$ we obtain:
+By the [[Magistrale/Primo anno/Calculus and optimization/00 - Introduction#Mean value theorem|mean value theorem]] at $x$ we obtain:
 $$\begin{align}
 f[x-\alpha\nabla f(x)]&=f(x)+\nabla f(x)^T[x-\alpha\nabla f(x)-x]+o(||\alpha\nabla f(x)||)\\
 &=f(x)-\alpha||\nabla f(x)||^2+o(||\alpha\nabla f(x)||)
@@ -84,7 +84,7 @@ Now we analyze some special cases of widely used gradient methods in literature:
 	
 	When the sequence $\{x_k\}$ converges to $x^*$ and $\nabla^2 f(x^*)$ is positive definite, then $d_k = -[\nabla^2 f(x_k)]^{-1} \nabla f(x_k)$ is a descent direction at $x_k$ when $x_k$ is sufficiently close to $x^*$.
 	
-	Newton's method can be derived from the [[Magistrale/Calculus and optimization/00 - Introduction#Mean value theorem (second order)|second order mean value theorem]] at $x_k$. Setting $d = x - x_k$, we have:$$\varphi(d) = f(x_k + d) = f(x_k) + \nabla f(x_k)^T d + \frac{1}{2}d^T\nabla^2 f(x_k)d + o(||d||^2)$$
+	Newton's method can be derived from the [[Magistrale/Primo anno/Calculus and optimization/00 - Introduction#Mean value theorem (second order)|second order mean value theorem]] at $x_k$. Setting $d = x - x_k$, we have:$$\varphi(d) = f(x_k + d) = f(x_k) + \nabla f(x_k)^T d + \frac{1}{2}d^T\nabla^2 f(x_k)d + o(||d||^2)$$
 	
 	Neglecting the term $o(||d||^2)$ and computing the stationary point of $\varphi(d)$ by solving $\nabla\varphi(d_k) = 0$, we obtain: $$\nabla\varphi(d_k) = \nabla f(x_k) + \nabla^2 f(x_k)d_k = 0$$
 	

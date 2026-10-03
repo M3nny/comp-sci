@@ -46,7 +46,7 @@ This lets the model capture different kinds of relationships simultaneously, for
 
 The results from all heads are concatenated and projected back to the original dimension.
 
-![[Multi-head attention.png|200]]
+![[Magistrale/Primo anno/Information retrieval and web search/Images/Multi-head attention.png|200]]
 $$\begin{align}
 \text{MultiHead(Q,K,V)}&=\text{Concat}(\text{head}_1,...,\text{head}_h)W^O\\
 &\text{where head}_i=\text{Attention}(QW_i^Q,KW_i^K,VW_i^V)

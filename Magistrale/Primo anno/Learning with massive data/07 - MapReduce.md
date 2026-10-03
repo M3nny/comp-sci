@@ -41,7 +41,7 @@ reduce(word, [1, 1, 1, ...]):
     emit(word, sum of counts)
 ```
 
-![[Magistrale/Learning with massive data/Images/MapReduce.png|600]]
+![[Magistrale/Primo anno/Learning with massive data/Images/MapReduce.png|600]]
 
 The **master node** takes care of _coordination_:
 - Schedules tasks as workers become available

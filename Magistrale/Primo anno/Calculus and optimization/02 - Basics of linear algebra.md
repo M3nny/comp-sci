@@ -1,7 +1,7 @@
 Before going forward we recall a bit of linear algebra concepts.
 
 ### Change of basis
-Considering a [[Magistrale/Calculus and optimization/00 - Introduction#Linear and affine functions|linear function]] $f:\mathbb{R}^n\to\mathbb{R}^m$, we can write it as:
+Considering a [[Magistrale/Primo anno/Calculus and optimization/00 - Introduction#Linear and affine functions|linear function]] $f:\mathbb{R}^n\to\mathbb{R}^m$, we can write it as:
 $$f(x)=f(x_1e_1+...+x_ne_n)=x_1f(e_1)+...+x_nf(e_n)$$
 where $e_i$ is the $i$-th unit vector of the **standard basis** in $\mathbb{R}^n$:
 $$e_i=\begin{pmatrix}0\\\vdots\\1\\\vdots\\0\end{pmatrix}\leftarrow i\text{-th}\quad i=1,...,n$$

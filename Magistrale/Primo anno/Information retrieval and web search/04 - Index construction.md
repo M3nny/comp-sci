@@ -52,7 +52,7 @@ For example if we had three partitions: `a-f, g-p, q-z` we will route terms with
 **Reduce Phase (inverters)**:
 Each inverter collects all pairs for its letter range and builds sorted postings lists.
 
-![[Magistrale/Information retrieval and web search/Images/MapReduce.png|400]]
+![[Magistrale/Primo anno/Information retrieval and web search/Images/MapReduce.png|400]]
 
 #### Dynamic indexing
 Up until now we assumed that collections are **static**, but real search engines can't stop and rebuild the index every time a new page is crawled.
