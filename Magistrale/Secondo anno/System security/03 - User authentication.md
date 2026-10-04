@@ -48,3 +48,4 @@ With this approach _only $t$ authentication are possible_, but computing next pa
 This leads to a delicate balance between _false positives_, since this method should ensure not impersonification, and correct users should be identified most of the times, so _no false positives_.
 
 A major issues with this system is a **breach in the biometric database** which has _high impact_ due to the biometric data being unique and cannot be changed if leaked.
+
