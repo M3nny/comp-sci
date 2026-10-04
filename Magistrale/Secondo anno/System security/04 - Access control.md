@@ -102,12 +102,12 @@ In this model, information should _never flow from a level to lower ones_, such 
 
 #### Role-Based Access Control (RBAC)
 DAC specifies access rights for each subject and object, RBAC adds a new layer: **roles**.
-![[Pasted image 20261004184825.png|258]]
+![[RBAC.png|258]]
 
 Subjects are assigned to roles, and roles have access rights to objects.
 >RBAC can express DAC and MAC policies.
 
-![[Pasted image 20261004184859.png|480]]
+![[RBAC role assignment.png|480]]
 We can have **multiple roles** per user and **multiple users** per role.
 Users establish sessions with the **roles they need** to accomplish a task (least privilege principle).
 

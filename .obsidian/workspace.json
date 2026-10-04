@@ -11,14 +11,12 @@
             "id": "a3b4aaa92c4fdff6",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "image",
               "state": {
-                "file": "Magistrale/Secondo anno/System security/04 - Access control.md",
-                "mode": "source",
-                "source": false
+                "file": "Magistrale/Secondo anno/System security/Images/RBAC.png"
               },
-              "icon": "lucide-file",
-              "title": "04 - Access control"
+              "icon": "lucide-image",
+              "title": "RBAC"
             }
           }
         ]
@@ -164,23 +162,22 @@
       "obsidian-excalidraw-plugin:New drawing": false
     }
   },
-  "active": "a3b4aaa92c4fdff6",
+  "active": "a1163d9af64d6878",
   "lastOpenFiles": [
-    "Magistrale/Secondo anno/System security/Images/Pasted image 20261004184859.png",
-    "Magistrale/Secondo anno/System security/Images/Pasted image 20261004184825.png",
+    "Magistrale/Secondo anno/System security/Images/RBAC role assignment.png",
+    "Magistrale/Secondo anno/System security/04 - Access control.md",
+    "Magistrale/Secondo anno/System security/Images/RBAC.png",
     "Magistrale/Secondo anno/System security/Images/BLP.png",
     "Magistrale/Secondo anno/System security/Images/Authorization table.png",
     "Magistrale/Secondo anno/System security/Images/Capabilities.png",
     "Magistrale/Secondo anno/System security/Images/ACL.png",
     "Magistrale/Secondo anno/System security/Images/Access matrix.png",
     "Magistrale/Secondo anno/System security/03 - User authentication.md",
-    "Magistrale/Secondo anno/System security/04 - Access control.md",
     "Magistrale/Secondo anno/System security/02 - Introduction to cryptography.md",
     "Magistrale/Secondo anno/System security/Images/ECB attack 3.png",
     "Magistrale/Secondo anno/System security/Images/ECB attack 2.png",
     "Magistrale/Secondo anno/System security/Images/ECB attack 1.png",
     "Magistrale/Secondo anno/System security/01 - Security design principles.md",
-    "Magistrale/Secondo anno/System security/Images/Attack tree.png",
     "Magistrale/Secondo anno/System security/Images",
     "Magistrale/Secondo anno/System security/00 - Introduction.md",
     "Magistrale/Secondo anno/System security",
