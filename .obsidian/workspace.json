@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Magistrale/Secondo anno/System security/02 - Introduction to cryptography.md",
+                "file": "Magistrale/Secondo anno/System security/03 - User authentication.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "02 - Introduction to cryptography"
+              "title": "03 - User authentication"
             }
           }
         ]
@@ -164,13 +164,14 @@
       "obsidian-excalidraw-plugin:New drawing": false
     }
   },
-  "active": "a1163d9af64d6878",
+  "active": "a3b4aaa92c4fdff6",
   "lastOpenFiles": [
+    "Magistrale/Secondo anno/System security/02 - Introduction to cryptography.md",
+    "Magistrale/Secondo anno/System security/03 - User authentication.md",
     "Magistrale/Secondo anno/System security/Images/ECB attack 3.png",
     "Magistrale/Secondo anno/System security/Images/ECB attack 2.png",
     "Magistrale/Secondo anno/System security/Images/ECB attack 1.png",
     "Magistrale/Secondo anno/System security/01 - Security design principles.md",
-    "Magistrale/Secondo anno/System security/02 - Introduction to cryptography.md",
     "Magistrale/Secondo anno/System security/Images/Attack tree.png",
     "Magistrale/Secondo anno/System security/Images",
     "Magistrale/Secondo anno/System security/00 - Introduction.md",
@@ -184,7 +185,6 @@
     "Magistrale/Secondo anno/Statistical inference and learning/01 - Random variables.md",
     "Magistrale/Secondo anno/Statistical inference and learning/Images/Sampling distribution.png",
     "Magistrale/Secondo anno/Statistical inference and learning/Images/Log-likelihood.png",
-    "Magistrale/Secondo anno/Statistical inference and learning/Images/First sample histogram.png",
     "Magistrale/Secondo anno/Statistical inference and learning/Images",
     "Triennale/Secondo anno/Probabilità e statistica/Probabilità condizionata.md",
     "Magistrale/Secondo anno/Statistical inference and learning",
