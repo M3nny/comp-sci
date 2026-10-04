@@ -487,3 +487,257 @@ $$\sqrt{nI_1(\theta)}\,(\hat\theta_{ML}-\theta)\xrightarrow{d}\mathcal N(0,1)$$
 
 ---
 ### Gaussian sampling distributions
+Previously we described the exact distribution of $\overline Y$ when the data is normal, but it required knowing $\sigma$, in practice $\sigma$ is unknown.
+
+This section gives the exact tools for that realistic case, and they lead to the **t-distribution**.
+
+Assume $Y_1,\dots,Y_n \overset{\text{iid}}{\sim}\mathcal N(\mu,\sigma^2)$ and $S^2=\frac1{n-1}\sum(Y_i-\overline Y)^2$.
+
+**The sample mean** (already discussed):
+$$\overline Y\sim\mathcal N\!\left(\mu,\frac{\sigma^2}{n}\right)\quad\Longleftrightarrow\quad \frac{\overline Y-\mu}{\sigma/\sqrt n}\sim\mathcal N(0,1)$$
+**The sample variance** has a **chi-square distribution**:
+$$\frac{(n-1)S^2}{\sigma^2}\sim\chi^2_{n-1}$$
+>[!Tip]
+>$S^2$ is random (it changes from sample to sample), and this says exactly how. A **chi-square** with $k$ degrees of freedom is the distribution of a sum of $k$ squared standard normals.
+>
+>It makes sense here because $S^2$ is built from squared deviations.
+>
+>The degrees of freedom are $n-1$ (not $n$) for the same reason we divide by $n-1$: $\overline Y$ is computed from the same data, which uses up one degree of freedom.
+
+**$\overline Y$ and $S^2$ are independent**:
+The sample mean and the sample variance, computed from the same data, carry no information about each other, this is a special property of the normal distribution, for most other distributions, they are dependent.
+
+#### Student's pivotal quantity
+**The problem**: the standardized mean needs $\sigma$:
+$$\frac{\overline Y-\mu}{\sigma/\sqrt n}\sim\mathcal N(0,1)$$
+but $\sigma$ is unknown, the natural fix is to replace $\sigma$ with its estimator $S$:
+$$T=\frac{\overline Y-\mu}{S/\sqrt n}\sim t_{n-1}$$
+A **pivot** is a quantity _built from the data and the parameter_ whose distribution **does not depend on any unknown parameter**.
+- $T$ contains $\mu$, but its distribution is $t_{n-1}$ regardless of the true $\mu$ and $\sigma$. It depends only on $n-1$, which we know
+- That is what makes it useful: we can compute probabilities about $T$ without knowing the truth
+
+**Exact vs approximate**
+- The Student pivot is formed by dividing a centered estimator by its _estimated standard error_, the pattern is $\dfrac{\overline Y-\mu}{S/\sqrt n}$: estimate minus truth, divided by estimated SE
+- Under _normal data_, the result is _exactly_ $t_{n-1}$, for any $n$, this relies on the independence of $\overline Y$ and $S^2$
+- Under _non-normal data_, the independence and chi-square results fail, so $T\sim t_{n-1}$ is only _approximate_ (it gets better for large $n$ by the CLT)
+![[Student's t-distributions.png|528]]
+
+---
+### Frequentist interval estimation
+Point estimates like $\overline Y$ give one number and no sense of precision, a **confidence interval (CI)** gives a range, _built from the pivots_.
+
+#### Formal definition
+$$P_\theta\{L_n(D_n)\le\theta\le U_n(D_n)\}=1-\alpha\quad\text{for every }\theta\in\Theta$$
+- $L_n$ and $U_n$ are **functions of the random sample** $D_n$, so the interval $[L_n,U_n]$ is **random** (like $\hat\theta_n$)
+- $\theta$ is **fixed**, what moves is the interval
+- The probability is over **repeated sampling**: if er repeat the whole experiment many times, 95% of the intervals we build will contain $\theta$.
+
+"Exact" means the coverage is exactly $1-\alpha$., for discrete data (e.g. binomial) it can't always be hit exactly, so procedures may be **conservative**: coverage $\ge 1-\alpha$.
+
+After we collect data, we have one specific interval, say $[22.1,\,25.3]$, now everything is fixed: $\theta$ is a fixed number and the endpoints are fixed numbers.
+
+The interval either contains $\theta$ or it doesn't, there is no randomness left to put a probability on:
+- **Wrong:** "There is a 95% probability that $\theta$ is in $[22.1, 25.3]$"
+- **Right:** "This interval was produced by a procedure that covers $\theta$ in 95% of repeated samples"
+
+>[!Tip]
+>This is the same capital/lowercase distinction as before: $[L_n,U_n]$ (random, before) vs. the realized interval (fixed, after).
+>The 95% belongs to the **procedure**, not to the one interval we got.
+>
+>We can see it with _Monte Carlo_: simulate 1000 samples, build 1000 intervals, and about 950 contain the true $\mu$.
+
+#### CI for a Gaussian mean, known variance
+Start from the standardized mean:
+$$\frac{\overline Y-\mu}{\sigma/\sqrt n}\sim\mathcal N(0,1)$$
+Let $z_{1-\alpha/2}=\Phi^{-1}(1-\alpha/2)$ be the quantile that leaves $\alpha/2$ in each tail, then:
+$$P\!\left(-z_{1-\alpha/2}\le\frac{\overline Y-\mu}{\sigma/\sqrt n}\le z_{1-\alpha/2}\right)=1-\alpha$$
+**Solve for $\mu$** (multiply by $\sigma/\sqrt n$, then rearrange so $\mu$ is alone in the middle):
+$$P\!\left(\overline Y-z_{1-\alpha/2}\frac{\sigma}{\sqrt n}\le\mu\le\overline Y+z_{1-\alpha/2}\frac{\sigma}{\sqrt n}\right)=1-\alpha$$ $$\boxed{CI(\mu)_{1-\alpha}=\overline Y\pm z_{1-\alpha/2}\frac{\sigma}{\sqrt n}}$$
+>[!Example]
+>$\overline y=24$, $\sigma=3$, $n=14$: SE $=3/\sqrt{14}\approx0.80$, margin $=1.96\times0.80\approx1.57$, so CI $\approx[22.4,\,25.6]$
+>
+>More data means smaller SE, so a narrower interval. A higher confidence level means a bigger $z$, so a wider interval.
+
+#### CI for a Gaussian mean: unknown variance
+Replace $\sigma$ with $S$, as discussed previously, the pivot is now $t_{n-1}$, not normal:
+$$\boxed{CI_n(\mu)_{1-\alpha}=\overline Y\pm t_{1-\alpha/2,\,n-1}\frac{S}{\sqrt n}}$$
+Same structure, with two changes: $\sigma\to S$ and $z\to t$.
+Since the t-distribution has heavier tails, $t_{1-\alpha/2,n-1}>z_{1-\alpha/2}$, so the interval is **wider**, the price for not knowing $\sigma$.
+
+**Why $n-1$ degrees of freedom**: the deviations $Y_i-\overline Y$ always sum to $0$, so once we know $n-1$ of them, the last is determined, only $n-1$ independent pieces of information about variability remain.
+
+#### CI for a Gaussian variance
+Recall the **pivot**:
+$$Q=\frac{(n-1)S^2}{\sigma^2}\sim\chi^2_{n-1}$$
+Unlike the normal and t, the chi-square is **not symmetric** (it's skewed right and positive only).
+So the interval isn't "estimate $\pm$ margin", we use two different quantiles, $\chi^2_{\alpha/2,n-1}$ (lower) and $\chi^2_{1-\alpha/2,n-1}$ (upper), so that:
+$$P\!\left(\chi^2_{\alpha/2,n-1}\le\frac{(n-1)S^2}{\sigma^2}\le\chi^2_{1-\alpha/2,n-1}\right)=1-\alpha$$
+**Solve for $\sigma^2$**: it sits in the denominator, so take reciprocals, which **flips the inequalities** (for positive numbers, $a\le x\le b\Rightarrow \frac1b\le\frac1x\le\frac1a$). then we multiply by $(n-1)S^2$:
+$$\boxed{CI_n(\sigma^2)_{1-\alpha}=\left[\frac{(n-1)S^2}{\chi^2_{1-\alpha/2,n-1}},\ \frac{(n-1)S^2}{\chi^2_{\alpha/2,n-1}}\right]}$$
+That is why the **upper** quantile ends up in the **lower** endpoint.
+>The interval is not centered on $S^2$, because the chi-square is skewed.
+
+
+>[!Example]
+>$n=14$, $S^2=9$: $(n-1)S^2=117$, $\chi^2_{0.975,13}\approx24.74$, $\chi^2_{0.025,13}\approx5.01$, so CI $\approx[4.73,\,23.4]$. Very wide: variance is hard to pin down with small samples.
+>>For a CI on $\sigma$ itself, take square roots of the endpoints.
+
+|Target|Pivot|Distribution|Form|
+|---|---|---|---|
+|$\mu$, $\sigma$ known|$\frac{\overline Y-\mu}{\sigma/\sqrt n}$|$\mathcal N(0,1)$|$\overline Y\pm z\,\sigma/\sqrt n$|
+|$\mu$, $\sigma$ unknown|$\frac{\overline Y-\mu}{S/\sqrt n}$|$t_{n-1}$|$\overline Y\pm t\,S/\sqrt n$|
+|$\sigma^2$|$\frac{(n-1)S^2}{\sigma^2}$|$\chi^2_{n-1}$|$\left[\frac{(n-1)S^2}{\chi^2_{\text{upper}}},\frac{(n-1)S^2}{\chi^2_{\text{lower}}}\right]$|
+
+>All three follow one recipe: _take a pivot, bound it between two quantiles, then solve the inequality for the parameter_.
+
+### Approximate interval for a proportiton
+So far we needed **normal data** for exact intervals, now we ask: what if the data is **not normal**?
+
+Two answers appear:
+1. Use the **CLT** for an approximate interval
+2. Use a special **exact** method when the distribution allows it.
+
+#### Approximate interval for a proportion
+**Setup**: $Y_i=1$ if test $i$ fails, else $0$.
+The estimator is the observed failure fraction:
+$$\hat p=\frac1n\sum Y_i,\qquad E[\hat p]=p,\qquad \mathrm{Var}(\hat p)=\frac{p(1-p)}{n}$$
+>This is the Bernoulli result from earlier: the sample proportion is unbiased and hits the Cramér–Rao bound.
+
+$\hat p$ is a sample mean of 0/1 values, so by the _CLT_:
+$$\frac{\hat p-p}{\sqrt{p(1-p)/n}}\xrightarrow{d}\mathcal N(0,1)$$
+**Problem**: the standard error contains the unknown $p$.
+**Fix:** plug in $\hat p$.
+
+Because $\hat p$ is consistent (as seen previously), $\hat p(1-\hat p)$ gets close to $p(1-p)$ for large $n$, so the swap is harmless asymptotically.
+
+##### The Wald interval
+Same recipe as always: estimate $\pm$ critical value $\times$ standard error.
+$$CI_{1-\alpha}(p)\approx\hat p\pm z_{1-\alpha/2}\sqrt{\frac{\hat p(1-\hat p)}{n}}$$
+
+>[!Example]
+>12 failures in 100 tests: $\hat p=0.12$, SE $=\sqrt{0.12\cdot0.88/100}\approx0.0325$, margin $=1.96\cdot0.0325\approx0.064$, so CI $\approx[0.056,\,0.184]$.
+
+The **limitations** of the Wald interval are:
+- **Small $n$**: the CLT hasn't kicked in
+- **$p$ near 0 or 1**: the distribution of $\hat p$ is very skewed there
+- **Endpoints outside $[0,1]$**: for example 1 failure in 10 tests: $\hat p=0.1$, margin $=1.96\sqrt{0.09/10}\approx0.186$, giving $[-0.086,\,0.286]$, a negative probability, which is nonsense
+
+##### Clopper-Pearson (exact)
+The idea is to skip the normal approximation and use the **exact binomial distribution**.
+
+Given $y$ failures out of $n$:
+- **Lower endpoint $p_L$**: the value of $p$ for which seeing $y$ _or more_ failures has probability exactly $\alpha/2$:  
+    $$\sum_{k=y}^n\binom nk p_L^k(1-p_L)^{n-k}=\frac\alpha2$$ Meaning: any $p$ below $p_L$ would make results as high as $y$ too unlikely (less than $\alpha/2$), so we rule it out.
+- **Upper endpoint $p_U$**: the value of $p$ for which seeing $y$ _or fewer_ failures has probability $\alpha/2$:  
+    $$\sum_{k=0}^{y}\binom nk p_U^k(1-p_U)^{n-k}=\frac\alpha2$$
+- **Boundaries:** if $y=0$, then $p_L=0$; if $y=n$, then $p_U=1$.
+
+We solve these numerically in R: `binom.test(y, n)$conf.int`.
+Unlike Wald, it never leaves $[0,1]$, and it works for $y=0$ (e.g. 0 failures in 10 tests gives roughly $[0,\,0.31]$, which is sensible: failures aren't ruled out).
+
+**Coverage**:
+$$P_p\big(p_L(Y)\le p\le p_U(Y)\big)\ge1-\alpha\quad\text{for all }p$$
+Because the binomial is _discrete_, we can't hit probability exactly $1-\alpha$ for every $p$, so _the interval is conservative_: actual coverage is $\ge$ the nominal level, so it tends to be a bit wider than necessary.
+>"Exact but conservative": exact means it uses the true distribution and guarantees coverage, not that coverage equals $1-\alpha$.
+
+#### Beyond the binomial: CLT interval for a mean
+The point: the proportion interval isn't special.
+**Any** mean of i.i.d. data with finite variance is approximately normal, so "estimate $\pm z\times$ SE" works broadly.
+
+**Setup**
+Server response times, modelled as $Y_i\sim\text{Exponential}(\lambda)$:
+$$E(Y)=\mu=\frac1\lambda,\qquad \mathrm{Var}(Y)=\frac1{\lambda^2}=\mu^2,\qquad \mathrm{Var}(\overline Y)=\frac{\mu^2}{n}$$
+Continuous, positive, and strongly right-skewed (many fast responses, a few very slow ones).
+
+**Applying the CLT**
+$$\frac{\overline Y-\mu}{\sigma/\sqrt n}\xrightarrow{d}\mathcal N(0,1)$$
+Replace the unknown $\sigma$ by $S$:
+$$CI_{1-\alpha}(\mu)\approx\overline Y\pm z_{1-\alpha/2}\frac{S}{\sqrt n}$$
+**Limitations**
+For skewed data and small $n$, $\overline Y$ itself is still right-skewed, so a symmetric interval is the wrong shape.
+As a result: it _under-covers on the low side_ (the interval's lower end is often too high, so it misses $\mu$ when $\mu$ is small) and _over-covers on the high side_.
+Overall coverage is typically below 95%.
+>The CLT interval is only as good as the normal approximation, which depends on how far the data are from normal.
+
+**Exact alternative**
+Special property of the Exponential: a sum of $n$ i.i.d. Exponential($\lambda$) is Gamma($n,\lambda$), and, after rescaling, a chi-square:
+$$T=\sum Y_i,\qquad 2\lambda T\sim\chi^2_{2n}$$
+This is a _pivot_: its distribution doesn't depend on the unknown $\lambda$.
+Bound it between quantiles:
+$$\chi^2_{2n,\alpha/2}\le2\lambda T\le\chi^2_{2n,1-\alpha/2}$$
+Solve for $\mu=1/\lambda$.
+Since $\lambda$ is in the numerator here, $\mu=1/\lambda$ gives $\lambda=1/\mu$ and so $\frac{2T}{\mu}$ is the chi-square, flipping to isolate $\mu$ reverses the order (same reciprocal trick seen before):
+$$CI_{1-\alpha}(\mu)=\left(\frac{2T}{\chi^2_{2n,1-\alpha/2}},\ \frac{2T}{\chi^2_{2n,\alpha/2}}\right)$$
+This is exact for any $n$, but it works only because the data really are exponential.
+>If the model is wrong, the exactness is lost.
+
+|Case|Approximate (CLT)|Exact|
+|---|---|---|
+|Proportion|Wald: $\hat p\pm z\sqrt{\hat p(1-\hat p)/n}$|Clopper–Pearson (conservative)|
+|Exponential mean|$\overline Y\pm z\,S/\sqrt n$|$\left(\frac{2T}{\chi^2_{2n,1-\alpha/2}},\frac{2T}{\chi^2_{2n,\alpha/2}}\right)$|
+|Works when|$n$ large, data not too skewed|the model is exactly right|
+|Weakness|can under-cover, bad near boundaries|needs special structure, conservative if discrete|
+
+---
+### Confidence Interval features
+In the previous section we built confidence intervals.
+This section covers _how to check them by simulation_, how their **width** behaves, how to **plan sample size**, and a general **Wald interval** from MLE theory.
+
+#### What does 95% coverage look like?
+"95% confidence" is a claim about **repeated sampling**, so we can test it directly with the Monte Carlo:
+1. Fix a true $\mu$ (we know it, because we chose it)
+2. Draw a new sample of size $n$, build a 95% CI
+3. Record: does it contain $\mu$? (yes/no)
+4. Repeat many times. The fraction of "yes" is the **empirical coverage**
+>For an exact 95% procedure, that fraction should be near 0.95, with a small error from using finitely many repetitions (**Monte Carlo error**).
+
+#### Confidence level and width
+$$W = 2\,z_{1-\alpha/2}\frac{\sigma}{\sqrt n}$$
+
+(Lower endpoint to upper endpoint: $2\times$ the margin of error.)
+Each factor has a clear effect:
+
+| Change                         | Effect on width            | Why                      |
+| ------------------------------ | -------------------------- | ------------------------ |
+| Higher confidence (95% to 99%) | wider                      | $z$ grows (1.96 to 2.58) |
+| Larger $n$                     | narrower, like $1/\sqrt n$ | SE shrinks               |
+| Larger $\sigma$                | wider                      | noisier data             |
+>Note the $\sqrt n$: to **halve** the width we need **4 times** the data (diminishing returns).
+
+**Precision is not free**: we can't have a very narrow interval, a very high confidence level, and a small sample all at once, something has to give.
+
+#### Sample size for a desired margin of error
+**Goal**: choose $n$ so that the margin of error is at most $\varepsilon$.
+$$z_{1-\alpha/2}\frac{\sigma}{\sqrt n}\le\varepsilon$$
+Solve for $n$ (multiply by $\sqrt n$, divide by $\varepsilon$, square):
+$$n\ \ge\ \left(\frac{z_{1-\alpha/2}\,\sigma}{\varepsilon}\right)^2$$
+>[!Example]
+>$\sigma=5$, $\varepsilon=1$, 95% confidence:
+>
+>$$n\ge\left(\frac{1.96\times5}{1}\right)^2=(9.8)^2=96.04$$
+>So $n=97$.
+>```r
+>ceiling((qnorm(1-alpha/2)*sigma/epsilon)^2) # 97
+>```
+
+>[!Note]
+>- **Why `ceiling`**: $n$ must be a whole number, rounding 96.04 _down_ to 96 would give a margin slightly above 1, breaking the requirement (always round **up**)
+> - **The catch**: we need $\sigma$ _before_ collecting data, but $\sigma$ is unknown, in practice we use a pilot-study estimate or a safe upper bound, and we should be honest that the result is only as good as that guess, a wrong $\sigma$ gives the wrong $n$
+
+#### Wald interval from asymptotic MLE theory
+This generalizes the Wald interval from to **any** MLE.
+As seen previously, for large $n$:
+$$\hat\theta_{ML}\approx\mathcal N(\theta,\ \mathrm{SE}^2)$$
+so the usual template applies:
+$$\hat\theta_{ML}\pm z_{1-\alpha/2}\,\widehat{\mathrm{SE}}$$
+**Where does $\widehat{\mathrm{SE}}$ come from?** From the curvature of the log-likelihood (Fisher information):
+$$\widehat{\mathrm{SE}}\approx\left[-\ell_n''(\hat\theta_{ML})\right]^{-1/2}$$
+Meaning: $-\ell_n''$ at the peak is the observed information (how sharply curved the peak is).
+_Sharp peak_ means large information, small SE, _flat peak_ means small information, large SE.
+>This is the sample version of $1/\sqrt{I_n(\theta)}$, with the unknown $\theta$ replaced by $\hat\theta_{ML}$.
+
+**Caveats**:
+- _Asymptotic_: it relies on large $n$, regularity conditions, and the log-likelihood being roughly a parabola near its peak (local quadratic behaviour)
+- _Not invariant to reparameterization_: if we build a Wald interval for $\theta$ and then transform it (say to $\log\theta$ or $\theta^2$), we get a different interval than building the Wald interval directly for the transformed parameter, the answer depends on how we write the parameter, which is unappealing
+- _Can leave the parameter space_: a Wald interval for a probability can go below 0 or above 1 (as in the 1-failure-in-10 example)
+
