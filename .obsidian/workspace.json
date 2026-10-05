@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Magistrale/Secondo anno/Cryptography/01 - Polyalphabetic ciphers.md",
+                "file": "Magistrale/Secondo anno/Cryptography/02 - Friedman method and Hill cipher.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "01 - Polyalphabetic ciphers"
+              "title": "02 - Friedman method and Hill cipher"
             }
           },
           {
@@ -178,10 +178,13 @@
       "obsidian-excalidraw-plugin:New drawing": false
     }
   },
-  "active": "a1163d9af64d6878",
+  "active": "ef920d03336e0006",
   "lastOpenFiles": [
-    "Magistrale/Secondo anno/Cryptography/00 - Introduction.md",
     "Magistrale/Secondo anno/Cryptography/01 - Polyalphabetic ciphers.md",
+    "Magistrale/Secondo anno/Cryptography/02 - Friedman method and Hill cipher.md",
+    "Magistrale/Secondo anno/Cryptography/Images/Wolfe Friedman.png",
+    "Magistrale/Secondo anno/Cryptography/Images",
+    "Magistrale/Secondo anno/Cryptography/00 - Introduction.md",
     "Magistrale/Secondo anno/System security/00 - Introduction.md",
     "Magistrale/Secondo anno/System security/04 - Access control.md",
     "Magistrale/Secondo anno/Cryptography",
@@ -196,7 +199,6 @@
     "Magistrale/Secondo anno/System security/02 - Introduction to cryptography.md",
     "Magistrale/Secondo anno/System security/Images/ECB attack 3.png",
     "Magistrale/Secondo anno/System security/Images/ECB attack 2.png",
-    "Magistrale/Secondo anno/System security/Images/ECB attack 1.png",
     "Magistrale/Secondo anno/System security/01 - Security design principles.md",
     "Magistrale/Secondo anno/System security/Images",
     "Magistrale/Secondo anno/System security",
@@ -221,11 +223,8 @@
     "Magistrale/Primo anno/Algorithms for massive data/02 - Probability theory and hashing/09 - Concentration bounds.md",
     "Magistrale/Primo anno/Algorithms for massive data/02 - Probability theory and hashing/10 - Hashing.md",
     "Magistrale/Primo anno/Algorithms for massive data/04 - Sketching/14 - LSH.md",
-    "Magistrale/Primo anno/Algorithms for massive data/01 - Compressed data structures/08 - FM-index.md",
-    "Magistrale/Primo anno/Algorithms for massive data/01 - Compressed data structures/03 - Zero-order bitvectors.md",
     "Excalidraw/Images",
     "Magistrale/Image and video understanding/Images/Download/IVU - 03 - Semantic Segmentation.pdf",
-    "Magistrale/Image and video understanding/Images/Download/desktop.ini",
     "Magistrale/Primo anno/Information retrieval and web search/Map.canvas",
     "Magistrale/Primo anno/Learning with massive data/Map.canvas",
     "Magistrale/Senza nome.canvas",
