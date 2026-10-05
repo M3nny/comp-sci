@@ -4,19 +4,35 @@
     "type": "split",
     "children": [
       {
-        "id": "d890aa01e36b4739",
+        "id": "6b0e9ea76142a99e",
         "type": "tabs",
         "children": [
           {
-            "id": "a3b4aaa92c4fdff6",
+            "id": "ef920d03336e0006",
             "type": "leaf",
             "state": {
-              "type": "image",
+              "type": "markdown",
               "state": {
-                "file": "Magistrale/Secondo anno/System security/Images/RBAC.png"
+                "file": "Magistrale/Secondo anno/Cryptography/01 - Polyalphabetic ciphers.md",
+                "mode": "source",
+                "source": false
               },
-              "icon": "lucide-image",
-              "title": "RBAC"
+              "icon": "lucide-file",
+              "title": "01 - Polyalphabetic ciphers"
+            }
+          },
+          {
+            "id": "1ac15cb702594940",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Magistrale/Secondo anno/System security/00 - Introduction.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "00 - Introduction"
             }
           }
         ]
@@ -164,9 +180,13 @@
   },
   "active": "a1163d9af64d6878",
   "lastOpenFiles": [
-    "Magistrale/Secondo anno/System security/Images/RBAC role assignment.png",
+    "Magistrale/Secondo anno/Cryptography/00 - Introduction.md",
+    "Magistrale/Secondo anno/Cryptography/01 - Polyalphabetic ciphers.md",
+    "Magistrale/Secondo anno/System security/00 - Introduction.md",
     "Magistrale/Secondo anno/System security/04 - Access control.md",
+    "Magistrale/Secondo anno/Cryptography",
     "Magistrale/Secondo anno/System security/Images/RBAC.png",
+    "Magistrale/Secondo anno/System security/Images/RBAC role assignment.png",
     "Magistrale/Secondo anno/System security/Images/BLP.png",
     "Magistrale/Secondo anno/System security/Images/Authorization table.png",
     "Magistrale/Secondo anno/System security/Images/Capabilities.png",
@@ -179,7 +199,6 @@
     "Magistrale/Secondo anno/System security/Images/ECB attack 1.png",
     "Magistrale/Secondo anno/System security/01 - Security design principles.md",
     "Magistrale/Secondo anno/System security/Images",
-    "Magistrale/Secondo anno/System security/00 - Introduction.md",
     "Magistrale/Secondo anno/System security",
     "Magistrale/Secondo anno/Statistical inference and learning/02 - Point and interval estimation.md",
     "Triennale/Secondo anno/Probabilità e statistica/Distribuzioni note/Distribuzioni continue.md",
@@ -204,11 +223,9 @@
     "Magistrale/Primo anno/Algorithms for massive data/04 - Sketching/14 - LSH.md",
     "Magistrale/Primo anno/Algorithms for massive data/01 - Compressed data structures/08 - FM-index.md",
     "Magistrale/Primo anno/Algorithms for massive data/01 - Compressed data structures/03 - Zero-order bitvectors.md",
-    "Magistrale/Primo anno/Algorithms for massive data/01 - Compressed data structures/04 - Elias-Fano data structure.md",
     "Excalidraw/Images",
     "Magistrale/Image and video understanding/Images/Download/IVU - 03 - Semantic Segmentation.pdf",
     "Magistrale/Image and video understanding/Images/Download/desktop.ini",
-    "Magistrale/Image and video understanding/Images/Download",
     "Magistrale/Primo anno/Information retrieval and web search/Map.canvas",
     "Magistrale/Primo anno/Learning with massive data/Map.canvas",
     "Magistrale/Senza nome.canvas",
