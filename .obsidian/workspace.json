@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Magistrale/Secondo anno/Cryptography/03 - Known plaintext attacks.md",
+                "file": "Magistrale/Secondo anno/Cryptography/04 - Stream ciphers.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "03 - Known plaintext attacks"
+              "title": "04 - Stream ciphers"
             }
           }
         ]
@@ -166,10 +166,11 @@
   },
   "active": "ef920d03336e0006",
   "lastOpenFiles": [
+    "Magistrale/Secondo anno/Cryptography/03 - Known plaintext attacks.md",
+    "Magistrale/Secondo anno/Cryptography/04 - Stream ciphers.md",
     "Triennale/Primo anno/Primo semestre/Matematica discreta/Aritmetica modulare.md",
     "Triennale/Primo anno/Primo semestre/Matematica discreta/mcm e MCD.md",
     "Triennale/Primo anno/Primo semestre/Matematica discreta/Regole di divisibilità.md",
-    "Magistrale/Secondo anno/Cryptography/03 - Known plaintext attacks.md",
     "Magistrale/Secondo anno/Cryptography/02 - Friedman method and Hill cipher.md",
     "Magistrale/Secondo anno/Cryptography/01 - Polyalphabetic ciphers.md",
     "Magistrale/Secondo anno/Cryptography/Images/Wolfe Friedman.png",
@@ -209,7 +210,6 @@
     "Magistrale/Primo anno/Algorithms for massive data/05 - Streaming/21 - Sketches for relational algebra.md",
     "Magistrale/Primo anno/Algorithms for massive data/05 - Streaming/20 - Second order frequency moments.md",
     "Magistrale/Primo anno/Algorithms for massive data/05 - Streaming/19 - Frequency moments.md",
-    "Magistrale/Primo anno/Algorithms for massive data/05 - Streaming/17 - Count-Min sketch.md",
     "Excalidraw/Images",
     "Magistrale/Image and video understanding/Images/Download/IVU - 03 - Semantic Segmentation.pdf",
     "Magistrale/Primo anno/Information retrieval and web search/Map.canvas",
