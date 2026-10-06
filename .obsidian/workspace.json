@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Magistrale/Secondo anno/Geometric and 3D computer vision/01 - Image formation process.md",
+                "file": "Magistrale/Secondo anno/Geometric and 3D computer vision/02 - Intensity transformations.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "01 - Image formation process"
+              "title": "02 - Intensity transformations"
             }
           }
         ]
@@ -166,17 +166,21 @@
   },
   "active": "a1163d9af64d6878",
   "lastOpenFiles": [
-    "Magistrale/Secondo anno/Geometric and 3D computer vision/Images/N8p.png",
-    "Magistrale/Secondo anno/Geometric and 3D computer vision/Images/NDp.png",
-    "Magistrale/Secondo anno/Geometric and 3D computer vision/Images/N4p.png",
-    "Magistrale/Secondo anno/Geometric and 3D computer vision/Images/Intensity resolution.png",
-    "Magistrale/Secondo anno/Geometric and 3D computer vision/Images/Quantization.png",
-    "Magistrale/Secondo anno/Geometric and 3D computer vision/Images/CCD vs CMOS.png",
-    "Magistrale/Secondo anno/Geometric and 3D computer vision/Images/Phong model.png",
-    "Magistrale/Secondo anno/Geometric and 3D computer vision/Images/Radiance and luminance.png",
+    "Magistrale/Secondo anno/Geometric and 3D computer vision/Images/Histogram for thresholding.png",
+    "Magistrale/Secondo anno/Geometric and 3D computer vision/Images/Histogram matching.png",
+    "Magistrale/Secondo anno/Geometric and 3D computer vision/Images/Histogram equalization.png",
+    "Magistrale/Secondo anno/Geometric and 3D computer vision/Images/Histogram light image.png",
+    "Magistrale/Secondo anno/Geometric and 3D computer vision/Images/Histogram dark image.png",
+    "Magistrale/Secondo anno/Geometric and 3D computer vision/Images/Contrast enhancement.png",
+    "Magistrale/Secondo anno/Geometric and 3D computer vision/Images/Contrast.png",
+    "Magistrale/Secondo anno/Geometric and 3D computer vision/Images/Gamma correction.png",
+    "Magistrale/Secondo anno/Geometric and 3D computer vision/Images/Log transformed.png",
+    "Magistrale/Secondo anno/Geometric and 3D computer vision/Images/Log transformations.png",
+    "Magistrale/Secondo anno/Geometric and 3D computer vision/Images/Gain and bias.png",
+    "Magistrale/Secondo anno/Geometric and 3D computer vision/01 - Image formation process.md",
+    "Magistrale/Secondo anno/Geometric and 3D computer vision/02 - Intensity transformations.md",
     "Magistrale/Secondo anno/Geometric and 3D computer vision/Images",
     "Magistrale/Secondo anno/Geometric and 3D computer vision/00 - Introduction.md",
-    "Magistrale/Secondo anno/Geometric and 3D computer vision/01 - Image formation process.md",
     "Magistrale/Secondo anno/Geometric and 3D computer vision",
     "Magistrale/Secondo anno/Cryptography/04 - Stream ciphers.md",
     "Magistrale/Secondo anno/Cryptography/05 - Perfect ciphers.md",
@@ -186,14 +190,11 @@
     "Triennale/Primo anno/Primo semestre/Matematica discreta/Regole di divisibilità.md",
     "Magistrale/Secondo anno/Cryptography/02 - Friedman method and Hill cipher.md",
     "Magistrale/Secondo anno/Cryptography/01 - Polyalphabetic ciphers.md",
-    "Magistrale/Secondo anno/Cryptography/Images/Wolfe Friedman.png",
     "Magistrale/Secondo anno/Cryptography/Images",
     "Magistrale/Secondo anno/Cryptography/00 - Introduction.md",
     "Magistrale/Secondo anno/System security/00 - Introduction.md",
     "Magistrale/Secondo anno/System security/04 - Access control.md",
     "Magistrale/Secondo anno/Cryptography",
-    "Magistrale/Secondo anno/System security/Images/RBAC.png",
-    "Magistrale/Secondo anno/System security/Images/RBAC role assignment.png",
     "Magistrale/Secondo anno/System security/03 - User authentication.md",
     "Magistrale/Secondo anno/System security/02 - Introduction to cryptography.md",
     "Magistrale/Secondo anno/System security/01 - Security design principles.md",
@@ -211,7 +212,6 @@
     "Magistrale/Primo anno/Algorithms for massive data/04 - Sketching/13 - MinHash.md",
     "Magistrale/Primo anno/Algorithms for massive data/01 - Compressed data structures/07 - Burrows-Wheeler transform.md",
     "Magistrale/Primo anno/Algorithms for massive data/03 - Randomized filters/12 - Counting Bloom filters.md",
-    "Magistrale/Primo anno/Algorithms for massive data/Summary.md",
     "Magistrale/Primo anno/Information retrieval and web search/Map.canvas",
     "Magistrale/Primo anno/Learning with massive data/Map.canvas",
     "Magistrale/Senza nome.canvas",
