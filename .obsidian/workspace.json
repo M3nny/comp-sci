@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Magistrale/Secondo anno/Deep learning for natural language processing/01 - Mathematical and learning foundations.md",
+                "file": "Magistrale/Secondo anno/Deep learning for natural language processing/02 - Text processing and tokenization.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "01 - Mathematical and learning foundations"
+              "title": "02 - Text processing and tokenization"
             }
           }
         ]
@@ -167,6 +167,7 @@
   "active": "2a347635cd1ec8cd",
   "lastOpenFiles": [
     "Magistrale/Secondo anno/Deep learning for natural language processing/00 - Introduction.md",
+    "Magistrale/Secondo anno/Deep learning for natural language processing/02 - Text processing and tokenization.md",
     "Magistrale/Secondo anno/Deep learning for natural language processing/01 - Mathematical and learning foundations.md",
     "Magistrale/Secondo anno/Deep learning for natural language processing/Images/Semantic role labeling.png",
     "Magistrale/Secondo anno/Deep learning for natural language processing/Images/NLP history.png",
@@ -211,7 +212,6 @@
     "Magistrale/Secondo anno",
     "Magistrale/Primo anno",
     "Magistrale/Primo anno/Algorithms for massive data/03 - Randomized filters/11 - Bloom filters.md",
-    "Magistrale/Primo anno/Algorithms for massive data/04 - Sketching/13 - MinHash.md",
     "Magistrale/Primo anno/Information retrieval and web search/Map.canvas",
     "Magistrale/Primo anno/Learning with massive data/Map.canvas",
     "Magistrale/Senza nome.canvas",
