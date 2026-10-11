@@ -1,109 +1,78 @@
-**Deep learning** is a subset of machine learning that uses **multilayered neural networks** to simulate _complex decision making_ of the human brain.
+NLP is an **interdisciplinary field** bridging computer science, artificial intelligence, and linguistics to _enable machines to understand, interpret, and generate human language_.
 
-**Natural Language Processing (NLP)** is an interdisciplinary subfield of computer science and artificial intelligence which focuses on <u>providing computers with the ability to process data encoded in natural language</u>.
+**McLuhan** describes _media as an extension of human faculties_, in this case language models extend:
+- Writing
+- Interpretation
+- Knowledge access
+- Reasoning
 
-NLP has its roots in the 1940s especially due to machine translations needs after WW2.
-The **Turing test** introduced the task of the automated interpretation and generation of natural language.
+They don't just transmit language, they take part in producing, organizing and evaluating it.
+>This changes the speed of knowledge production, authorship and what people treat as credible.
 
->[!Note] Turing test
->A man, closed in a room, asks questions, trough a remote keyboard to a computer.
->If the man doesn't understands if on the other side of the room the answers are provided by a human or a computer, then we are in presence of a "intelligent computer".
+### Why NLP is hard
+- **Lexical ambiguity**: words have several meanings (e.g. bank as a financial institution or a river edge)
+- **Syntactic ambiguity**: a sentence can be parsed in multiple ways (e.g. "I saw the man with the telescope")
+- **Context dependence**: sarcasm, idioms, and cultural references require world knowledge beyond the text
+- **Data sparsity**: English is resource-rich, but thousands of languages lack enough digitized corpora
 
+### Core linguistic levels
+Is it well formed (syntax)? What does it literally mean (semantics)? What does the speaker mean here (pragmatics)?
 
-![[NLP history.png|500]]
+- **Syntax**: rules of word order and structure
+- **Semantics**: literal meaning of words and how meanings combine
+- **Pragmatics**: meaning that depends on context and speaker intent
 
-### Symbolic NLP
-Up until the 1980s, most NLP systems were based on **complex sets of hand-written rules**.
+### Evolution of NLP
 
-The _premise of this technique_ can be summarized by the **Chinese room argument**: given a collection of rules (e.g. a Chinese phrasebook, with questions and matching answers), the computer emulates natural language understanding by applying those rules to the data it confronts.
+| Era           | Period       | Key ideas                                                                    |
+| ------------- | ------------ | ---------------------------------------------------------------------------- |
+| Rule-based    | 1950-1980    | Hand-crafted rules, regular expressions, ELIZA, context-free grammars        |
+| Statistical   | 1990–2010    | ML on large corpora: n-gram LM, TF-IDF, HMMs(POS tagging), SVM               |
+| Deep learning | 2010         | Dense embeddings, RNNs/LSTMs addressing vanishing gradients                  |
+| Transformers  | 2017–present | Self-attention, parallelization, massive scale, emergent zero-shot abilities |
 
-The **Georgetown experiment** consisted in translating 70 sentences from English to Russian using six grammar rules and 250 lexical items, the authors then, claimed that withing 3-5 years, machine translation could well be a solved problem (it wasn't, funding collapsed).
+**Milestones**:
+- _2013_: word2vec gives dense embeddings
+- _2014_: seq2seq encoder–decoder (RNN/LSTM)
+- _2014–15_: attention lets the decoder select relevant encoder states, avoiding a single fixed-size vector
+- _2015–16_: bidirectional RNN/LSTMs for tagging and parsing
+  
+- _2017_: the Transformer ("Attention Is All You Need").
+	  Self-attention replaces recurrence, so each position attends directly to all others, this leads to parallel training, direct information flow between distant tokens without vanishing gradients, multi-head attention (several relationships and subspaces), and scalability to larger models and data.
+  
+- _2018_: contextual representations. ELMo shows a word’s representation should depend on its sentence (river bank $\neq$ investment bank), and BERT adds deep bidirectional Transformer pretraining plus fine-tuning
+- _2018–20_: GPT, XLNet, RoBERTa, and T5 show pretraining transfers across tasks
+- _2020_: GPT-3 shows in-context learning (zero-/few-shot prompting, no parameter updates)
+  
+- _2021–23_: instruction tuning and alignment (SFT, RLHF).
+	  Foundation and open-weight models (PaLM, LLaMA, Falcon, Mistral) enable PEFT (e.g. LoRA), domain adaptation, and multilingual deployment.
+- _2023–today_: retrieval-augmented systems, tool use, multimodality, reasoning, and agents
 
-**SHRDLU** and **ELIZA** were landmark 1960s programs:
-- SHRDLU manipulated blocks in a simulated world via natural-language commands
-- ELIZA simulated a psychotherapist using pattern matching
+At the beginning of this chapter we gave an overlook of techniques used across the years, but how the "semantic" of the models has evolved?
+1. **Static representations** (word2vec)
+2. **Contextual representations** (ELMo, BERT)
+3. **General pretrained models** (GPT, RoBERTa, XLNet, T5)
+4. **Instruction-following systems** (instruction tuning and alignment)
+5. **Reasoning and tool systems** (agentic AI)
 
-Then there was **HPSG** (Head-Driven Phrase Structure Grammar) which is a rule-based grammar formalism from the 1980s.
+### Classical NLP tasks
+- **Pipeline steps**: tokenization, stemming/lemmatization, POS tagging, dependency parsing
+- **Text classification**: sentiment analysis, spam detection
+- **NER (sequence labeling)**: locates and classifies entities
+- **Machine translation**: phrase-based statistical MT dominated the 2000s, then NMT with attention-guided seq2seq (encoder -> context vector -> decoder)
+- **Summarization**: extractive (selects existing sentences, reliable but choppy) vs abstractive (generates new sentences, prone to _hallucination_, so it needs evaluation such as ROUGE and human oversight)
+- **Question answering**: closed-book (relies on parametric knowledge, can be outdated) vs open-book _RAG_ (retrieve documents from an external database, then ground the LLM’s answer in them)
+- **Conversational agents**: from intent classification with slot-filling to open-domain dialogue (ChatGPT-style) that keeps long context and handles topic switches
+- **Multimodal NLP**: CLIP aligns text and images in one vector space, Whisper handles speech-to-text, and modern frontier models process text, audio, and vision in a single Transformer
 
-### Statistical NLP
-In the late 1970s there was a revolution in NLP with the introduction of **machine learning algorithms**.
-This was allowed by more compute power and moving away from the purely theoretical Chomskyan grammar toward _corpus-based learning_.
+### Agentic AI
+An LLM acts as a reasoning engine to pursue complex goals over multiple steps. Traditional LLMs output text and stop, whereas **agents** plan, act in environments, observe results, and iterate, _using tools_.
 
-**IBM alignment models** pioneered statistical machine translation, trained on large _parallel corpora_, notably the bilingual proceedings of the Canadian parliament and the EU, which are legally required to be translated into all official languages, making them ideal training data.
+The **core components** of this architecture are: models, reasoning, _memory and retrieval_, external tools, evaluation and safety.
 
-**Statistical language modeling** introduces the core idea of a language model as something assigning probabilities to word sequences, for example:
-$$P(\text{Colosseo}|\text{Rome})>P(\text{Colosseo}|\text{Paris})$$
+The **cognitive architecture** involves _planning_ (chain-of-thought), _reflection_ (self-critique and correction), _memory_ (short-term context window and long-term vector databases).
 
-### Neural NLP
-In 2003 a **small neural probabilistic language model** (MLP) outperformed n-gram models (at the time the best statistical algorithms).
-
-In 2010 a [[04 - Deep learning#Recurrent neural networks|recurrent neural network]] was applied to language modelling, later creating [[11 - Learning to rank#Word2Vec|Word2Vec]].
-
-Then progression continues to **contextualized embeddings** (e.g. BERT) thanks to the **Transformer architecture**.
-
-[On the Dangers of Stochastic Parrots](https://dl.acm.org/doi/epdf/10.1145/3442188.3445922) critiques large language models for fluently reproducing patterns without genuine understanding, which is a counterpoint to the neural-NLP triumphalism in these recent times.
-
-### NLP as an empirical science
-The evaluation of NLP models is **task-driven**.
-
-The steps usually conducted to evaluate a model are:
-1. Identify or create training data for the task
-2. Select one or more benchmarks for the evaluation
-3. Identify state-of-the-art models for the task
-4. Compute metrics on the benchmarks
-5. Compare the results
-
-### NLP task taxonomy
-**Text and speech processing** consist in _OCR_ (+ OCR post-correction), _speech recognition_ and _text-to-speech_.
-
-The **NLP pipeline** is organized in the following way.
-
-**Morphology**: word formation
-_Lemmatization_ and _morphological segmentation_ (splitting words into morphemes, e.g. "unhappiness" -> un+happy+ness).
-
-**Syntax**: how words combine
-_Part of Speech (POS) tagging_ (labeling each word's grammatical category) and _syntactic parsing_ represented by its grammatical structure and defined by the relationships between"head" words and words, which modify those heads.
-
-**Semantics**: meaning
-_Lexical semantics_ (data-derived word meaning), _word sense disambiguation_ (based on context), _named entity recognition_ (e.g. "monday" -> "date"), _entity linking_ (association between entity and a knowledge base).
-
-_Semantic role labeling_ which consists in who did what to whom, when, and where:
-![[Semantic role labeling.png|400]]
-
-
-Other tasks consist in:
-- _Semantic parsing_: converts human language into a machine-readable form
-- _Topic modeling_: discover hidden, abstract themes (topics) within a large collection of unstructured documents
-- _Sentiment analysis_
-- _Language identification_
-
-**Higher-level applications** consist in:
-- _Machine translation_
-- _Text summarization_
-- _Natural language generation_
-- _Conversational agents_
-
-### Framing NLP as a field
-**NLP is more engineering-oriented**, whilst **computational linguistics** leans more toward using computation to study language scientifically.
->Though the line is blurry and the terms overlap heavily in practice.
-
-The **goal of NLP** can be reframed as three processes:
-- _Analysis_: language -> structured representation
-- _Generation_: representation -> language
-- _Acquisition_: learning the representations/algorithms from data
-
-![[Levels of linguistic representation.png|400]]
-Deeper levels are harder and more **context-dependent**.
-
-**NLP is hard** since there are _complex mappings between levels_, representation choice depends on application, noisy input, representations are theoretical constructs (not directly observable), and pervasive _ambiguity at every level_ (which we resolve easily via context, but computers struggle with).
-
-**Pragmatics/Discourse** study how meaning depends on context beyond the sentence, and structure across multi-sentence/dialogue units.
-
-This course will focus from morphology up to semantics.
-
-### Learning paradigms
-- **Supervised learning**: labeled $(X, Y)$ pairs
-- **Self-supervised learning**: labels are auto-generated from raw text itself
-- **Transfer learning**: pretrain self-supervised on huge data, then fine-tune on a small labeled dataset for a specific task
-- **Prompt-based learning**: pretrain, then just prompt the model in natural language to perform a task with no further training, this is the paradigm behind modern LLM usage (few-shot/zero-shot prompting)
-
+### Ethics and safety
+- **Bias and fairness**: models amplify _societal biases_ from their training data
+- **Hallucination**: _confident false information_ is risky in medical, legal, and financial contexts
+- **Alignment**: keeping capable models acting _in line with human values_ and avoiding harmful unintended goals (dual-use risks)

@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Magistrale/Secondo anno/Geometric and 3D computer vision/03 - Spatial filtering.md",
+                "file": "Magistrale/Secondo anno/Deep learning for natural language processing/01 - Mathematical and learning foundations.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "03 - Spatial filtering"
+              "title": "01 - Mathematical and learning foundations"
             }
           }
         ]
@@ -164,8 +164,14 @@
       "obsidian-excalidraw-plugin:New drawing": false
     }
   },
-  "active": "a1163d9af64d6878",
+  "active": "2a347635cd1ec8cd",
   "lastOpenFiles": [
+    "Magistrale/Secondo anno/Deep learning for natural language processing/00 - Introduction.md",
+    "Magistrale/Secondo anno/Deep learning for natural language processing/01 - Mathematical and learning foundations.md",
+    "Magistrale/Secondo anno/Deep learning for natural language processing/Images/Semantic role labeling.png",
+    "Magistrale/Secondo anno/Deep learning for natural language processing/Images/NLP history.png",
+    "Magistrale/Secondo anno/Deep learning for natural language processing/Images/Levels of linguistic representation.png",
+    "Magistrale/Secondo anno/Geometric and 3D computer vision/03 - Spatial filtering.md",
     "Magistrale/Secondo anno/Geometric and 3D computer vision/Images/Laplacian filtering.png",
     "Magistrale/Secondo anno/Geometric and 3D computer vision/Images/Derivatives in images.png",
     "Magistrale/Secondo anno/Geometric and 3D computer vision/Images/Denoising.png",
@@ -173,12 +179,7 @@
     "Magistrale/Secondo anno/Geometric and 3D computer vision/Images/Smoothing spatial filter.png",
     "Magistrale/Secondo anno/Geometric and 3D computer vision/Images/2D convolution.png",
     "Magistrale/Secondo anno/Geometric and 3D computer vision/02 - Intensity transformations.md",
-    "Magistrale/Secondo anno/Geometric and 3D computer vision/03 - Spatial filtering.md",
     "Magistrale/Secondo anno/Geometric and 3D computer vision/Images/Histogram for thresholding.png",
-    "Magistrale/Secondo anno/Geometric and 3D computer vision/Images/Histogram matching.png",
-    "Magistrale/Secondo anno/Geometric and 3D computer vision/Images/Histogram equalization.png",
-    "Magistrale/Secondo anno/Geometric and 3D computer vision/Images/Histogram light image.png",
-    "Magistrale/Secondo anno/Geometric and 3D computer vision/Images/Histogram dark image.png",
     "Magistrale/Secondo anno/Geometric and 3D computer vision/01 - Image formation process.md",
     "Magistrale/Secondo anno/Geometric and 3D computer vision/Images",
     "Magistrale/Secondo anno/Geometric and 3D computer vision/00 - Introduction.md",
@@ -211,7 +212,6 @@
     "Magistrale/Primo anno",
     "Magistrale/Primo anno/Algorithms for massive data/03 - Randomized filters/11 - Bloom filters.md",
     "Magistrale/Primo anno/Algorithms for massive data/04 - Sketching/13 - MinHash.md",
-    "Magistrale/Primo anno/Algorithms for massive data/01 - Compressed data structures/07 - Burrows-Wheeler transform.md",
     "Magistrale/Primo anno/Information retrieval and web search/Map.canvas",
     "Magistrale/Primo anno/Learning with massive data/Map.canvas",
     "Magistrale/Senza nome.canvas",
