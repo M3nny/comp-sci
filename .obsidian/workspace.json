@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Magistrale/Secondo anno/Quantum computation/00 - Postulates of quantum mechanics.md",
+                "file": "Magistrale/Secondo anno/System security/05 - Malwares.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "00 - Postulates of quantum mechanics"
+              "title": "05 - Malwares"
             }
           }
         ]
@@ -164,11 +164,12 @@
       "obsidian-excalidraw-plugin:New drawing": false
     }
   },
-  "active": "a1163d9af64d6878",
+  "active": "2a347635cd1ec8cd",
   "lastOpenFiles": [
+    "Magistrale/Secondo anno/Quantum computation/00 - Postulates of quantum mechanics.md",
+    "Magistrale/Secondo anno/System security/05 - Malwares.md",
     "Triennale/Primo anno/Primo semestre/Algebra lineare/Grafi.md",
     "Triennale/Primo anno/Primo semestre/Algebra lineare/Matrici.md",
-    "Magistrale/Secondo anno/Quantum computation/00 - Postulates of quantum mechanics.md",
     "Magistrale/Secondo anno/Deep learning for natural language processing/03 - Logistic regression and text classifiation.md",
     "Magistrale/Secondo anno/Quantum computation",
     "Magistrale/Secondo anno/Deep learning for natural language processing/02 - Text processing and tokenization.md",
@@ -206,7 +207,6 @@
     "Magistrale/Secondo anno/Cryptography",
     "Magistrale/Secondo anno/System security/03 - User authentication.md",
     "Magistrale/Secondo anno/System security/02 - Introduction to cryptography.md",
-    "Magistrale/Secondo anno/System security/01 - Security design principles.md",
     "Magistrale/Secondo anno/System security/Images",
     "Magistrale/Secondo anno/System security",
     "Magistrale/Secondo anno/Statistical inference and learning/Images",
