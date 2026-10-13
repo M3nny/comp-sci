@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Magistrale/Secondo anno/Geometric and 3D computer vision/04 - Color vision.md",
+                "file": "Magistrale/Secondo anno/Geometric and 3D computer vision/05 - Filtering in the frequency domain.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "04 - Color vision"
+              "title": "05 - Filtering in the frequency domain"
             }
           }
         ]
@@ -164,17 +164,23 @@
       "obsidian-excalidraw-plugin:New drawing": false
     }
   },
-  "active": "6e42023916c4512d",
+  "active": "a1163d9af64d6878",
   "lastOpenFiles": [
-    "Magistrale/Secondo anno/Geometric and 3D computer vision/Images/HSI.png",
-    "Magistrale/Secondo anno/Geometric and 3D computer vision/Images/CMYK.png",
-    "Magistrale/Secondo anno/Geometric and 3D computer vision/Images/RGB.png",
-    "Magistrale/Secondo anno/Geometric and 3D computer vision/Images/Mixing colors.png",
-    "Magistrale/Secondo anno/Geometric and 3D computer vision/Images/Chromaticity diagram.png",
-    "Magistrale/Secondo anno/Geometric and 3D computer vision/Images/Sensitivity regions for humans.png",
+    "Magistrale/Secondo anno/Geometric and 3D computer vision/Images/Notch filter output.png",
+    "Magistrale/Secondo anno/Geometric and 3D computer vision/Images/Notch filter input.png",
+    "Magistrale/Secondo anno/Geometric and 3D computer vision/Images/Notch filter result.png",
+    "Magistrale/Secondo anno/Geometric and 3D computer vision/Images/BHPF high cutoff.png",
+    "Magistrale/Secondo anno/Geometric and 3D computer vision/Images/High-pass filter.png",
+    "Magistrale/Secondo anno/Geometric and 3D computer vision/Images/IHPF high cutoff.png",
+    "Magistrale/Secondo anno/Geometric and 3D computer vision/05 - Filtering in the frequency domain.md",
+    "Magistrale/Secondo anno/Geometric and 3D computer vision/Images/Low-pass filter.png",
+    "Magistrale/Secondo anno/Geometric and 3D computer vision/Images/BLPF order effect.png",
+    "Magistrale/Secondo anno/Geometric and 3D computer vision/Images/BLPF low cutoff.png",
+    "Magistrale/Secondo anno/Geometric and 3D computer vision/Images/BLPF high cutoff.png",
+    "Magistrale/Secondo anno/Geometric and 3D computer vision/Images/Image reconstruction using phase angle only.png",
+    "Magistrale/Secondo anno/Geometric and 3D computer vision/04 - Color vision.md",
     "Magistrale/Secondo anno/Geometric and 3D computer vision/02 - Intensity transformations.md",
     "Magistrale/Secondo anno/Geometric and 3D computer vision/03 - Spatial filtering.md",
-    "Magistrale/Secondo anno/Geometric and 3D computer vision/04 - Color vision.md",
     "Magistrale/Secondo anno/Cryptography/06 - AES.md",
     "Magistrale/Secondo anno/Cryptography/05 - Perfect ciphers.md",
     "Magistrale/Secondo anno/Cryptography/04 - Stream ciphers.md",
@@ -188,11 +194,6 @@
     "Magistrale/Primo anno/Information retrieval and web search/06 - Vector space model.md",
     "Magistrale/Secondo anno/Deep learning for natural language processing/00 - Introduction.md",
     "Magistrale/Secondo anno/Deep learning for natural language processing/01 - Mathematical and learning foundations.md",
-    "Magistrale/Secondo anno/Deep learning for natural language processing/Images/Semantic role labeling.png",
-    "Magistrale/Secondo anno/Deep learning for natural language processing/Images/NLP history.png",
-    "Magistrale/Secondo anno/Deep learning for natural language processing/Images/Levels of linguistic representation.png",
-    "Magistrale/Secondo anno/Geometric and 3D computer vision/Images/Laplacian filtering.png",
-    "Magistrale/Secondo anno/Geometric and 3D computer vision/Images/Derivatives in images.png",
     "Magistrale/Secondo anno/Geometric and 3D computer vision/01 - Image formation process.md",
     "Magistrale/Secondo anno/Geometric and 3D computer vision/Images",
     "Magistrale/Secondo anno/Geometric and 3D computer vision/00 - Introduction.md",
@@ -205,7 +206,6 @@
     "Magistrale/Secondo anno/Cryptography/01 - Polyalphabetic ciphers.md",
     "Magistrale/Secondo anno/Cryptography/Images",
     "Magistrale/Secondo anno/Cryptography/00 - Introduction.md",
-    "Magistrale/Secondo anno/System security/00 - Introduction.md",
     "Magistrale/Secondo anno/Cryptography",
     "Magistrale/Secondo anno/System security/Images",
     "Magistrale/Secondo anno/System security",
