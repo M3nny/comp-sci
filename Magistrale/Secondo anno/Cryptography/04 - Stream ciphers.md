@@ -57,7 +57,7 @@ Given a ciphertext $y$ we look for all the keys that can give such a ciphertext 
 >[!Example]
 >$P=\{a,b\}$, $K=\{k_1,k_2\}$, $C=\{1,2,3\}$.
 >Encryption is defined by the following table:
->$$\begin{array}{c\|cc\|} E & a & b \\ \hline k1 & 1 & 2 \\ k2 & 2 & 3 \\ \hline \end{array}$$
+>$$\begin{array}{c|cc|} E & a & b \\ \hline k1 & 1 & 2 \\ k2 & 2 & 3 \\ \hline \end{array}$$
 >
 >Now, let $p_P(a)=3/4$, $p_P(b)=1/4$, $p_k(k_1)=p_k(k_2)=1/2$.
 >Let's now compute $p_c(1)$:
