@@ -84,3 +84,5 @@ $$E_{(k_1,k_2)}(x)=E_{k_2}^2(E_{k_1}^1(x))\quad D_{(k_1,k_2)}(y)=D_{k_1}^1(D_{k_
 When a repeated composition cipher is equivalent to itself with a different key, it is said to be **idempotent**, written $S\times S=S$.
 
 In this case we know that iterating the cipher will be of no use to improve its security, and is thus necessary that the simple primitives it uses do not constitute an idempotent cipher.
+
+It can be proved that if we have two **idempotent ciphers that commute**, such that $S^1\times S^2=S^2\times S^1$, then _their composition is also idempotent_.

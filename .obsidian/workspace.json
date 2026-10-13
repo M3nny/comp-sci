@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Magistrale/Secondo anno/Cryptography/05 - Perfect ciphers.md",
+                "file": "Magistrale/Secondo anno/Cryptography/06 - AES.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "05 - Perfect ciphers"
+              "title": "06 - AES"
             }
           }
         ]
@@ -166,8 +166,9 @@
   },
   "active": "6369a81ca3b00f14",
   "lastOpenFiles": [
-    "Magistrale/Secondo anno/Cryptography/04 - Stream ciphers.md",
     "Magistrale/Secondo anno/Cryptography/05 - Perfect ciphers.md",
+    "Magistrale/Secondo anno/Cryptography/06 - AES.md",
+    "Magistrale/Secondo anno/Cryptography/04 - Stream ciphers.md",
     "Magistrale/Secondo anno/Quantum computation/00 - Postulates of quantum mechanics.md",
     "Magistrale/Secondo anno/System security/05 - Malwares.md",
     "Triennale/Primo anno/Primo semestre/Algebra lineare/Grafi.md",
@@ -206,7 +207,6 @@
     "Magistrale/Secondo anno/System security/04 - Access control.md",
     "Magistrale/Secondo anno/Cryptography",
     "Magistrale/Secondo anno/System security/03 - User authentication.md",
-    "Magistrale/Secondo anno/System security/02 - Introduction to cryptography.md",
     "Magistrale/Secondo anno/System security/Images",
     "Magistrale/Secondo anno/System security",
     "Magistrale/Secondo anno/Statistical inference and learning/Images",
