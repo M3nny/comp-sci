@@ -4,21 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "fa6cdd0023d560e9",
+        "id": "8dba21fbc1cc4fe4",
         "type": "tabs",
         "children": [
           {
-            "id": "6369a81ca3b00f14",
+            "id": "6e42023916c4512d",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Magistrale/Secondo anno/Cryptography/06 - AES.md",
+                "file": "Magistrale/Secondo anno/Geometric and 3D computer vision/04 - Color vision.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "06 - AES"
+              "title": "04 - Color vision"
             }
           }
         ]
@@ -164,10 +164,19 @@
       "obsidian-excalidraw-plugin:New drawing": false
     }
   },
-  "active": "6369a81ca3b00f14",
+  "active": "6e42023916c4512d",
   "lastOpenFiles": [
-    "Magistrale/Secondo anno/Cryptography/05 - Perfect ciphers.md",
+    "Magistrale/Secondo anno/Geometric and 3D computer vision/Images/HSI.png",
+    "Magistrale/Secondo anno/Geometric and 3D computer vision/Images/CMYK.png",
+    "Magistrale/Secondo anno/Geometric and 3D computer vision/Images/RGB.png",
+    "Magistrale/Secondo anno/Geometric and 3D computer vision/Images/Mixing colors.png",
+    "Magistrale/Secondo anno/Geometric and 3D computer vision/Images/Chromaticity diagram.png",
+    "Magistrale/Secondo anno/Geometric and 3D computer vision/Images/Sensitivity regions for humans.png",
+    "Magistrale/Secondo anno/Geometric and 3D computer vision/02 - Intensity transformations.md",
+    "Magistrale/Secondo anno/Geometric and 3D computer vision/03 - Spatial filtering.md",
+    "Magistrale/Secondo anno/Geometric and 3D computer vision/04 - Color vision.md",
     "Magistrale/Secondo anno/Cryptography/06 - AES.md",
+    "Magistrale/Secondo anno/Cryptography/05 - Perfect ciphers.md",
     "Magistrale/Secondo anno/Cryptography/04 - Stream ciphers.md",
     "Magistrale/Secondo anno/Quantum computation/00 - Postulates of quantum mechanics.md",
     "Magistrale/Secondo anno/System security/05 - Malwares.md",
@@ -182,15 +191,8 @@
     "Magistrale/Secondo anno/Deep learning for natural language processing/Images/Semantic role labeling.png",
     "Magistrale/Secondo anno/Deep learning for natural language processing/Images/NLP history.png",
     "Magistrale/Secondo anno/Deep learning for natural language processing/Images/Levels of linguistic representation.png",
-    "Magistrale/Secondo anno/Geometric and 3D computer vision/03 - Spatial filtering.md",
     "Magistrale/Secondo anno/Geometric and 3D computer vision/Images/Laplacian filtering.png",
     "Magistrale/Secondo anno/Geometric and 3D computer vision/Images/Derivatives in images.png",
-    "Magistrale/Secondo anno/Geometric and 3D computer vision/Images/Denoising.png",
-    "Magistrale/Secondo anno/Geometric and 3D computer vision/Images/Gaussian filter.png",
-    "Magistrale/Secondo anno/Geometric and 3D computer vision/Images/Smoothing spatial filter.png",
-    "Magistrale/Secondo anno/Geometric and 3D computer vision/Images/2D convolution.png",
-    "Magistrale/Secondo anno/Geometric and 3D computer vision/02 - Intensity transformations.md",
-    "Magistrale/Secondo anno/Geometric and 3D computer vision/Images/Histogram for thresholding.png",
     "Magistrale/Secondo anno/Geometric and 3D computer vision/01 - Image formation process.md",
     "Magistrale/Secondo anno/Geometric and 3D computer vision/Images",
     "Magistrale/Secondo anno/Geometric and 3D computer vision/00 - Introduction.md",
@@ -204,9 +206,7 @@
     "Magistrale/Secondo anno/Cryptography/Images",
     "Magistrale/Secondo anno/Cryptography/00 - Introduction.md",
     "Magistrale/Secondo anno/System security/00 - Introduction.md",
-    "Magistrale/Secondo anno/System security/04 - Access control.md",
     "Magistrale/Secondo anno/Cryptography",
-    "Magistrale/Secondo anno/System security/03 - User authentication.md",
     "Magistrale/Secondo anno/System security/Images",
     "Magistrale/Secondo anno/System security",
     "Magistrale/Secondo anno/Statistical inference and learning/Images",
