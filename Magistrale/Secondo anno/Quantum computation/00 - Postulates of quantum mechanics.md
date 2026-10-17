@@ -139,7 +139,7 @@ Alice picks from a _set of overlapping (non-orthogonal) states_ (for example, $\
 
 _Errors are unavoidable_:
 - Any non-orthogonal state (let's call it $\vert{}\psi_2\rangle$) can be mathematically split into two parts: one part that is completely perpendicular to $\vert{}\psi_1\rangle$, and another part that is _parallel_ (overlapping) with $\vert{}\psi_1\rangle$
-- Because $\vert{}\psi_2\rangle$ shares a parallel component with $\vert{}\psi_1\rangle$, whenever Bob tries to measure to see if it's $\vert{}\psi_1\rangle$, there is a  _non-zero chance_ that he will accidentally get a positive result—even if Alice actually sent $\vert{}\psi_2\rangle$
+- Because $\vert{}\psi_2\rangle$ shares a parallel component with $\vert{}\psi_1\rangle$, whenever Bob tries to measure to see if it's $\vert{}\psi_1\rangle$, there is a  _non-zero chance_ that he will accidentally get a positive result, even if Alice actually sent $\vert{}\psi_2\rangle$
 - Because of this unavoidable overlap, Bob will _always make mistakes sometimes_ when trying to guess which state he was given
 
 >[!Info] Consequences for cryptography
