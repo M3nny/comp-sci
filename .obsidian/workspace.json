@@ -4,21 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "8dba21fbc1cc4fe4",
+        "id": "32f0ff2caff38e60",
         "type": "tabs",
         "children": [
           {
-            "id": "6e42023916c4512d",
+            "id": "6f5b4542f3b40c72",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Magistrale/Secondo anno/Geometric and 3D computer vision/05 - Filtering in the frequency domain.md",
+                "file": "Magistrale/Secondo anno/Deep learning for natural language processing/04 - N-gram language modeling.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "05 - Filtering in the frequency domain"
+              "title": "04 - N-gram language modeling"
             }
           }
         ]
@@ -57,7 +57,7 @@
               "state": {
                 "query": "",
                 "matchingCase": false,
-                "explainSearch": false,
+                "explainSearch": true,
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical"
@@ -166,25 +166,25 @@
   },
   "active": "a1163d9af64d6878",
   "lastOpenFiles": [
+    "Magistrale/Secondo anno/Quantum computation/00 - Postulates of quantum mechanics.md",
+    "Magistrale/Secondo anno/Deep learning for natural language processing/04 - N-gram language modeling.md",
+    "Magistrale/Secondo anno/Geometric and 3D computer vision/05 - Filtering in the frequency domain.md",
     "Magistrale/Secondo anno/Geometric and 3D computer vision/Images/Notch filter output.png",
     "Magistrale/Secondo anno/Geometric and 3D computer vision/Images/Notch filter input.png",
     "Magistrale/Secondo anno/Geometric and 3D computer vision/Images/Notch filter result.png",
     "Magistrale/Secondo anno/Geometric and 3D computer vision/Images/BHPF high cutoff.png",
     "Magistrale/Secondo anno/Geometric and 3D computer vision/Images/High-pass filter.png",
     "Magistrale/Secondo anno/Geometric and 3D computer vision/Images/IHPF high cutoff.png",
-    "Magistrale/Secondo anno/Geometric and 3D computer vision/05 - Filtering in the frequency domain.md",
     "Magistrale/Secondo anno/Geometric and 3D computer vision/Images/Low-pass filter.png",
     "Magistrale/Secondo anno/Geometric and 3D computer vision/Images/BLPF order effect.png",
     "Magistrale/Secondo anno/Geometric and 3D computer vision/Images/BLPF low cutoff.png",
     "Magistrale/Secondo anno/Geometric and 3D computer vision/Images/BLPF high cutoff.png",
-    "Magistrale/Secondo anno/Geometric and 3D computer vision/Images/Image reconstruction using phase angle only.png",
     "Magistrale/Secondo anno/Geometric and 3D computer vision/04 - Color vision.md",
     "Magistrale/Secondo anno/Geometric and 3D computer vision/02 - Intensity transformations.md",
     "Magistrale/Secondo anno/Geometric and 3D computer vision/03 - Spatial filtering.md",
     "Magistrale/Secondo anno/Cryptography/06 - AES.md",
     "Magistrale/Secondo anno/Cryptography/05 - Perfect ciphers.md",
     "Magistrale/Secondo anno/Cryptography/04 - Stream ciphers.md",
-    "Magistrale/Secondo anno/Quantum computation/00 - Postulates of quantum mechanics.md",
     "Magistrale/Secondo anno/System security/05 - Malwares.md",
     "Triennale/Primo anno/Primo semestre/Algebra lineare/Grafi.md",
     "Triennale/Primo anno/Primo semestre/Algebra lineare/Matrici.md",
