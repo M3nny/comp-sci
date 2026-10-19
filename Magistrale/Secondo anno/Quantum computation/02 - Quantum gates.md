@@ -120,3 +120,79 @@ Intuition of the **no-cloning theorem** _via hidden-information_:
 	Measure one qubit of $a|00\rangle + b|11\rangle$ and the other is completely determined (as seen in [[01 - Qubits#The Bell state|Bell state]]), so no more information about $a$ and $b$ can be extracted.
 	A genuine copy would still carry the hidden information in the second qubit, but this is not the case, so a copy cannot have been made.
 
+### Bell states from a circuit
+A circuit with a _Hadamard on the first qubit followed by a CNOT_ creates the **Bell states**, for example:
+$$|00\rangle \xrightarrow{H \text{ on 1st qubit}} \frac{(|0\rangle + |1\rangle)|0\rangle}{\sqrt{2}} \xrightarrow{\text{CNOT}} \frac{|00\rangle + |11\rangle}{\sqrt{2}}$$
+
+$H$ puts the top qubit in superposition, that qubit then acts as the control, so the target flips only in the "1" branch.
+
+The four outputs for the four basis inputs are the **Bell states** (also called EPR states or EPR pairs):
+$$|\beta_{00}\rangle = \frac{|00\rangle + |11\rangle}{\sqrt{2}}, \qquad |\beta_{01}\rangle = \frac{|01\rangle + |10\rangle}{\sqrt{2}}$$ $$|\beta_{10}\rangle = \frac{|00\rangle - |11\rangle}{\sqrt{2}}, \qquad |\beta_{11}\rangle = \frac{|01\rangle - |10\rangle}{\sqrt{2}}$$
+These four Bell states can be written in one formula:
+$$|\beta_{xy}\rangle \equiv \frac{|0,y\rangle + (-1)^x|1,\bar{y}\rangle}{\sqrt{2}}$$
+where $\bar{y}$ is the negation of $y$. Check with $x=0, y=0$: $\frac{|0,0\rangle + |1,1\rangle}{\sqrt{2}} = |\beta_{00}\rangle$.
+![[Quantum circuit to create Bell states.png]]
+### Quantum teleportation
+**Quantum teleportation** moves an unknown qubit state from Alice to Bob using only a shared **EPR pair** and **two classical bits** of communication, combining everything seen so far.
+
+The problem **setup** is the following:
+- Alice and Bob once shared an EPR pair, and each kept one qubit, but now they live far apart
+- Alice wants to send Bob an _unknown_ qubit $|\psi\rangle$
+- She can only send _classical_ information
+
+This is a **problem**, since:
+- Alice doesn’t know $|\psi\rangle$, and she can't learn it from a single copy (measurement destroys it, and no-cloning forbids copying)
+- Even if she knew it, describing (to Bob) a point in a continuous space would take infinitely many classical bits
+
+The **idea of the solution** is:
+1. Alice interacts $|\psi\rangle$ with her half of the EPR pair
+2. She measures her two qubits and gets one of four classical results: $00, 01, 10, 11$
+3. She sends those 2 classical bits to Bob
+4. Bob applies one of four operations to his qubit and recovers $|\psi\rangle$
+
+![[Quantum teleport.png]]
+>Quantum circuit for teleporting a qubit.
+>The two top lines represent Alice's system, while the bottom line is Bob's system. The meters represent measurement, and the double lines coming out of them carry classical bits (recall that single lines denote qubits).
+
+The state to teleport is $|\psi\rangle = \alpha|0\rangle + \beta|1\rangle$ with unknown $\alpha, \beta$.
+
+**Initial state**
+$$|\psi_0\rangle = |\psi\rangle|\beta_{00}\rangle = \frac{1}{\sqrt{2}}\Big[\alpha|0\rangle(|00\rangle + |11\rangle) + \beta|1\rangle(|00\rangle + |11\rangle)\Big]$$
+
+**Step 1**
+Alice applies CNOT (control: her qubit $|\psi\rangle$, target: her half of the EPR pair), the CNOT flips the 2nd and 3rd or, more precisely, it flips Alice's second qubit whenever the first is $1$:
+$$|\psi_1\rangle = \frac{1}{\sqrt{2}}\Big[\alpha|0\rangle(|00\rangle + |11\rangle) + \beta|1\rangle(|10\rangle + |01\rangle)\Big]$$
+**Step 2**
+Alice applies a Hadamard to her first qubit:
+$$|\psi_2\rangle = \frac{1}{2}\Big[\alpha(|0\rangle + |1\rangle)(|00\rangle + |11\rangle) + \beta(|0\rangle - |1\rangle)(|10\rangle + |01\rangle)\Big]$$
+**Step 3**
+Regroup by Alice's two qubits:
+$$|\psi_2\rangle = \frac{1}{2}\Big[|00\rangle(\alpha|0\rangle + \beta|1\rangle) + |01\rangle(\alpha|1\rangle + \beta|0\rangle) + |10\rangle(\alpha|0\rangle - \beta|1\rangle) + |11\rangle(\alpha|1\rangle - \beta|0\rangle)\Big]$$
+Each term pairs one of Alice's four possible measurement outcomes with a state of Bob's qubit.
+
+**Step 4**
+Alice measures both her qubits, each outcome has probability $1/4$, and Bob's qubit collapses to:
+
+| Alice's result | Bob's state $\lvert\psi_3\rangle$              | Fix needed          |
+| -------------- | ---------------------------------------------- | ------------------- |
+| $00$           | $\alpha\lvert 0\rangle + \beta\lvert 1\rangle$ | None                |
+| $01$           | $\alpha\lvert 1\rangle + \beta\lvert 0\rangle$ | $X$                 |
+| $10$           | $\alpha\lvert 0\rangle - \beta\lvert 1\rangle$ | $Z$                 |
+| $11$           | $\alpha\lvert 1\rangle - \beta\lvert 0\rangle$ | $X$ first, then $Z$ |
+
+**Step 5**
+Bob corrects: after Alice sends the two bits $M_1M_2$, Bob applies
+$$Z^{M_1} X^{M_2}$$
+to his qubit.
+>Recall that in matrix products, the rightmost operator acts first (so $X^{M_2}$ is applied before $Z^{M_1}$), even though circuit diagrams read left to right.
+
+Bob ends up with exactly $|\psi\rangle$.
+
+>[!Tip] Does teleportation break anything?
+>**Is this faster-than-light communication?**
+>No. Bob’s qubit is in one of four possible states, and he can't know which one without Alice’s classical message.
+>That message travels at most at light speed, without it, teleportation conveys no information at all.
+>
+>**Doesn’t this copy $|\psi\rangle$, violating no-cloning?**
+>No. After teleportation, only Bob's qubit is in state $|\psi\rangle$, Alice's original qubit has been measured and ends up in $|0\rangle$ or $|1\rangle$, the state was moved, not duplicated.
+
