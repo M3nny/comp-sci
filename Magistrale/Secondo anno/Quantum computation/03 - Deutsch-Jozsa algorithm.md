@@ -38,6 +38,8 @@ This is because:
 
 So the answer qubit stays unchanged and the value of $f(x)$ ends up as a _sign (phase) on the query qubit_.
 
+We'll refer to this as **phase kickback**: with the answer qubit in $|-\rangle$, $U_f(|x\rangle|-\rangle) = (-1)^{f(x)}|x\rangle|-\rangle$, the value $f(x)$ ends up as a sign on the query register, and the answer qubit is unchanged.
+
 **After $U_f$**
 $$|\psi_2\rangle = \begin{cases} \pm\left[\dfrac{|0\rangle + |1\rangle}{\sqrt{2}}\right]\left[\dfrac{|0\rangle - |1\rangle}{\sqrt{2}}\right] & \text{if } f(0) = f(1) \\[3mm] \pm\left[\dfrac{|0\rangle - |1\rangle}{\sqrt{2}}\right]\left[\dfrac{|0\rangle - |1\rangle}{\sqrt{2}}\right] & \text{if } f(0) \neq f(1) \end{cases}$$
 The two signs $(-1)^{f(0)}$ and $(-1)^{f(1)}$ are either equal (a global sign, constant case) or different (a relative sign, balanced case).

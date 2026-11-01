@@ -11,10 +11,42 @@
             "id": "a2ecf3e7a0f893fb",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "Magistrale/Secondo anno/Quantum computation/04 - Grover's search algorithm.md",
+                "mode": "source",
+                "source": false
+              },
               "icon": "lucide-file",
-              "title": "Nuova scheda"
+              "title": "04 - Grover's search algorithm"
+            }
+          },
+          {
+            "id": "3ea231fbdb26ec17",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Magistrale/Secondo anno/Quantum computation/03 - Deutsch-Jozsa algorithm.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "03 - Deutsch-Jozsa algorithm"
+            }
+          },
+          {
+            "id": "472a79f20883eee3",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Magistrale/Secondo anno/Quantum computation/03 - Deutsch-Jozsa algorithm.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "03 - Deutsch-Jozsa algorithm"
             }
           }
         ]
@@ -160,9 +192,13 @@
       "obsidian-excalidraw-plugin:New drawing": false
     }
   },
-  "active": "a2ecf3e7a0f893fb",
+  "active": "a1163d9af64d6878",
   "lastOpenFiles": [
+    "Magistrale/Secondo anno/Quantum computation/Images/Single Grover iteration.png",
     "Magistrale/Secondo anno/Quantum computation/03 - Deutsch-Jozsa algorithm.md",
+    "Magistrale/Secondo anno/Quantum computation/04 - Grover's search algorithm.md",
+    "Triennale/Terzo anno/Calcolabilità e linguaggi formali/Riducibilità/Turing riducibilità.md",
+    "Triennale/Terzo anno/Calcolabilità e linguaggi formali/Riducibilità/Storie di computazione accettanti.md",
     "Magistrale/Secondo anno/Cryptography/09 - RSA cipher.md",
     "Triennale/Primo anno/Primo semestre/Matematica discreta/Gli insiemi.md",
     "Triennale/Primo anno/Primo semestre/Matematica discreta/Elementi di calcolo combinatorio.md",
@@ -184,10 +220,8 @@
     "Magistrale/Secondo anno/Statistical inference and learning/03 - Hypothesis testing.md",
     "Magistrale/Secondo anno/Statistical inference and learning/01 - Random variables.md",
     "Magistrale/Secondo anno/Geometric and 3D computer vision/06 - Morphological image processing.md",
-    "Magistrale/Secondo anno/Geometric and 3D computer vision/02 - Intensity transformations.md",
     "Magistrale/Secondo anno/Geometric and 3D computer vision/Images/Otsu after top-hat.png",
     "Magistrale/Secondo anno/Geometric and 3D computer vision/Images/Top-hat illumination.png",
-    "Magistrale/Secondo anno/Geometric and 3D computer vision/03 - Spatial filtering.md",
     "Magistrale/Secondo anno/Geometric and 3D computer vision/Images/Morphological gradient.png",
     "Magistrale/Secondo anno/Geometric and 3D computer vision/Images/Morphological smoothing.png",
     "Magistrale/Secondo anno/Geometric and 3D computer vision/Images/Opening and closing geometric interpretation.png",
@@ -196,8 +230,6 @@
     "Magistrale/Secondo anno/Geometric and 3D computer vision/Images/Dilation example 2.png",
     "Magistrale/Secondo anno/Geometric and 3D computer vision/Images/Dilation example 1.png",
     "Magistrale/Secondo anno/Geometric and 3D computer vision/Images/Erosion example 1.png",
-    "Magistrale/Primo anno/Information retrieval and web search/10 - Crawling.md",
-    "Magistrale/Primo anno/Information retrieval and web search/11 - Learning to rank.md",
     "Magistrale/Secondo anno/Quantum computation/Images",
     "Magistrale/Secondo anno/Quantum computation",
     "Magistrale/Secondo anno/Geometric and 3D computer vision/Images",
