@@ -238,3 +238,101 @@ Embeddings learn associations from their corpora, so they can **reproduce and ev
 
 **Limits of linear debiasing**
 Removing the projection onto a single "gender direction" from neutral words often does not remove the bias since _gender-associated neighborhood structure_ and relative distances remain, so classifiers and clustering can still recover the original biased configuration.
+
+
+---
+### CBOW
+CBOW turns **learn word meaning** into a _prediction task_, specifically: given the words around a position, it predicts the word in the middle.
+>See [[11 - Learning to rank#Word2Vec|Word2Vec in learning to rank]].
+
+The distributional hypothesis justifies this: if two words are good at predicting, or being predicted by, the same contexts, they should end up with similar vectors.
+
+The **embeddings are not the goal of the task**, _they are the parameters_ the network must learn in order to solve it.
+
+#### What the model consists of
+We keep two learnable tables, because each word plays two roles:
+- **Input embeddings** $v_w$: the word’s representation when it appears as _context_
+- **Output embeddings** $u_w$: the word’s representation when it is a _candidate target_
+
+The architecture has three operations:
+1. **Look up** the vectors of the context words
+2. **Aggregate** them into one vector by averaging: $h = \frac{1}{m}\sum_{j=1}^{m} v_j$
+3. **Score** a candidate target $w$ with a dot product: $z_w = u_w^\top h$
+
+**Design consequences**:
+- Averaging makes the model _order-invariant_ (a bag of words), cheap and works well, but it discards syntax
+- The dot product measures _compatibility between the context and the candidate_
+- _Windows are symmetric_, so the model sees both left and right context, unlike a left-to-right language model
+
+#### Choosing the objective
+We use a **softmax over the whole vocabulary**:
+$$P(w_t \mid C_t) = \frac{\exp(u_{w_t}^\top h)}{\sum_{j=1}^{|V|}\exp(u_j^\top h)}$$
+>This costs $O(|V|)$ per example, because of the normalizing sum, and most of that work is wasted on words that are obviously wrong.
+
+**Negative sampling** changes the question from "which word in the vocabulary fits this context?" to "is this (context, word) pair real or random?".
+
+For each example:
+- one **positive** pair, the observed center word, with label 1
+- $K$ **negative** pairs, words drawn from a noise distribution, with label 0
+
+Each pair is scored with $\sigma(u^\top h)$ and trained with binary cross-entropy:
+$$\mathcal{L} = -\Big[\log\sigma(u_{w_t}^\top h) + \sum_{k=1}^{K}\log\sigma(-u_{n_k}^\top h)\Big]$$
+
+The cost drops to $O(K)$ per example.
+>The loss raises the score of real pairs and lowers the score of noise pairs.
+
+**Cons of this approach**
+The outputs are _binary classifier scores, not a probability distribution over the vocabulary_, this means that they can't be normalized, so we can't report perplexity or use the model as a language model, we keep what we wanted, that is: the embeddings.
+
+#### The noise distribution
+Negatives are not drawn uniformly or by raw frequency, but from the smoothed unigram distribution:
+$$P_n(w) \propto \text{count}(w)^{3/4}$$
+- Uniform sampling would mostly produce rare, uninformative words
+- Raw frequency would produce "the", "of", "and" almost every time
+- The $3/4$ exponent is a compromise: it down-weights frequent words and boosts rare ones
+
+Negatives are sampled independently with replacement, a "negative" may occasionally be the true word, and that is accepted as noise.
+>Label 0 means "drawn from noise", not "grammatically impossible".
+
+#### How to construct the training data
+1. **Tokenize and build a vocabulary**, with a minimum-count threshold so rare words with too little evidence are dropped
+2. **Slide a window** of radius $c$ over each sentence, every position yields one example: the surrounding words are the input and the center word is the target
+3. **Respect boundaries**: windows should not cross sentence or document boundaries, if we drop rare words, keep the original positions, so that removing a word doesn't make two distant words look adjacent
+4. **Handle variable context sizes** (edges give fewer than $2c$ words) with padding plus a mask, so that padding affects neither the average nor the gradients
+5. Take vocabulary counts and noise statistics **from training data only**
+
+#### How learning works
+Training is plain stochastic gradient descent (or Adam) on the loss above.
+Let $\varepsilon_i = \sigma(z_i) - y_i$ be the error on candidate $i$, then:
+$$\frac{\partial L}{\partial u_i} = \varepsilon_i\, h \qquad \frac{\partial L}{\partial h} = \sum_i \varepsilon_i\, u_i \qquad \frac{\partial L}{\partial v_j} = \frac{1}{m}\frac{\partial L}{\partial h}$$
+
+Intuition:
+- The positive word's output vector is **pulled toward** the context average, and the negatives' vectors are **pushed away**
+- The context average is **pushed toward the true target** and **away from the noise** words.
+- Because the average is shared equally, every context word receives the same $1/m$ share of that signal
+- Each step touches only the context words, the target, and the $K$ negatives, this **sparsity of updates** is what makes training on billions of tokens feasible
+
+Words that appear in similar contexts receive similar updates over time, so their vectors drift together, this is where the **semantic structure** comes from.
+
+#### What to keep after training
+- Keep the **input embeddings** as the word vectors (using the output vectors, or their sum, is also valid, and we can pick empirically)
+- Compare words with **cosine similarity** (normalize to unit length) so that frequency doesn't distort distances
+- Drop the padding row and any internal tokens
+
+#### Summary of the implementation
+| Choice                              | Reason                                                                    |
+| ----------------------------------- | ------------------------------------------------------------------------- |
+| Two embedding tables                | Separate "context" and "target" roles, this leads to simpler optimization |
+| Averaging, not concatenation        | Cheaper, handles variable-size windows (loses order)                      |
+| No nonlinearity / hidden layer      | Speed, the goal is embeddings, not a good language model                  |
+| Negative sampling, not full softmax | $O(\lvert V\rvert)\to O(K)$ per example                                   |
+| $\text{count}^{3/4}$ noise          | Balances frequent and rare words as negatives                             |
+| Minimum count threshold             | Rare words lack the evidence for reliable vectors                         |
+| Masked padding                      | Variable window sizes without contaminating the mean or gradients         |
+| Cosine for evaluation               | Removes the frequency bias of raw dot products                            |
+
+**Limitations**
+- _Static vectors_: one vector per word type, so polysemy is collapsed (e.g. bank)
+- _No order or syntax_: inherent to averaging
+- _Quality depends on data volume_: a tiny corpus gives only qualitative neighbors, low loss does not by itself prove good embeddings
+
