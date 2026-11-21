@@ -12,5 +12,6 @@
   "nativeMenus": false,
   "monospaceFontFamily": "",
   "interfaceFontFamily": "",
-  "textFontFamily": ""
+  "textFontFamily": "",
+  "showRibbon": true
 }

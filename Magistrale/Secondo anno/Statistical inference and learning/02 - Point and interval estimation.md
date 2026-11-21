@@ -434,7 +434,7 @@ $$E_\theta[U(\theta)] = 0$$
 At the **true** $\theta$, the log-likelihood slope is positive for some samples and negative for others, and these cancel on average.
 >That is why the score equation $U=0$ works as an estimating equation: on average it is satisfied at the truth.
 
-**Fisher information** is defines as:
+**Fisher information** is defined as:
 $$I_1(\theta) = E_\theta[U(\theta)^2] = -E_\theta\!\left[\frac{\partial^2}{\partial\theta^2}\log p_Y(Y;\theta)\right]$$
 
 _Two equivalent forms_, each with its own intuition:
@@ -523,7 +523,7 @@ A **pivot** is a quantity _built from the data and the parameter_ whose distribu
 ![[Student's t-distributions.png|528]]
 
 ---
-### Frequentist interval estimation
+	### Frequentist interval estimation
 Point estimates like $\overline Y$ give one number and no sense of precision, a **confidence interval (CI)** gives a range, _built from the pivots_.
 
 #### Formal definition
