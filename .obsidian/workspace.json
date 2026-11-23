@@ -4,21 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "ed19c8bdb5d2bde1",
+        "id": "cb60405e1512cdf6",
         "type": "tabs",
         "children": [
           {
-            "id": "fef504c3986ef5ed",
+            "id": "48b6bc8a6bef9279",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Magistrale/Secondo anno/Deep learning for natural language processing/09 - Transformer architecture.md",
+                "file": "Magistrale/Secondo anno/Quantum computation/05 - Quantum Fourier transform.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "09 - Transformer architecture"
+              "title": "05 - Quantum Fourier transform"
             }
           }
         ]
@@ -164,10 +164,21 @@
       "obsidian-excalidraw-plugin:New drawing": false
     }
   },
-  "active": "fef504c3986ef5ed",
+  "active": "48b6bc8a6bef9279",
   "lastOpenFiles": [
-    "Magistrale/Secondo anno/Deep learning for natural language processing/08 - Attention.md",
+    "Magistrale/Secondo anno/Quantum computation/Images/First stage of the phase estimation procedure.png",
+    "Magistrale/Secondo anno/Quantum computation/Images/Circuit for the quantum Fourier transform.png",
+    "Magistrale/Secondo anno/Quantum computation/04 - Grover's search algorithm.md",
+    "Magistrale/Secondo anno/Quantum computation/03 - Deutsch-Jozsa algorithm.md",
+    "Magistrale/Secondo anno/Quantum computation/02 - Quantum gates.md",
+    "Magistrale/Secondo anno/Quantum computation/01 - Qubits.md",
+    "Magistrale/Secondo anno/Quantum computation/00 - Postulates of quantum mechanics.md",
+    "Magistrale/Secondo anno/Quantum computation/05 - Quantum Fourier transform.md",
+    "Magistrale/Secondo anno/Cryptography/09 - RSA cipher.md",
+    "Magistrale/Secondo anno/Cryptography/08 - Public key cryptography.md",
+    "Magistrale/Secondo anno/Quantum computation/05 - Quantum Fourier transform.md",
     "Magistrale/Secondo anno/Deep learning for natural language processing/09 - Transformer architecture.md",
+    "Magistrale/Secondo anno/Deep learning for natural language processing/08 - Attention.md",
     "Magistrale/Secondo anno/Deep learning for natural language processing/07 - Encoder-decoder model.md",
     "Magistrale/Secondo anno/System security/08 - Vulnerabilities and defensive programming.md",
     "Magistrale/Secondo anno/System security/07 - Denial of service.md",
@@ -188,24 +199,13 @@
     "Magistrale/Secondo anno/Deep learning for natural language processing/Images",
     "Magistrale/Secondo anno/Deep learning for natural language processing/02 - Neural representations",
     "Magistrale/Secondo anno/Deep learning for natural language processing/01 - Statistical modeling for NLP",
-    "Magistrale/Secondo anno/Deep learning for natural language processing/06 - Distributed word representations.md",
-    "Magistrale/Primo anno/Information retrieval and web search/11 - Learning to rank.md",
     "Magistrale/Secondo anno/System security/Images/SYN spoofing prevention.png",
-    "Triennale/Terzo anno/Reti di calcolatori/Livelli TCP/Livello di rete.md",
-    "Triennale/Terzo anno/Reti di calcolatori/Livelli TCP/Livello datalink.md",
-    "Magistrale/Secondo anno/Quantum computation/03 - Deutsch-Jozsa algorithm.md",
-    "Magistrale/Secondo anno/Quantum computation/04 - Grover's search algorithm.md",
     "Magistrale/Secondo anno/Quantum computation/Images/Single Grover iteration.png",
-    "Triennale/Terzo anno/Calcolabilità e linguaggi formali/Riducibilità/Turing riducibilità.md",
-    "Triennale/Terzo anno/Calcolabilità e linguaggi formali/Riducibilità/Storie di computazione accettanti.md",
-    "Magistrale/Secondo anno/Cryptography/09 - RSA cipher.md",
-    "Triennale/Primo anno/Primo semestre/Matematica discreta/Gli insiemi.md",
     "Magistrale/Secondo anno/Geometric and 3D computer vision/Images/Otsu after top-hat.png",
     "Magistrale/Secondo anno/Geometric and 3D computer vision/Images/Top-hat illumination.png",
     "Magistrale/Secondo anno/Geometric and 3D computer vision/Images/Morphological gradient.png",
     "Magistrale/Secondo anno/Geometric and 3D computer vision/Images/Morphological smoothing.png",
     "Magistrale/Secondo anno/Geometric and 3D computer vision/Images/Opening and closing geometric interpretation.png",
-    "Magistrale/Secondo anno/Geometric and 3D computer vision/Images/Opening and closing example 2.png",
     "Magistrale/Secondo anno/Quantum computation/Images",
     "Magistrale/Secondo anno/Quantum computation",
     "Magistrale/Secondo anno/Geometric and 3D computer vision/Images",
