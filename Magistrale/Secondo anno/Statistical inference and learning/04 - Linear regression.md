@@ -110,6 +110,7 @@ c(TSS=TSS,
 )
 ```
 
+svg trieste
 **Overall F-test** (in simple regression it is equivalent to the t-test for $\beta_1$):
 $$F=\frac{\mathrm{RegSS}/1}{\mathrm{RSS}/(n-2)}\sim F_{1,n-2}\text{ under }H_0:\beta_1=0 .$$
 

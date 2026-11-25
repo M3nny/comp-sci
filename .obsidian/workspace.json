@@ -8,17 +8,17 @@
         "type": "tabs",
         "children": [
           {
-            "id": "48b6bc8a6bef9279",
+            "id": "7e7656845a00863b",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Magistrale/Secondo anno/Statistical inference and learning/04 - Linear regression.md",
+                "file": "Magistrale/Secondo anno/Cryptography/10 - Sieve of Eratosthenes.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "04 - Linear regression"
+              "title": "10 - Sieve of Eratosthenes"
             }
           }
         ]
@@ -164,13 +164,15 @@
       "obsidian-excalidraw-plugin:New drawing": false
     }
   },
-  "active": "a1163d9af64d6878",
+  "active": "7e7656845a00863b",
   "lastOpenFiles": [
+    "Magistrale/Secondo anno/Cryptography/09 - RSA cipher.md",
+    "Magistrale/Secondo anno/Cryptography/10 - Sieve of Eratosthenes.md",
+    "Magistrale/Secondo anno/Statistical inference and learning/04 - Linear regression.md",
     "Magistrale/Secondo anno/Statistical inference and learning/Images/LR residuals vs leverage.png",
     "Magistrale/Secondo anno/Statistical inference and learning/Images/LR model standard plots.png",
     "Magistrale/Secondo anno/Statistical inference and learning/Images/LR fitted mean and CI intervals.png",
     "Magistrale/Secondo anno/Quantum computation/05 - Quantum Fourier transform.md",
-    "Magistrale/Secondo anno/Statistical inference and learning/04 - Linear regression.md",
     "Magistrale/Secondo anno/Quantum computation/Images/First stage of the phase estimation procedure.png",
     "Magistrale/Secondo anno/Quantum computation/Images/Circuit for the quantum Fourier transform.png",
     "Magistrale/Secondo anno/Quantum computation/04 - Grover's search algorithm.md",
@@ -178,7 +180,6 @@
     "Magistrale/Secondo anno/Quantum computation/02 - Quantum gates.md",
     "Magistrale/Secondo anno/Quantum computation/01 - Qubits.md",
     "Magistrale/Secondo anno/Quantum computation/00 - Postulates of quantum mechanics.md",
-    "Magistrale/Secondo anno/Cryptography/09 - RSA cipher.md",
     "Magistrale/Secondo anno/Cryptography/08 - Public key cryptography.md",
     "Magistrale/Secondo anno/Deep learning for natural language processing/09 - Transformer architecture.md",
     "Magistrale/Secondo anno/Deep learning for natural language processing/08 - Attention.md",
@@ -205,7 +206,6 @@
     "Magistrale/Secondo anno/System security/Images/SYN spoofing prevention.png",
     "Magistrale/Secondo anno/Quantum computation/Images/Single Grover iteration.png",
     "Magistrale/Secondo anno/Geometric and 3D computer vision/Images/Otsu after top-hat.png",
-    "Magistrale/Secondo anno/Geometric and 3D computer vision/Images/Top-hat illumination.png",
     "Magistrale/Secondo anno/Quantum computation/Images",
     "Magistrale/Secondo anno/Quantum computation",
     "Magistrale/Secondo anno/Geometric and 3D computer vision/Images",

@@ -241,3 +241,67 @@ def squareAndMultiply(x, e):
 - Each iteration does at most two multiplications (plus a reduction mod $n$), each $O(k^2)$, in total: $O(k\cdot k^2)=O(k^3)$, which is _polynomial_
 >For $k=1024$ this is about $10^9$ steps, which is efficient on modern machines.
 
+---
+### Composition of ciphers
+We're now going to introduce the **composition of ciphers**: take two ciphers $S_1=(P,C,K_1,E_1,D_1)$ and $S_2=(P,C,K_2,E_2,D_2)$ with the same plaintext and ciphertext sets $P=C$.
+
+This means the output of the first cipher is a valid input for the second, and their **composition** is:
+$$S_1\times S_2=(P,C,K_1\times K_2,E,D)$$
+
+The standard definition is:
+$$E_{(k_1,k_2)}(x)=E^2_{k_2}\big(E^1_{k_1}(x)\big),\qquad D_{(k_1,k_2)}(y)=D^1_{k_1}\big(D^2_{k_2}(y)\big)$$
+
+>Decryption undoes the steps in reverse order.
+
+> [!Example] Vigenère composed with Vigenère
+>Composing two Vigenère ciphers with keys of the same length produces another Vigenère cipher.
+>
+>**Encryption**
+>Each letter is shifted by the sum of the corresponding key values, modulo 26:
+>$$E_{k'}(E_k(x))=E_{k''}(x)$$
+>
+>**Combined key**
+>$$k''_i=(k_i+k'_i)\bmod 26$$
+>
+>**Decryption**: Subtract the combined key modulo 26
+>$$x_i=y_i-k''_i\bmod 26$$
+>
+>**Example**
+>- ALICE = (0, 11, 8, 2, 4)
+>- SLICE = (18, 11, 8, 2, 4)
+>- Sum = (18, 22, 16, 4, 8) mod 26
+>- Combined key = **SWQEI**
+>
+>Combining two Vigenère ciphers is equivalent to using a single Vigenère cipher with the combined key, therefore, _composition provides no additional security_.
+
+### Computing the inverse modulo $\phi(n)$
+To find the private exponent, pick one exponent and compute its inverse modulo $\phi(n)$.
+
+The inverse exists when $\gcd(b,\phi(n))=1$ (guaranteed by Euler's theorem)., and there are two ways to compute it:
+- **Euler's theorem:** $b^{-1}\equiv b^{\phi(k)-1}\pmod k$
+- **The extended Euclidean algorithm** (more efficient for large numbers)
+### Generating RSA exponents
+**Random public exponent**
+Pick a random $b$ and compute its inverse mod $\phi(n)$, this works if $b$ is coprime to $\phi(n)$.
+>Two random numbers are coprime with probability about $0.6$ (exactly $6/\pi^2\approx0.608$), so trying 2–3 times is enough.
+
+**Fixed public exponent in practice**
+Typically $b=2^{16}+1=65537$ (a prime)
+- In binary this is $1\,0000\,0000\,0000\,0001$, with only two 1-bits, square-and-multiply then needs only 16 squarings and 1 extra multiplication, so encryption is fast
+- Then $n$ must be chosen so that $\phi(n)=(p-1)(q-1)$ is not a multiple of $65537$, otherwise $b$ would not be invertible
+
+### RSA and factorization
+Knowing $\phi(n)$ makes the private exponent easy to compute, since $a=b^{-1}\bmod\phi(n)$.
+
+>[!Attention] RSA security
+>Factoring $n=pq$ gives $\phi(n)=(p-1)(q-1)$, therefore **RSA security rests on the infeasibility of factoring the modulus $n$**.
+>
+>This is why $n$ must be at least **3072 bits** today.
+
+**Computing $\phi(n)$ is at least as hard as factoring**
+If we know $\phi(n)$, you we factor $n$ from the system
+$$\begin{cases} n=pq\\ \phi(n)=(p-1)(q-1)\end{cases}$$
+
+>[!Example]
+>$n=55$, $\phi=40$.
+>Then $p+q=16$ and $pq=55$, so $x^2-16x+55=0$, giving $x=5$ and $x=11$.
